@@ -712,7 +712,83 @@ footer{border-top:1px solid #3d4a60;padding:28px 32px;text-align:center;font-fam
 <!-- END HERO -->
 
 <!-- MOOD + HERO STYLES -->
-<style>
+/* ═══════════════════════════════════════
+   NEWSLETTER POPUP
+   ═══════════════════════════════════════ */
+#nl-popup-overlay{
+  position:fixed;inset:0;background:rgba(10,14,26,0.82);z-index:9999;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:opacity 0.4s,visibility 0.4s;
+  backdrop-filter:blur(3px)
+}
+#nl-popup-overlay.open{opacity:1;visibility:visible}
+#nl-popup{
+  background:#1e2433;border:1px solid #3d4a60;
+  border-top:3px solid #8b1a2e;
+  max-width:480px;width:92%;padding:36px 36px 28px;
+  position:relative;
+  box-shadow:0 24px 80px rgba(0,0,0,0.7);
+  transform:translateY(20px);transition:transform 0.4s
+}
+#nl-popup-overlay.open #nl-popup{transform:translateY(0)}
+#nl-popup-close{
+  position:absolute;top:14px;right:16px;
+  background:transparent;border:none;color:#6070a0;
+  font-size:22px;cursor:pointer;line-height:1;padding:4px 8px;
+  transition:color 0.2s
+}
+#nl-popup-close:hover{color:#c9a96e}
+.nlp-eyebrow{
+  font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;
+  text-transform:uppercase;color:#d06070;margin-bottom:12px
+}
+.nlp-title{
+  font-family:'Playfair Display',serif;font-size:26px;font-weight:400;
+  color:#e8d0a0;line-height:1.2;margin-bottom:8px
+}
+.nlp-sub{
+  font-family:'Crimson Text',serif;font-size:16px;
+  color:#c8c0a8;font-style:italic;line-height:1.6;margin-bottom:20px
+}
+.nlp-bullets{
+  display:flex;flex-direction:column;gap:6px;margin-bottom:20px
+}
+.nlp-bullet{
+  display:flex;align-items:center;gap:10px;
+  font-family:'Raleway',sans-serif;font-size:11px;
+  letter-spacing:1px;color:#a0b0c8;text-transform:uppercase
+}
+.nlp-bullet::before{
+  content:'✓';color:#c9a96e;font-size:12px;flex-shrink:0
+}
+.nlp-divider{border:none;border-top:1px solid #3d4a60;margin:0 0 20px}
+.nlp-row{display:flex;gap:8px}
+.nlp-input{
+  background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;
+  padding:11px 14px;font-family:'Crimson Text',serif;font-size:15px;
+  flex:1;outline:none;min-width:0
+}
+.nlp-input:focus{border-color:#c9a96e}
+.nlp-input::placeholder{color:#4a5a72}
+.nlp-btn{
+  background:#8b1a2e;border:none;color:#f5e8d0;
+  padding:11px 18px;font-family:'Raleway',sans-serif;
+  font-size:9px;letter-spacing:2px;text-transform:uppercase;
+  cursor:pointer;white-space:nowrap;transition:background 0.2s;flex-shrink:0
+}
+.nlp-btn:hover{background:#a01f36}
+.nlp-note{
+  font-family:'Raleway',sans-serif;font-size:10px;
+  color:#6070a0;margin-top:10px;letter-spacing:0.5px;text-align:center
+}
+.nlp-skip{
+  display:block;text-align:center;margin-top:14px;
+  font-family:'Raleway',sans-serif;font-size:10px;
+  letter-spacing:1px;color:#506080;cursor:pointer;
+  background:transparent;border:none;text-decoration:underline;
+  text-underline-offset:3px;transition:color 0.2s
+}
+.nlp-skip:hover{color:#9090a8}<style>
 .mood-block{background:#1a2135;border:1px solid #3d4a60;padding:16px 18px;margin-top:4px}
 .mood-pill{background:transparent;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:7px 14px;cursor:pointer;transition:all 0.2s}
 .mood-pill:hover{border-color:#ffffff;color:#ffffff;background:#2c3a50}
@@ -1471,5 +1547,41 @@ function setMood(mood,btn){
   document.getElementById('mood-results').style.display='block';
 }
 </script>
-</body>
+<!-- NEWSLETTER POPUP -->
+<div id="nl-popup-overlay" role="dialog" aria-modal="true" aria-label="Newsletter signup">
+  <div id="nl-popup">
+    <button id="nl-popup-close" aria-label="Close popup" onclick="closePopup(true)">&#10005;</button>
+    <div class="nlp-eyebrow">Free &mdash; every Sunday</div>
+    <div class="nlp-title">The Sunday British TV Picks</div>
+    <div class="nlp-sub">Join 4,000+ fans who get 5 hand-picked British shows straight to their inbox every week.</div>
+    <div class="nlp-bullets">
+      <div class="nlp-bullet">New show recommendations every Sunday</div>
+      <div class="nlp-bullet">Hidden gems you won't find elsewhere</div>
+      <div class="nlp-bullet">BritBox, Acorn TV &amp; streaming tips</div>
+    </div>
+    <hr class="nlp-divider">
+    <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank" onsubmit="closePopup(true)">
+      <div class="nlp-row">
+        <input type="email" name="EMAIL" class="nlp-input" placeholder="your@email.com" required aria-label="Email address">
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" class="nlp-btn">Subscribe</button>
+      </div>
+    </form>
+    <div class="nlp-note">No spam &nbsp;·&nbsp; Unsubscribe anytime &nbsp;·&nbsp; We'll never share your email</div>
+    <button class="nlp-skip" onclick="closePopup(false)">No thanks, maybe later</button>
+  </div>
+</div>
+<script>
+(function(){
+  var STORAGE_KEY='btv_popup_dismissed';
+  var DELAY_MS=8000;
+  var SUPPRESS_DAYS=7;
+  function shouldShow(){try{var val=localStorage.getItem(STORAGE_KEY);if(!val)return true;var ts=parseInt(val,10);return(Date.now()-ts)/(1000*60*60*24)>SUPPRESS_DAYS;}catch(e){return true;}}
+  function openPopup(){document.getElementById('nl-popup-overlay').classList.add('open');document.body.style.overflow='hidden';}
+  window.closePopup=function(permanent){document.getElementById('nl-popup-overlay').classList.remove('open');document.body.style.overflow='';if(permanent){try{localStorage.setItem(STORAGE_KEY,Date.now().toString());}catch(e){}}};
+  document.getElementById('nl-popup-overlay').addEventListener('click',function(e){if(e.target===this)closePopup(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closePopup(false);});
+  if(shouldShow())setTimeout(openPopup,DELAY_MS);
+})();
+</script></body>
 </html>
