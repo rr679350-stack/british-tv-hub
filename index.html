@@ -1506,7 +1506,7 @@ function setMood(mood,btn){
 (function(){
   var KEY='btv_popup_dismissed',DAYS=7,DELAY=8000;
   function dismissed(){try{var v=localStorage.getItem(KEY);return v&&(Date.now()-parseInt(v,10))<DAYS*86400000;}catch(e){return false;}}
-  function close(save){try{if(save)localStorage.setIt
+  function close(save){try{if(save)localStorage.setItem(KEY,Date.now().toString());}catch(e){}document.getElementById('nl-popup-overlay').classlist.remove('nl-visible');}
 document.getElementById('nl-popup-close').addEventListener('click',function(){close(true);});
   document.getElementById('nl-popup-overlay').addEventListener('click',function(e){if(e.target===this)close(true);});
   document.getElementById('nl-popup-skip').addEventListener('click',function(){close(false);});
