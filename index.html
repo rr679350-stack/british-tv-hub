@@ -1501,35 +1501,6 @@ function setMood(mood,btn){
   document.getElementById('mood-results').style.display='block';
 }
 </script>
-<div id="nl-popup-overlay" role="dialog" aria-modal="true">
-  <div id="nl-popup">
-    <button id="nl-popup-close">&times;</button>
-    <div class="nlp-eyebrow">Free &mdash; Every Sunday</div>
-    <div class="nlp-title">The Sunday British TV Picks</div>
-    <div class="nlp-sub">5 shows worth your time this week &mdash; chosen by 4,000+ fans.</div>
-    <hr style="border:none;border-top:1px solid #2d3a50;margin:0 0 16px">
-    <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&id=13d91c5701&f_id=006ec6e3f0" method="post" target="_blank" id="nl-popup-form">
-      <div class="nlp-row">
-        <input type="email" name="EMAIL" class="nlp-input" placeholder="your@email.com" required>
-        <div style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-        <button type="submit" class="nlp-btn">Subscribe</button>
-      </div>
-    </form>
-    <div class="nlp-note">No spam &middot; Unsubscribe anytime</div>
-    <button class="nlp-skip" id="nl-popup-skip">No thanks</button>
-  </div>
-</div>
-<script>
-(function(){
-  var KEY='btv_popup_dismissed',DAYS=7,DELAY=8000;
-  function dismissed(){try{var v=localStorage.getItem(KEY);return v&&(Date.now()-parseInt(v,10))<DAYS*86400000;}catch(e){return false;}}
-  function close(save){try{if(save)localStorage.setItem(KEY,Date.now().toString());}catch(e){}document.getElementById('nl-popup-overlay').classlist.remove('nl-visible');}
-document.getElementById('nl-popup-close').addEventListener('click',function(){close(true);});
-  document.getElementById('nl-popup-overlay').addEventListener('click',function(e){if(e.target===this)close(true);});
-  document.getElementById('nl-popup-skip').addEventListener('click',function(){close(false);});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close(true);});
-  document.getElementById('nl-popup-form').addEventListener('submit',function(){close(true);});
-  if(!dismissed())setTimeout(function(){if(!dismissed())document.getElementById('nl-popup-overlay').classList.add('nl-visible');},DELAY);
 })();
 </script></body>
 </html>
