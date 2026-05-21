@@ -767,6 +767,144 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 </div>
 <!-- END HERO -->
 
+<div id="trending" class="page">
+  <div class="page-head">
+    <h2 class="page-title">Trending Radar</h2>
+    <div class="page-sub">This week's most-watched British dramas &amp; mysteries</div>
+    <div class="page-date" id="trend-date"></div>
+    <div style="font-family:'Crimson Text',serif;font-size:14px;color:#b0a890;margin-top:8px;font-style:italic">Based on our community's votes, discussions, and Facebook activity this week.</div>
+  </div>
+  <div id="trending-list"></div>
+</div>
+
+<!-- TOP 5 -->
+<div id="top5" class="page">
+  <div class="page-head">
+    <h2 class="page-title">The 5 Everyone's Talking About</h2>
+    <div class="page-sub">Updated weekly — classics and new favourites our community loves</div>
+    <div class="page-date" id="top5-date"></div>
+  </div>
+  <div id="top5-grid" class="top5-grid"></div>
+</div>
+
+<!-- POLL -->
+<div id="poll" class="page">
+  <div class="page-head">
+    <h2 class="page-title">Daily Poll</h2>
+    <div class="page-sub">New question every day — vote then share on Facebook</div>
+    <div class="page-date" id="poll-date"></div>
+  </div>
+  <div class="poll-wrap">
+    <div id="poll-area"></div>
+    <div class="inline-email-block">
+      <div class="inline-email-title">Get our Sunday Picks in your inbox</div>
+      <div class="inline-email-sub">5 British shows worth your time this week — free, every Sunday.</div>
+      <div id="mc_embed_shell_poll">
+        <div id="mc_embed_signup_poll">
+          <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" id="mc-embedded-subscribe-form-poll" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="padding:0">
+            <div class="inline-email-row">
+              <input type="email" name="EMAIL" class="inline-email-input" placeholder="your@email.com" required aria-label="Email address">
+              <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+              <button type="submit" class="inline-email-btn">Subscribe Free</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="inline-email-note">No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
+    </div>
+  </div>
+</div>
+
+<!-- WATCHLIST -->
+<div id="watchlist" class="page">
+  <div class="page-head">
+    <h2 class="page-title">My Watchlist</h2>
+    <div class="page-sub">Track what you want to watch and what you've already seen</div>
+  </div>
+  <div class="watch-suggestions">
+    <div class="watch-sugg-title">Not sure where to start? Add a community favourite —</div>
+    <div class="sugg-grid" id="sugg-grid"></div>
+  </div>
+  <div class="watch-add">
+    <input class="watch-input" id="watch-title" placeholder="Show title e.g. Vera, Shetland, Grace..." aria-label="Show title">
+    <select class="watch-select" id="watch-genre" aria-label="Genre">
+      <option value="Crime · Drama">Crime · Drama</option>
+      <option value="Crime · Mystery">Crime · Mystery</option>
+      <option value="Period Drama">Period Drama</option>
+      <option value="Psychological Thriller">Psychological Thriller</option>
+      <option value="Cozy Mystery">Cozy Mystery</option>
+      <option value="Comedy · Drama">Comedy · Drama</option>
+      <option value="Other">Other</option>
+    </select>
+    <button class="btn-small" onclick="addShow('want')">+ Want to Watch</button>
+    <button class="btn-small green" onclick="addShow('watched')">+ Mark as Watched</button>
+  </div>
+  <div class="watch-tabs">
+    <button class="wtab on" onclick="switchWatchTab('want',this)">Want to Watch (<span id="want-count">0</span>)</button>
+    <button class="wtab" onclick="switchWatchTab('watched',this)">Already Watched (<span id="watched-count">0</span>)</button>
+  </div>
+  <div id="watchlist-items"></div>
+</div>
+
+<!-- DISCUSS -->
+<div id="discuss" class="page">
+  <div class="page-head">
+    <h2 class="page-title">Let's Talk Telly</h2>
+    <div class="page-sub">Fresh discussion prompts — share your answers on Facebook</div>
+    <div class="page-date" id="discuss-date"></div>
+  </div>
+  <div id="discuss-list"></div>
+</div>
+
+<!-- COMMUNITY -->
+<div id="community" class="page">
+  <div class="page-head">
+   <h2 class="page-title">Join the Conversation</h2>
+    <div class="page-sub">Follow our Page for daily content, or join our Group to chat with fellow fans</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="stat-n">4,000+</div><div class="stat-l">Members</div></div>
+    <div class="stat"><div class="stat-n">Daily</div><div class="stat-l">New Posts</div></div>
+    <div class="stat"><div class="stat-n">Zero</div><div class="stat-l">Spoiler-Free Zone</div></div>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">&#9783;</div><div><div class="why-h">Curated Content</div><div class="why-p">Hand-picked recommendations spanning decades of British television, from beloved classics to the newest releases.</div></div></div>
+    <div class="why-card"><div class="why-icon">&#9685;</div><div><div class="why-h">Vibrant Community</div><div class="why-p">A growing family of British TV fans who share reviews, debate favourites, and discover hidden gems together.</div></div></div>
+    <div class="why-card" style="cursor:pointer" onclick="go('discuss',4)"><div class="why-icon">&#9733;</div><div><div class="why-h">Daily Discussions</div><div class="why-p">Fresh debate prompts every day — polls, ratings, and discussion questions to keep the conversation alive.</div></div></div>
+  </div>
+  <div class="fb-cta">
+   <div class="fb-cta-title">Connect With Fellow Fans</div>
+    <div class="fb-cta-tag">Page for content · Group for discussion</div>
+    <div class="fb-cta-quote">"Follow our Page for daily recommendations, or join our Group to discuss shows, share favourites, and connect with 4,000+ British TV lovers."</div>
+<a class="btn-red" href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Visit Our Page</a>
+       <a class="btn-red" href="https://www.facebook.com/groups/1285676527099515" target="_blank" rel="noopener">Join Our Group</a>
+  </div>
+  <div class="inline-email-block" style="max-width:100%;margin-top:2px">
+    <div class="inline-email-title">Not on Facebook? Join our newsletter instead</div>
+    <div class="inline-email-sub">Your Sunday British TV picks — free, every week, straight to your inbox.</div>
+    <div id="mc_embed_shell_community">
+      <div id="mc_embed_signup_community">
+        <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" id="mc-embedded-subscribe-form-community" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="padding:0">
+          <div class="inline-email-row">
+            <input type="email" name="EMAIL" class="inline-email-input" placeholder="your@email.com" required aria-label="Email address">
+            <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+            <button type="submit" class="inline-email-btn">Subscribe Free</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="inline-email-note">Weekly &nbsp;·&nbsp; No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
+  </div>
+</div>
+<!-- JUMP NAV — GUIDE PAGE -->
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:0 24px;display:flex;gap:0;overflow-x:auto;margin:-48px -24px 32px">
+  <button onclick="document.getElementById('guide-top-shows').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid #8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Top Mystery Shows</button>
+  <button onclick="document.getElementById('guide-hidden-gems').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Hidden Gems</button>
+  <button onclick="document.getElementById('guide-streaming').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Where to Stream</button>
+  <button onclick="document.getElementById('guide-faq').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">FAQ</button>
+  <button onclick="document.getElementById('nl-anchor').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Sunday Picks →</button>
+</div>
+<!-- END JUMP NAV -->
 </main>
 
 <footer>
