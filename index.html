@@ -639,7 +639,16 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 <p class="hero-italic">Inspector Morse to Happy Valley — we've got every show covered</p>
 
     <div class="hero-divider"></div>
-
+<!-- JUMP NAV -->
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:0 40px;display:flex;gap:0;overflow-x:auto">
+  <button onclick="go('seo',5);setTimeout(()=>document.getElementById('guide-top-shows').scrollIntoView({behavior:'smooth'}),150)" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Top Mystery Shows</button>
+  <button onclick="go('seo',5);setTimeout(()=>document.getElementById('guide-hidden-gems').scrollIntoView({behavior:'smooth'}),150)" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Hidden Gems</button>
+  <button onclick="go('seo',5);setTimeout(()=>document.getElementById('guide-streaming').scrollIntoView({behavior:'smooth'}),150)" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Where to Stream</button>
+  <button onclick="go('seo',5);setTimeout(()=>document.getElementById('guide-faq').scrollIntoView({behavior:'smooth'}),150)" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">FAQ</button>
+  <button onclick="go('trending',1)" style="background:none;border:none;border-bottom:2px solid transparent;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">Trending</button>
+  <button onclick="document.getElementById('nl-anchor').scrollIntoView({behavior:'smooth'})" style="background:none;border:none;border-bottom:2px solid #8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:16px 20px;cursor:pointer;white-space:nowrap">★ Sunday Picks</button>
+</div>
+<!-- END JUMP NAV -->
     <p class="hero-p">Every Sunday, we hand-pick 5 British mysteries and dramas worth your time — classics, hidden gems, and what's new on BritBox and Acorn. Free, forever. Trusted by 4,000+ fans.</p>
 
     <div class="email-signup-block" style="width:100%;max-width:420px">
