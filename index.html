@@ -620,75 +620,101 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 </nav>
 
 <!-- HERO -->
+<!-- HERO -->
 <div id="hero" style="display:block">
 
-<!-- HERO SPLIT -->
 <div style="display:grid;grid-template-columns:1fr 1fr;min-height:88vh">
-  <div class="hero-image-side" role="img" aria-label="Cozy British TV watching — a fan's guide to the best British mysteries and dramas on BritBox, Acorn TV, Netflix and PBS"></div>
+
+  <div class="hero-image-side"
+       role="img"
+       aria-label="Cozy British TV watching — a fan's guide to the best British mysteries and dramas on BritBox, Acorn TV, Netflix and PBS">
+  </div>
+
   <div class="hero-text-side">
-    <div class="hero-ornament">Est. for British TV Fans</div>
-    <h1 class="hero-h1">The #1 Guide to<br>British TV Mysteries<br>&amp; Dramas</h1>
-    <p class="hero-italic">Inspector Morse to Happy Valley — we&rsquo;ve got every show covered</p>
+
+    <div class="hero-ornament">Free every Sunday</div>
+
+    <h1 class="hero-h1">Your weekly guide to the<br><em style="font-style:italic;color:#c9a96e">best British TV</em></h1>
+
+    <p class="hero-italic">Mysteries, dramas &amp; hidden gems — hand-picked every week</p>
+
     <div class="hero-divider"></div>
-    <p class="hero-p">Your complete resource for British mysteries, hidden gems, streaming guides, and daily fan discussions. Trusted by 4,000+ British TV lovers.</p>
-    <div class="hero-btns" style="margin-bottom:20px">
-      <button class="btn-red" onclick="go('seo',5)" style="font-size:11px;padding:14px 28px">&#9733; Open the Best Of Guide</button>
-      <a class="btn-gold" href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Join 4,000+ Fans</a>
-       <a class="btn-gold" style="background:#1877f2;border-color:#1877f2;color:#ffffff;" href="https://www.facebook.com/groups/1285676527099515" target="_blank" rel="noopener">Join Our Group</a>
+
+    <p class="hero-p">Every Sunday, we hand-pick 5 British mysteries and dramas worth your time — classics, hidden gems, and what's new on BritBox and Acorn. Free, forever. Trusted by 4,000+ fans.</p>
+
+    <div class="email-signup-block" style="width:100%;max-width:420px">
+      <div class="email-signup-label">Get my Sunday picks</div>
+      <div class="email-signup-tagline">Join 4,000+ British TV fans who get 5 hand-picked shows every Sunday morning.</div>
+      <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0"
+            method="post"
+            target="_blank"
+            style="padding:0">
+        <div class="email-signup-row">
+          <input type="email"
+                 name="EMAIL"
+                 class="email-signup-input"
+                 placeholder="your@email.com"
+                 required
+                 aria-label="Your email address">
+          <div aria-hidden="true" style="position:absolute;left:-5000px">
+            <input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value="">
+          </div>
+          <button type="submit" class="email-signup-btn">Get my Sunday picks →</button>
+        </div>
+      </form>
+      <div class="email-signup-note">Trusted by 4,000+ British TV fans &nbsp;·&nbsp; No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
     </div>
-    <div class="mood-block">
-         <!-- Hidden Gems Banner -->
-<div style="text-align:center; padding:16px 20px; background:rgba(201,169,110,0.08); border-top:1px solid rgba(201,169,110,0.2); border-bottom:1px solid rgba(201,169,110,0.2); margin-bottom:20px;">
-  <a href="/hidden-gems.html" style="font-family:'Playfair Display',serif; color:#c9a96e; font-size:16px; text-decoration:none;">
+
+    <div style="margin-top:20px;background:#1a2135;border:1px solid #3d4a60;border-left:2px solid #c9a96e;padding:14px 18px;max-width:420px">
+      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px">This Sunday's picks include</div>
+      <div style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;padding:5px 0;border-bottom:1px solid #2c3345">☕ Inspector Morse — the one that started it all</div>
+      <div style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;padding:5px 0;border-bottom:1px solid #2c3345">🔎 The Detectorists — TV's most quietly beautiful show</div>
+      <div style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;padding:5px 0">📺 What's new on BritBox this week</div>
+    </div>
+
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <a href="https://www.facebook.com/britishtelevisionhub"
+         target="_blank" rel="noopener"
+         style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;text-decoration:none">Facebook Page</a>
+      <span style="color:#3d4a60">·</span>
+      <a href="https://www.facebook.com/groups/1285676527099515"
+         target="_blank" rel="noopener"
+         style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;text-decoration:none">Fan Group</a>
+      <span style="color:#3d4a60">·</span>
+      <button onclick="go('seo',5)"
+              style="background:none;border:none;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;cursor:pointer;padding:0">★ Best Of Guide</button>
+    </div>
+
+  </div>
+</div>
+
+<div style="text-align:center;padding:16px 20px;background:rgba(201,169,110,0.08);border-top:1px solid rgba(201,169,110,0.2);border-bottom:1px solid rgba(201,169,110,0.2);">
+  <a href="/hidden-gems.html" style="font-family:'Playfair Display',serif;color:#c9a96e;font-size:16px;text-decoration:none;">
     🫖 <em>Free Download:</em> 25 Hidden Gem British Shows You Haven't Watched Yet &nbsp;→
   </a>
 </div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#b0b8cc;margin-bottom:10px">What are you in the mood for?</div>
-      <div style="display:flex;flex-wrap:wrap;gap:8px">
-        <button class="mood-pill active" onclick="setMood('cozy',this)">&#9749; Cozy Mystery</button>
-        <button class="mood-pill" onclick="setMood('gripping',this)">&#128270; Gripping Crime</button>
-        <button class="mood-pill" onclick="setMood('period',this)">&#127963; Period Drama</button>
-        <button class="mood-pill" onclick="setMood('gem',this)">&#128142; Hidden Gem</button>
-        <button class="mood-pill" onclick="setMood('new',this)">&#128214; New to British TV?</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- MOOD RESULTS — appears directly below mood picker -->
-<div id="mood-results" style="display:none;background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:24px 40px">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:8px">&#10003; Picked for you</div>
-  <div style="font-family:'Playfair Display',serif;font-size:22px;color:#c9a96e;margin-bottom:18px" id="mood-title">Cozy Mystery Picks</div>
-  <div id="mood-cards" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px"></div>
-  <div id="mood-guide-cta" style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding-top:16px;border-top:1px solid #3d4a60"></div>
-</div>
-
-
-
-<!-- GUIDE PROMO STRIP — high-visibility entrance to Best Of Guide -->
 <div style="background:linear-gradient(135deg,#1e2433 0%,#2c3345 60%,#1a2135 100%);border-bottom:1px solid #3d4a60;padding:36px 40px;display:flex;align-items:center;gap:40px">
   <div style="flex:1">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:10px">&#9733; Featured — Updated May 2026</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:10px">★ Featured — Updated May 2026</div>
     <div style="font-family:'Playfair Display',serif;font-size:28px;color:#e8d0a0;line-height:1.25;margin-bottom:10px">The Complete British TV<br>Mystery &amp; Drama Guide</div>
-    <div style="font-family:'Crimson Text',serif;font-size:19px;color:#e8e0cc;line-height:1.7;margin-bottom:18px;max-width:520px">The 6 best mystery shows streaming now &mdash; plus hidden gems, a full BritBox vs Acorn TV breakdown, where to watch every show for free, and answers to every question British TV fans ask.</div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <button class="btn-red" onclick="go('seo',5)" style="font-size:10px">Read the Complete Guide &rarr;</button>
-    </div>
+    <div style="font-family:'Crimson Text',serif;font-size:19px;color:#e8e0cc;line-height:1.7;margin-bottom:18px;max-width:520px">The 6 best mystery shows streaming now — plus hidden gems, a full BritBox vs Acorn TV breakdown, where to watch every show for free, and answers to every question British TV fans ask.</div>
+    <button class="btn-red" onclick="go('seo',5)" style="font-size:10px">Read the Complete Guide →</button>
   </div>
 </div>
-<!-- FEATURED SHOW OF THE WEEK -->
+
 <div style="background:linear-gradient(135deg,#2a1a0e 0%,#3d2410 60%,#1a2135 100%);border-left:4px solid #c9a96e;border-bottom:1px solid #3d4a60;padding:32px 40px;display:flex;gap:32px;align-items:center">
-  <img src="britbox_other bennetsister.webp" alt="The Other Bennet Sister" style="width:220px;border-radius:4px;flex-shrink:0">
+  <img src="britbox_other bennetsister.webp" alt="The Other Bennet Sister — new on BritBox" style="width:220px;border-radius:4px;flex-shrink:0">
   <div>
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px">⭐ Featured This Week</div>
     <div style="font-family:'Playfair Display',serif;font-size:28px;color:#f5e8d0;margin-bottom:10px">The Other Bennet Sister</div>
-    <div style="font-family:'Crimson Text',serif;font-size:17px;color:#c8d0e0;line-height:1.6;margin-bottom:16px">This week we're spotlighting The Other Bennet Sister — the BBC's fresh reimagining of Pride & Prejudice told from Mary Bennet's perspective. Rated 92% on Rotten Tomatoes, it's cosy, witty and perfect for period drama fans. New episodes drop every Wednesday on BritBox in the US.</div>
+    <div style="font-family:'Crimson Text',serif;font-size:17px;color:#c8d0e0;line-height:1.6;margin-bottom:16px">This week we're spotlighting The Other Bennet Sister — the BBC's fresh reimagining of Pride &amp; Prejudice told from Mary Bennet's perspective. Rated 92% on Rotten Tomatoes, it's cosy, witty and perfect for period drama fans. New episodes drop every Wednesday on BritBox in the US.</div>
     <span style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;background:#8b1a2e;color:#f5e8d0;padding:6px 14px;border-radius:2px">BritBox</span>
     <span style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#9090a8;margin-left:12px">Period Drama</span>
     <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#6070a0;margin-top:12px">Photo: James Pardon. Courtesy of BritBox.</div>
   </div>
 </div>
-<!-- START HERE SECTION -->
+
 <div style="background:#232a3a;border-bottom:1px solid #3d4a60;padding:32px 40px">
   <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px">📺 New to British TV?</div>
   <div style="font-family:'Playfair Display',serif;font-size:22px;color:#e8d0a0;margin-bottom:16px">Start With These 3 Shows</div>
@@ -710,35 +736,38 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
     </div>
   </div>
 </div>
-<!-- TRENDING PREVIEW STRIP on homepage -->
+
 <div style="background:#232a3a;border-bottom:1px solid #3d4a60;padding:24px 40px">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:4px">This week</div>
       <div style="font-family:'Playfair Display',serif;font-size:20px;color:#c9a96e">Trending Now</div>
     </div>
-    <button class="btn-ghost" onclick="go('trending',1)" style="font-size:9px;padding:8px 16px;border-color:#c9a96e;color:#c9a96e">See full list &rarr;</button>
+    <button class="btn-ghost" onclick="go('trending',1)" style="font-size:9px;padding:8px 16px;border-color:#c9a96e;color:#c9a96e">See full list →</button>
   </div>
   <div id="home-trending" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px"></div>
 </div>
 
-
-
-<!-- NEWSLETTER ANCHOR -->
 <div id="nl-anchor" style="background:#1a2135;border-bottom:2px solid #8b1a2e;padding:32px 40px;display:flex;align-items:center;gap:40px">
   <div style="flex:1">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:8px">Free &mdash; every Sunday</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:8px">Free — every Sunday</div>
     <div style="font-family:'Playfair Display',serif;font-size:22px;color:#e8d0a0;margin-bottom:6px">The Sunday British TV Picks</div>
     <div style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;font-style:italic">5 shows worth your time this week. Trusted by 4,000+ fans. No spam, ever.</div>
   </div>
   <div style="flex-shrink:0;min-width:280px">
-    <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank" style="padding:0">
+    <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0"
+          method="post"
+          target="_blank"
+          style="padding:0">
       <div style="display:flex;gap:8px">
-        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:11px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;outline:none">
-        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address"
+               style="background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:11px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;outline:none">
+        <div aria-hidden="true" style="position:absolute;left:-5000px">
+          <input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value="">
+        </div>
         <button type="submit" style="background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;white-space:nowrap">Subscribe</button>
       </div>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#8898b8;margin-top:8px;letter-spacing:0.5px">Weekly &nbsp;&middot;&nbsp; No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
+      <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#8898b8;margin-top:8px;letter-spacing:0.5px">Weekly &nbsp;·&nbsp; No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
     </form>
   </div>
 </div>
