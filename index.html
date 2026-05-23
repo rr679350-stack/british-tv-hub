@@ -740,6 +740,124 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 
 
 
+     <!-- ═══════════════════════════════════════════════════
+     WHAT TO WATCH TONIGHT
+     TO UPDATE EACH NIGHT: edit the "tonight" object below.
+     Only touch the data — never the HTML below it.
+     ═══════════════════════════════════════════════════ -->
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:32px 40px">
+
+  <script>
+    const tonight = {
+      title:       "The Count of Monte Cristo",
+      network:     "PBS Masterpiece",
+      episodes:    "8 episodes",
+      year:        "2026",
+      mood:        "Gripping",
+      complexity:  "Medium",
+      genre:       "Period drama",
+      extraTags:   ["Revenge thriller", "Filmed on location"],
+      desc:        "A young French sailor is falsely accused of treason and imprisoned for years in a grim island fortress. When he finally escapes — and discovers a vast hidden treasure — he reinvents himself as the wealthy, mysterious Count of Monte Cristo and sets a meticulous revenge in motion. Lushly filmed across France, Italy, and Malta. Gripping from the first episode.",
+      cast: [
+        { role: "Edmond Dantès", name: "Sam Claflin" },
+        { role: "Abbé Faria",    name: "Jeremy Irons" },
+      ],
+      director:     "Bille August",
+      directorNote: "two-time Palme d'Or & Oscar winner",
+      pollQuestion: "What draws you most to The Count of Monte Cristo?",
+      pollOptions:  ["The revenge story", "The period setting", "The cast", "The classic tale"],
+      pollResults:  [42, 21, 15, 22],
+      watchUrl:     "https://www.pbs.org/wgbh/masterpiece/shows/count-of-monte-cristo/",
+      watchLabel:   "Watch on PBS Masterpiece",
+      badge:        "Now airing on PBS",
+    };
+  </script>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9090a8">What to watch tonight</div>
+    <div id="nt-badge" style="font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8b1a2e;border:0.5px solid rgba(139,38,53,0.5);padding:3px 9px;border-radius:2px"></div>
+  </div>
+
+  <div style="background:#232a3a;border:0.5px solid #3d4a60;border-left:3px solid #c9a96e;border-radius:4px;padding:24px 28px">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#9090a8;margin-bottom:8px">Tonight's pick</div>
+    <div id="nt-title" style="font-family:'Playfair Display',serif;font-size:26px;font-style:italic;color:#c9a96e;margin-bottom:4px"></div>
+    <div id="nt-meta"  style="font-family:'Raleway',sans-serif;font-size:12px;color:#6070a0;margin-bottom:14px"></div>
+    <div id="nt-desc"  style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.7;margin-bottom:16px"></div>
+    <div id="nt-tags"  style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px"></div>
+    <div id="nt-cast"  style="font-family:'Raleway',sans-serif;font-size:12px;color:#7080a0;line-height:1.9;padding-top:12px;border-top:0.5px solid #3d4a60;margin-bottom:16px"></div>
+    <div style="background:#1a2135;border:0.5px solid #3d4a60;border-radius:3px;padding:16px 20px">
+      <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#9090a8;margin-bottom:8px">Tonight's poll</div>
+      <div id="nt-poll-q" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;margin-bottom:12px;line-height:1.4"></div>
+      <div id="nt-poll-opts" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px"></div>
+      <div id="nt-poll-results" style="display:none;margin-top:12px"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:16px;border-top:0.5px solid #3d4a60;margin-top:16px">
+      <a id="nt-watch-btn" href="#" target="_blank" rel="noopener" style="background:#8b1a2e;color:#f5e8d0;border:none;padding:10px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px"></a>
+      <span id="nt-watch-where" style="font-family:'Raleway',sans-serif;font-size:11px;color:#6070a0"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var t = tonight;
+  var voted = false;
+  var badge = document.getElementById('nt-badge');
+  if(t.badge){ badge.textContent = t.badge; } else { badge.style.display = 'none'; }
+  document.getElementById('nt-title').textContent = t.title;
+  document.getElementById('nt-meta').textContent  = [t.network, t.episodes, t.year].filter(Boolean).join(' · ');
+  document.getElementById('nt-desc').textContent  = t.desc;
+  var allTags = [t.mood, 'Complexity: ' + t.complexity, t.genre].concat(t.extraTags || []);
+  document.getElementById('nt-tags').innerHTML = allTags.map(function(tag){
+    return '<span style="font-family:\'Raleway\',sans-serif;font-size:11px;color:#9090a8;border:0.5px solid #3d4a60;padding:3px 10px;border-radius:99px">' + tag + '</span>';
+  }).join('');
+  var castLines = t.cast.map(function(c){ return 'Starring <span style="color:#c9a96e">' + c.name + '</span> as ' + c.role; });
+  if(t.director){ castLines.push('Directed by <span style="color:#c9a96e">' + t.director + '</span>' + (t.directorNote ? ' — ' + t.directorNote : '')); }
+  document.getElementById('nt-cast').innerHTML = castLines.join('<br>');
+  document.getElementById('nt-poll-q').textContent = t.pollQuestion;
+  document.getElementById('nt-poll-opts').innerHTML = t.pollOptions.map(function(opt, i){
+    return '<button onclick="ntVote(' + i + ')" id="nt-opt-' + i + '" style="flex:1;min-width:120px;background:#232a3a;border:0.5px solid #3d4a60;color:#a8a0b8;font-family:\'Raleway\',sans-serif;font-size:12px;padding:10px 12px;border-radius:3px;cursor:pointer;text-align:center">' + opt + '</button>';
+  }).join('');
+  document.getElementById('nt-watch-btn').href        = t.watchUrl;
+  document.getElementById('nt-watch-btn').textContent = t.watchLabel + ' →';
+  document.getElementById('nt-watch-where').textContent = t.network || '';
+  window.ntVote = function(chosen){
+    if(voted) return;
+    voted = true;
+    t.pollOptions.forEach(function(_, i){
+      var btn = document.getElementById('nt-opt-' + i);
+      btn.disabled = true;
+      if(i === chosen){ btn.style.borderColor = '#c9a96e'; btn.style.color = '#c9a96e'; }
+    });
+    var total = t.pollResults.reduce(function(a,b){ return a+b; }, 0);
+    var maxPct = Math.max.apply(null, t.pollResults.map(function(v){ return Math.round(v/total*100); }));
+    var res = document.getElementById('nt-poll-results');
+    res.innerHTML = t.pollOptions.map(function(opt, i){
+      var pct = Math.round(t.pollResults[i] / total * 100);
+      var isWin = pct === maxPct;
+      var col = isWin ? '#c9a96e' : '#7080a0';
+      return '<div style="margin-bottom:8px">'
+        + '<div style="display:flex;justify-content:space-between;margin-bottom:3px">'
+        + '<span style="font-family:\'Raleway\',sans-serif;font-size:12px;color:' + col + '">' + opt + '</span>'
+        + '<span style="font-family:\'Raleway\',sans-serif;font-size:12px;color:' + col + '">' + pct + '%</span>'
+        + '</div>'
+        + '<div style="height:3px;background:#2a3550;border-radius:99px;overflow:hidden">'
+        + '<div id="nt-bar-' + i + '" style="height:100%;width:0;background:' + (isWin ? '#c9a96e' : '#4d5a70') + ';border-radius:99px;transition:width 0.5s ease"></div>'
+        + '</div></div>';
+    }).join('');
+    res.style.display = 'block';
+    setTimeout(function(){
+      t.pollOptions.forEach(function(_, i){
+        var pct = Math.round(t.pollResults[i] / total * 100);
+        var bar = document.getElementById('nt-bar-' + i);
+        if(bar) bar.style.width = pct + '%';
+      });
+    }, 50);
+  };
+})();
+</script>
+<!-- ═══ END WHAT TO WATCH TONIGHT ═══ -->
 <div id="nl-anchor" style="background:#1a2135;border-bottom:2px solid #8b1a2e;padding:32px 40px;display:flex;align-items:center;gap:40px">
   <div style="flex:1">
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:8px">Free — every Sunday</div>
