@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tonight's Pick — British TV Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     NIGHTLY PICK CARD — britishtvhub.com
+     
+     HOW TO UPDATE EACH NIGHT:
+     Edit the "tonight" object below (line ~60).
+     Change the title, description, mood, etc.
+     Save the file. That's it — the card updates automatically.
+     ============================================ */
+
+  :root {
+    --navy:        #1a2032;
+    --navy-dark:   #131826;
+    --navy-card:   #1e2840;
+    --navy-border: #2a3550;
+    --gold:        #c9a96e;
+    --gold-dim:    #9a7a4a;
+    --gold-faint:  rgba(201,169,110,0.12);
+    --crimson:     #8b2635;
+    --text:        #e4d9c4;
+    --text-muted:  #a89880;
+    --text-dim:    #6a7a8a;
+    --radius:      4px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--navy);
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    padding: 2rem 1rem;
+    min-height: 100vh;
+  }
+
+  .nightly-wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* Section header */
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .live-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    border: 0.5px solid rgba(139,38,53,0.5);
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+
+  /* Main card */
+  .pick-card {
+    background: var(--navy-card);
+    border: 0.5px solid var(--navy-border);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .card-body { padding: 1.5rem; }
+
+  /* Show title block */
+  .show-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+  }
+  .show-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    color: var(--gold);
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .show-meta-line {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+  }
+
+  /* Description */
+  .show-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  /* Tags */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .tag {
+    font-size: 11px;
+    color: var(--text-dim);
+    border: 0.5px solid var(--navy-border);
+    padding: 3px 10px;
+    border-radius: 99px;
+  }
+
+  /* Cast */
+  .cast-block {
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    padding-top: 12px;
+    border-top: 0.5px solid var(--navy-border);
+    margin-bottom: 16px;
+  }
+  .cast-block strong { color: var(--gold-dim); font-weight: 400; }
+
+  /* Divider */
+  .divider {
+    height: 0.5px;
+    background: var(--navy-border);
+    margin: 0 0 16px;
+  }
+
+  /* Poll */
+  .poll-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  .poll-question {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .poll-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .poll-btn {
+    flex: 1;
+    min-width: 120px;
+    background: var(--navy-dark);
+    border: 0.5px solid var(--navy-border);
+    color: var(--text-muted);
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+  .poll-btn:hover:not(:disabled) {
+    border-color: rgba(201,169,110,0.4);
+    color: var(--gold);
+  }
+  .poll-btn.selected {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: var(--gold-faint);
+  }
+  .poll-btn:disabled { cursor: default; }
+
+  /* Results */
+  .results { display: none; }
+  .result-row { margin-bottom: 10px; }
+  .result-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .result-label { font-size: 12px; color: var(--text-dim); }
+  .result-label.winner { color: var(--gold); }
+  .result-pct { font-size: 12px; color: var(--text-dim); }
+  .result-pct.winner { color: var(--gold); }
+  .bar-track {
+    height: 3px;
+    background: var(--navy-border);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    background: var(--navy-border);
+    border-radius: 99px;
+    width: 0;
+    transition: width 0.5s ease, background 0.3s;
+  }
+  .bar-fill.winner { background: var(--gold); }
+
+  /* Watch CTA */
+  .watch-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    border-top: 0.5px solid var(--navy-border);
+  }
+  .watch-btn {
+    background: var(--crimson);
+    color: var(--text);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-radius: var(--radius);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.15s;
+  }
+  .watch-btn:hover { opacity: 0.88; }
+  .watch-where {
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+
+  /* Responsive */
+  @media (max-width: 500px) {
+    .show-title { font-size: 22px; }
+    .poll-btn { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nightly-wrap">
+  <div class="section-header">
+    <span class="section-label">What to watch tonight</span>
+    <span class="live-badge" id="live-badge">Now airing</span>
+  </div>
+  <div class="pick-card">
+    <div class="card-body">
+      <p class="show-eyebrow">Tonight's pick</p>
+      <p class="show-title" id="card-title"></p>
+      <p class="show-meta-line" id="card-meta"></p>
+      <p class="show-desc" id="card-desc"></p>
+      <div class="tags" id="card-tags"></div>
+      <div class="cast-block" id="card-cast"></div>
+      <div class="divider"></div>
+      <p class="poll-eyebrow">Tonight's poll</p>
+      <p class="poll-question" id="poll-q"></p>
+      <div class="poll-options" id="poll-options"></div>
+      <div class="results" id="results"></div>
+      <div class="watch-row">
+        <a class="watch-btn" id="watch-btn" href="#" target="_blank">Watch now →</a>
+        <span class="watch-where" id="watch-where"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* ============================================
+     EDIT THIS OBJECT EACH NIGHT
+     ============================================ */
+  const tonight = {
+
+    title:       "The Count of Monte Cristo",
+
+    network:     "PBS Masterpiece",
+    episodes:    "8 episodes",
+    year:        "2026",
+
+    mood:        "Gripping",
+    complexity:  "Medium",
+    genre:       "Period drama",
+    extraTags:   ["Revenge thriller", "Filmed on location"],
+
+    desc: "A young French sailor is falsely accused of treason and imprisoned for years in a grim island fortress. When he finally escapes — and discovers a vast hidden treasure — he reinvents himself as the wealthy, mysterious Count of Monte Cristo and sets a meticulous revenge in motion. Lushly filmed across France, Italy, and Malta. Gripping from the first episode.",
+
+    cast: [
+      { role: "Edmond Dantès",  name: "Sam Claflin" },
+      { role: "Abbé Faria",     name: "Jeremy Irons" },
+    ],
+    director: "Bille August",
+    directorNote: "two-time Palme d'Or & Oscar winner",
+
+    pollQuestion: "What draws you most to The Count of Monte Cristo?",
+    pollOptions:  ["The revenge story", "The period setting", "The cast", "The classic tale"],
+    pollResults:  [42, 21, 15, 22],
+
+    watchUrl:    "https://www.pbs.org/wgbh/masterpiece/shows/count-of-monte-cristo/",
+    watchLabel:  "Watch on PBS Masterpiece",
+
+    badge:       "Now airing on PBS",
+
+  };
+  /* ============================================
+     STOP EDITING HERE — design code below
+     ============================================ */
+
+  function render() {
+    document.getElementById('card-title').textContent = tonight.title;
+
+    document.getElementById('card-meta').textContent =
+      [tonight.network, tonight.episodes, tonight.year].filter(Boolean).join(' · ');
+
+    document.getElementById('card-desc').textContent = tonight.desc;
+
+    const tagsEl = document.getElementById('card-tags');
+    const allTags = [tonight.mood, 'Complexity: ' + tonight.complexity, tonight.genre, ...(tonight.extraTags || [])];
+    tagsEl.innerHTML = allTags.map(t => `<span class="tag">${t}</span>`).join('');
+
+    const castEl = document.getElementById('card-cast');
+    let castHTML = tonight.cast.map(c =>
+      `Starring <strong>${c.name}</strong> as ${c.role}`
+    ).join('<br>');
+    if (tonight.director) {
+      castHTML += `<br>Directed by <strong>${tonight.director}</strong>${tonight.directorNote ? ' — ' + tonight.directorNote : ''}`;
+    }
+    castEl.innerHTML = castHTML;
+
+    document.getElementById('poll-q').textContent = tonight.pollQuestion;
+
+    const optionsEl = document.getElementById('poll-options');
+    optionsEl.innerHTML = tonight.pollOptions.map((opt, i) =>
+      `<button class="poll-btn" onclick="vote(${i})">${opt}</button>`
+    ).join('');
+
+    document.getElementById('watch-btn').href = tonight.watchUrl;
+    document.getElementById('watch-btn').textContent = tonight.watchLabel + ' →';
+    document.getElementById('watch-where').textContent = tonight.network || '';
+
+    if (tonight.badge) {
+      document.getElementById('live-badge').textContent = tonight.badge;
+      document.getElementById('live-badge').style.display = '';
+    } else {
+      document.getElementById('live-badge').style.display = 'none';
+    }
+  }
+
+  let voted = false;
+
+  function vote(chosen) {
+    if (voted) return;
+    voted = true;
+
+    document.querySelectorAll('.poll-btn').forEach((btn, i) => {
+      btn.disabled = true;
+      if (i === chosen) btn.classList.add('selected');
+    });
+
+    const total = tonight.pollResults.reduce((a, b) => a + b, 0);
+    const resultsEl = document.getElementById('results');
+    const maxPct = Math.max(...tonight.pollResults.map(v => Math.round(v / total * 100)));
+
+    resultsEl.innerHTML = tonight.pollOptions.map((opt, i) => {
+      const pct = Math.round(tonight.pollResults[i] / total * 100);
+      const isWinner = pct === maxPct;
+      return `
+        <div class="result-row">
+          <div class="result-top">
+            <span class="result-label ${isWinner ? 'winner' : ''}">${opt}</span>
+            <span class="result-pct ${isWinner ? 'winner' : ''}">${pct}%</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill ${isWinner ? 'winner' : ''}" id="bar-${i}"></div>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    resultsEl.style.display = 'block';
+
+    setTimeout(() => {
+      tonight.pollOptions.forEach((_, i) => {
+        const pct = Math.round(tonight.pollResults[i] / total * 100);
+        const bar = document.getElementById('bar-' + i);
+        if (bar) bar.style.width = pct + '%';
+      });
+    }, 50);
+  }
+
+  render();
+</script>
+</body>
+</html>
