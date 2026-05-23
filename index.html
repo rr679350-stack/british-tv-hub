@@ -698,7 +698,23 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   </a>
 </div>
 
-<div style="background:linear-gradient(135deg,#1e2433 0%,#2c3345 60%,#1a2135 100%);border-bottom:1px solid #3d4a60;padding:36px 40px;display:flex;align-items:center;gap:40px">
+  <!-- TONIGHT'S PICK BANNER -->
+<div style="background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+  <div>
+    <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:6px">Updated every night</div>
+    <div style="font-family:'Playfair Display',serif;font-size:20px;color:#e8d0a0">Tonight's Pick — <span id="banner-title" style="color:#c9a96e;font-style:italic">loading...</span></div>
+  </div>
+  <a href="/nightly-pick.html" style="background:#8b1a2e;color:#f5e8d0;border:none;padding:11px 24px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;white-space:nowrap;border-radius:2px">See Tonight's Pick →</a>
+</div>
+<script>
+(function(){
+  var PICKS=['The Count of Monte Cristo','Vera','Broadchurch','Midsomer Murders','Happy Valley','Endeavour','Doc Martin','Unforgotten','Shetland','The Missing','Grantchester','Line of Duty','Hinterland','Agatha Raisin','Marcella'];
+  var days=Math.floor((Date.now()-new Date('2024-01-01'))/86400000);
+  document.getElementById('banner-title').textContent=PICKS[days%PICKS.length];
+})();
+</script>
+<!-- END TONIGHT'S PICK BANNER -->
+     <div style="background:linear-gradient(135deg,#1e2433 0%,#2c3345 60%,#1a2135 100%);border-bottom:1px solid #3d4a60;padding:36px 40px;display:flex;align-items:center;gap:40px">
   <div style="flex:1">
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:10px">★ Featured — Updated May 2026</div>
     <div style="font-family:'Playfair Display',serif;font-size:28px;color:#e8d0a0;line-height:1.25;margin-bottom:10px">The Complete British TV<br>Mystery &amp; Drama Guide</div>
@@ -743,22 +759,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 
 
 
-    <!-- TONIGHT'S PICK BANNER -->
-<div style="background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
-  <div>
-    <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:6px">Updated every night</div>
-    <div style="font-family:'Playfair Display',serif;font-size:20px;color:#e8d0a0">Tonight's Pick — <span id="banner-title" style="color:#c9a96e;font-style:italic">loading...</span></div>
-  </div>
-  <a href="/nightly-pick.html" style="background:#8b1a2e;color:#f5e8d0;border:none;padding:11px 24px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;white-space:nowrap;border-radius:2px">See Tonight's Pick →</a>
-</div>
-<script>
-(function(){
-  var PICKS=['The Count of Monte Cristo','Vera','Broadchurch','Midsomer Murders','Happy Valley','Endeavour','Doc Martin','Unforgotten','Shetland','The Missing','Grantchester','Line of Duty','Hinterland','Agatha Raisin','Marcella'];
-  var days=Math.floor((Date.now()-new Date('2024-01-01'))/86400000);
-  document.getElementById('banner-title').textContent=PICKS[days%PICKS.length];
-})();
-</script>
-<!-- END TONIGHT'S PICK BANNER -->
+  
 <div id="nl-anchor" style="background:#1a2135;border-bottom:2px solid #8b1a2e;padding:32px 40px;display:flex;align-items:center;gap:40px">
   <div style="flex:1">
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:8px">Free — every Sunday</div>
