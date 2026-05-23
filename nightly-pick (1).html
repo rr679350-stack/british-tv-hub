@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tonight's Pick — British TV Hub</title>
+<meta name="description" content="Tonight's hand-picked British TV show — with mood tags, streaming info, and a community poll. Updated every night.">
+<link rel="canonical" href="https://www.britishtvhub.com/nightly-pick.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital@0;1&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
+  --gold:#c9a96e;--gold2:#dab870;
+  --red:#8b1a2e;--red2:#a01f36;
+  --text:#e8dfc8;--muted:#9090a8;
+  --border:#3d4a60;--border2:#4d5a70;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;min-height:100vh}
+
+/* NAV — exact match to index.html */
+nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
+.nav-brand{padding:16px 0}
+.nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
+.nav-sub{font-family:'Raleway',sans-serif;font-size:9px;color:#9090a8;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic}
+.nav-links{display:flex;align-items:center}
+.nlink{padding:20px 16px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
+.nlink:hover{color:#ffffff}
+.nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
+.nlink-guide{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:2px solid transparent !important;margin:12px 0 12px 8px;padding:8px 18px !important;font-size:10px !important;letter-spacing:1.5px}
+.nlink-guide:hover{background:#a01f36 !important}
+.nlink-nl{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:12px 0 12px 4px;padding:8px 14px !important;font-size:10px !important;letter-spacing:1.5px}
+.nlink-nl:hover{border-color:#fff !important;color:#fff !important}
+
+/* PAGE WRAP */
+.page-wrap{max-width:780px;margin:0 auto;padding:48px 24px 64px}
+
+/* PAGE HERO */
+.page-hero{margin-bottom:36px;border-bottom:1px solid #3d4a60;padding-bottom:28px}
+.page-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:12px}
+.page-title{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#e8d0a0;margin-bottom:8px}
+.page-sub{font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;font-style:italic;line-height:1.6}
+
+/* CARD */
+.pick-card{background:#1e2433;border:0.5px solid #3d4a60;border-left:3px solid #c9a96e;border-radius:4px;padding:28px 32px;margin-bottom:2px}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.card-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#9090a8}
+.live-badge{font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8b1a2e;border:0.5px solid rgba(139,38,53,0.5);padding:3px 9px;border-radius:2px}
+.show-title{font-family:'Playfair Display',serif;font-size:32px;font-style:italic;color:#c9a96e;margin-bottom:4px;line-height:1.2}
+.show-meta{font-family:'Raleway',sans-serif;font-size:12px;color:#6070a0;margin-bottom:16px}
+.show-desc{font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;line-height:1.7;margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tag{font-family:'Raleway',sans-serif;font-size:11px;color:#9090a8;border:0.5px solid #3d4a60;padding:3px 10px;border-radius:99px}
+.cast-block{font-family:'Raleway',sans-serif;font-size:12px;color:#7080a0;line-height:1.9;padding-top:14px;border-top:0.5px solid #3d4a60;margin-bottom:18px}
+.cast-block span{color:#c9a96e}
+
+/* POLL */
+.poll-box{background:#232a3a;border:0.5px solid #3d4a60;border-radius:3px;padding:20px 24px;margin-bottom:18px}
+.poll-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#9090a8;margin-bottom:8px}
+.poll-q{font-family:'Playfair Display',serif;font-size:17px;color:#e8dfc8;margin-bottom:14px;line-height:1.4}
+.poll-opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+.poll-btn{flex:1;min-width:140px;background:#1e2433;border:0.5px solid #3d4a60;color:#a8a0b8;font-family:'Raleway',sans-serif;font-size:12px;padding:11px 14px;border-radius:3px;cursor:pointer;text-align:center;transition:border-color 0.2s,color 0.2s}
+.poll-btn:hover:not(:disabled){border-color:rgba(201,169,110,0.4);color:#c9a96e}
+.poll-btn.selected{border-color:#c9a96e;color:#c9a96e;background:rgba(201,169,110,0.08)}
+.poll-btn:disabled{cursor:default}
+.poll-results{display:none;margin-top:14px}
+.result-row{margin-bottom:10px}
+.result-top{display:flex;justify-content:space-between;margin-bottom:4px}
+.result-label{font-family:'Raleway',sans-serif;font-size:12px;color:#7080a0}
+.result-label.win{color:#c9a96e}
+.result-pct{font-family:'Raleway',sans-serif;font-size:12px;color:#7080a0}
+.result-pct.win{color:#c9a96e}
+.bar-track{height:3px;background:#2a3550;border-radius:99px;overflow:hidden}
+.bar-fill{height:100%;background:#4d5a70;border-radius:99px;width:0;transition:width 0.5s ease}
+.bar-fill.win{background:#c9a96e}
+
+/* WATCH CTA */
+.watch-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:18px;border-top:0.5px solid #3d4a60}
+.watch-btn{background:#8b1a2e;color:#f5e8d0;border:none;padding:11px 24px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px;cursor:pointer;transition:background 0.2s}
+.watch-btn:hover{background:#a01f36}
+.watch-where{font-family:'Raleway',sans-serif;font-size:12px;color:#6070a0}
+
+/* BACK LINK */
+.back-link{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#9090a8;text-decoration:none;margin-bottom:28px}
+.back-link:hover{color:#c9a96e}
+
+/* EMAIL BLOCK */
+.email-block{background:#1a2135;border:1px solid #3d4a60;border-left:3px solid #8b1a2e;padding:24px 28px;margin-top:24px}
+.email-title{font-family:'Playfair Display',serif;font-size:20px;color:#c9a96e;margin-bottom:6px}
+.email-sub{font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;font-style:italic;margin-bottom:16px}
+.email-row{display:flex;gap:8px;flex-wrap:wrap}
+.email-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;min-width:160px;outline:none}
+.email-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:10px 18px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
+.email-btn:hover{background:#a01f36}
+.email-note{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px}
+
+footer{border-top:1px solid #3d4a60;padding:28px 32px;text-align:center;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#9090b8;background:#1e2433}
+
+@media(max-width:700px){
+  nav{padding:0 12px;flex-wrap:wrap}
+  .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
+  .nlink{padding:14px 10px;font-size:9px}
+  .page-wrap{padding:32px 16px 48px}
+  .pick-card{padding:20px 18px}
+  .show-title{font-size:24px}
+  .poll-btn{min-width:100%}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="nav-brand">
+    <div class="nav-title">British TV Dramas &amp; Mysteries</div>
+    <div class="nav-sub">Classics &amp; New Favorites</div>
+  </div>
+  <div class="nav-links">
+    <a class="nlink" href="/">Home</a>
+    <a class="nlink" href="/shows.html">Shows</a>
+    <a class="nlink" href="/streaming.html">Streaming</a>
+    <a class="nlink" href="/faq.html">FAQ</a>
+    <a class="nlink on" href="/nightly-pick.html">Tonight's Pick</a>
+    <a class="nlink" href="/#nl-anchor">Sunday Picks</a>
+    <a class="nlink nlink-guide" href="/shows.html">&#9733; Best Of Guide</a>
+    <a class="nlink nlink-nl" href="/#nl-anchor">Sunday Picks &rarr;</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <a class="back-link" href="/">← Back to British TV Hub</a>
+
+  <div class="page-hero">
+    <div class="page-eyebrow">Updated nightly</div>
+    <h1 class="page-title">What to Watch Tonight</h1>
+    <p class="page-sub">One hand-picked British mystery or drama each evening — with mood, complexity, streaming info, and a community poll.</p>
+  </div>
+
+  <!-- PICK CARD -->
+  <div class="pick-card">
+    <div class="card-top">
+      <span class="card-eyebrow">Tonight's pick</span>
+      <span class="live-badge" id="live-badge"></span>
+    </div>
+    <h2 class="show-title" id="card-title"></h2>
+    <div class="show-meta"  id="card-meta"></div>
+    <p  class="show-desc"  id="card-desc"></p>
+    <div class="tags"       id="card-tags"></div>
+    <div class="cast-block" id="card-cast"></div>
+
+    <div class="poll-box">
+      <div class="poll-eyebrow">Tonight's poll</div>
+      <p class="poll-q" id="poll-q"></p>
+      <div class="poll-opts"    id="poll-opts"></div>
+      <div class="poll-results" id="poll-results"></div>
+    </div>
+
+    <div class="watch-row">
+      <a class="watch-btn" id="watch-btn" href="#" target="_blank" rel="noopener"></a>
+      <span class="watch-where" id="watch-where"></span>
+    </div>
+  </div>
+
+  <!-- EMAIL SIGNUP -->
+  <div class="email-block">
+    <div class="email-title">Get tonight's pick in your inbox</div>
+    <div class="email-sub">Join 4,000+ British TV fans who get 5 hand-picked shows every Sunday morning. Free, forever.</div>
+    <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank" style="padding:0">
+      <div class="email-row">
+        <input type="email" name="EMAIL" class="email-input" placeholder="your@email.com" required aria-label="Your email address">
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" class="email-btn">Get my Sunday picks →</button>
+      </div>
+    </form>
+    <div class="email-note">Trusted by 4,000+ British TV fans &nbsp;·&nbsp; No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
+  </div>
+
+</div>
+
+<footer>
+  <div style="margin-bottom:12px">
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="color:#c9a96e;text-decoration:none;margin:0 12px">Facebook Community</a>
+    <span style="color:#3d4a60">·</span>
+    <a href="mailto:rr679350@gmail.com" style="color:#c9a96e;text-decoration:none;margin:0 12px">Contact</a>
+  </div>
+  British TV Dramas &amp; Mysteries &bull; Classics &amp; New Favorites &bull; &copy; 2026
+</footer>
+
+<script>
+  /* ============================================
+     EDIT THIS OBJECT EACH NIGHT ONLY
+     ============================================ */
+  const tonight = {
+    title:        "The Count of Monte Cristo",
+    network:      "PBS Masterpiece",
+    episodes:     "8 episodes",
+    year:         "2026",
+    mood:         "Gripping",
+    complexity:   "Medium",
+    genre:        "Period drama",
+    extraTags:    ["Revenge thriller", "Filmed on location"],
+    desc:         "A young French sailor is falsely accused of treason and imprisoned for years in a grim island fortress. When he finally escapes — and discovers a vast hidden treasure — he reinvents himself as the wealthy, mysterious Count of Monte Cristo and sets a meticulous revenge in motion. Lushly filmed across France, Italy, and Malta. Gripping from the first episode.",
+    cast: [
+      { role: "Edmond Dantès", name: "Sam Claflin" },
+      { role: "Abbé Faria",    name: "Jeremy Irons" },
+    ],
+    director:     "Bille August",
+    directorNote: "two-time Palme d'Or & Oscar winner",
+    pollQuestion: "What draws you most to The Count of Monte Cristo?",
+    pollOptions:  ["The revenge story", "The period setting", "The cast", "The classic tale"],
+    pollResults:  [42, 21, 15, 22],
+    watchUrl:     "https://www.pbs.org/wgbh/masterpiece/shows/count-of-monte-cristo/",
+    watchLabel:   "Watch on PBS Masterpiece",
+    badge:        "Now airing on PBS",
+  };
+  /* ============================================
+     STOP EDITING — render code below
+     ============================================ */
+
+  function render() {
+    const t = tonight;
+    const badge = document.getElementById('live-badge');
+    if (t.badge) { badge.textContent = t.badge; } else { badge.style.display = 'none'; }
+
+    document.getElementById('card-title').textContent = t.title;
+    document.getElementById('card-meta').textContent  = [t.network, t.episodes, t.year].filter(Boolean).join(' · ');
+    document.getElementById('card-desc').textContent  = t.desc;
+
+    const allTags = [t.mood, 'Complexity: ' + t.complexity, t.genre, ...(t.extraTags || [])];
+    document.getElementById('card-tags').innerHTML = allTags.map(tag =>
+      `<span class="tag">${tag}</span>`).join('');
+
+    let castHTML = t.cast.map(c => `Starring <span>${c.name}</span> as ${c.role}`).join('<br>');
+    if (t.director) castHTML += `<br>Directed by <span>${t.director}</span>${t.directorNote ? ' — ' + t.directorNote : ''}`;
+    document.getElementById('card-cast').innerHTML = castHTML;
+
+    document.getElementById('poll-q').textContent = t.pollQuestion;
+    document.getElementById('poll-opts').innerHTML = t.pollOptions.map((opt, i) =>
+      `<button class="poll-btn" onclick="vote(${i})">${opt}</button>`).join('');
+
+    document.getElementById('watch-btn').href        = t.watchUrl;
+    document.getElementById('watch-btn').textContent = t.watchLabel + ' →';
+    document.getElementById('watch-where').textContent = t.network || '';
+
+    document.title = 'Tonight: ' + t.title + ' — British TV Hub';
+  }
+
+  let voted = false;
+  function vote(chosen) {
+    if (voted) return;
+    voted = true;
+    document.querySelectorAll('.poll-btn').forEach((btn, i) => {
+      btn.disabled = true;
+      if (i === chosen) btn.classList.add('selected');
+    });
+    const total = tonight.pollResults.reduce((a, b) => a + b, 0);
+    const maxPct = Math.max(...tonight.pollResults.map(v => Math.round(v / total * 100)));
+    const el = document.getElementById('poll-results');
+    el.innerHTML = tonight.pollOptions.map((opt, i) => {
+      const pct = Math.round(tonight.pollResults[i] / total * 100);
+      const win = pct === maxPct;
+      return `<div class="result-row">
+        <div class="result-top">
+          <span class="result-label ${win ? 'win' : ''}">${opt}</span>
+          <span class="result-pct ${win ? 'win' : ''}">${pct}%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill ${win ? 'win' : ''}" id="bar-${i}"></div></div>
+      </div>`;
+    }).join('');
+    el.style.display = 'block';
+    setTimeout(() => {
+      tonight.pollOptions.forEach((_, i) => {
+        const pct = Math.round(tonight.pollResults[i] / total * 100);
+        const bar = document.getElementById('bar-' + i);
+        if (bar) bar.style.width = pct + '%';
+      });
+    }, 50);
+  }
+
+  render();
+</script>
+</body>
+</html>
