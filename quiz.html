@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1L8CVNKS6');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match Me a Mystery — Find Your Perfect British TV Show | British TV Hub</title>
+<meta name="description" content="Answer 3 quick questions and we'll match you to your perfect British mystery or drama. Inspector Morse, Vera, Happy Valley, Hinterland and more — find your next obsession.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.britishtvhub.com/quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.britishtvhub.com/quiz.html">
+<meta property="og:title" content="Match Me a Mystery — Find Your Perfect British TV Show">
+<meta property="og:description" content="Answer 3 quick questions and we'll match you to your perfect British mystery or drama.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
+<meta property="og:site_name" content="British TV Hub">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Match Me a Mystery — Find Your Perfect British TV Show">
+<meta name="twitter:description" content="Answer 3 quick questions and we'll match you to your perfect British mystery or drama.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital@0;1&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
+  --gold:#c9a96e;--gold2:#dab870;
+  --red:#8b1a2e;--red2:#a01f36;
+  --text:#e8dfc8;--muted:#9090a8;
+  --border:#3d4a60;--border2:#4d5a70;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;min-height:100vh;overflow-x:hidden}
+
+/* NAV */
+nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
+.nav-brand{padding:16px 0;text-decoration:none;display:block}
+.nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
+.nav-sub{font-family:'Raleway',sans-serif;font-size:9px;color:#9090a8;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic}
+.nav-links{display:flex;align-items:center}
+.nlink{padding:20px 16px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
+.nlink:hover{color:#ffffff}
+.nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
+.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 8px;padding:11px 20px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
+.nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
+.nav-quiz-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 16px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
+.nav-quiz-btn:hover,.nav-quiz-btn.on{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
+
+/* HERO */
+.quiz-hero{background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px 48px;text-align:center}
+.quiz-eyebrow{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px}
+.quiz-hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;color:#e8d0a0;line-height:1.2;margin-bottom:12px}
+.quiz-hero-sub{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#a0aec8;max-width:500px;margin:0 auto;line-height:1.6}
+
+/* QUIZ CARD */
+.quiz-container{max-width:660px;margin:48px auto;padding:0 24px 64px}
+.quiz-card{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 4px 24px rgba(0,0,0,0.35)}
+
+/* PROGRESS */
+.progress-bar{display:flex;gap:0;border-bottom:1px solid #3d4a60}
+.progress-step{flex:1;height:3px;background:#2c3345;transition:background 0.4s}
+.progress-step.done{background:#c9a96e}
+.progress-step.active{background:#8b1a2e}
+
+/* QUESTION */
+.question-wrap{padding:36px 36px 28px}
+.q-counter{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px}
+.q-text{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#c9a96e;line-height:1.4;margin-bottom:28px;font-style:italic}
+.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt-btn{background:#2c3345;border:1px solid #3d4a60;color:#c8c0a8;padding:16px 18px;font-family:'Crimson Text',serif;font-size:17px;cursor:pointer;text-align:left;transition:all 0.15s;line-height:1.4;position:relative}
+.opt-btn:hover{border-color:#c9a96e;color:#e8d0a0;background:#242d40}
+.opt-btn.selected{border-color:#c9a96e;background:#242d40;color:#e8d0a0}
+.opt-btn.selected::after{content:'✓';position:absolute;top:10px;right:14px;color:#c9a96e;font-family:sans-serif;font-size:14px}
+
+/* RESULT */
+.result-wrap{padding:36px;display:none}
+.result-label{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#8b1a2e;margin-bottom:12px}
+.result-show{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#c9a96e;margin-bottom:6px;font-style:italic;line-height:1.2}
+.result-meta{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:16px}
+.result-platform-badge{display:inline-block;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;margin-bottom:20px}
+.result-divider{width:40px;height:1px;background:#3d4a60;margin:0 0 20px}
+.result-desc{font-family:'Crimson Text',serif;font-size:18px;color:#c8c0a8;line-height:1.7;margin-bottom:28px}
+.watch-btn{display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:15px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;margin-bottom:10px;transition:background 0.2s;cursor:pointer;border:none;width:100%}
+.watch-btn:hover{background:#a01f36}
+.retry-btn{display:block;text-align:center;background:transparent;border:1px solid #3d4a60;color:#a0aec8;padding:13px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;width:100%;transition:all 0.2s;margin-bottom:10px}
+.retry-btn:hover{border-color:#c9a96e;color:#c9a96e}
+.share-row{display:flex;gap:10px;margin-top:4px}
+.share-btn{flex:1;text-align:center;background:transparent;border:1px solid #3d4a60;color:#a0aec8;padding:10px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all 0.2s}
+.share-btn:hover{border-color:#c9a96e;color:#c9a96e}
+
+/* MORE SHOWS */
+.more-shows{padding:0 36px 36px}
+.more-label{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;border-top:1px solid #3d4a60;padding-top:24px}
+.more-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.more-chip{background:#2c3345;border:1px solid #3d4a60;padding:10px 14px;cursor:pointer;transition:border-color 0.2s;text-decoration:none;display:block}
+.more-chip:hover{border-color:#c9a96e}
+.more-chip-name{font-family:'Playfair Display',serif;font-size:15px;color:#dab870;margin-bottom:2px}
+.more-chip-platform{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8}
+
+/* NEWSLETTER STRIP */
+.nl-strip{background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:40px;text-align:center;margin-top:0}
+.nl-strip-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#e8dfc8;margin-bottom:8px}
+.nl-strip-sub{font-family:'Crimson Text',serif;font-size:18px;font-style:italic;color:#a0aec8;margin-bottom:24px}
+.nl-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.nl-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:13px 18px;font-family:'Crimson Text',serif;font-size:16px;width:240px;outline:none}
+.nl-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:13px 24px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer}
+.nl-btn:hover{background:#a01f36}
+.nl-note{font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin-top:10px;letter-spacing:1px}
+
+footer{background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none}
+.footer-copy{font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px}
+.affiliate{background:#1a2135;padding:8px 40px;text-align:center}
+.affiliate p{font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px}
+
+@media(max-width:700px){
+  nav{padding:0 12px;flex-wrap:wrap}
+  .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
+  .nlink{padding:14px 10px;font-size:9px}
+  .nav-guide-btn,.nav-quiz-btn{font-size:9px !important;padding:8px 12px !important}
+  .quiz-hero{padding:40px 24px 36px}
+  .quiz-container{padding:0 16px 48px}
+  .question-wrap{padding:24px 20px 20px}
+  .options-grid{grid-template-columns:1fr}
+  .result-wrap{padding:24px 20px}
+  .more-shows{padding:0 20px 24px}
+  .more-grid{grid-template-columns:1fr}
+  .share-row{flex-direction:column}
+  footer{padding:24px 20px}
+  .nl-strip{padding:32px 24px}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <a class="nav-brand" href="/">
+    <div class="nav-title">British TV Dramas &amp; Mysteries</div>
+    <div class="nav-sub">Classics &amp; New Favorites</div>
+  </a>
+  <div class="nav-links">
+    <a class="nlink" href="/">Home</a>
+    <a class="nlink" href="/shows.html">Shows</a>
+    <a class="nlink" href="/streaming.html">Streaming</a>
+    <a class="nlink" href="/nightly-pick.html">Tonight's Pick</a>
+    <a class="nlink" href="/cozy.html">Cozy Mysteries</a>
+    <a class="nlink" href="/faq.html">FAQ</a>
+    <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
+    <a class="nav-quiz-btn on" href="/quiz.html">Match Me a Mystery</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="quiz-hero">
+  <div class="quiz-eyebrow">3 questions · instant result</div>
+  <h1 class="quiz-hero-title">Match Me a Mystery</h1>
+  <p class="quiz-hero-sub">Tell us how you're feeling tonight and we'll find your perfect British TV match.</p>
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-container">
+  <div class="quiz-card">
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-step active" id="step-0"></div>
+      <div class="progress-step" id="step-1"></div>
+      <div class="progress-step" id="step-2"></div>
+    </div>
+
+    <!-- QUESTION PANEL -->
+    <div class="question-wrap" id="question-wrap">
+      <div class="q-counter" id="q-counter">Question 1 of 3</div>
+      <div class="q-text" id="q-text"></div>
+      <div class="options-grid" id="options-grid"></div>
+    </div>
+
+    <!-- RESULT PANEL -->
+    <div class="result-wrap" id="result-wrap">
+      <div class="result-label">The mystery is solved...</div>
+      <div class="result-show" id="r-show"></div>
+      <div class="result-meta" id="r-meta"></div>
+      <div class="result-platform-badge" id="r-platform"></div>
+      <div class="result-divider"></div>
+      <div class="result-desc" id="r-desc"></div>
+      <button class="watch-btn" id="r-watch-btn"></button>
+      <button class="retry-btn" id="retry-btn">Try again &rarr;</button>
+      <div class="share-row">
+        <button class="share-btn" id="fb-share">Share on Facebook</button>
+        <button class="share-btn" id="copy-share">Copy link</button>
+      </div>
+    </div>
+
+    <!-- MORE SHOWS (shown after result) -->
+    <div class="more-shows" id="more-shows" style="display:none">
+      <div class="more-label">Also worth watching</div>
+      <div class="more-grid" id="more-grid"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<div class="nl-strip">
+  <h2 class="nl-strip-title">Get 5 Hand-Picked Shows Every Sunday</h2>
+  <p class="nl-strip-sub">Classics, hidden gems, and what's new on BritBox and Acorn. Free, forever.</p>
+  <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank">
+    <div class="nl-row">
+      <input class="nl-input" type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address">
+      <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+      <button class="nl-btn" type="submit">Get Sunday Picks &rarr;</button>
+    </div>
+    <div class="nl-note">No spam &nbsp;·&nbsp; Unsubscribe anytime</div>
+  </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/shows.html">Shows</a>
+    <a href="/streaming.html">Streaming</a>
+    <a href="/nightly-pick.html">Tonight's Pick</a>
+    <a href="/top10.html">Fan Favourites</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/hidden-gems.html">Hidden Gems</a>
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Facebook</a>
+    <a href="mailto:info@britishtvhub.com">Contact</a>
+  </div>
+  <div class="footer-copy">British TV Dramas &amp; Mysteries &nbsp;·&nbsp; 2026</div>
+</footer>
+<div class="affiliate">
+  <p>As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+</div>
+
+<script>
+const QUESTIONS = [
+  {
+    text: "What kind of evening are you having?",
+    opts: [
+      {label:"Cosy night in, cup of tea ready", val:"cosy"},
+      {label:"I want edge-of-my-seat tension", val:"dark"},
+      {label:"Something I can half-watch and relax", val:"light"},
+      {label:"I want to be completely absorbed", val:"deep"}
+    ]
+  },
+  {
+    text: "Which setting calls to you tonight?",
+    opts: [
+      {label:"English countryside villages", val:"village"},
+      {label:"Bleak moors or wild coastline", val:"wild"},
+      {label:"Elegant Oxford or period England", val:"classic"},
+      {label:"Gritty Northern towns", val:"gritty"}
+    ]
+  },
+  {
+    text: "What do you want from your detective?",
+    opts: [
+      {label:"Brilliant and eccentric", val:"eccentric"},
+      {label:"Tough and no-nonsense", val:"tough"},
+      {label:"Warm and community-rooted", val:"warm"},
+      {label:"Brooding and complex", val:"brooding"}
+    ]
+  }
+];
+
+const SHOWS = {
+  cosy_village_warm:     {show:"Midsomer Murders",meta:"Acorn TV · 25+ series · 1997–present",platform:"Acorn TV",desc:"England's most picturesque villages with an implausible murder rate. Warm, witty, and endlessly rewatchable — the ultimate comfort watch for a cosy evening.",url:"https://acorn.tv"},
+  cosy_village_eccentric:{show:"Miss Marple (1984)",meta:"BritBox · 12 films · 1984–1992",platform:"BritBox",desc:"Joan Hickson's definitive Miss Marple is the gold standard of cosy mysteries. Agatha Christie at her finest, impeccably cast and deeply satisfying.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  cosy_classic_eccentric:{show:"Inspector Morse",meta:"BritBox · 1987–2000",platform:"BritBox",desc:"The gold standard of British detective drama. Oxford, atmosphere, and John Thaw at his finest. Start here — then follow with Endeavour and Lewis.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  cosy_classic_warm:     {show:"Doc Martin",meta:"Acorn TV · 10 series · 2004–2022",platform:"Acorn TV",desc:"A curmudgeonly London surgeon relocates to a tiny Cornish village. Warm, funny, and completely charming. Perfect cosy television.",url:"https://acorn.tv"},
+  dark_wild_brooding:    {show:"Hinterland",meta:"Acorn TV · 4 series · 2013–2016",platform:"Acorn TV",desc:"Brooding, atmospheric, and unlike anything else in the genre. Shot in the wild landscapes of rural Wales — a hidden gem that deserves far more attention.",url:"https://acorn.tv"},
+  dark_gritty_tough:     {show:"Happy Valley",meta:"BritBox · 3 series · 2014–2023",platform:"BritBox",desc:"Sarah Lancashire is extraordinary. Dark, powerful, and one of the greatest TV performances ever committed to screen. Three series, each better than the last.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  dark_wild_tough:       {show:"Shetland",meta:"BritBox · 7 series · 2013–present",platform:"BritBox",desc:"A detective series set on the remote Shetland Islands. Stunning scenery, tight plotting, and one of British TV's most compelling detective duos.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  dark_gritty_brooding:  {show:"Broadchurch",meta:"Netflix · 3 series · 2013–2017",platform:"Netflix",desc:"The defining British crime drama of the 2010s. Olivia Colman and David Tennant in a coastal town torn apart by tragedy. Completely absorbing from start to finish.",url:"https://www.netflix.com"},
+  deep_wild_tough:       {show:"Vera",meta:"BritBox · 14 series · 2011–2025",platform:"BritBox",desc:"Brenda Blethyn's Vera Stanhope is one of television's great detectives — unconventional, brilliant, and deeply human. Set against the wild Northumberland coast.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  deep_classic_brooding: {show:"Broadchurch",meta:"Netflix · 3 series · 2013–2017",platform:"Netflix",desc:"The defining British crime drama of the 2010s. Olivia Colman and David Tennant in a coastal town torn apart by tragedy. Completely absorbing from start to finish.",url:"https://www.netflix.com"},
+  deep_wild_brooding:    {show:"Hinterland",meta:"Acorn TV · 4 series · 2013–2016",platform:"Acorn TV",desc:"Brooding, atmospheric, and unlike anything else in the genre. Shot in the wild landscapes of rural Wales — a hidden gem that deserves far more attention.",url:"https://acorn.tv"},
+  deep_gritty_tough:     {show:"Happy Valley",meta:"BritBox · 3 series · 2014–2023",platform:"BritBox",desc:"Sarah Lancashire is extraordinary. Dark, powerful, and one of the greatest TV performances ever committed to screen. Three series, each better than the last.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  light_village_warm:    {show:"Midsomer Murders",meta:"Acorn TV · 25+ series · 1997–present",platform:"Acorn TV",desc:"England's most picturesque villages with an implausible murder rate. Warm, witty, and endlessly rewatchable — the ultimate comfort watch.",url:"https://acorn.tv"},
+  light_classic_warm:    {show:"Doc Martin",meta:"Acorn TV · 10 series · 2004–2022",platform:"Acorn TV",desc:"A curmudgeonly London surgeon relocates to a tiny Cornish village. Warm, funny, and completely charming. Perfect background-to-foreground television.",url:"https://acorn.tv"},
+  default:               {show:"Shetland",meta:"BritBox · 7 series · 2013–present",platform:"BritBox",desc:"A detective series set on the remote Shetland Islands. Stunning scenery, tight plotting, and Douglas Henshall as one of British TV's most compelling detectives.",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"}
+};
+
+const MORE = [
+  {name:"Inspector Morse",platform:"BritBox",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  {name:"Vera",platform:"BritBox",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  {name:"Hinterland",platform:"Acorn TV",url:"https://acorn.tv"},
+  {name:"Midsomer Murders",platform:"Acorn TV",url:"https://acorn.tv"},
+  {name:"Happy Valley",platform:"BritBox",url:"https://www.amazon.com/channels/britbox?tag=britishtvhub-20"},
+  {name:"Broadchurch",platform:"Netflix",url:"https://www.netflix.com"}
+];
+
+let answers = [];
+let current = 0;
+
+function renderQuestion(){
+  const q = QUESTIONS[current];
+  document.getElementById('q-counter').textContent = 'Question ' + (current+1) + ' of 3';
+  document.getElementById('q-text').textContent = q.text;
+  const grid = document.getElementById('options-grid');
+  grid.innerHTML = '';
+  q.opts.forEach(o => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.textContent = o.label;
+    btn.onclick = () => pick(o.val, btn);
+    grid.appendChild(btn);
+  });
+  for(let i=0;i<3;i++){
+    const s = document.getElementById('step-'+i);
+    s.className = 'progress-step' + (i < current ? ' done' : i === current ? ' active' : '');
+  }
+}
+
+function pick(val, btn){
+  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  answers.push(val);
+  setTimeout(()=>{
+    current++;
+    if(current < 3){
+      renderQuestion();
+    } else {
+      showResult();
+    }
+  }, 320);
+}
+
+function showResult(){
+  const key = answers.join('_');
+  const result = SHOWS[key] || SHOWS.default;
+
+  for(let i=0;i<3;i++) document.getElementById('step-'+i).className = 'progress-step done';
+
+  document.getElementById('question-wrap').style.display = 'none';
+  const rw = document.getElementById('result-wrap');
+  rw.style.display = 'block';
+
+  document.getElementById('r-show').textContent = result.show;
+  document.getElementById('r-meta').textContent = result.meta;
+  document.getElementById('r-platform').textContent = result.platform;
+  document.getElementById('r-desc').textContent = result.desc;
+
+  const wb = document.getElementById('r-watch-btn');
+  wb.textContent = 'Watch on ' + result.platform + ' \u2192';
+  wb.onclick = () => window.open(result.url, '_blank');
+
+  document.getElementById('retry-btn').onclick = reset;
+
+  document.getElementById('fb-share').onclick = () => {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=https://www.britishtvhub.com/quiz.html','_blank');
+  };
+  document.getElementById('copy-share').onclick = () => {
+    navigator.clipboard.writeText('https://www.britishtvhub.com/quiz.html').then(()=>{
+      document.getElementById('copy-share').textContent = 'Copied!';
+      setTimeout(()=>{ document.getElementById('copy-share').textContent = 'Copy link'; },2000);
+    });
+  };
+
+  const moreShows = document.getElementById('more-shows');
+  const moreGrid = document.getElementById('more-grid');
+  moreShows.style.display = 'block';
+  moreGrid.innerHTML = '';
+  MORE.filter(m => m.name !== result.show).slice(0,4).forEach(m => {
+    const chip = document.createElement('a');
+    chip.className = 'more-chip';
+    chip.href = m.url;
+    chip.target = '_blank';
+    chip.rel = 'noopener';
+    chip.innerHTML = '<div class="more-chip-name">' + m.name + '</div><div class="more-chip-platform">' + m.platform + '</div>';
+    moreGrid.appendChild(chip);
+  });
+}
+
+function reset(){
+  answers = [];
+  current = 0;
+  document.getElementById('question-wrap').style.display = 'block';
+  document.getElementById('result-wrap').style.display = 'none';
+  document.getElementById('more-shows').style.display = 'none';
+  renderQuestion();
+}
+
+renderQuestion();
+</script>
+
+</body>
+</html>
