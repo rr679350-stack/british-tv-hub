@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner With Us | British TV Hub</title>
+  <meta name="description" content="Partner with British TV Hub — a growing community of 4,000+ passionate British TV fans in the US. Press, affiliate, and partnership enquiries welcome.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #2c3345;
+      --bg-dark: #1a2135;
+      --bg-card: #1e2433;
+      --border: #3d4a60;
+      --gold: #c9a96e;
+      --gold-light: #dab870;
+      --red: #8b1a2e;
+      --text: #e8dfc8;
+      --text-muted: #c8c0a8;
+      --text-dim: #a0aec8;
+      --text-faint: #88898b;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--bg-dark);
+      border-bottom: 1px solid var(--border);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand { display: flex; flex-direction: column; text-decoration: none; }
+    .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text); }
+    .nav-sub { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); }
+    .nav-links { display: flex; gap: 4px; align-items: center; }
+    .nlink { background: none; border: none; color: var(--text-dim); font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; padding: 6px 10px; }
+    .nlink:hover { color: var(--text); }
+    .nav-guide-btn { background: var(--red); color: #f5e8d0; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; padding: 8px 14px; }
+    .nav-nl-btn { background: none; border: 1px solid var(--gold); color: var(--gold); font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; padding: 8px 14px; }
+
+    /* HERO */
+    .page-hero {
+      background: linear-gradient(135deg, var(--bg-dark) 0%, #232a3a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 40px 56px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .page-hero-eyebrow {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .page-hero-lead {
+      font-family: 'Crimson Text', serif;
+      font-size: 20px;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .page-hero-meta {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    /* MAIN */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 40px;
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 64px;
+    }
+    .stat {
+      background: var(--bg-card);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .stat-note {
+      font-family: 'Crimson Text', serif;
+      font-size: 13px;
+      color: var(--text-faint);
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-of-type {
+      border-bottom: none;
+    }
+    .section-label {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+    .section p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    /* BULLET LIST */
+    .partner-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .partner-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 18px;
+    }
+    .partner-list li:last-child { border-bottom: none; }
+    .partner-list li::before {
+      content: '→';
+      color: var(--gold);
+      font-family: 'Raleway', sans-serif;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* CONTACT BLOCK */
+    .contact-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--red);
+      padding: 40px;
+      margin-top: 8px;
+    }
+    .contact-block h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .contact-block p {
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+    .contact-email {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 2px;
+    }
+    .contact-email:hover { color: var(--gold-light); }
+
+    /* QUOTE */
+    .pull-quote {
+      border-left: 3px solid var(--gold);
+      padding: 8px 24px;
+      margin: 24px 0;
+      font-family: 'Crimson Text', serif;
+      font-size: 20px;
+      font-style: italic;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border);
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--gold);
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .footer-copy {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      color: var(--text-faint);
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 1rem; }
+      .nav-links { display: none; }
+      .page-hero { padding: 40px 20px; }
+      .page-hero h1 { font-size: 32px; }
+      main { padding: 40px 20px; }
+      .stats-bar { grid-template-columns: 1fr; }
+      .contact-block { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">
+    <span class="nav-title">British TV Dramas &amp; Mysteries</span>
+    <span class="nav-sub">Classics &amp; New Favorites</span>
+  </a>
+  <div class="nav-links">
+    <a class="nlink" href="/">Home</a>
+    <a class="nlink" href="/shows.html">Shows</a>
+    <a class="nlink" href="/streaming.html">Streaming</a>
+    <a class="nlink" href="/nightly-pick.html">Tonight's Pick</a>
+    <a class="nlink" href="/top10.html">Fan Favourites</a>
+    <a class="nlink" href="/faq.html">FAQ</a>
+    <a class="nav-guide-btn" href="/shows.html">★ Best Of Guide</a>
+    <a class="nav-nl-btn" href="/#nl-anchor">Sunday Picks →</a>
+  </div>
+</nav>
+
+<div style="max-width:860px;margin:0 auto;">
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">Press &amp; Partnerships</div>
+    <h1>Partner With British TV Hub</h1>
+    <p class="page-hero-lead">We're an independent guide to the best British mysteries and dramas, trusted by a rapidly growing community of passionate American fans.</p>
+    <div class="page-hero-meta">Independent &nbsp;·&nbsp; Community-driven &nbsp;·&nbsp; Growing every week</div>
+  </div>
+</div>
+
+<main>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-number">4,000+</div>
+      <div class="stat-label">Facebook Followers</div>
+      <div class="stat-note">& growing every week</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">600+</div>
+      <div class="stat-label">Group Members</div>
+      <div class="stat-note">Active daily discussions</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">Weekly</div>
+      <div class="stat-label">Sunday Newsletter</div>
+      <div class="stat-note">Hand-picked show recommendations</div>
+    </div>
+  </div>
+
+  <!-- WHO WE ARE -->
+  <div class="section">
+    <div class="section-label">About Us</div>
+    <h2>A Growing Community of British TV Fans</h2>
+    <p>British TV Hub is an independent guide built for and by American fans who love British mysteries and dramas. We're not a media company — we're a genuine community that has grown organically because we care deeply about helping people discover the best British television.</p>
+    <div class="pull-quote">"The community our audience has built around British TV is exactly the kind of engaged, loyal viewership that BritBox and Acorn TV shows deserve."</div>
+    <p>Every week we hand-pick 5 shows for our Sunday newsletter, feature a nightly pick, and publish guides that help fans navigate what to watch and where to stream it. Our audience is actively searching for new shows — and actively subscribing to find them.</p>
+  </div>
+
+  <!-- OUR AUDIENCE -->
+  <div class="section">
+    <div class="section-label">Our Audience</div>
+    <h2>Engaged Fans Who Are Ready to Subscribe</h2>
+    <p>Our community skews toward dedicated, long-term British TV fans in the United States — exactly the audience BritBox and Acorn TV are built for. These are people who don't just browse; they binge, they discuss, and they recommend shows to friends.</p>
+    <ul class="partner-list">
+      <li>4,000+ Facebook followers — growing week on week</li>
+      <li>600+ active Facebook group members discussing shows daily</li>
+      <li>Weekly Sunday Picks newsletter reaching fans every Sunday morning</li>
+      <li>Visitors actively searching for what to watch and where to stream it</li>
+      <li>Audience already familiar with — and subscribed to — BritBox and Acorn TV</li>
+    </ul>
+  </div>
+
+  <!-- WHAT WE DO -->
+  <div class="section">
+    <div class="section-label">What We Do</div>
+    <h2>We Drive Discovery — And Subscriptions</h2>
+    <p>Every piece of content we create points fans toward the shows they'll love — and the platforms where they can watch them. We feature current programming, highlight new releases, and help fans discover shows they'd never find on their own.</p>
+    <ul class="partner-list">
+      <li>Weekly newsletter featuring new BritBox and Acorn TV releases</li>
+      <li>Nightly pick spotlighting one show per night with streaming info</li>
+      <li>Streaming guides helping fans decide which subscription to choose</li>
+      <li>Hidden gems coverage bringing attention to underseen titles</li>
+      <li>Active Facebook community driving word-of-mouth recommendations</li>
+    </ul>
+  </div>
+
+  <!-- WHAT WE'RE LOOKING FOR -->
+  <div class="section">
+    <div class="section-label">Partnership Opportunities</div>
+    <h2>What We're Looking For</h2>
+    <p>We'd love to work more closely with BritBox and Acorn TV to give our community early access to what's coming — and give your shows the attention they deserve from an audience that's already primed to love them.</p>
+    <ul class="partner-list">
+      <li>Press access and screeners for new and upcoming releases</li>
+      <li>Hi-res images and press materials for featured shows</li>
+      <li>Affiliate partnership opportunities and improved commission structures</li>
+      <li>Early access to new content announcements and premiere dates</li>
+      <li>Co-promotion opportunities with our newsletter and Facebook community</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="section-label">Get In Touch</div>
+    <h2>Let's Talk</h2>
+    <div class="contact-block">
+      <h3>We'd love to hear from you</h3>
+      <p>Whether you're a PR rep, partnership manager, or affiliate team member — we're open to any conversation about how we can work together to bring great British TV to more American fans.</p>
+      <a href="mailto:info@britishtvhub.com" class="contact-email">info@britishtvhub.com</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/shows.html">Shows</a>
+    <a href="/streaming.html">Streaming</a>
+    <a href="/nightly-pick.html">Tonight's Pick</a>
+    <a href="/top10.html">Fan Favourites</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/hidden-gems.html">Hidden Gems</a>
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Facebook</a>
+    <a href="mailto:info@britishtvhub.com">Contact</a>
+  </div>
+  <div class="footer-copy">British TV Dramas &amp; Mysteries · Classics &amp; New Favorites · Est. for British TV Fans · © 2026</div>
+</footer>
+
+</body>
+</html>
