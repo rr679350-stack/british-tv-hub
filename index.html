@@ -14,21 +14,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ═══════════════════════════════════════════════════
-     SEO IMPROVEMENTS APPLIED:
-     1. Title rewritten to target high-volume keywords
-     2. Meta description now compelling & keyword-rich
-     3. Keywords expanded with long-tail terms
-     4. FAQPage schema updated + added TVSeries schema
-     5. Article schema for the Best Of Guide page
-     6. Breadcrumb schema added
-     7. Open Graph title improved
-     8. Added missing <link rel="preconnect"> for fonts
-     9. Added <link rel="preload"> for hero image
-     10. Canonical confirmed correct
-     ═══════════════════════════════════════════════════ -->
-
-<!-- ── Primary SEO (REWRITTEN) ── -->
 <!--
   ╔══════════════════════════════════════════════════════════╗
   ║          ANNUAL UPDATE CHECKLIST — DO EVERY JANUARY     ║
@@ -37,24 +22,13 @@
   ║  2. META DESCRIPTION — update year                      ║
   ║  3. SEO hero eyebrow — "Updated May 2026" → Jan 2027    ║
   ║  4. TRENDING array — swap in new popular shows          ║
-  ║  5. TOP5 array — refresh with current favourites    ║
+  ║  5. TOP5 array — refresh with current favourites        ║
   ║  6. POLLS array — add 5-10 fresh poll questions         ║
   ║  7. FAQ schema (JSON-LD) — update any changed answers   ║
   ║  8. OG title meta tag — update year                     ║
   ║  9. Twitter title meta tag — update year                ║
   ║ 10. Google Search Console — submit sitemap after update ║
   ╚══════════════════════════════════════════════════════════╝
-
-  MONTHLY (takes 5 mins):
-  • Update "Updated May 2026" eyebrow in Best Of Guide hero
-  • Swap 1-2 shows in TRENDING if something big has aired
-
-  WHERE TO FIND KEY SECTIONS:
-  • TRENDING data  → search: "const TRENDING = ["
-  • TOP5 data      → search: "const TOP5 = ["
-  • POLLS data     → search: "const POLLS = ["
-  • Guide eyebrow  → search: "Updated May 2026"
-  • Year in title  → search: "2026"
 -->
 <title>Best British TV Shows 2026 — Mystery, Drama &amp; Where to Stream | British TV Hub</title>
 <meta name="description" content="Your complete guide to the best British TV mysteries and dramas. Discover where to stream Inspector Morse, Vera, Broadchurch, Happy Valley and more — plus BritBox vs Acorn TV compared. Updated for 2026.">
@@ -64,14 +38,10 @@
 <link rel="canonical" href="https://www.britishtvhub.com/">
 <meta name="google-site-verification" content="jA4FgYj9znrFNUjaOKubl-dy5TATF6x_WjDaP0QC73E" />
 
-<!-- ── Performance: font preconnect ── -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/8dc1958e-bd69-4e7c-a328-3272c55cea4b.png">
 
-<!-- ── Hero image preload ── -->
-<link rel="preload" as="image" href="/8dc1958e-bd69-4e7c-a328-3272c55cea4b.png
-
-<!-- ── Open Graph (IMPROVED title & description) ── -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.britishtvhub.com/">
 <meta property="og:title" content="Best British TV Shows 2026 — Mystery, Drama &amp; Where to Stream">
@@ -83,17 +53,11 @@
 <meta property="og:site_name" content="British TV Hub — Dramas &amp; Mysteries">
 <meta property="og:locale" content="en_US">
 
-<!-- ── Twitter Card ── -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Best British TV Shows 2026 — Mystery, Drama &amp; Where to Stream">
 <meta name="twitter:description" content="Inspector Morse, Vera, Broadchurch, Happy Valley — your guide to the best British TV and where to stream every show in the US.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
 
-<!-- ══════════════════════════════════════════════════════
-     SCHEMA MARKUP — 4 types for maximum Google coverage
-     ══════════════════════════════════════════════════════ -->
-
-<!-- Schema 1: WebSite (enables Google Sitelinks search box) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,73 +80,22 @@
 }
 </script>
 
-<!-- Schema 2: FAQPage — earns expanded search result space -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the best British detective show of all time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most fans and critics point to Inspector Morse as the gold standard — its combination of literary intelligence, superb acting from John Thaw, and Oxford atmosphere has never truly been matched. For modern shows, Broadchurch and Happy Valley regularly top audience polls. Vera is the most consistently beloved long-runner, with thirteen series across BritBox."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is BritBox worth it for British TV fans?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, for serious British TV fans BritBox is essential. It carries the largest legal library of BBC and ITV content available in the US, including classics like Inspector Morse, Vera, and Midsomer Murders that are not available anywhere else. At under $10 per month it pays for itself quickly. If you can only choose one British TV subscription, BritBox should be it."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I watch BBC shows for free in the United States?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The BBC iPlayer is only available to UK residents. In the US, BBC content reaches you through BritBox, PBS Passport, and select titles on Amazon Prime. Some older BBC content is also available free with ads on Tubi. There is no legitimate free access to current BBC programming from the US."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the most underrated British mystery series?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hinterland consistently tops lists of overlooked gems — it is beautifully shot in rural Wales and has a genuinely distinctive atmosphere that sets it apart from every other crime series. Other underappreciated favorites from our community of 4,000+ fans include The Detectorists, Hope Street, The Bletchley Circle, and Grantchester."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should I watch if I loved Downton Abbey?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If you loved Downton Abbey, try Upstairs Downstairs (the original that inspired it), The Crown on Netflix, Cranford, Poldark, or Victoria on PBS. All share Downton's combination of gorgeous production values, strong ensemble casts, and sweeping period drama. All Creatures Great and Small on PBS Masterpiece is a gentler but equally warm choice."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between BritBox and Acorn TV?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BritBox focuses primarily on British content from the BBC and ITV, with the largest library of classic and contemporary British shows available in the US. Acorn TV specializes in mysteries and carries more international British-style content including Australian and Canadian co-productions. Many devoted fans subscribe to both — together they cover almost everything a British TV fan could want."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where can I watch British TV shows for free in the US?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tubi offers a surprisingly large free library of British TV shows supported by ads, including older series of Vera, Midsomer Murders, and more. Some British content is also available free on Peacock and Pluto TV. PBS.org streams some Masterpiece content free for limited periods after broadcast."
-      }
-    }
+    {"@type":"Question","name":"What is the best British detective show of all time?","acceptedAnswer":{"@type":"Answer","text":"Most fans and critics point to Inspector Morse as the gold standard — its combination of literary intelligence, superb acting from John Thaw, and Oxford atmosphere has never truly been matched. For modern shows, Broadchurch and Happy Valley regularly top audience polls. Vera is the most consistently beloved long-runner, with thirteen series across BritBox."}},
+    {"@type":"Question","name":"Is BritBox worth it for British TV fans?","acceptedAnswer":{"@type":"Answer","text":"Yes, for serious British TV fans BritBox is essential. It carries the largest legal library of BBC and ITV content available in the US, including classics like Inspector Morse, Vera, and Midsomer Murders that are not available anywhere else. At under $10 per month it pays for itself quickly. If you can only choose one British TV subscription, BritBox should be it."}},
+    {"@type":"Question","name":"Can I watch BBC shows for free in the United States?","acceptedAnswer":{"@type":"Answer","text":"The BBC iPlayer is only available to UK residents. In the US, BBC content reaches you through BritBox, PBS Passport, and select titles on Amazon Prime. Some older BBC content is also available free with ads on Tubi. There is no legitimate free access to current BBC programming from the US."}},
+    {"@type":"Question","name":"What is the most underrated British mystery series?","acceptedAnswer":{"@type":"Answer","text":"Hinterland consistently tops lists of overlooked gems — it is beautifully shot in rural Wales and has a genuinely distinctive atmosphere that sets it apart from every other crime series. Other underappreciated favorites from our community of 4,000+ fans include The Detectorists, Hope Street, The Bletchley Circle, and Grantchester."}},
+    {"@type":"Question","name":"What should I watch if I loved Downton Abbey?","acceptedAnswer":{"@type":"Answer","text":"If you loved Downton Abbey, try Upstairs Downstairs (the original that inspired it), The Crown on Netflix, Cranford, Poldark, or Victoria on PBS. All share Downton's combination of gorgeous production values, strong ensemble casts, and sweeping period drama. All Creatures Great and Small on PBS Masterpiece is a gentler but equally warm choice."}},
+    {"@type":"Question","name":"What is the difference between BritBox and Acorn TV?","acceptedAnswer":{"@type":"Answer","text":"BritBox focuses primarily on British content from the BBC and ITV, with the largest library of classic and contemporary British shows available in the US. Acorn TV specializes in mysteries and carries more international British-style content including Australian and Canadian co-productions. Many devoted fans subscribe to both — together they cover almost everything a British TV fan could want."}},
+    {"@type":"Question","name":"Where can I watch British TV shows for free in the US?","acceptedAnswer":{"@type":"Answer","text":"Tubi offers a surprisingly large free library of British TV shows supported by ads, including older series of Vera, Midsomer Murders, and more. Some British content is also available free on Peacock and Pluto TV. PBS.org streams some Masterpiece content free for limited periods after broadcast."}}
   ]
 }
 </script>
 
-<!-- Schema 3: ItemList — tells Google about your top recommended TV shows -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -192,76 +105,24 @@
   "url": "https://www.britishtvhub.com/",
   "numberOfItems": 6,
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inspector Morse",
-      "description": "The gold standard of British detective drama set in Oxford. Starring John Thaw. Available on BritBox.",
-      "url": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Vera",
-      "description": "Brenda Blethyn stars as DCI Vera Stanhope in this Northumberland-set crime drama. Available on BritBox.",
-      "url": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Broadchurch",
-      "description": "Olivia Colman and David Tennant star in this gripping coastal crime drama. Available on Netflix.",
-      "url": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Hinterland",
-      "description": "Atmospheric Welsh detective series shot simultaneously in Welsh and English. Available on Acorn TV.",
-      "url": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Miss Marple (1984)",
-      "description": "Joan Hickson's definitive portrayal of Agatha Christie's Miss Marple. Available on BritBox.",
-      "url": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Happy Valley",
-      "description": "Sarah Lancashire stars as a Yorkshire police sergeant in this acclaimed crime drama. Available on BritBox.",
-      "url": "https://www.britishtvhub.com/"
-    }
+    {"@type":"ListItem","position":1,"name":"Inspector Morse","description":"The gold standard of British detective drama set in Oxford. Starring John Thaw. Available on BritBox.","url":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":2,"name":"Vera","description":"Brenda Blethyn stars as DCI Vera Stanhope in this Northumberland-set crime drama. Available on BritBox.","url":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":3,"name":"Broadchurch","description":"Olivia Colman and David Tennant star in this gripping coastal crime drama. Available on Netflix.","url":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":4,"name":"Hinterland","description":"Atmospheric Welsh detective series shot simultaneously in Welsh and English. Available on Acorn TV.","url":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":5,"name":"Miss Marple (1984)","description":"Joan Hickson's definitive portrayal of Agatha Christie's Miss Marple. Available on BritBox.","url":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":6,"name":"Happy Valley","description":"Sarah Lancashire stars as a Yorkshire police sergeant in this acclaimed crime drama. Available on BritBox.","url":"https://www.britishtvhub.com/"}
   ]
 }
 </script>
 
-<!-- Schema 4: BreadcrumbList — improves URL display in search results -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "British TV Hub",
-      "item": "https://www.britishtvhub.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Best British Mystery Shows",
-      "item": "https://www.britishtvhub.com/#best-mystery-shows"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Where to Stream British TV",
-      "item": "https://www.britishtvhub.com/#streaming-guide"
-    }
+    {"@type":"ListItem","position":1,"name":"British TV Hub","item":"https://www.britishtvhub.com/"},
+    {"@type":"ListItem","position":2,"name":"Best British Mystery Shows","item":"https://www.britishtvhub.com/#best-mystery-shows"},
+    {"@type":"ListItem","position":3,"name":"Where to Stream British TV","item":"https://www.britishtvhub.com/#streaming-guide"}
   ]
 }
 </script>
@@ -285,102 +146,37 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .nav-brand{padding:16px 0}
 .nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
 .nav-sub{font-family:'Raleway',sans-serif;font-size:9px;color:#9090a8;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic}
-.nav-links{display:flex}
-.nlink{padding:20px 16px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500}
+.nav-links{display:flex;align-items:center}
+.nlink{padding:20px 16px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
 .nlink:hover{color:#ffffff}
 .nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
-.nlink.seo-tab{color:#f5e8d0;border:1px solid #8b1a2e;margin:auto 0 auto 8px;padding:8px 14px;font-size:10px}
-.nlink.seo-tab:hover{background:#2c3a50}
-.nlink.seo-tab.on{border-color:var(--red);border-bottom:2px solid var(--red)}
-.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:2px solid transparent !important;margin:12px 0 12px 8px;padding:8px 18px !important;font-size:10px !important;letter-spacing:1.5px}
+
+/* FIX: Nav buttons — bigger, matching nav font size */
+.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 8px;padding:11px 20px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
 .nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
-.nav-guide-btn.on{background:#8b1a2e !important;color:#f5e8d0 !important;border-bottom:2px solid #c9a96e !important}
-.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:12px 0 12px 4px;padding:8px 14px !important;font-size:10px !important;letter-spacing:1.5px}
+.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 16px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
 .nav-nl-btn:hover{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
 
 /* HERO */
 #hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
-.hero-image-side{background-image:url('8dc1958e-bd69-4e7c-a328-3272c55cea4b.png');background-size:cover;background-position:center 20%;}
-.hero-text-side{background:rgba(35,42,58,0.96);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:60px 48px;position:relative}
-.hero-text-side::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,#3d4a60,transparent)}
-.hero-ornament{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9898b8;margin-bottom:28px;display:flex;align-items:center;gap:16px}
-.hero-ornament::after{content:'';display:block;width:40px;height:1px;background:var(--muted2)}
-
-/* ═══ CONTRAST FIX 1: H1 hero text ═══ */
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,58px);font-weight:400;color:#eee8d0;line-height:1.15;margin-bottom:16px;text-align:left}
-
-/* ═══ CONTRAST FIX 2: Hero italic subtitle ═══ */
 .hero-italic{font-family:'Playfair Display',serif;font-size:clamp(16px,2vw,24px);font-style:italic;color:#c9a96e;margin-bottom:24px;text-align:left}
-
 .hero-divider{width:48px;height:1px;background:#3d4a60;margin:0 0 24px}
-
-/* ═══ CONTRAST FIX 3: Hero body paragraph ═══ */
 .hero-p{font-family:'Raleway',sans-serif;font-size:14px;color:#c8c4b4;max-width:400px;line-height:1.8;margin-bottom:10px;letter-spacing:0.3px;text-align:left}
-
-/* ═══ CONTRAST FIX 4: Hero join text ═══ */
 .hero-join{font-family:'Crimson Text',serif;font-size:16px;color:#c9a96e;font-style:italic;margin-bottom:32px;text-align:left}
-
-.hero-pills{display:flex;flex-wrap:wrap;margin-bottom:32px;gap:0}
-
-/* ═══ CONTRAST FIX 5: Hero pills ═══ */
-.hero-pill{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;padding:0 12px}
-.hero-pill:not(:last-child){border-right:1px solid #3d4a60}
-.hero-pill:first-child{padding-left:0}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
-
-/* EMAIL SIGNUP FORM — HERO */
-.email-signup-block{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 12px rgba(0,0,0,0.3);padding:24px;max-width:400px;margin-top:4px}
-.email-signup-label{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px}
-/* ═══ CONTRAST FIX 6: Email signup tagline ═══ */
-.email-signup-tagline{font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;font-style:italic;margin-bottom:16px;line-height:1.5}
-.email-signup-row{display:flex;gap:8px;flex-wrap:wrap}
-.email-signup-input{background:#ffffff;border:1px solid var(--border);color:var(--text);padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;min-width:160px;outline:none}
-.email-signup-input:focus{border-color:var(--border2)}
-.email-signup-input::placeholder{color:#4a2a12}
-.email-signup-btn{background:var(--red);border:none;color:#f5e8d0;padding:10px 18px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background 0.2s}
-.email-signup-btn:hover{background:var(--red2)}
-/* ═══ CONTRAST FIX 7: "Weekly · No spam" helper text ═══ */
-.email-signup-note{font-family:'Raleway',sans-serif;font-size:11px;color:#a0aec8;margin-top:8px;letter-spacing:0.5px}
-
-/* EMAIL SIGNUP — INLINE BLOCK */
-.inline-email-block{background:#1e2433;border:1px solid #3d4a60;border-left:3px solid var(--red);box-shadow:0 2px 8px rgba(0,0,0,0.25);padding:24px 28px;margin-top:24px;max-width:640px}
-.inline-email-title{font-family:'Playfair Display',serif;font-size:18px;color:#c9a96e;margin-bottom:6px}
-/* ═══ CONTRAST FIX 8: Inline email sub text ═══ */
-.inline-email-sub{font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;font-style:italic;margin-bottom:16px}
-.inline-email-row{display:flex;gap:8px;flex-wrap:wrap}
-.inline-email-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;min-width:160px;outline:none}
-.inline-email-input:focus{border-color:var(--border2)}
-.inline-email-input::placeholder{color:#4a2a12}
-.inline-email-btn{background:var(--red);border:none;color:#f5e8d0;padding:10px 18px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
-.inline-email-btn:hover{background:var(--red2)}
-/* ═══ CONTRAST FIX 9: Inline note "No spam" ═══ */
-.inline-email-note{font-family:'Raleway',sans-serif;font-size:11px;color:#a0aec8;margin-top:8px}
-
-@media(max-width:700px){
-  #hero{grid-template-columns:1fr}
-  .hero-image-side{min-height:300px}
-  .hero-text-side{padding:40px 24px;align-items:center}
-  .hero-h1,.hero-italic,.hero-p,.hero-join{text-align:center}
-  .hero-ornament{justify-content:center}
-  .hero-pills{justify-content:center}
-  .hero-btns{justify-content:center}
-  .hero-divider{margin:0 auto 24px}
-  .email-signup-block{max-width:100%}
-}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .btn-red{background:var(--red);border:none;color:#f5e8d0;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
 .btn-red:hover{background:var(--red2)}
 .btn-ghost{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:14px 32px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s}
+.btn-ghost:hover{background:var(--gold);color:var(--bg)}
 .btn-gold{background:#c9a96e;border:none;color:#1e2433;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s;text-decoration:none;font-weight:600}
 .btn-gold:hover{background:#dab870;color:#100806}
-.btn-ghost:hover{background:var(--gold);color:var(--bg)}
 
 /* PAGES */
 .page{display:none;max-width:980px;margin:0 auto;padding:48px 24px;background:#2c3345}
 .page.on{display:block}
 .page-head{margin-bottom:32px;border-bottom:1px solid #4d5a70;padding-bottom:24px}
 .page-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#c9a96e;margin-bottom:6px}
-/* ═══ CONTRAST FIX 10: page-sub labels ═══ */
 .page-sub{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#b0bcd0;font-style:italic}
 .page-date{font-family:'Raleway',sans-serif;font-size:11px;color:#9090b8;letter-spacing:1px;margin-top:6px}
 
@@ -392,14 +188,12 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .trend-title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:5px}
 .trend-name{font-family:'Playfair Display',serif;font-size:19px;color:#dab870}
 .trend-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px}
-/* ═══ CONTRAST FIX 11: trend descriptions ═══ */
 .trend-desc{font-family:'Crimson Text',serif;font-size:16px;color:#d4cdb8;line-height:1.6}
 .trend-source{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px;letter-spacing:1px}
 
-/* BADGES — platform tags (CONTRAST IMPROVED) */
+/* BADGES */
 .badge{display:inline-block;padding:3px 10px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
 .badge:hover{opacity:0.8}
-/* ═══ CONTRAST FIX 12: All platform badges use lighter text ═══ */
 .b-britbox{background:#3a0a18;color:#e080a0;border:1px solid #6a1a30}
 .b-acorn{background:#0a2808;color:#70c050;border:1px solid #1a4010}
 .b-pbs{background:#080f20;color:#5090e0;border:1px solid #102040}
@@ -414,9 +208,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .show-card:hover{background:#232a3a;box-shadow:0 4px 16px rgba(0,0,0,0.35);border-color:var(--border2)}
 .card-num{font-family:'Playfair Display',serif;font-size:12px;color:#8898b8;letter-spacing:2px;margin-bottom:10px}
 .card-name{font-family:'Playfair Display',serif;font-size:17px;color:#dab870;margin-bottom:5px;line-height:1.3}
-/* ═══ CONTRAST FIX 13: card genre ═══ */
 .card-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
-/* ═══ CONTRAST FIX 14: card description ═══ */
 .card-desc{font-family:'Crimson Text',serif;font-size:15px;color:#d4cdb8;line-height:1.6;margin-bottom:14px}
 .card-watch-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:6px}
 @media(max-width:700px){.top5-grid{grid-template-columns:1fr}}
@@ -425,20 +217,16 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .poll-wrap{max-width:640px}
 .poll-box{background:#1e2433;border:1px solid #3d4a60;padding:28px;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .poll-q{font-family:'Playfair Display',serif;font-size:22px;color:#c9a96e;margin-bottom:6px;line-height:1.4}
-/* ═══ CONTRAST FIX 15: poll meta ═══ */
 .poll-meta{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:24px}
 .poll-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;cursor:pointer}
 .poll-row input{accent-color:var(--red);width:16px;height:16px;cursor:pointer;flex-shrink:0}
-/* ═══ CONTRAST FIX 16: poll answer options ═══ */
 .poll-name{font-family:'Crimson Text',serif;font-size:18px;color:#e0d8c0;min-width:150px}
 .poll-track{flex:1;background:#1e2433;height:4px}
 .poll-fill{height:4px;background:var(--red);width:0%;transition:width 0.5s ease}
-/* ═══ CONTRAST FIX 17: poll percentage ═══ */
 .poll-pct{font-family:'Raleway',sans-serif;font-size:13px;color:#b0c0d8;min-width:40px;text-align:right}
 .poll-submit{margin-top:20px;background:var(--red);border:none;color:#f5e8d0;padding:12px 28px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
 .poll-submit:hover{background:var(--red2)}
 .poll-submit:disabled{opacity:0.45;cursor:not-allowed}
-/* ═══ CONTRAST FIX 18: poll Facebook prompt ═══ */
 .poll-fb{margin-top:16px;font-family:'Crimson Text',serif;font-size:15px;color:#b0b8cc}
 .poll-fb a{color:#c9a96e;text-decoration:none}
 .poll-fb a:hover{text-decoration:underline}
@@ -456,24 +244,20 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .btn-small.green{background:#1a4010}
 .watch-item{display:flex;align-items:center;justify-content:space-between;background:#1e2433;border:1px solid #3d4a60;box-shadow:0 1px 4px rgba(0,0,0,0.2);padding:14px 18px;margin-bottom:2px;gap:12px;flex-wrap:wrap}
 .watch-item-title{font-family:'Playfair Display',serif;font-size:16px;color:#dab870}
-/* ═══ CONTRAST FIX 19: watchlist genre labels ═══ */
 .watch-item-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8;margin-top:2px}
 .watch-actions{display:flex;gap:8px;flex-shrink:0}
 .watch-btn{background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:5px 12px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;cursor:pointer}
 .watch-btn:hover{border-color:#4d5a70;color:#c9a96e}
 .watch-btn.done{border-color:#1a4010;color:#70c050}
-/* ═══ CONTRAST FIX 20: empty state text ═══ */
 .empty-state{font-family:'Crimson Text',serif;font-size:17px;color:#9090b8;font-style:italic;padding:40px 0;text-align:center}
 
 /* WATCHLIST SUGGESTIONS */
 .watch-suggestions{margin-bottom:32px}
-/* ═══ CONTRAST FIX 21: suggestions title ═══ */
 .watch-sugg-title{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#7080a0;margin-bottom:14px}
 .sugg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
 .sugg-chip{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 1px 3px rgba(0,0,0,0.2);padding:10px 14px;cursor:pointer;transition:border-color 0.2s}
 .sugg-chip:hover{border-color:var(--border2)}
 .sugg-chip-title{font-family:'Playfair Display',serif;font-size:14px;color:#dab870;margin-bottom:2px}
-/* ═══ CONTRAST FIX 22: suggestion chip genre ═══ */
 .sugg-chip-genre{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8}
 .sugg-chip-add{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin-top:6px}
 
@@ -481,7 +265,6 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .disc-item{background:#1e2433;border-left:3px solid var(--red);box-shadow:0 2px 8px rgba(0,0,0,0.25);padding:20px 24px;margin-bottom:3px}
 .disc-tag{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:10px}
 .disc-q{font-family:'Playfair Display',serif;font-size:18px;color:#c9a96e;line-height:1.5;margin-bottom:12px}
-/* ═══ CONTRAST FIX 23: discuss CTA text ═══ */
 .disc-cta{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;color:#a0aec8}
 .disc-cta a{color:#c9a96e;text-decoration:none}
 .disc-cta a:hover{text-decoration:underline}
@@ -490,69 +273,53 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:32px}
 .stat{background:#1e2433;border:1px solid #3d4a60;padding:24px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .stat-n{font-family:'Playfair Display',serif;font-size:32px;color:#c9a96e;margin-bottom:4px}
-/* ═══ CONTRAST FIX 24: stat labels ═══ */
 .stat-l{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8}
 .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:32px}
 .why-card{background:#1e2433;border:1px solid #3d4a60;padding:24px;display:flex;gap:16px;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .why-icon{font-size:20px;flex-shrink:0;margin-top:2px}
 .why-h{font-family:'Playfair Display',serif;font-size:17px;color:#c9a96e;margin-bottom:8px}
-/* ═══ CONTRAST FIX 25: why-card body text ═══ */
 .why-p{font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;line-height:1.6}
 .fb-cta{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 8px rgba(0,0,0,0.25);padding:40px;text-align:center;margin-bottom:2px}
 .fb-cta-title{font-family:'Playfair Display',serif;font-size:26px;color:#c9a96e;margin-bottom:8px}
 .fb-cta-tag{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:18px}
-/* ═══ CONTRAST FIX 26: fb-cta quote ═══ */
 .fb-cta-quote{font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;font-style:italic;line-height:1.8;max-width:500px;margin:0 auto 28px}
 
-/* ── SEO PAGE ── */
+/* SEO PAGE */
 .seo-hero{background:#1e2433;border-bottom:2px solid #3d4a60;padding:48px 0 36px;margin:-48px -24px 40px;padding-left:24px;padding-right:24px}
 .seo-eyebrow{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:14px}
 .seo-h1{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,42px);font-weight:600;color:#eee8d0;line-height:1.2;margin-bottom:12px;max-width:700px}
-/* ═══ CONTRAST FIX 27: SEO page lead text ═══ */
 .seo-lead{font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;max-width:620px;line-height:1.7;margin-bottom:24px;font-style:italic}
 .seo-toc{display:flex;flex-wrap:wrap;gap:8px}
 .seo-toc-link{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;border:1px solid #c9a96e;padding:5px 12px;cursor:pointer;transition:all 0.2s;background:transparent}
 .seo-toc-link:hover{color:#c9a96e;border-color:#4d5a70}
-
 .seo-section{margin-bottom:52px}
 .seo-section-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px}
 .seo-section h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:#c9a96e;margin-bottom:8px;line-height:1.3}
-/* ═══ CONTRAST FIX 28: SEO section intro italic ═══ */
 .seo-intro{font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;font-style:italic;margin-bottom:28px;border-left:2px solid #3d4a60;padding-left:16px;line-height:1.7}
 .seo-divider{border:none;border-top:1px solid #3d4a60;margin:48px 0}
-
 .seo-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
 .seo-card{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 8px rgba(0,0,0,0.25);padding:22px 24px;position:relative;transition:border-color 0.2s}
 .seo-card:hover{border-color:var(--border2)}
 .seo-card-accent{position:absolute;top:0;left:0;width:3px;height:100%;background:var(--red)}
-/* ═══ CONTRAST FIX 29: SEO card rank label ═══ */
 .seo-card-rank{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0b0cc;margin-bottom:8px}
 .seo-card h3{font-family:'Playfair Display',serif;font-size:17px;color:#dab870;margin-bottom:8px}
-/* ═══ CONTRAST FIX 30: SEO card description ═══ */
 .seo-card p{font-family:'Crimson Text',serif;font-size:14px;color:#d4cdb8;margin-bottom:12px;line-height:1.6}
 .seo-card-tags{display:flex;flex-wrap:wrap;gap:6px}
-/* ═══ CONTRAST FIX 31: SEO tags — improved contrast ═══ */
 .seo-tag{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#b0c0d8;border:1px solid #4d5a70;padding:4px 10px}
 .seo-tag.platform{color:#70c050;border-color:#1a3010}
-
 .seo-guide{border:1px solid #3d4a60;background:#1e2433;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .seo-guide-item{padding:20px 24px;border-bottom:1px solid #3d4a60;display:flex;gap:20px;align-items:flex-start}
 .seo-guide-item:last-child{border-bottom:none}
 .seo-guide-num{font-family:'Playfair Display',serif;font-size:28px;color:#8090b8;min-width:36px;line-height:1;flex-shrink:0}
 .seo-guide-item h4{font-family:'Playfair Display',serif;font-size:16px;color:#dab870;margin-bottom:6px}
-/* ═══ CONTRAST FIX 32: streaming guide descriptions ═══ */
 .seo-guide-item p{font-family:'Crimson Text',serif;font-size:14px;color:#d4cdb8;line-height:1.6;margin:0}
-
 .seo-faq{border-top:1px solid #3d4a60}
 .seo-faq-item{border-bottom:1px solid #3d4a60;padding:22px 0}
 .seo-faq-q{font-family:'Playfair Display',serif;font-size:17px;color:#c9a96e;margin-bottom:10px;font-style:italic;font-weight:400;line-height:1.4}
-/* ═══ CONTRAST FIX 33: FAQ answer text ═══ */
 .seo-faq-a{font-family:'Crimson Text',serif;font-size:15px;color:#d4cdb8;line-height:1.7;margin:0}
 .seo-faq-a strong{color:#c9a96e;font-weight:400}
-
 .seo-bottom-cta{background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 8px rgba(0,0,0,0.25);padding:36px;text-align:center;margin-top:48px}
 .seo-bottom-cta h3{font-family:'Playfair Display',serif;font-size:22px;color:#c9a96e;margin-bottom:8px}
-/* ═══ CONTRAST FIX 34: bottom CTA subtext ═══ */
 .seo-bottom-cta p{font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;margin-bottom:20px;font-style:italic}
 
 /* MAILCHIMP OVERRIDES */
@@ -580,12 +347,13 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .nlp-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
 .nlp-note{font-family:'Raleway',sans-serif;font-size:9px;color:#8898b8;margin-top:8px}
 .nlp-skip{display:block;margin-top:14px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#5060a0;text-align:center;cursor:pointer;background:none;border:none;width:100%}
-     footer{border-top:1px solid #3d4a60;padding:28px 32px;text-align:center;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#9090b8;background:#1e2433}
+footer{border-top:1px solid #3d4a60;padding:28px 32px;text-align:center;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#9090b8;background:#1e2433}
 
 @media(max-width:700px){
   nav{padding:0 12px;flex-wrap:wrap}
   .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
   .nlink{padding:14px 10px;font-size:9px}
+  .nav-guide-btn,.nav-nl-btn{font-size:9px !important;padding:8px 12px !important}
   .hero-h1{font-size:32px}
   .page{padding:32px 16px}
   .stats{grid-template-columns:repeat(3,1fr)}
@@ -594,7 +362,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 }
 </style>
 </head>
-  <body>
+<body>
 
 <nav aria-label="Main navigation">
   <div class="nav-brand">
@@ -620,7 +388,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
     <img src="/8dc1958e-bd69-4e7c-a328-3272c55cea4b.png" alt="Cozy British TV viewing" style="width:100%;height:100%;object-fit:cover;display:block;">
     <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(26,33,53,0.55),rgba(26,33,53,0.2));"></div>
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:48px 40px;">
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#8b1a2e;margin-bottom:16px;">Trusted by 4,000+ fans</div>
+      <!-- "Trusted by 4,000+ fans" removed — was bleeding over hero image -->
       <h1 style="font-family:'Playfair Display',serif;font-size:42px;font-weight:400;line-height:1.2;color:#e8dfc8;margin:0 0 12px;">The #1 Guide to<br><em style="color:#c9a96e;">British TV Mysteries<br>&amp; Dramas</em></h1>
       <div style="width:40px;height:1px;background:#c9a96e;margin:16px 0;"></div>
       <p style="font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#c8c0a8;line-height:1.6;margin:0 0 28px;max-width:380px;">Inspector Morse to Happy Valley — your trusted guide to what to watch and where to stream it.</p>
@@ -717,22 +485,19 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
 
     <div style="background:#2c3345;border:1px solid #3d4a60;border-top:3px solid #8b1a2e;padding:28px 22px;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 4px;">BritBox</h3>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;"></div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 14px;">BritBox</h3>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;line-height:1.7;margin:0 0 20px;">Inspector Morse, Vera, Miss Marple, Shetland, Line of Duty, Endeavour and thousands more.</p>
       <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:13px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Start Free Trial &rarr;</a>
     </div>
 
     <div style="background:#2c3345;border:1px solid #3d4a60;border-top:3px solid #8b1a2e;padding:28px 22px;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 4px;">Acorn TV</h3>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;">From $6.99/month · Free trial</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 14px;">Acorn TV</h3>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;line-height:1.7;margin:0 0 20px;">Hinterland, Midsomer Murders, Doc Martin, Agatha Raisin, Murdoch Mysteries and more.</p>
       <a href="https://acorn.tv" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:13px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Start Free Trial &rarr;</a>
     </div>
 
     <div style="background:#2c3345;border:1px solid #3d4a60;border-top:3px solid #8b1a2e;padding:28px 22px;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 4px;">PBS Passport</h3>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;">From $5/month · Support PBS</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 14px;">PBS Passport</h3>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;line-height:1.7;margin:0 0 20px;">Masterpiece Theatre, Downton Abbey, Victoria, Sherlock, Call the Midwife, Wolf Hall.</p>
       <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:13px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Get PBS Passport &rarr;</a>
     </div>
@@ -778,7 +543,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
     <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
     <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
-  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;">British TV Dramas &amp; Mysteries &nbsp;·&nbsp; 2026</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;">British TV Dramas &amp; Mysteries &nbsp;·&nbsp; &copy; 2026</div>
 </footer>
 <div style="background:#1a2135;padding:8px 40px;text-align:center;">
   <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
