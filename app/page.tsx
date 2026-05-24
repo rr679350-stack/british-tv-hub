@@ -40,7 +40,7 @@ export default function BritishTVHub() {
             <nav className="hidden items-center gap-10 text-base uppercase tracking-[0.2em] text-[#ead8be] md:flex">
               <a href="#home" className="transition hover:text-white">Home</a>
               <a href="#about" className="transition hover:text-white">About</a>
-              <a href="#contact" className="transition hover:text-white">Contact</a>
+              <a href="#contact" className="transition hover:text-white">Contact</a> <a href="/partner.html">Partner</a>
             </nav>
 
             {/* FIXED: hide button on small screens so header doesn't overflow */}
