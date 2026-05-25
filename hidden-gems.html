@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>25 Hidden Gem British Mysteries & Dramas — Free Guide | British TV Hub</title>
 <meta name="description" content="Download our free guide: 25 underrated British mysteries and dramas you haven't watched yet — but absolutely should. From Hamish Macbeth to The Bletchley Circle.">
-<link rel="canonical" href="https://www.britishtvhub.com/hidden-gems">
+<link rel="canonical" href="https://www.britishtvhub.com/hidden-gems.html">
 <meta property="og:title" content="25 Hidden Gem British Mysteries & Dramas — Free Guide">
 <meta property="og:description" content="25 underrated British shows most people have never heard of — and every one is worth your time. Free download.">
-<meta property="og:url" content="https://www.britishtvhub.com/hidden-gems">
+<meta property="og:url" content="https://www.britishtvhub.com/hidden-gems.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital@0;1&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     min-height: 100vh;
   }
 
-  /* ── NAV ── */
+  /* NAV */
   nav {
     background: var(--darker);
     border-bottom: 1px solid var(--border);
@@ -98,7 +98,7 @@
     font-size: 12px !important;
   }
 
-  /* ── HERO ── */
+  /* HERO */
   .hero {
     position: relative;
     min-height: 80vh;
@@ -118,16 +118,6 @@
       radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 60%),
       radial-gradient(ellipse at 100% 100%, rgba(139,26,26,0.12) 0%, transparent 50%),
       radial-gradient(ellipse at 0% 100%, rgba(27,77,62,0.1) 0%, transparent 50%);
-  }
-
-  /* Film grain overlay */
-  .hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-    opacity: 0.4;
-    pointer-events: none;
   }
 
   .hero-content {
@@ -158,10 +148,7 @@
     animation: fadeUp 0.8s ease forwards 0.4s;
   }
 
-  .hero-title em {
-    color: var(--gold);
-    font-style: italic;
-  }
+  .hero-title em { color: var(--gold); font-style: italic; }
 
   .hero-divider {
     width: 60px;
@@ -210,11 +197,7 @@
     animation: fadeUp 0.8s ease forwards 1s;
   }
 
-  .hero-cta:hover {
-    background: var(--gold2);
-    transform: translateY(-2px);
-  }
-
+  .hero-cta:hover { background: var(--gold2); transform: translateY(-2px); }
   .hero-cta svg { width: 16px; height: 16px; }
 
   .hero-note {
@@ -225,7 +208,7 @@
     animation: fadeUp 0.8s ease forwards 1.1s;
   }
 
-  /* ── PDF PREVIEW ── */
+  /* PDF PREVIEW */
   .preview-section {
     padding: 4rem 2rem;
     max-width: 900px;
@@ -294,11 +277,7 @@
     opacity: 0.4;
   }
 
-  .pdf-shows {
-    text-align: left;
-    display: grid;
-    gap: 0.4rem;
-  }
+  .pdf-shows { text-align: left; display: grid; gap: 0.4rem; }
 
   .pdf-show-item {
     display: flex;
@@ -310,26 +289,12 @@
     border-bottom: 1px solid rgba(201,168,76,0.08);
   }
 
-  .pdf-show-num {
-    color: var(--gold);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.7rem;
-    min-width: 18px;
-    opacity: 0.7;
-  }
-
+  .pdf-show-num { color: var(--gold); font-family: 'Cormorant Garamond', serif; font-size: 0.7rem; min-width: 18px; opacity: 0.7; }
   .pdf-show-name { font-weight: 600; color: var(--cream); }
   .pdf-show-genre { color: var(--muted); font-size: 0.75rem; margin-left: auto; }
+  .pdf-more { text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--gold); font-style: italic; }
 
-  .pdf-more {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: var(--gold);
-    font-style: italic;
-  }
-
-  /* ── WHAT'S INSIDE ── */
+  /* WHAT'S INSIDE */
   .inside-section {
     padding: 4rem 2rem;
     max-width: 900px;
@@ -368,26 +333,11 @@
     text-align: center;
   }
 
-  .feature-icon {
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
-    display: block;
-  }
+  .feature-icon { font-size: 1.8rem; margin-bottom: 0.75rem; display: block; }
+  .feature-title { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold); margin-bottom: 0.4rem; }
+  .feature-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
-  .feature-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    color: var(--gold);
-    margin-bottom: 0.4rem;
-  }
-
-  .feature-desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  /* ── FINAL CTA ── */
+  /* FINAL CTA */
   .final-cta {
     text-align: center;
     padding: 5rem 2rem;
@@ -395,21 +345,10 @@
     border-top: 1px solid var(--border);
   }
 
-  .final-cta-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    color: var(--cream);
-    margin-bottom: 0.5rem;
-  }
+  .final-cta-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--cream); margin-bottom: 0.5rem; }
+  .final-cta-sub { font-style: italic; color: var(--muted); margin-bottom: 2rem; font-size: 1rem; }
 
-  .final-cta-sub {
-    font-style: italic;
-    color: var(--muted);
-    margin-bottom: 2rem;
-    font-size: 1rem;
-  }
-
-  /* ── FOOTER ── */
+  /* FOOTER */
   footer {
     background: var(--darker);
     border-top: 1px solid var(--border);
@@ -443,14 +382,15 @@
     <span class="nav-brand-sub">Classics &amp; New Favorites</span>
   </a>
   <ul class="nav-links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/shows.html">Shows</a></li>
-  <li><a href="/streaming.html">Streaming</a></li>
-  <li><a href="/nightly-pick.html">Tonight's Pick</a></li>
-  <li><a href="/top10.html">Fan Favourites</a></li>
-  <li><a href="/faq.html">FAQ</a></li>
-  <li><a href="/#nl-anchor" class="nav-cta">Sunday Picks →</a></li>
-</ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/shows.html">Shows</a></li>
+    <li><a href="/streaming.html">Streaming</a></li>
+    <li><a href="/nightly-pick.html">Tonight's Pick</a></li>
+    <li><a href="/top10.html">Fan Favourites</a></li>
+    <li><a href="/faq.html">FAQ</a></li>
+    <li><a href="/quiz.html" class="nav-cta">Match Me a Mystery</a></li>
+  </ul>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -501,7 +441,7 @@
     </div>
     <div class="feature-card">
       <span class="feature-icon">📅</span>
-      <p class="feature-title">Year & Genre Tags</p>
+      <p class="feature-title">Year &amp; Genre Tags</p>
       <p class="feature-desc">Every show listed with air dates and genre so you can find your perfect match.</p>
     </div>
     <div class="feature-card">
@@ -531,7 +471,7 @@
 </section>
 
 <footer>
-  <p>© 2026 British TV Dramas &amp; Mysteries: Classics and New Favorites · <a href="https://www.britishtvhub.com">britishtvhub.com</a></p>
+  <p>British TV Dramas &amp; Mysteries: Classics and New Favorites &nbsp;·&nbsp; <a href="https://www.britishtvhub.com">britishtvhub.com</a> &nbsp;·&nbsp; 2026</p>
 </footer>
 
 </body>
