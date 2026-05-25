@@ -11,18 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #2c3345;
-    --bg-dark: #1a2135;
-    --bg-card: #1e2433;
-    --border: #3d4a60;
-    --gold: #c9a96e;
-    --gold-light: #dab870;
-    --red: #8b1a2e;
-    --red-light: #d06070;
-    --text: #e8dfc8;
-    --text-muted: #c8c0a8;
-    --text-dim: #a0aec8;
-    --text-faint: #8898b8;
+    --bg: #2c3345;--bg-dark: #1a2135;--bg-card: #1e2433;--border: #3d4a60;
+    --gold: #c9a96e;--gold-light: #dab870;--red: #8b1a2e;--red-light: #d06070;
+    --text: #e8dfc8;--text-muted: #c8c0a8;--text-dim: #a0aec8;--text-faint: #8898b8;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; }
@@ -38,27 +29,25 @@
   .nav-guide-btn { background: var(--red); color: #f5e8d0; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 14px; border: none; cursor: pointer; text-decoration: none; display: inline-block; }
   .nav-nl-btn { background: none; border: 1px solid var(--gold); color: var(--gold); font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 7px 14px; cursor: pointer; text-decoration: none; display: inline-block; margin-left: 8px; }
 
-  .page-hero { background: linear-gradient(135deg, var(--bg-dark) 0%, #232a3a 100%); border-bottom: 1px solid var(--border); padding: 64px 40px 48px; }
+  .page-hero { position: relative; overflow: hidden; min-height: 400px; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+  .page-hero img { position: absolute; right: 0; top: 0; width: 58%; height: 100%; object-fit: cover; object-position: center; filter: brightness(1.1); }
+  .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, #1a2135 42%, rgba(26,33,53,0.75) 62%, rgba(26,33,53,0.05) 100%); }
+  .page-hero-content { position: relative; z-index: 2; padding: 64px 40px 48px; max-width: 560px; }
   .page-hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 16px; }
-  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--text); line-height: 1.15; margin-bottom: 16px; max-width: 700px; }
-  .page-hero-lead { font-family: 'Crimson Text', serif; font-size: 20px; color: var(--text-muted); font-style: italic; line-height: 1.6; max-width: 600px; margin-bottom: 32px; }
+  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--text); line-height: 1.15; margin-bottom: 16px; }
+  .page-hero-lead { font-family: 'Crimson Text', serif; font-size: 20px; color: var(--text-muted); font-style: italic; line-height: 1.6; margin-bottom: 32px; }
   .page-hero-meta { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-faint); }
 
   main { max-width: 960px; margin: 0 auto; padding: 64px 40px; }
-
   .section-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--gold-light); margin-bottom: 12px; }
   .section-intro { font-family: 'Crimson Text', serif; font-size: 18px; color: var(--text-muted); font-style: italic; line-height: 1.7; margin-bottom: 40px; max-width: 700px; }
   .section-divider { border: none; border-top: 1px solid var(--border); margin: 56px 0; }
-
-  /* COZY METER */
   .cozy-meter { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; }
   .cozy-meter-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-faint); }
   .cozy-cups { display: flex; gap: 3px; }
   .cup { font-size: 14px; }
   .cup.dim { opacity: 0.2; }
-
-  /* SHOW CARDS */
   .shows-grid { display: grid; gap: 24px; margin-bottom: 48px; }
   .show-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--gold); padding: 28px 32px; transition: border-color 0.2s; }
   .show-card:hover { border-color: var(--gold); background: #222a3c; }
@@ -76,17 +65,12 @@
   .tag.platform:hover { opacity: 0.85; }
   .tag.platform.acorn { background: #1a2e1a; border-color: #4a8; color: #4a8; }
   .tag.platform.pbs { background: #1a1a2e; border-color: #5588cc; color: #5588cc; }
-  .tag.platform.netflix { background: #1a1a2e; border-color: #e50914; color: #e50914; }
   .tag.free { background: #1a2e1a; border-color: #4a8; color: #4a8; }
-
-  /* WHAT IS COZY BOX */
   .explainer { background: var(--bg-dark); border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 32px; margin-bottom: 48px; }
   .explainer-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold-light); margin-bottom: 16px; }
   .explainer-body { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); line-height: 1.8; }
   .explainer-list { margin: 16px 0 0 20px; }
   .explainer-list li { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); line-height: 1.8; margin-bottom: 6px; }
-
-  /* STREAMING BOX */
   .streaming-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 48px; }
   .streaming-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 2px solid var(--gold); padding: 24px; }
   .streaming-label { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
@@ -94,28 +78,25 @@
   .streaming-desc { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; }
   .streaming-btn { display: inline-block; background: var(--red); color: #f5e8d0; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px; text-decoration: none; border-radius: 2px; transition: background 0.2s; }
   .streaming-btn:hover { background: #a01f36; }
-
-  /* CTA */
   .cta-block { background: var(--bg-dark); border: 1px solid var(--border); border-left: 4px solid var(--red); padding: 40px; margin-top: 48px; display: flex; align-items: center; gap: 40px; }
   .cta-block h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text); margin-bottom: 8px; }
   .cta-block p { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); font-style: italic; }
   .cta-form { display: flex; gap: 8px; flex-shrink: 0; }
   .cta-input { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Crimson Text', serif; font-size: 15px; width: 240px; outline: none; }
   .cta-btn { background: var(--red); border: none; color: #f5e8d0; padding: 12px 20px; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
-
   .affiliate-note { font-family: 'Raleway', sans-serif; font-size: 9px; color: var(--text-faint); margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.7; }
-
   footer { background: var(--bg-dark); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; }
   .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
   .footer-links a { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); text-decoration: none; }
   .footer-links a:hover { color: var(--gold); }
   .footer-copy { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1px; color: var(--text-faint); }
   .footer-disclosure { font-family: 'Raleway', sans-serif; font-size: 9px; color: var(--text-faint); margin-top: 10px; }
-
   @media (max-width: 700px) {
     nav { padding: 0 16px; }
     .nav-links { display: none; }
-    .page-hero { padding: 40px 20px 32px; }
+    .page-hero { min-height: 300px; }
+    .page-hero img { width: 100%; opacity: 0.3; }
+    .page-hero-content { padding: 40px 20px 32px; max-width: 100%; }
     .page-hero h1 { font-size: 32px; }
     main { padding: 40px 20px; }
     .cta-block { flex-direction: column; gap: 24px; }
@@ -133,28 +114,30 @@
   </div>
   <div class="nav-links">
     <a class="nlink" href="/">Home</a>
-    <a class="nlink" href="/beginners.html">Start Here</a>
     <a class="nlink" href="/shows.html">Shows</a>
     <a class="nlink" href="/streaming.html">Streaming</a>
-    <a class="nlink" href="/nightly-pick.html">Tonight's Pick</a>
-    <a class="nlink" href="/top10.html">Fan Favourites</a>
     <a class="nlink active" href="/cozy.html">Cozy Mysteries</a>
+    <a class="nlink" href="/top10.html">Police Procedurals</a>
     <a class="nlink" href="/faq.html">FAQ</a>
+    <a class="nlink" href="/dvd.html">British TV on DVD</a>
     <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
     <a class="nav-nl-btn" href="/quiz.html">Match Me a Mystery</a>
   </div>
 </nav>
 
 <div class="page-hero">
-  
-  <h1>The Best Cozy British Mystery Shows</h1>
-  <p class="page-hero-lead">Warm villages, clever detectives, and murders that never keep you up at night. These are the British mysteries our community reaches for when they want comfort, charm, and a good puzzle — without the darkness.</p>
-  <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated 2026 &nbsp;&middot;&nbsp; Perfect for Sunday evenings</div>
+  <img src="/cozy-hero.webp" alt="Quintessential English village at dusk with cobblestone street and warm glowing windows">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-eyebrow">Warm · Clever · Never Too Dark</div>
+    <h1>The Best Cozy British Mystery Shows</h1>
+    <p class="page-hero-lead">Warm villages, clever detectives, and murders that never keep you up at night. These are the British mysteries our community reaches for when they want comfort, charm, and a good puzzle.</p>
+    <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated 2026 &nbsp;&middot;&nbsp; Perfect for Sunday evenings</div>
+  </div>
 </div>
 
 <main>
 
-  <!-- WHAT IS COZY -->
   <div class="explainer">
     <h2 class="explainer-title">What makes a British mystery "cozy"?</h2>
     <p class="explainer-body">A cozy mystery is warm where other crime dramas are cold. The detective is charming rather than tortured, the setting is picturesque rather than bleak, and while there's always a murder, it never feels threatening or disturbing. Think village fetes, eccentric suspects, and a satisfying resolution over a cup of tea. A great cozy mystery has:</p>
@@ -167,7 +150,6 @@
     </ul>
   </div>
 
-  <!-- TOP PICKS -->
   <div class="section-label">Our top picks</div>
   <h2 class="section-title">The Best Cozy British Mysteries Streaming Now</h2>
   <p class="section-intro">Every show here is warm, clever, and completely safe to watch before bed. Ranked roughly from most-loved to most-discovered — but honestly, you can't go wrong with any of them.</p>
@@ -177,225 +159,95 @@
     <div class="show-card">
       <div class="show-badge">The Cozy Classic</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Miss Marple (1984)</h3>
-          <div class="show-meta">1984–1992 &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Miss Marple (1984)</h3><div class="show-meta">1984–1992 &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span></div></div>
       </div>
-      <p class="show-desc">Joan Hickson's definitive Miss Marple remains the gold standard of cozy British mystery. A sharp-minded elderly spinster from the village of St Mary Mead keeps stumbling upon murders — and solving them with quiet, devastating brilliance. Impeccably cast, beautifully shot, and endlessly rewatchable.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Agatha Christie fans, Sunday afternoon viewing, anyone who loved the books and wants the definitive screen version.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">Agatha Christie</span>
-        <span class="tag">Village setting</span>
-        <span class="tag">Standalone episodes</span>
-        <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-      </div>
+      <p class="show-desc">Joan Hickson's definitive Miss Marple remains the gold standard of cozy British mystery. Impeccably cast, beautifully shot, and endlessly rewatchable.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Agatha Christie fans, Sunday afternoon viewing, anyone who wants the definitive screen version.</div></div>
+      <div class="show-tags"><span class="tag">Agatha Christie</span><span class="tag">Village setting</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Ultimate Comfort Watch</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Midsomer Murders</h3>
-          <div class="show-meta">1997–present &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; Acorn TV</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Midsomer Murders</h3><div class="show-meta">1997–present &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; Acorn TV</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span></div></div>
       </div>
-      <p class="show-desc">Impossibly picturesque English villages with an impossibly high murder rate. DCI Tom Barnaby (and later his cousin John) investigates the most elaborate crimes imaginable against the most charming backdrops. Warm, witty, and endlessly comforting — 25+ series and still going strong. Also available free on Pluto TV.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Anyone new to British mysteries, viewers who want something they can dip in and out of, fans of beautiful English countryside.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">English villages</span>
-        <span class="tag">25+ series</span>
-        <span class="tag">Standalone episodes</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-        <span class="tag free">Free on Pluto TV</span>
-      </div>
+      <p class="show-desc">Impossibly picturesque English villages with an impossibly high murder rate. Warm, witty, and endlessly comforting — 25+ series and still going strong. Also free on Pluto TV.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Anyone new to British mysteries, fans of beautiful English countryside.</div></div>
+      <div class="show-tags"><span class="tag">English villages</span><span class="tag">25+ series</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a><span class="tag free">Free on Pluto TV</span></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Priest Detective</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Father Brown</h3>
-          <div class="show-meta">2013–present &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Father Brown</h3><div class="show-meta">2013–present &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span></div></div>
       </div>
-      <p class="show-desc">Mark Williams is utterly charming as the mild-mannered Cotswolds Catholic priest with an uncanny gift for unmasking murderers. Set in a gorgeously recreated 1950s English countryside, Father Brown is pure comfort viewing — warm, funny, and completely irresistible.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Miss Marple fans, anyone who loves 1950s period settings, viewers who want maximum charm with zero darkness.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">1950s Cotswolds</span>
-        <span class="tag">11 series</span>
-        <span class="tag">G.K. Chesterton</span>
-        <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-      </div>
+      <p class="show-desc">Mark Williams is utterly charming as the mild-mannered Cotswolds priest with a gift for unmasking murderers. Set in a gorgeous 1950s English countryside — pure comfort viewing.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Miss Marple fans, anyone who loves 1950s period settings, maximum charm with zero darkness.</div></div>
+      <div class="show-tags"><span class="tag">1950s Cotswolds</span><span class="tag">11 series</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Vicar Detective</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Grantchester</h3>
-          <div class="show-meta">2014–present &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; PBS Passport</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Grantchester</h3><div class="show-meta">2014–present &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; PBS Passport</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span></div></div>
       </div>
-      <p class="show-desc">A crime-solving vicar in 1950s Cambridgeshire teams up with a detective inspector to solve murders across the beautiful English countryside. Warm, charming, and beautifully shot — with a little more emotional depth than pure cozy fare. The kind of show that makes you want to move to a thatched cottage.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Viewers who want something slightly more character-driven than pure cozy, fans of 1950s period drama, PBS Masterpiece devotees.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">1950s Cambridge</span>
-        <span class="tag">9 series</span>
-        <span class="tag">Period drama</span>
-        <a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/grantchester/" target="_blank" rel="noopener">PBS Passport</a>
-      </div>
+      <p class="show-desc">A crime-solving vicar in 1950s Cambridgeshire solves murders across the beautiful English countryside. Warm, charming, and beautifully shot — the kind of show that makes you want a thatched cottage.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Viewers who want something slightly more character-driven, PBS Masterpiece devotees.</div></div>
+      <div class="show-tags"><span class="tag">1950s Cambridge</span><span class="tag">9 series</span><a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/grantchester/" target="_blank" rel="noopener">PBS Passport</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Funny One</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Agatha Raisin</h3>
-          <div class="show-meta">2016–present &nbsp;&middot;&nbsp; Channel 4 &nbsp;&middot;&nbsp; Acorn TV</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Agatha Raisin</h3><div class="show-meta">2016–present &nbsp;&middot;&nbsp; Channel 4 &nbsp;&middot;&nbsp; Acorn TV</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span></div></div>
       </div>
-      <p class="show-desc">A sharp London PR exec retires to the Cotswolds and keeps stumbling into murders. Ashley Jensen is irresistible as the blundering, brilliant Agatha — funny, warm, and completely bingeable. More comedic than classic cozy, but utterly charming. Based on M.C. Beaton's beloved novels.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Viewers who want their mystery with more laughs, M.C. Beaton fans, anyone who prefers a modern setting with classic cozy sensibility.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">Cotswolds</span>
-        <span class="tag">Funny</span>
-        <span class="tag">M.C. Beaton novels</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-      </div>
+      <p class="show-desc">A sharp London PR exec retires to the Cotswolds and keeps stumbling into murders. Ashley Jensen is irresistible — funny, warm, and completely bingeable. Based on M.C. Beaton's beloved novels.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Viewers who want their mystery with more laughs, M.C. Beaton fans.</div></div>
+      <div class="show-tags"><span class="tag">Cotswolds</span><span class="tag">Funny</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Caribbean Cozy</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Death in Paradise</h3>
-          <div class="show-meta">2011–present &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Death in Paradise</h3><div class="show-meta">2011–present &nbsp;&middot;&nbsp; BBC &nbsp;&middot;&nbsp; BritBox</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span></div></div>
       </div>
-      <p class="show-desc">A fish-out-of-water British detective solves murders on the sun-soaked Caribbean island of Saint Marie. Not your typical English village setting, but every bit as warm and cozy in spirit — light, funny, and utterly addictive. The perfect antidote when you want mystery without a single dark moment.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Viewers who want something sunny and uplifting, fans of light procedurals, anyone who wants 13+ series of guaranteed comfort viewing.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">Caribbean</span>
-        <span class="tag">13+ series</span>
-        <span class="tag">Light & funny</span>
-        <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-      </div>
+      <p class="show-desc">A fish-out-of-water British detective solves murders on the sun-soaked Caribbean island of Saint Marie. Light, funny, and utterly addictive — 13+ series of guaranteed comfort viewing.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Viewers who want something sunny and uplifting, fans of light procedurals.</div></div>
+      <div class="show-tags"><span class="tag">Caribbean</span><span class="tag">13+ series</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">Agatha Christie's Greatest</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Agatha Christie's Poirot</h3>
-          <div class="show-meta">1989–2013 &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; Acorn TV</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Agatha Christie's Poirot</h3><div class="show-meta">1989–2013 &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; BritBox</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup dim">☕</span></div></div>
       </div>
-      <p class="show-desc">David Suchet spent 25 years perfecting Hercule Poirot — the result is one of the greatest achievements in British television. Every Agatha Christie novel adapted to perfection. Later episodes get darker and more complex, but the early series are pure cozy gold.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Agatha Christie devotees, fans of period drama, viewers who want to watch a 25-year artistic achievement unfold episode by episode.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">Agatha Christie</span>
-        <span class="tag">1930s period</span>
-        <span class="tag">13 series</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-      </div>
+      <p class="show-desc">David Suchet spent 25 years perfecting Hercule Poirot. Every Agatha Christie novel adapted to perfection. The early series are pure cozy gold.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Agatha Christie devotees, fans of period drama, viewers who want a 25-year artistic achievement.</div></div>
+      <div class="show-tags"><span class="tag">Agatha Christie</span><span class="tag">1930s period</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
     </div>
 
     <div class="show-card">
       <div class="show-badge">The Hidden Gem</div>
       <div class="show-header">
-        <div>
-          <h3 class="show-title">Doc Martin</h3>
-          <div class="show-meta">2004–2022 &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; Acorn TV</div>
-        </div>
-        <div class="cozy-meter">
-          <span class="cozy-meter-label">Cozy</span>
-          <div class="cozy-cups">
-            <span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span>
-          </div>
-        </div>
+        <div><h3 class="show-title">Doc Martin</h3><div class="show-meta">2004–2022 &nbsp;&middot;&nbsp; ITV &nbsp;&middot;&nbsp; Acorn TV</div></div>
+        <div class="cozy-meter"><span class="cozy-meter-label">Cozy</span><div class="cozy-cups"><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span><span class="cup">☕</span></div></div>
       </div>
-      <p class="show-desc">Technically not a mystery — but no cozy list is complete without it. A grumpy London surgeon with a blood phobia retreats to a tiny Cornish fishing village as its GP. Warm, funny, and completely irresistible — ten series of the most charming fish-out-of-water comedy drama British TV has produced.</p>
-      <div class="perfect-for">
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-text">Anyone who loves Cornwall, viewers who want pure warmth with zero mystery darkness, fans of character-driven gentle comedy drama.</div>
-      </div>
-      <div class="show-tags">
-        <span class="tag">Cornwall</span>
-        <span class="tag">10 series</span>
-        <span class="tag">Comedy drama</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-      </div>
+      <p class="show-desc">A grumpy London surgeon retreats to a tiny Cornish fishing village as its GP. Warm, funny, and completely irresistible — ten series of the most charming comedy drama British TV has produced.</p>
+      <div class="perfect-for"><div class="perfect-for-label">Perfect for</div><div class="perfect-for-text">Anyone who loves Cornwall, viewers who want pure warmth with zero darkness.</div></div>
+      <div class="show-tags"><span class="tag">Cornwall</span><span class="tag">10 series</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a></div>
     </div>
 
   </div>
 
   <hr class="section-divider">
 
-  <!-- WHERE TO WATCH -->
   <div class="section-label">Where to stream</div>
   <h2 class="section-title">Where to Watch Cozy British Mysteries in the US</h2>
   <p class="section-intro">Most cozy mysteries live on two services. Here's exactly where to find them.</p>
@@ -404,13 +256,13 @@
     <div class="streaming-card">
       <div class="streaming-label">Best for cozy mysteries</div>
       <h3 class="streaming-name">Acorn TV</h3>
-      <p class="streaming-desc">Home to Midsomer Murders, Agatha Raisin, Poirot, Doc Martin, and dozens more cozy gems. The single best streaming service for the cozy British mystery fan.</p>
+      <p class="streaming-desc">Home to Midsomer Murders, Agatha Raisin, Doc Martin, and dozens more cozy gems. The single best service for the cozy British mystery fan.</p>
       <a class="streaming-btn" href="https://acorn.tv" target="_blank" rel="noopener">Start Free Trial &rarr;</a>
     </div>
     <div class="streaming-card">
       <div class="streaming-label">Essential for classics</div>
       <h3 class="streaming-name">BritBox</h3>
-      <p class="streaming-desc">Miss Marple, Father Brown, Death in Paradise, and the largest library of classic British TV. If you want the original Miss Marple, BritBox is where you'll find her.</p>
+      <p class="streaming-desc">Miss Marple, Father Brown, Death in Paradise, Poirot and the largest library of classic British TV. If you want the original Miss Marple, BritBox is where you'll find her.</p>
       <a class="streaming-btn" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">Start Free Trial &rarr;</a>
     </div>
     <div class="streaming-card">
@@ -423,7 +275,6 @@
 
   <hr class="section-divider">
 
-  <!-- ALSO WORTH WATCHING -->
   <div class="section-label">Also worth watching</div>
   <h2 class="section-title">More Cozy Favourites from Our Community</h2>
   <p class="section-intro">Our Facebook community of 4,000+ fans also loves these — slightly less well known but just as warm.</p>
@@ -433,39 +284,27 @@
       <div class="show-badge">Community Favourite</div>
       <h3 class="show-title">All Creatures Great and Small</h3>
       <div class="show-meta">2020–present &nbsp;&middot;&nbsp; Channel 5 &nbsp;&middot;&nbsp; PBS Passport</div>
-      <p class="show-desc">Not a mystery at all — but possibly the coziest British drama ever made. Young vet James Herriot in the 1930s Yorkshire Dales. Life-affirming, beautiful, and impossible not to love.</p>
-      <div class="show-tags">
-        <span class="tag">Yorkshire Dales</span>
-        <span class="tag">1930s</span>
-        <a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/all-creatures-great-and-small/" target="_blank" rel="noopener">PBS Passport</a>
-      </div>
+      <p class="show-desc">Not a mystery — but possibly the coziest British drama ever made. Young vet James Herriot in the 1930s Yorkshire Dales. Life-affirming, beautiful, and impossible not to love.</p>
+      <div class="show-tags"><span class="tag">Yorkshire Dales</span><span class="tag">1930s</span><a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/all-creatures-great-and-small/" target="_blank" rel="noopener">PBS Passport</a></div>
     </div>
     <div class="show-card">
       <div class="show-badge">Community Favourite</div>
       <h3 class="show-title">Murdoch Mysteries</h3>
       <div class="show-meta">2008–present &nbsp;&middot;&nbsp; CBC &nbsp;&middot;&nbsp; Acorn TV</div>
-      <p class="show-desc">A Victorian-era Toronto detective uses cutting-edge forensic techniques to solve crimes. Canadian rather than British — but with all the charm of the best cozy British mysteries and 17+ series to enjoy.</p>
-      <div class="show-tags">
-        <span class="tag">Victorian period</span>
-        <span class="tag">17+ series</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-      </div>
+      <p class="show-desc">A Victorian-era Toronto detective uses cutting-edge forensic techniques to solve crimes. Canadian but with all the charm of the best cozy British mysteries and 17+ series to enjoy.</p>
+      <div class="show-tags"><span class="tag">Victorian period</span><span class="tag">17+ series</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a></div>
     </div>
     <div class="show-card">
       <div class="show-badge">Community Favourite</div>
       <h3 class="show-title">Brokenwood Mysteries</h3>
       <div class="show-meta">2014–present &nbsp;&middot;&nbsp; TVNZ &nbsp;&middot;&nbsp; Acorn TV</div>
-      <p class="show-desc">A New Zealand detective with very British sensibilities solves murders in the quirky rural town of Brokenwood. Described by fans as "Midsomer Murders of the Southern Hemisphere" — warm, witty, and completely charming.</p>
-      <div class="show-tags">
-        <span class="tag">New Zealand</span>
-        <span class="tag">Quirky</span>
-        <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-      </div>
+      <p class="show-desc">A New Zealand detective with very British sensibilities solves murders in the quirky rural town of Brokenwood. "Midsomer Murders of the Southern Hemisphere" — warm, witty, completely charming.</p>
+      <div class="show-tags"><span class="tag">New Zealand</span><span class="tag">Quirky</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a></div>
     </div>
   </div>
 
   <div class="affiliate-note">
-    <strong style="color:var(--text-dim)">Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page may be affiliate links to BritBox and Acorn TV. This never affects our recommendations — these are genuine fan favourites chosen by our community.
+    <strong style="color:var(--text-dim)">Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page may be affiliate links to BritBox and Acorn TV. This never affects our recommendations.
   </div>
 
   <div class="cta-block" style="margin-top:48px">
@@ -478,7 +317,7 @@
       <div class="cta-form">
         <input type="email" name="EMAIL" class="cta-input" placeholder="your@email.com" required aria-label="Email address">
         <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-        <button type="submit" class="cta-btn">Get Match Me a Mystery</button>
+        <button type="submit" class="cta-btn">Get Sunday Picks &rarr;</button>
       </div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;color:var(--text-faint);margin-top:10px;letter-spacing:0.5px">No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
     </form>
@@ -489,18 +328,17 @@
 <footer>
   <div class="footer-links">
     <a href="/">Home</a>
-    <a href="/beginners.html">Start Here</a>
     <a href="/shows.html">Shows</a>
     <a href="/streaming.html">Streaming</a>
-    <a href="/nightly-pick.html">Tonight's Pick</a>
-    <a href="/top10.html">Fan Favourites</a>
     <a href="/cozy.html">Cozy Mysteries</a>
+    <a href="/top10.html">Police Procedurals</a>
     <a href="/faq.html">FAQ</a>
-    <a href="/hidden-gems.html">Hidden Gems</a>
+    <a href="/dvd.html">British TV on DVD</a>
     <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Facebook</a>
-    <a href="mailto:info@britishtvhub.com">Contact</a> <a href="/partner.html">Partner Info</a>
+    <a href="mailto:info@britishtvhub.com">Contact</a>
+    <a href="/partner.html">Partner Info</a>
   </div>
-  <div class="footer-copy">British TV Dramas &amp; Mysteries &nbsp;&middot;&nbsp; Classics &amp; New Favorites &nbsp;&middot;&nbsp; Est. for British TV Fans &nbsp;&middot;&nbsp; 2026</div>
+  <div class="footer-copy">British TV Dramas &amp; Mysteries &nbsp;&middot;&nbsp; Classics &amp; New Favorites &nbsp;&middot;&nbsp; 2026</div>
   <div class="footer-disclosure">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</div>
 </footer>
 
