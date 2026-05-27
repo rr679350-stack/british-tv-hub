@@ -11,18 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #2c3345;
-    --bg-dark: #1a2135;
-    --bg-card: #1e2433;
-    --border: #3d4a60;
-    --gold: #c9a96e;
-    --gold-light: #dab870;
-    --red: #8b1a2e;
-    --red-light: #d06070;
-    --text: #e8dfc8;
-    --text-muted: #c8c0a8;
-    --text-dim: #a0aec8;
-    --text-faint: #8898b8;
+    --bg: #2c3345; --bg-dark: #1a2135; --bg-card: #1e2433;
+    --border: #3d4a60; --gold: #c9a96e; --gold-light: #dab870;
+    --red: #8b1a2e; --red-light: #d06070;
+    --text: #e8dfc8; --text-muted: #c8c0a8; --text-dim: #a0aec8; --text-faint: #8898b8;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; }
@@ -44,25 +36,17 @@
   .page-hero-lead { font-family: 'Crimson Text', serif; font-size: 20px; color: var(--text-muted); font-style: italic; line-height: 1.6; max-width: 600px; margin-bottom: 32px; }
   .page-hero-meta { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-faint); }
 
-  .jump-nav { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; }
-  .jump-link { background: none; border: none; border-bottom: 2px solid transparent; color: var(--gold); font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 16px 20px; cursor: pointer; white-space: nowrap; text-decoration: none; display: inline-block; }
-  .jump-link:hover { color: var(--text); }
-  .jump-link.active { border-bottom-color: var(--red); color: #f5e8d0; }
-
   main { max-width: 1100px; margin: 0 auto; padding: 64px 40px; }
-
   .section-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
   .section-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--gold-light); margin-bottom: 12px; }
   .section-intro { font-family: 'Crimson Text', serif; font-size: 18px; color: var(--text-muted); font-style: italic; line-height: 1.7; margin-bottom: 40px; max-width: 700px; }
   .section-divider { border: none; border-top: 1px solid var(--border); margin: 64px 0; }
 
-  /* MOOD FILTER */
   .mood-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
   .mood-btn { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid var(--border); color: var(--text-dim); padding: 7px 16px; background: transparent; cursor: pointer; transition: all 0.2s; }
   .mood-btn:hover { border-color: var(--gold); color: var(--gold); }
   .mood-btn.active { background: var(--red); border-color: var(--red); color: #f5e8d0; }
 
-  /* SHOW CARDS */
   .shows-grid { display: grid; gap: 24px; margin-bottom: 64px; }
   .show-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--border); padding: 32px; display: grid; grid-template-columns: 64px 1fr; gap: 24px; align-items: start; transition: border-color 0.2s; }
   .show-card:hover { border-color: var(--gold); border-left-color: var(--gold); }
@@ -84,7 +68,6 @@
   .tag.easy { background: #1a2e1a; border-color: #4a8; color: #4a8; }
   .tag.medium { background: #2e2a1a; border-color: #c9a96e; color: #c9a96e; }
 
-  /* PATHWAY SECTION */
   .pathway-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 48px; }
   .pathway-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 24px; }
   .pathway-label { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
@@ -92,22 +75,13 @@
   .pathway-shows { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--text-muted); line-height: 1.8; }
   .pathway-arrow { color: var(--text-faint); margin: 0 6px; }
 
-  /* CTA */
   .cta-block { background: var(--bg-dark); border: 1px solid var(--border); border-left: 4px solid var(--red); padding: 40px; margin-top: 48px; display: flex; align-items: center; gap: 40px; }
   .cta-block h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text); margin-bottom: 8px; }
   .cta-block p { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); font-style: italic; }
   .cta-form { display: flex; gap: 8px; flex-shrink: 0; }
   .cta-input { background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 12px 16px; font-family: 'Crimson Text', serif; font-size: 15px; width: 240px; outline: none; }
   .cta-btn { background: var(--red); border: none; color: #f5e8d0; padding: 12px 20px; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
-
   .affiliate-note { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 0.5px; color: var(--text-faint); margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.7; }
-
-  footer { background: var(--bg-dark); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; }
-  .footer-links { display: flex; gap: 24px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
-  .footer-links a { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); text-decoration: none; }
-  .footer-links a:hover { color: var(--gold); }
-  .footer-copy { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1px; color: var(--text-faint); }
-  .footer-disclosure { font-family: 'Raleway', sans-serif; font-size: 9px; color: var(--text-faint); margin-top: 10px; }
 
   @media (max-width: 700px) {
     nav { padding: 0 16px; }
@@ -143,28 +117,24 @@
   </div>
 </nav>
 
-
-
 <div class="page-hero" style="position:relative;overflow:hidden;min-height:400px;padding:0;display:flex;align-items:center;">
   <img src="/beginners-hero.webp" alt="Victorian London detective scene with Big Ben at night" width="1200" height="800" style="position:absolute;right:0;top:0;width:65%;height:100%;object-fit:cover;object-position:left center;filter:brightness(0.9);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 42%,rgba(26,33,53,0.75) 62%,rgba(26,33,53,0.05) 100%);"></div>
   <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:560px;">
-  <div class="page-hero-eyebrow">New to British TV &mdash; Start Here</div>
-  <h1>The Best British Mystery Shows for Beginners</h1>
-  <p class="page-hero-lead">Not sure where to start? These are the shows our community recommends to every newcomer &mdash; instantly gripping, easy to follow, and guaranteed to get you hooked.</p>
-  <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated 2026 &nbsp;&middot;&nbsp; Trusted by 4,000+ enthusiasts</div>
+    <div class="page-hero-eyebrow">New to British TV &mdash; Start Here</div>
+    <h1>The Best British Mystery Shows for Beginners</h1>
+    <p class="page-hero-lead">Not sure where to start? These are the shows our community recommends to every newcomer &mdash; instantly gripping, easy to follow, and guaranteed to get you hooked.</p>
+    <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated 2026 &nbsp;&middot;&nbsp; Trusted by 4,000+ enthusiasts</div>
   </div>
 </div>
 
 <main>
 
-  <!-- INTRO -->
   <div id="top-picks">
     <div class="section-label">Section 01 &mdash; Where to Begin</div>
     <h2 class="section-title">8 Perfect First British Mystery Shows</h2>
     <p class="section-intro">Every show here is chosen because it works immediately — no homework required, no slow build-up, no confusing backstory. Just brilliant television from episode one.</p>
 
-    <!-- MOOD FILTER -->
     <div class="mood-filter">
       <button class="mood-btn active" onclick="filterShows('all', this)">All</button>
       <button class="mood-btn" onclick="filterShows('cozy', this)">Cozy &amp; gentle</button>
@@ -176,178 +146,90 @@
     <div class="shows-grid" id="shows-grid">
 
       <div class="show-card top" data-mood="gripping modern">
-        <div>
-          <div class="show-rank">No. 01</div>
-          <div class="show-number">01</div>
-        </div>
+        <div><div class="show-rank">No. 01</div><div class="show-number">01</div></div>
         <div>
           <div class="show-badge">Best First Show</div>
           <h3 class="show-title">Broadchurch</h3>
           <p class="show-desc">A child is found murdered in a small Dorset seaside town. The whole community becomes a suspect. Olivia Colman and David Tennant are extraordinary — you will not stop watching.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Modern pacing, a self-contained story, and one of the most emotional first episodes in British TV history. No prior knowledge needed.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Coastal</span>
-            <span class="tag">3 series</span>
-            <a class="tag platform netflix" href="https://www.netflix.com" target="_blank" rel="noopener">Netflix</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Modern pacing, a self-contained story, and one of the most emotional first episodes in British TV history. No prior knowledge needed.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Coastal</span><span class="tag">3 series</span><a class="tag platform netflix" href="https://www.netflix.com" target="_blank" rel="noopener">Netflix</a></div>
         </div>
       </div>
 
       <div class="show-card top" data-mood="cozy modern">
-        <div>
-          <div class="show-rank">No. 02</div>
-          <div class="show-number">02</div>
-        </div>
+        <div><div class="show-rank">No. 02</div><div class="show-number">02</div></div>
         <div>
           <div class="show-badge">Most Comforting Start</div>
           <h3 class="show-title">Vera</h3>
           <p class="show-desc">A brilliant, unconventional detective solves murders across the wild Northumberland coast. Brenda Blethyn is a national treasure. Cosy enough to watch on a Sunday afternoon, smart enough to keep you guessing.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Each episode is self-contained — no need to watch in order. Start anywhere and you'll be immediately at home.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Northumberland</span>
-            <span class="tag">13 series</span>
-            <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Each episode is self-contained — no need to watch in order. Start anywhere and you'll be immediately at home.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Northumberland</span><span class="tag">13 series</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="cozy classic">
-        <div>
-          <div class="show-rank">No. 03</div>
-          <div class="show-number">03</div>
-        </div>
+        <div><div class="show-rank">No. 03</div><div class="show-number">03</div></div>
         <div>
           <div class="show-badge">Classic Gateway Show</div>
           <h3 class="show-title">Midsomer Murders</h3>
           <p class="show-desc">Picturesque English villages with an improbably high murder rate. Light, witty, and endlessly comforting. The perfect introduction to the cosy British mystery genre — and there are 25+ series to enjoy.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Every episode is a standalone whodunit. Dip in anywhere. It's warm, funny, and never too dark — ideal for new viewers.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Cozy</span>
-            <span class="tag">25+ series</span>
-            <a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Every episode is a standalone whodunit. Dip in anywhere. It's warm, funny, and never too dark — ideal for new viewers.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Cozy</span><span class="tag">25+ series</span><a class="tag platform acorn" href="https://acorn.tv" target="_blank" rel="noopener">Acorn TV</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="gripping modern">
-        <div>
-          <div class="show-rank">No. 04</div>
-          <div class="show-number">04</div>
-        </div>
+        <div><div class="show-rank">No. 04</div><div class="show-number">04</div></div>
         <div>
           <div class="show-badge">Modern Essential</div>
           <h3 class="show-title">Happy Valley</h3>
           <p class="show-desc">Sarah Lancashire is extraordinary as a Yorkshire police sergeant holding her family together while navigating brutal crime. One of the greatest performances in British TV history. Dark but deeply human.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Immediately gripping — the first episode hooks you completely. A self-contained story across three series with a clear beginning, middle, and end.
-          </div>
-          <div class="show-tags">
-            <span class="tag medium">Some intensity</span>
-            <span class="tag">Yorkshire</span>
-            <span class="tag">3 series</span>
-            <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Immediately gripping — the first episode hooks you completely. A self-contained story across three series with a clear beginning, middle, and end.</div>
+          <div class="show-tags"><span class="tag medium">Some intensity</span><span class="tag">Yorkshire</span><span class="tag">3 series</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="cozy classic">
-        <div>
-          <div class="show-rank">No. 05</div>
-          <div class="show-number">05</div>
-        </div>
+        <div><div class="show-rank">No. 05</div><div class="show-number">05</div></div>
         <div>
           <div class="show-badge">Agatha Christie Fans</div>
           <h3 class="show-title">Miss Marple (1984)</h3>
           <p class="show-desc">Joan Hickson's definitive Miss Marple remains the gold standard of cosy British mystery. Impeccably cast, beautifully shot, and deeply satisfying. If you love Agatha Christie, start here.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Each story is completely standalone. Light, clever, and never challenging to follow — perfect Sunday viewing.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Agatha Christie</span>
-            <span class="tag">Classic</span>
-            <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Each story is completely standalone. Light, clever, and never challenging to follow — perfect Sunday viewing.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Agatha Christie</span><span class="tag">Classic</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="gripping modern">
-        <div>
-          <div class="show-rank">No. 06</div>
-          <div class="show-number">06</div>
-        </div>
+        <div><div class="show-rank">No. 06</div><div class="show-number">06</div></div>
         <div>
           <div class="show-badge">Unmissable Drama</div>
           <h3 class="show-title">Shetland</h3>
           <p class="show-desc">A detective polices the remote Shetland Islands where the landscape is as dramatic as the crimes. Tight plotting, compelling characters, and scenery that will take your breath away.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Each series tells a complete story. Accessible pacing, a likeable lead detective, and a setting unlike anything else on British TV.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Scotland</span>
-            <span class="tag">7  series </span>
-            <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Each series tells a complete story. Accessible pacing, a likeable lead detective, and a setting unlike anything else on British TV.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Scotland</span><span class="tag">7 series</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="cozy modern">
-        <div>
-          <div class="show-rank">No. 07</div>
-          <div class="show-number">07</div>
-        </div>
+        <div><div class="show-rank">No. 07</div><div class="show-number">07</div></div>
         <div>
           <div class="show-badge">Hidden Gem</div>
           <h3 class="show-title">Grantchester</h3>
           <p class="show-desc">A crime-solving vicar in 1950s Cambridgeshire teams up with a detective inspector. Warm, charming, and beautifully shot — the kind of cosy British drama that makes you want to move to the English countryside immediately.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Light and gentle — a great gateway for viewers who prefer warmth over darkness. Each episode is an accessible standalone mystery.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">1950s</span>
-            <span class="tag">9 series</span>
-            <a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/grantchester/" target="_blank" rel="noopener">PBS</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Light and gentle — a great gateway for viewers who prefer warmth over darkness. Each episode is an accessible standalone mystery.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">1950s</span><span class="tag">9 series</span><a class="tag platform pbs" href="https://www.pbs.org/wgbh/masterpiece/shows/grantchester/" target="_blank" rel="noopener">PBS</a></div>
         </div>
       </div>
 
       <div class="show-card" data-mood="classic gripping">
-        <div>
-          <div class="show-rank">No. 08</div>
-          <div class="show-number">08</div>
-        </div>
+        <div><div class="show-rank">No. 08</div><div class="show-number">08</div></div>
         <div>
           <div class="show-badge">The Gold Standard</div>
           <h3 class="show-title">Inspector Morse</h3>
           <p class="show-desc">The show that defined British detective drama. John Thaw's Morse — Oxford don, opera lover, real ale enthusiast — remains unmatched in literary intelligence and melancholic depth. The one that started it all.</p>
-          <div class="why-block">
-            <span class="why-label">Why it's perfect for beginners</span>
-            Feature-length episodes tell complete stories. You don't need to watch in order — every episode stands alone. A perfect introduction to the classic British detective genre.
-          </div>
-          <div class="show-tags">
-            <span class="tag easy">Easy to follow</span>
-            <span class="tag">Oxford</span>
-            <span class="tag">Classic</span>
-            <a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a>
-          </div>
+          <div class="why-block"><span class="why-label">Why it's perfect for beginners</span>Feature-length episodes tell complete stories. You don't need to watch in order — every episode stands alone. A perfect introduction to the classic British detective genre.</div>
+          <div class="show-tags"><span class="tag easy">Easy to follow</span><span class="tag">Oxford</span><span class="tag">Classic</span><a class="tag platform" href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
         </div>
       </div>
 
@@ -356,57 +238,40 @@
 
   <hr class="section-divider">
 
-  <!-- PATHWAYS -->
   <div id="pathways">
     <div class="section-label">Section 02 &mdash; What to Watch Next</div>
     <h2 class="section-title">Your British TV Pathway</h2>
     <p class="section-intro">Once you've found your first favourite, here's where to go next. Follow the pathway that matches your taste.</p>
-
     <div class="pathway-grid">
-
       <div class="pathway-card">
         <div class="pathway-label">If you loved Broadchurch</div>
         <h3 class="pathway-title">Dark &amp; Gripping</h3>
-        <div class="pathway-shows">
-          Broadchurch <span class="pathway-arrow">→</span> Happy Valley <span class="pathway-arrow">→</span> Unforgotten <span class="pathway-arrow">→</span> Line of Duty <span class="pathway-arrow">→</span> Marcella
-        </div>
+        <div class="pathway-shows">Broadchurch <span class="pathway-arrow">→</span> Happy Valley <span class="pathway-arrow">→</span> Unforgotten <span class="pathway-arrow">→</span> Line of Duty <span class="pathway-arrow">→</span> Marcella</div>
       </div>
-
       <div class="pathway-card">
         <div class="pathway-label">If you loved Vera or Midsomer</div>
         <h3 class="pathway-title">Cozy &amp; Comfortable</h3>
-        <div class="pathway-shows">
-          Vera <span class="pathway-arrow">→</span> Midsomer Murders <span class="pathway-arrow">→</span> Grantchester <span class="pathway-arrow">→</span> Father Brown <span class="pathway-arrow">→</span> Agatha Raisin
-        </div>
+        <div class="pathway-shows">Vera <span class="pathway-arrow">→</span> Midsomer Murders <span class="pathway-arrow">→</span> Grantchester <span class="pathway-arrow">→</span> Father Brown <span class="pathway-arrow">→</span> Agatha Raisin</div>
       </div>
-
       <div class="pathway-card">
         <div class="pathway-label">If you loved Miss Marple</div>
         <h3 class="pathway-title">Classic Mysteries</h3>
-        <div class="pathway-shows">
-          Miss Marple <span class="pathway-arrow">→</span> Poirot <span class="pathway-arrow">→</span> Inspector Morse <span class="pathway-arrow">→</span> Endeavour <span class="pathway-arrow">→</span> Lewis
-        </div>
+        <div class="pathway-shows">Miss Marple <span class="pathway-arrow">→</span> Poirot <span class="pathway-arrow">→</span> Inspector Morse <span class="pathway-arrow">→</span> Endeavour <span class="pathway-arrow">→</span> Lewis</div>
       </div>
-
       <div class="pathway-card">
         <div class="pathway-label">If you loved Shetland</div>
         <h3 class="pathway-title">Atmospheric &amp; Scenic</h3>
-        <div class="pathway-shows">
-          Shetland <span class="pathway-arrow">→</span> Hinterland <span class="pathway-arrow">→</span> Vera <span class="pathway-arrow">→</span> Broadchurch <span class="pathway-arrow">→</span> Hope Street
-        </div>
+        <div class="pathway-shows">Shetland <span class="pathway-arrow">→</span> Hinterland <span class="pathway-arrow">→</span> Vera <span class="pathway-arrow">→</span> Broadchurch <span class="pathway-arrow">→</span> Hope Street</div>
       </div>
-
     </div>
   </div>
 
   <hr class="section-divider">
 
-  <!-- WHERE TO WATCH -->
   <div id="where-to-watch">
     <div class="section-label">Section 03 &mdash; Where to Stream</div>
     <h2 class="section-title">Where to Watch These Shows in the US</h2>
     <p class="section-intro">Every show above is available on one of these three services. Most need a subscription — but all offer free trials.</p>
-
     <div class="pathway-grid">
       <div class="pathway-card">
         <div class="pathway-label">Best for beginners</div>
@@ -433,7 +298,7 @@
     <strong style="color:var(--text-dim)">Affiliate disclosure:</strong> Some links on this page may be affiliate links. As an Amazon Associate I earn from qualifying purchases. We may also earn commissions from BritBox and Acorn TV. This never affects our recommendations.
   </div>
 
-  <!-- CTA -->
+  <!-- NEWSLETTER CTA — button fixed to "Get Sunday Picks" -->
   <div class="cta-block" style="margin-top:48px">
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--red-light);margin-bottom:8px">Free &mdash; Every Sunday</div>
@@ -444,7 +309,7 @@
       <div class="cta-form">
         <input type="email" name="EMAIL" class="cta-input" placeholder="your@email.com" required aria-label="Email address">
         <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-        <button type="submit" class="cta-btn">Get Match Me a Mystery</button>
+        <button type="submit" class="cta-btn">Get Sunday Picks &rarr;</button>
       </div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;color:var(--text-faint);margin-top:10px;letter-spacing:0.5px">No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
     </form>
@@ -452,22 +317,25 @@
 
 </main>
 
-<footer>
-  <div class="footer-links">
-    <a href="/">Home</a>
-    <a href="/shows.html">Shows</a>
-    <a href="/streaming.html">Streaming</a>
-    <a href="/beginners.html">Start Here</a>
-    <a href="/nightly-pick.html">Tonight's Pick</a>
-    <a href="/top10.html">Fan Favourites</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/hidden-gems.html">Hidden Gems</a>
-    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Facebook</a>
-    <a href="mailto:info@britishtvhub.com">Contact</a> <a href="/partner.html">Partner Info</a>
+<!-- FOOTER — standard layout -->
+<footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
+    <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
+    <a href="/shows.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Shows</a>
+    <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Streaming</a>
+    <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Cozy Mysteries</a>
+    <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Police Procedurals</a>
+    <a href="/dvd.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">British TV on DVD</a>
+    <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">FAQ</a>
+    <a href="/hidden-gems.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Hidden Gems</a>
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Facebook</a>
+    <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
+    <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
-  <div class="footer-copy">British TV Dramas &amp; Mysteries &nbsp;&middot;&nbsp; Classics &amp; New Favorites &nbsp;&middot;&nbsp; Est. for British TV Fans &nbsp;&middot;&nbsp; 2026</div>
-  <div class="footer-disclosure">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites &nbsp;·&nbsp; 2026</div>
+  <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
+<!-- END FOOTER -->
 
 <script>
 function filterShows(mood, btn) {
