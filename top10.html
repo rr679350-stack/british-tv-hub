@@ -39,8 +39,6 @@
   }
   html { scroll-behavior: smooth; }
   body { background: var(--navy); color: var(--cream); font-family: 'Crimson Pro', Georgia, serif; font-size: 18px; line-height: 1.7; }
-
-  /* ── HEADER — matches cozy.html style ── */
   .site-header { background: var(--navy); border-bottom: 1px solid rgba(201,168,76,0.25); padding: 0.75rem 0; position: sticky; top: 0; z-index: 100; }
   .site-header-inner { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
   .site-logo { text-decoration: none; flex-shrink: 0; }
@@ -55,7 +53,6 @@
   nav a.btn-featured:hover { background: #a93226; color: var(--white); }
   nav a.btn-outline { border: 1px solid rgba(201,168,76,0.4); color: var(--gold); padding: 0.3rem 0.75rem; border-radius: 2px; margin-left: 0.25rem; }
   nav a.btn-outline:hover { background: rgba(201,168,76,0.1); }
-
   .hero { background: transparent; border-bottom: 1px solid rgba(201,168,76,0.15); padding: 5rem 1.5rem 4rem; text-align: left; max-width: 1100px; margin: 0 auto; }
   .hero-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem; }
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 700; color: var(--cream); line-height: 1.15; max-width: 720px; margin-bottom: 1.5rem; }
@@ -81,7 +78,6 @@
   .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
   .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
   .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
-  .badge-gem { background: rgba(80,180,120,0.12); color: #6dcba0; border: 1px solid rgba(80,180,120,0.3); }
   .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
   .show-title { font-family: 'Playfair Display', serif; font-size: 1.75rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.4rem; }
   .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1.1rem; }
@@ -95,7 +91,6 @@
   .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
   .tag-stream.britbox { background: #c0392b; }
   .tag-stream.acorn { background: #2e7d32; }
-  .tag-stream.pbs { background: #1565c0; }
   .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.5rem; }
   .aside-label { font-family: 'Montserrat', sans-serif; font-size: 8.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
   .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 1rem; }
@@ -129,7 +124,6 @@
 </head>
 <body>
 
-<!-- HEADER — matches cozy.html style -->
 <header class="site-header">
   <div class="site-header-inner">
     <a href="/" class="site-logo">
@@ -195,14 +189,8 @@
         <h3 class="show-title">Inspector Morse</h3>
         <div class="show-meta">1987–2000 <span>·</span> ITV <span>·</span> BritBox</div>
         <p class="show-desc">John Thaw's Morse — Oxford don, opera lover, crossword obsessive — remains the most fully realised detective in British TV history. Every feature-length episode is a masterclass in character, atmosphere, and plotting. The entire Morse universe flows from this one extraordinary show.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I've watched every episode three times and I still notice something new. There's nothing else like it." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Oxford</span><span class="tag">Classic</span><span class="tag">Feature-length</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I've watched every episode three times and I still notice something new. There's nothing else like it." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Oxford</span><span class="tag">Classic</span><span class="tag">Feature-length</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -224,15 +212,8 @@
         <h3 class="show-title">Prime Suspect</h3>
         <div class="show-meta">1991–2006 <span>·</span> ITV <span>·</span> BritBox</div>
         <p class="show-desc">Helen Mirren as DCI Jane Tennison — brilliant, driven, and fighting institutional sexism at every rank of the Met while hunting serial killers. Seven feature-length films over fifteen years, every one outstanding. A landmark not just in crime drama but in what television can do with a character over time.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"Helen Mirren is simply extraordinary. I watched the whole thing in a weekend and I'm still thinking about it." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">London</span><span class="tag">Award-winning</span><span class="tag">Groundbreaking</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-          <span class="tag">Free on Pluto TV</span>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"Helen Mirren is simply extraordinary. I watched the whole thing in a weekend and I'm still thinking about it." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">London</span><span class="tag">Award-winning</span><span class="tag">Groundbreaking</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a><span class="tag">Free on Pluto TV</span></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -254,14 +235,8 @@
         <h3 class="show-title">Agatha Christie's Poirot</h3>
         <div class="show-meta">1989–2013 <span>·</span> ITV <span>·</span> BritBox</div>
         <p class="show-desc">David Suchet spent 25 years perfecting Hercule Poirot — every Agatha Christie novel adapted to perfection, culminating in a finale that left the nation genuinely moved. The definitive Christie adaptation, full stop.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"David Suchet IS Poirot. 25 years of dedication and it shows in every single episode." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Agatha Christie</span><span class="tag">Period</span><span class="tag">13 series</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"David Suchet IS Poirot. 25 years of dedication and it shows in every single episode." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Agatha Christie</span><span class="tag">Period</span><span class="tag">13 series</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -282,15 +257,9 @@
         <div class="show-badge badge-classic">Classic</div>
         <h3 class="show-title">The Bill</h3>
         <div class="show-meta">1983–2010 <span>·</span> ITV <span>·</span> Amazon Video</div>
-        <p class="show-desc">Twenty-seven years at Sun Hill police station — the longest-running British police procedural ever made. Before The Bill, TV coppers were tidy figures of authority. This gave them complicated marriages, drinking problems, and moral blind spots. Gritty, groundbreaking, and still compelling today. The early series in particular are essential viewing.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"The Bill shaped what British police drama became. Everything we love about the genre today traces back to Sun Hill." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">London</span><span class="tag">Groundbreaking</span><span class="tag">26 series</span>
-          <a href="https://www.amazon.com/The-Bill-Season-1/dp/B00EXAMPLE?tag=britishtvhub-20" class="tag tag-stream britbox" style="background:#e47911;">Amazon Video</a>
-        </div>
+        <p class="show-desc">Twenty-seven years at Sun Hill police station — the longest-running British police procedural ever made. Before The Bill, TV coppers were tidy figures of authority. This gave them complicated marriages, drinking problems, and moral blind spots. Gritty, groundbreaking, and still compelling today.</p>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"The Bill shaped what British police drama became. Everything we love about the genre today traces back to Sun Hill." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">London</span><span class="tag">Groundbreaking</span><span class="tag">26 series</span><a href="https://www.amazon.com/The-Bill-Season-1/dp/B00EXAMPLE?tag=britishtvhub-20" class="tag tag-stream britbox" style="background:#e47911;">Amazon Video</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -323,14 +292,8 @@
         <h3 class="show-title">Happy Valley</h3>
         <div class="show-meta">2014–2023 <span>·</span> BBC <span>·</span> BritBox</div>
         <p class="show-desc">Sarah Lancashire as Sergeant Catherine Cawood — a Yorkshire officer holding her fractured family together while facing down a psychopath. Raw, powerful, and utterly gripping from first episode to last. The final series left fans genuinely bereft. Start here if you've never watched British crime drama before.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I ugly-cried at the finale. Best thing I've ever watched on television, British or otherwise." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Yorkshire</span><span class="tag">Award-winning</span><span class="tag">3 series</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I ugly-cried at the finale. Best thing I've ever watched on television, British or otherwise." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Yorkshire</span><span class="tag">Award-winning</span><span class="tag">3 series</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -352,14 +315,8 @@
         <h3 class="show-title">Line of Duty</h3>
         <div class="show-meta">2012–2021 <span>·</span> BBC <span>·</span> BritBox</div>
         <p class="show-desc">AC-12, an anti-corruption unit, investigates bent coppers from within the force. The most compulsive crime series ever made in Britain — the question of who "H" is kept the entire country debating for years. Watch it with someone so you can argue about theories together.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I watched all six series in two weeks. My family barely saw me. No regrets whatsoever." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Thriller</span><span class="tag">Complex</span><span class="tag">6 series</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I watched all six series in two weeks. My family barely saw me. No regrets whatsoever." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Thriller</span><span class="tag">Complex</span><span class="tag">6 series</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -380,14 +337,8 @@
         <h3 class="show-title">Unforgotten</h3>
         <div class="show-meta">2015–present <span>·</span> ITV <span>·</span> Acorn TV</div>
         <p class="show-desc">Long-buried cold cases surface to devastating effect on present-day lives. Quiet, slow-burning, and emotionally devastating — Nicola Walker's DCI Cassie Stuart is one of the finest performances in British crime drama. Our community consistently describes this as the show that surprised them most.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I started watching expecting a standard crime show. By episode three I was completely devastated." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Cold cases</span><span class="tag">Emotional</span><span class="tag">Character-driven</span>
-          <a href="https://acorn.tv" class="tag tag-stream acorn">Acorn TV</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I started watching expecting a standard crime show. By episode three I was completely devastated." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Cold cases</span><span class="tag">Emotional</span><span class="tag">Character-driven</span><a href="https://acorn.tv" class="tag tag-stream acorn">Acorn TV</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -415,14 +366,8 @@
         <h3 class="show-title">Vera</h3>
         <div class="show-meta">2011–2024 <span>·</span> ITV <span>·</span> BritBox</div>
         <p class="show-desc">Brenda Blethyn's rumpled, brilliant DCI Vera Stanhope solving murders across the wild Northumberland coast. Warm, clever, and deeply comforting — the most consistently beloved long-running detective series in British TV, and the one our community recommends most to newcomers.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"Vera is my comfort show. I put it on when I need cheering up and it never fails." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Northumberland</span><span class="tag">Cosy</span><span class="tag">14 series</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"Vera is my comfort show. I put it on when I need cheering up and it never fails." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Northumberland</span><span class="tag">Cosy</span><span class="tag">14 series</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -443,15 +388,9 @@
         <div class="show-badge badge-new">New Favourite</div>
         <h3 class="show-title">Shetland</h3>
         <div class="show-meta">2013–present <span>·</span> BBC <span>·</span> BritBox</div>
-        <p class="show-desc">Detective Jimmy Perez polices the remote Shetland Islands where the landscape is as dramatic as the crimes. Tight plotting, compelling characters, and scenery so spectacular it makes the show worth watching on its own. The location is unlike anything else in British crime drama.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I booked a trip to Shetland after watching series one. The islands are even more beautiful in person." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Scotland</span><span class="tag">Scenic</span><span class="tag">Atmospheric</span>
-          <a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a>
-        </div>
+        <p class="show-desc">Detective Jimmy Perez polices the remote Shetland Islands where the landscape is as dramatic as the crimes. Tight plotting, compelling characters, and scenery so spectacular it makes the show worth watching on its own.</p>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I booked a trip to Shetland after watching series one. The islands are even more beautiful in person." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Scotland</span><span class="tag">Scenic</span><span class="tag">Atmospheric</span><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" class="tag tag-stream britbox">BritBox</a></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -472,15 +411,8 @@
         <h3 class="show-title">Midsomer Murders</h3>
         <div class="show-meta">1997–present <span>·</span> ITV <span>·</span> Acorn TV</div>
         <p class="show-desc">Impossibly picturesque English villages with an impossibly high murder rate. Warm, witty, and endlessly comforting — nearly 30 years on the air and still going strong. The show our community turns to when they want to switch off and simply enjoy themselves. Also free on Pluto TV.</p>
-        <div class="show-quote">
-          <div class="show-quote-label">Why fans love it</div>
-          <p>"I've been watching Midsomer for 20 years and it still makes me laugh every episode. The most comforting show ever made." — From our Facebook community</p>
-        </div>
-        <div class="show-tags">
-          <span class="tag">Cosy</span><span class="tag">Village</span><span class="tag">25+ series</span>
-          <a href="https://www.amazon.com/channels/acorn?tag=britishtvhub-20" class="tag tag-stream acorn">Acorn TV</a>
-          <span class="tag">Free on Pluto TV</span>
-        </div>
+        <div class="show-quote"><div class="show-quote-label">Why fans love it</div><p>"I've been watching Midsomer for 20 years and it still makes me laugh every episode. The most comforting show ever made." — From our Facebook community</p></div>
+        <div class="show-tags"><span class="tag">Cosy</span><span class="tag">Village</span><span class="tag">25+ series</span><a href="https://www.amazon.com/channels/acorn?tag=britishtvhub-20" class="tag tag-stream acorn">Acorn TV</a><span class="tag">Free on Pluto TV</span></div>
       </div>
       <div class="show-aside">
         <div class="aside-label">At a glance</div>
@@ -500,35 +432,37 @@
 
 </div>
 
+<!-- NEWSLETTER — connected to Mailchimp -->
 <div class="newsletter-section">
   <h3>Get 5 Hand-Picked Shows Every Sunday</h3>
   <p>Join 4,000+ British TV fans. No spam, ever.</p>
-  <form>
-    <input type="email" placeholder="Your email address">
-    <button type="submit">Subscribe Free</button>
+  <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank">
+    <input type="email" name="EMAIL" placeholder="Your email address" required aria-label="Email address">
+    <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+    <button type="submit">Get Sunday Picks →</button>
   </form>
   <p class="newsletter-note">No spam · Unsubscribe anytime</p>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <nav class="footer-nav">
-      <a href="/">Home</a>
-      <a href="/shows.html">Shows</a>
-      <a href="/streaming.html">Streaming</a>
-      <a href="/cozy.html">Cozy Mysteries</a>
-      <a href="/top10.html">Police Procedurals</a>
-      <a href="/dvd.html">British TV on DVD</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/hidden-gems.html">Hidden Gems</a>
-      <a href="https://www.facebook.com/britishtelevisionhub">Facebook</a>
-      <a href="mailto:info@britishtvhub.com">Contact</a>
-      <a href="/partner.html">Partner Info</a>
-    </nav>
-    <div class="footer-brand">British TV Dramas &amp; Mysteries · Classics &amp; New Favourites · Est. for British TV Fans · 2026</div>
-    <p class="footer-legal">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+<!-- FOOTER — standard layout -->
+<footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
+    <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
+    <a href="/shows.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Shows</a>
+    <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Streaming</a>
+    <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Cozy Mysteries</a>
+    <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Police Procedurals</a>
+    <a href="/dvd.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">British TV on DVD</a>
+    <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">FAQ</a>
+    <a href="/hidden-gems.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Hidden Gems</a>
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Facebook</a>
+    <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
+    <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites &nbsp;·&nbsp; 2026</div>
+  <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
+<!-- END FOOTER -->
 
 </body>
 </html>
