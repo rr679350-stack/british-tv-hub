@@ -77,6 +77,25 @@
   .cta-btn { background: var(--red); border: none; color: #f5e8d0; padding: 12px 20px; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
   .affiliate-note { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 0.5px; color: var(--text-faint); margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.7; }
 
+  /* VPN section */
+  .vpn-section { background: #1a2236; padding: 60px 40px; margin: 0 -40px; }
+  .vpn-inner { max-width: 1020px; margin: 0 auto; }
+  .vpn-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
+  .vpn-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--gold-light); margin-bottom: 14px; line-height: 1.2; }
+  .vpn-intro { font-family: 'Crimson Text', serif; font-size: 18px; color: var(--text-muted); font-style: italic; line-height: 1.7; max-width: 680px; margin-bottom: 36px; }
+  .vpn-cards { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 36px; }
+  .vpn-card { flex: 1; min-width: 200px; background: #243050; border: 1px solid #3d4a60; border-radius: 4px; padding: 24px; }
+  .vpn-card-icon { font-size: 24px; margin-bottom: 10px; }
+  .vpn-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--gold-light); margin-bottom: 8px; }
+  .vpn-card p { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+  .vpn-cta { display: inline-block; background: var(--gold); color: #0d1b2a; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 14px 32px; text-decoration: none; border-radius: 2px; font-weight: 600; margin-bottom: 12px; }
+  .vpn-cta:hover { background: var(--gold-light); }
+  .vpn-guarantee { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1px; color: var(--text-faint); margin-bottom: 32px; }
+  .vpn-steps-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold-light); margin-bottom: 12px; }
+  .vpn-steps { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); line-height: 2.2; padding-left: 20px; margin-bottom: 20px; }
+  .vpn-tip { font-family: 'Crimson Text', serif; font-size: 14px; color: var(--text-faint); font-style: italic; margin-bottom: 24px; }
+  .vpn-disclosure { font-family: 'Raleway', sans-serif; font-size: 9px; color: #4a5568; border-top: 1px solid #2d3a50; padding-top: 16px; letter-spacing: 0.5px; }
+
   @media (max-width: 700px) {
     nav { padding: 0 16px; }
     .nav-links { display: none; }
@@ -87,6 +106,7 @@
     .cta-block { flex-direction: column; gap: 24px; }
     .cta-form { flex-direction: column; }
     .cta-input { width: 100%; }
+    .vpn-section { margin: 0 -20px; padding: 48px 20px; }
   }
 </style>
 </head>
@@ -123,7 +143,7 @@
 
 <main>
   <div class="affiliate-note">
-    <strong style="color:var(--text-dim)">Affiliate disclosure:</strong> British TV Hub is a participant in the Amazon Services LLC Associates Program. We may also earn commissions from BritBox and Acorn TV. This never affects our recommendations &mdash; we only link to services we genuinely recommend to our community.
+    <strong style="color:var(--text-dim)">Affiliate disclosure:</strong> British TV Hub is a participant in the Amazon Services LLC Associates Program. We may also earn commissions from BritBox, Acorn TV, and NordVPN. This never affects our recommendations &mdash; we only link to services we genuinely recommend to our community.
   </div>
 
   <!-- PAID SERVICES -->
@@ -215,6 +235,48 @@
 
   <hr class="section-divider">
 
+  <!-- VPN SECTION -->
+  <div class="vpn-section">
+    <div class="vpn-inner">
+      <div class="vpn-label">Watching From Outside the UK</div>
+      <h2 class="vpn-title">Access BBC iPlayer &amp; UK-Only Streams with a VPN</h2>
+      <p class="vpn-intro">Many British TV streams &mdash; including BBC iPlayer, ITVX, and Channel 4 &mdash; are only available inside the UK. A VPN lets you connect through a UK server so you can watch from anywhere in the world.</p>
+
+      <div class="vpn-cards">
+        <div class="vpn-card">
+          <div class="vpn-card-icon">🔒</div>
+          <h3>Fast UK Servers</h3>
+          <p>Thousands of UK servers optimised for HD and 4K streaming with no buffering.</p>
+        </div>
+        <div class="vpn-card">
+          <h3>Works With All UK Platforms</h3>
+          <p>BBC iPlayer, ITVX, Channel 4, My5, BritBox UK, Sky Go &mdash; all unblocked.</p>
+        </div>
+        <div class="vpn-card">
+          <div class="vpn-card-icon">📱</div>
+          <h3>All Your Devices</h3>
+          <p>Apps for Windows, Mac, iOS, Android, Fire Stick, and Smart TV. One account, six devices.</p>
+        </div>
+      </div>
+
+      <a class="vpn-cta" href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=148975&url_id=902" target="_blank" rel="noopener">Get NordVPN &mdash; Watch British TV Anywhere</a>
+      <div class="vpn-guarantee">30-day money-back guarantee &nbsp;&middot;&nbsp; No risk</div>
+
+      <h3 class="vpn-steps-title">How to Watch in 3 Steps</h3>
+      <ol class="vpn-steps">
+        <li>Sign up for NordVPN and download the app</li>
+        <li>Connect to a UK server (search &ldquo;United Kingdom&rdquo; in the app)</li>
+        <li>Open BBC iPlayer, ITVX, or Channel 4 and start watching</li>
+      </ol>
+
+      <p class="vpn-tip">💡 Tip: BBC iPlayer asks for a UK postcode during registration &mdash; any valid UK postcode works (e.g. SW1A 1AA). The VPN handles the rest.</p>
+
+      <p class="vpn-disclosure">This section contains affiliate links. If you purchase through our link, BritishTV Hub may earn a commission at no extra cost to you.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
   <!-- QUICK REFERENCE -->
   <div id="quick-ref">
     <div class="section-label">Quick Reference</div>
@@ -252,7 +314,7 @@
     </table>
   </div>
 
-  <!-- NEWSLETTER CTA — button fixed to "Get Sunday Picks" -->
+  <!-- NEWSLETTER CTA -->
   <div class="cta-block" style="margin-top:48px">
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--red-light);margin-bottom:8px">Free &mdash; Every Sunday</div>
@@ -271,7 +333,7 @@
 
 </main>
 
-<!-- FOOTER — standard layout -->
+<!-- FOOTER -->
 <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
   <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
     <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
@@ -287,9 +349,8 @@
     <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
   <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites &nbsp;·&nbsp; 2026</div>
-  <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox, Acorn TV, and NordVPN affiliate links at no extra cost to you.</p>
 </footer>
-<!-- END FOOTER -->
 
 </body>
 </html>
