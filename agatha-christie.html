@@ -71,23 +71,41 @@
   /* ── HERO ── */
   .hero {
     position: relative;
-    padding: 5rem 2rem 4rem;
-    text-align: center;
+    min-height: 360px;
+    display: flex;
+    align-items: stretch;
     overflow: hidden;
-    background: var(--navy-mid);
     border-bottom: 1px solid var(--border);
   }
 
-  .hero::before {
-    content: '';
+  .hero-image {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,147,58,0.08) 0%, transparent 70%);
-    pointer-events: none;
+    background-image: url('images/agatha-christie-hero.webp');
+    background-size: cover;
+    background-position: center right;
+    z-index: 0;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(13,27,42,0.97) 45%, rgba(13,27,42,0.5) 70%, rgba(13,27,42,0.1) 100%);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 3rem 4rem 4rem;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .hero-eyebrow {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 0.2em;
     font-variant: small-caps;
     color: var(--gold);
@@ -96,31 +114,35 @@
 
   .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
     line-height: 1.15;
-    color: var(--gold-light);
+    color: var(--cream);
     margin-bottom: 1rem;
   }
 
   .hero h1 em {
     font-style: italic;
-    color: var(--cream);
+    color: var(--gold-light);
+    display: block;
   }
 
   .hero-desc {
-    max-width: 640px;
-    margin: 0 auto 2rem;
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 480px;
   }
 
-  .hero-divider {
-    width: 60px;
-    height: 1px;
-    background: var(--gold);
-    margin: 0 auto;
-    opacity: 0.5;
+  .hero-meta {
+    margin-top: 1.5rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    font-variant: small-caps;
+    color: var(--text-muted);
+    opacity: 0.7;
   }
+
+  .hero-meta span { margin-right: 1.2rem; }
 
   /* ── INTRO ── */
   .intro {
@@ -493,7 +515,7 @@
     <a href="/streaming.html">Streaming</a><span class="sep">·</span>
     <a href="/cozy.html">Cozy Mysteries</a><span class="sep">·</span>
     <a href="/top10.html">Police Procedurals</a><span class="sep">·</span>
-    <a href="/agatha-christie.html" style="color: var(--gold-light);">Christie on Screen</a><span class="sep">·</span>
+    <a href="/agatha-christie.html" style="color: var(--gold-light);">Agatha Christie</a><span class="sep">·</span>
     <a href="/faq.html">FAQ</a><span class="sep">·</span>
     <a href="/dvd.html">British TV on DVD</a><span class="sep">·</span>
     <a href="/shows.html">&#9733; Best Of Guide</a><span class="sep">·</span>
@@ -503,10 +525,16 @@
 
 <!-- HERO -->
 <section class="hero">
-  <p class="hero-eyebrow">The Queen of Crime</p>
-  <h1>Agatha Christie<br><em>on Screen</em></h1>
-  <p class="hero-desc">Eight decades of adaptations — from the golden age of BBC drama to gripping modern reimaginings. Your complete guide to streaming and buying every Christie classic.</p>
-  <div class="hero-divider"></div>
+  <div class="hero-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">The Queen of Crime · Eight Decades on Screen</p>
+    <h1>Agatha Christie<em>on Screen</em></h1>
+    <p class="hero-desc">From the golden age of BBC drama to gripping modern reimaginings — your complete guide to streaming and buying every Christie adaptation.</p>
+    <p class="hero-meta">
+      <span>Poirot · Miss Marple · And Then There Were None</span>
+    </p>
+  </div>
 </section>
 
 <!-- INTRO -->
