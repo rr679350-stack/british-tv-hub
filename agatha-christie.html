@@ -34,7 +34,6 @@
     line-height: 1.7;
   }
 
-  /* ── HEADER / NAV ── */
   header {
     background: var(--navy);
     border-bottom: 1px solid var(--border);
@@ -59,445 +58,83 @@
     color: var(--text-muted);
   }
 
-  nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
+  nav a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
   nav a:hover { color: var(--gold-light); }
-
   nav .sep { margin: 0 0.4rem; opacity: 0.4; }
 
-  /* ── HERO ── */
-  .hero {
-    position: relative;
-    min-height: 360px;
-    display: flex;
-    align-items: stretch;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .hero-image {
-    position: absolute;
-    inset: 0;
-    background-image: url('agatha-christie-hero.webp');
-    background-size: cover;
-    background-position: center right;
-    z-index: 0;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, rgba(13,27,42,0.97) 45%, rgba(13,27,42,0.5) 70%, rgba(13,27,42,0.1) 100%);
-    z-index: 1;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 4rem 3rem 4rem 4rem;
-    max-width: 580px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .hero-eyebrow {
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    font-variant: small-caps;
-    color: var(--gold);
-    margin-bottom: 1rem;
-  }
-
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
-    line-height: 1.15;
-    color: var(--cream);
-    margin-bottom: 1rem;
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold-light);
-    display: block;
-  }
-
-  .hero-desc {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    max-width: 480px;
-  }
-
-  .hero-meta {
-    margin-top: 1.5rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    font-variant: small-caps;
-    color: var(--text-muted);
-    opacity: 0.7;
-  }
-
+  .hero { position: relative; min-height: 360px; display: flex; align-items: stretch; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .hero-image { position: absolute; inset: 0; background-image: url('agatha-christie-hero.webp'); background-size: cover; background-position: center right; z-index: 0; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,27,42,0.97) 45%, rgba(13,27,42,0.5) 70%, rgba(13,27,42,0.1) 100%); z-index: 1; }
+  .hero-content { position: relative; z-index: 2; padding: 4rem 3rem 4rem 4rem; max-width: 580px; display: flex; flex-direction: column; justify-content: center; }
+  .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; font-variant: small-caps; color: var(--gold); margin-bottom: 1rem; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.15; color: var(--cream); margin-bottom: 1rem; }
+  .hero h1 em { font-style: italic; color: var(--gold-light); display: block; }
+  .hero-desc { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; max-width: 480px; }
+  .hero-meta { margin-top: 1.5rem; font-size: 0.72rem; letter-spacing: 0.12em; font-variant: small-caps; color: var(--text-muted); opacity: 0.7; }
   .hero-meta span { margin-right: 1.2rem; }
 
-  /* ── INTRO ── */
-  .intro {
-    max-width: 760px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 1.05rem;
-  }
+  .intro { max-width: 760px; margin: 3rem auto; padding: 0 2rem; text-align: center; color: var(--text-muted); font-size: 1.05rem; }
 
-  /* ── SECTION HEADINGS ── */
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    color: var(--gold-light);
-    margin-bottom: 0.25rem;
-  }
+  .section-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--gold-light); margin-bottom: 0.25rem; }
+  .section-rule { width: 40px; height: 2px; background: var(--gold); margin: 0.5rem 0 2rem; opacity: 0.6; }
 
-  .section-rule {
-    width: 40px;
-    height: 2px;
-    background: var(--gold);
-    margin: 0.5rem 0 2rem;
-    opacity: 0.6;
-  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+  .section { padding: 3.5rem 0; border-bottom: 1px solid var(--border); }
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
 
-  /* ── GRID ── */
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+  .card { background: var(--navy-light); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: border-color 0.25s, transform 0.2s; }
+  .card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
+  .card-top { display: flex; align-items: flex-start; gap: 1rem; }
+  .card-year { font-size: 0.72rem; letter-spacing: 0.1em; font-variant: small-caps; color: var(--gold); flex-shrink: 0; padding-top: 0.2rem; }
+  .card-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--cream); line-height: 1.3; }
+  .card-subtitle { font-size: 0.85rem; color: var(--text-muted); font-style: italic; }
+  .card-desc { font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; flex: 1; }
+  .card-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.25rem; }
+  .badge { font-size: 0.7rem; letter-spacing: 0.08em; font-variant: small-caps; padding: 0.2rem 0.6rem; border-radius: 2px; border: 1px solid; }
+  .badge-stream { color: #7ec8a0; border-color: rgba(126,200,160,0.35); background: rgba(126,200,160,0.07); }
+  .badge-dvd { color: var(--gold-light); border-color: rgba(228,185,106,0.35); background: rgba(228,185,106,0.07); }
+  .badge-classic { color: #b0b8d4; border-color: rgba(176,184,212,0.3); background: rgba(176,184,212,0.06); }
+  .card-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
 
-  .section {
-    padding: 3.5rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-
-  /* ── CARD ── */
-  .card {
-    background: var(--navy-light);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    transition: border-color 0.25s, transform 0.2s;
-  }
-
-  .card:hover {
-    border-color: var(--border-bright);
-    transform: translateY(-2px);
-  }
-
-  .card-top {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .card-year {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    font-variant: small-caps;
-    color: var(--gold);
-    flex-shrink: 0;
-    padding-top: 0.2rem;
-  }
-
-  .card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.15rem;
-    color: var(--cream);
-    line-height: 1.3;
-  }
-
-  .card-subtitle {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
-  .card-desc {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.65;
-    flex: 1;
-  }
-
-  .card-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 0.25rem;
-  }
-
-  .badge {
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    font-variant: small-caps;
-    padding: 0.2rem 0.6rem;
-    border-radius: 2px;
-    border: 1px solid;
-  }
-
-  .badge-stream {
-    color: #7ec8a0;
-    border-color: rgba(126,200,160,0.35);
-    background: rgba(126,200,160,0.07);
-  }
-
-  .badge-dvd {
-    color: var(--gold-light);
-    border-color: rgba(228,185,106,0.35);
-    background: rgba(228,185,106,0.07);
-  }
-
-  .badge-classic {
-    color: #b0b8d4;
-    border-color: rgba(176,184,212,0.3);
-    background: rgba(176,184,212,0.06);
-  }
-
-  .card-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: auto;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .btn {
-    display: inline-block;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    font-variant: small-caps;
-    padding: 0.35rem 0.9rem;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-  }
-
-  .btn-amazon {
-    background: var(--gold);
-    color: var(--navy);
-    font-weight: 600;
-  }
+  .btn { display: inline-block; font-size: 0.78rem; letter-spacing: 0.08em; font-variant: small-caps; padding: 0.35rem 0.9rem; border-radius: 2px; text-decoration: none; transition: background 0.2s, color 0.2s; }
+  .btn-amazon { background: var(--gold); color: var(--navy); font-weight: 600; }
   .btn-amazon:hover { background: var(--gold-light); }
+  .btn-stream { border: 1px solid var(--border-bright); color: var(--gold-light); background: transparent; }
+  .btn-stream:hover { background: rgba(201,147,58,0.12); }
 
-  .btn-stream {
-    border: 1px solid var(--border-bright);
-    color: var(--gold-light);
-    background: transparent;
-  }
-  .btn-stream:hover {
-    background: rgba(201,147,58,0.12);
-  }
+  .card-featured { background: var(--navy-light); border: 1px solid var(--border-bright); border-radius: 4px; padding: 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start; }
+  @media (max-width: 640px) { .card-featured { grid-template-columns: 1fr; } }
+  .featured-label { font-size: 0.7rem; letter-spacing: 0.18em; font-variant: small-caps; color: var(--gold); margin-bottom: 0.75rem; }
+  .featured-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--cream); line-height: 1.2; margin-bottom: 0.5rem; }
+  .featured-meta { font-size: 0.85rem; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; }
+  .featured-desc { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.25rem; }
+  .featured-right h3 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold-light); margin-bottom: 0.75rem; font-style: italic; }
+  .feature-list { list-style: none; padding: 0; margin-bottom: 1.25rem; }
+  .feature-list li { font-size: 0.9rem; color: var(--text-muted); padding: 0.35rem 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .feature-list li span { color: var(--cream); font-size: 0.85rem; }
 
-  /* ── FEATURED CARD (full width) ── */
-  .card-featured {
-    background: var(--navy-light);
-    border: 1px solid var(--border-bright);
-    border-radius: 4px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-    align-items: start;
-  }
-
-  @media (max-width: 640px) {
-    .card-featured { grid-template-columns: 1fr; }
-  }
-
-  .featured-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.18em;
-    font-variant: small-caps;
-    color: var(--gold);
-    margin-bottom: 0.75rem;
-  }
-
-  .featured-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.7rem;
-    color: var(--cream);
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-  }
-
-  .featured-meta {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: italic;
-    margin-bottom: 1rem;
-  }
-
-  .featured-desc {
-    color: var(--text-muted);
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
-  }
-
-  .featured-right h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    color: var(--gold-light);
-    margin-bottom: 0.75rem;
-    font-style: italic;
-  }
-
-  .feature-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1.25rem;
-  }
-
-  .feature-list li {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    padding: 0.35rem 0;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .feature-list li span {
-    color: var(--cream);
-    font-size: 0.85rem;
-  }
-
-  /* ── STREAMING GUIDE ── */
-  .stream-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-  }
-
-  .stream-table th {
-    text-align: left;
-    font-variant: small-caps;
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    color: var(--gold);
-    padding: 0.6rem 0.75rem;
-    border-bottom: 1px solid var(--border-bright);
-  }
-
-  .stream-table td {
-    padding: 0.75rem;
-    border-bottom: 1px solid var(--border);
-    color: var(--text-muted);
-    vertical-align: top;
-  }
-
-  .stream-table td:first-child {
-    color: var(--cream);
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-  }
-
-  .stream-table tr:hover td {
-    background: rgba(201,147,58,0.04);
-  }
-
-  .platform {
-    display: inline-block;
-    font-size: 0.7rem;
-    font-variant: small-caps;
-    letter-spacing: 0.06em;
-    padding: 0.15rem 0.5rem;
-    border-radius: 2px;
-    margin: 0.1rem 0.1rem 0.1rem 0;
-  }
-
+  .stream-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .stream-table th { text-align: left; font-variant: small-caps; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--gold); padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border-bright); }
+  .stream-table td { padding: 0.75rem; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+  .stream-table td:first-child { color: var(--cream); font-family: 'Playfair Display', serif; font-size: 1rem; }
+  .stream-table tr:hover td { background: rgba(201,147,58,0.04); }
+  .platform { display: inline-block; font-size: 0.7rem; font-variant: small-caps; letter-spacing: 0.06em; padding: 0.15rem 0.5rem; border-radius: 2px; margin: 0.1rem 0.1rem 0.1rem 0; }
   .p-britbox { background: rgba(0,150,255,0.12); color: #69b4f5; border: 1px solid rgba(0,150,255,0.25); }
   .p-prime   { background: rgba(0,168,225,0.1);  color: #72cce8; border: 1px solid rgba(0,168,225,0.25); }
   .p-pbs     { background: rgba(160,200,100,0.1); color: #a8cc75; border: 1px solid rgba(160,200,100,0.25); }
   .p-acorn   { background: rgba(220,160,60,0.1);  color: #e0b070; border: 1px solid rgba(220,160,60,0.25); }
-  .p-tubi    { background: rgba(230,80,60,0.1);   color: #e89080; border: 1px solid rgba(230,80,60,0.25); }
 
-  /* ── QUOTE ── */
-  .pullquote {
-    max-width: 700px;
-    margin: 3rem auto;
-    text-align: center;
-    padding: 0 2rem;
-  }
+  .pullquote { max-width: 700px; margin: 3rem auto; text-align: center; padding: 0 2rem; }
+  .pullquote blockquote { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; color: var(--gold-pale); line-height: 1.5; margin-bottom: 0.75rem; }
+  .pullquote cite { font-size: 0.8rem; letter-spacing: 0.12em; font-variant: small-caps; color: var(--text-muted); font-style: normal; }
 
-  .pullquote blockquote {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    color: var(--gold-pale);
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-  }
-
-  .pullquote cite {
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    font-variant: small-caps;
-    color: var(--text-muted);
-    font-style: normal;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--navy-mid);
-    border-top: 1px solid var(--border);
-    padding: 2.5rem 2rem;
-    text-align: center;
-  }
-
-  .footer-nav {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    font-variant: small-caps;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-  }
-
-  .footer-nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
+  footer { background: var(--navy-mid); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
+  .footer-nav { font-size: 0.72rem; letter-spacing: 0.1em; font-variant: small-caps; color: var(--text-muted); margin-bottom: 1rem; }
+  .footer-nav a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
   .footer-nav a:hover { color: var(--gold-light); }
   .footer-nav .sep { margin: 0 0.4rem; opacity: 0.4; }
-
-  .footer-brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-    color: var(--gold);
-    margin-bottom: 0.75rem;
-  }
-
-  .footer-disclosure {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
+  .footer-brand { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold); margin-bottom: 0.75rem; }
+  .footer-disclosure { font-size: 0.78rem; color: var(--text-muted); max-width: 640px; margin: 0 auto; line-height: 1.6; }
 
   @media (max-width: 600px) {
     .hero h1 { font-size: 2rem; }
@@ -507,7 +144,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <a href="/" class="site-name">BritishTV Hub</a>
   <nav>
@@ -523,7 +159,6 @@
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-image"></div>
   <div class="hero-overlay"></div>
@@ -531,18 +166,14 @@
     <p class="hero-eyebrow">The Queen of Crime · Eight Decades on Screen</p>
     <h1>Agatha Christie<em>on Screen</em></h1>
     <p class="hero-desc">From the golden age of BBC drama to gripping modern reimaginings — your complete guide to streaming and buying every Christie adaptation.</p>
-    <p class="hero-meta">
-      <span>Poirot · Miss Marple · And Then There Were None</span>
-    </p>
+    <p class="hero-meta"><span>Poirot · Miss Marple · And Then There Were None</span></p>
   </div>
 </section>
 
-<!-- INTRO -->
 <div class="intro">
   <p>No writer has been adapted for screen as many times as Agatha Christie. Her 66 detective novels and 14 story collections have spawned hundreds of hours of television and film, with productions from Britain, the US, Japan, and beyond. This page covers the essential screen adaptations — where to find them, how to watch them, and why each one earns a place in your viewing queue.</p>
 </div>
 
-<!-- POIROT FEATURED -->
 <div class="container">
   <section class="section">
     <h2 class="section-title">The Definitive Adaptation</h2>
@@ -576,7 +207,6 @@
       </div>
     </div>
 
-    <!-- Miss Marple featured -->
     <div class="card-featured">
       <div class="featured-left">
         <p class="featured-label">★ Essential Viewing</p>
@@ -606,7 +236,6 @@
   </section>
 </div>
 
-<!-- MODERN ADAPTATIONS -->
 <div class="container">
   <section class="section">
     <h2 class="section-title">Modern Reimaginings</h2>
@@ -614,18 +243,9 @@
     <div class="cards-grid">
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2015</span>
-          <div>
-            <h3 class="card-title">And Then There Were None</h3>
-            <p class="card-subtitle">BBC One · Three-part miniseries</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2015</span><div><h3 class="card-title">And Then There Were None</h3><p class="card-subtitle">BBC One · Three-part miniseries</p></div></div>
         <p class="card-desc">Sarah Phelps's adaptation of Christie's best-selling novel is a revelation — dark, stylish, and genuinely terrifying. Ten strangers, an isolated island, and a nursery rhyme counting them down. This is Christie stripped of coziness and played as pure psychological horror.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">Streaming</span>
-          <span class="badge badge-dvd">DVD</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">Streaming</span><span class="badge badge-dvd">DVD</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=and+then+there+were+none+bbc+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.amazon.com/prime" class="btn btn-stream" target="_blank" rel="nofollow">Prime Video</a>
@@ -633,18 +253,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2016</span>
-          <div>
-            <h3 class="card-title">Witness for the Prosecution</h3>
-            <p class="card-subtitle">BBC One · Two-part miniseries</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2016</span><div><h3 class="card-title">Witness for the Prosecution</h3><p class="card-subtitle">BBC One · Two-part miniseries</p></div></div>
         <p class="card-desc">Another Sarah Phelps gem. Kim Cattrall plays the glamorous murder victim at the centre of this taut courtroom thriller, with Toby Jones as the weary solicitor and Andrea Riseborough as the enigmatic Romaine. Nothing is what it seems.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">Streaming</span>
-          <span class="badge badge-dvd">DVD</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">Streaming</span><span class="badge badge-dvd">DVD</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=witness+for+the+prosecution+bbc+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.britbox.com" class="btn btn-stream" target="_blank" rel="nofollow">BritBox</a>
@@ -652,18 +263,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2018</span>
-          <div>
-            <h3 class="card-title">The ABC Murders</h3>
-            <p class="card-subtitle">BBC One · Three-part series</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2018</span><div><h3 class="card-title">The ABC Murders</h3><p class="card-subtitle">BBC One · Three-part series</p></div></div>
         <p class="card-desc">John Malkovich plays an ageing, diminished Poirot in this bold reimagining that reworks the novel's themes around xenophobia and identity. Divisive but riveting — and beautifully designed throughout.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">Streaming</span>
-          <span class="badge badge-dvd">DVD</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">Streaming</span><span class="badge badge-dvd">DVD</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=abc+murders+bbc+dvd+malkovich&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.amazon.com/prime" class="btn btn-stream" target="_blank" rel="nofollow">Prime Video</a>
@@ -671,18 +273,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2017</span>
-          <div>
-            <h3 class="card-title">Ordeal by Innocence</h3>
-            <p class="card-subtitle">BBC One · Three-part series</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2017</span><div><h3 class="card-title">Ordeal by Innocence</h3><p class="card-subtitle">BBC One · Three-part series</p></div></div>
         <p class="card-desc">A family is rocked when a man who could have cleared their convicted son arrives too late. Lush 1950s production design and a cast that includes Bill Nighy and Anna Chancellor elevate this tense, atmospheric thriller.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">Streaming</span>
-          <span class="badge badge-dvd">DVD</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">Streaming</span><span class="badge badge-dvd">DVD</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=ordeal+by+innocence+bbc+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.britbox.com" class="btn btn-stream" target="_blank" rel="nofollow">BritBox</a>
@@ -690,18 +283,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2019</span>
-          <div>
-            <h3 class="card-title">The Pale Horse</h3>
-            <p class="card-subtitle">BBC One · Two-part series</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2019</span><div><h3 class="card-title">The Pale Horse</h3><p class="card-subtitle">BBC One · Two-part series</p></div></div>
         <p class="card-desc">Rufus Sewell stars in this gripping adaptation of one of Christie's non-series novels. A list of names found in a dead woman's shoe leads to murder, witchcraft, and a sinister village. Stylish and genuinely unsettling.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">Streaming</span>
-          <span class="badge badge-dvd">DVD</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">Streaming</span><span class="badge badge-dvd">DVD</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=pale+horse+agatha+christie+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.amazon.com/prime" class="btn btn-stream" target="_blank" rel="nofollow">Prime Video</a>
@@ -709,17 +293,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2022</span>
-          <div>
-            <h3 class="card-title">Why Didn't They Ask Evans?</h3>
-            <p class="card-subtitle">BritBox · Three-part series</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2022</span><div><h3 class="card-title">Why Didn't They Ask Evans?</h3><p class="card-subtitle">BritBox · Three-part series</p></div></div>
         <p class="card-desc">Hugh Laurie directs this buoyant, sun-drenched adaptation with Will Poulter and Lucy Boynton. A light adventure mystery — closer to Christie's playful mode than her darker novels. Great fun.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">BritBox Original</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">BritBox Original</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=why+didn%27t+they+ask+evans+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Amazon</a>
           <a href="https://www.britbox.com" class="btn btn-stream" target="_blank" rel="nofollow">BritBox</a>
@@ -730,7 +306,6 @@
   </section>
 </div>
 
-<!-- CLASSIC MARPLE -->
 <div class="container">
   <section class="section">
     <h2 class="section-title">The ITV Marple Era</h2>
@@ -738,18 +313,9 @@
     <div class="cards-grid">
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">2004–2013</span>
-          <div>
-            <h3 class="card-title">Agatha Christie's Marple</h3>
-            <p class="card-subtitle">ITV · Geraldine McEwan & Julia McKenzie</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">2004–2013</span><div><h3 class="card-title">Agatha Christie's Marple</h3><p class="card-subtitle">ITV · Geraldine McEwan & Julia McKenzie</p></div></div>
         <p class="card-desc">The ITV series took liberties with the source material — adding characters, changing endings — but produced some genuinely enjoyable mysteries. Geraldine McEwan's mischievous first three series are the highlight. Enormous casts of British acting talent throughout.</p>
-        <div class="card-badges">
-          <span class="badge badge-stream">BritBox</span>
-          <span class="badge badge-dvd">DVD Available</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-stream">BritBox</span><span class="badge badge-dvd">DVD Available</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=agatha+christie+marple+itv+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
           <a href="https://www.britbox.com" class="btn btn-stream" target="_blank" rel="nofollow">BritBox</a>
@@ -757,18 +323,9 @@
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">1980–1985</span>
-          <div>
-            <h3 class="card-title">The Seven Dials Mystery & Others</h3>
-            <p class="card-subtitle">BBC / LWT · Various Christie specials</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">1980–1985</span><div><h3 class="card-title">The Seven Dials Mystery & Others</h3><p class="card-subtitle">BBC / LWT · Various Christie specials</p></div></div>
         <p class="card-desc">A run of standalone Christie TV films from the late 1970s and early 1980s — including <em>Why Didn't They Ask Evans?</em> (1980) and <em>The Seven Dials Mystery</em> (1981). Warm, charming productions with impeccable British casts. Now harder to find but rewarding.</p>
-        <div class="card-badges">
-          <span class="badge badge-dvd">DVD / Collector's Items</span>
-          <span class="badge badge-classic">Vintage</span>
-        </div>
+        <div class="card-badges"><span class="badge badge-dvd">DVD / Collector's Items</span><span class="badge badge-classic">Vintage</span></div>
         <div class="card-links">
           <a href="https://www.amazon.com/s?k=agatha+christie+classic+dvd+collection&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Search Amazon</a>
         </div>
@@ -778,79 +335,35 @@
   </section>
 </div>
 
-<!-- PULLQUOTE -->
 <div class="pullquote">
   <blockquote>"I have a fondness for short stories... one can get so much more in."</blockquote>
   <cite>— Agatha Christie</cite>
 </div>
 
-<!-- STREAMING GUIDE -->
 <div class="container">
   <section class="section">
     <h2 class="section-title">Where to Stream Christie</h2>
     <div class="section-rule"></div>
     <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">Streaming availability changes. Always verify current availability on each platform's website.</p>
-
     <table class="stream-table">
       <thead>
-        <tr>
-          <th>Show</th>
-          <th>Platforms</th>
-          <th>Notes</th>
-        </tr>
+        <tr><th>Show</th><th>Platforms</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Agatha Christie's Poirot (1989–2013)</td>
-          <td><span class="platform p-britbox">BritBox</span> <span class="platform p-prime">Prime (add-on)</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">All 13 series. BritBox most reliable.</td>
-        </tr>
-        <tr>
-          <td>Miss Marple — Joan Hickson (1984–1992)</td>
-          <td><span class="platform p-britbox">BritBox</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">Complete set. Also available on DVD.</td>
-        </tr>
-        <tr>
-          <td>Agatha Christie's Marple — ITV (2004–2013)</td>
-          <td><span class="platform p-britbox">BritBox</span> <span class="platform p-acorn">Acorn TV</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">All 6 series.</td>
-        </tr>
-        <tr>
-          <td>And Then There Were None (BBC, 2015)</td>
-          <td><span class="platform p-prime">Prime Video</span> <span class="platform p-britbox">BritBox</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">All 3 parts.</td>
-        </tr>
-        <tr>
-          <td>Witness for the Prosecution (BBC, 2016)</td>
-          <td><span class="platform p-britbox">BritBox</span> <span class="platform p-pbs">PBS Passport</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">Both parts.</td>
-        </tr>
-        <tr>
-          <td>The ABC Murders (BBC, 2018)</td>
-          <td><span class="platform p-prime">Prime Video</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">All 3 episodes.</td>
-        </tr>
-        <tr>
-          <td>Ordeal by Innocence (BBC, 2018)</td>
-          <td><span class="platform p-britbox">BritBox</span> <span class="platform p-prime">Prime Video</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">All 3 parts.</td>
-        </tr>
-        <tr>
-          <td>The Pale Horse (BBC, 2020)</td>
-          <td><span class="platform p-prime">Prime Video</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">Both parts.</td>
-        </tr>
-        <tr>
-          <td>Why Didn't They Ask Evans? (2022)</td>
-          <td><span class="platform p-britbox">BritBox</span></td>
-          <td style="color: var(--text-muted); font-size: 0.9rem;">BritBox original — exclusive.</td>
-        </tr>
+        <tr><td>Agatha Christie's Poirot (1989–2013)</td><td><span class="platform p-britbox">BritBox</span> <span class="platform p-prime">Prime (add-on)</span></td><td style="color:var(--text-muted);font-size:0.9rem;">All 13 series. BritBox most reliable.</td></tr>
+        <tr><td>Miss Marple — Joan Hickson (1984–1992)</td><td><span class="platform p-britbox">BritBox</span></td><td style="color:var(--text-muted);font-size:0.9rem;">Complete set. Also available on DVD.</td></tr>
+        <tr><td>Agatha Christie's Marple — ITV (2004–2013)</td><td><span class="platform p-britbox">BritBox</span> <span class="platform p-acorn">Acorn TV</span></td><td style="color:var(--text-muted);font-size:0.9rem;">All 6 series.</td></tr>
+        <tr><td>And Then There Were None (BBC, 2015)</td><td><span class="platform p-prime">Prime Video</span> <span class="platform p-britbox">BritBox</span></td><td style="color:var(--text-muted);font-size:0.9rem;">All 3 parts.</td></tr>
+        <tr><td>Witness for the Prosecution (BBC, 2016)</td><td><span class="platform p-britbox">BritBox</span> <span class="platform p-pbs">PBS Passport</span></td><td style="color:var(--text-muted);font-size:0.9rem;">Both parts.</td></tr>
+        <tr><td>The ABC Murders (BBC, 2018)</td><td><span class="platform p-prime">Prime Video</span></td><td style="color:var(--text-muted);font-size:0.9rem;">All 3 episodes.</td></tr>
+        <tr><td>Ordeal by Innocence (BBC, 2018)</td><td><span class="platform p-britbox">BritBox</span> <span class="platform p-prime">Prime Video</span></td><td style="color:var(--text-muted);font-size:0.9rem;">All 3 parts.</td></tr>
+        <tr><td>The Pale Horse (BBC, 2020)</td><td><span class="platform p-prime">Prime Video</span></td><td style="color:var(--text-muted);font-size:0.9rem;">Both parts.</td></tr>
+        <tr><td>Why Didn't They Ask Evans? (2022)</td><td><span class="platform p-britbox">BritBox</span></td><td style="color:var(--text-muted);font-size:0.9rem;">BritBox original — exclusive.</td></tr>
       </tbody>
     </table>
   </section>
 </div>
 
-<!-- DVD PICKS -->
 <div class="container">
   <section class="section">
     <h2 class="section-title">Best Christie DVD Sets</h2>
@@ -858,52 +371,27 @@
     <div class="cards-grid">
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">DVD</span>
-          <div>
-            <h3 class="card-title">Poirot: The Complete Cases Collection</h3>
-            <p class="card-subtitle">All 13 series · 33 discs</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">DVD</span><div><h3 class="card-title">Poirot: The Complete Cases Collection</h3><p class="card-subtitle">All 13 series · 33 discs</p></div></div>
         <p class="card-desc">The definitive home for David Suchet's complete run. All 70 episodes from 1989 to 2013, presented in original broadcast order. A proper collectible set for Christie enthusiasts.</p>
-        <div class="card-links">
-          <a href="https://www.amazon.com/s?k=poirot+complete+cases+collection+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
-        </div>
+        <div class="card-links"><a href="https://www.amazon.com/s?k=poirot+complete+cases+collection+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a></div>
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">DVD</span>
-          <div>
-            <h3 class="card-title">Miss Marple Complete Collection</h3>
-            <p class="card-subtitle">Joan Hickson · All 12 films</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">DVD</span><div><h3 class="card-title">Miss Marple Complete Collection</h3><p class="card-subtitle">Joan Hickson · All 12 films</p></div></div>
         <p class="card-desc">All twelve BBC films starring Joan Hickson in one elegant box set. These productions are a masterclass in British period television — unhurried, well-observed, and beautifully cast throughout.</p>
-        <div class="card-links">
-          <a href="https://www.amazon.com/s?k=miss+marple+joan+hickson+complete+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
-        </div>
+        <div class="card-links"><a href="https://www.amazon.com/s?k=miss+marple+joan+hickson+complete+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a></div>
       </div>
 
       <div class="card">
-        <div class="card-top">
-          <span class="card-year">DVD</span>
-          <div>
-            <h3 class="card-title">BBC Christie Collection</h3>
-            <p class="card-subtitle">Modern adaptations box set</p>
-          </div>
-        </div>
+        <div class="card-top"><span class="card-year">DVD</span><div><h3 class="card-title">BBC Christie Collection</h3><p class="card-subtitle">Modern adaptations box set</p></div></div>
         <p class="card-desc">Collects the Sarah Phelps-scripted BBC adaptations — And Then There Were None, Witness for the Prosecution, Ordeal by Innocence, and The ABC Murders. The darker, contemporary face of Christie on screen.</p>
-        <div class="card-links">
-          <a href="https://www.amazon.com/s?k=bbc+agatha+christie+collection+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
-        </div>
+        <div class="card-links"><a href="https://www.amazon.com/s?k=bbc+agatha+christie+collection+dvd&tag=britishtvhub-20" class="btn btn-amazon" target="_blank" rel="nofollow sponsored">Buy on Amazon</a></div>
       </div>
 
     </div>
   </section>
 </div>
 
-<!-- FOOTER — standard layout -->
 <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
   <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
     <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
@@ -917,9 +405,16 @@
     <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
     <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
-  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites · 2026</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites &middot; <span class="js-year"></span></div>
   <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
-<!-- END FOOTER -->
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+
 </body>
 </html>
