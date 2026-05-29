@@ -17,6 +17,7 @@
   "mainEntity": [
     {"@type":"Question","name":"Is BritBox worth it for British TV fans?","acceptedAnswer":{"@type":"Answer","text":"Yes, for serious British TV fans, BritBox is essential. It carries the largest legal library of BBC and ITV content available in the US, including classics that simply aren't available anywhere else. If you can only choose one British TV subscription, make it BritBox."}},
     {"@type":"Question","name":"Can I watch BBC shows for free in the United States?","acceptedAnswer":{"@type":"Answer","text":"The BBC iPlayer is only available to UK residents. In the US, BBC content reaches you through BritBox, PBS Passport, and select titles on Amazon Prime. Some older BBC content is also available free with ads on Tubi. There is no legitimate free access to current BBC programming from the US."}},
+    {"@type":"Question","name":"Can I watch BBC iPlayer in the US with a VPN?","acceptedAnswer":{"@type":"Answer","text":"Yes. A VPN routes your connection through a UK server, giving you a UK IP address so BBC iPlayer works normally. NordVPN is the most reliable option — it has fast UK servers, works on all devices, and comes with a 30-day money-back guarantee. Setup takes about 3 minutes."}},
     {"@type":"Question","name":"What is the difference between BritBox and Acorn TV?","acceptedAnswer":{"@type":"Answer","text":"BritBox focuses primarily on British content from the BBC and ITV, with a vast library of classic and contemporary series. Acorn TV is broader in scope, covering British and international mysteries, and tends to have more exclusive US premieres of newer shows. Many serious fans subscribe to both — they complement each other well."}},
     {"@type":"Question","name":"Where can I watch British TV shows for free in the US?","acceptedAnswer":{"@type":"Answer","text":"Tubi offers a surprisingly large free library supported by ads, including older series of Inspector Morse and Midsomer Murders. Pluto TV has dedicated British TV channels running around the clock. Kanopy is free with many public library cards. Both BritBox and Acorn TV offer free trials."}},
     {"@type":"Question","name":"What is the Sunday British TV Picks newsletter?","acceptedAnswer":{"@type":"Answer","text":"Every Sunday morning we send a free email with 5 hand-picked British mysteries and dramas worth your time that week — classics, hidden gems, and what's new on BritBox and Acorn. Trusted by 4,000+ fans. No spam, ever."}},
@@ -65,6 +66,16 @@
   .faq-a a { color: var(--gold); text-decoration: none; }
   .faq-a a:hover { text-decoration: underline; }
   .faq-a strong { color: var(--text); font-weight: 600; }
+
+  /* Recommended box */
+  .rec-box { position: relative; background: var(--bg-dark); border: 1px solid var(--gold); padding: 32px 36px; margin-top: 24px; text-align: center; }
+  .rec-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--gold); color: var(--bg-dark); font-family: 'Raleway', sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 3px 14px; white-space: nowrap; }
+  .rec-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold-light); margin-bottom: 10px; }
+  .rec-body { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); font-style: italic; line-height: 1.7; margin-bottom: 22px; }
+  .rec-btn { display: inline-block; background: var(--gold); color: var(--bg-dark); font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding: 13px 28px; text-decoration: none; transition: background 0.2s; margin-bottom: 10px; }
+  .rec-btn:hover { background: var(--gold-light); color: var(--bg-dark); text-decoration: none; }
+  .rec-disclosure { display: block; font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 0.5px; color: var(--text-faint); }
+
   .cta-block { background: var(--bg-dark); border: 1px solid var(--border); border-left: 4px solid var(--red); padding: 40px; margin-top: 56px; display: flex; align-items: center; gap: 40px; }
   .cta-block h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text); margin-bottom: 8px; }
   .cta-block p { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); font-style: italic; }
@@ -131,6 +142,19 @@
       <p class="faq-a">The BBC iPlayer is only available to UK residents. In the US, BBC content reaches you through <strong>BritBox</strong>, <strong>PBS Passport</strong>, and select titles on Amazon Prime. Some older BBC content is also available free with ads on <strong>Tubi</strong>. There is no legitimate free access to current BBC programming from the US.</p>
     </div>
 
+    <div class="faq-item" id="bbc-iplayer-vpn">
+      <p class="faq-q">Can I watch BBC iPlayer in the US with a VPN?</p>
+      <p class="faq-a">Yes — and it's the best way to access BBC iPlayer's full library from the US. A VPN routes your connection through a UK server, so BBC iPlayer sees a UK IP address and works normally. <strong>NordVPN</strong> is the most reliable option for this: it has fast UK servers, unblocks BBC iPlayer, ITVX, and Channel 4, and works on all your devices.</p>
+
+      <div class="rec-box">
+        <div class="rec-badge">★ Recommended</div>
+        <div class="rec-title">NordVPN — Our Top Pick for BBC iPlayer</div>
+        <p class="rec-body">Fast UK servers, works on all your devices, and unblocks BBC iPlayer, ITVX, and Channel 4. Setup takes about 3 minutes. 30-day money-back guarantee — no risk.</p>
+        <a href="YOUR-NORDVPN-AFFILIATE-LINK" class="rec-btn" rel="sponsored noopener" target="_blank">Try NordVPN Risk-Free →</a>
+        <span class="rec-disclosure">Affiliate link — we earn a small commission at no extra cost to you</span>
+      </div>
+    </div>
+
     <div class="faq-item">
       <p class="faq-q">What is the difference between BritBox and Acorn TV?</p>
       <p class="faq-a"><strong>BritBox</strong> focuses primarily on British content from the BBC and ITV, with a vast library of classic and contemporary series. <strong>Acorn TV</strong> is broader in scope, covering British and international mysteries, and tends to have more exclusive US premieres of newer shows. Many serious fans subscribe to both &mdash; they complement each other well. See the full comparison in our <a href="/streaming.html">streaming guide</a>.</p>
@@ -170,7 +194,7 @@
 
   </div>
 
-  <!-- NEWSLETTER CTA — button already correct -->
+  <!-- NEWSLETTER CTA -->
   <div class="cta-block">
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--red-light);margin-bottom:8px">Free &mdash; Every Sunday</div>
@@ -189,7 +213,6 @@
 
 </main>
 
-<!-- FOOTER — standard layout -->
 <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
   <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
     <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
@@ -206,7 +229,6 @@
   <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites · 2026</div>
   <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
-<!-- END FOOTER -->
 
 </body>
 </html>
