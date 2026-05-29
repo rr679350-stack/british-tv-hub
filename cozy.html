@@ -127,7 +127,7 @@
     <div class="page-hero-eyebrow">Warm · Clever · Never Too Dark</div>
     <h1>The Best Cozy British Mystery Shows</h1>
     <p class="page-hero-lead">Warm villages, clever detectives, and murders that never keep you up at night. These are the British mysteries our community reaches for when they want comfort, charm, and a good puzzle.</p>
-    <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated 2026 &nbsp;&middot;&nbsp; Perfect for Sunday evenings</div>
+    <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated <span class="js-month-year"></span> &nbsp;&middot;&nbsp; Perfect for Sunday evenings</div>
   </div>
 </div>
 
@@ -319,7 +319,7 @@
   </div>
 
 </main>
-<!-- FOOTER — standard layout -->
+
 <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
   <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
     <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
@@ -333,9 +333,19 @@
     <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
     <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
   </div>
-  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites · 2026</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites &middot; <span class="js-year"></span></div>
   <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
-<!-- END FOOTER -->
+
+<script>
+(function() {
+  var now = new Date();
+  var monthYear = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  var year = now.getFullYear();
+  document.querySelectorAll('.js-month-year').forEach(function(el) { el.textContent = monthYear; });
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+
 </body>
 </html>
