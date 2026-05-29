@@ -94,6 +94,7 @@
   .badge-stream { color: #7ec8a0; border-color: rgba(126,200,160,0.35); background: rgba(126,200,160,0.07); }
   .badge-dvd { color: var(--gold-light); border-color: rgba(228,185,106,0.35); background: rgba(228,185,106,0.07); }
   .badge-classic { color: #b0b8d4; border-color: rgba(176,184,212,0.3); background: rgba(176,184,212,0.06); }
+  .badge-book { color: #c9a84c; border-color: rgba(201,168,76,0.35); background: rgba(201,168,76,0.07); }
   .card-links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
 
   .btn { display: inline-block; font-size: 0.78rem; letter-spacing: 0.08em; font-variant: small-caps; padding: 0.35rem 0.9rem; border-radius: 2px; text-decoration: none; transition: background 0.2s, color 0.2s; }
@@ -128,6 +129,19 @@
   .pullquote blockquote { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; color: var(--gold-pale); line-height: 1.5; margin-bottom: 0.75rem; }
   .pullquote cite { font-size: 0.8rem; letter-spacing: 0.12em; font-variant: small-caps; color: var(--text-muted); font-style: normal; }
 
+  /* Books section */
+  .books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+  .book-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem 1.25rem 1rem; display: flex; flex-direction: column; gap: 0.6rem; transition: border-color 0.25s, transform 0.2s; }
+  .book-card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
+  .book-tag { font-size: 0.68rem; letter-spacing: 0.1em; font-variant: small-caps; color: var(--gold); }
+  .book-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--cream); line-height: 1.3; }
+  .book-note { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; flex: 1; font-family: 'Crimson Pro', serif; }
+  .book-link { display: inline-block; font-size: 0.78rem; letter-spacing: 0.08em; font-variant: small-caps; padding: 0.35rem 0.9rem; border-radius: 2px; text-decoration: none; background: var(--gold); color: var(--navy); font-weight: 600; margin-top: 0.5rem; width: fit-content; transition: background 0.2s; }
+  .book-link:hover { background: var(--gold-light); }
+  .books-callout { background: var(--navy-light); border-left: 3px solid var(--gold); padding: 1rem 1.5rem; margin-top: 1.75rem; border-radius: 0 4px 4px 0; }
+  .books-callout p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin: 0; font-family: 'Crimson Pro', serif; }
+  .books-callout strong { color: var(--cream); font-weight: 600; }
+
   footer { background: var(--navy-mid); border-top: 1px solid var(--border); padding: 2.5rem 2rem; text-align: center; }
   .footer-nav { font-size: 0.72rem; letter-spacing: 0.1em; font-variant: small-caps; color: var(--text-muted); margin-bottom: 1rem; }
   .footer-nav a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
@@ -139,6 +153,7 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 2rem; }
     .cards-grid { grid-template-columns: 1fr; }
+    .books-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -361,6 +376,65 @@
         <tr><td>Why Didn't They Ask Evans? (2022)</td><td><span class="platform p-britbox">BritBox</span></td><td style="color:var(--text-muted);font-size:0.9rem;">BritBox original — exclusive.</td></tr>
       </tbody>
     </table>
+  </section>
+</div>
+
+<!-- BOOKS SECTION -->
+<div class="container">
+  <section class="section">
+    <h2 class="section-title">Read the Books</h2>
+    <div class="section-rule"></div>
+    <p style="color: var(--text-muted); margin-bottom: 1.75rem; font-size: 0.95rem;">The adaptations are wonderful — but Christie's prose is something else entirely. These are the essential titles to start with.</p>
+
+    <div class="books-grid">
+
+      <div class="book-card">
+        <span class="book-tag">Box Set · Poirot</span>
+        <h3 class="book-title">The Complete Hercule Poirot</h3>
+        <p class="book-note">All 39 Poirot novels in one collection. The natural companion to David Suchet's definitive adaptation — and endlessly re-readable.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=hercule+poirot+complete+collection+books&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+      <div class="book-card">
+        <span class="book-tag">Box Set · Miss Marple</span>
+        <h3 class="book-title">The Complete Miss Marple</h3>
+        <p class="book-note">All 12 Miss Marple novels. Perfect for fans of the Joan Hickson BBC classics — and a lovely way to spend a rainy afternoon.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=miss+marple+complete+collection+books&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+      <div class="book-card">
+        <span class="book-tag">Her Best-Selling Novel</span>
+        <h3 class="book-title">And Then There Were None</h3>
+        <p class="book-note">The world's best-selling mystery novel. Read it before or after the BBC adaptation — either way, the ending will stun you.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=and+then+there+were+none+agatha+christie+book&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+      <div class="book-card">
+        <span class="book-tag">Widely Considered Her Masterpiece</span>
+        <h3 class="book-title">The Murder of Roger Ackroyd</h3>
+        <p class="book-note">The twist that changed detective fiction forever. Still astonishing nearly a hundred years on — and best read knowing as little as possible.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=murder+of+roger+ackroyd+agatha+christie&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+      <div class="book-card">
+        <span class="book-tag">Classic Poirot</span>
+        <h3 class="book-title">Murder on the Orient Express</h3>
+        <p class="book-note">Poirot at his most theatrical. Essential reading alongside any of the screen adaptations — and one of the great puzzle plots in all of fiction.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=murder+on+the+orient+express+agatha+christie+book&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+      <div class="book-card">
+        <span class="book-tag">Autobiography</span>
+        <h3 class="book-title">An Autobiography</h3>
+        <p class="book-note">Christie's own life story — candid, warm, and surprisingly funny. A wonderful companion to a lifetime of her fiction.</p>
+        <a class="book-link" href="https://www.amazon.com/s?k=agatha+christie+autobiography&tag=britishtvhub-20" target="_blank" rel="nofollow sponsored">Buy on Amazon</a>
+      </div>
+
+    </div>
+
+    <div class="books-callout">
+      <p><strong>New to Christie?</strong> Start with <em>And Then There Were None</em> — it requires no prior knowledge of Poirot or Marple, works as a standalone, and is genuinely impossible to put down.</p>
+    </div>
   </section>
 </div>
 
