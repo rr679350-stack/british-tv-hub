@@ -62,6 +62,7 @@
   .quick-table tr:hover td { background: var(--bg-card); }
   .quick-table a { color: var(--gold); text-decoration: none; }
   .quick-table a:hover { text-decoration: underline; }
+  .vpn-badge { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; background: rgba(201,169,110,0.12); color: var(--gold); border: 1px solid rgba(201,169,110,0.3); padding: 2px 6px; border-radius: 2px; white-space: nowrap; }
   .cta-block { background: var(--bg-dark); border: 1px solid var(--border); border-left: 4px solid var(--red); padding: 40px; margin-top: 48px; display: flex; align-items: center; gap: 40px; }
   .cta-block h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--text); margin-bottom: 8px; }
   .cta-block p { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text-muted); font-style: italic; }
@@ -191,36 +192,12 @@
 
   <hr class="section-divider">
 
-  <div id="free">
-    <div class="section-label">Free Options</div>
-    <h2 class="section-title">Watch British TV for Free in the US</h2>
-    <p class="section-intro">You don't need a paid subscription to start. These free services carry a surprising amount of quality British content.</p>
-    <div class="free-grid">
-      <div class="free-card">
-        <div class="free-label">Free with Ads</div>
-        <h3 class="free-name">Tubi</h3>
-        <p class="free-desc">Tubi offers a surprisingly large free library supported by ads, including older series of Inspector Morse, Midsomer Murders, and various classic British dramas. A great place to start.</p>
-      </div>
-      <div class="free-card">
-        <div class="free-label">Free with Ads</div>
-        <h3 class="free-name">Pluto TV</h3>
-        <p class="free-desc">Has dedicated British TV channels running classic shows around the clock. Good for casual viewing and discovery &mdash; you can't choose specific episodes but it's always on.</p>
-      </div>
-      <div class="free-card">
-        <div class="free-label">Free with Library Card</div>
-        <h3 class="free-name">Kanopy</h3>
-        <p class="free-desc">Many public libraries offer Kanopy for free, which carries British films and some series. Check if your library card gives you access &mdash; it costs you nothing.</p>
-      </div>
-    </div>
-  </div>
-
-  <hr class="section-divider">
-
+  <!-- VPN SECTION — moved up, right after paid services -->
   <div class="vpn-section">
     <div class="vpn-inner">
-      <div class="vpn-label">Watching From Outside the UK</div>
+      <div class="vpn-label">Watch British TV Anywhere</div>
       <h2 class="vpn-title">Access BBC iPlayer &amp; UK-Only Streams with a VPN</h2>
-      <p class="vpn-intro">Many British TV streams &mdash; including BBC iPlayer, ITVX, and Channel 4 &mdash; are only available inside the UK. A VPN lets you connect through a UK server so you can watch from anywhere in the world.</p>
+      <p class="vpn-intro">Some of the best British TV &mdash; BBC iPlayer, ITVX, Channel 4 &mdash; isn't available in the US at all. A VPN connects you through a UK server so you can watch from anywhere in the world, just as if you were sitting in London.</p>
       <div class="vpn-cards">
         <div class="vpn-card">
           <div class="vpn-card-icon">🔒</div>
@@ -252,11 +229,37 @@
 
   <hr class="section-divider">
 
+  <div id="free">
+    <div class="section-label">Free Options</div>
+    <h2 class="section-title">Watch British TV for Free in the US</h2>
+    <p class="section-intro">You don't need a paid subscription to start. These free services carry a surprising amount of quality British content.</p>
+    <div class="free-grid">
+      <div class="free-card">
+        <div class="free-label">Free with Ads</div>
+        <h3 class="free-name">Tubi</h3>
+        <p class="free-desc">Tubi offers a surprisingly large free library supported by ads, including older series of Inspector Morse, Midsomer Murders, and various classic British dramas. A great place to start.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-label">Free with Ads</div>
+        <h3 class="free-name">Pluto TV</h3>
+        <p class="free-desc">Has dedicated British TV channels running classic shows around the clock. Good for casual viewing and discovery &mdash; you can't choose specific episodes but it's always on.</p>
+      </div>
+      <div class="free-card">
+        <div class="free-label">Free with Library Card</div>
+        <h3 class="free-name">Kanopy</h3>
+        <p class="free-desc">Many public libraries offer Kanopy for free, which carries British films and some series. Check if your library card gives you access &mdash; it costs you nothing.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
   <div id="quick-ref">
     <div class="section-label">Quick Reference</div>
     <h2 class="section-title">Where to Watch Specific Shows</h2>
     <p class="section-intro">The most common question we get &mdash; "where can I watch X?" Here are the most popular shows and exactly where to find them in the US.</p>
-    <p style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--text-faint);margin-bottom:24px;">Streaming availability current as of <span class="js-month-year"></span> &nbsp;&middot;&nbsp; Rights change frequently &mdash; always verify before subscribing</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--text-faint);margin-bottom:8px;">Streaming availability current as of <span class="js-month-year"></span> &nbsp;&middot;&nbsp; Rights change frequently &mdash; always verify before subscribing</p>
+    <p style="font-family:'Crimson Text',serif;font-size:14px;color:var(--text-faint);font-style:italic;margin-bottom:24px;">Shows marked <span class="vpn-badge">UK only &mdash; VPN</span> are not available in the US on any streaming service &mdash; a VPN is the only way to watch.</p>
 
     <table class="quick-table">
       <thead><tr><th>Show</th><th>Where to Watch</th><th>Free Option?</th></tr></thead>
@@ -278,6 +281,11 @@
         <tr><td>Endeavour</td><td><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></td><td>PBS Passport</td></tr>
         <tr><td>Line of Duty</td><td><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></td><td>No</td></tr>
         <tr><td>Shetland</td><td><a href="https://www.amazon.com/channels/britbox?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></td><td>No</td></tr>
+        <tr><td>Peaky Blinders</td><td><a href="https://www.netflix.com" target="_blank" rel="noopener">Netflix</a></td><td>No</td></tr>
+        <tr><td>Luther</td><td><a href="https://www.netflix.com" target="_blank" rel="noopener">Netflix</a></td><td>No</td></tr>
+        <tr><td>Inside No. 9</td><td><span class="vpn-badge">UK only &mdash; VPN</span> &nbsp;<a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=148975&url_id=902" target="_blank" rel="noopener" style="font-size:13px;">Watch with NordVPN &rarr;</a></td><td>No</td></tr>
+        <tr><td>The Responder</td><td><span class="vpn-badge">UK only &mdash; VPN</span> &nbsp;<a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=148975&url_id=902" target="_blank" rel="noopener" style="font-size:13px;">Watch with NordVPN &rarr;</a></td><td>No</td></tr>
+        <tr><td>This Is Going to Hurt</td><td><span class="vpn-badge">UK only &mdash; VPN</span> &nbsp;<a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=148975&url_id=902" target="_blank" rel="noopener" style="font-size:13px;">Watch with NordVPN &rarr;</a></td><td>No</td></tr>
       </tbody>
     </table>
   </div>
@@ -296,6 +304,10 @@
       </div>
       <div style="font-family:'Raleway',sans-serif;font-size:9px;color:var(--text-faint);margin-top:10px;letter-spacing:0.5px">No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
     </form>
+  </div>
+
+  <div class="affiliate-note">
+    As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox, Acorn TV, and NordVPN affiliate links at no extra cost to you.
   </div>
 
 </main>
@@ -317,11 +329,14 @@
   <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
 </footer>
 
-
 <script>
 (function() {
   var year = new Date().getFullYear();
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var now = new Date();
+  var monthYear = months[now.getMonth()] + ' ' + year;
   document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+  document.querySelectorAll('.js-month-year').forEach(function(el) { el.textContent = monthYear; });
 })();
 </script>
 </body>
