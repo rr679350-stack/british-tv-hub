@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ultimate British Mystery Viewer's Guide | BritishTV Hub</title>
+  <meta name="description" content="Your complete guide to British mystery TV — cozy whodunits, police procedurals, Agatha Christie adaptations, and PBS MASTERPIECE picks. Curated for American fans." />
+  <link rel="canonical" href="https://britishtvhub.com/mysteries.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0d1b2a;
+      --navy-dark: #0a1520;
+      --navy-mid: #111e2d;
+      --gold: #c9a84c;
+      --gold-dim: #c9a84c44;
+      --gold-faint: #c9a84c22;
+      --gold-mid: #c9a84c99;
+      --cream: #f4ede0;
+      --cream-dim: #c9b99a;
+      --red: #8b1a2e;
+    }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: 'Raleway', sans-serif;
+      min-height: 100vh;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    .site-nav {
+      background: var(--navy-dark);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 16px;
+      font-weight: 700;
+      margin-right: 16px;
+      padding: 14px 0;
+      white-space: nowrap;
+    }
+    .site-nav a {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cream);
+      opacity: 0.7;
+      padding: 14px 10px;
+      border-bottom: 2px solid transparent;
+      transition: opacity 0.2s, color 0.2s;
+    }
+    .site-nav a:hover { opacity: 1; }
+    .site-nav a.active { opacity: 1; color: var(--gold); border-bottom-color: var(--gold); }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      border-bottom: 1px solid var(--gold-dim);
+      padding: 48px 32px 36px;
+    }
+    .hero-tag {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      max-width: 640px;
+    }
+    .hero-divider {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-family: 'Crimson Text', serif;
+      font-size: 18px;
+      color: var(--cream-dim);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    /* ── SUB-NAV ── */
+    .sub-nav {
+      background: var(--navy-dark);
+      border-bottom: 1px solid var(--gold-faint);
+      padding: 0 32px;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+    }
+    .sub-nav a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      padding: 14px 18px;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .sub-nav a:hover { color: var(--cream); }
+    .sub-nav a.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+    /* ── MAIN CONTENT ── */
+    .content { padding: 32px 32px 0; max-width: 1100px; }
+
+    .section-label {
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gold-faint);
+    }
+
+    /* ── FEATURED CARDS ── */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+    @media (max-width: 680px) { .featured-grid { grid-template-columns: 1fr; } }
+
+    .featured-card {
+      background: var(--navy-dark);
+      border: 1px solid var(--gold-faint);
+      border-radius: 8px;
+      padding: 22px;
+      transition: border-color 0.2s;
+    }
+    .featured-card:hover { border-color: var(--gold-dim); }
+    .featured-card.accent { border-color: rgba(201,168,76,0.4); }
+
+    .fc-tag {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .fc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 19px;
+      color: var(--cream);
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .fc-desc {
+      font-family: 'Crimson Text', serif;
+      font-size: 15px;
+      color: var(--cream-dim);
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+    .fc-link {
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      transition: opacity 0.2s;
+    }
+    .fc-link:hover { opacity: 0.75; }
+
+    /* ── QUIZ BOX ── */
+    .quiz-box {
+      background: var(--navy-dark);
+      border: 1px solid var(--gold-faint);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .quiz-text {
+      font-family: 'Crimson Text', serif;
+      font-size: 16px;
+      color: var(--cream);
+      line-height: 1.5;
+    }
+    .quiz-text span { color: var(--gold); }
+    .quiz-btn {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 9px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+    }
+    .quiz-btn:hover { background: var(--gold); color: var(--navy); }
+
+    /* ── SHOW CARDS ── */
+    .shows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .show-card {
+      background: var(--navy-dark);
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: 8px;
+      padding: 16px;
+      transition: border-color 0.2s;
+    }
+    .show-card:hover { border-color: rgba(201,168,76,0.35); }
+
+    .sc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .sc-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      color: var(--cream);
+      line-height: 1.3;
+    }
+    .sc-badge {
+      font-family: 'Raleway', sans-serif;
+      font-size: 8px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-cozy   { background: #1a2d1a; color: #7ad47a; }
+    .badge-proc   { background: #1a1a2d; color: #7a9ada; }
+    .badge-agatha { background: #2d1a1a; color: #da7a7a; }
+
+    .sc-meta {
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      color: var(--gold-mid);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .sc-desc {
+      font-family: 'Crimson Text', serif;
+      font-size: 13px;
+      color: rgba(201,185,154,0.65);
+      line-height: 1.5;
+    }
+
+    /* ── NEWSLETTER ── */
+    .newsletter-wrap {
+      background: var(--navy-mid);
+      border-left: 3px solid var(--red);
+      padding: 32px 32px;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin: 0 -32px;
+    }
+    .nl-left { flex: 1; min-width: 220px; }
+    .nl-tag {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .nl-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .nl-sub {
+      font-family: 'Crimson Text', serif;
+      font-style: italic;
+      font-size: 16px;
+      color: var(--cream-dim);
+    }
+    .nl-right {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 300px;
+    }
+    .nl-row { display: flex; }
+    .nl-input {
+      flex: 1;
+      background: #1a2d40;
+      border: 1px solid rgba(201,168,76,0.25);
+      border-right: none;
+      color: var(--cream);
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      padding: 11px 14px;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    .nl-row input::placeholder { color: rgba(201,185,154,0.35); }
+    .nl-row input:focus { border-color: rgba(201,168,76,0.5); }
+    .nl-btn {
+      background: var(--red);
+      color: var(--cream);
+      border: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 11px 18px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .nl-row button:hover { opacity: 0.85; }
+    .nl-note {
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      color: rgba(201,185,154,0.3);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── AFFILIATE DISCLOSURE ── */
+    .disclosure {
+      padding: 16px 32px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      color: rgba(201,185,154,0.35);
+      line-height: 1.6;
+      border-top: 1px solid var(--gold-faint);
+    }
+    .disclosure strong { color: rgba(201,185,154,0.5); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy-dark);
+      border-top: 1px solid var(--gold-faint);
+      padding: 18px 32px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: var(--gold);
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+    .footer-links a:hover { opacity: 0.7; }
+    .footer-sep { color: var(--gold-dim); font-size: 10px; }
+    .footer-brand {
+      text-align: center;
+      font-family: 'Crimson Text', serif;
+      font-size: 13px;
+      color: rgba(201,185,154,0.3);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <span class="nav-logo">BritishTV Hub</span>
+    <a href="index.html">Home</a>
+    <a href="mysteries.html" class="active">Mysteries</a>
+    <a href="streaming.html">Streaming</a>
+    <a href="shows.html">Shows</a>
+    <a href="shop.html">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="https://www.facebook.com/BritishTVHub" target="_blank" rel="noopener">Facebook</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">For American fans of British TV</div>
+    <h1>The Ultimate British Mystery Viewer's Guide</h1>
+    <div class="hero-divider"></div>
+    <p>Cozy village whodunits, sharp-edged police procedurals, Agatha Christie adaptations, and everything in between — curated for American fans.</p>
+  </div>
+
+  <!-- SUB-NAV -->
+  <nav class="sub-nav">
+    <a href="mysteries.html" class="active">All mysteries</a>
+    <a href="cozy.html">Cozy mysteries</a>
+    <a href="top10.html">Police procedurals</a>
+    <a href="agatha-christie.html">Agatha Christie</a>
+    <a href="masterpiece2026.html">PBS MASTERPIECE</a>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="content">
+
+    <!-- FEATURED GUIDES -->
+    <div style="margin-bottom: 10px; margin-top: 8px;"></div>
+    <div class="section-label">Featured guides</div>
+    <div class="featured-grid">
+      <div class="featured-card accent">
+        <div class="fc-tag">Updated 2026</div>
+        <div class="fc-title">What's on PBS MASTERPIECE</div>
+        <div class="fc-desc">Miss Scarlet, Bookish, The Forsytes, Downton Abbey's return — your complete guide to the current lineup and where to stream each show.</div>
+        <a class="fc-link" href="masterpiece2026.html">Read the guide →</a>
+      </div>
+      <div class="featured-card">
+        <div class="fc-tag">Evergreen · Agatha Christie</div>
+        <div class="fc-title">Every Agatha Christie Adaptation, Ranked</div>
+        <div class="fc-desc">From the definitive Poirot with David Suchet to the wildest modern reimaginings — where to start and what to skip.</div>
+        <a class="fc-link" href="agatha-christie.html">Read the guide →</a>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div class="quiz-box">
+      <div class="quiz-text">Not sure where to start? Take our <span>Match Me a Mystery</span> quiz — we'll find your perfect British mystery in 60 seconds.</div>
+      <a href="quiz.html"><button class="quiz-btn">Take the quiz →</button></a>
+    </div>
+
+    <!-- COZY MYSTERIES -->
+    <div class="section-label">Cozy mysteries</div>
+    <div class="shows-grid">
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Miss Scarlet &amp; the Duke</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">MASTERPIECE · Victorian</div>
+        <div class="sc-desc">London's first female detective navigates a man's world with wit and nerve.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Midsomer Murders</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">Streaming · Village mystery</div>
+        <div class="sc-desc">The most murderous county in England, investigated with a cup of tea in hand.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Grantchester</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">MASTERPIECE · 1950s</div>
+        <div class="sc-desc">A Cambridge vicar with a nose for trouble teams with a world-weary detective.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Bookish</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">MASTERPIECE · Post-war London</div>
+        <div class="sc-desc">Mark Gatiss as an antiquarian bookseller who can't stop solving murders.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Father Brown</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">Streaming · 1950s Cotswolds</div>
+        <div class="sc-desc">A mild-mannered Catholic priest solves crimes with warmth and quiet wisdom.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Brokenwood Mysteries</div>
+          <span class="sc-badge badge-cozy">Cozy</span>
+        </div>
+        <div class="sc-meta">Acorn TV · New Zealand</div>
+        <div class="sc-desc">Midsomer Murders of the Southern Hemisphere — warm, witty, completely charming.</div>
+      </div>
+    </div>
+
+    <!-- POLICE PROCEDURALS -->
+    <div class="section-label">Police procedurals</div>
+    <div class="shows-grid">
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Vera</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">Streaming · Northumberland</div>
+        <div class="sc-desc">Brenda Blethyn's rumpled, brilliant DCI is one of British TV's greatest characters.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Endeavour</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">PBS · Oxford · Complete</div>
+        <div class="sc-desc">The definitive origin story of Inspector Morse, spanning 1960s Oxford.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Shetland</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">Streaming · Scotland</div>
+        <div class="sc-desc">Remote island crimes, tight communities, and landscapes that steal every scene.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Inspector George Gently</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">Streaming · 1960s</div>
+        <div class="sc-desc">A principled London detective relocated to the north of England.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Broadchurch</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">Streaming · Coastal drama</div>
+        <div class="sc-desc">A child's death tears apart a tight-knit seaside town. Utterly gripping.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Unforgotten</div>
+          <span class="sc-badge badge-proc">Procedural</span>
+        </div>
+        <div class="sc-meta">PBS · Cold cases</div>
+        <div class="sc-desc">Cold cases, rich characters, and moral complexity at its very best.</div>
+      </div>
+    </div>
+
+    <!-- AGATHA CHRISTIE -->
+    <div class="section-label">Agatha Christie</div>
+    <div class="shows-grid">
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Poirot</div>
+          <span class="sc-badge badge-agatha">Christie</span>
+        </div>
+        <div class="sc-meta">Streaming · Complete series</div>
+        <div class="sc-desc">David Suchet's definitive Hercule Poirot — all 70 episodes, every story.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">Miss Marple</div>
+          <span class="sc-badge badge-agatha">Christie</span>
+        </div>
+        <div class="sc-meta">Streaming · Classic BBC</div>
+        <div class="sc-desc">Joan Hickson's Miss Marple remains the gold standard after 40 years.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">And Then There Were None</div>
+          <span class="sc-badge badge-agatha">Christie</span>
+        </div>
+        <div class="sc-meta">Streaming · Miniseries</div>
+        <div class="sc-desc">The most chilling Christie adaptation ever made. Watch it in one sitting.</div>
+      </div>
+      <div class="show-card">
+        <div class="sc-header">
+          <div class="sc-title">The ABC Murders</div>
+          <span class="sc-badge badge-agatha">Christie</span>
+        </div>
+        <div class="sc-meta">Amazon · Miniseries</div>
+        <div class="sc-desc">John Malkovich as a darker, more haunted Poirot in an interwar thriller.</div>
+      </div>
+    </div>
+
+    <div style="padding-bottom: 32px;"></div>
+
+  </main>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter-wrap">
+    <div class="nl-left">
+      <div class="nl-tag">Free &mdash; Every Sunday</div>
+      <div class="nl-heading">Get 5 hand-picked shows every Sunday</div>
+      <div class="nl-sub">Join 4,000+ British TV fans. No spam, ever.</div>
+    </div>
+    <div class="nl-right">
+      <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank" style="display:flex;flex-direction:column;gap:8px;">
+        <div class="nl-row">
+          <input type="email" name="EMAIL" class="nl-input" placeholder="your@email.com" required aria-label="Email address" />
+          <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+          <button type="submit" class="nl-btn">Get Sunday Picks &rarr;</button>
+        </div>
+        <div class="nl-note">No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- AFFILIATE DISCLOSURE -->
+  <div class="disclosure">
+    <strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases. Some links on this page may be affiliate links to BritBox and Acorn TV. This never affects our recommendations.
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a><span class="footer-sep">·</span>
+      <a href="shows.html">Shows</a><span class="footer-sep">·</span>
+      <a href="streaming.html">Streaming</a><span class="footer-sep">·</span>
+      <a href="mysteries.html">Cozy Mysteries</a><span class="footer-sep">·</span>
+      <a href="top10.html">Police Procedurals</a><span class="footer-sep">·</span>
+      <a href="dvd.html">British TV on DVD</a><span class="footer-sep">·</span>
+      <a href="faq.html">FAQ</a><span class="footer-sep">·</span>
+      <a href="agatha-christie.html">Hidden Gems</a><span class="footer-sep">·</span>
+      <a href="https://www.facebook.com/BritishTVHub" target="_blank" rel="noopener">Facebook</a><span class="footer-sep">·</span>
+      <a href="faq.html#contact">Contact</a><span class="footer-sep">·</span>
+      <a href="partner.html">Partner Info</a>
+    </div>
+    <div class="footer-brand">
+      British TV Dramas &amp; Mysteries — Classics &amp; New Favorites · <span class="js-year"></span><br>
+      As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.js-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+
+</body>
+</html>
