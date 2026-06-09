@@ -1,0 +1,103 @@
+{
+  "month": "June 2026",
+  "updated": "2026-06-09",
+  "highlight": {
+    "title": "A Woman of Substance",
+    "badge": "BritBox Original · Premieres June 24",
+    "description": "Brenda Blethyn (Vera) leads this sweeping new period drama based on Barbara Taylor Bradford's iconic bestseller. Yorkshire maid Emma Harte defies every limit placed upon her in a relentless rise to power and revenge — spanning decades of ambition, betrayal, and reinvention.",
+    "tags": ["Period drama", "Female lead", "Brenda Blethyn", "Yorkshire"],
+    "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+  },
+  "new_arrivals": [
+    {
+      "title": "Beyond Paradise",
+      "season": "Season 4",
+      "available": "June 9",
+      "badge": "BritBox Original",
+      "description": "The beloved Death in Paradise spin-off returns. DI Humphrey Goodman and his Shipton Abbott team face a fresh wave of mind-boggling crimes — including a witness who claims a mermaid wrecked a local seaweed farm. Mystery, humour, and heart set against the landscapes of Devon and Cornwall.",
+      "tags": ["Cozy mystery", "Devon & Cornwall", "Death in Paradise spin-off"],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "Trigger Point",
+      "season": "Season 3",
+      "available": "June 18",
+      "badge": "BritBox Original · US Exclusive",
+      "description": "Vicky McClure (Line of Duty) returns as explosives officer Lana Washington, called to investigate what looks like a bomb threat — only to discover something far more sinister. Gripping, tense, and one of BritBox's best originals.",
+      "tags": ["Thriller", "Vicky McClure", "US exclusive"],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "The Other Bennet Sister",
+      "season": "Series 1 — Finale June 24",
+      "available": "Now streaming",
+      "badge": "BritBox Original",
+      "description": "A fresh Regency-era story placing Mary Bennet — Pride and Prejudice's overlooked middle sister — at the centre of her own epic love story. Ella Bruccoleri (Call the Midwife) is a delight in the lead role.",
+      "tags": ["Regency drama", "Jane Austen", "Period drama"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "Vicious",
+      "season": "Seasons 1 & 2",
+      "available": "June 1",
+      "badge": "New to BritBox",
+      "description": "Ian McKellen and Derek Jacobi as Freddie and Stuart — a couple who have spent nearly 50 years together in a small London flat, bickering viciously but loving each other deeply. Frances de la Tour and Iwan Rheon complete a perfect ensemble. Warm, sharp, and genuinely funny.",
+      "tags": ["Comedy", "Ian McKellen", "Derek Jacobi", "London"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "A Woman of Substance",
+      "season": "Series 1",
+      "available": "June 24",
+      "badge": "BritBox Original",
+      "description": "Brenda Blethyn leads this sweeping new period drama. Yorkshire maid Emma Harte defies every limit placed upon her in a rise to power spanning decades. Based on Barbara Taylor Bradford's beloved novel.",
+      "tags": ["Period drama", "Female lead", "Brenda Blethyn", "Yorkshire"],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "Queens That Changed the World",
+      "season": "Season 2",
+      "available": "June 25",
+      "badge": "New episodes",
+      "description": "Six new episodes spotlighting history's most formidable female rulers — Mary Queen of Scots, Marie Antoinette, Queen Charlotte and more. Expert analysis, archive footage, and stylized recreations make this a cut above the typical documentary.",
+      "tags": ["Documentary", "History", "Female rulers"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    }
+  ],
+  "originals": [
+    {
+      "title": "Happy Valley",
+      "seasons": "3 series",
+      "description": "Sarah Lancashire won every award going for her portrayal of West Yorkshire police sergeant Catherine Cawood. One of the finest performances in British TV history. Intense, perfectly written, and utterly unmissable.",
+      "tags": ["Crime drama", "Female detective", "Yorkshire"],
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "Trigger Point",
+      "seasons": "Seasons 1–3",
+      "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances. Season 3 just arrived — the perfect time to start from the beginning.",
+      "tags": ["Thriller", "Vicky McClure", "All seasons streaming"],
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "Beyond Paradise",
+      "seasons": "Seasons 1–4",
+      "description": "The warmest, most charming spin-off British TV has produced. Kris Marshall's Humphrey Goodman is irresistible, the Devon and Cornwall setting is gorgeous, and the mysteries are the perfect combination of puzzling and cozy.",
+      "tags": ["Cozy mystery", "Devon & Cornwall", "Death in Paradise spin-off"],
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    },
+    {
+      "title": "The Other Bennet Sister",
+      "seasons": "Series 1",
+      "description": "A genuinely fresh take on the Austen universe — witty, warm, and anchored by a wonderful lead performance from Ella Bruccoleri. If you loved Call the Midwife, you'll love her here.",
+      "tags": ["Regency drama", "Jane Austen", "Romantic"],
+      "affiliate_url": "https://www.amazon.com/channels/britbox?tag=britishtvhub-20"
+    }
+  ]
+}
