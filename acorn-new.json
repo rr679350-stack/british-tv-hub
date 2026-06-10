@@ -1,0 +1,93 @@
+{
+  "month": "June 2026",
+  "updated": "2026-06-09",
+  "highlight": {
+    "title": "Harry Wild",
+    "badge": "Acorn TV Original · Season 5 · Premieres June 22",
+    "description": "Jane Seymour returns as the sharp, fearless Harry Wild — retired professor turned amateur sleuth in Dublin. Season 5 brings a surprise reunion with Joe Lando (Dr. Quinn, Medicine Woman) and a fresh batch of clever Irish mysteries. One of Acorn TV's most beloved originals.",
+    "tags": ["Irish mystery", "Female lead", "Jane Seymour", "Cozy"],
+    "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+  },
+  "new_arrivals": [
+    {
+      "title": "Harry Wild",
+      "season": "Season 5",
+      "available": "June 22",
+      "badge": "Acorn TV Original",
+      "description": "Jane Seymour is back as Dublin's most irrepressible amateur detective. Season 5 surprises with a Dr. Quinn reunion — Joe Lando guest stars alongside Seymour in a fresh run of witty Irish mysteries. Weekly episodes through the summer.",
+      "tags": ["Irish mystery", "Jane Seymour", "Cozy", "Dublin"],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Art Detectives",
+      "season": "Series 1",
+      "available": "June 9",
+      "badge": "Acorn TV Exclusive · US Premiere",
+      "description": "DI Mick Palmer (Stephen Moyer) and DC Shazia Malik solve murders connected to the world of art and antiques — from Old Master paintings to Banksy street art, medieval manuscripts and collectible vinyl. Six episodes, each a gloriously different corner of the art world. Exactly the kind of clever, stylish British mystery your community loves.",
+      "tags": ["British mystery", "Art world", "Stephen Moyer", "New series"],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Summerwater",
+      "season": "Series 1",
+      "available": "Now streaming",
+      "badge": "Acorn TV Exclusive",
+      "description": "Dougray Scott and Shirley Henderson lead this atmospheric British drama set over one long, tense summer weekend at a Scottish lochside holiday park. Six episodes, new weekly — quiet, beautifully observed, and utterly gripping.",
+      "tags": ["British drama", "Scotland", "Dougray Scott", "Atmospheric"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Murdoch Mysteries",
+      "season": "Season 19",
+      "available": "New episodes weekly",
+      "badge": "New episodes",
+      "description": "The beloved Victorian-era Toronto detective series continues with the back half of Season 19. Detective William Murdoch uses forensic techniques ahead of his time to solve crimes in 1900s Canada. A comfort watch for fans of period mysteries.",
+      "tags": ["Period mystery", "Victorian", "Long-running", "Canadian"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "You're Killing Me",
+      "season": "Series 1",
+      "available": "New episodes weekly",
+      "badge": "Acorn TV Original",
+      "description": "Brooke Shields stars as a bestselling novelist who teams up with an aspiring podcaster to solve her friend's murder in a quaint New England town. Warm, witty, and completely bingeable — a cozy mystery with genuine charm.",
+      "tags": ["Cozy mystery", "Brooke Shields", "New England", "Female lead"],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    }
+  ],
+  "originals": [
+    {
+      "title": "Midsomer Murders",
+      "seasons": "25+ series",
+      "description": "The ultimate comfort watch — impossibly picturesque English villages with an impossibly high murder rate. 25+ series of warm, witty, completely addictive mystery. The show that defines cozy British TV.",
+      "tags": ["Cozy mystery", "English villages", "Long-running"],
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Agatha Raisin",
+      "seasons": "4 series",
+      "description": "Ashley Jensen is irresistible as the sharp London PR exec who retires to the Cotswolds and keeps stumbling into murders. Funny, warm, and completely bingeable — based on M.C. Beaton's beloved novels.",
+      "tags": ["Cozy mystery", "Cotswolds", "Funny", "Female lead"],
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Harry Wild",
+      "seasons": "Seasons 1–5",
+      "description": "Jane Seymour at her absolute best — witty, fearless, and completely charming as Dublin's most unlikely detective. All five seasons now streaming. Start from the beginning and you won't stop.",
+      "tags": ["Irish mystery", "Jane Seymour", "Cozy", "All seasons"],
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    },
+    {
+      "title": "Doc Martin",
+      "seasons": "10 series",
+      "description": "A grumpy London surgeon retreats to a tiny Cornish fishing village as its GP. Ten series of the warmest, funniest comedy drama British TV has produced. Port Wenn is the village you'll wish you lived in.",
+      "tags": ["Comedy drama", "Cornwall", "Long-running", "Warm"],
+      "affiliate_url": "https://www.amazon.com/channels/acorntv?tag=britishtvhub-20"
+    }
+  ]
+}
