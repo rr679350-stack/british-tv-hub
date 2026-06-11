@@ -48,13 +48,12 @@
   .nav-guide-btn { background: var(--red); color: #f5e8d0; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 14px; border: none; cursor: pointer; text-decoration: none; display: inline-block; }
   .nav-nl-btn { background: none; border: 1px solid var(--gold); color: var(--gold); font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 7px 14px; cursor: pointer; text-decoration: none; display: inline-block; margin-left: 8px; }
 
-  .page-hero { position: relative; overflow: hidden; min-height: 320px; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
-  .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, #1a2135 42%, rgba(26,33,53,0.75) 62%, rgba(26,33,53,0.05) 100%); }
-  .page-hero-content { position: relative; z-index: 2; padding: 64px 40px 48px; max-width: 620px; }
-  .page-hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 16px; }
-  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--text); line-height: 1.15; margin-bottom: 8px; }
+  .about-hero-img { display: block; width: 100%; max-width: 600px; margin: 0 auto; border-bottom: 1px solid var(--border); }
+  .about-heading { text-align: center; padding: 40px 40px 0; }
+  .about-heading .eyebrow { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 14px; }
+  .about-heading h1 { font-family: 'Playfair Display', serif; font-size: 44px; color: var(--text); line-height: 1.15; }
 
-  main { max-width: 760px; margin: 0 auto; padding: 64px 40px; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 40px 64px; }
   .story p { font-family: 'Crimson Text', serif; font-size: 18px; color: #c8d0e0; line-height: 1.85; margin-bottom: 22px; }
   .story p em { color: var(--text); font-style: italic; }
   .story .show { color: var(--gold-light); font-style: italic; }
@@ -77,9 +76,8 @@
   @media (max-width: 700px) {
     nav { padding: 0 16px; }
     .nav-links { display: none; }
-    .page-hero { min-height: 220px; }
-    .page-hero-content { padding: 40px 20px 32px; max-width: 100%; }
-    .page-hero h1 { font-size: 32px; }
+    .about-heading { padding: 28px 20px 0; }
+    .about-heading h1 { font-size: 32px; }
     main { padding: 40px 20px; }
     .story p { font-size: 17px; }
     .cta-block { flex-direction: column; gap: 24px; }
@@ -109,13 +107,11 @@
   </div>
 </nav>
 
-<div class="page-hero">
-  <img src="/faq-hero.webp" alt="Cosy British TV viewing room" style="position:absolute;right:0;top:0;width:58%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.4);">
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <div class="page-hero-eyebrow">Our Story</div>
-    <h1>About British TV Hub</h1>
-  </div>
+<img class="about-hero-img" src="/about-hero.webp" alt="A hanging village sign reading Our Story in a cosy English village at dusk, with roses, a lamp post, and lit cottage windows">
+
+<div class="about-heading">
+  <div class="eyebrow">Our Story</div>
+  <h1>About British TV Hub</h1>
 </div>
 
 <main>
