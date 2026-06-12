@@ -84,26 +84,46 @@
     @media (max-width: 480px) {
       .shows-grid { grid-template-columns: 1fr; }
     }
+  
+    /* === STANDARD NAV (canonical) === */
+    nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
+    nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
+    nav.site-nav-std .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: #f0e8d4; white-space: nowrap; }
+    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #9090b8; white-space: nowrap; }
+    nav.site-nav-std .nav-links { display: flex; align-items: center; flex-wrap: nowrap; }
+    nav.site-nav-std .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c9a96e; cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nlink:hover { color: #ffffff; }
+    nav.site-nav-std .nlink.on { color: #ffffff; border-bottom: 2px solid #c9a96e; }
+    nav.site-nav-std .nav-guide-btn { background: #8b1a2e; color: #f5e8d0; border: none; border-bottom: none; margin: 10px 0 10px 6px; padding: 11px 14px; font-size: 11px; letter-spacing: 1px; font-family: 'Raleway', sans-serif; text-transform: uppercase; white-space: nowrap; cursor: pointer; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nav-guide-btn:hover { background: #a01f36; color: #fff; }
+    nav.site-nav-std .nav-nl-btn { border: 1px solid #c9a96e; color: #c9a96e; background: #1a2135; margin: 10px 0 10px 4px; padding: 11px 12px; font-size: 11px; letter-spacing: 1px; font-family: 'Raleway', sans-serif; text-transform: uppercase; white-space: nowrap; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nav-nl-btn:hover { border-color: #ffffff; color: #ffffff; background: #2c3a50; }
+    @media (max-width: 900px) {
+      nav.site-nav-std { padding: 0 12px; flex-wrap: wrap; }
+      nav.site-nav-std .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
+      nav.site-nav-std .nlink { padding: 14px 9px; font-size: 10px; }
+      nav.site-nav-std .nav-guide-btn, nav.site-nav-std .nav-nl-btn { font-size: 10px; padding: 9px 12px; }
+    }
+
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="https://britishtvhub.com/" class="nav-brand">
-    <span class="nav-title">British TV Dramas &amp; Mysteries</span>
-    <span class="nav-sub">Classics &amp; New Favorites</span>
-  </a>
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-brand">
+    <div class="nav-title">British TV Dramas &amp; Mysteries</div>
+    <div class="nav-sub">Classics &amp; New Favorites</div>
+  </div>
   <div class="nav-links">
-    <a href="https://britishtvhub.com/" class="nlink">Home</a>
-    <a href="https://britishtvhub.com/shows-index.html" class="nlink active">Browse Shows</a>
-    <a href="https://britishtvhub.com/streaming.html" class="nlink">Streaming</a>
-    <a href="https://britishtvhub.com/cozy.html" class="nlink">Cozy Mysteries</a>
-    <a href="https://britishtvhub.com/top10.html" class="nlink">Police Procedurals</a>
-    <a href="https://britishtvhub.com/agatha-christie.html" class="nlink">Agatha Christie</a>
-    <a href="https://britishtvhub.com/faq.html" class="nlink">FAQ</a>
-    <a href="https://britishtvhub.com/dvd.html" class="nlink">British TV on DVD</a>
-    <a href="https://britishtvhub.com/shows.html" class="nav-guide-btn">&#9733; Best Of Guide</a>
-    <a href="https://britishtvhub.com/quiz.html" class="nav-nl-btn">Match Me a Mystery</a>
+    <a class="nlink" href="/">Home</a>
+    <a class="nlink" href="/shows-index.html">Browse Shows</a>
+    <a class="nlink" href="/streaming.html">Streaming</a>
+    <a class="nlink" href="/cozy.html">Cozy Mysteries</a>
+    <a class="nlink" href="/top10.html">Police Procedurals</a>
+    <a class="nlink" href="/agatha-christie.html">Agatha Christie</a>
+    <a class="nlink" href="/dvd.html">British TV on DVD</a>
+    <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
+    <a class="nav-nl-btn" href="/quiz.html">Match Me a Mystery</a>
   </div>
 </nav>
 
