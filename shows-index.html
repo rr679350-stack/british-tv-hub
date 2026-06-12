@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse British TV Shows: Complete Index | British TV Hub</title>
+  <meta name="description" content="Browse every British TV show by genre, streaming service, or title. Find where to watch Happy Valley, Vera, Broadchurch, Inspector Morse, and hundreds more in the US.">
+  <link rel="canonical" href="https://britishtvhub.com/shows-index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1a2135;
+      --bg-dark: #131926;
+      --bg-card: #1e2433;
+      --border: #3d4a60;
+      --gold: #c9a96e;
+      --gold-light: #dab870;
+      --red: #8b1a2e;
+      --text: #e8dfc8;
+      --text-muted: #a89880;
+      --text-dim: #7a8090;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); }
+
+    nav { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { display: flex; flex-direction: column; padding: 14px 0; }
+    .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text); }
+    .nav-sub { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); }
+    .nav-links { display: flex; gap: 4px; align-items: center; }
+    .nlink { background: none; border: none; color: var(--text-dim); font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; padding: 20px 10px; text-decoration: none; }
+    .nlink:hover { color: var(--text); }
+    .nlink.active { color: var(--gold); border-bottom: 2px solid var(--gold); }
+    .nav-guide-btn { background: var(--red); color: #f5e8d0; font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 7px 14px; border-radius: 3px; margin-left: 8px; }
+    .nav-guide-btn:hover { background: #a01f36; color: #f5e8d0; }
+    .nav-nl-btn { background: none; border: 1px solid var(--gold); color: var(--gold); font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 13px; border-radius: 3px; margin-left: 4px; }
+    .nav-nl-btn:hover { background: var(--gold); color: var(--bg-dark); }
+
+    .page-hero { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 48px 40px 40px; }
+    .hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--text); margin-bottom: 12px; }
+    .hero-sub { font-size: 19px; color: var(--text-muted); max-width: 560px; }
+
+    .page-wrap { max-width: 1000px; margin: 0 auto; padding: 48px 40px 80px; }
+
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+    .filter-btn { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); border: 1px solid var(--border); background: none; padding: 6px 14px; border-radius: 2px; cursor: pointer; }
+    .filter-btn:hover, .filter-btn.active { border-color: var(--gold); color: var(--gold); }
+
+    .section-heading { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .shows-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 48px; }
+    .show-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 3px; padding: 16px 18px; transition: border-color 0.2s; display: block; }
+    .show-card:hover { border-color: var(--gold); }
+    .show-card-name { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--text); margin-bottom: 4px; }
+    .show-card-meta { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+    .show-card-where { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
+
+    .coming-soon { background: var(--bg-card); border: 1px dashed var(--border); border-radius: 3px; padding: 16px 18px; }
+    .coming-soon .show-card-name { color: var(--text-dim); }
+    .coming-soon .show-card-where { color: var(--text-dim); }
+
+    .index-note { font-family: 'Raleway', sans-serif; font-size: 11px; color: var(--text-dim); letter-spacing: 0.5px; margin-bottom: 40px; }
+
+    footer { background: var(--bg-dark); border-top: 1px solid var(--border); padding: 32px 40px; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-bottom: 12px; }
+    .footer-links a { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); padding: 0 6px; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-links span { color: var(--border); font-size: 10px; }
+    .footer-brand { font-family: 'Playfair Display', serif; font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+    .footer-legal { font-family: 'Raleway', sans-serif; font-size: 9px; color: var(--text-dim); line-height: 1.6; max-width: 600px; margin: 0 auto; }
+
+    @media (max-width: 700px) {
+      nav { padding: 0 16px; flex-wrap: wrap; }
+      .page-hero { padding: 32px 20px; }
+      .hero-title { font-size: 32px; }
+      .page-wrap { padding: 28px 20px 60px; }
+      footer { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://britishtvhub.com/" class="nav-brand">
+    <span class="nav-title">British TV Dramas &amp; Mysteries</span>
+    <span class="nav-sub">Classics &amp; New Favorites</span>
+  </a>
+  <div class="nav-links">
+    <a href="https://britishtvhub.com/" class="nlink">Home</a>
+    <a href="https://britishtvhub.com/shows-index.html" class="nlink active">Browse Shows</a>
+    <a href="https://britishtvhub.com/streaming.html" class="nlink">Streaming</a>
+    <a href="https://britishtvhub.com/cozy.html" class="nlink">Cozy Mysteries</a>
+    <a href="https://britishtvhub.com/top10.html" class="nlink">Police Procedurals</a>
+    <a href="https://britishtvhub.com/agatha-christie.html" class="nlink">Agatha Christie</a>
+    <a href="https://britishtvhub.com/faq.html" class="nlink">FAQ</a>
+    <a href="https://britishtvhub.com/dvd.html" class="nlink">British TV on DVD</a>
+    <a href="https://britishtvhub.com/shows.html" class="nav-guide-btn">&#9733; Best Of Guide</a>
+    <a href="https://britishtvhub.com/quiz.html" class="nav-nl-btn">Match Me a Mystery</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <p class="hero-eyebrow">Updated June 2026</p>
+  <h1 class="hero-title">Browse British TV Shows</h1>
+  <p class="hero-sub">Individual guides for every major British mystery and drama — where to watch in the US, what to watch next, and everything in between.</p>
+</div>
+
+<div class="page-wrap">
+
+  <p class="index-note">Each show page tells you exactly where to watch in the US, similar shows to try next, and relevant guides. More shows added weekly.</p>
+
+  <p class="section-heading">Now available — click for full guide</p>
+  <div class="shows-grid">
+    <a href="https://britishtvhub.com/shows/happy-valley.html" class="show-card">
+      <p class="show-card-name">Happy Valley</p>
+      <p class="show-card-meta">Crime Drama · 3 Seasons · BBC</p>
+      <p class="show-card-where">BritBox →</p>
+    </a>
+  </div>
+
+  <p class="section-heading">Coming soon</p>
+  <div class="shows-grid">
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Vera</p>
+      <p class="show-card-meta">Crime Drama · 13 Seasons · ITV</p>
+      <p class="show-card-where">BritBox</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Inspector Morse</p>
+      <p class="show-card-meta">Crime Drama · 14 Episodes · ITV</p>
+      <p class="show-card-where">BritBox</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Broadchurch</p>
+      <p class="show-card-meta">Crime Drama · 3 Seasons · ITV</p>
+      <p class="show-card-where">Netflix</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Midsomer Murders</p>
+      <p class="show-card-meta">Cozy Mystery · 25+ Seasons · ITV</p>
+      <p class="show-card-where">Acorn TV</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Shetland</p>
+      <p class="show-card-meta">Crime Drama · 7 Seasons · BBC</p>
+      <p class="show-card-where">BritBox</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Hinterland</p>
+      <p class="show-card-meta">Crime Drama · 3 Seasons · BBC Wales</p>
+      <p class="show-card-where">Acorn TV</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Line of Duty</p>
+      <p class="show-card-meta">Thriller · 6 Seasons · BBC</p>
+      <p class="show-card-where">BritBox</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Unforgotten</p>
+      <p class="show-card-meta">Crime Drama · 5 Seasons · ITV</p>
+      <p class="show-card-where">PBS Passport</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Doc Martin</p>
+      <p class="show-card-meta">Drama · 10 Seasons · ITV</p>
+      <p class="show-card-where">Acorn TV</p>
+    </div>
+    <div class="coming-soon show-card">
+      <p class="show-card-name">Miss Marple (1984)</p>
+      <p class="show-card-meta">Cozy Mystery · BBC</p>
+      <p class="show-card-where">BritBox</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://britishtvhub.com/">Home</a><span>·</span>
+    <a href="https://britishtvhub.com/shows-index.html">Browse Shows</a><span>·</span>
+    <a href="https://britishtvhub.com/streaming.html">Streaming</a><span>·</span>
+    <a href="https://britishtvhub.com/cozy.html">Cozy Mysteries</a><span>·</span>
+    <a href="https://britishtvhub.com/top10.html">Police Procedurals</a><span>·</span>
+    <a href="https://britishtvhub.com/dvd.html">British TV on DVD</a><span>·</span>
+    <a href="https://britishtvhub.com/faq.html">FAQ</a><span>·</span>
+    <a href="https://www.facebook.com/britishtelevisionhub">Facebook</a><span>·</span>
+    <a href="mailto:info@britishtvhub.com">Contact</a><span>·</span>
+    <a href="https://britishtvhub.com/partner.html">Partner Info</a>
+  </div>
+  <p class="footer-brand">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites</p>
+  <p class="footer-legal">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+</footer>
+
+</body>
+</html>
