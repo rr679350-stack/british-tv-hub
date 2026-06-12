@@ -41,7 +41,11 @@
     .nav-nl-btn:hover { border-color: #ffffff !important; color: #ffffff !important; background: #2c3a50 !important; }
 
     /* HERO */
-    .page-hero { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 56px 40px 48px; }
+    .page-hero { background: var(--bg-dark); border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 380px; }
+    .page-hero-text { padding: 56px 40px 48px; display: flex; flex-direction: column; justify-content: center; }
+    .page-hero-img { position: relative; overflow: hidden; }
+    .page-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .page-hero-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg-dark) 0%, rgba(19,25,38,0.35) 30%, rgba(19,25,38,0.1) 100%); }
     .hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
     .hero-title { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 400; color: var(--text); margin-bottom: 16px; line-height: 1.15; }
     .hero-sub { font-family: 'Crimson Text', serif; font-size: 21px; color: var(--text-muted); max-width: 620px; font-style: italic; line-height: 1.6; }
@@ -92,7 +96,10 @@
       .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
       .nlink { padding: 14px 10px; font-size: 9px; }
       .nav-guide-btn, .nav-nl-btn { font-size: 9px !important; padding: 8px 12px !important; }
-      .page-hero { padding: 36px 20px 32px; }
+      .page-hero { grid-template-columns: 1fr; min-height: 0; }
+      .page-hero-text { padding: 36px 20px 28px; }
+      .page-hero-img { height: 200px; }
+      .page-hero-img::after { background: linear-gradient(to bottom, rgba(19,25,38,0.2) 0%, rgba(19,25,38,0.1) 100%); }
       .hero-title { font-size: 36px; }
       .hero-sub { font-size: 18px; }
       .page-wrap { padding: 36px 20px 56px; }
@@ -123,9 +130,14 @@
 
 <!-- HERO -->
 <div class="page-hero">
-  <p class="hero-eyebrow">Updated June 2026</p>
-  <h1 class="hero-title">Browse British TV Shows</h1>
-  <p class="hero-sub">Individual guides for every major British mystery and drama — where to watch in the US, what's worth your time, and what to watch next.</p>
+  <div class="page-hero-text">
+    <p class="hero-eyebrow">Updated June 2026</p>
+    <h1 class="hero-title">Browse British TV Shows</h1>
+    <p class="hero-sub">Individual guides for every major British mystery and drama — where to watch in the US, what's worth your time, and what to watch next.</p>
+  </div>
+  <div class="page-hero-img">
+    <img src="/shows-index-hero.webp" alt="A stone cottage on a stormy British coast at dusk" width="1400" height="933" fetchpriority="high">
+  </div>
 </div>
 
 <!-- SHOW GRID -->
