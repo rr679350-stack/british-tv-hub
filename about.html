@@ -1,51 +1,422 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About British TV Hub | Our Story</title>
-<meta name="description" content="The story behind British TV Hub — how one mystery fan went from Agatha Christie's Poirot novels to Vera, the classics, and the crime dramas, and built a community of 4,000+ British TV fans.">
-<link rel="canonical" href="https://britishtvhub.com/about.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#2c3345;--bg-dark:#1a2135;--bg-card:#1e2433;--border:#3d4a60;--gold:#c9a96e;--gold-light:#dab870;--red:#8b1a2e;--red-light:#d06070;--text:#e8dfc8;--text-muted:#c8c0a8;--text-dim:#a0aec8;--text-faint:#8898b8;}
-*{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--text);font-family:'Crimson Text',serif;}
-main{max-width:760px;margin:0 auto;padding:64px 40px;}
-.story p{font-family:'Crimson Text',serif;font-size:18px;color:#c8d0e0;line-height:1.85;margin-bottom:22px;}
-.find-title{font-family:'Raleway',sans-serif;font-size:20px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:56px 0 24px;padding-bottom:12px;border-bottom:1px solid var(--border);}
-.find-item{border-bottom:1px solid var(--border);padding:22px 0;font-family:'Crimson Text',serif;font-size:18px;color:#c8d0e0;line-height:1.85;}
-.find-item:last-child{border-bottom:none;}
-.find-item strong{color:var(--gold-light);font-weight:400;}
-.find-item a{color:var(--gold);text-decoration:none;}
-.find-item a:hover{text-decoration:underline;}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About British TV Hub | Our Story</title>
+  <meta name="description" content="The story behind British TV Hub — how one mystery fan went from Agatha Christie's Poirot novels to Vera, the classics, and the crime dramas, and built a community of 4,000+ British TV fans.">
+  <link rel="canonical" href="https://britishtvhub.com/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #2c3345;
+      --bg-dark: #1a2135;
+      --bg-card: #1e2433;
+      --border: #3d4a60;
+      --gold: #c9a96e;
+      --gold-light: #dab870;
+      --red: #8b1a2e;
+      --text: #e8dfc8;
+      --text-muted: #c8c0a8;
+      --text-dim: #a0aec8;
+      --text-faint: #88898b;
+    }
 
-/* CTA BLOCK - CENTERED */
-.cta-section{max-width:900px;margin:48px auto 0;padding:40px;background:#1a2135;border:1px solid var(--border);border-left:4px solid var(--red)}
-.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
-.cta-col{display:flex;flex-direction:column;justify-content:flex-start}
-.cta-eyebrow{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#d06070;margin-bottom:10px;}
-.cta-heading{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#f0e8d4;margin:0 0 8px;}
-.cta-sub{font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;margin:0 0 18px;}
-.cta-form{display:flex;flex-direction:column;gap:10px}
-.cta-email{background:#2a3450;border:1px solid var(--border);color:#f0e8d4;padding:13px 16px;font-family:'Crimson Text',serif;font-size:16px;outline:none;}
-.cta-submit{background:#9b2030;border:none;color:#f5e8d0;padding:13px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;}
-.cta-fine{font-family:'Raleway',sans-serif;font-size:9px;color:#7080a0;margin-top:10px;letter-spacing:0.5px;}
-.shop-card{border:1px solid var(--border);background:#243050;padding:28px;display:flex;flex-direction:column;gap:16px;justify-content:space-between;}
-.shop-eyebrow{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d4b47a;margin-bottom:8px;}
-.shop-heading{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0 0 10px;line-height:1.3;}
-.shop-desc{font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0;}
-.shop-btn{display:block;text-align:center;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;}
-.shop-btn:hover{background:#c9a96e;}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-@media(max-width:700px){
-  main{padding:40px 20px;}
-  .cta-section{margin:32px 20px 0;padding:28px 20px;}
-  .cta-grid{grid-template-columns:1fr;gap:32px;}
-}
-</style>
+    body {
+      background: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    /* === STANDARD NAV === */
+    nav.site-nav-std { 
+      background: rgba(35,42,58,0.98); 
+      border-bottom: 1px solid #4a5570; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      padding: 0 32px; 
+      position: sticky; 
+      top: 0; 
+      z-index: 100; 
+      backdrop-filter: blur(8px); 
+      flex-wrap: nowrap; 
+    }
+    nav.site-nav-std .nav-brand { 
+      padding: 16px 16px 16px 0; 
+      flex-shrink: 0; 
+    }
+    nav.site-nav-std .nav-title { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 16px; 
+      color: #f0e8d4; 
+      white-space: nowrap; 
+    }
+    nav.site-nav-std .nav-sub { 
+      font-family: 'Raleway', sans-serif; 
+      font-size: 9px; 
+      letter-spacing: 3px; 
+      text-transform: uppercase; 
+      margin-top: 2px; 
+      opacity: 0.7; 
+      font-style: italic; 
+      color: #9090b8; 
+      white-space: nowrap; 
+    }
+    nav.site-nav-std .nav-links { 
+      display: flex; 
+      align-items: center; 
+      flex-wrap: nowrap; 
+    }
+    nav.site-nav-std .nlink { 
+      padding: 20px 11px; 
+      font-family: 'Raleway', sans-serif; 
+      font-size: 11px; 
+      letter-spacing: 1.5px; 
+      text-transform: uppercase; 
+      color: #c9a96e; 
+      cursor: pointer; 
+      border: none; 
+      background: transparent; 
+      border-bottom: 2px solid transparent; 
+      transition: all 0.2s; 
+      white-space: nowrap; 
+      font-weight: 500; 
+      text-decoration: none; 
+      display: inline-block; 
+    }
+    nav.site-nav-std .nlink:hover { 
+      color: #ffffff; 
+    }
+    nav.site-nav-std .nlink.on { 
+      color: #ffffff; 
+      border-bottom: 2px solid #c9a96e; 
+    }
+    nav.site-nav-std .nav-guide-btn { 
+      background: #8b1a2e; 
+      color: #f5e8d0; 
+      border: none; 
+      border-bottom: none; 
+      margin: 10px 0 10px 6px; 
+      padding: 11px 14px; 
+      font-size: 11px; 
+      letter-spacing: 1px; 
+      font-family: 'Raleway', sans-serif; 
+      text-transform: uppercase; 
+      white-space: nowrap; 
+      cursor: pointer; 
+      text-decoration: none; 
+      display: inline-block; 
+    }
+    nav.site-nav-std .nav-guide-btn:hover { 
+      background: #a01f36; 
+      color: #fff; 
+    }
+    nav.site-nav-std .nav-nl-btn { 
+      border: 1px solid #c9a96e; 
+      color: #c9a96e; 
+      background: #1a2135; 
+      margin: 10px 0 10px 4px; 
+      padding: 11px 12px; 
+      font-size: 11px; 
+      letter-spacing: 1px; 
+      font-family: 'Raleway', sans-serif; 
+      text-transform: uppercase; 
+      white-space: nowrap; 
+      text-decoration: none; 
+      display: inline-block; 
+    }
+    nav.site-nav-std .nav-nl-btn:hover { 
+      border-color: #ffffff; 
+      color: #ffffff; 
+      background: #2c3a50; 
+    }
+
+    /* HERO SECTION */
+    .page-hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                  url('hero-our-story.jpg') center/cover fixed;
+      padding: 120px 40px;
+      text-align: center;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .page-hero-eyebrow {
+      font-family: 'Raleway', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #dab870;
+      margin-bottom: 20px;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      color: #f0e8d4;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 40px;
+    }
+
+    .story p {
+      font-family: 'Crimson Text', serif;
+      font-size: 18px;
+      color: #c8d0e0;
+      line-height: 1.85;
+      margin-bottom: 22px;
+    }
+
+    .find-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 56px 0 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .find-item {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+      font-family: 'Crimson Text', serif;
+      font-size: 18px;
+      color: #c8d0e0;
+      line-height: 1.85;
+    }
+    .find-item:last-child {
+      border-bottom: none;
+    }
+    .find-item strong {
+      color: var(--gold-light);
+      font-weight: 400;
+    }
+    .find-item a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .find-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* CTA BLOCK - CENTERED */
+    .cta-section {
+      max-width: 900px;
+      margin: 48px auto 0;
+      padding: 40px;
+      background: #1a2135;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--red);
+    }
+    .cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: stretch;
+    }
+    .cta-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .cta-eyebrow {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #d06070;
+      margin-bottom: 10px;
+    }
+    .cta-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #f0e8d4;
+      margin: 0 0 8px;
+    }
+    .cta-sub {
+      font-family: 'Crimson Text', serif;
+      font-size: 17px;
+      font-style: italic;
+      color: #d4c4a4;
+      margin: 0 0 18px;
+    }
+    .cta-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .cta-email {
+      background: #2a3450;
+      border: 1px solid var(--border);
+      color: #f0e8d4;
+      padding: 13px 16px;
+      font-family: 'Crimson Text', serif;
+      font-size: 16px;
+      outline: none;
+    }
+    .cta-submit {
+      background: #9b2030;
+      border: none;
+      color: #f5e8d0;
+      padding: 13px 22px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .cta-fine {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      color: #7080a0;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+    }
+    .shop-card {
+      border: 1px solid var(--border);
+      background: transparent;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: space-between;
+    }
+    .shop-eyebrow {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #d4b47a;
+      margin-bottom: 8px;
+    }
+    .shop-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #f0e8d4;
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+    .shop-desc {
+      font-family: 'Crimson Text', serif;
+      font-size: 17px;
+      font-style: italic;
+      color: #d4c4a4;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .shop-btn {
+      display: block;
+      text-align: center;
+      background: #d4b47a;
+      color: #16203a;
+      font-family: 'Raleway', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 13px 24px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .shop-btn:hover {
+      background: #c9a96e;
+    }
+
+    footer {
+      background: var(--bg-dark);
+      border-top: 1px solid var(--border);
+      padding: 28px 40px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .footer-link {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #c9a96e;
+      text-decoration: none;
+    }
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+    .footer-brand {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      color: var(--text-faint);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .footer-legal {
+      font-family: 'Raleway', sans-serif;
+      font-size: 9px;
+      color: var(--text-faint);
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 900px) {
+      nav.site-nav-std { padding: 0 12px; flex-wrap: wrap; }
+      nav.site-nav-std .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
+      nav.site-nav-std .nlink { padding: 14px 9px; font-size: 10px; }
+    }
+
+    @media (max-width: 700px) {
+      main { padding: 40px 20px; }
+      .page-hero { padding: 60px 20px; min-height: 400px; }
+      .page-hero h1 { font-size: 36px; }
+      .cta-section { margin: 32px 20px 0; padding: 28px 20px; }
+      .cta-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
 </head>
 <body>
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-brand">
+    <div class="nav-title">British TV Dramas &amp; Mysteries</div>
+    <div class="nav-sub">Classics &amp; New Favorites</div>
+  </div>
+  <div class="nav-links">
+    <a class="nlink" href="/">Home</a>
+    <a class="nlink" href="/shows-index.html">Browse Shows</a>
+    <a class="nlink" href="/streaming.html">Streaming</a>
+    <a class="nlink" href="/cozy.html">Cozy Mysteries</a>
+    <a class="nlink" href="/top10.html">Police Procedurals</a>
+    <a class="nlink" href="/agatha-christie.html">Agatha Christie</a>
+    <a class="nlink" href="/dvd.html">British TV on DVD</a>
+    <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
+    <a class="nav-nl-btn" href="/quiz.html">Match Me a Mystery</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Our Story</div>
+  <h1>How British TV Hub Began</h1>
+</div>
 
 <main>
 
@@ -88,15 +459,37 @@ main{max-width:760px;margin:0 auto;padding:64px 40px;}
         <div>
           <div class="shop-eyebrow">The Cozy TV Companion Shop</div>
           <h3 class="shop-heading">Printable Journals &amp; Trackers for British TV Fans</h3>
-          <p class="shop-desc">Track your watchlist, rate every episode, and keep notes on your favourite detectives — beautifully designed printable journals for cozy mystery lovers.</p>
+          <p class="shop-desc">Track your watchlist, rate every episode, and keep notes on your favourite detectives — all in beautifully designed printable journals made for cozy mystery lovers.</p>
         </div>
-        <a class="shop-btn" href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener">Browse the Shop on Etsy →</a>
+        <a class="shop-btn" href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener">BROWSE THE SHOP ON ETSY →</a>
       </div>
 
     </div>
   </div>
 
 </main>
+
+<footer>
+  <div class="footer-links">
+    <a class="footer-link" href="/">Home</a>
+    <a class="footer-link" href="/shows-index.html">Browse Shows</a>
+    <a class="footer-link" href="/streaming.html">Streaming</a>
+    <a class="footer-link" href="/cozy.html">Cozy Mysteries</a>
+    <a class="footer-link" href="/top10.html">Police Procedurals</a>
+    <a class="footer-link" href="/agatha-christie.html">Agatha Christie</a>
+    <a class="footer-link" href="/dvd.html">British TV on DVD</a>
+    <a class="footer-link" href="/faq.html">FAQ</a>
+    <a class="footer-link" href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener">Facebook</a>
+    <a class="footer-link" href="mailto:info@britishtvhub.com">Contact</a>
+    <a class="footer-link" href="/partner.html">Partner Info</a>
+    <a class="footer-link" href="/shop.html">Shop</a>
+    <a class="footer-link" href="/about.html">About</a>
+  </div>
+  <div class="footer-brand">British TV Dramas &amp; Mysteries — Classics &amp; New Favorites · <span class="js-year">2026</span></div>
+  <p class="footer-legal">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+</footer>
+
+<script>document.querySelectorAll('.js-year').forEach(el=>el.textContent=new Date().getFullYear());</script>
 
 </body>
 </html>
