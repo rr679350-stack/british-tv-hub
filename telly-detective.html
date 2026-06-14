@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Telly Detective — Where to Watch British TV | British TV Hub</title>
+<meta name="description" content="Find out where to watch any British TV show. Streaming options for the US, UK, and Australia — cozy mysteries, crime dramas, and classics.">
+<link rel="canonical" href="https://britishtvhub.com/telly-detective.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital@0;1&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1a2135;
+    --bg-deep: #0D1B2A;
+    --panel: #222b42;
+    --gold: #c9a96e;
+    --gold-bright: #C9A84C;
+    --cream: #e8dfc8;
+    --red: #8b1a2e;
+    --border: #3d4a60;
+    --muted: #8a9ab5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ── HERO ── */
+  .hero { text-align: center; padding: 64px 24px 40px; }
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 4px;
+    text-transform: uppercase; color: var(--gold-bright); margin-bottom: 18px;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif; font-weight: 700;
+    font-size: clamp(34px, 7vw, 56px); line-height: 1.05;
+    color: var(--cream); margin-bottom: 8px;
+  }
+  .hero-title em { font-style: italic; color: var(--gold-bright); }
+  .hero-sub {
+    font-family: 'Crimson Text', serif; font-style: italic;
+    font-size: clamp(16px, 2.4vw, 20px); color: var(--muted);
+    max-width: 480px; margin: 14px auto 0;
+  }
+
+  /* ── SEARCH ── */
+  .search-zone { margin: 8px auto 12px; max-width: 540px; position: relative; }
+  .search-input {
+    width: 100%; background: var(--bg-deep); border: 1px solid var(--border);
+    border-radius: 4px; color: var(--cream);
+    font-family: 'Raleway', sans-serif; font-size: 17px;
+    padding: 18px 20px 18px 52px; outline: none; transition: border-color .2s;
+  }
+  .search-input::placeholder { color: var(--muted); }
+  .search-input:focus { border-color: var(--gold); }
+  .search-icon {
+    position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+    color: var(--gold); font-size: 18px; pointer-events: none;
+  }
+  /* region toggle */
+  .region-row {
+    display: flex; gap: 8px; justify-content: center; margin: 18px 0 8px; flex-wrap: wrap;
+  }
+  .region-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--muted);
+    font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600;
+    letter-spacing: 2px; text-transform: uppercase; padding: 8px 16px;
+    border-radius: 20px; cursor: pointer; transition: all .2s;
+  }
+  .region-btn:hover { border-color: var(--gold); color: var(--cream); }
+  .region-btn.active { background: var(--gold); border-color: var(--gold); color: var(--bg-deep); }
+
+  /* suggestions dropdown */
+  .suggest {
+    list-style: none; position: absolute; left: 0; right: 0; top: 100%;
+    background: var(--bg-deep); border: 1px solid var(--border); border-top: none;
+    border-radius: 0 0 4px 4px; z-index: 20; max-height: 280px; overflow-y: auto;
+    display: none;
+  }
+  .suggest.show { display: block; }
+  .suggest li {
+    padding: 12px 20px; cursor: pointer; font-size: 15px;
+    border-bottom: 1px solid rgba(61,74,96,.4); color: var(--cream);
+  }
+  .suggest li:last-child { border-bottom: none; }
+  .suggest li:hover, .suggest li.highlight { background: var(--panel); color: var(--gold-bright); }
+  .suggest li .yr { color: var(--muted); font-size: 13px; margin-left: 6px; }
+
+  /* ── RESULT (case file) ── */
+  .result { margin: 28px auto 0; max-width: 600px; }
+  .case-file {
+    background: var(--panel); border: 1px solid var(--border);
+    border-left: 4px solid var(--gold); border-radius: 4px;
+    padding: 28px 30px; animation: rise .35s ease;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .case-stamp {
+    font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 8px;
+  }
+  .case-show {
+    font-family: 'Playfair Display', serif; font-weight: 700; font-size: 28px;
+    color: var(--gold-bright); line-height: 1.15; margin-bottom: 6px;
+  }
+  .case-meta {
+    font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 20px;
+  }
+  .case-meta span { color: var(--border); margin: 0 6px; }
+  .verdict {
+    font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 12px; padding-top: 18px; border-top: 1px solid var(--border);
+  }
+  .services { list-style: none; }
+  .service-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0; border-bottom: 1px solid rgba(61,74,96,.45);
+  }
+  .service-row:last-child { border-bottom: none; }
+  .service-name { font-size: 16px; font-weight: 600; color: var(--cream); }
+  .service-note { font-size: 13px; color: var(--muted); font-style: italic; }
+  .service-tag {
+    font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 3px; white-space: nowrap;
+  }
+  .tag-stream { background: rgba(201,168,76,.16); color: var(--gold-bright); }
+  .tag-free { background: rgba(67,160,71,.18); color: #7bc47f; }
+  .tag-buy { background: rgba(139,26,46,.25); color: #e08; color: #d98a96; }
+
+  .no-result {
+    background: var(--panel); border: 1px dashed var(--border); border-radius: 4px;
+    padding: 28px 30px; text-align: center; animation: rise .35s ease;
+  }
+  .no-result .nr-title {
+    font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px;
+    color: var(--cream); margin-bottom: 8px;
+  }
+  .no-result p { color: var(--muted); font-size: 15px; }
+  .no-result a { color: var(--gold); }
+
+  .case-disclaimer {
+    font-size: 12px; color: var(--muted); text-align: center; margin: 18px auto 0;
+    max-width: 540px; line-height: 1.5;
+  }
+
+  /* ── VPN BLOCK (Option A: standalone) ── */
+  .vpn-block {
+    margin: 28px auto 0; max-width: 600px;
+    background: linear-gradient(180deg, rgba(201,168,76,.06), rgba(201,168,76,.02));
+    border: 1px solid var(--border); border-left: 4px solid var(--gold);
+    border-radius: 4px; padding: 24px 28px;
+  }
+  .vpn-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold-bright); margin-bottom: 10px;
+  }
+  .vpn-title {
+    font-family: 'Playfair Display', serif; font-size: 20px; color: var(--cream);
+    margin-bottom: 10px; line-height: 1.25;
+  }
+  .vpn-body { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+  .vpn-cta {
+    display: inline-block; background: var(--gold); color: var(--bg-deep);
+    font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+    text-decoration: none; padding: 11px 22px; border-radius: 3px;
+  }
+  .vpn-cta:hover { background: var(--gold-bright); }
+
+  /* ── BROWSE ── */
+  .browse { margin: 48px auto 0; max-width: 600px; text-align: center; }
+  .browse-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 16px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chip {
+    background: transparent; border: 1px solid var(--border); color: var(--muted);
+    font-family: 'Raleway', sans-serif; font-size: 13px; padding: 6px 14px;
+    border-radius: 18px; cursor: pointer; transition: all .2s;
+  }
+  .chip:hover { border-color: var(--gold); color: var(--cream); }
+
+  /* ── FOOTER ── */
+  footer { margin-top: 64px; padding: 32px 24px 48px; border-top: 1px solid var(--border); text-align: center; }
+  .foot-nav {
+    font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted);
+    line-height: 2.2; font-variant: small-caps;
+  }
+  .foot-nav a { color: var(--muted); text-decoration: none; margin: 0 6px; }
+  .foot-nav a:hover { color: var(--gold); }
+  .foot-brand {
+    font-family: 'Playfair Display', serif; color: var(--gold); font-size: 16px; margin: 18px 0 8px;
+  }
+  .foot-disc { font-size: 11px; color: var(--border); max-width: 480px; margin: 0 auto; }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-eyebrow">British TV Hub · Where to Watch</div>
+    <h1 class="hero-title">The Case of the <em>Elusive Episode</em></h1>
+    <p class="hero-sub">Every show is hiding somewhere. Type a title, and we'll tell you where to find it.</p>
+  </section>
+
+  <div class="wrap">
+
+    <div class="search-zone">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="searchInput" autocomplete="off"
+             placeholder="Name your suspect… e.g. Vera, Midsomer Murders">
+      <ul class="suggest" id="suggestList"></ul>
+    </div>
+
+    <div class="region-row" id="regionRow">
+      <button class="region-btn active" data-region="us">🇺🇸 United States</button>
+      <button class="region-btn" data-region="uk">🇬🇧 United Kingdom</button>
+      <button class="region-btn" data-region="au">🇦🇺 Australia</button>
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <!-- VPN BLOCK — Option A: standalone, always visible -->
+    <div class="vpn-block" id="vpnBlockA">
+      <div class="vpn-eyebrow">A Detective's Tip</div>
+      <div class="vpn-title">Some of the best clues are hiding on UK telly</div>
+      <p class="vpn-body">
+        Shows like Vera, Happy Valley and Call the Midwife often stream <strong style="color:var(--cream)">free</strong>
+        on UK services such as BBC iPlayer and ITVX. Expats and travellers reach them from abroad with a VPN —
+        we use <a href="https://nordvpn.com/special/?utm_medium=affiliate&utm_term=&utm_content&utm_source=aff148975&utm_campaign=off15" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">NordVPN</a> to keep our own British TV nights going.
+      </p>
+    </div>
+
+    <p class="case-disclaimer">
+      Streaming homes change often. We keep this as current as we can — if a clue's gone cold,
+      <a href="/streaming.html" style="color:var(--gold)">our full streaming guide</a> has the latest.
+    </p>
+
+    <div class="browse">
+      <div class="browse-label">Or pick up a cold case</div>
+      <div class="chips" id="chipRow"></div>
+    </div>
+  </div>
+
+  <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-bottom:14px;">
+      <a href="/" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Home</a>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Browse Shows</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Streaming</a>
+      <a href="/telly-detective.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">The Telly Detective</a>
+      <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Cozy Mysteries</a>
+      <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Police Procedurals</a>
+      <a href="/agatha-christie.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Agatha Christie</a>
+      <a href="/dvd.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">British TV on DVD</a>
+      <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">FAQ</a>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Facebook</a>
+      <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
+      <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
+    </div>
+    <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">British TV Dramas &amp; Mysteries</div>
+    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. Streaming availability is provided as a guide and may vary by region and over time.</p>
+  </footer>
+
+<script>
+/* ════════════════════════════════════════════════════════════════════
+   SHOW DATABASE  ——  EDIT HERE
+   ────────────────────────────────────────────────────────────────────
+   To add or fix a show, copy one { ... } block and edit it.
+   Each region (us / uk / au) is a list of services.
+   tag options:  "stream"  (subscription)  |  "free"  |  "buy"
+   note: optional extra text shown in italics (e.g. "with a VPN")
+
+   ⚠️ VERIFY listings before relying on them — streaming homes change.
+   ════════════════════════════════════════════════════════════════════ */
+const SHOWS = [
+  { title:"Vera", years:"2011–2025", genre:"Crime Drama",
+    us:[{name:"BritBox",tag:"stream"},{name:"BritBox via Amazon",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Foxtel / Binge",tag:"stream"}] },
+
+  { title:"Midsomer Murders", years:"1997–present", genre:"Cozy Mystery",
+    us:[{name:"Acorn TV",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"},{name:"BritBox",tag:"stream"}] },
+
+  { title:"Happy Valley", years:"2014–2023", genre:"Crime Drama",
+    us:[{name:"AMC+ / Acorn TV",tag:"stream"},{name:"BBC America",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"Inspector Morse", years:"1987–2000", genre:"Crime Drama",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Endeavour", years:"2012–2023", genre:"Crime Drama",
+    us:[{name:"PBS Masterpiece",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"Lewis", years:"2006–2015", genre:"Crime Drama",
+    us:[{name:"BritBox",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Broadchurch", years:"2013–2017", genre:"Crime Drama",
+    us:[{name:"Netflix",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"Netflix",tag:"stream"},{name:"BritBox",tag:"stream"}] },
+
+  { title:"Line of Duty", years:"2012–2021", genre:"Crime Drama",
+    us:[{name:"BritBox",tag:"stream"},{name:"Hulu",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Netflix",tag:"stream"}] },
+
+  { title:"Shetland", years:"2013–present", genre:"Crime Drama",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"Death in Paradise", years:"2011–present", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"Grantchester", years:"2014–present", genre:"Cozy Mystery",
+    us:[{name:"PBS Masterpiece",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Father Brown", years:"2013–present", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Agatha Christie's Poirot", years:"1989–2013", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"},{name:"Acorn TV",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"7plus",tag:"free",note:"selected"}] },
+
+  { title:"Miss Marple (Agatha Christie's Marple)", years:"2004–2013", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Call the Midwife", years:"2012–present", genre:"Period Drama",
+    us:[{name:"Netflix",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"All Creatures Great and Small", years:"2020–present", genre:"Period Drama",
+    us:[{name:"PBS Masterpiece",tag:"stream"},{name:"Peacock",tag:"stream"}],
+    uk:[{name:"Channel 5 / My5",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+
+  { title:"Doc Martin", years:"2004–2022", genre:"Comedy Drama",
+    us:[{name:"Acorn TV",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Acorn TV",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"},{name:"7plus",tag:"free",note:"selected"}] },
+
+  { title:"The Detectorists", years:"2014–2022", genre:"Comedy Drama",
+    us:[{name:"Acorn TV",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"Acorn TV",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"}] },
+
+  { title:"Last of the Summer Wine", years:"1973–2010", genre:"Comedy",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Keeping Up Appearances", years:"1990–1995", genre:"Comedy",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Ballykissangel", years:"1996–2001", genre:"Drama",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Downton Abbey", years:"2010–2015", genre:"Period Drama",
+    us:[{name:"Peacock",tag:"stream"},{name:"Netflix",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"Binge / Foxtel",tag:"stream"},{name:"Netflix",tag:"stream"}] },
+
+  { title:"Cranford", years:"2007–2009", genre:"Period Drama",
+    us:[{name:"BritBox",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Foyle's War", years:"2002–2015", genre:"Crime Drama",
+    us:[{name:"Acorn TV",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Acorn TV",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"}] },
+
+  { title:"Hamish Macbeth", years:"1995–1997", genre:"Comedy Drama",
+    us:[{name:"BritBox",tag:"stream"},{name:"Buy on Amazon",tag:"buy"}],
+    uk:[{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"Rosemary & Thyme", years:"2003–2007", genre:"Cozy Mystery",
+    us:[{name:"Acorn TV",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"}] },
+
+  { title:"The Vicar of Dibley", years:"1994–2020", genre:"Comedy",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"McDonald & Dodds", years:"2020–present", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] },
+
+  { title:"George Gently (Inspector George Gently)", years:"2007–2017", genre:"Crime Drama",
+    us:[{name:"Acorn TV",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"Acorn TV",tag:"stream"}] },
+
+  { title:"Hetty Wainthropp Investigates", years:"1996–1998", genre:"Cozy Mystery",
+    us:[{name:"BritBox",tag:"stream"},{name:"Buy on Amazon",tag:"buy"}],
+    uk:[{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"}] }
+];
+/* ════════════════════ END OF SHOW DATABASE ════════════════════ */
+
+const REGION_LABEL = { us:"In the United States", uk:"In the United Kingdom", au:"In Australia" };
+const TAG_TEXT = { stream:"Subscription", free:"Free", buy:"Buy / Rent" };
+
+let currentRegion = "us";
+const input = document.getElementById('searchInput');
+const suggest = document.getElementById('suggestList');
+const resultEl = document.getElementById('result');
+let activeShow = null;
+let highlightIdx = -1;
+
+// region buttons
+document.getElementById('regionRow').addEventListener('click', e => {
+  const btn = e.target.closest('.region-btn');
+  if (!btn) return;
+  document.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentRegion = btn.dataset.region;
+  if (activeShow) renderResult(activeShow);
+});
+
+// browse chips (popular handful)
+const chipRow = document.getElementById('chipRow');
+["Vera","Midsomer Murders","Happy Valley","Death in Paradise","Doc Martin","Call the Midwife"].forEach(t => {
+  const c = document.createElement('button');
+  c.className = 'chip'; c.textContent = t;
+  c.onclick = () => { input.value = t; pick(findShow(t)); };
+  chipRow.appendChild(c);
+});
+
+function findShow(title) {
+  return SHOWS.find(s => s.title.toLowerCase() === title.toLowerCase());
+}
+
+function matches(q) {
+  q = q.trim().toLowerCase();
+  if (!q) return [];
+  return SHOWS.filter(s => s.title.toLowerCase().includes(q)).slice(0, 8);
+}
+
+input.addEventListener('input', () => {
+  const list = matches(input.value);
+  highlightIdx = -1;
+  if (!list.length) { suggest.classList.remove('show'); suggest.innerHTML = ''; return; }
+  suggest.innerHTML = list.map(s =>
+    `<li data-title="${s.title.replace(/"/g,'&quot;')}">${s.title}<span class="yr">${s.years}</span></li>`
+  ).join('');
+  suggest.classList.add('show');
+  suggest.querySelectorAll('li').forEach(li => {
+    li.onclick = () => { input.value = li.dataset.title; pick(findShow(li.dataset.title)); };
+  });
+});
+
+input.addEventListener('keydown', e => {
+  const items = suggest.querySelectorAll('li');
+  if (e.key === 'ArrowDown') { e.preventDefault(); highlightIdx = Math.min(highlightIdx+1, items.length-1); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); highlightIdx = Math.max(highlightIdx-1, 0); }
+  else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (highlightIdx >= 0 && items[highlightIdx]) { input.value = items[highlightIdx].dataset.title; pick(findShow(items[highlightIdx].dataset.title)); }
+    else { const m = matches(input.value); if (m.length) { input.value = m[0].title; pick(m[0]); } else pick(null); }
+    return;
+  } else return;
+  items.forEach((li,i) => li.classList.toggle('highlight', i === highlightIdx));
+});
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-zone')) suggest.classList.remove('show');
+});
+
+function pick(show) {
+  suggest.classList.remove('show');
+  if (!show) { renderNoResult(); return; }
+  activeShow = show;
+  renderResult(show);
+}
+
+function renderResult(show) {
+  const services = show[currentRegion] || [];
+  let rows;
+  if (!services.length) {
+    rows = `<li class="service-row"><span class="service-note">No streaming home on file for this region yet — try our <a href="/streaming.html" style="color:var(--gold)">streaming guide</a>.</span></li>`;
+  } else {
+    rows = services.map(sv => `
+      <li class="service-row">
+        <span>
+          <span class="service-name">${sv.name}</span>
+          ${sv.note ? `<span class="service-note"> — ${sv.note}</span>` : ''}
+        </span>
+        <span class="service-tag tag-${sv.tag}">${TAG_TEXT[sv.tag]}</span>
+      </li>`).join('');
+  }
+  resultEl.innerHTML = `
+    <div class="case-file">
+      <div class="case-stamp">Case Closed</div>
+      <div class="case-show">${show.title}</div>
+      <div class="case-meta">${show.years}<span>·</span>${show.genre}</div>
+      <div class="verdict">${REGION_LABEL[currentRegion]}, you'll find it on:</div>
+      <ul class="services">${rows}</ul>
+    </div>`;
+}
+
+function renderNoResult() {
+  activeShow = null;
+  resultEl.innerHTML = `
+    <div class="no-result">
+      <div class="nr-title">This case has gone cold…</div>
+      <p>We haven't filed that one yet. Try another title, or browse
+         <a href="/shows-index.html">all our shows</a> —
+         and tell us what to add via <a href="https://facebook.com/britishtelevisionhub">Facebook</a>.</p>
+    </div>`;
+}
+</script>
+</body>
+</html>
