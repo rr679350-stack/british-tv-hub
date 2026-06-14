@@ -236,7 +236,7 @@
     </div>
 
     <p class="case-disclaimer">
-      Streaming homes change often. We keep this as current as we can — if a clue's gone cold,
+      Streaming homes change often. Last verified June 2026 — if a clue's gone cold,
       <a href="/streaming.html" style="color:var(--gold)">our full streaming guide</a> has the latest.
     </p>
 
@@ -288,9 +288,9 @@ const SHOWS = [
     au:[{name:"Acorn TV",tag:"stream"},{name:"BritBox",tag:"stream"}] },
 
   { title:"Happy Valley", years:"2014–2023", genre:"Crime Drama",
-    us:[{name:"AMC+ / Acorn TV",tag:"stream"},{name:"BBC America",tag:"stream"}],
+    us:[{name:"AMC+ / Acorn TV",tag:"stream"}],
     uk:[{name:"BBC iPlayer",tag:"free"},{name:"Netflix",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"},{name:"Stan",tag:"stream"}] },
 
   { title:"Inspector Morse", years:"1987–2000", genre:"Crime Drama",
     us:[{name:"BritBox",tag:"stream"}],
@@ -300,7 +300,7 @@ const SHOWS = [
   { title:"Endeavour", years:"2012–2023", genre:"Crime Drama",
     us:[{name:"PBS Masterpiece",tag:"stream"},{name:"BritBox",tag:"stream"}],
     uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Lewis", years:"2006–2015", genre:"Crime Drama",
     us:[{name:"BritBox",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
@@ -308,9 +308,9 @@ const SHOWS = [
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Broadchurch", years:"2013–2017", genre:"Crime Drama",
-    us:[{name:"Netflix",tag:"stream"},{name:"BritBox",tag:"stream"}],
-    uk:[{name:"ITVX",tag:"free"},{name:"Netflix",tag:"stream"}],
-    au:[{name:"Netflix",tag:"stream"},{name:"BritBox",tag:"stream"}] },
+    us:[{name:"Netflix",tag:"stream"},{name:"Peacock",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
+    uk:[{name:"Netflix",tag:"stream"},{name:"Buy on Amazon / Apple",tag:"buy"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"10 play",tag:"free",note:"selected"}] },
 
   { title:"Line of Duty", years:"2012–2021", genre:"Crime Drama",
     us:[{name:"BritBox",tag:"stream"},{name:"Hulu",tag:"stream"}],
@@ -320,17 +320,17 @@ const SHOWS = [
   { title:"Shetland", years:"2013–present", genre:"Crime Drama",
     us:[{name:"BritBox",tag:"stream"}],
     uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Death in Paradise", years:"2011–present", genre:"Cozy Mystery",
     us:[{name:"BritBox",tag:"stream"}],
     uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Grantchester", years:"2014–present", genre:"Cozy Mystery",
-    us:[{name:"PBS Masterpiece",tag:"stream"}],
-    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"}] },
+    us:[{name:"PBS Masterpiece",tag:"stream"},{name:"Prime Video",tag:"stream",note:"S1–5"},{name:"Netflix",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Acorn TV",tag:"stream"},{name:"ABC iview",tag:"free",note:"selected"}] },
 
   { title:"Father Brown", years:"2013–present", genre:"Cozy Mystery",
     us:[{name:"BritBox",tag:"stream"}],
@@ -338,27 +338,27 @@ const SHOWS = [
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Agatha Christie's Poirot", years:"1989–2013", genre:"Cozy Mystery",
-    us:[{name:"BritBox",tag:"stream"},{name:"Acorn TV",tag:"stream"}],
-    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"7plus",tag:"free",note:"selected"}] },
+    us:[{name:"BritBox",tag:"stream"},{name:"Acorn TV",tag:"stream"},{name:"Netflix",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Netflix",tag:"stream"},{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Netflix",tag:"stream"}] },
 
   { title:"Miss Marple (Agatha Christie's Marple)", years:"2004–2013", genre:"Cozy Mystery",
-    us:[{name:"BritBox",tag:"stream"}],
-    uk:[{name:"ITVX",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"}] },
+    us:[{name:"BritBox",tag:"stream"},{name:"Netflix",tag:"stream"}],
+    uk:[{name:"ITVX",tag:"free"},{name:"Netflix",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Netflix",tag:"stream"}] },
 
   { title:"Call the Midwife", years:"2012–present", genre:"Period Drama",
     us:[{name:"Netflix",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
     uk:[{name:"BBC iPlayer",tag:"free"},{name:"Netflix",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"},{name:"Stan",tag:"stream"},{name:"ABC iview",tag:"free",note:"selected"}] },
 
   { title:"All Creatures Great and Small", years:"2020–present", genre:"Period Drama",
     us:[{name:"PBS Masterpiece",tag:"stream"},{name:"Peacock",tag:"stream"}],
     uk:[{name:"Channel 5 / My5",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"},{name:"ABC iview",tag:"free",note:"when airing"}] },
+    au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Doc Martin", years:"2004–2022", genre:"Comedy Drama",
-    us:[{name:"Acorn TV",tag:"stream"}],
+    us:[{name:"Acorn TV",tag:"stream"},{name:"Roku / Pluto",tag:"free"}],
     uk:[{name:"ITVX",tag:"free"},{name:"Acorn TV",tag:"stream"}],
     au:[{name:"Acorn TV",tag:"stream"},{name:"7plus",tag:"free",note:"selected"}] },
 
@@ -368,18 +368,18 @@ const SHOWS = [
     au:[{name:"Acorn TV",tag:"stream"}] },
 
   { title:"Last of the Summer Wine", years:"1973–2010", genre:"Comedy",
-    us:[{name:"BritBox",tag:"stream"}],
-    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    us:[{name:"BritBox",tag:"stream"},{name:"Prime Video",tag:"stream"}],
+    uk:[{name:"UKTV Play",tag:"free"},{name:"BritBox",tag:"stream"}],
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Keeping Up Appearances", years:"1990–1995", genre:"Comedy",
     us:[{name:"BritBox",tag:"stream"}],
-    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BritBox",tag:"stream"}],
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Ballykissangel", years:"1996–2001", genre:"Drama",
     us:[{name:"BritBox",tag:"stream"}],
-    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BritBox",tag:"stream"}],
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Downton Abbey", years:"2010–2015", genre:"Period Drama",
@@ -389,7 +389,7 @@ const SHOWS = [
 
   { title:"Cranford", years:"2007–2009", genre:"Period Drama",
     us:[{name:"BritBox",tag:"stream"},{name:"PBS Masterpiece",tag:"stream"}],
-    uk:[{name:"BBC iPlayer",tag:"free",note:"selected"},{name:"BritBox",tag:"stream"}],
+    uk:[{name:"BritBox",tag:"stream"}],
     au:[{name:"BritBox",tag:"stream"}] },
 
   { title:"Foyle's War", years:"2002–2015", genre:"Crime Drama",
@@ -409,8 +409,8 @@ const SHOWS = [
 
   { title:"The Vicar of Dibley", years:"1994–2020", genre:"Comedy",
     us:[{name:"BritBox",tag:"stream"}],
-    uk:[{name:"BBC iPlayer",tag:"free"},{name:"BritBox",tag:"stream"}],
-    au:[{name:"BritBox",tag:"stream"}] },
+    uk:[{name:"BritBox",tag:"stream"}],
+    au:[{name:"BritBox",tag:"stream"},{name:"Stan",tag:"stream"},{name:"7plus",tag:"free",note:"selected"}] },
 
   { title:"McDonald & Dodds", years:"2020–present", genre:"Cozy Mystery",
     us:[{name:"BritBox",tag:"stream"}],
