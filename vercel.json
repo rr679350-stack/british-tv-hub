@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/cozy-guide",
+      "destination": "https://chatbase.co/Y2An0mtqMjwOslw4I2Lrm/help"
+    },
+    {
+      "source": "/cozy-guide/:path*",
+      "destination": "https://chatbase.co/Y2An0mtqMjwOslw4I2Lrm/help/:path*"
+    },
+    {
+      "source": "/__cb/:path*",
+      "destination": "https://chatbase.co/__cb/:path*"
+    },
+    {
+      "source": "/api/chat/Y2An0mtqMjwOslw4I2Lrm/:path*",
+      "destination": "https://chatbase.co/api/chat/Y2An0mtqMjwOslw4I2Lrm/:path*"
+    }
+  ]
+}
