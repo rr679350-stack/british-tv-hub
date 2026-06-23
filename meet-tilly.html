@@ -16,89 +16,15 @@
         }
 
         body {
-            background-color: #0d1116;
+            background-color: #1a2135;
             color: #c8c0a8;
             font-family: 'Raleway', sans-serif;
             line-height: 1.6;
         }
 
-        /* Header */
-        header {
-            background-color: #1a2744;
-            padding: 20px 0;
-            border-bottom: 1px solid #3d4a60;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: #b8973a;
-            text-decoration: none;
-        }
-
-        nav a {
-            color: #c8c0a8;
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: #b8973a;
-        }
-
         /* Hero Section */
         .hero {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0" y1="0" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%231a2744;stop-opacity:1"/><stop offset="100%" style="stop-color:%230d1116;stop-opacity:1"/></linearGradient></defs><rect width="1200" height="600" fill="url(%23grad)"/></svg>') center/cover;
-            padding: 100px 20px;
-            text-align: center;
             border-bottom: 1px solid #3d4a60;
-            position: relative;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-content {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 56px;
-            font-weight: 700;
-            color: #f9f4ef;
-            margin-bottom: 5px;
-            letter-spacing: 2px;
-        }
-
-        .hero h1 .gold {
-            color: #b8973a;
-        }
-
-        .hero p {
-            font-size: 16px;
-            color: #c8c0a8;
-            font-family: 'Raleway', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 0;
-            margin-top: 20px;
         }
 
         /* Intro Section */
@@ -117,7 +43,8 @@
         }
 
         .intro p {
-            font-size: 15px;
+            font-family: 'Crimson Text', serif;
+            font-size: 18px;
             line-height: 1.8;
             color: #c8c0a8;
             margin-bottom: 15px;
@@ -125,7 +52,7 @@
 
         .intro p:first-of-type {
             margin-bottom: 20px;
-            font-size: 16px;
+            font-size: 19px;
         }
 
         .intro h2:last-of-type {
@@ -156,82 +83,26 @@
             text-align: center;
         }
 
-        /* Footer */
-        footer {
-            background-color: #1a2744;
-            border-top: 1px solid #3d4a60;
-            padding: 40px 20px;
-            margin-top: 60px;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-nav {
-            margin-bottom: 20px;
-        }
-
-        .footer-nav a {
-            color: #c8c0a8;
-            text-decoration: none;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0 15px;
-            transition: color 0.2s;
-        }
-
-        .footer-nav a:hover {
-            color: #b8973a;
-        }
-
-        .footer-brand {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            color: #b8973a;
-            margin-bottom: 10px;
-        }
-
-        .footer-line {
-            font-size: 12px;
-            color: #7a7a8e;
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            nav a {
-                margin-left: 15px;
-            }
-
             .intro h2 {
                 font-size: 22px;
             }
 
             .intro p {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <nav style="background:rgba(35,42,58,0.98);border-bottom:1px solid #4a5570;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px);flex-wrap:nowrap;">
+    <nav style="background:rgba(35,42,58,0.98);border-bottom:1px solid #4a5570;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px);flex-wrap:wrap;gap:8px;">
         <div style="padding:16px 16px 16px 0;flex-shrink:0;">
             <div style="font-family:'Playfair Display',serif;font-size:16px;color:#f0e8d4;white-space:nowrap;">British TV Dramas &amp; Mysteries</div>
             <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic;color:#9090b8;white-space:nowrap;">Classics &amp; New Favorites</div>
         </div>
-        <div style="display:flex;align-items:center;flex-wrap:nowrap;">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;">
             <a href="/" style="padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap;">Home</a>
             <a href="/shows-index.html" style="padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap;">Browse Shows</a>
             <a href="/streaming.html" style="padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap;">Streaming</a>
@@ -240,7 +111,6 @@
             <a href="/top10.html" style="padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap;">Police Procedurals</a>
             <a href="/shows.html" style="background:#8b1a2e;color:#f5e8d0;border:none;margin:10px 0 10px 6px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;text-decoration:none;display:inline-block;">&#9733; Best Of Guide</a>
             <a href="/quiz.html" style="border:1px solid #c9a96e;color:#c9a96e;background:#1a2135;margin:10px 0 10px 4px;padding:11px 12px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;text-decoration:none;display:inline-block;">Match Me a Mystery</a>
-            <a href="/meet-tilly.html" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly</a>
         </div>
     </nav>
 
@@ -262,7 +132,7 @@
         <h2 style="margin-top: 40px; margin-bottom: 20px;">Ask Tilly Anything Like:</h2>
         <p style="margin-bottom: 10px;"><span class="highlight">"Where can I watch Vera?"</span> — She'll tell you which service has it in your region, right now.</p>
         <p style="margin-bottom: 10px;"><span class="highlight">"What's on BritBox this month?"</span> — Get the latest arrivals and what's currently streaming.</p>
-        <p style="margin-bottom: 10px;"><span class="highlight">"I love Happy Valley. What should I watch next?"</span> — Get personalized recommendations based on your taste.</p>
+        <p style="margin-bottom: 10px;"><span class="highlight">"I love Happy Valley. What should I watch next?"</span> — Get personalised recommendations based on your taste.</p>
         <p style="margin-bottom: 10px;"><span class="highlight">"Can I stream this in the US/UK/Australia?"</span> — Instant answers about regional availability.</p>
         <p style="margin-bottom: 30px;"><span class="highlight">"What's a good starter cozy mystery?"</span> — Discover hidden gems you might have missed.</p>
 
