@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Tilly | British TV Hub</title>
+    <meta name="description" content="Tilly is your British TV streaming guide. Ask her where to watch Vera, Shetland, Happy Valley, and more on BritBox, Acorn TV, ITVX, and PBS.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@400;500;600&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1116;
+            color: #c8c0a8;
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a2744;
+            padding: 20px 0;
+            border-bottom: 1px solid #3d4a60;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #b8973a;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #c8c0a8;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #b8973a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad" x1="0" y1="0" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%231a2744;stop-opacity:1"/><stop offset="100%" style="stop-color:%230d1116;stop-opacity:1"/></linearGradient></defs><rect width="1200" height="600" fill="url(%23grad)"/></svg>') center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 1px solid #3d4a60;
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: #f9f4ef;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 .gold {
+            color: #b8973a;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #c8c0a8;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+
+        /* Intro Section */
+        .intro {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #b8973a;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #c8c0a8;
+            margin-bottom: 15px;
+        }
+
+        .intro p:first-of-type {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .intro h2:last-of-type {
+            font-size: 20px;
+            margin-top: 50px !important;
+            margin-bottom: 25px !important;
+        }
+
+        .intro .highlight {
+            color: #b8973a;
+            font-weight: 500;
+        }
+
+        /* Widget Container */
+        .widget-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px 80px;
+            min-height: 600px;
+        }
+
+        .widget-label {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #8b1a2e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a2744;
+            border-top: 1px solid #3d4a60;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-nav {
+            margin-bottom: 20px;
+        }
+
+        .footer-nav a {
+            color: #c8c0a8;
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: #b8973a;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            color: #b8973a;
+            margin-bottom: 10px;
+        }
+
+        .footer-line {
+            font-size: 12px;
+            color: #7a7a8e;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            nav a {
+                margin-left: 15px;
+            }
+
+            .intro h2 {
+                font-size: 22px;
+            }
+
+            .intro p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">BRITISH TV HUB</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/shows.html">Shows</a>
+                <a href="/streaming.html">Streaming</a>
+                <a href="/cozy.html">Cozy Mysteries</a>
+                <a href="/faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ask <span class="gold">tilly</span></h1>
+            <p>Your Friendly AI Assistant, Here to Help</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="intro">
+        <h2>What Is Tilly?</h2>
+        <p>
+            Loving British TV shouldn't mean spending hours hunting across BritBox, Acorn TV, ITVX, and PBS to find where your show is streaming — especially when what's available changes by region, month, and season.
+        </p>
+        <p>
+            <span class="highlight">Tilly is here to solve that.</span> She's your personal British TV streaming guide, and she knows her stuff. Ask her anything about finding, watching, or discovering British mysteries, dramas, and crime shows.
+        </p>
+
+        <h2 style="margin-top: 40px; margin-bottom: 20px;">Ask Tilly Anything Like:</h2>
+        <p style="margin-bottom: 10px;"><span class="highlight">"Where can I watch Vera?"</span> — She'll tell you which service has it in your region, right now.</p>
+        <p style="margin-bottom: 10px;"><span class="highlight">"What's on BritBox this month?"</span> — Get the latest arrivals and what's currently streaming.</p>
+        <p style="margin-bottom: 10px;"><span class="highlight">"I love Happy Valley. What should I watch next?"</span> — Get personalized recommendations based on your taste.</p>
+        <p style="margin-bottom: 10px;"><span class="highlight">"Can I stream this in the US/UK/Australia?"</span> — Instant answers about regional availability.</p>
+        <p style="margin-bottom: 30px;"><span class="highlight">"What's a good starter cozy mystery?"</span> — Discover hidden gems you might have missed.</p>
+
+        <p>
+            No ads. No dead links. No scrolling through search results. Just ask, and get an answer.
+        </p>
+    </section>
+
+    <!-- Widget -->
+    <section class="widget-container">
+        <div class="widget-label">Ready to Ask? Start Here ↓</div>
+        <div id="chatbase-widget"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="/">HOME</a>
+                <a href="/shows.html">SHOWS</a>
+                <a href="/streaming.html">STREAMING</a>
+                <a href="/telly-detective.html">THE TELLY DETECTIVE</a>
+                <a href="/cozy.html">COZY MYSTERIES</a>
+                <a href="/faq.html">FAQ</a>
+                <a href="https://facebook.com/britishtvhub" target="_blank">FACEBOOK</a>
+                <a href="/partner.html">PARTNER INFO</a>
+            </div>
+            <div class="footer-brand">BRITISH TV HUB</div>
+            <div class="footer-line">A community of British TV fans from around the world</div>
+        </div>
+    </footer>
+
+    <!-- Chatbase Widget Script -->
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</body>
+</html>
