@@ -240,12 +240,10 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero" style="position:relative;overflow:hidden;min-height:500px;padding:0;display:flex;align-items:center;background:#1a2744;">
-        <img src="/meet-tilly-hero.webp" alt="Ask Tilly - Your British TV Streaming Guide" style="position:absolute;right:0;top:0;width:65%;height:100%;object-fit:cover;object-position:center;">
-        <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2744 0%,#1a2744 45%,rgba(26,39,68,0.7) 70%,rgba(26,39,68,0) 100%);"></div>
-        <div class="hero-content" style="position:relative;z-index:2;max-width:500px;margin-left:60px;">
-            <h1>ask <span class="gold">tilly</span></h1>
-            <p>Your Friendly AI Assistant, Here to Help</p>
+    <section class="hero" style="position:relative;overflow:hidden;min-height:450px;padding:0;display:flex;align-items:flex-end;justify-content:center;background:#1a2744;">
+        <img src="/meet-tilly-hero.webp" alt="Ask Tilly - Your British TV Streaming Guide" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+        <div style="position:relative;z-index:2;padding-bottom:50px;">
+            <a href="#ask-tilly-widget" style="display: inline-block; background: #c9a96e; color: #1a2744; padding: 14px 36px; font-family: 'Raleway', sans-serif; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 2px; font-weight: 600; transition: background 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" onmouseover="this.style.background='#dab870'" onmouseout="this.style.background='#c9a96e'">Ask Tilly</a>
         </div>
     </section>
 
@@ -269,15 +267,16 @@
         <p>
             No ads. No dead links. No scrolling through search results. Just ask, and get an answer.
         </p>
-        
-        <div style="margin-top: 40px;">
-            <a href="#ask-tilly-widget" style="display: inline-block; background: #c9a96e; color: #1a2744; padding: 12px 28px; font-family: 'Raleway', sans-serif; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 2px; font-weight: 600; transition: background 0.2s;" onmouseover="this.style.background='#dab870'" onmouseout="this.style.background='#c9a96e'">Ask Tilly</a>
-        </div>
     </section>
 
     <!-- Widget -->
     <section class="widget-container" id="ask-tilly-widget">
-        <div id="chatbase-widget"></div>
+        <iframe
+            src="https://www.chatbase.co/chatbot-iframe/Y2An0mtqMjwOslw4I2Lrm"
+            width="100%"
+            style="height: 700px; min-height: 700px; border: 1px solid #3d4a60; border-radius: 8px;"
+            frameborder="0"
+        ></iframe>
     </section>
 
     <!-- Footer -->
@@ -298,9 +297,5 @@
         </div>
     </footer>
 
-    <!-- Chatbase Widget Script -->
-    <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
 </body>
 </html>
