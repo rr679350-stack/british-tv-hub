@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://britishtvhub.com/sitemap.xml
+
+# Prevent crawling of files that don't need indexing
+Disallow: /app/
+Disallow: /*.pdf$
+Disallow: /.git/
