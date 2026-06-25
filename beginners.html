@@ -659,6 +659,109 @@ div[style*="border:1px solid #3d4a60"] {
   }
 }
 </style>
+<style>
+/* MOBILE OVERFLOW FIX - Override fixed widths on mobile */
+
+@media (max-width: 768px) {
+  /* Override all fixed widths that are >300px */
+  [style*="width: 860px"],
+  [style*="width: 680px"],
+  [style*="width: 580px"],
+  [style*="width: 700px"],
+  [style*="width:1100px"],
+  [style*="width: 560px"],
+  [style*="width: 640px"],
+  [style*="width: 800px"],
+  [style*="width: 720px"],
+  [style*="width:500px"],
+  [style*="width: 1180px"],
+  [style*="width: 620px"],
+  [style*="width: 760px"],
+  [style*="width:560px"],
+  [style*="width: 400px"],
+  .error-container,
+  .social-proof-container,
+  .poll-wrap,
+  .watch-actions {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Ensure containers don't overflow */
+  div[style*="max-width"] {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Hero and main content areas */
+  [style*="padding: 48px"],
+  [style*="padding:48px"],
+  [style*="padding: 40px"],
+  [style*="padding:40px"] {
+    padding: 24px 16px !important;
+  }
+
+  /* Section containers */
+  section, article, main {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Newsletter signup */
+  #mc_embed_signup {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Forms and inputs */
+  form {
+    width: 100% !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure no horizontal overflow */
+  * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  body, html {
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small phones - even more aggressive */
+  [style*="width:"],
+  div[style*="width"] {
+    width: 100% !important;
+  }
+
+  [style*="max-width:"],
+  div[style*="max-width"] {
+    max-width: 100% !important;
+  }
+
+  /* Ensure text doesn't overflow */
+  h1, h2, h3, h4, h5, h6, p {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Images must scale */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+</style>
 </head>
 <body>
 
