@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    .show-card {
+      transition: all 0.3s ease;
+    }
+    .show-card:hover {
+      background: #2c3345 !important;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
     :root {
       --bg: #1a2135;
       --bg-dark: #131926;
@@ -163,31 +171,46 @@
 
 <!-- SHOW GRID -->
 <div class="page-wrap">
-  <p class="section-label">Most Watched — Reader Favourites</p>
+<!-- CATEGORY NAVIGATION SECTION -->
+<div style="background:linear-gradient(135deg,#2c3345 0%,#1a2135 100%);border:1px solid #3d4a60;border-radius:4px;padding:24px;margin:32px auto;max-width:1100px;">
+  <p style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;">Browse by Genre</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+    <a href="#most-watched" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Most Watched</a>
+    <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Cozy Mysteries</a>
+    <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Police Procedurals</a>
+    <a href="/agatha-christie.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Agatha Christie</a>
+    <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Streaming Guides</a>
+  </div>
+  <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#9090a8;margin:0;letter-spacing:0.5px;">Click above or scroll below to explore all shows →</p>
+</div>
+<!-- END CATEGORY NAVIGATION SECTION -->
+
+
+  <p class="section-label" id="most-watched">Most Watched — Reader Favourites</p>
   <div class="shows-grid" style="margin-bottom:48px;">
 
     <a href="/shows/call-the-midwife.html" class="show-card">
       <p class="show-card-name">Call the Midwife</p>
       <p class="show-card-meta">Period Drama · 14+ Seasons · BBC</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/all-creatures-great-and-small.html" class="show-card">
       <p class="show-card-name">All Creatures Great and Small</p>
       <p class="show-card-meta">Period Drama · 6+ Seasons · PBS</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/sherlock.html" class="show-card">
       <p class="show-card-name">Sherlock</p>
       <p class="show-card-meta">Crime Drama · 4 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/grantchester.html" class="show-card">
       <p class="show-card-name">Grantchester</p>
       <p class="show-card-meta">Cozy Mystery · 10+ Seasons · PBS</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
   </div>
@@ -198,97 +221,97 @@
     <a href="/shows/happy-valley.html" class="show-card">
       <p class="show-card-name">Happy Valley</p>
       <p class="show-card-meta">Crime Drama · 3 Seasons · BBC</p>
-      <p class="show-card-where">BritBox →</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox →</p>
     </a>
 
     <a href="/shows/vera.html" class="show-card">
       <p class="show-card-name">Vera</p>
       <p class="show-card-meta">Crime Drama · 13 Seasons · ITV</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/doc-martin.html" class="show-card">
       <p class="show-card-name">Doc Martin</p>
       <p class="show-card-meta">Drama · 10 Seasons · ITV</p>
-      <p class="show-card-where">Acorn TV &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">Acorn TV &rarr;</p>
     </a>
 
     <a href="/shows/shetland.html" class="show-card">
       <p class="show-card-name">Shetland</p>
       <p class="show-card-meta">Crime Drama · 7 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/line-of-duty.html" class="show-card">
       <p class="show-card-name">Line of Duty</p>
       <p class="show-card-meta">Thriller · 6 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/trigger-point.html" class="show-card">
       <p class="show-card-name">Trigger Point</p>
       <p class="show-card-meta">Thriller · 2 Seasons · ITV</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/miss-marple.html" class="show-card">
       <p class="show-card-name">Miss Marple</p>
       <p class="show-card-meta">Cozy Mystery · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/midsomer-murders.html" class="show-card">
       <p class="show-card-name">Midsomer Murders</p>
       <p class="show-card-meta">Cozy Mystery · 25+ Seasons · ITV</p>
-      <p class="show-card-where">Acorn TV &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">Acorn TV &rarr;</p>
     </a>
 
     <a href="/shows/inspector-morse.html" class="show-card">
       <p class="show-card-name">Inspector Morse</p>
       <p class="show-card-meta">Crime Drama · 14 Episodes · ITV</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/death-in-paradise.html" class="show-card">
       <p class="show-card-name">Death in Paradise</p>
       <p class="show-card-meta">Cozy Mystery · 13 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/blue-lights.html" class="show-card">
       <p class="show-card-name">Blue Lights</p>
       <p class="show-card-meta">Crime Drama · 2 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/unforgotten.html" class="show-card">
       <p class="show-card-name">Unforgotten</p>
       <p class="show-card-meta">Crime Drama · 5 Seasons · ITV</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/ludwig.html" class="show-card">
       <p class="show-card-name">Ludwig</p>
       <p class="show-card-meta">Mystery Comedy · 2 Seasons · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/professor-t.html" class="show-card">
       <p class="show-card-name">Professor T</p>
       <p class="show-card-meta">Crime Drama · 3 Seasons · ITV</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
     <a href="/shows/marlow-murder-club.html" class="show-card">
       <p class="show-card-name">The Marlow Murder Club</p>
       <p class="show-card-meta">Cozy Mystery · 2 Seasons · PBS</p>
-      <p class="show-card-where">PBS Masterpiece &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Masterpiece &rarr;</p>
     </a>
 
     <a href="/shows/tommy-and-tuppence.html" class="show-card">
       <p class="show-card-name">Tommy &amp; Tuppence</p>
       <p class="show-card-meta">Mystery Drama · New · BBC</p>
-      <p class="show-card-where">BritBox &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">BritBox &rarr;</p>
     </a>
 
   </div>
@@ -299,37 +322,37 @@
     <a href="/shows/the-durrells-in-corfu.html" class="show-card">
       <p class="show-card-name">The Durrells in Corfu</p>
       <p class="show-card-meta">Comedy Drama · 4 Seasons · ITV</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/home-fires.html" class="show-card">
       <p class="show-card-name">Home Fires</p>
       <p class="show-card-meta">Period Drama · 2 Seasons · ITV</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/little-women.html" class="show-card">
       <p class="show-card-name">Little Women</p>
       <p class="show-card-meta">Period Drama · 3 Episodes · BBC</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/poldark.html" class="show-card">
       <p class="show-card-name">Poldark</p>
       <p class="show-card-meta">Period Drama · 5 Seasons · BBC</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/sanditon.html" class="show-card">
       <p class="show-card-name">Sanditon</p>
       <p class="show-card-meta">Period Drama · 3 Seasons · ITV</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
     <a href="/shows/victoria.html" class="show-card">
       <p class="show-card-name">Victoria</p>
       <p class="show-card-meta">Royal Drama · 3 Seasons · ITV</p>
-      <p class="show-card-where">PBS Passport &rarr;</p>
+      <p style="font-family:\'Raleway\',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:8px 0 0;font-weight:500;">PBS Passport &rarr;</p>
     </a>
 
   </div>
