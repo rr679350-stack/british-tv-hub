@@ -397,8 +397,77 @@ div[style*="border:1px solid #3d4a60"] {
 }
 </style>
 
+<style>
+/* Breadcrumb Navigation */
+.breadcrumb-container {
+  background: transparent;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-item a {
+  color: #c9a96e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.breadcrumb-item a:hover {
+  color: #d4b47a;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #f0e8d4;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: rgba(201, 168, 76, 0.4);
+  margin: 0 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 11px;
+  }
+  
+  .breadcrumb-item {
+    gap: 6px;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 2px;
+  }
+}
+</style>
 </head>
 <body>
+<div class="breadcrumb-container">
+  <div class="breadcrumb">
+    <div class="breadcrumb-item"><a href="/">Home</a><span class="breadcrumb-separator">/</span></div>
+    <div class="breadcrumb-item active">DVD Guide</div>
+  </div>
+</div>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-brand">
