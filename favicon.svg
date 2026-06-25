@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#1a2135"/>
+  
+  <!-- Gold accent bars -->
+  <rect x="30" y="80" width="40" height="96" fill="#c9a96e" rx="4"/>
+  <rect x="108" y="50" width="40" height="126" fill="#c9a96e" rx="4"/>
+  <rect x="186" y="80" width="40" height="96" fill="#c9a96e" rx="4"/>
+  
+  <!-- Film strip effect -->
+  <circle cx="64" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="142" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
+  <circle cx="220" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
+</svg>

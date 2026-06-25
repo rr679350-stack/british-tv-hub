@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — British TV Hub</title>
+<meta name="description" content="This page doesn't exist, but we have plenty of British TV recommendations waiting for you. Let us help you find your next favorite show.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://britishtvhub.com/404.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy: #1a2135;
+    --navy-light: #16203a;
+    --gold: #c9a96e;
+    --gold-light: #d4b47a;
+    --cream: #f0e8d4;
+    --text: #c8c0a8;
+    --border: rgba(201,168,76,0.2);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'Crimson Text', Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--navy);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 40px;
+  }
+
+  header a {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  header a:hover {
+    color: var(--gold-light);
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+  }
+
+  .error-container {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .error-code {
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+  }
+
+  .error-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: var(--cream);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  .error-description {
+    font-size: 18px;
+    color: var(--text);
+    margin-bottom: 32px;
+    line-height: 1.8;
+  }
+
+  .error-suggestions {
+    background: var(--navy-light);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    padding: 28px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    text-align: left;
+  }
+
+  .error-suggestions h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .suggestion-list {
+    list-style: none;
+  }
+
+  .suggestion-list li {
+    padding: 8px 0;
+  }
+
+  .suggestion-list a {
+    color: var(--gold-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .suggestion-list a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  .btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: var(--navy-light);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+
+  .btn-secondary:hover {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  footer {
+    background: var(--navy);
+    border-top: 1px solid var(--border);
+    padding: 28px 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+  }
+
+  footer a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 16px 20px;
+    }
+
+    header a {
+      font-size: 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .error-code {
+      font-size: 80px;
+    }
+
+    .error-title {
+      font-size: 32px;
+    }
+
+    .error-description {
+      font-size: 16px;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="/">British TV Hub</a>
+</header>
+
+<main>
+  <div class="error-container">
+    <div class="error-code">404</div>
+    <h1 class="error-title">This Page Doesn't Exist</h1>
+    <p class="error-description">
+      We couldn't find what you're looking for, but we have plenty of British TV recommendations to get you back on track. Let's find your next favorite show together.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="/" class="btn btn-primary">Go to Homepage</a>
+      <a href="/shows-index.html" class="btn btn-secondary">Browse Shows</a>
+    </div>
+
+    <div class="error-suggestions">
+      <h3>Or Try One Of These:</h3>
+      <ul class="suggestion-list">
+        <li><a href="/cozy.html">🔍 Cozy Mysteries</a> — Inspector Morse, Miss Marple, Midsomer Murders</li>
+        <li><a href="/top10.html">👮 Police Procedurals</a> — Line of Duty, Vera, Happy Valley</li>
+        <li><a href="/streaming.html">📺 Where to Watch</a> — BritBox, Acorn TV, Amazon</li>
+        <li><a href="/quiz.html">🎬 Match Me Quiz</a> — Find your perfect show</li>
+        <li><a href="/faq.html">❓ FAQ</a> — Common questions answered</li>
+      </ul>
+    </div>
+
+    <p style="color: #666; font-size: 14px;">
+      Still lost? <a href="mailto:info@britishtvhub.com" style="color: var(--gold);">Email us</a> and we'll help you out.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; <span class="js-year">2026</span> British TV Hub — Your Guide to the Best British TV Dramas & Mysteries</p>
+  <p style="margin-top: 8px;"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/partner.html">Partners</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.js-year').forEach(el => el.textContent = new Date().getFullYear());
+
+  // Chatbase integration
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+</body>
+</html>
