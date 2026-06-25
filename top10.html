@@ -200,16 +200,28 @@
   </div>
 </div>
 
-
-
-<div class="jump-nav">
-  <div class="jump-nav-inner">
-    <span class="jump-label">Jump to</span>
-    <a href="#classics">The Classics</a>
-    <a href="#modern">Modern Masterpieces</a>
-    <a href="#comfort">Comfort Viewing</a>
-  </div>
+<div style="display:flex;gap:12px;justify-content:center;margin:32px 0;flex-wrap:wrap;">
+  <button onclick="shareOnFacebook()" style="display:inline-flex;align-items:center;gap:8px;background:#1877F2;color:#fff;border:none;padding:10px 16px;border-radius:6px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s ease;">
+    <span style="font-size:18px;">f</span>
+    <span>Share</span>
+  </button>
+  <button onclick="shareOnTwitter()" style="display:inline-flex;align-items:center;gap:8px;background:#000;color:#fff;border:none;padding:10px 16px;border-radius:6px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s ease;">
+    <span style="font-size:18px;">𝕏</span>
+    <span>Tweet</span>
+  </button>
+  <button onclick="shareOnPinterest()" style="display:inline-flex;align-items:center;gap:8px;background:#E60023;color:#fff;border:none;padding:10px 16px;border-radius:6px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s ease;">
+    <span style="font-size:18px;">P</span>
+    <span>Pin</span>
+  </button>
+  <button onclick="copyLink()" style="display:inline-flex;align-items:center;gap:8px;background:#c9a96e;color:#1a2135;border:none;padding:10px 16px;border-radius:6px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.5px;cursor:pointer;transition:all 0.3s ease;">
+    <span style="font-size:18px;">🔗</span>
+    <span>Copy Link</span>
+  </button>
 </div>
+
+<script>
+function shareOnFacebook(){const e={title:document.title,url:window.location.href,text:document.querySelector("h1")?.textContent||"Check this out!"};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href,text:document.querySelector("h1")?.textContent||"Check this out!"};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href,text:document.querySelector("h1")?.textContent||"Check this out!"},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied to clipboard!")}).catch(e=>{console.error("Failed to copy:",e)})}
+</script>
 
 <div class="page-body">
 <div style="background:#1e2433;border:1px solid rgba(201,168,76,0.2);border-left:3px solid #c9a84c;padding:14px 20px;margin:32px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
