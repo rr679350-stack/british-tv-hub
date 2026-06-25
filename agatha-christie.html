@@ -131,16 +131,20 @@
   /* Make Tilly avatar MUCH smaller */
   [style*="position:fixed"][style*="bottom"][style*="right"],
   [style*="bottom: "][style*="right: "] {
-    width: 70px !important;
-    height: 70px !important;
+    width: 90px !important;
+    height: 90px !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
     bottom: 16px !important;
     right: 16px !important;
   }
   
   [style*="position:fixed"][style*="bottom"][style*="right"] img,
   [style*="bottom: "][style*="right: "] img {
-    width: 70px !important;
-    height: 70px !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    aspect-ratio: 1 / 1 !important;
   }
   
   /* Reduce nav padding and gaps */
