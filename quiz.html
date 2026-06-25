@@ -315,16 +315,7 @@ footer {
   animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
 }
 
-/* Smooth fade on page exit (when clicking links) */
-a:not([target="_blank"]):not([href^="#"]) {
-  transition: opacity 0.3s ease;
-}
 
-/* Optional: fade effect on unload */
-@media (prefers-reduced-motion: no-preference) {
-  body {
-    transition: opacity 0.3s ease-out;
-  }
 }
 
 /* Ensure images load smoothly */

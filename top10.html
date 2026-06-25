@@ -316,16 +316,7 @@ footer {
   animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
 }
 
-/* Smooth fade on page exit (when clicking links) */
-a:not([target="_blank"]):not([href^="#"]) {
-  transition: opacity 0.3s ease;
-}
 
-/* Optional: fade effect on unload */
-@media (prefers-reduced-motion: no-preference) {
-  body {
-    transition: opacity 0.3s ease-out;
-  }
 }
 
 /* Ensure images load smoothly */
@@ -508,18 +499,6 @@ div[style*="border:1px solid #3d4a60"] {
     <div class="hero-eyebrow">Chosen by our community · Updated July 2026</div>
     <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">The Best <em style="font-style:italic;color:var(--gold-light);">British Police Procedurals</em></h1>
 
-
-    <div class="badge-label">British TV Fans</div>
-  </div>
-  <div class="social-proof-badge">
-    <div class="badge-number">600+</div>
-    <div class="badge-label">Cozy Members</div>
-  </div>
-  <div class="social-proof-badge">
-    <div class="badge-number">26+</div>
-    <div class="badge-label">Hidden Gems</div>
-  </div>
-</div>
     <p class="hero-intro">From the Oxford cobblestones of Inspector Morse to the Yorkshire moors of Happy Valley — the definitive guide to British police drama, classics and new favourites alike, with where to watch each one in the US. Chosen by 4,000+ fans who can't stop watching.</p>
     <div class="hero-meta">
       <span>Chosen by British TV fans</span>
