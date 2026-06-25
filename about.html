@@ -519,6 +519,88 @@ a[style*="color:#c9a96e"] {
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 </style>
+<style>
+/* Page load fade-in animation */
+@keyframes pageLoadFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Page exit fade-out animation */
+@keyframes pageExitFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply fade-in to entire page on load */
+html {
+  animation: pageLoadFadeIn 0.4s ease-in;
+}
+
+/* Smooth fade-in for main content */
+body {
+  animation: pageLoadFadeIn 0.5s ease-in 0.05s both;
+}
+
+/* Fade-in for header/nav */
+header, nav {
+  animation: pageLoadFadeIn 0.4s ease-in 0.1s both;
+}
+
+/* Stagger fade-in for main content sections */
+main {
+  animation: pageLoadFadeIn 0.5s ease-in 0.15s both;
+}
+
+/* Fade-in for footer */
+footer {
+  animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
+}
+
+/* Smooth fade on page exit (when clicking links) */
+a:not([target="_blank"]):not([href^="#"]) {
+  transition: opacity 0.3s ease;
+}
+
+/* Optional: fade effect on unload */
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    transition: opacity 0.3s ease-out;
+  }
+}
+
+/* Ensure images load smoothly */
+img {
+  animation: pageLoadFadeIn 0.4s ease-in;
+}
+
+/* Hero sections slide-fade effect */
+[style*="hero"], [style*="Hero"] {
+  animation: pageLoadFadeIn 0.6s ease-in 0.1s both;
+}
+
+/* Show cards staggered fade-in */
+div[style*="border:1px solid #3d4a60"] {
+  animation: pageLoadFadeIn 0.5s ease-in;
+}
+
+/* Preserve user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
 </head>
 <body>
 
