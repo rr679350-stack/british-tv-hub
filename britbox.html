@@ -480,6 +480,104 @@
     }
 
   </style>
+<style>
+/* Smooth transitions for all interactive elements */
+a, button, [role="button"] {
+  transition: all 0.3s ease;
+}
+
+/* Navigation links hover */
+nav a, footer a {
+  position: relative;
+}
+
+nav a:hover, footer a:hover {
+  color: #f0e8d4 !important;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.3);
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* CTA Button hover (Etsy, See All Shows, etc) */
+a[style*="background:#c9a96e"]:hover,
+a[style*="background: #c9a96e"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(201, 168, 76, 0.2);
+  filter: brightness(1.1);
+}
+
+/* Outlined button hover (Ask Tilly) */
+a[style*="border:1px solid #c9a96e"]:hover,
+a[style*="border: 1px solid #c9a96e"]:hover {
+  background-color: rgba(201, 168, 76, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(201, 168, 76, 0.15);
+}
+
+/* Share buttons hover */
+button[style*="background:#c9a96e"]:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 6px 12px rgba(201, 168, 76, 0.25);
+}
+
+/* Card hover effects */
+div[style*="border:1px solid #3d4a60"]:hover {
+  border-color: #c9a96e;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(201, 168, 76, 0.15);
+  transition: all 0.4s ease;
+}
+
+/* Image brightness on hover */
+img:hover {
+  filter: brightness(1.08);
+  transition: filter 0.3s ease;
+}
+
+/* Text selection styling */
+::selection {
+  background-color: #c9a96e;
+  color: #1a2135;
+}
+
+/* Smooth page transitions */
+body {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Link focus states (accessibility) */
+a:focus, button:focus {
+  outline: 2px solid #c9a96e;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Smooth color transitions on interactive elements */
+a[style*="color:#c9a96e"] {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+</style>
 </head>
 <body>
 
