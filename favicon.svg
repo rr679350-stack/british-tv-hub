@@ -1,14 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <!-- Background -->
-  <rect width="256" height="256" fill="#1a2135"/>
+  <rect width="256" height="256" fill="#001a3d"/>
   
-  <!-- Gold accent bars -->
-  <rect x="30" y="80" width="40" height="96" fill="#c9a96e" rx="4"/>
-  <rect x="108" y="50" width="40" height="126" fill="#c9a96e" rx="4"/>
-  <rect x="186" y="80" width="40" height="96" fill="#c9a96e" rx="4"/>
+  <!-- Decorative flourish (simplified for favicon) -->
+  <!-- Top flourish -->
+  <g transform="translate(128, 70)">
+    <!-- Center leaf/petal -->
+    <path d="M 0 -8 Q 2 -4 2 0 Q 2 4 0 8 Q -2 4 -2 0 Q -2 -4 0 -8" fill="#c9a96e"/>
+    
+    <!-- Left swirl -->
+    <path d="M -2 0 Q -8 -2 -12 2 Q -14 4 -12 6 Q -8 3 -2 4" fill="#c9a96e"/>
+    
+    <!-- Right swirl -->
+    <path d="M 2 0 Q 8 -2 12 2 Q 14 4 12 6 Q 8 3 2 4" fill="#c9a96e"/>
+  </g>
   
-  <!-- Film strip effect -->
-  <circle cx="64" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
-  <circle cx="142" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
-  <circle cx="220" cy="128" r="12" fill="#1a2135" stroke="#c9a96e" stroke-width="2"/>
+  <!-- Bottom flourish -->
+  <g transform="translate(128, 186)">
+    <!-- Center leaf/petal -->
+    <path d="M 0 8 Q 2 4 2 0 Q 2 -4 0 -8 Q -2 -4 -2 0 Q -2 4 0 8" fill="#c9a96e"/>
+    
+    <!-- Left swirl -->
+    <path d="M -2 0 Q -8 2 -12 -2 Q -14 -4 -12 -6 Q -8 -3 -2 -4" fill="#c9a96e"/>
+    
+    <!-- Right swirl -->
+    <path d="M 2 0 Q 8 2 12 -2 Q 14 -4 12 -6 Q 8 -3 2 -4" fill="#c9a96e"/>
+  </g>
+  
+  <!-- Center accent dot -->
+  <circle cx="128" cy="128" r="6" fill="#c9a96e" opacity="0.6"/>
 </svg>
