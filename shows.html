@@ -476,5 +476,28 @@ a[style*="color:#c9a96e"] {
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
 </body>
 </html>
