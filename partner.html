@@ -275,7 +275,48 @@
     }
 
   
-/* Mobile optimization for small screens */
+
+/* AGGRESSIVE Mobile optimization - SMALLER sizes */
+@media (max-width: 480px) {
+  /* Make logo TINY on mobile */
+  .nav-brand,
+  .nav-brand img {
+    height: 40px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  
+  /* Make Tilly avatar MUCH smaller */
+  [style*="position:fixed"][style*="bottom"][style*="right"],
+  [style*="bottom: "][style*="right: "] {
+    width: 40px !important;
+    height: 40px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+  
+  [style*="position:fixed"][style*="bottom"][style*="right"] img,
+  [style*="bottom: "][style*="right: "] img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  /* Reduce nav padding and gaps */
+  .site-nav-std {
+    padding: 6px 12px !important;
+    gap: 4px !important;
+  }
+  
+  .nav-links {
+    gap: 4px !important;
+  }
+  
+  /* Smaller nav text */
+  .nlink {
+    font-size: 9px !important;
+    padding: 12px 6px !important;
+  }
+}
 @media (max-width: 480px) {
   /* Make logo smaller on mobile */
   .nav-brand img {
