@@ -219,6 +219,63 @@ div[style*="border:1px solid #3d4a60"] {
 }
 </style>
 
+<style>
+/* Scroll reveal animation styles */
+@keyframes revealFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: revealFadeUp 0.6s ease forwards;
+}
+
+/* Stagger effect for multiple elements */
+.scroll-reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.scroll-reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.scroll-reveal:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.scroll-reveal:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.scroll-reveal:nth-child(n+6) {
+  transition-delay: 0.5s;
+}
+
+/* Mobile optimization */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -395,6 +452,50 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
 </script>
 </body>
 </html>
