@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://britishtvhub.com/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.britishtvhub.com"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/cozy-guide",
