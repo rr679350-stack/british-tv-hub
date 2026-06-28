@@ -268,6 +268,43 @@
   }
 }
 
+.site-nav-std {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0d1b2e;
+  border-bottom: 1px solid #1e3a5f;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.nlink {
+  padding: 20px 11px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #c9a96e;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+.nlink:hover { color: #ffffff; }
+.nlink.on { color: #ffffff; border-bottom: 2px solid #c9a96e; }
+
 @media (max-width: 768px) {
   /* Tablet: medium logo */
   .nav-brand img {
@@ -1300,14 +1337,14 @@ div[style*="border:1px solid #3d4a60"] {
   </div>
   <div class="nav-links">
     <a class="nlink" href="/">Home</a>
-    <a class="nlink" href="/shows-index.html">Browse Shows</a>
+    <a class="nlink" href="/shows.html">Shows</a>
     <a class="nlink" href="/streaming.html">Streaming</a>
-    <a class="nlink" href="/telly-detective.html">The Telly Detective</a>
+    <a class="nlink on" href="/telly-detective.html">The Telly Detective</a>
     <a class="nlink" href="/cozy.html">Cozy Mysteries</a>
     <a class="nlink" href="/top10.html">Police Procedurals</a>
-    <a class="nav-guide-btn" href="/shows.html">★ Best Of Guide</a>
-    <a class="nav-nl-btn" href="/quiz.html">Match Me a Mystery</a>
-    <a href="/cozy-guide" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly</a>
+    <a class="nlink" href="/dvd.html">British TV on DVD</a>
+    <a class="nlink" href="/faq.html">FAQ</a>
+    <a href="/meet-tilly.html" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly</a>
   </div>
 </nav>
 
