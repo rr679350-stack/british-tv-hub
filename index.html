@@ -1305,24 +1305,12 @@ div[style*="border:1px solid #3d4a60"] {
    src (chatbase.co) rather than guessing at inline positioning styles,
    since that proved unreliable. Excludes the dedicated full-page embed
    on meet-tilly.html (#ask-tilly-widget), which should stay full-size. */
-/* DIAGNOSTIC: extreme + broad-coverage test for the oversized mobile Tilly
-   widget. If ANY of these selectors match the real element, it will shrink
-   to near-invisible with a hot pink outline. If nothing changes, none of
-   these patterns are matching and the issue is not fixable via host-page
-   CSS at all. */
-@media (max-width: 768px) {
-  iframe[src*="chatbase"],
-  div[id*="chatbase"],
-  div[class*="chatbase"],
-  [id*="chatbase"],
-  [class*="chatbase"],
-  [id^="cb-"],
-  [class^="cb-"] {
-    transform: scale(0.05) !important;
-    transform-origin: bottom right !important;
-    outline: 4px solid magenta !important;
-  }
-}
+/* Tilly widget (Chatbase): CSS from this page cannot reach the widget's
+   internals (confirmed via broad diagnostic test — likely a closed shadow
+   root). Sizing must be fixed via the Chatbase dashboard's own appearance
+   settings, or by replacing the auto-injected bubble with a custom button
+   that links to meet-tilly.html instead. Do not re-attempt CSS overrides
+   here without new evidence they'd actually reach the element. */
 </style>
 </head>
 <body>
