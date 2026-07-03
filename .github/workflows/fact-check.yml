@@ -1,0 +1,39 @@
+name: Fact Check
+
+# Runs automatically on the 1st and 15th of each month, and can also be
+# triggered manually from the Actions tab (Run workflow button).
+on:
+  schedule:
+    - cron: '0 13 1,15 * *'   # 9am Eastern (13:00 UTC), twice a month
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  fact-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run fact-check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/fact_check.py
+
+      - name: Commit updated verification data
+        run: |
+          git config user.name "fact-check-bot"
+          git config user.email "actions@github.com"
+          git add shows-database.json fact-check-log.json
+          git diff --cached --quiet || git commit -m "Automated fact-check run ($(date -u +%Y-%m-%d))"
+          git push
