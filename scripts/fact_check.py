@@ -176,10 +176,12 @@ def main():
     all_confirmed = []
 
     print(f"Checking {len(batch)} show-database entries: {', '.join(batch_titles)}")
+    shows_check_failed = False
     try:
         shows_result = extract_json_block(call_claude(build_shows_prompt(batch)))
     except Exception as e:
         shows_result = []
+        shows_check_failed = True
         print(f"Shows batch check failed: {e}", file=sys.stderr)
 
     for r in shows_result:
@@ -189,10 +191,12 @@ def main():
             all_issues.append({**r, "source_file": "shows-database.json"})
 
     print("Checking acorn-new.json and britbox-new.json...")
+    arrivals_check_failed = False
     try:
         arrivals_result = extract_json_block(call_claude(build_britbox_acorn_prompt(acorn, britbox)))
     except Exception as e:
         arrivals_result = []
+        arrivals_check_failed = True
         print(f"Arrivals check failed: {e}", file=sys.stderr)
 
     for r in arrivals_result:
@@ -201,12 +205,12 @@ def main():
         else:
             all_issues.append({**r, "source_file": "acorn-new.json / britbox-new.json"})
 
-    # Update verified dates + sources for confirmed shows, and bump the whole
-    # batch's date regardless (so the rotation keeps moving even on "issue"/
-    # "uncertain" results — those get flagged in the issue instead).
-    confirmed_titles = {r["title"] for r in all_confirmed}
+    # Only bump "verified" for shows we actually got a real answer for — never
+    # mark something as freshly checked when the API call itself failed, or
+    # the rotation would skip it for weeks having never really been checked.
+    checked_titles = {r["title"] for r in shows_result}
     for s in shows:
-        if s["title"] in batch_titles:
+        if s["title"] in checked_titles:
             s["verified"] = TODAY
             match = next((r for r in shows_result if r["title"] == s["title"]), None)
             if match:
@@ -221,11 +225,13 @@ def main():
             log = json.load(f)
     log.append({
         "date": TODAY,
-        "shows_checked": sorted(batch_titles),
-        "arrivals_checked": [r["title"] for r in shows_result + arrivals_result],
+        "shows_checked": sorted(checked_titles),
+        "arrivals_checked": [r["title"] for r in arrivals_result],
         "confirmed_count": len(all_confirmed),
         "issue_count": len(all_issues),
         "issues": all_issues,
+        "shows_check_failed": shows_check_failed,
+        "arrivals_check_failed": arrivals_check_failed,
     })
     save_json("fact-check-log.json", log)
 
@@ -251,6 +257,12 @@ def main():
         print(f"Opened issue for {len(all_issues)} flagged item(s).")
     else:
         print("No issues found this run.")
+
+    # Fail the run loudly if BOTH checks errored out — a green checkmark
+    # should mean verification actually happened, not that it silently no-op'd.
+    if shows_check_failed and arrivals_check_failed:
+        print("Both checks failed to produce results — see errors above.", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
