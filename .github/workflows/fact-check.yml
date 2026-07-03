@@ -35,5 +35,7 @@ jobs:
           git config user.name "fact-check-bot"
           git config user.email "actions@github.com"
           git add shows-database.json fact-check-log.json
-          git diff --cached --quiet || git commit -m "Automated fact-check run ($(date -u +%Y-%m-%d))"
+          git diff --cached --quiet && echo "Nothing to commit." && exit 0
+          git commit -m "Automated fact-check run ($(date -u +%Y-%m-%d))"
+          git pull --rebase origin main
           git push
