@@ -23,7 +23,7 @@ from datetime import datetime, timezone
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")  # "owner/repo"
-MODEL = "claude-sonnet-5"
+MODEL = "claude-sonnet-4-6"
 SHOWS_PER_RUN = 10  # rotate through the 30-show database ~3 runs per full pass
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -60,8 +60,14 @@ def call_claude(prompt, max_tokens=4000):
             "anthropic-version": "2023-06-01",
         },
     )
-    with urllib.request.urlopen(req, timeout=180) as resp:
-        data = json.loads(resp.read())
+    try:
+        with urllib.request.urlopen(req, timeout=180) as resp:
+            data = json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        # Surface Anthropic's actual error message instead of a generic one,
+        # so failures are diagnosable from the Action log without guessing.
+        detail = e.read().decode(errors="replace")
+        raise RuntimeError(f"Anthropic API error {e.code}: {detail}") from None
     texts = [b["text"] for b in data.get("content", []) if b.get("type") == "text"]
     return "\n".join(texts)
 
