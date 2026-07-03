@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-07-02",
+    "shows_checked": [
+      "Vera",
+      "Midsomer Murders",
+      "Happy Valley",
+      "Downton Abbey",
+      "Agatha Raisin",
+      "Art Detectives",
+      "Doc Martin",
+      "Trigger Point",
+      "Beyond Paradise",
+      "The Other Bennet Sister"
+    ],
+    "arrivals_checked": [
+      "Gone",
+      "A Woman of Substance",
+      "Grace",
+      "Return to Paradise",
+      "Escape to the Country",
+      "Inspector Ellis",
+      "The Ridge",
+      "Harry Wild"
+    ],
+    "confirmed_count": 18,
+    "issue_count": 2,
+    "issues": [
+      {
+        "title": "Gone",
+        "status": "issue (fixed)",
+        "notes": "Missing wife's name was incorrectly listed as Alana Polly; corrected to Sarah Polly (Alana is the daughter, played by Emma Appleton). Eve Myles credit corrected from 'Coldwater' to 'Torchwood/Keeping Faith'.",
+        "source_file": "index.html / britbox-new.json"
+      },
+      {
+        "title": "A Woman of Substance",
+        "status": "issue (fixed)",
+        "notes": "Homepage card said 'premieres July 24' but the series actually premiered June 24 and is mid-run; updated to reflect ongoing weekly episodes and August 5 finale.",
+        "source_file": "index.html"
+      }
+    ],
+    "note": "This is the manual baseline entry from the conversation that set up this fact-check system (session on 2026-07-02). Future entries are appended automatically by .github/workflows/fact-check.yml."
+  }
+]
