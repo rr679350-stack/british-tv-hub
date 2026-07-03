@@ -40,5 +40,24 @@
       }
     ],
     "note": "This is the manual baseline entry from the conversation that set up this fact-check system (session on 2026-07-02). Future entries are appended automatically by .github/workflows/fact-check.yml."
+  },
+  {
+    "date": "2026-07-03",
+    "shows_checked": [
+      "Broadchurch",
+      "Death in Paradise",
+      "Endeavour",
+      "Happy Valley",
+      "Inspector Morse",
+      "Lewis",
+      "Line of Duty",
+      "Midsomer Murders",
+      "Shetland",
+      "Vera"
+    ],
+    "arrivals_checked": [],
+    "confirmed_count": 0,
+    "issue_count": 0,
+    "issues": []
   }
 ]
