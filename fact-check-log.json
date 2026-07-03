@@ -59,5 +59,24 @@
     "confirmed_count": 0,
     "issue_count": 0,
     "issues": []
+  },
+  {
+    "date": "2026-07-03",
+    "shows_checked": [
+      "Agatha Christie's Poirot",
+      "All Creatures Great and Small",
+      "Call the Midwife",
+      "Doc Martin",
+      "Father Brown",
+      "Grantchester",
+      "Keeping Up Appearances",
+      "Last of the Summer Wine",
+      "Miss Marple (Agatha Christie's Marple)",
+      "The Detectorists"
+    ],
+    "arrivals_checked": [],
+    "confirmed_count": 0,
+    "issue_count": 0,
+    "issues": []
   }
 ]
