@@ -1305,14 +1305,22 @@ div[style*="border:1px solid #3d4a60"] {
    src (chatbase.co) rather than guessing at inline positioning styles,
    since that proved unreliable. Excludes the dedicated full-page embed
    on meet-tilly.html (#ask-tilly-widget), which should stay full-size. */
-iframe[src*="chatbase"]:not(#ask-tilly-widget iframe) {
-  max-width: min(380px, 92vw) !important;
-  max-height: min(600px, 75vh) !important;
-}
-@media (max-width: 480px) {
-  iframe[src*="chatbase"]:not(#ask-tilly-widget iframe) {
-    max-width: min(320px, 90vw) !important;
-    max-height: min(480px, 65vh) !important;
+/* DIAGNOSTIC: extreme + broad-coverage test for the oversized mobile Tilly
+   widget. If ANY of these selectors match the real element, it will shrink
+   to near-invisible with a hot pink outline. If nothing changes, none of
+   these patterns are matching and the issue is not fixable via host-page
+   CSS at all. */
+@media (max-width: 768px) {
+  iframe[src*="chatbase"],
+  div[id*="chatbase"],
+  div[class*="chatbase"],
+  [id*="chatbase"],
+  [class*="chatbase"],
+  [id^="cb-"],
+  [class^="cb-"] {
+    transform: scale(0.05) !important;
+    transform-origin: bottom right !important;
+    outline: 4px solid magenta !important;
   }
 }
 </style>
