@@ -1284,33 +1284,32 @@ div[style*="border:1px solid #3d4a60"] {
 }
 
 
-/* Tilly chat bubble: uniform scale (no crop/squish) instead of forced width/height */
-[style*="position:fixed"][style*="bottom"][style*="right"] {
-  transform-origin: bottom right !important;
+/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
+   of Chatbase's native size was tried and regressed — if their native size
+   is large, scaling it by a percentage can still render large). Excludes
+   #backToTop, which happens to share the same position:fixed;bottom;right
+   inline-style pattern. */
+[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
+  width: 60px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+  overflow: hidden !important;
 }
 @media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"] {
-    transform: scale(0.5) !important;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"] {
-    transform: scale(0.7) !important;
+  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    overflow: hidden !important;
   }
 }
 </style>
 <style>
-/* Tilly widget (Chatbase) — cap size on mobile for BOTH the collapsed
-   bubble and the expanded chat window, targeted by the iframe's actual
-   src (chatbase.co) rather than guessing at inline positioning styles,
-   since that proved unreliable. Excludes the dedicated full-page embed
-   on meet-tilly.html (#ask-tilly-widget), which should stay full-size. */
-/* Tilly widget (Chatbase): CSS from this page cannot reach the widget's
-   internals (confirmed via broad diagnostic test — likely a closed shadow
-   root). Sizing must be fixed via the Chatbase dashboard's own appearance
-   settings, or by replacing the auto-injected bubble with a custom button
-   that links to meet-tilly.html instead. Do not re-attempt CSS overrides
-   here without new evidence they'd actually reach the element. */
+
 </style>
 </head>
 <body>
