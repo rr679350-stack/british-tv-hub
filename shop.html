@@ -136,6 +136,10 @@
     .scroll-reveal{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
     .scroll-reveal.visible{opacity:1;transform:none}
   </style>
+<style>
+/* Fix: allow header nav to wrap instead of clipping items when it overflows */
+nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; }
+</style>
 </head>
 <body>
 
