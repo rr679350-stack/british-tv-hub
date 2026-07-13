@@ -114,8 +114,7 @@
   .pick{
     background:linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
     border:1px solid var(--navy-line);
-    display:grid;
-    grid-template-columns:280px 1fr;
+    display:block;
     position:relative;
     overflow:hidden;
   }
@@ -208,6 +207,11 @@
   .card-link-alt:hover{ background:rgba(230,199,120,.08); }
   .card-link:hover{ background:var(--gold); }
 
+  /* watch section: smaller buttons, larger readable text */
+  #grid-watch .card-link{ padding:8px 12px; font-size:10.5px; }
+  #grid-watch h3{ font-size:21px; }
+  #grid-watch p{ font-size:16px; }
+
   /* exclusives band */
   .exclusives{ background:var(--ink); border-top:1px solid var(--navy-line); border-bottom:1px solid var(--navy-line); }
   .exclusives .section{ padding-top:60px; padding-bottom:56px; }
@@ -239,7 +243,7 @@
   .footer-note{ font-family:'Crimson Text', serif; font-style:italic; color:#7d8499; font-size:14px; margin-top:18px; }
 
   @media (max-width:760px){
-    .pick{ grid-template-columns:1fr; }
+    /* .pick is no longer a grid, so no column override needed here */
     .pick-body{ padding:30px 24px; }
     .grid, .grid.two{ grid-template-columns:1fr; }
     .recent-list{ grid-template-columns:1fr; }
@@ -255,7 +259,7 @@
   <header>
     <div class="eyebrow">British TV Hub Recommends</div>
     <h1>British TV <em>Essentials</em></h1>
-    <p class="sub">Everything we genuinely recommend for British TV fans &mdash; from complete DVD collections and the novels behind your favourite dramas, to region-free players and cozy viewing essentials.</p>
+    <p class="sub">Everything we genuinely recommend for British TV fans &mdash; from the DVD series and novels behind your favourite dramas, to region-free players and cozy viewing essentials.</p>
     <div class="rule"></div>
   </header>
 
@@ -279,14 +283,6 @@
   <div class="pick-wrap">
     <div class="pick">
       <span class="pick-badge">This Week's Pick</span>
-      <div class="pick-art">
-        <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4" y="4" width="92" height="122" fill="none" stroke="#c8a24a" stroke-width="1.5"/>
-          <text x="50" y="60" text-anchor="middle" fill="#c8a24a" font-family="Playfair Display, serif" font-size="14" font-weight="700">VERA</text>
-          <text x="50" y="76" text-anchor="middle" fill="#e6c778" font-family="Raleway, sans-serif" font-size="8" letter-spacing="2">SERIES 10</text>
-          <line x1="20" y1="88" x2="80" y2="88" stroke="#e6c778" stroke-width="1"/>
-        </svg>
-      </div>
       <div class="pick-body">
         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <h2>Vera: Series 10</h2>
@@ -319,13 +315,11 @@
       <div class="grid" id="grid-exclusives">
         <div class="card" data-tags="journal exclusive own product">
           <div class="badge-row"><span class="badge">Editor's Favorite</span></div>
-          <div class="card-art"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5c3 0 5 1 8 1s5-1 8-1v14c-3 0-5 1-8 1s-5-1-8-1V5z" stroke="#c8a24a" stroke-width="1.2"/></svg></div>
           <h3>The British TV Journal</h3>
           <p>A guided journal for logging every series, rating episodes, and jotting down theories before the reveal.</p>
           <a class="card-link" href="https://www.etsy.com/listing/4523157292" rel="sponsored nofollow">View on Etsy &rarr;</a>
         </div>
         <div class="card" data-tags="tracker exclusive own product">
-          <div class="card-art"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#c8a24a" stroke-width="1.2"/><path d="M12 8v4l3 2" stroke="#e6c778" stroke-width="1.2"/></svg></div>
           <h3>Mystery Tracker &amp; Casebook</h3>
           <p>Track clues, suspects, and your own guesses show by show &mdash; built for the way our community actually watches.</p>
           <a class="card-link" href="https://www.etsy.com/listing/4515914484" rel="sponsored nofollow">View on Etsy &rarr;</a>
@@ -349,9 +343,9 @@
   <div class="section" id="watch">
     <div class="section-head">
       <h2>Watch</h2>
-      <span>Complete Collections</span>
+      <span>On DVD</span>
     </div>
-    <p class="section-intro">Complete box sets, the detective series our readers return to most, and a few classics worth owning outright.</p>
+    <p class="section-intro">The detective series our readers return to most, and a few classics worth owning outright &mdash; sold series by series unless noted.</p>
     <div class="grid" id="grid-watch">
       <div class="card" data-tags="death in paradise box set detective series">
         <div class="badge-row"><span class="badge">Editor's Favorite</span></div>
@@ -380,12 +374,6 @@
         <h3>All Creatures Great and Small: Season 4</h3>
         <p>The Yorkshire Dales reboot that's become a genuine comfort-watch staple for our community.</p>
         <a class="card-link" href="https://amzn.to/4gTAqLp" rel="sponsored nofollow">View on Amazon &rarr;</a>
-      </div>
-      <div class="card" data-tags="region free dvd player accessory imported uk">
-        <div class="badge-row"><span class="badge">Reader Favorite</span></div>
-        <h3>Region-Free DVD Player</h3>
-        <p>The one accessory that unlocks every UK-only release we mention. Readers ask about this constantly.</p>
-        <a class="card-link" href="https://amzn.to/4vryzko" rel="sponsored nofollow">View on Amazon &rarr;</a>
       </div>
     </div>
   </div>
@@ -487,6 +475,11 @@
         <p>For the long Vera-and-a-blanket evenings. Our most-clicked non-DVD pick to date.</p>
         <a class="card-link" href="https://amzn.to/44n66RN" rel="sponsored nofollow">View on Amazon &rarr;</a>
       </div>
+      <div class="card" data-tags="region free dvd player accessory imported uk">
+        <div class="badge-row"><span class="badge">Reader Favorite</span></div>
+        <h3>Region-Free DVD Player</h3>
+        <p>The one accessory that unlocks every UK-only release we mention. Readers ask about this constantly.</p>
+        <a class="card-link" href="https://amzn.to/4vryzko" rel="sponsored nofollow">View on Amazon &rarr;</a>
       </div>
     </div>
   </div>
