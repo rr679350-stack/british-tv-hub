@@ -179,12 +179,15 @@
   .recent-list li span.tag{ font-size:10.5px; letter-spacing:.08em; color:var(--gold); text-transform:uppercase; }
 
   /* gift guides row */
-  .giftrow{ display:flex; flex-wrap:wrap; gap:10px; }
-  .giftrow a{
-    font-family:'Raleway',sans-serif; font-size:13px; color:var(--cream-dim);
-    text-decoration:none; border:1px solid var(--navy-line); padding:10px 16px;
+  .giftgrid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .giftcard{
+    display:block; background:var(--navy); border:1px solid var(--navy-line);
+    padding:18px 16px; text-decoration:none; text-align:center;
+    font-family:'Raleway',sans-serif; color:var(--cream-dim); font-size:13px;
+    letter-spacing:.02em; transition:border-color .15s ease, color .15s ease;
   }
-  .giftrow a:hover{ color:var(--gold-bright); border-color:var(--gold); }
+  .giftcard:hover{ color:var(--gold-bright); border-color:var(--gold); }
+  @media (max-width:760px){ .giftgrid{ grid-template-columns:1fr 1fr; } }
 
   /* trust note */
   .trust{
@@ -247,7 +250,7 @@
     <div class="section">
       <div class="section-head">
         <h2>British TV Hub Exclusives</h2>
-        <span>Made by Us</span>
+        <span>Exclusively Ours</span>
       </div>
       <p class="section-intro">Before anything else &mdash; our own printable and digital companions for tracking what you've watched, read, and want to get to next.</p>
       <div class="grid" id="grid-exclusives">
@@ -428,15 +431,11 @@
       <h2>Gift Guides</h2>
       <span>Curated for Occasions</span>
     </div>
-    <div class="giftrow">
-      <a href="#">Gifts for British Mystery Fans</a>
-      <a href="#">Best Gifts Under $25</a>
-      <a href="#">Christmas Gift Guide</a>
-      <a href="#">Mother's Day Picks</a>
-      <a href="#">Father's Day Picks</a>
-      <a href="#">Gifts for Book Lovers</a>
-      <a href="#">Gifts for Tea Lovers</a>
-      <a href="#">Agatha Christie Fans</a>
+    <div class="giftgrid">
+      <a class="giftcard" href="#watch">Gifts for British Mystery Fans</a>
+      <a class="giftcard" href="/books.html">Gifts for Book Lovers</a>
+      <a class="giftcard" href="#cozy">Gifts for Tea Lovers</a>
+      <a class="giftcard" href="/agatha-christie.html">Agatha Christie Fans</a>
     </div>
   </div>
 
