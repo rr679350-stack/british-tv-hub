@@ -66,49 +66,6 @@
   }
   .rule{ width:64px; height:2px; background:var(--gold); margin:26px auto 0; }
 
-  /* ---- quick-find + search ---- */
-  .quickfind{
-    max-width:840px;
-    margin:36px auto 0;
-    padding:0 24px;
-  }
-  .qf-box{
-    background:var(--navy);
-    border:1px solid var(--navy-line);
-    padding:22px 26px;
-  }
-  .qf-label{
-    font-family:'Raleway',sans-serif;
-    font-size:12px;
-    letter-spacing:.14em;
-    text-transform:uppercase;
-    color:var(--gold);
-    margin-bottom:12px;
-  }
-  #search{
-    width:100%;
-    background:var(--ink);
-    border:1px solid var(--navy-line);
-    color:var(--cream);
-    font-family:'Raleway',sans-serif;
-    font-size:15px;
-    padding:12px 14px;
-    margin-bottom:14px;
-  }
-  #search::placeholder{ color:#7d8499; }
-  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
-  .chip{
-    font-family:'Raleway',sans-serif;
-    font-size:12.5px;
-    letter-spacing:.03em;
-    color:var(--cream-dim);
-    background:var(--ink);
-    border:1px solid var(--navy-line);
-    padding:6px 12px;
-    cursor:pointer;
-  }
-  .chip:hover{ color:var(--gold-bright); border-color:var(--gold); }
-
   /* ---- this week's pick, magazine style ---- */
   .pick-wrap{ max-width:960px; margin:52px auto 0; padding:0 24px; }
   .pick{
@@ -179,7 +136,6 @@
     padding:22px 22px 20px; display:flex; flex-direction:column; gap:10px;
     transition:opacity .15s ease;
   }
-  .card.hidden{ display:none; }
   .badge-row{ display:flex; flex-wrap:wrap; gap:6px; }
   .badge{
     font-family:'Raleway',sans-serif; font-size:10.5px; letter-spacing:.06em;
@@ -262,23 +218,6 @@
     <p class="sub">Everything we genuinely recommend for British TV fans &mdash; from the DVD series and novels behind your favourite dramas, to region-free players and cozy viewing essentials.</p>
     <div class="rule"></div>
   </header>
-
-  <div class="quickfind">
-    <div class="qf-box">
-      <div class="qf-label">Looking for a specific show?</div>
-      <input id="search" type="text" placeholder="Search by show, author, actor, or genre&hellip;">
-      <div class="chips">
-        <span class="chip" onclick="setSearch('Vera')">Vera</span>
-        <span class="chip" onclick="setSearch('Shetland')">Shetland</span>
-        <span class="chip" onclick="setSearch('Grantchester')">Grantchester</span>
-        <span class="chip" onclick="setSearch('Ludwig')">Ludwig</span>
-        <span class="chip" onclick="setSearch('Death in Paradise')">Death in Paradise</span>
-        <span class="chip" onclick="setSearch('Morse')">Inspector Morse</span>
-        <span class="chip" onclick="setSearch('Midsomer')">Midsomer Murders</span>
-        <span class="chip" onclick="setSearch('Creatures')">All Creatures Great and Small</span>
-      </div>
-    </div>
-  </div>
 
   <div class="pick-wrap">
     <div class="pick">
@@ -532,28 +471,6 @@
     </div>
     <p class="footer-note">Updated every Sunday alongside the Sunday Picks newsletter.</p>
   </footer>
-
-<script>
-  const searchInput = document.getElementById('search');
-  const allCards = Array.from(document.querySelectorAll('.card'));
-
-  function filterCards(query){
-    const q = query.trim().toLowerCase();
-    allCards.forEach(card => {
-      if(!q){ card.classList.remove('hidden'); return; }
-      const tags = (card.dataset.tags || '') + ' ' + card.innerText.toLowerCase();
-      card.classList.toggle('hidden', !tags.toLowerCase().includes(q));
-    });
-  }
-
-  searchInput.addEventListener('input', e => filterCards(e.target.value));
-
-  function setSearch(term){
-    searchInput.value = term;
-    filterCards(term);
-    document.querySelector('.quickfind').scrollIntoView({behavior:'smooth', block:'center'});
-  }
-</script>
 
 </body>
 </html>
