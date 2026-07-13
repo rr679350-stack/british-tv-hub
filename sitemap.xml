@@ -58,6 +58,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://britishtvhub.com/downton-abbey-books.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/british-historical-fiction-books.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://britishtvhub.com/cozy.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
