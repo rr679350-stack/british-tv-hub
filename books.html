@@ -1012,27 +1012,37 @@ div[style*="border:1px solid #3d4a60"] {
 }
 
 
-/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
-   of Chatbase's native size was tried and regressed — if their native size
-   is large, scaling it by a percentage can still render large). Excludes
-   #backToTop, which happens to share the same position:fixed;bottom;right
-   inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
+/* Tilly chat bubble: pin to its intended small size using Chatbase's real
+   element ID. (A previous attempt targeted [style*="position:fixed"] with
+   no space, but Chatbase actually writes "position: fixed" with a space,
+   so that rule never matched anything — dead code.) The real problem:
+   this site's global mobile overflow-prevention rules force width:100%
+   on any element whose inline style contains "width:", which incidentally
+   also catches Chatbase's fixed-position button and blows it up to full
+   viewport width on mobile. ID selectors below outrank those generic
+   attribute-selector rules even though both use !important, because an
+   ID selector has higher specificity. */
+#chatbase-bubble-button,
+#chatbase-bubble-button * {
+  width: 55px !important;
+  height: 55px !important;
+  max-width: 55px !important;
+  max-height: 55px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
   overflow: hidden !important;
 }
+#chatbase-bubble-button img {
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
 @media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
+  #chatbase-bubble-button,
+  #chatbase-bubble-button * {
     width: 50px !important;
     height: 50px !important;
     max-width: 50px !important;
     max-height: 50px !important;
-    bottom: 16px !important;
-    right: 16px !important;
-    overflow: hidden !important;
   }
 }
 </style>
