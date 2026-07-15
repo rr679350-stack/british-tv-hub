@@ -78,5 +78,203 @@
     "confirmed_count": 0,
     "issue_count": 0,
     "issues": []
+  },
+  {
+    "date": "2026-07-15",
+    "shows_checked": [
+      "Ballykissangel",
+      "Cranford",
+      "Downton Abbey",
+      "Foyle's War",
+      "George Gently (Inspector George Gently)",
+      "Hamish Macbeth",
+      "Hetty Wainthropp Investigates",
+      "McDonald & Dodds",
+      "Rosemary & Thyme",
+      "The Vicar of Dibley"
+    ],
+    "arrivals_checked": [
+      "Inspector Ellis (Season 2) — Acorn TV highlight: Acorn TV Original · Season 2 Premiere · July 6",
+      "Inspector Ellis (Season 2) — Acorn TV arrival: available July 6",
+      "The Ridge (Series 1) — Acorn TV arrival: available July 27",
+      "Harry Wild (Season 5) — Acorn TV arrival: New episodes weekly · Finale July 27",
+      "Murdoch Mysteries (Season 19) — Acorn TV arrival: New episodes weekly",
+      "You're Killing Me (Series 1) — Acorn TV arrival: New episodes weekly",
+      "Gone (Series 1) — BritBox highlight: BritBox Original · North America Premiere · July 23",
+      "Gone (Series 1) — BritBox arrival: available July 23",
+      "A Woman of Substance (Series 1) — BritBox arrival: New episodes Wednesdays · Finale August 5",
+      "Grace (Season 6) — BritBox arrival: available July 2",
+      "Return to Paradise (Season 2) — BritBox arrival: available July 14",
+      "Escape to the Country (Season 33) — BritBox arrival: available July 10"
+    ],
+    "confirmed_count": 7,
+    "issue_count": 15,
+    "issues": [
+      {
+        "title": "Ballykissangel",
+        "status": "issue",
+        "notes": "Year range (1996–2001) is correct. US BritBox is confirmed. However, Reelgood (updated June 2026) reports the show is 'not currently available to stream, rent, or buy in the UK,' casting doubt on the UK BritBox claim. No Australian-specific BritBox listing was found either; JustWatch AU data for BritBox did not surface this title. The UK and AU BritBox listings are unverified and likely inaccurate.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/ballykissangel",
+          "https://reelgood.com/uk/show/ballykissangel-1996"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Downton Abbey",
+        "status": "issue",
+        "notes": "Year range (2010–2015) is correct per Wikipedia and IMDB. US: Peacock confirmed; Netflix US is NOT available (Downton Abbey is not in the US Netflix library). UK: ITVX confirmed; Netflix UK is confirmed. AU: Binge confirmed; Foxtel confirmed; but Netflix AU is not confirmed (TechRadar and JustWatch AU list Binge/Foxtel/BritBox/Prime Video, not Netflix AU for the TV series). The guide incorrectly lists Netflix for the US region and is uncertain for Netflix in AU.",
+        "sources": [
+          "https://www.techradar.com/streaming/entertainment/how-to-watch-downton-abbey-stream-every-episode",
+          "https://cybernews.com/stream-online/how-to-watch-downton-abbey/",
+          "https://www.justwatch.com/au/tv-show/downton-abbey",
+          "https://en.wikipedia.org/wiki/List_of_Downton_Abbey_episodes"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Cranford",
+        "status": "issue",
+        "notes": "Year range (2007–2009) is correct. US BritBox is confirmed. However, 'PBS Masterpiece' is not confirmed as a current standalone streaming platform for this title — JustWatch US lists BritBox, Peacock Premium, and Hulu but does not list a separate PBS Masterpiece channel for Cranford. 'PBS Masterpiece' is now largely integrated into Peacock, not a distinct streaming destination. UK BritBox and AU BritBox could not be independently confirmed from search results. Status flagged as issue due to the PBS Masterpiece listing being outdated/inaccurate as a current streaming platform.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/cranford",
+          "https://grokipedia.com/page/Cranford_(TV_series)"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Foyle's War",
+        "status": "issue",
+        "notes": "Year range (2002–2015) is correct. US Acorn TV confirmed. UK: ITVX is confirmed (free and premium), and Acorn TV UK is confirmed. AU Acorn TV is confirmed. However, the UK listing should also note Netflix UK, Sky Go, and Now TV are available per JustWatch UK — but those are not listed in the guide, which isn't necessarily wrong. The main issue is that JustWatch UK also shows Netflix as a UK streaming option, which the guide omits. The guide's listed platforms are confirmed as present but the UK claim of 'Acorn TV' as a distinct UK streaming service is confirmed.",
+        "sources": [
+          "https://www.justwatch.com/uk/tv-series/foyles-war",
+          "https://acorn.tv/foyleswar/",
+          "https://www.itv.com/watch/foyles-war/25410"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Hamish Macbeth",
+        "status": "issue",
+        "notes": "Year range (1995–1997) is correct. US BritBox is confirmed (all three seasons added January 2026). The guide lists 'Buy on Amazon' for the US as a secondary option, but JustWatch and Moviefone show it is now fully streamable on BritBox and also on Acorn TV, Prime Video, Tubi, and Pluto TV — 'Buy on Amazon' is no longer necessary as a primary listing and is an outdated characterisation. UK BritBox and AU BritBox could not be independently verified from search results.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/hamish-macbeth",
+          "https://www.imdb.com/news/ni65626909/",
+          "https://www.moviefone.com/tv-shows/hamish-macbeth/5aMeALSBzWYcgeWJ1fV9K5/where-to-watch/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Rosemary & Thyme",
+        "status": "issue",
+        "notes": "Year range (2003–2007) is correct. US BritBox is confirmed. However, Acorn TV is NOT confirmed for the US — Reelgood (updated June 2026) lists BritBox, Prime Video, Hallmark+, Tubi, and others but does NOT list Acorn TV for the US. UK: ITVX is confirmed (free and premium); BritBox UK is not confirmed in search results. AU: Acorn TV AU could not be confirmed — no Australian-specific Acorn TV listing was found for this title.",
+        "sources": [
+          "https://reelgood.com/show/rosemary-thyme-2003",
+          "https://www.justwatch.com/uk/tv-series/rosemary-and-thyme"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "The Vicar of Dibley",
+        "status": "issue",
+        "notes": "The year range (1994–2020) is correct — the main series ran 1994–2007 but lockdown specials aired in December 2020, per Wikipedia and IMDB. US BritBox is confirmed. UK: BritBox UK is NOT confirmed — a dedicated BritBox UK tracking site (newonbritbox.info) states 'The Vicar of Dibley is no longer available to stream on BritBox in the UK.' AU: BritBox AU and Stan are confirmed per Apple TV AU listings. 7plus could not be independently confirmed.",
+        "sources": [
+          "https://newonbritbox.info/info/39753",
+          "https://tv.apple.com/au/episode/the-handsome-stranger/umc.cmc.6beojel94rmpheglky5jesppe",
+          "https://en.wikipedia.org/wiki/The_Vicar_of_Dibley",
+          "https://www.justwatch.com/us/tv-show/the-vicar-of-dibley"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "McDonald & Dodds",
+        "status": "issue",
+        "notes": "The guide lists this as '2020–present' but the show was cancelled after four series on 16 January 2025; it is no longer ongoing. The year range should be 2020–2024. Streaming platforms are confirmed: US BritBox confirmed, UK ITVX confirmed, AU BritBox confirmed per Collider and Wikipedia.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/McDonald_%26_Dodds",
+          "https://collider.com/mcdonald-and-dodds-cancelled-season-4/",
+          "https://www.itv.com/watch/mcdonald-and-dodds/2a7401"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "George Gently (Inspector George Gently)",
+        "status": "issue",
+        "notes": "Year range (2007–2017) is correct. US Acorn TV is confirmed. AU Acorn TV is confirmed. UK: BBC iPlayer is NOT confirmed as a current full streaming home — a Grokipedia episode list (as of October 2025) notes 'BBC iPlayer offers limited episodic availability…but not comprehensive catch-up for the full run.' JustWatch UK lists Netflix, Sky Go, Now TV, and Amazon Prime Video for the UK — not BBC iPlayer or BritBox. Both UK platforms listed in the guide appear inaccurate.",
+        "sources": [
+          "https://www.justwatch.com/uk/tv-series/inspector-george-gently",
+          "https://grokipedia.com/page/List_of_Inspector_George_Gently_episodes",
+          "https://acorn.tv/georgegently/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Hetty Wainthropp Investigates",
+        "status": "issue",
+        "notes": "Year range (1996–1998) is correct per IMDB (listed as 1995–1998 on IMDB; first episode aired January 1996 per JustWatch). US BritBox is confirmed; 'Buy on Amazon' is outdated — the show is now fully streamable on BritBox and no longer primarily a purchase-only option. UK: JustWatch UK lists Sky Go, ITVX, BritBox, Now TV — BritBox UK appears confirmed. AU BritBox could not be independently verified.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/hetty-wainthropp-investigates",
+          "https://www.justwatch.com/uk/tv-series/hetty-wainthropp-investigates/season-3",
+          "https://www.imdb.com/title/tt0127376/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Harry Wild (Season 5) — Acorn TV arrival: New episodes weekly · Finale July 27",
+        "status": "issue",
+        "notes": "Season 5 premiered on June 22, 2026, not in July. The finale date of July 27 is confirmed correct, and episodes do drop weekly, but the guide omits the already-aired June 22 premiere date and presents Harry Wild as a new July arrival when it actually began in June.",
+        "sources": [
+          "https://parade.com/tv/harry-wild-season-5-premiere-date-cast-jane-seymour-joe-lando",
+          "https://vviptimes.com/harry-wild-season-5-release-schedule-acorn-tv/",
+          "https://www.tellyvisions.org/harry-wild-season-5-acorn-tv-premiere-date-first-images-trailer/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "Murdoch Mysteries (Season 19) — Acorn TV arrival: New episodes weekly",
+        "status": "issue",
+        "notes": "Season 19 premiered on Acorn TV on March 2, 2026, not in July. By July 2026 it is in its final weeks (finale episode airing July 20 in the US), so listing it as a July arrival is misleading — it is a carryover, not a new arrival.",
+        "sources": [
+          "https://www.amcnetworks.com/press-releases/fan-favorite-period-crime-drama-murdoch-mysteries-returns-to-acorn-tv-monday-march-2/",
+          "https://support.acorn.tv/kb/guide/en/us-canada-premiere-schedule-P7EqZV3YiG/Steps/4297204",
+          "https://www.tellyvisions.org/everything-coming-to-britbox-acorn-tv-in-july-2026/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "You're Killing Me (Series 1) — Acorn TV arrival: New episodes weekly",
+        "status": "issue",
+        "notes": "The series premiered on May 18, 2026, and its six-episode run concluded with its finale on June 22, 2026 — well before July. The full season is already available on Acorn TV; listing it as a current 'new episodes weekly' July arrival is inaccurate.",
+        "sources": [
+          "https://hollywoodtimes.net/acorn-tv-debuts-original-series-youre-killing-me-starring-and-executive-produced-by-brooke-shields-premiering-monday-may-18/",
+          "https://www.comicbasics.com/brooke-shields-youre-killing-me-episode-titles-and-full-release-schedule-revealed/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "Gone (Series 1) — BritBox highlight: BritBox Original · North America Premiere · July 23",
+        "status": "issue",
+        "notes": "The July 23 North America premiere date is confirmed. However, 'Gone' is not a BritBox Original — it is an ITV/All3Media production that BritBox acquired the North American rights to. Multiple sources identify it as a BritBox exclusive/North America premiere, not a BritBox Original.",
+        "sources": [
+          "https://thebritishtvplace.com/2026/06/gone-britbox-sets-premiere-date-for-mystery-series-starring-david-morrissey-eve-myles/",
+          "https://variety.com/2026/tv/global/gone-george-kay-britbox-bbc-stan-all3media-international-1236672242/",
+          "https://www.vitalthrills.com/britbox-july-2026/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "A Woman of Substance (Series 1) — BritBox arrival: New episodes Wednesdays · Finale August 5",
+        "status": "issue",
+        "notes": "The Wednesday cadence and August 5 finale are confirmed correct. However, the series premiered on BritBox on June 24, 2026 (not in July), so listing it as a July arrival is inaccurate — it is a carryover continuing into July with weekly Wednesday episodes.",
+        "sources": [
+          "https://tvseriesfinale.com/tv-show/a-woman-of-substance-britbox-unveils-trailer-and-poster-for-period-drama-series/",
+          "https://www.tvinsider.com/1273236/new-on-britbox-july-2026/",
+          "https://www.vitalthrills.com/britbox-july-2026/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      }
+    ],
+    "shows_check_failed": false,
+    "arrivals_check_failed": false
   }
 ]

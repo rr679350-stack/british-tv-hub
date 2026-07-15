@@ -714,8 +714,11 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/ballykissangel",
+      "https://reelgood.com/uk/show/ballykissangel-1996"
+    ]
   },
   {
     "title": "Downton Abbey",
@@ -751,8 +754,13 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.techradar.com/streaming/entertainment/how-to-watch-downton-abbey-stream-every-episode",
+      "https://cybernews.com/stream-online/how-to-watch-downton-abbey/",
+      "https://www.justwatch.com/au/tv-show/downton-abbey",
+      "https://en.wikipedia.org/wiki/List_of_Downton_Abbey_episodes"
+    ]
   },
   {
     "title": "Cranford",
@@ -780,8 +788,11 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cranford",
+      "https://grokipedia.com/page/Cranford_(TV_series)"
+    ]
   },
   {
     "title": "Foyle's War",
@@ -809,8 +820,12 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/uk/tv-series/foyles-war",
+      "https://acorn.tv/foyleswar/",
+      "https://www.itv.com/watch/foyles-war/25410"
+    ]
   },
   {
     "title": "Hamish Macbeth",
@@ -838,8 +853,12 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/hamish-macbeth",
+      "https://www.imdb.com/news/ni65626909/",
+      "https://www.moviefone.com/tv-shows/hamish-macbeth/5aMeALSBzWYcgeWJ1fV9K5/where-to-watch/"
+    ]
   },
   {
     "title": "Rosemary & Thyme",
@@ -871,8 +890,11 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://reelgood.com/show/rosemary-thyme-2003",
+      "https://www.justwatch.com/uk/tv-series/rosemary-and-thyme"
+    ]
   },
   {
     "title": "The Vicar of Dibley",
@@ -905,8 +927,13 @@
         "note": "selected"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://newonbritbox.info/info/39753",
+      "https://tv.apple.com/au/episode/the-handsome-stranger/umc.cmc.6beojel94rmpheglky5jesppe",
+      "https://en.wikipedia.org/wiki/The_Vicar_of_Dibley",
+      "https://www.justwatch.com/us/tv-show/the-vicar-of-dibley"
+    ]
   },
   {
     "title": "McDonald & Dodds",
@@ -934,8 +961,12 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://en.wikipedia.org/wiki/McDonald_%26_Dodds",
+      "https://collider.com/mcdonald-and-dodds-cancelled-season-4/",
+      "https://www.itv.com/watch/mcdonald-and-dodds/2a7401"
+    ]
   },
   {
     "title": "George Gently (Inspector George Gently)",
@@ -968,8 +999,12 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/uk/tv-series/inspector-george-gently",
+      "https://grokipedia.com/page/List_of_Inspector_George_Gently_episodes",
+      "https://acorn.tv/georgegently/"
+    ]
   },
   {
     "title": "Hetty Wainthropp Investigates",
@@ -997,7 +1032,11 @@
         "tag": "stream"
       }
     ],
-    "verified": "2026-07-02",
-    "sources": []
+    "verified": "2026-07-15",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/hetty-wainthropp-investigates",
+      "https://www.justwatch.com/uk/tv-series/hetty-wainthropp-investigates/season-3",
+      "https://www.imdb.com/title/tt0127376/"
+    ]
   }
 ]
