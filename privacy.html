@@ -991,8 +991,8 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 <style>
 /* Nav search */
 .nav-search { position: relative; justify-self: end; }
-.nav-search-toggle { background: transparent; border: none; color: #c9a96e; font-size: 15px; cursor: pointer; padding: 8px 10px; line-height: 1; }
-.nav-search-toggle:hover { color: #ffffff; }
+.nav-search-toggle { background: transparent; border: 1px solid #c9a96e; color: #c9a96e; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; cursor: pointer; padding: 10px 16px; line-height: 1; white-space: nowrap; }
+.nav-search-toggle:hover { background: #c9a96e; color: #1a2135; }
 .nav-search-box { position: absolute; top: 100%; right: 0; background: #1e2433; border: 1px solid #3d4a60; padding: 10px; width: 280px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
 .nav-search-box input { width: 100%; padding: 10px 12px; background: #2c3345; border: 1px solid #3d4a60; color: #e8dfc8; font-family: 'Crimson Text', serif; font-size: 15px; box-sizing: border-box; outline: none; }
 .nav-search-box input:focus { border-color: #c9a96e; }
@@ -1032,7 +1032,7 @@ nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px
       <a class="nlink" href="/books">Bookshelf</a>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269;</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
         <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
