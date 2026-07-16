@@ -1126,8 +1126,10 @@ div[style*="border:1px solid #3d4a60"] {
 
 </style>
 <style>
-/* Fix: allow header nav to wrap instead of clipping items when it overflows */
-nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; justify-content: center !important; }
+/* Fix: allow header nav to wrap instead of clipping items when it overflows (narrow screens only) */
+@media (max-width: 1300px) {
+  nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; justify-content: center !important; }
+}
 </style>
 </head>
 <body>
