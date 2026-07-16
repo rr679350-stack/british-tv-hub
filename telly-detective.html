@@ -1167,7 +1167,8 @@ div[style*="border:1px solid #3d4a60"] {
 <style>
 /* Two-row nav: primary links + brand on top, action buttons below */
 nav.site-nav-std { flex-direction: column !important; align-items: stretch !important; }
-.nav-top-row { display: flex !important; align-items: center !important; justify-content: flex-start !important; gap: 32px; width: 100%; flex-wrap: nowrap; }
+.nav-top-row { display: grid !important; grid-template-columns: auto 1fr auto; align-items: center !important; width: 100%; gap: 16px; }
+.nav-top-row .nav-links { display: flex !important; justify-content: center !important; }
 .nav-actions-row { display: flex !important; align-items: center !important; justify-content: center !important; gap: 8px; flex-wrap: wrap; width: 100%; padding: 8px 0 10px; border-top: 1px solid rgba(201,168,76,0.15); margin-top: 4px; }
 @media (max-width: 1300px) {
   .nav-top-row { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
@@ -1179,7 +1180,7 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 </style>
 <style>
 /* Nav search */
-.nav-search { position: relative; margin-left: auto; }
+.nav-search { position: relative; justify-self: end; }
 .nav-search-toggle { background: transparent; border: none; color: #c9a96e; font-size: 15px; cursor: pointer; padding: 8px 10px; line-height: 1; }
 .nav-search-toggle:hover { color: #ffffff; }
 .nav-search-box { position: absolute; top: 100%; right: 0; background: #1e2433; border: 1px solid #3d4a60; padding: 10px; width: 280px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
