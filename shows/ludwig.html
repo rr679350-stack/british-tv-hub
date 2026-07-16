@@ -119,21 +119,38 @@
   nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; justify-content: center !important; }
 }
 </style>
+<style>
+/* Two-row nav: primary links + brand on top, action buttons below */
+nav.site-nav-std { flex-direction: column !important; align-items: stretch !important; }
+.nav-top-row { display: flex !important; align-items: center !important; justify-content: space-between !important; width: 100%; flex-wrap: nowrap; }
+.nav-actions-row { display: flex !important; align-items: center !important; justify-content: center !important; gap: 8px; flex-wrap: wrap; width: 100%; padding: 8px 0 10px; border-top: 1px solid rgba(201,168,76,0.15); margin-top: 4px; }
+@media (max-width: 1300px) {
+  .nav-top-row { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+}
+@media (max-width: 480px) {
+  .nav-actions-row { gap: 6px; }
+  .nav-actions-row a { font-size: 9px !important; padding: 8px 10px !important; }
+}
+</style>
 </head>
 <body>
 
 <nav class="site-nav-std" aria-label="Main navigation">
-  <div class="nav-brand">
+  <div class="nav-top-row">
+    <div class="nav-brand">
     <div class="nav-title">British TV Dramas &amp; Mysteries</div>
     <div class="nav-sub">Classics &amp; New Favorites</div>
   </div>
-  <div class="nav-links">
-    <a class="nlink" href="https://britishtvhub.com/">Home</a>
-    <a class="nlink on" href="https://britishtvhub.com/shows-index.html">Browse Shows</a>
-    <a class="nlink" href="https://britishtvhub.com/streaming.html">Streaming</a>
-    <a class="nlink" href="https://britishtvhub.com/cozy.html">Cozy Mysteries</a>
-    <a class="nlink" href="https://britishtvhub.com/top10.html">Police Procedurals</a>
-    <a class="nlink" href="https://britishtvhub.com/agatha-christie.html">Agatha Christie</a>
+    <div class="nav-links">
+      <a class="nlink" href="https://britishtvhub.com/">Home</a>
+      <a class="nlink on" href="https://britishtvhub.com/shows-index.html">Browse Shows</a>
+      <a class="nlink" href="https://britishtvhub.com/streaming.html">Streaming</a>
+      <a class="nlink" href="https://britishtvhub.com/cozy.html">Cozy Mysteries</a>
+      <a class="nlink" href="https://britishtvhub.com/top10.html">Police Procedurals</a>
+      <a class="nlink" href="https://britishtvhub.com/agatha-christie.html">Agatha Christie</a>
+    </div>
+  </div>
+  <div class="nav-actions-row">
     <a href="https://britishtvhub.com/essentials.html" style="background:#3a6b5c;color:#f5e8d0;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Shop Our Picks</a>
     <a class="nav-guide-btn" href="https://britishtvhub.com/shows.html">&#9733; Best Of Guide</a>
     <a class="nav-nl-btn" href="https://britishtvhub.com/quiz.html">Match Me a Mystery</a>
