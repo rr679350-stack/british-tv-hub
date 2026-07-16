@@ -1071,6 +1071,24 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
   .nav-actions-row a { font-size: 9px !important; padding: 8px 10px !important; }
 }
 </style>
+<style>
+/* Nav search */
+.nav-search { position: relative; margin-left: 8px; }
+.nav-search-toggle { background: transparent; border: none; color: #c9a96e; font-size: 15px; cursor: pointer; padding: 8px 10px; line-height: 1; }
+.nav-search-toggle:hover { color: #ffffff; }
+.nav-search-box { position: absolute; top: 100%; right: 0; background: #1e2433; border: 1px solid #3d4a60; padding: 10px; width: 280px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+.nav-search-box input { width: 100%; padding: 10px 12px; background: #2c3345; border: 1px solid #3d4a60; color: #e8dfc8; font-family: 'Crimson Text', serif; font-size: 15px; box-sizing: border-box; outline: none; }
+.nav-search-box input:focus { border-color: #c9a96e; }
+.nav-search-results { margin-top: 8px; max-height: 320px; overflow-y: auto; }
+.nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
+.nav-search-results a:hover { background: #2c3345; color: #ffffff; }
+.nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+@media (max-width: 1300px) {
+  .nav-search-box { right: auto; left: 0; }
+}
+</style>
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
 </head>
 <body>
 
@@ -1090,7 +1108,14 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
       <a class="nlink" href="/top10.html">Police Procedurals</a>
       <a class="nlink" href="/books">Bookshelf</a>
     </div>
-  </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269;</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+    </div>
   <div class="nav-actions-row">
     <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
     <a href="/quiz.html" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Match Me a Mystery</a>
