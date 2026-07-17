@@ -41,3 +41,19 @@ document.addEventListener('click', function(e){
     box.style.display='none';
   }
 });
+
+// Compact nav on scroll
+(function(){
+  var nav = document.querySelector('nav.site-nav-std');
+  if(!nav) return;
+  var threshold = 24;
+  function onScroll(){
+    if(window.scrollY > threshold){
+      nav.classList.add('nav-compact');
+    } else {
+      nav.classList.remove('nav-compact');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();

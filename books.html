@@ -1100,6 +1100,17 @@ nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px
   nav.site-nav-std .nlink, .nlink { font-size: 12px !important; padding: 12px 10px !important; }
 }
 </style>
+<style>
+/* Compact nav once the page is scrolled */
+nav.site-nav-std { transition: padding 0.2s ease; }
+nav.site-nav-std .nav-brand img { transition: height 0.2s ease; }
+nav.site-nav-std.nav-compact .nav-brand img { height: 42px !important; }
+nav.site-nav-std.nav-compact .nav-top-row { padding-top: 2px !important; padding-bottom: 2px !important; }
+nav.site-nav-std.nav-compact .nlink { font-size: 11px !important; padding: 8px 10px !important; }
+nav.site-nav-std.nav-compact .nav-actions-row { padding-top: 4px !important; padding-bottom: 4px !important; margin-top: 0 !important; }
+nav.site-nav-std.nav-compact .nav-actions-row a { padding: 6px 10px !important; font-size: 9px !important; margin: 4px 0 4px 4px !important; }
+nav.site-nav-std.nav-compact .nav-search-toggle { padding: 6px 10px !important; }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
