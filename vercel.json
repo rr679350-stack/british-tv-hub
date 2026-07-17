@@ -10,6 +10,11 @@
           "value": "www.britishtvhub.com"
         }
       ]
+    },
+    {
+      "source": "/dvd.html",
+      "destination": "/essentials.html",
+      "permanent": true
     }
   ],
   "rewrites": [
