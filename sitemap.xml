@@ -16,6 +16,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://britishtvhub.com/shows-index.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/beginners.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/privacy.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://britishtvhub.com/streaming.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
