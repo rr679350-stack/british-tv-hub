@@ -1105,7 +1105,9 @@ nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px
 }
 </style>
 <style>
-/* Compact nav once the page is scrolled */
+/* Nav scrolls away normally instead of staying pinned */
+nav.site-nav-std { position: static !important; }
+/* (Compact-on-scroll rules kept below but harmless since nav is no longer sticky) */
 nav.site-nav-std { transition: padding 0.2s ease; }
 nav.site-nav-std .nav-brand img { transition: height 0.2s ease; }
 nav.site-nav-std.nav-compact .nav-brand img { height: 42px !important; }
