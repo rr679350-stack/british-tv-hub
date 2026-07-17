@@ -1083,17 +1083,8 @@ nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px
 }
 </style>
 <style>
-/* Nav scrolls away normally instead of staying pinned */
-nav.site-nav-std { position: static !important; }
-/* (Compact-on-scroll rules kept below but harmless since nav is no longer sticky) */
-nav.site-nav-std { transition: padding 0.2s ease; }
-nav.site-nav-std .nav-brand img { transition: height 0.2s ease; }
-nav.site-nav-std.nav-compact .nav-brand img { height: 42px !important; }
-nav.site-nav-std.nav-compact .nav-top-row { padding-top: 2px !important; padding-bottom: 2px !important; }
-nav.site-nav-std.nav-compact .nlink { font-size: 11px !important; padding: 8px 10px !important; }
-nav.site-nav-std.nav-compact .nav-actions-row { padding-top: 4px !important; padding-bottom: 4px !important; margin-top: 0 !important; }
-nav.site-nav-std.nav-compact .nav-actions-row a { padding: 6px 10px !important; font-size: 9px !important; margin: 4px 0 4px 4px !important; }
-nav.site-nav-std.nav-compact .nav-search-toggle { padding: 6px 10px !important; }
+/* Nav stays pinned at a constant size while scrolling */
+nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 !important; }
 </style>
 </head>
 <body>
