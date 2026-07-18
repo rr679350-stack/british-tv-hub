@@ -3,16 +3,28 @@
 British TV Hub — automated fact-checker.
 
 Runs on a schedule via .github/workflows/fact-check.yml.
-Re-verifies a rotating batch of show-database entries plus the full
-acorn-new.json / britbox-new.json content using the Anthropic API with
-web search, then:
+Re-verifies a rotating batch of show-database entries, the full
+acorn-new.json / britbox-new.json content, AND a rotating batch of the
+schema.org TVSeries claims embedded in the site's HTML pages (episode
+counts, air dates, season counts, and the short factual description text)
+using the Anthropic API with web search, then:
   - updates "verified" / "sources" metadata for anything confirmed
   - appends a run summary to fact-check-log.json
   - opens a GitHub Issue if anything looks wrong or out of date
 
+Editorial HTML claims are tracked separately in editorial-verified.json,
+keyed by "page::show name", with a content hash so that editing a claim
+resets its verification (an edited claim is treated as unverified again,
+not silently carried forward as still-confirmed). This only covers claims
+inside <script type="application/ld+json"> blocks — free-form prose
+elsewhere on a page (anecdotes, quotes, comparisons) is not scanned, since
+there's no structured way to isolate individual factual claims from it.
+
 Requires the ANTHROPIC_API_KEY secret to be set on the repo.
 """
 
+import glob
+import hashlib
 import json
 import os
 import re
@@ -25,6 +37,7 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "")  # "owner/repo"
 MODEL = "claude-sonnet-4-6"
 SHOWS_PER_RUN = 10  # rotate through the 30-show database ~3 runs per full pass
+EDITORIAL_PER_RUN = 10  # rotate through embedded TVSeries claims across all pages
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -137,6 +150,78 @@ Respond with ONLY a JSON array, one object per title, in this exact shape:
 No prose outside the JSON."""
 
 
+def claim_hash(claim):
+    """Hash the factual fields of a claim so an edit invalidates prior verification."""
+    fields = {k: claim.get(k) for k in
+              ("description", "startDate", "endDate", "numberOfSeasons", "numberOfEpisodes")}
+    return hashlib.sha256(json.dumps(fields, sort_keys=True).encode()).hexdigest()[:16]
+
+
+def extract_editorial_claims():
+    """Scan every HTML page for schema.org TVSeries entries inside ItemList JSON-LD
+    blocks. Returns a list of dicts: page, name, description, startDate, endDate,
+    numberOfSeasons, numberOfEpisodes (fields present depend on what's in the page)."""
+    claims = []
+    for path in sorted(glob.glob(os.path.join(REPO_ROOT, "*.html"))):
+        page = os.path.basename(path)
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        for match in re.finditer(
+                r'<script type="application/ld\+json">(.*?)</script>', content, re.S):
+            try:
+                data = json.loads(match.group(1))
+            except json.JSONDecodeError:
+                continue
+            if data.get("@type") != "ItemList":
+                continue
+            for item in data.get("itemListElement", []):
+                show = item.get("item", {})
+                if show.get("@type") != "TVSeries":
+                    continue
+                claims.append({
+                    "page": page,
+                    "name": show.get("name"),
+                    "description": show.get("description"),
+                    "startDate": show.get("startDate"),
+                    "endDate": show.get("endDate"),
+                    "numberOfSeasons": show.get("numberOfSeasons"),
+                    "numberOfEpisodes": show.get("numberOfEpisodes"),
+                })
+    return claims
+
+
+def build_editorial_prompt(batch):
+    items = "\n".join(
+        f'- [{c["page"]}] "{c["name"]}": "{c["description"]}"'
+        + (f' (aired {c["startDate"]}\u2013{c["endDate"]})' if c.get("startDate") else "")
+        + (f' ({c["numberOfSeasons"]} seasons)' if c.get("numberOfSeasons") else "")
+        + (f' ({c["numberOfEpisodes"]} episodes)' if c.get("numberOfEpisodes") else "")
+        for c in batch
+    )
+    return f"""You are fact-checking factual claims about British TV shows published
+on a fan site. For each claim below, verify using web search whether the
+description text and any stated air dates / season count / episode count are
+ACCURATE. Flag anything that is wrong, outdated, or unverifiable — including
+misattributed quotes, incorrect production details, or wrong counts.
+
+Claims to check:
+{items}
+
+Respond with ONLY a JSON array, one object per claim, in this exact shape:
+[
+  {{
+    "page": "...",
+    "name": "...",
+    "status": "confirmed" | "issue" | "uncertain",
+    "notes": "short explanation, only needed if status is not confirmed",
+    "sources": ["https://...", "..."]
+  }}
+]
+"confirmed" = everything stated checks out. "issue" = something is wrong,
+outdated, or misattributed. "uncertain" = couldn't verify either way.
+No prose outside the JSON."""
+
+
 def github_api(method, path, data=None):
     url = f"https://api.github.com/repos/{GITHUB_REPOSITORY}/{path}"
     req = urllib.request.Request(url, method=method)
@@ -217,6 +302,74 @@ def main():
                 s["sources"] = match.get("sources", [])
     save_json("shows-database.json", shows)
 
+    # --- Editorial HTML claims (schema.org TVSeries entries embedded in pages) ---
+    editorial_path = os.path.join(REPO_ROOT, "editorial-verified.json")
+    editorial_state = {}
+    if os.path.exists(editorial_path):
+        with open(editorial_path, encoding="utf-8") as f:
+            editorial_state = json.load(f)
+
+    all_claims = extract_editorial_claims()
+    print(f"Found {len(all_claims)} TVSeries claims across all pages.")
+
+    def claim_key(c):
+        return f"{c['page']}::{c['name']}"
+
+    # Prioritize: never-verified or edited-since-last-verification claims first,
+    # then the ones with the oldest verification date.
+    def priority(c):
+        key = claim_key(c)
+        entry = editorial_state.get(key)
+        if entry is None or entry.get("hash") != claim_hash(c):
+            return ("0", "")  # unverified or changed — always first
+        return ("1", entry.get("verified", "1970-01-01"))
+
+    claims_sorted = sorted(all_claims, key=priority)
+    editorial_batch = claims_sorted[:EDITORIAL_PER_RUN]
+
+    editorial_check_failed = False
+    editorial_result = []
+    if editorial_batch:
+        print(f"Checking {len(editorial_batch)} editorial claims: "
+              + ", ".join(f"{c['page']}/{c['name']}" for c in editorial_batch))
+        try:
+            editorial_result = extract_json_block(call_claude(build_editorial_prompt(editorial_batch)))
+        except Exception as e:
+            editorial_check_failed = True
+            print(f"Editorial batch check failed: {e}", file=sys.stderr)
+    else:
+        print("No TVSeries claims found to check.")
+
+    editorial_checked_keys = set()
+    for r in editorial_result:
+        key = f"{r.get('page')}::{r.get('name')}"
+        editorial_checked_keys.add(key)
+        source_claim = next(
+            (c for c in editorial_batch if claim_key(c) == key), None)
+        if r.get("status") == "confirmed":
+            all_confirmed.append(r)
+            editorial_state[key] = {
+                "hash": claim_hash(source_claim) if source_claim else None,
+                "verified": TODAY,
+                "status": "confirmed",
+            }
+        else:
+            all_issues.append({**r, "title": r.get("name"),
+                                "source_file": f"{r.get('page')} (schema.org TVSeries)"})
+            # Still record that it was checked (with today's date) so a
+            # flagged-but-unfixed claim doesn't get re-checked every single
+            # run — it'll surface again once the rotation cycles back, or
+            # immediately once someone edits the description (hash changes).
+            editorial_state[key] = {
+                "hash": claim_hash(source_claim) if source_claim else None,
+                "verified": TODAY,
+                "status": "issue",
+            }
+
+    with open(editorial_path, "w", encoding="utf-8") as f:
+        json.dump(editorial_state, f, indent=2, ensure_ascii=False, sort_keys=True)
+        f.write("\n")
+
     # Log this run
     log_path = os.path.join(REPO_ROOT, "fact-check-log.json")
     log = []
@@ -227,11 +380,13 @@ def main():
         "date": TODAY,
         "shows_checked": sorted(checked_titles),
         "arrivals_checked": [r["title"] for r in arrivals_result],
+        "editorial_checked": sorted(editorial_checked_keys),
         "confirmed_count": len(all_confirmed),
         "issue_count": len(all_issues),
         "issues": all_issues,
         "shows_check_failed": shows_check_failed,
         "arrivals_check_failed": arrivals_check_failed,
+        "editorial_check_failed": editorial_check_failed,
     })
     save_json("fact-check-log.json", log)
 
@@ -258,10 +413,10 @@ def main():
     else:
         print("No issues found this run.")
 
-    # Fail the run loudly if BOTH checks errored out — a green checkmark
+    # Fail the run loudly if ALL THREE checks errored out — a green checkmark
     # should mean verification actually happened, not that it silently no-op'd.
-    if shows_check_failed and arrivals_check_failed:
-        print("Both checks failed to produce results — see errors above.", file=sys.stderr)
+    if shows_check_failed and arrivals_check_failed and editorial_check_failed:
+        print("All checks failed to produce results — see errors above.", file=sys.stderr)
         sys.exit(1)
 
 
