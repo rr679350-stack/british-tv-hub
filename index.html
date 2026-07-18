@@ -1289,7 +1289,10 @@ div[style*="border:1px solid #3d4a60"] {
    is large, scaling it by a percentage can still render large). Excludes
    #backToTop, which happens to share the same position:fixed;bottom;right
    inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
+[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+iframe[id*="chatbase-bubble-button"],
+#chatbase-bubble-button {
   width: 60px !important;
   height: 60px !important;
   max-width: 60px !important;
@@ -1297,7 +1300,10 @@ div[style*="border:1px solid #3d4a60"] {
   overflow: hidden !important;
 }
 @media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop) {
+  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+  iframe[id*="chatbase-bubble-button"],
+  #chatbase-bubble-button {
     width: 50px !important;
     height: 50px !important;
     max-width: 50px !important;
