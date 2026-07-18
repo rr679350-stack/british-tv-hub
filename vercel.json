@@ -15,6 +15,11 @@
       "source": "/dvd.html",
       "destination": "/essentials.html",
       "permanent": true
+    },
+    {
+      "source": "/mysteries.html",
+      "destination": "/shows-index.html",
+      "permanent": true
     }
   ],
   "rewrites": [

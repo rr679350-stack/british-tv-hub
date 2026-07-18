@@ -16,7 +16,6 @@ window.SITE_SEARCH_INDEX = [
   {"title":"British TV FAQ: BritBox, Acorn TV & More","url":"/faq.html"},
   {"title":"What's on PBS Masterpiece","url":"/masterpiece2026.html"},
   {"title":"Meet Tilly","url":"/meet-tilly.html"},
-  {"title":"The Ultimate British Mystery Viewer's Guide","url":"/mysteries.html"},
   {"title":"Partner With Us","url":"/partner.html"},
   {"title":"Match Me a Mystery Quiz","url":"/quiz.html"},
   {"title":"Richard Osman Books in Order","url":"/richard-osman.html"},
