@@ -9,6 +9,38 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-P1L8CVNKS6');
 </script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta charset="UTF-8">
