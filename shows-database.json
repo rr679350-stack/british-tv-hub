@@ -702,18 +702,8 @@
         "tag": "stream"
       }
     ],
-    "uk": [
-      {
-        "name": "BritBox",
-        "tag": "stream"
-      }
-    ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream"
-      }
-    ],
+    "uk": [],
+    "au": [],
     "verified": "2026-07-15",
     "sources": [
       "https://www.justwatch.com/us/tv-show/ballykissangel",
@@ -727,10 +717,6 @@
     "us": [
       {
         "name": "Peacock",
-        "tag": "stream"
-      },
-      {
-        "name": "Netflix",
         "tag": "stream"
       }
     ],
@@ -747,10 +733,6 @@
     "au": [
       {
         "name": "Binge / Foxtel",
-        "tag": "stream"
-      },
-      {
-        "name": "Netflix",
         "tag": "stream"
       }
     ],
@@ -769,10 +751,6 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
-      },
-      {
-        "name": "PBS Masterpiece",
         "tag": "stream"
       }
     ],
@@ -835,10 +813,6 @@
       {
         "name": "BritBox",
         "tag": "stream"
-      },
-      {
-        "name": "Buy on Amazon",
-        "tag": "buy"
       }
     ],
     "uk": [
@@ -866,10 +840,6 @@
     "genre": "Cozy Mystery",
     "us": [
       {
-        "name": "Acorn TV",
-        "tag": "stream"
-      },
-      {
         "name": "BritBox",
         "tag": "stream"
       }
@@ -878,10 +848,6 @@
       {
         "name": "ITVX",
         "tag": "free"
-      },
-      {
-        "name": "BritBox",
-        "tag": "stream"
       }
     ],
     "au": [
@@ -906,12 +872,7 @@
         "tag": "stream"
       }
     ],
-    "uk": [
-      {
-        "name": "BritBox",
-        "tag": "stream"
-      }
-    ],
+    "uk": [],
     "au": [
       {
         "name": "BritBox",
@@ -937,7 +898,7 @@
   },
   {
     "title": "McDonald & Dodds",
-    "years": "2020–present",
+    "years": "2020–2024",
     "genre": "Cozy Mystery",
     "us": [
       {
@@ -984,11 +945,6 @@
     ],
     "uk": [
       {
-        "name": "BBC iPlayer",
-        "tag": "free",
-        "note": "selected"
-      },
-      {
         "name": "BritBox",
         "tag": "stream"
       }
@@ -1014,10 +970,6 @@
       {
         "name": "BritBox",
         "tag": "stream"
-      },
-      {
-        "name": "Buy on Amazon",
-        "tag": "buy"
       }
     ],
     "uk": [
