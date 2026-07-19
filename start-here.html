@@ -81,6 +81,17 @@ gtag('config', 'G-P1L8CVNKS6');
   }
   a{color:inherit;}
 
+  .disclosure{
+    background:var(--ink);
+    color:var(--cream-dim);
+    font-family:'Raleway',sans-serif;
+    font-size:12px;
+    text-align:center;
+    padding:8px 20px;
+    border-bottom:1px solid var(--navy-line);
+  }
+  .disclosure a{color:var(--gold-bright); text-decoration:underline;}
+
   /* ---- hero ---- */
   .sh-hero{
     position:relative; min-height:78vh; display:flex; align-items:center; justify-content:center;
@@ -145,7 +156,7 @@ gtag('config', 'G-P1L8CVNKS6');
   @media (max-width:600px){ .path-grid{ grid-template-columns:1fr; } }
 
   /* ---- still not sure strip ---- */
-  .unsure-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; }
+  .unsure-grid{ display:grid; grid-template-columns:repeat(5, 1fr); gap:20px; }
   .unsure-card{
     background:var(--ink); border:1px solid var(--navy-line); padding:24px 20px; text-align:center;
   }
@@ -157,7 +168,7 @@ gtag('config', 'G-P1L8CVNKS6');
     color:var(--gold-bright); text-decoration:none; border-bottom:1px solid rgba(230,199,120,.4);
   }
   .unsure-card a:hover{ color:var(--gold); border-color:var(--gold); }
-  @media (max-width:900px){ .unsure-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:900px){ .unsure-grid{ grid-template-columns:repeat(3, 1fr); } }
   @media (max-width:560px){ .unsure-grid{ grid-template-columns:1fr; } }
 
   /* ---- first weekend timeline ---- */
@@ -311,6 +322,10 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="disclosure">
+  As an Amazon Associate I earn from qualifying purchases. <a href="#">Full affiliate disclosure</a>
+</div>
+
 <div class="sh-hero">
   <img src="/start-here-hero.webp" alt="A cozy armchair by a window overlooking a British village at sunset" width="1536" height="1024" fetchpriority="high">
   <div class="sh-hero-content">
@@ -402,6 +417,12 @@ document.addEventListener('click', function(e){
       <p>See the one recommendation we're most excited about this month.</p>
       <a href="/essentials.html#pick">See This Month's Pick &rarr;</a>
     </div>
+    <div class="unsure-card">
+      <div class="u-icon">&#128373;&#65039;</div>
+      <h4>Still Can't Decide?</h4>
+      <p>Meet The Telly Detective. Answer a few simple questions, and we'll point you toward the perfect British series to start with.</p>
+      <a href="/telly-detective.html">Meet The Telly Detective &rarr;</a>
+    </div>
   </div>
 </div>
 
@@ -417,6 +438,7 @@ document.addEventListener('click', function(e){
         <div class="weekend-what">Watch</div>
         <h3>Death in Paradise</h3>
         <p>A lighthearted mystery that's welcoming for first-time viewers &mdash; sun, sand, and a body on the beach by episode ten.</p>
+        <a href="https://amzn.to/4wjg7vL" rel="sponsored nofollow" style="display:inline-block; margin-top:10px; font-family:'Raleway',sans-serif; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-bright); text-decoration:none; border-bottom:1px solid rgba(230,199,120,.4);">View on Amazon &rarr;</a>
       </div>
     </div>
     <div class="weekend-item">
@@ -425,6 +447,7 @@ document.addEventListener('click', function(e){
         <div class="weekend-what">Read</div>
         <h3>The First Vera Novel</h3>
         <p>Discover the book behind one of Britain's most beloved detectives, by Ann Cleeves.</p>
+        <a href="https://amzn.to/4wK2YM2" rel="sponsored nofollow" style="display:inline-block; margin-top:10px; font-family:'Raleway',sans-serif; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-bright); text-decoration:none; border-bottom:1px solid rgba(230,199,120,.4);">View on Amazon &rarr;</a>
       </div>
     </div>
     <div class="weekend-item">
@@ -433,6 +456,7 @@ document.addEventListener('click', function(e){
         <div class="weekend-what">Watch</div>
         <h3>Vera</h3>
         <p>Make a cup of tea, settle in, and enjoy one of the finest detective dramas ever made. Then explore <a href="/essentials.html" style="color:var(--gold-bright);">The Snug</a> for even more recommendations.</p>
+        <a href="https://amzn.to/4psnxtN" rel="sponsored nofollow" style="display:inline-block; margin-top:10px; font-family:'Raleway',sans-serif; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold-bright); text-decoration:none; border-bottom:1px solid rgba(230,199,120,.4);">View on Amazon &rarr;</a>
       </div>
     </div>
   </div>
