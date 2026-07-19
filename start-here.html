@@ -321,10 +321,16 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
+<div class="section" id="welcome" style="padding-top:48px; padding-bottom:8px;">
+  <div class="closing" style="max-width:640px;">
+    <h2 style="font-family:'Playfair Display', serif; font-style:italic; color:var(--gold-bright); font-size:26px; margin:0 0 16px;">Welcome!</h2>
+    <p style="color:var(--cream-dim); font-size:18px; line-height:1.75; margin:0;">If this is your first visit, you're in the right place. British TV Hub was created to make discovering great British television simple, enjoyable, and a little less overwhelming. Whether you're here for mysteries, period dramas, or the books behind your favourite shows, we'll point you in the right direction.</p>
+  </div>
+</div>
+
 <div class="section" id="paths">
   <div class="section-head">
-    <span class="kicker">Choose Your Path</span>
-    <h2>What are you in the mood for?</h2>
+    <h2>What Sounds Like You?</h2>
   </div>
   <div class="path-grid">
     <div class="path-card">
@@ -356,6 +362,12 @@ document.addEventListener('click', function(e){
       <h3>Show Me Your Favourites</h3>
       <p>These are the recommendations we return to again and again. If you're only going to watch a few British series, start with these.</p>
       <a class="path-btn" href="/essentials.html">Visit The Snug &rarr;</a>
+    </div>
+    <div class="path-card">
+      <div class="path-icon">&#10084;&#65039;</div>
+      <h3>I'm New to British TV</h3>
+      <p>Not sure where to even begin? We've mapped out the easiest way to fall in love with British television, starting this weekend.</p>
+      <a class="path-btn" href="#weekend">See Your First Weekend &rarr;</a>
     </div>
   </div>
 </div>
@@ -426,12 +438,57 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
+<div class="section" id="trust">
+  <div class="closing">
+    <span class="kicker" style="display:block; margin-bottom:14px;">Why Trust British TV Hub?</span>
+    <h2>One Fan to Another</h2>
+    <p>Every recommendation is personally curated. We focus on quality over quantity, highlighting the mysteries, dramas, books, and hidden gems that are truly worth your time.</p>
+    <p>No endless lists. Just thoughtful recommendations from one British TV fan to another.</p>
+  </div>
+</div>
+
+<div class="section" id="pick-for-me" style="text-align:center;">
+  <div class="section-head">
+    <span class="kicker">Not Sure Yet?</span>
+    <h2>&#127922; Let Us Choose for You</h2>
+  </div>
+  <p class="section-intro">Can't decide? One click, one recommendation.</p>
+  <button type="button" id="pick-for-me-btn" onclick="pickForMe()" style="font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy-deep); background:var(--gold-bright); border:none; padding:15px 28px; cursor:pointer;">&#127922; Pick a Show for Me</button>
+  <div id="pick-for-me-result" style="display:none; max-width:420px; margin:28px auto 0; background:var(--navy); border:1px solid var(--navy-line); padding:26px 24px; text-align:left;">
+    <div style="font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Tonight's Pick</div>
+    <h3 id="pick-for-me-title" style="font-family:'Playfair Display', serif; font-size:22px; margin:0 0 8px;"></h3>
+    <p id="pick-for-me-desc" style="color:var(--cream-dim); font-size:16px; line-height:1.6; margin:0 0 16px;"></p>
+    <a id="pick-for-me-link" href="#" style="display:inline-block; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--navy-deep); background:var(--gold-bright); text-decoration:none; padding:11px 20px;">Watch This &rarr;</a>
+  </div>
+</div>
+<script>
+var pickForMeShows = [
+  {title:"Vera", desc:"Brenda Blethyn's Northumberland detective drama.", href:"/shows/vera.html"},
+  {title:"Shetland", desc:"A moody Scottish mystery from Ann Cleeves.", href:"/shows/shetland.html"},
+  {title:"Midsomer Murders", desc:"England's most dangerous fictional county.", href:"/shows/midsomer-murders.html"},
+  {title:"Death in Paradise", desc:"A lighthearted murder mystery in the Caribbean.", href:"/shows/death-in-paradise.html"},
+  {title:"All Creatures Great and Small", desc:"A Yorkshire Dales veterinary drama.", href:"/shows/all-creatures-great-and-small.html"},
+  {title:"Grantchester", desc:"A vicar-turned-detective drama set in Cambridgeshire.", href:"/shows/grantchester.html"},
+  {title:"Sherlock", desc:"A modern-day take on Conan Doyle's detective.", href:"/shows/sherlock.html"},
+  {title:"Happy Valley", desc:"A gritty Yorkshire police drama.", href:"/shows/happy-valley.html"},
+  {title:"Poldark", desc:"A sweeping Cornish period drama.", href:"/shows/poldark.html"},
+  {title:"Call the Midwife", desc:"A heartfelt drama set in 1950s East London.", href:"/shows/call-the-midwife.html"}
+];
+function pickForMe(){
+  var pick = pickForMeShows[Math.floor(Math.random() * pickForMeShows.length)];
+  document.getElementById('pick-for-me-title').textContent = pick.title;
+  document.getElementById('pick-for-me-desc').textContent = pick.desc;
+  document.getElementById('pick-for-me-link').href = pick.href;
+  document.getElementById('pick-for-me-result').style.display = 'block';
+}
+</script>
+
 <div class="section" id="why">
   <div class="closing">
     <span class="kicker" style="display:block; margin-bottom:14px;">Why British TV?</span>
     <h2>There's No Wrong Place to Begin</h2>
     <p>Everyone discovers British television differently. Some fall in love with <em>Vera</em>. Others begin with <em>All Creatures Great and Small</em>, <em>Death in Paradise</em>, <em>Grantchester</em>, or <em>Shetland</em>.</p>
-    <p>No matter where you start, British TV Hub is here to help you discover what to watch, what to read, where to stream it, and what to explore next.</p>
+    <p>No matter where you start, British TV Hub is here to help you discover what to watch, what to read, where to stream it, and what to explore next. Start with <a href="/shows/vera.html" style="color:var(--gold-bright);">Vera</a>, discover <a href="/shows/shetland.html" style="color:var(--gold-bright);">Shetland</a>, browse our <a href="/books.html" style="color:var(--gold-bright);">Books</a> section, or explore <a href="/essentials.html" style="color:var(--gold-bright);">The Snug</a> for even more recommendations.</p>
     <div class="welcome">Welcome &mdash; we're glad you're here.</div>
   </div>
 </div>
@@ -468,7 +525,7 @@ document.addEventListener('click', function(e){
       <a href="/about.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">About</a>
       <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
     </div>
-    <p class="footer-note">New here? This page is the friendliest place to begin.</p>
+    <p class="footer-note">We'll see you back for your next recommendation.</p>
   </footer>
 
 </body>
