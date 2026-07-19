@@ -1164,6 +1164,13 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
 .nav-search-results a:hover { background: #2c3345; color: #ffffff; }
 .nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+/* Discover dropdown */
+.nav-dropdown{ position:relative; display:inline-block; }
+.nav-dropdown-toggle{ font-family:'Raleway',sans-serif; font-size:13px; padding:22px 14px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; background:transparent; border:none; cursor:pointer; }
+.nav-dropdown-toggle:hover{ color:#ffffff; }
+.nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; }
+.nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
+.nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
 @media (max-width: 1300px) {
   .nav-search-box { right: auto; left: 0; }
 }
@@ -1204,10 +1211,22 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     </a>
   </div>
     <div class="nav-links">
+      <a class="nlink" href="/start-here">Start Here</a>
       <a class="nlink" href="/">Home</a>
       <a class="nlink" href="/shows-index.html">Shows</a>
-      <a class="nlink" href="/streaming.html">Where to Watch</a>      <a class="nlink" href="/shows-index.html#genres">Genres</a>
-      <a class="nlink" href="/books">Bookshelf</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <a href="/shows-index.html#genres">Genres</a>
+          <a href="/telly-detective.html">&#128373;&#65039; Meet The Telly Detective</a>
+          <a href="/shows.html">&#9733; Best Of Guide</a>
+          <a href="/quiz.html">Match Me a Mystery</a>
+          <a href="/meet-tilly.html">Ask Tilly</a>
+        </div>
+      </div>
     </div>
 <div class="nav-search">
       <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269; Search</button>
@@ -1217,14 +1236,21 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       </div>
     </div>
     </div>
-  <div class="nav-actions-row">
-    <a href="/telly-detective.html" style="background:#3d4a60;color:#c9a96e;border:1px solid #c9a96e;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">&#128373;&#65039; Meet The Telly Detective</a>
-    <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
-    <a href="/quiz.html" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Match Me a Mystery</a>
-    <a href="/essentials.html" style="background:#3a6b5c;color:#f5e8d0;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">British TV Essentials</a>
-    <a href="/cozy-guide" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly</a>
-  </div>
 </nav>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'block' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
 
 <div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
   <img src="/top10-hero.webp" alt="Sun Hill Police Station at night with police car" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.1);">
@@ -1648,7 +1674,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     <a href="/shows-index.html#genres" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Genres</a>
     <a href="/books" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Books</a>
     <a href="/agatha-christie.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Agatha Christie</a>
-    <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">British TV Essentials</a>
+    <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">The Snug</a>
     <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">FAQ</a>
     <a href="/shop.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Shop</a>
   </div>
@@ -1670,7 +1696,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   </div>
 
     <div style="margin-bottom:16px;">
-    <a href="/cozy-guide" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:12px 20px;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly →</a>
+    <a href="/meet-tilly.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:12px 20px;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly →</a>
   </div>
 
   <div style="display:flex;gap:10px;justify-content:center;margin:20px 0;flex-wrap:wrap;border-top:1px solid rgba(201,168,76,0.2);padding-top:16px;">

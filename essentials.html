@@ -44,8 +44,8 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>British TV Essentials | British TV Hub</title>
-<meta name="description" content="Shop CozyTVCompanion's British TV essentials — trackers, journals, and companions for British crime drama and cozy mystery fans.">
+<title>The Snug | British TV Hub</title>
+<meta name="description" content="A cozy corner of British TV Hub — the shows we rewatch, the books we press into friends' hands, and the small comforts that make a British mystery evening complete.">
 <link rel="canonical" href="https://britishtvhub.com/essentials.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -221,8 +221,21 @@ gtag('config', 'G-P1L8CVNKS6');
   .recent-list li{ padding:12px 0; border-bottom:1px solid var(--navy-line); display:flex; justify-content:space-between; align-items:center; }
   .recent-list li span.tag{ font-size:10.5px; letter-spacing:.08em; color:var(--gold); text-transform:uppercase; }
 
+  /* themed collections */
+  .collection-block{ margin-bottom:44px; }
+  .collection-block:last-child{ margin-bottom:0; }
+  .collection-title{
+    font-family:'Playfair Display', serif; font-size:20px; margin:0 0 4px;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  .collection-title .collection-why{
+    font-family:'Raleway',sans-serif; font-size:12px; font-weight:400; letter-spacing:.04em;
+    color:var(--cream-dim); font-style:italic;
+  }
+  .collection-block .grid{ margin-top:16px; }
+
   /* gift guides row */
-  .giftgrid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .giftgrid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
   .giftcard{
     display:block; background:var(--navy); border:1px solid var(--navy-line);
     padding:18px 16px; text-decoration:none; text-align:center;
@@ -302,6 +315,13 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
 .nav-search-results a:hover { background: #2c3345; color: #ffffff; }
 .nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+/* Discover dropdown */
+.nav-dropdown{ position:relative; display:inline-block; }
+.nav-dropdown-toggle{ font-family:'Raleway',sans-serif; font-size:13px; padding:22px 14px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; background:transparent; border:none; cursor:pointer; }
+.nav-dropdown-toggle:hover{ color:#ffffff; }
+.nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; }
+.nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
+.nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
 /* Bigger nav tabs on the top row */
 nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px !important; letter-spacing: 1px !important; }
 </style>
@@ -332,10 +352,22 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     </a>
   </div>
     <div class="nav-links">
+      <a class="nlink" href="/start-here">Start Here</a>
       <a class="nlink" href="/">Home</a>
       <a class="nlink" href="/shows-index.html">Shows</a>
-      <a class="nlink" href="/streaming.html">Where to Watch</a>      <a class="nlink" href="/shows-index.html#genres">Genres</a>
-      <a class="nlink on" href="/books">Bookshelf</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink on" href="/essentials.html">The Snug</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <a href="/shows-index.html#genres">Genres</a>
+          <a href="/telly-detective.html">&#128373;&#65039; Meet The Telly Detective</a>
+          <a href="/shows.html">&#9733; Best Of Guide</a>
+          <a href="/quiz.html">Match Me a Mystery</a>
+          <a href="/meet-tilly.html">Ask Tilly</a>
+        </div>
+      </div>
     </div>
 <div class="nav-search">
       <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269; Search</button>
@@ -345,15 +377,21 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       </div>
     </div>
     </div>
-  <div class="nav-actions-row">
-    <a href="/telly-detective.html" style="background:#3d4a60;color:#c9a96e;border:1px solid #c9a96e;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">&#128373;&#65039; Meet The Telly Detective</a>
-    <a href="/telly-detective.html" style="background:#3d4a60;color:#c9a96e;border:1px solid #c9a96e;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">&#128373;&#65039; Meet The Telly Detective</a>
-    <a class="nav-guide-btn" href="/shows.html">&#9733; Best Of Guide</a>
-    <a href="/quiz.html" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Match Me a Mystery</a>
-    <a href="/essentials.html" style="background:#3a6b5c;color:#f5e8d0;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">British TV Essentials</a>
-    <a href="/cozy-guide" style="background:#c9a96e;color:#1a2135;border:none;margin:10px 0 10px 4px;padding:11px 14px;font-size:11px;letter-spacing:1px;font-family:'Raleway',sans-serif;text-transform:uppercase;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly</a>
-  </div>
 </nav>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'block' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
 
 
   <div class="disclosure">
@@ -361,42 +399,23 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   </div>
 
   <header>
-    <div class="eyebrow">British TV Hub Recommends</div>
-    <h1>British TV <em>Essentials</em></h1>
-    <p class="sub">Everything we genuinely recommend for British TV fans &mdash; from the DVD series and novels behind your favourite dramas, to region-free players and cozy viewing essentials.</p>
+    <div class="eyebrow">British TV Hub's Favourites</div>
+    <h1>The <em>Snug</em></h1>
+    <p class="sub">A curated collection of British TV favorites&mdash;beloved mysteries, unforgettable books, streaming picks, and cozy finds. Every recommendation is handpicked because it's something we'd happily share with a fellow fan.</p>
+    <div style="margin-top:18px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-bright); display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+      <span>&#10003; Personally Curated</span>
+      <span>&#10003; Updated Monthly</span>
+    </div>
     <div class="rule"></div>
   </header>
-
-  <div class="pick-wrap">
-    <div class="pick">
-      <span class="pick-badge">This Month's Pick</span>
-      <div class="pick-body">
-        <h2>Vera: Series 10</h2>
-        <div class="pick-why">Why we love it</div>
-        <p>Vera doesn't come as one tidy boxset &mdash; each series stands on its own, and Series 10 is where we'd point a new viewer. Brenda Blethyn's coat-and-hat detective delivers some of the finest character-driven mysteries on television.</p>
-        <a class="btn" href="https://amzn.to/4psnxtN" rel="sponsored nofollow">View on Amazon &rarr;</a>
-        &nbsp;
-        <a class="btn btn-outline" href="#sunday-picks">Get next month's pick by email</a>
-      </div>
-    </div>
-  </div>
-
-  <nav class="sectionnav">
-    <a href="#exclusives">British TV Hub Exclusives</a>
-    <a href="#watch">Watch</a>
-    <a href="#read">Read</a>
-    <a href="#stream">Stream</a>
-    <a href="#cozy">Cozy Corner</a>
-    <a href="#gifts">Gift Guides</a>
-  </nav>
 
   <div class="exclusives" id="exclusives">
     <div class="section">
       <div class="section-head">
         <h2>British TV Hub Exclusives</h2>
-        <span>Exclusively Ours</span>
+        <span>For Fellow Fans</span>
       </div>
-      <p class="section-intro">Before anything else &mdash; our own printable and digital companions for tracking what you've watched, read, and want to get to next.</p>
+      <p class="section-intro">A few things we put together ourselves, for anyone who likes to keep track of what they've watched, read, and want to get to next.</p>
       <div class="grid" id="grid-exclusives">
         <div class="card" data-tags="journal exclusive own product">
           <div class="badge-row"><span class="badge">Editor's Favorite</span></div>
@@ -427,12 +446,36 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     </div>
   </div>
 
+  <div class="pick-wrap" id="pick">
+    <div class="pick">
+      <span class="pick-badge">The Snug Pick</span>
+      <div class="pick-body">
+        <h2>Vera: Series 10</h2>
+        <div class="pick-why">Why we love it</div>
+        <p>Vera doesn't come as one tidy boxset &mdash; each series stands on its own, and Series 10 is where we'd point a new viewer. Brenda Blethyn's coat-and-hat detective delivers some of the finest character-driven mysteries on television.</p>
+        <a class="btn" href="https://amzn.to/4psnxtN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        &nbsp;
+        <a class="btn btn-outline" href="#sunday-picks">Get next month's pick by email</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="sectionnav">
+    <a href="#exclusives">British TV Hub Exclusives</a>
+    <a href="#watch">Watch</a>
+    <a href="#read">Read</a>
+    <a href="#stream">Stream</a>
+    <a href="#cozy">Cozy Corner</a>
+    <a href="#collections">Shop by Theme</a>
+    <a href="#gifts">Gift Guides</a>
+  </nav>
+
   <div class="section" id="watch">
     <div class="section-head">
       <h2>Watch</h2>
       <span>On DVD</span>
     </div>
-    <p class="section-intro">The detective series our readers return to most, and a few classics worth owning outright &mdash; sold series by series unless noted.</p>
+    <p class="section-intro">The detective series we keep coming back to, and a few classics worth having on the shelf.</p>
     <div class="grid" id="grid-watch">
       <div class="card" data-tags="death in paradise box set detective series">
         <div class="badge-row"><span class="badge">Editor's Favorite</span></div>
@@ -470,7 +513,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <h2>Read</h2>
       <span>Books Behind the Shows</span>
     </div>
-    <p class="section-intro">The novels your favourite dramas are based on &mdash; a natural next stop once you've finished the series.</p>
+    <p class="section-intro">The novels behind your favourite dramas &mdash; lovely for curling up with once you've finished watching.</p>
     <div class="grid two" id="grid-read">
       <div class="card" data-tags="vera ann cleeves books behind the shows">
         <div class="badge-row"><span class="badge">Based on the TV Series</span></div>
@@ -518,7 +561,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <h2>Stream</h2>
       <span>Where to Watch</span>
     </div>
-    <p class="section-intro">The subscriptions our community actually uses &mdash; and where each one is worth it.</p>
+    <p class="section-intro">The subscriptions we actually use ourselves, and where each one earns its place.</p>
     <div class="grid" id="grid-stream">
       <div class="card" data-tags="britbox subscription stream">
         <div class="badge-row"><span class="badge">Editor's Favorite</span></div>
@@ -549,7 +592,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <h2>Cozy Corner</h2>
       <span>Set the Scene</span>
     </div>
-    <p class="section-intro">Not tied to any one show &mdash; just the essentials for the exact mood these dramas are made to be watched in.</p>
+    <p class="section-intro">Not tied to any one show &mdash; just the little things that make an evening of British telly feel complete.</p>
     <div class="grid" id="grid-cozy">
       <div class="card" data-tags="tea cozy corner">
         <h3>Twinings English Breakfast Tea</h3>
@@ -571,20 +614,120 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     </div>
   </div>
 
+  <div class="section" id="collections">
+    <div class="section-head">
+      <h2>Shop by Theme</h2>
+      <span>Curated Collections</span>
+    </div>
+    <p class="section-intro">The same favourites from above, grouped the way we'd actually reach for them.</p>
+
+    <div class="collection-block">
+      <h3 class="collection-title">British Cozy Starter Collection <span class="collection-why">everything for your first cozy night in</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="british cozy starter collection">
+          <h3>Vera: Series 10</h3>
+          <p>Brenda Blethyn's coat-and-hat detective &mdash; the series we'd point a new viewer to first.</p>
+          <a class="card-link" href="https://amzn.to/4psnxtN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="british cozy starter collection">
+          <h3>Shetland: Seasons 3&ndash;5</h3>
+          <p>Ann Cleeves' other great detective, set against some of the bleakest, most beautiful scenery on TV.</p>
+          <a class="card-link" href="https://amzn.to/4vwOcXV" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="british cozy starter collection">
+          <h3>Twinings English Breakfast Tea</h3>
+          <p>The tea most mentioned in our comments during Sunday marathon watches.</p>
+          <a class="card-link" href="https://amzn.to/4fdyXgj" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="british cozy starter collection">
+          <h3>Chunky Knit Throw Blanket</h3>
+          <p>For the long Vera-and-a-blanket evenings.</p>
+          <a class="card-link" href="https://amzn.to/44n66RN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="british cozy starter collection">
+          <h3>Mystery Tracker &amp; Casebook</h3>
+          <p>Track clues, suspects, and your own guesses show by show &mdash; built for the way our community actually watches.</p>
+          <a class="card-link" href="https://www.etsy.com/listing/4515914484" rel="sponsored nofollow">View on Etsy &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <h3 class="collection-title">The Cozy Crime Collection <span class="collection-why">gentle mysteries, no grit required</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="cozy crime collection">
+          <h3>Midsomer Murders: Set 1</h3>
+          <p>The village where nobody is safe at the fete. A gentle place to start the whole catalogue.</p>
+          <a class="card-link" href="https://amzn.to/4yitCNj" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="cozy crime collection">
+          <h3>The Marlow Murder Club &rarr; Robert Thorogood</h3>
+          <p>The book series behind one of the newest additions to the cozy-mystery world.</p>
+          <a class="card-link" href="https://amzn.to/4f0aagP" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="cozy crime collection">
+          <h3>Magpie Murders &rarr; Anthony Horowitz</h3>
+          <p>A mystery inside a mystery &mdash; the novel that inspired the show's clever double structure.</p>
+          <a class="card-link" href="https://amzn.to/4gFXMUF" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="cozy crime collection">
+          <h3>Mystery Tracker &amp; Casebook</h3>
+          <p>Track clues, suspects, and your own guesses show by show &mdash; built for the way our community actually watches.</p>
+          <a class="card-link" href="https://www.etsy.com/listing/4515914484" rel="sponsored nofollow">View on Etsy &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <h3 class="collection-title">A Cozy Night In Collection <span class="collection-why">tea, a blanket, and a good mystery</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="sunday night collection">
+          <h3>Twinings English Breakfast Tea</h3>
+          <p>The tea most mentioned in our comments during Sunday marathon watches.</p>
+          <a class="card-link" href="https://amzn.to/4fdyXgj" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night collection">
+          <h3>Chunky Knit Throw Blanket</h3>
+          <p>For the long Vera-and-a-blanket evenings.</p>
+          <a class="card-link" href="https://amzn.to/44n66RN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night collection">
+          <h3>Vera: Series 10</h3>
+          <p>Brenda Blethyn's coat-and-hat detective &mdash; the series we'd point a new viewer to first.</p>
+          <a class="card-link" href="https://amzn.to/4psnxtN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night collection">
+          <h3>My Cozy Reading &amp; Watching Log</h3>
+          <p>For tracking the novels behind the dramas &mdash; and everything else on your British mystery reading list.</p>
+          <a class="card-link" href="https://www.etsy.com/listing/4516011360" rel="sponsored nofollow">View on Etsy &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="section" id="gifts" style="padding-bottom:10px;">
     <div class="section-head">
       <h2>Gift Guides</h2>
       <span>Curated for Occasions</span>
     </div>
+    <p class="section-intro">A few ideas, gathered by mood, if you're picking out something for a fellow fan &mdash; or treating yourself.</p>
     <div class="giftgrid">
-      <a class="giftcard" href="#watch">Gifts for British Mystery Fans</a>
-      <a class="giftcard" href="/books.html">Gifts for Book Lovers</a>
-      <a class="giftcard" href="#cozy">Gifts for Tea Lovers</a>
-      <a class="giftcard" href="/agatha-christie.html">Agatha Christie Fans</a>
+      <a class="giftcard" href="/essentials.html#cozy">Gifts Under $25</a>
+      <a class="giftcard" href="/essentials.html#read">Gifts Under $50</a>
+      <a class="giftcard" href="/books-like-vera.html">Best Gifts for Vera Fans</a>
+      <a class="giftcard" href="/agatha-christie.html">Best Gifts for Agatha Christie Readers</a>
+      <a class="giftcard" href="/best-british-cozy-mysteries.html">Gifts for Cozy Mystery Fans</a>
+      <a class="giftcard" href="/books.html">Gifts for British Book Lovers</a>
     </div>
   </div>
 
-  <p class="trust">Every recommendation on this page has been selected because it's something we've watched, read, or regularly recommend to the British TV Hub community. We only feature products we genuinely think our readers will enjoy.</p>
+  <div class="section" id="community" style="text-align:center; padding-top:50px; padding-bottom:20px;">
+    <div class="section-head" style="justify-content:center; border-bottom:none; margin-bottom:16px;">
+      <h2>Stop By Anytime</h2>
+    </div>
+    <p class="section-intro" style="margin-left:auto; margin-right:auto; text-align:center;">If you'd like more company, we chat about books, mysteries, and cozy favourites every day over on Facebook &mdash; no obligation, just good conversation.</p>
+    <a class="btn btn-outline" href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">Join The Ultimate British Bookshelf &rarr;</a>
+  </div>
 
   <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:28px 40px;text-align:center;">
     <!-- Group: Explore -->
@@ -596,7 +739,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <a href="/shows-index.html#genres" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Genres</a>
       <a href="/books" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Books</a>
       <a href="/agatha-christie.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Agatha Christie</a>
-      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">British TV Essentials</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">The Snug</a>
       <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">FAQ</a>
       <a href="/shop.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Shop</a>
     </div>
@@ -605,6 +748,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Community</div>
     <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin-bottom:16px;">
       <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Facebook</a>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Bookshelf Group</a>
       <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Membership</a>
       <a href="/#nl-anchor" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Newsletter</a>
       <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Contact</a>
@@ -616,7 +760,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <a href="/about.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">About</a>
       <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;">Partner Info</a>
     </div>
-    <p class="footer-note">Updated every Sunday alongside the Sunday Picks newsletter.</p>
+    <p class="footer-note">The Snug is British TV Hub's curated collection of British TV recommendations, mystery novels, DVDs, and cozy viewing essentials. Updated every Sunday alongside the Sunday Picks newsletter.</p>
   </footer>
 
 </body>
