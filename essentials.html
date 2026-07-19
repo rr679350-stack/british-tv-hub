@@ -221,6 +221,19 @@ gtag('config', 'G-P1L8CVNKS6');
   .recent-list li{ padding:12px 0; border-bottom:1px solid var(--navy-line); display:flex; justify-content:space-between; align-items:center; }
   .recent-list li span.tag{ font-size:10.5px; letter-spacing:.08em; color:var(--gold); text-transform:uppercase; }
 
+  /* themed collections */
+  .collection-block{ margin-bottom:44px; }
+  .collection-block:last-child{ margin-bottom:0; }
+  .collection-title{
+    font-family:'Playfair Display', serif; font-size:20px; margin:0 0 4px;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  .collection-title .collection-why{
+    font-family:'Raleway',sans-serif; font-size:12px; font-weight:400; letter-spacing:.04em;
+    color:var(--cream-dim); font-style:italic;
+  }
+  .collection-block .grid{ margin-top:16px; }
+
   /* gift guides row */
   .giftgrid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
   .giftcard{
@@ -452,6 +465,7 @@ document.addEventListener('click', function(e){
     <a href="#read">Read</a>
     <a href="#stream">Stream</a>
     <a href="#cozy">Cozy Corner</a>
+    <a href="#collections">Shop by Theme</a>
     <a href="#gifts">Gift Guides</a>
   </nav>
 
@@ -595,6 +609,113 @@ document.addEventListener('click', function(e){
         <h3>Region-Free DVD Player</h3>
         <p>The one accessory that unlocks every UK-only release we mention.</p>
         <a class="card-link" href="https://amzn.to/4vryzko" rel="sponsored nofollow">View on Amazon &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="collections">
+    <div class="section-head">
+      <h2>Shop by Theme</h2>
+      <span>Curated Collections</span>
+    </div>
+    <p class="section-intro">The same favourites from above, grouped the way we'd actually reach for them.</p>
+
+    <div class="collection-block">
+      <h3 class="collection-title">Ann Cleeves Essentials <span class="collection-why">for Vera &amp; Shetland fans</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="ann cleeves collection">
+          <h3>Shetland: Seasons 3&ndash;5</h3>
+          <p>Ann Cleeves' other great detective, set against some of the bleakest, most beautiful scenery on TV.</p>
+          <a class="card-link" href="https://amzn.to/4vwOcXV" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="ann cleeves collection">
+          <h3>Vera &rarr; The Ann Cleeves Novels</h3>
+          <p>The books that started it all &mdash; more Vera cases than the show has had time to film.</p>
+          <a class="card-link" href="https://amzn.to/4wK2YM2" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="ann cleeves collection">
+          <h3>British Crime Drama Tracker</h3>
+          <p>A watch list and investigation journal for tracking every British crime drama case, clue by clue.</p>
+          <a class="card-link" href="https://www.etsy.com/listing/4517658257" rel="sponsored nofollow">View on Etsy &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <h3 class="collection-title">Sunday Night In <span class="collection-why">tea, a blanket, and a village mystery</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="sunday night in collection">
+          <h3>Midsomer Murders: Set 1</h3>
+          <p>The village where nobody is safe at the fete. A gentle place to start the whole catalogue.</p>
+          <a class="card-link" href="https://amzn.to/4yitCNj" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night in collection">
+          <h3>Twinings English Breakfast Tea</h3>
+          <p>The tea most mentioned in our comments during Sunday marathon watches.</p>
+          <a class="card-link" href="https://amzn.to/4fdyXgj" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night in collection">
+          <h3>Chunky Knit Throw Blanket</h3>
+          <p>For the long Vera-and-a-blanket evenings.</p>
+          <a class="card-link" href="https://amzn.to/44n66RN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="sunday night in collection">
+          <h3>My Cozy Reading &amp; Watching Log</h3>
+          <p>For tracking the novels behind the dramas &mdash; and everything else on your British mystery reading list.</p>
+          <a class="card-link" href="https://www.etsy.com/listing/4516011360" rel="sponsored nofollow">View on Etsy &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <h3 class="collection-title">Read Before You Watch Starter Kit <span class="collection-why">the novels behind five favourites</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="read before you watch collection">
+          <h3>Lewis &rarr; The Inspector Morse Novels</h3>
+          <p>Colin Dexter's originals, for readers who want Morse's Oxford in prose as well as on screen.</p>
+          <a class="card-link" href="https://amzn.to/4vwOxKb" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="read before you watch collection">
+          <h3>Grantchester &rarr; The Sidney Chambers Books</h3>
+          <p>James Runcie's vicar-detective stories, the source material behind every Grantchester season.</p>
+          <a class="card-link" href="https://amzn.to/4vwzLTN" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="read before you watch collection">
+          <h3>Dalgliesh &rarr; The P.D. James Novels</h3>
+          <p>The poetry-writing detective's original cases, for fans who want the denser, literary version.</p>
+          <a class="card-link" href="https://amzn.to/4f1ltWg" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="read before you watch collection">
+          <h3>Magpie Murders &rarr; Anthony Horowitz</h3>
+          <p>A mystery inside a mystery &mdash; the novel that inspired the show's clever double structure.</p>
+          <a class="card-link" href="https://amzn.to/4gFXMUF" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="read before you watch collection">
+          <h3>The Marlow Murder Club &rarr; Robert Thorogood</h3>
+          <p>The book series behind one of the newest additions to the cozy-mystery world.</p>
+          <a class="card-link" href="https://amzn.to/4f0aagP" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-block">
+      <h3 class="collection-title">Classic Whodunit Marathon <span class="collection-why">imported series, sorted</span></h3>
+      <div class="grid">
+        <div class="card" data-tags="classic whodunit collection">
+          <h3>Agatha Christie's Poirot: Series 13</h3>
+          <p>Every case, every moustache twitch &mdash; the latest series, with the rest sold separately by series.</p>
+          <a class="card-link" href="https://amzn.to/4fawUJR" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="classic whodunit collection">
+          <h3>Death in Paradise: Season 14</h3>
+          <p>Sun, sand, and a body on the beach by episode ten &mdash; the latest series to hit DVD.</p>
+          <a class="card-link" href="https://amzn.to/4wjg7vL" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
+        <div class="card" data-tags="classic whodunit collection">
+          <h3>Region-Free DVD Player</h3>
+          <p>The one accessory that unlocks every UK-only release we mention.</p>
+          <a class="card-link" href="https://amzn.to/4vryzko" rel="sponsored nofollow">View on Amazon &rarr;</a>
+        </div>
       </div>
     </div>
   </div>
