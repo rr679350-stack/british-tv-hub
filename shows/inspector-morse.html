@@ -217,6 +217,22 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   "url": "https://britishtvhub.com/shows/inspector-morse.html"
 }
 </script>
+<style>
+/* Mobile nav fix */
+@media (max-width:640px){
+  nav.site-nav-std{ position:static !important; padding:8px 12px !important; }
+  .nav-top-row{ grid-template-columns:1fr !important; row-gap:4px; }
+  .nav-brand{ justify-self:center !important; padding:6px 0 !important; }
+  .nav-brand img{ height:38px !important; }
+  .nav-links{ flex-wrap:wrap !important; justify-content:center !important; row-gap:0 !important; column-gap:0 !important; }
+  nav.site-nav-std .nlink, .nlink{ font-size:10.5px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
+  .nav-dropdown-toggle{ padding:7px 6px !important; }
+  .nav-search{ justify-self:center !important; margin-top:2px; }
+  .nav-search-toggle{ padding:7px 12px !important; font-size:10px !important; }
+  .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
+}
+</style>
+
 </head>
 <body>
 
