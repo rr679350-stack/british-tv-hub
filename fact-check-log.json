@@ -276,5 +276,268 @@
     ],
     "shows_check_failed": false,
     "arrivals_check_failed": false
+  },
+  {
+    "date": "2026-07-20",
+    "shows_checked": [
+      "Broadchurch",
+      "Death in Paradise",
+      "Endeavour",
+      "Happy Valley",
+      "Inspector Morse",
+      "Lewis",
+      "Line of Duty",
+      "Midsomer Murders",
+      "Shetland",
+      "Vera"
+    ],
+    "arrivals_checked": [
+      "Inspector Ellis (Season 2) — Acorn TV highlight & arrival, July 6",
+      "The Ridge (Series 1) — Acorn TV arrival, July 27",
+      "Harry Wild (Season 5) — Acorn TV arrival, premiered June 22, new episodes weekly, finale July 27",
+      "Murdoch Mysteries (Season 19) — Acorn TV arrival, in final weeks, season finale July 20",
+      "You're Killing Me (Series 1) — Acorn TV arrival, full season now streaming",
+      "Gone (Series 1) — BritBox highlight & arrival, BritBox Exclusive, North America Premiere, July 23",
+      "A Woman of Substance (Series 1) — BritBox arrival, premiered June 24, new episodes Wednesdays, finale August 5",
+      "Grace (Season 6) — BritBox arrival, July 2",
+      "Return to Paradise (Season 2) — BritBox arrival, July 14",
+      "Escape to the Country (Season 33) — BritBox arrival, July 10"
+    ],
+    "editorial_checked": [
+      "agatha-christie.html::Agatha Christie's Marple",
+      "agatha-christie.html::Agatha Christie's Poirot",
+      "agatha-christie.html::And Then There Were None",
+      "agatha-christie.html::Ordeal by Innocence",
+      "agatha-christie.html::The ABC Murders",
+      "agatha-christie.html::The Pale Horse",
+      "agatha-christie.html::The Seven Dials Mystery",
+      "agatha-christie.html::Why Didn't They Ask Evans?",
+      "agatha-christie.html::Witness for the Prosecution",
+      "cozy.html::Miss Marple"
+    ],
+    "confirmed_count": 12,
+    "issue_count": 18,
+    "issues": [
+      {
+        "title": "Vera",
+        "status": "issue",
+        "notes": "Year range (2011–2025) is correct. US streaming on BritBox and BritBox via Amazon is confirmed. UK streaming on ITVX is confirmed. However, AU streaming is listed as 'BritBox, Foxtel / Binge' — sources confirm BritBox is the primary AU streamer for all 14 seasons, and while Foxtel carries some seasons, no evidence was found that Binge (a separate Foxtel-owned service) currently carries Vera. The AU listing may be partially inaccurate by including Binge explicitly, and omitting that Foxtel is confirmed. Additionally, UK listing omits that BritBox UK was absorbed into ITVX Premium in April 2024 and no longer exists as a standalone UK platform.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/vera",
+          "https://www.newidea.com.au/entertainment/where-to-watch-vera-australia/",
+          "https://www.whattowatch.com/news/watch-vera-season-14-online-stream-final-episodes",
+          "https://en.wikipedia.org/wiki/ITVX"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Midsomer Murders",
+        "status": "issue",
+        "notes": "The show is ongoing (1997–present) so year range is fine. US: Acorn TV is confirmed as the primary US streamer (with exclusive new seasons); BritBox Amazon Channel is also listed on JustWatch, so both US platforms are plausible. UK: ITVX is confirmed; however, BritBox UK ceased to exist as a standalone platform in April 2024 and was absorbed into ITVX Premium — the guide should not list 'BritBox' as a separate UK platform. AU: Acorn TV and BritBox AU — JustWatch AU does not prominently list BritBox as a current AU streamer for Midsomer Murders, and Acorn TV holds exclusive new season rights in the US/Canada but AU rights are unclear; this listing is uncertain.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/midsomer-murders",
+          "https://www.mediaplaynews.com/acorn-tv-on-dec-8-to-start-streaming-25th-season-of-british-crime-drama-midsomer-murders/",
+          "https://www.justwatch.com/uk/tv-series/midsomer-murders",
+          "https://en.wikipedia.org/wiki/ITVX"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Happy Valley",
+        "status": "issue",
+        "notes": "Year range (2014–2023) is correct. US: The guide lists 'AMC+ / Acorn TV' — AMC+ and Acorn TV were correct for season 3 in 2023, but as of August 2025, BritBox has acquired all three seasons for the US. JustWatch US now lists BritBox (not AMC+) as the primary subscription streamer. The US listing is outdated. UK: BBC iPlayer is confirmed; Netflix is listed, but Happy Valley was removed from Netflix UK in March 2020 — it is NOT currently on Netflix UK; BBC iPlayer is the correct UK platform. AU: BritBox and Stan are both confirmed AU streamers.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/happy-valley",
+          "https://screenrant.com/happy-valley-streaming-release-date-august-2025/",
+          "https://www.justwatch.com/uk/tv-series/happy-valley",
+          "https://en.wikipedia.org/wiki/Happy_Valley_(TV_series)",
+          "https://www.flicks.com.au/tv/happy-valley-season-1/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Inspector Morse",
+        "status": "issue",
+        "notes": "Year range (1987–2000) is correct. US: BritBox only — confirmed by JustWatch US. UK: The guide lists 'ITVX, BritBox' — ITVX is confirmed; however, BritBox UK ceased to exist as a standalone platform in April 2024 (absorbed into ITVX Premium tier). It should not be listed as a separate UK platform alongside ITVX. AU: BritBox AU is confirmed (some seasons via Flicks). The UK dual-listing of ITVX and BritBox as separate services is inaccurate post-April 2024.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/inspector-morse",
+          "https://www.justwatch.com/uk/tv-series/inspector-morse",
+          "https://www.flicks.com.au/tv/inspector-morse-season-6/",
+          "https://en.wikipedia.org/wiki/ITVX"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Endeavour",
+        "status": "issue",
+        "notes": "Year range (2012–2023) is correct. US: PBS Masterpiece is confirmed; BritBox is listed but JustWatch US currently shows PBS/PBS Masterpiece as the primary streamer — BritBox does not prominently appear as a current US home for Endeavour on JustWatch. UK: ITVX is confirmed; BritBox UK is listed but it ceased to exist as a standalone UK platform in April 2024 (absorbed into ITVX Premium). AU: BritBox AU is confirmed; Foxtel/Binge also carry it per Flicks.com.au, but the guide only lists BritBox which is the main platform.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/endeavour",
+          "https://www.pbs.org/wgbh/masterpiece/shows/endeavour/",
+          "https://www.justwatch.com/uk/tv-series/endeavour",
+          "https://en.wikipedia.org/wiki/ITVX",
+          "https://www.flicks.com.au/tv/endeavour-series-1/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Lewis",
+        "status": "issue",
+        "notes": "Year range (2006–2015) is correct. US: JustWatch US lists BritBox as a current streamer; PBS Masterpiece is also cited in older sources for season 9 — plausible but uncertain if both are currently active. UK: ITVX is confirmed (ITV.com hosts Lewis); BritBox UK is listed separately but ceased to exist as a standalone UK platform in April 2024 (absorbed into ITVX Premium). AU: BritBox AU is not prominently confirmed on current AU JustWatch listings; the show appears on Flicks as available to buy but not clearly on BritBox AU subscription.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/lewis",
+          "https://www.itv.com/watch/lewis/L1299",
+          "https://en.wikipedia.org/wiki/ITVX"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Broadchurch",
+        "status": "issue",
+        "notes": "Year range (2013–2017) is correct. US: Netflix returned to US on November 1, 2025 (confirmed); Peacock is confirmed; PBS Masterpiece is confirmed — so all three US platforms check out. UK: The guide lists 'Netflix, Buy on Amazon / Apple' — Netflix UK did add Broadchurch in November 2025 (confirmed); however ITVX also streams it and is not mentioned. The listing is incomplete for UK (missing ITVX) but Netflix UK is now accurate. AU: BritBox AU is confirmed; '10 play' (free) is also confirmed on JustWatch AU and Flicks — so AU listing checks out. The main issue is the UK listing omitting ITVX.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/broadchurch",
+          "https://www.whats-on-netflix.com/news/broadchurch-returning-to-netflix/",
+          "https://www.justwatch.com/au/tv-show/broadchurch",
+          "https://www.hellorayo.co.uk/mfr/entertainment/television/broadchurch",
+          "https://www.flicks.com.au/tv/broadchurch-series-1/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Line of Duty",
+        "status": "issue",
+        "notes": "Year range (2012–2021) is now outdated — Series 7 was confirmed by the BBC on 18 November 2025 and is in production, so the end date of '2021' is no longer accurate; it should be listed as '2012–present' or '2012–'. US: BritBox is confirmed as the exclusive US home for series 6 and future series; Hulu held early seasons but is not a current confirmed streamer — the guide's inclusion of Hulu is outdated. UK: BBC iPlayer is confirmed; Netflix UK re-added all six series on 27 June 2025, so Netflix UK is now accurate. AU: The guide lists 'BritBox, Netflix' — AU JustWatch lists Stan (not Netflix) and BritBox/Foxtel/Binge; Netflix AU does not appear to currently carry it. The AU Netflix claim is incorrect; Stan is the correct AU platform.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Line_of_Duty",
+          "https://www.justwatch.com/us/tv-show/line-of-duty",
+          "https://www.justwatch.com/uk/tv-series/line-of-duty",
+          "https://www.justwatch.com/au/tv-show/line-of-duty",
+          "https://www.hellorayo.co.uk/news/entertainment/television/line-of-duty-netflix",
+          "https://www.cyberghostvpn.com/privacyhub/how-to-watch-line-of-duty/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Shetland",
+        "status": "issue",
+        "notes": "Year range (2013–present) is correct (Series 10 aired in late 2025, Series 11 commissioned). US: BritBox only — confirmed by JustWatch US. UK: BBC iPlayer is confirmed; BritBox UK is listed separately but ceased to exist as a standalone UK platform in April 2024 (absorbed into ITVX Premium). Additionally, the show is on BBC iPlayer (and Sky Go), not BritBox UK as a separate entity. AU: BritBox AU is confirmed as the primary streamer for all seasons.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/shetland",
+          "https://en.wikipedia.org/wiki/Shetland_(TV_series)",
+          "https://en.wikipedia.org/wiki/ITVX",
+          "https://www.tomsguide.com/entertainment/streaming/watch-shetland-season-10-free"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Death in Paradise",
+        "status": "issue",
+        "notes": "Year range (2011–present) is correct (Season 15 aired in early 2026, show renewed through at least 2028). US: BritBox only — confirmed as the US home for all seasons. UK: BBC iPlayer is confirmed; BritBox UK is listed separately, but BritBox UK ceased to exist as a standalone platform in April 2024 (absorbed into ITVX Premium). It should not be listed as a separate UK platform. AU: BritBox AU is confirmed; however, sources also indicate Binge carries it in Australia (per WhatToWatch and JustWatch AU), so listing only BritBox AU is incomplete.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/death-in-paradise",
+          "https://www.techradar.com/how-to-watch/tv-shows/death-in-paradise-season-15-free",
+          "https://en.wikipedia.org/wiki/Death_in_Paradise",
+          "https://www.whattowatch.com/news/how-to-watch-death-in-paradise-online-anywhere-in-the-world-636250",
+          "https://en.wikipedia.org/wiki/ITVX"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "You're Killing Me (Series 1) — Acorn TV arrival, full season now streaming",
+        "status": "issue",
+        "notes": "The series premiered May 18, 2026 with weekly episodes, and the 6-episode season finale aired June 22, 2026. As of July 20, the full season is indeed now streaming, so the 'full season now streaming' claim is accurate for today's date. However, the guide implies it is a current highlight rather than a completed run — the show finished its weekly rollout on June 22.",
+        "sources": [
+          "https://www.comicbasics.com/brooke-shields-youre-killing-me-episode-titles-and-full-release-schedule-revealed/",
+          "https://www.amcglobalmedia.com/2026/05/29/acorn-tv-renews-record-breaking-murder-mystery-series-youre-killing-me-starring-and-executive-produced-by-brooke-shields/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "Gone (Series 1) — BritBox highlight & arrival, BritBox Exclusive, North America Premiere, July 23",
+        "status": "issue",
+        "notes": "The July 23 North America premiere date and 'BritBox Exclusive' label are confirmed by multiple official sources. However, the guide labels it only as 'BritBox Exclusive,' omitting that it is also officially designated a 'BritBox Original' in all official BritBox press materials. The distinction matters: it was produced for ITV in the UK first, airing in February 2026, so the 'Original' designation is specifically for North America. The 'Exclusive' label alone is not wrong but is incomplete.",
+        "sources": [
+          "https://thebritishtvplace.com/2026/06/gone-britbox-sets-premiere-date-for-mystery-series-starring-david-morrissey-eve-myles/",
+          "https://www.vitalthrills.com/britbox-july-2026/",
+          "https://film-book.com/britbox-july-2026-schedule-new-movies-tv-shows/"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "title": "Grace (Season 6) — BritBox arrival, July 2",
+        "status": "issue",
+        "notes": "Grace Season 6 premiered on ITV in the UK on March 29, 2026. Multiple sources confirm it will not arrive on BritBox in the US until early 2027, following the typical ~11-month delay for this non-BritBox-Original series. No credible source places it on BritBox in July 2026. The Wikipedia entry for Grace notes that Season 5 arrived on BritBox from July 2, 2024 — the July 2 date in the guide likely refers to Season 5, not Season 6.",
+        "sources": [
+          "https://www.tellyvisions.org/will-there-be-a-grace-season-7/",
+          "https://en.wikipedia.org/wiki/Grace_(TV_series)",
+          "https://blog.reelgood.com/how-to-watch-grace-season-6-in-the-us"
+        ],
+        "source_file": "acorn-new.json / britbox-new.json"
+      },
+      {
+        "page": "agatha-christie.html",
+        "name": "And Then There Were None",
+        "status": "issue",
+        "notes": "The description says the strangers are 'lured to an island', which is broadly accurate, but more precisely they are 'invited' (not all were lured in the same way). More significantly, the description says they are 'murdered one by one', which is accurate in spirit. However, the plot summary omits that they are accused of past crimes before being killed — a key plot point. The number 'ten' is correct. This is a minor framing issue rather than a clear factual error, so 'confirmed' could also apply; however the word 'lured' is a slight inaccuracy — in the source material they are 'invited', not universally lured.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/And_Then_There_Were_None_(TV_series)",
+          "https://agathachristie.fandom.com/wiki/And_Then_There_Were_None_(2015_television_adaptation)"
+        ],
+        "title": "And Then There Were None",
+        "source_file": "agatha-christie.html (schema.org TVSeries)"
+      },
+      {
+        "page": "agatha-christie.html",
+        "name": "The ABC Murders",
+        "status": "issue",
+        "notes": "John Malkovich does star as Poirot, but the description calls him 'aging' — in the show Poirot is depicted as older and somewhat forgotten, so that is fair. More importantly, the serial killer works through the alphabet by location and victim name initials, not literally 'through the alphabet' in a simple sense, but this is a reasonable shorthand. The claim is broadly accurate. However, a factual note: the show aired on BBC (not ITV), which the fan site may be implying is an ITV production given the page context. No explicit network error is stated in the claim itself, so no issue there. The description is essentially confirmed.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/The_ABC_Murders_(TV_series)",
+          "https://www.agathachristie.com/en/film-and-tv/the-abc-murders"
+        ],
+        "title": "The ABC Murders",
+        "source_file": "agatha-christie.html (schema.org TVSeries)"
+      },
+      {
+        "page": "agatha-christie.html",
+        "name": "Ordeal by Innocence",
+        "status": "issue",
+        "notes": "The description says 'a wrongful conviction is called into question', but in the show (and novel) the convicted man (Jack Argyll) has already died in prison — an alibi emerges posthumously, meaning the conviction is proved wrongful after the fact. The central drama is that someone else in the family must be the real murderer. The phrase 'wrongful conviction is called into question' is imprecise and slightly misleading: the conviction is not merely 'called into question' — it is established as wrongful, redirecting suspicion to the family. A more accurate description would note that a posthumous alibi proves the convicted man innocent, throwing the family into turmoil.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Ordeal_by_Innocence_(TV_series)",
+          "https://www.agathachristie.com/en/film-and-tv/ordeal-by-innocence"
+        ],
+        "title": "Ordeal by Innocence",
+        "source_file": "agatha-christie.html (schema.org TVSeries)"
+      },
+      {
+        "page": "agatha-christie.html",
+        "name": "The Pale Horse",
+        "status": "issue",
+        "notes": "The description says 'a dealer in antiquities is drawn into a web of witchcraft and murder.' In the 2020 BBC adaptation, the lead character Mark Easterbrook is described as a 'widowed antique dealer' (or in the TV version an antiquities-linked character), so the 'dealer in antiquities' detail is partially correct. However, the witchcraft element is accurate. The more significant issue: in the original novel the protagonist is not primarily a 'dealer in antiquities' — he is a historian/writer. In the BBC TV adaptation, Zachariah Osborne (played by Bertie Carvel) is actually the enigmatic antique dealer, while the protagonist Mark Easterbrook is the one drawn into the mystery. The description misattributes the 'dealer in antiquities' role to the protagonist.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/The_Pale_Horse_(TV_series)",
+          "https://www.agathachristie.com/en/film-and-tv/the-pale-horse"
+        ],
+        "title": "The Pale Horse",
+        "source_file": "agatha-christie.html (schema.org TVSeries)"
+      },
+      {
+        "page": "agatha-christie.html",
+        "name": "The Seven Dials Mystery",
+        "status": "issue",
+        "notes": "The description says 'a string of alarm clocks and a murder', but in both the novel and adaptations there is specifically one set of eight alarm clocks (placed as a prank), not 'a string' of separate incidents. Additionally, the most recent major TV adaptation (Netflix, January 2026, titled 'Agatha Christie's Seven Dials') is not a BBC or ITV production. The original 1981 LWT adaptation is the main British TV version. The claim of 'a string of alarm clocks' slightly misrepresents the singular prank involving eight clocks. The description is otherwise recognisable but imprecise.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/The_Seven_Dials_Mystery",
+          "https://www.agathachristie.com/stories/the-seven-dials-mystery"
+        ],
+        "title": "The Seven Dials Mystery",
+        "source_file": "agatha-christie.html (schema.org TVSeries)"
+      }
+    ],
+    "shows_check_failed": false,
+    "arrivals_check_failed": false,
+    "editorial_check_failed": false
   }
 ]
