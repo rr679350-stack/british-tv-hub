@@ -151,6 +151,11 @@
 .bookmark-toggle summary{list-style:none;}
 .bookmark-toggle summary::-webkit-details-marker{display:none;}
 .bookmark-toggle summary::marker{content:"";}
+@media (max-width:600px){
+  .stay-connected-cols{flex-direction:column;}
+  .stay-connected-cols .stay-connected-divider{width:auto !important;height:1px;background:#3d4a60;margin:28px 24px;}
+  .stay-connected-cols > div:not(.stay-connected-divider){padding:0 12px !important;}
+}
 :root{
   --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
   --gold:#c9a96e;--gold2:#dab870;--gold3:#e8d0a0;
@@ -1720,12 +1725,12 @@ document.addEventListener('click', function(e){
     <div style="border-top:1px solid #3d4a60;"></div>
 
     <!-- Two-column row: Install as App | Bookmark -->
-    <div style="display:flex;padding-top:32px;">
+    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
       <div style="flex:1;text-align:center;padding:0 24px;">
         <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
         <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
         <details class="bookmark-toggle">
-          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">Learn More →</summary>
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps →</summary>
           <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
             <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
             <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
@@ -1733,18 +1738,16 @@ document.addEventListener('click', function(e){
         </details>
       </div>
 
-      <div style="width:1px;background:#3d4a60;"></div>
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
 
       <div style="flex:1;text-align:center;padding:0 24px;">
         <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
         <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
         <details class="bookmark-toggle">
-          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">Learn More →</summary>
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut →</summary>
           <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
-            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Windows / Linux:</strong> Ctrl + D</p>
-            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Mac:</strong> Cmd + D</p>
-            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone (Safari):</strong> Share → Add Bookmark</p>
-            <p style="margin:0;"><strong style="color:#f0e8d4;">Android (Chrome):</strong> ⋮ menu → star icon</p>
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu → star icon</p>
           </div>
         </details>
       </div>
