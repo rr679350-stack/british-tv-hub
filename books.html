@@ -1324,6 +1324,7 @@ document.addEventListener('click', function(e){
     <h1>The Ultimate British Bookshelf</h1>
     <p class="page-hero-lead">The stories behind your favorite British dramas — and the books you'll love next.</p>
     <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.7;margin:0 0 24px;max-width:480px;">Discover British mysteries, historical fiction, cozy crime, and classic novels from the authors who bring unforgettable characters and worlds to life.</p>
+    <a href="#page-to-screen" style="display:inline-block;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:13px 26px;text-decoration:none;">Browse the Bookshelf &rarr;</a>
   </div>
 </div>
 
@@ -1332,7 +1333,7 @@ document.addEventListener('click', function(e){
   <div id="page-to-screen">
     <div class="section-label">Books Behind the Shows</div>
     <h2 class="section-title">From Page to Screen</h2>
-    <p class="section-intro">Explore the novels that inspired beloved British television dramas.</p>
+    <p class="section-intro">Love the show? Start with the book that inspired it.</p>
     <div class="free-grid">
       <div class="free-card">
         <div class="free-label">&#128214; Mystery &amp; Crime</div>
@@ -1361,7 +1362,7 @@ document.addEventListener('click', function(e){
       </div>
       <div class="free-card">
         <div class="free-label">&#128214; Literary Favorites</div>
-        <div class="free-name">Timeless English Classics</div>
+        <div class="free-name" id="literary-classics">Timeless English Classics</div>
         <p class="free-desc" style="margin-bottom:14px;">Jane Austen, Charles Dickens, Elizabeth Gaskell.</p>
         <div style="display:flex;flex-wrap:wrap;gap:8px;">
           <a href="https://www.amazon.com/s?k=jane+austen+pride+and+prejudice&tag=britishtvhub-20" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:#1a2135;text-decoration:none;padding:6px 12px;border-radius:3px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;font-weight:600;outline:2px solid var(--gold);outline-offset:3px;">Austen &rarr;</a>
@@ -1377,19 +1378,19 @@ document.addEventListener('click', function(e){
   <div id="books-tv-database" style="scroll-margin-top:100px;">
     <div class="section-label">The Full List</div>
     <h2 class="section-title">Books + TV Database</h2>
-    <p class="section-intro">Every British drama we've matched to its source novels, in one place.</p>
+    <p class="section-intro">Every British drama matched to its source novels, in one place.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:16px;">
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">Vera</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Vera Stanhope Series<br>by <a href="/ann-cleeves.html" style="color:var(--gold);font-weight:600;">Ann Cleeves</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>The Crow Trap</em><br>by <a href="/ann-cleeves.html" style="color:var(--gold);font-weight:600;">Ann Cleeves</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">Shetland</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Shetland Island Novels<br>by <a href="/ann-cleeves.html" style="color:var(--gold);font-weight:600;">Ann Cleeves</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>Raven Black</em><br>by <a href="/ann-cleeves.html" style="color:var(--gold);font-weight:600;">Ann Cleeves</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
@@ -1407,7 +1408,7 @@ document.addEventListener('click', function(e){
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">All Creatures Great and Small</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">All Creatures Great and Small (Memoirs)<br>by <a href="https://www.amazon.com/dp/1250057833?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">James Herriot</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>All Creatures Great and Small</em><br>by <a href="https://www.amazon.com/dp/1250057833?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">James Herriot</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
@@ -1419,7 +1420,7 @@ document.addEventListener('click', function(e){
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">Slow Horses</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Slough House Novels<br>by <a href="https://www.amazon.com/dp/1616954167?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Mick Herron</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>Slow Horses</em><br>by <a href="https://www.amazon.com/dp/1616954167?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Mick Herron</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
@@ -1431,7 +1432,7 @@ document.addEventListener('click', function(e){
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">The Marlow Murder Club</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">The Marlow Murder Club Series<br>by <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Robert Thorogood</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>The Marlow Murder Club</em><br>by <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Robert Thorogood</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
@@ -1443,13 +1444,13 @@ document.addEventListener('click', function(e){
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">The Thursday Murder Club</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Thursday Murder Club Series<br>by <a href="/richard-osman.html" style="color:var(--gold);font-weight:600;">Richard Osman</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>The Thursday Murder Club</em><br>by <a href="/richard-osman.html" style="color:var(--gold);font-weight:600;">Richard Osman</a></div>
       </div>
 
       <div style="background:var(--bg-card);border:1px solid var(--border);border-top:3px solid var(--gold);padding:22px 24px;">
         <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;">TV Show</div>
         <div style="font-family:'Playfair Display',serif;font-size:22px;color:#eee8d0;margin-bottom:14px;">Wolf Hall</div>
-        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Wolf Hall Trilogy<br>by <a href="https://www.amazon.com/dp/0312429983?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Hilary Mantel</a></div>
+        <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.6;">Start with <em>Wolf Hall</em><br>by <a href="https://www.amazon.com/dp/0312429983?tag=britishtvhub-20" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Hilary Mantel</a></div>
       </div>
 
     </div>
@@ -1458,10 +1459,31 @@ document.addEventListener('click', function(e){
 
   <hr class="section-divider">
 
+  <!-- BROWSE BY MOOD -->
+  <div id="browse-by-mood">
+    <div class="section-label">Find Your Next Read</div>
+    <h2 class="section-title">Browse by Mood</h2>
+    <p class="section-intro">Another natural way to explore the bookshelf &mdash; pick the atmosphere, find the books.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
+      <a href="/best-british-cozy-mysteries.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Cozy Mysteries</a>
+      <a href="/books-like-midsomer-murders.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Village Mysteries</a>
+      <a href="/books-like-vera.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Dark Crime</a>
+      <a href="/british-historical-fiction-books.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Historical Fiction</a>
+      <a href="/agatha-christie.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Classic Whodunits</a>
+      <a href="#literary-classics" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Literary Classics</a>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
   <div id="what-to-read-next">
-    <div class="section-label">Our British Book Picks</div>
+    <div class="section-label">British Book Picks</div>
     <h2 class="section-title">What to Read Next</h2>
-    <p class="section-intro">Our curated bookshelf — no huge lists, just the picks worth your time.</p>
+    <p class="section-intro">A curated bookshelf — no huge lists, just the picks worth your time.</p>
+    <div style="max-width:720px;margin:0 0 28px;padding:22px 26px;background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--gold);">
+      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">From the Editor's Desk</div>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:var(--text-muted);line-height:1.7;margin:0;">Every recommendation on this page has been selected because it captures the same atmosphere, unforgettable characters, or storytelling that made the television adaptation memorable. Whether you're discovering a series for the first time or returning to an old favorite, the next great read is waiting here.</p>
+    </div>
     <div class="platform-list">
       <div class="platform-card">
         <div class="platform-number">01</div>
@@ -1469,6 +1491,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Cozy Mystery Pick</div>
           <h3 class="platform-name">The Thursday Murder Club — Richard Osman</h3>
           <p class="platform-desc"><em>"Perfect for fans of gentle mysteries, clever characters, and village secrets."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Ludwig, The Marlow Murder Club, and Father Brown</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/1984880969?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1478,6 +1501,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Detective Fiction Pick</div>
           <h3 class="platform-name">Vera Stanhope Series — Ann Cleeves</h3>
           <p class="platform-desc"><em>"The novels behind ITV's Vera — start with The Crow Trap for the same unconventional detective, richer and rawer on the page."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Vera, Shetland, and Happy Valley</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1487,6 +1511,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Historical Drama Pick</div>
           <h3 class="platform-name">Wolf Hall — Hilary Mantel</h3>
           <p class="platform-desc"><em>"A Booker Prize-winning reimagining of Henry VIII's court through the eyes of Thomas Cromwell — the basis for the BBC/PBS series starring Mark Rylance."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Victoria, Poldark, and The Forsyte Saga</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/0312429983?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1496,6 +1521,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Riverside Cozy Pick</div>
           <h3 class="platform-name">The Marlow Murder Club — Robert Thorogood</h3>
           <p class="platform-desc"><em>"From the creator of Death in Paradise — a crossword setter, a dog-walker, and a vicar's wife solve a murder on the Thames."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Death in Paradise, Grantchester, and Midsomer Murders</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1505,6 +1531,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Meta Mystery Pick</div>
           <h3 class="platform-name">Magpie Murders — Anthony Horowitz</h3>
           <p class="platform-desc"><em>"A whodunit inside a whodunit, with Agatha Christie roots. If the TV ending surprised you, the novel has a few more tricks."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Poirot, Ludwig, and Sherlock</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/0062645226?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1514,6 +1541,7 @@ document.addEventListener('click', function(e){
           <div class="platform-tagline">Classic Pick</div>
           <h3 class="platform-name">The Murder of Roger Ackroyd — Agatha Christie</h3>
           <p class="platform-desc"><em>"Still the blueprint for the genre — one of Christie's most famous twists, and the best possible starting point for Poirot."</em></p>
+          <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:8px 0 12px;">Perfect if you enjoyed: Poirot, Miss Marple, and Father Brown</p>
           <a class="amazon-buy-btn" href="https://www.amazon.com/dp/0593466365?tag=britishtvhub-20" target="_blank" rel="noopener">Find it on Amazon &rarr;</a>
         </div>
       </div>
@@ -1524,8 +1552,9 @@ document.addEventListener('click', function(e){
 
   <div id="join-community">
     <div class="section-label">Join the British Book Community</div>
-    <h2 class="section-title">More British Stories Await</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch;">
+    <h2 class="section-title">Join the Ultimate British Bookshelf</h2>
+    <p class="section-intro">Discover hidden gems, share recommendations, and talk British books with fellow readers.</p>
+    <div style="max-width:640px;">
       <div style="background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--gold);padding:32px;">
         <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:2;margin:0 0 24px;">
           &#10003; Monthly British reading recommendations<br>
@@ -1533,27 +1562,7 @@ document.addEventListener('click', function(e){
           &#10003; Cozy mystery picks<br>
           &#10003; Author spotlights
         </p>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;">
-          <a href="https://www.facebook.com/profile.php?id=61591774225187" target="_blank" rel="noopener" style="display:inline-block;background:#8b1a2e;color:#f5e8d0;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;font-weight:600;">Follow The Bookshelf</a>
-          <a href="https://www.facebook.com/profile.php?id=61591774225187" target="_blank" rel="noopener" style="display:inline-block;background:none;color:var(--gold);border:1px solid var(--gold);padding:11px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;">Join the Conversation</a>
-          <a href="https://www.facebook.com/britishtelevisionhub/subscribe/" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;font-weight:600;">Become a Subscriber</a>
-        </div>
-      </div>
-
-      <div style="background:rgba(26,33,53,0.8);border:1px solid rgba(201,168,76,0.2);padding:32px;border-radius:8px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
-        <div style="font-size:44px;margin-bottom:12px;">📱</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Save British TV Hub as an App</h3>
-        <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--gold);margin:0 0 14px;font-style:italic;line-height:1.5;">Access it like a native app</p>
-        <p style="font-size:15px;color:#b8b0a0;line-height:1.7;margin:0 0 18px;">Save to your phone's home screen and access British TV Hub instantly — even offline.</p>
-        <div style="display:flex;gap:10px;margin-bottom:16px;justify-content:center;flex-wrap:wrap;">
-          <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:7px 11px;border-radius:4px;border-left:3px solid var(--gold);">⚡ Fast</span>
-          <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:7px 11px;border-radius:4px;border-left:3px solid var(--gold);">📡 Offline</span>
-          <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:7px 11px;border-radius:4px;border-left:3px solid var(--gold);">📲 App</span>
-        </div>
-        <div style="font-size:14px;color:#9a9288;line-height:1.8;">
-          <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
-          <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
-        </div>
+        <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:#1a2135;padding:13px 24px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;font-weight:600;">Join the Facebook Bookshelf Community &rarr;</a>
       </div>
     </div>
   </div>
@@ -1562,9 +1571,9 @@ document.addEventListener('click', function(e){
 
   <div style="background:#16203a;border:1px solid #4a5570;border-left:4px solid #8b1a2e;padding:40px;margin-bottom:64px;">
     <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d4b47a;margin-bottom:8px;white-space:nowrap;">The Cozy TV Companion Shop</div>
-    <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0 0 10px;line-height:1.3">A Mystery Book Club Kit for Your Next Meeting</h3>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0 0 20px;">Discussion questions, tracking sheets, and more for readers who want to go deeper.</p>
-    <a href="https://www.etsy.com/listing/4521946710/mystery-book-club-kit-printable-journal" target="_blank" rel="noopener" style="display:inline-block;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #d4b47a;outline-offset:3px;">Browse the Shop on Etsy &rarr;</a>
+    <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0 0 10px;line-height:1.3">Printable Reading Journals &amp; Book Club Printables</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0 0 20px;">Track your reading. Keep notes on your favorite mysteries. Plan your next book club discussion. Explore printable companions designed especially for British book lovers.</p>
+    <a href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener" style="display:inline-block;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #d4b47a;outline-offset:3px;">Browse the Shop on Etsy &rarr;</a>
   </div>
 
   <div class="affiliate-note">
@@ -1574,8 +1583,8 @@ document.addEventListener('click', function(e){
 <!-- CROSSLINK SECTION 1: EXPLORE MORE GUIDES -->
 <div style="background:#1a2135;border:1px solid #3d4a60;border-left:3px solid #c9a96e;padding:32px;margin:32px auto;max-width:1100px;border-radius:3px;">
   <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Explore More Guides</div>
-  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#eee8d0;line-height:1.2;margin:0 0 8px;">Not sure what you're looking for?</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:1rem;color:#9090a8;font-style:italic;margin:0 0 20px;">Browse all our guides by category.</p>
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#eee8d0;line-height:1.2;margin:0 0 8px;">Explore More British Books</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:1rem;color:#9090a8;font-style:italic;margin:0 0 20px;">Browse every guide by category.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
     <a href="/cozy.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Cozy Mysteries</a>
     <a href="/top10.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Police Procedurals</a>
