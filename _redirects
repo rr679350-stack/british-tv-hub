@@ -1,9 +1,0 @@
-# Vercel redirect rules
-
-# 404 fallback - catch all 404s and serve custom 404 page
-/* /404.html 404
-
-# Redirects for old/alternative URLs (if any)
-/begin* /cozy.html 301
-/hidden* /shows-index.html 301
-/dvd.html /essentials.html 301

@@ -17,6 +17,26 @@
       "permanent": true
     },
     {
+      "source": "/beginners.html",
+      "destination": "/cozy.html",
+      "permanent": true
+    },
+    {
+      "source": "/beginners",
+      "destination": "/cozy.html",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-gems.html",
+      "destination": "/shows-index.html",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-gems",
+      "destination": "/shows-index.html",
+      "permanent": true
+    },
+    {
       "source": "/mysteries.html",
       "destination": "/shows-index.html",
       "permanent": true
