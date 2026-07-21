@@ -1696,12 +1696,12 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;">
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;align-items:stretch;">
   <!-- Newsletter Box -->
   <div id="nl-anchor" style="text-align:center;">
     <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#8b1a2e;margin-bottom:12px;">Free — Every Sunday</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#e8dfc8;margin:0 0 12px;line-height:1.2;">Get 5 Hand-Picked Shows</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:18px;font-style:italic;color:#a0aec8;margin:0 0 28px;line-height:1.6;">Every Sunday, receive five curated recommendations &mdash; from timeless classics to the newest arrivals on BritBox, Acorn TV, and PBS Masterpiece.</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 12px;line-height:1.2;">Get 5 Hand-Picked Shows</h2>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#a0aec8;margin:0 0 24px;line-height:1.6;">Every Sunday, receive five curated recommendations &mdash; from timeless classics to the newest arrivals on BritBox, Acorn TV, and PBS Masterpiece.</p>
     <div id="mc_embed_shell_poll">
       <div id="mc_embed_signup_poll">
         <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank">
@@ -1718,19 +1718,36 @@ document.addEventListener('click', function(e){
 
   <!-- PWA Box -->
   <div style="background:rgba(26,33,53,0.8);border:1px solid rgba(201,168,76,0.2);padding:32px;border-radius:8px;text-align:center;height:100%;display:flex;flex-direction:column;justify-content:center;">
-    <div style="font-size:44px;margin-bottom:12px;">📱</div>
-    <h3 style="font-family:'Playfair Display',serif;font-size:28px;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Save British TV Hub as an App</h3>
-    <p style="font-family:'Crimson Text',serif;font-size:18px;color:#c9a96e;margin:0 0 16px;font-style:italic;line-height:1.5;">Access it like a native app</p>
-    <p style="font-size:16px;color:#b8b0a0;line-height:1.7;margin:0 0 20px;">Save to your phone's home screen and access British TV Hub instantly — even offline.</p>
-    <div style="display:flex;gap:10px;margin-bottom:18px;justify-content:center;flex-wrap:wrap;">
-      <span style="font-size:14px;color:#888;background:rgba(201,168,76,0.1);padding:8px 12px;border-radius:4px;border-left:3px solid #c9a96e;">⚡ Fast</span>
-      <span style="font-size:14px;color:#888;background:rgba(201,168,76,0.1);padding:8px 12px;border-radius:4px;border-left:3px solid #c9a96e;">📡 Offline</span>
-      <span style="font-size:14px;color:#888;background:rgba(201,168,76,0.1);padding:8px 12px;border-radius:4px;border-left:3px solid #c9a96e;">📲 App</span>
+    <div style="font-size:36px;margin-bottom:12px;">📱</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Save British TV Hub as an App</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c9a96e;margin:0 0 14px;font-style:italic;line-height:1.5;">Access it like a native app</p>
+    <p style="font-size:15px;color:#b8b0a0;line-height:1.6;margin:0 0 16px;">Save to your phone's home screen and access British TV Hub instantly — even offline.</p>
+    <div style="display:flex;gap:8px;margin-bottom:16px;justify-content:center;flex-wrap:wrap;">
+      <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:6px 10px;border-radius:4px;border-left:3px solid #c9a96e;">⚡ Fast</span>
+      <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:6px 10px;border-radius:4px;border-left:3px solid #c9a96e;">📡 Offline</span>
+      <span style="font-size:13px;color:#888;background:rgba(201,168,76,0.1);padding:6px 10px;border-radius:4px;border-left:3px solid #c9a96e;">📲 App</span>
     </div>
-    <div style="font-size:15px;color:#9a9288;line-height:1.8;">
-      <p style="margin:0 0 10px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
+    <div style="font-size:14px;color:#9a9288;line-height:1.7;">
+      <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
       <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
     </div>
+  </div>
+
+  <!-- Bookmark Box -->
+  <div style="background:rgba(26,33,53,0.8);border:1px solid rgba(201,168,76,0.2);padding:32px;border-radius:8px;text-align:center;height:100%;display:flex;flex-direction:column;justify-content:center;">
+    <div style="font-size:36px;margin-bottom:12px;">⭐</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Never Miss a Discovery</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c9a96e;margin:0 0 14px;font-style:italic;line-height:1.5;">Bookmark this page</p>
+    <p style="font-size:15px;color:#b8b0a0;line-height:1.6;margin:0 0 16px;">British TV Hub is updated every month with new mysteries, dramas, books, and streaming picks.</p>
+    <details class="bookmark-toggle" style="display:inline-block;text-align:left;margin:0 auto;">
+      <summary style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;background:#c9a96e;color:#1a2135;padding:12px 22px;border-radius:3px;cursor:pointer;list-style:none;display:inline-block;">📌 How to Bookmark</summary>
+      <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;">
+        <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Windows / Linux:</strong> Ctrl + D</p>
+        <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Mac:</strong> Cmd + D</p>
+        <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone (Safari):</strong> Share → Add Bookmark</p>
+        <p style="margin:0;"><strong style="color:#f0e8d4;">Android (Chrome):</strong> ⋮ menu → star icon</p>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -1741,24 +1758,6 @@ document.addEventListener('click', function(e){
     <a href="/masterpiece2026.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">PBS Masterpiece Guide &rarr;</a>
     <a href="/shows/vera.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Vera Guide &rarr;</a>
     <a href="/shows/death-in-paradise.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:10px 16px;text-decoration:none;border-radius:3px;display:inline-block;">Death in Paradise &rarr;</a>
-  </div>
-</div>
-
-<!-- Bookmark This Site -->
-<div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;text-align:center;">
-  <div style="max-width:640px;margin:0 auto;">
-    <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#f0e8d4;margin:0 0 12px;line-height:1.2;">Never Miss a British TV Discovery</h2>
-    <p style="font-size:16px;color:#b8b0a0;line-height:1.7;margin:0 0 20px;">British TV Hub is updated every month with carefully curated mysteries, dramas, books, hidden gems, and streaming recommendations.</p>
-    <p style="font-family:'Crimson Text',serif;font-size:18px;font-style:italic;color:#c9a96e;margin:0 0 24px;">&#11088; Bookmark this page so your next great British series is always just one click away.</p>
-    <details class="bookmark-toggle" style="display:inline-block;text-align:left;">
-      <summary style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;background:#c9a96e;color:#1a2135;padding:14px 28px;border-radius:3px;cursor:pointer;list-style:none;display:inline-block;">&#128204; How to Bookmark This Site</summary>
-      <div style="margin-top:16px;padding:20px 24px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:15px;color:#c9c2b0;line-height:1.9;">
-        <p style="margin:0 0 10px;"><strong style="color:#f0e8d4;">Windows / Linux:</strong> Press Ctrl + D</p>
-        <p style="margin:0 0 10px;"><strong style="color:#f0e8d4;">Mac:</strong> Press Cmd + D</p>
-        <p style="margin:0 0 10px;"><strong style="color:#f0e8d4;">iPhone (Safari):</strong> Tap Share, then Add Bookmark</p>
-        <p style="margin:0;"><strong style="color:#f0e8d4;">Android (Chrome):</strong> Tap the &#8942; menu, then the star icon</p>
-      </div>
-    </details>
   </div>
 </div>
 
