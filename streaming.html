@@ -128,6 +128,17 @@ gtag('config', 'G-P1L8CVNKS6');
   .vpn-tip { font-family: 'Crimson Text', serif; font-size: 14px; color: var(--text-faint); font-style: italic; margin-bottom: 24px; }
   .vpn-disclosure { font-family: 'Raleway', sans-serif; font-size: 9px; color: #4a5568; border-top: 1px solid #2d3a50; padding-top: 16px; letter-spacing: 0.5px; }
   .affiliate-note { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 0.5px; color: #b0bcd4; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); line-height: 1.7; }
+  .continue-reading{margin:64px auto 56px;max-width:1100px;}
+  .cr-heading{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--text);margin:0 0 10px;}
+  .cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin:0 0 36px;}
+  .cr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
+  @media (max-width:860px){.cr-grid{grid-template-columns:1fr;}}
+  .cr-card{display:block;background:#363f58;border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+  .cr-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+  .cr-body{padding:22px 24px 26px;}
+  .cr-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text);margin:0 0 10px;line-height:1.3;}
+  .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;}
+  .cr-link{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
   /* STANDARD NAV */
   nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
   nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
@@ -1243,23 +1254,6 @@ document.addEventListener('click', function(e){
     <strong style="color:#c9a96e">Affiliate disclosure:</strong> British TV Hub is a participant in the Amazon Services LLC Associates Program. We may also earn commissions from BritBox, Acorn TV, and NordVPN. This never affects our recommendations &mdash; we only link to services we genuinely recommend to our community.
   </div>
 
-<!-- CROSSLINK SECTION 1: EXPLORE MORE GUIDES -->
-<div style="background:#1a2135;border:1px solid #3d4a60;border-left:3px solid #c9a96e;padding:32px;margin:32px auto;max-width:1100px;border-radius:3px;">
-  <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Explore More Guides</div>
-  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#eee8d0;line-height:1.2;margin:0 0 8px;">Not sure what you're looking for?</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:1rem;color:#9090a8;font-style:italic;margin:0 0 20px;">Browse all our guides by category.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
-    <a href="/cozy.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Cozy Mysteries</a>
-    <a href="/top10.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Police Procedurals</a>
-    <a href="/shows.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Best Of Guide</a>
-    <a href="/agatha-christie.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Agatha Christie</a>
-    <a href="/essentials.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">The Snug</a>
-    <a href="/faq.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">FAQ</a>
-    <a href="/quiz.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Match Me Quiz</a>
-  </div>
-</div>
-<!-- END CROSSLINK SECTION 1 -->
-
   <div id="paid">
     <div class="section-label">Paid Subscriptions</div>
     <h2 class="section-title">The Essential British TV Services</h2>
@@ -1403,6 +1397,34 @@ document.addEventListener('click', function(e){
   <div class="affiliate-note">
     As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox, Acorn TV, Prime Video, and NordVPN affiliate links at no extra cost to you.
   </div>
+<div class="continue-reading">
+      <h2 class="cr-heading">Continue Reading</h2>
+      <p class="cr-sub">More hand-picked recommendations from the editors of British TV Hub.</p>
+      <div class="cr-grid">
+        <a class="cr-card" href="/shows.html">
+          <div class="cr-body">
+            <div class="cr-title">Best British TV Shows Guide</div>
+            <p class="cr-desc">A hand-picked, monthly-updated rundown of British mystery and drama shows worth streaming right now.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/cozy.html">
+          <div class="cr-body">
+            <div class="cr-title">Cozy Mysteries & Comfort Watches</div>
+            <p class="cr-desc">Warm villages, clever detectives, and murders that never turn too dark — the ultimate comfort-watch genre.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/top10.html">
+          <div class="cr-body">
+            <div class="cr-title">Top 10 British Police Dramas</div>
+            <p class="cr-desc">From Inspector Morse to Line of Duty, the police procedurals every British drama fan should know.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
 </main>
 
 <footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:48px 40px 28px;">

@@ -156,7 +156,19 @@ gtag('config', 'G-P1L8CVNKS6');
   }
 }
 
-</style>
+
+  .continue-reading{margin:64px auto 56px;max-width:1100px;}
+  .cr-heading{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--text);margin:0 0 10px;}
+  .cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin:0 0 36px;}
+  .cr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
+  @media (max-width:860px){.cr-grid{grid-template-columns:1fr;}}
+  .cr-card{display:block;background:#363f58;border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+  .cr-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+  .cr-body{padding:22px 24px 26px;}
+  .cr-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text);margin:0 0 10px;line-height:1.3;}
+  .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;}
+  .cr-link{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
+  </style>
 <style>
 /* Smooth transitions for all interactive elements */
 a, button, [role="button"] {
@@ -1285,24 +1297,6 @@ document.addEventListener('click', function(e){
 </div>
 
 <main>
-    
-
-<!-- CROSSLINK SECTION 1: EXPLORE MORE GUIDES -->
-<div style="background:#1a2135;border:1px solid #3d4a60;border-left:3px solid #c9a96e;padding:32px;margin:0 0 40px;border-radius:3px;">
-  <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">Explore More Guides</div>
-  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#eee8d0;line-height:1.2;margin:0 0 8px;">Not sure what you're looking for?</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:1rem;color:#9090a8;font-style:italic;margin:0 0 20px;">Browse all our guides by category.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
-    <a href="/cozy.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Cozy Mysteries</a>
-    <a href="/top10.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Police Procedurals</a>
-    <a href="/shows.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Best Of Guide</a>
-    <a href="/agatha-christie.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Agatha Christie</a>
-    <a href="/streaming.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Streaming Guide</a>
-    <a href="/essentials.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">The Snug</a>
-    <a href="/quiz.html" style="display:block;background:#2c3345;border:1px solid #3d4a60;color:#c9a96e;text-decoration:none;padding:14px 16px;text-align:left;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;">Match Me Quiz</a>
-  </div>
-</div>
-<!-- END CROSSLINK SECTION 1 -->
 
   <div class="faq-group" id="streaming">
     <h2 class="faq-group-title">Watching British TV in the US</h2>
@@ -1402,6 +1396,34 @@ document.addEventListener('click', function(e){
       <a href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener" style="display:block;text-align:center;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #d4b47a;outline-offset:3px;">Browse the Shop on Etsy &rarr;</a>
     </div>
   </div>
+
+<div class="continue-reading">
+      <h2 class="cr-heading">Continue Reading</h2>
+      <p class="cr-sub">More hand-picked recommendations from the editors of British TV Hub.</p>
+      <div class="cr-grid">
+        <a class="cr-card" href="/streaming.html">
+          <div class="cr-body">
+            <div class="cr-title">Where to Watch British TV</div>
+            <p class="cr-desc">A full breakdown of the streaming services that carry British mysteries and dramas, from BritBox to Acorn TV.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/shows.html">
+          <div class="cr-body">
+            <div class="cr-title">Best British TV Shows Guide</div>
+            <p class="cr-desc">A hand-picked, monthly-updated rundown of British mystery and drama shows worth streaming right now.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/start-here.html">
+          <div class="cr-body">
+            <div class="cr-title">Start Here: New to British TV</div>
+            <p class="cr-desc">New to British mysteries and dramas? Start with this itinerary of essential shows and where to find them.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
 </main>
 
