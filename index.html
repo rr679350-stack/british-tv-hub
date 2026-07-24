@@ -368,20 +368,20 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   }
 }
 
-/* Hero steam animation — origin ~18%/58% of hero.webp, confined to an 8-10% wide, 20-25% tall column above the cup */
+/* Hero steam animation — narrow base at the cup (~18%/58% of hero.webp), rising about two mug heights, several thin soft wisps rather than one ribbon. Deliberately subtle: low opacity, slow drift, gradual fade. */
 .steam-overlay { mix-blend-mode: screen; }
-.steam-wisp { transform-origin: center bottom; animation: steamRise 5.5s ease-in-out infinite; }
-.steam-wisp-2 { animation-duration: 6.5s; animation-delay: 1.3s; }
-.steam-wisp-3 { animation-duration: 7.2s; animation-delay: 2.6s; }
+.steam-wisp { transform-origin: center bottom; animation: steamRise 8s ease-in-out infinite; }
+.steam-wisp-2 { animation-duration: 9.5s; animation-delay: 1.8s; }
+.steam-wisp-3 { animation-duration: 10.5s; animation-delay: 3.4s; }
 @keyframes steamRise {
-  0%   { transform: translate(0,0) scale(1); opacity: 0; }
-  12%  { opacity: 0.42; }
-  40%  { opacity: 0.26; }
-  70%  { transform: translate(3px,-12px) scale(1.03); opacity: 0.12; }
-  100% { transform: translate(-2px,-22px) scale(1.06); opacity: 0; }
+  0%   { transform: translate(0,0); opacity: 0; }
+  15%  { opacity: 0.16; }
+  45%  { transform: translate(2px,-8px); opacity: 0.1; }
+  75%  { transform: translate(-2px,-16px); opacity: 0.04; }
+  100% { transform: translate(1px,-24px); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .steam-wisp { animation: none; opacity: 0.2; }
+  .steam-wisp { animation: none; opacity: 0.08; }
 }
 
 </style>
@@ -1223,12 +1223,12 @@ document.addEventListener('click', function(e){
   <svg class="steam-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
     <defs>
       <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="4"/>
+        <feGaussianBlur stdDeviation="5.5"/>
       </filter>
     </defs>
-    <path class="steam-wisp steam-wisp-1" d="M276,594 C263.7,563.3 293.9,548.2 282.7,513.1 C271.5,479.6 301.7,462.9 288.3,427.7 C277.1,399.8 296.1,386.4 290.5,364.1" fill="none" stroke="#f2ede0" stroke-width="9" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-    <path class="steam-wisp steam-wisp-2" d="M296.1,594 C287.2,565 311.7,550.5 301.7,517 C292.2,485.7 315.1,471.2 305,438.9 C296.1,413.2 312.8,399.8 307.2,377.5" fill="none" stroke="#f2ede0" stroke-width="6" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-    <path class="steam-wisp steam-wisp-3" d="M264.8,591.2 C254.8,566.1 276,552.7 267.1,522.6 C258.1,493.6 278.2,480.2 269.3,451.2 C261.5,427.7 277.1,415.4 271.5,395.4" fill="none" stroke="#f2ede0" stroke-width="5.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+    <path class="steam-wisp steam-wisp-1" d="M276,592 C270,560 282,545 274,512 C267,481 280,462 272,428" fill="none" stroke="#f2ede0" stroke-width="4.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+    <path class="steam-wisp steam-wisp-2" d="M281,592 C289,562 298,547 292,514 C287,484 297,466 291,432" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+    <path class="steam-wisp steam-wisp-3" d="M270,592 C261,563 251,548 258,516 C252,486 240,468 247,436" fill="none" stroke="#f2ede0" stroke-width="2.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
   </svg>
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:48px 64px;">
     <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0e8d4;font-weight:600;text-shadow:0 1px 4px rgba(0,0,0,0.85),0 0 12px rgba(0,0,0,0.5);margin:0 0 14px;">Watch. Read. Discover.</p>
@@ -1241,14 +1241,6 @@ document.addEventListener('click', function(e){
       <a href="/books" style="display:block;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:14px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;">📚 Browse the Bookshelf &rarr;</a>
     </div>
   </div>
-</div>
-
-<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:24px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
-  <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;">
-    <span style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;">This Month at British TV Hub</span>
-    <h2 id="card-title" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#c9a96e;margin:0;line-height:1.2;border:1px solid #c9a96e;padding:8px 18px;display:inline-block;border-radius:2px;">&#11088; Inspector Ellis</h2>
-  </div>
-  <a id="guide-btn" href="/acorn.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:3px;font-weight:600;white-space:nowrap;">&rarr; Read Guide</a>
 </div>
 
 <div style="padding:40px 40px;border-bottom:1px solid #3d4a60;background:#171c2b;">
