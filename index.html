@@ -1250,39 +1250,12 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <div style="background:#1e2433;padding:48px 40px;border-left:1px solid #3d4a60;display:flex;flex-direction:column;justify-content:space-between;">
+  <div style="background:#1e2433;padding:40px 40px;border-left:1px solid #3d4a60;display:flex;flex-direction:column;justify-content:center;">
     <div>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px;">Updated Monthly</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px;">British TV Hub Pick</div>
-      <h2 id="card-title" style="font-family:'Playfair Display',serif;font-size:34px;font-weight:400;color:#c9a96e;margin:0 0 8px;line-height:1.2;">Happy Valley</h2>
-      <div id="card-meta" style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8;margin-bottom:16px;">BritBox &middot; 3 series &middot; 2014&ndash;2023</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;font-weight:600;">Why We Picked It This Month</div>
-      <p id="card-desc" style="font-family:'Crimson Text',serif;font-size:19px;color:#c8c0a8;line-height:1.7;margin:0 0 20px;">A Yorkshire police sergeant navigates brutal crime while holding her fractured family together. Sarah Lancashire delivers one of the greatest performances in British TV history.</p>
-      <div id="card-tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;">
-        <span style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid #3d4a60;color:#a0aec8;">Dark</span>
-        <span style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid #3d4a60;color:#a0aec8;">Crime drama</span>
-        <span style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid #3d4a60;color:#a0aec8;">Yorkshire</span>
-        <span style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid #3d4a60;color:#a0aec8;">Award-winning</span>
-      </div>
-      <p id="card-similar" style="font-family:'Crimson Text',serif;font-size:15px;font-style:italic;color:#8b95b8;margin:0 0 20px;"></p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a id="watch-btn" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" style="display:inline-block;background:#8b1a2e;color:#f5e8d0;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Watch on BritBox &rarr;</a>
-        <a id="guide-btn" href="/shows/happy-valley.html" style="display:inline-block;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Read the Guide &rarr;</a>
-      </div>
-    </div>
-    <div style="border-top:1px solid #3d4a60;margin-top:32px;padding-top:24px;display:flex;gap:32px;">
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:28px;color:#c9a96e;">5,000+</div>
-        <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;">Facebook Followers</div>
-      </div>
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:28px;color:#c9a96e;">Weekly</div>
-        <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;">Newsletter</div>
-      </div>
-      <div>
-        <div style="font-family:'Playfair Display',serif;font-size:28px;color:#c9a96e;">Free</div>
-        <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;">To Join</div>
-      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:10px;">British TV Hub Pick</div>
+      <h2 id="card-title" style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 10px;line-height:1.2;">Happy Valley</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#a0aec8;margin:0 0 18px;">Our recommendation for this month.</p>
+      <a id="guide-btn" href="/shows/happy-valley.html" style="display:inline-block;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Read the Guide &rarr;</a>
     </div>
   </div>
 
@@ -1629,16 +1602,8 @@ document.addEventListener('click', function(e){
   const idx = (today.getFullYear()*12 + today.getMonth()) % SHOWS.length;
   const show = SHOWS[idx];
   const titleEl = document.getElementById('card-title');
-  const metaEl = document.getElementById('card-meta');
-  const descEl = document.getElementById('card-desc');
-  const tagsEl = document.getElementById('card-tags');
-  const btnEl = document.getElementById('watch-btn');
   const guideEl = document.getElementById('guide-btn');
   if(titleEl) titleEl.textContent = show.title;
-  if(metaEl) metaEl.textContent = show.meta;
-  if(descEl) descEl.textContent = show.desc;
-  if(tagsEl) tagsEl.innerHTML = show.tags.map(t=>`<span style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid #3d4a60;color:#a0aec8;">${t}</span>`).join('');
-  if(btnEl){btnEl.textContent='Watch on '+show.platform+' \u2192';btnEl.href=show.watchUrl;}
   if(guideEl){ if(show.guideUrl){ guideEl.href=show.guideUrl; guideEl.style.display='inline-block'; } else { guideEl.style.display='none'; } }
 })();
 </script>
