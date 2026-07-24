@@ -368,9 +368,9 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .steam-wisp-3 { animation-duration: 10.5s; animation-delay: 3.4s; }
 @keyframes steamRise {
   0%   { transform: translate(0,0); opacity: 0; }
-  15%  { opacity: 0.16; }
-  45%  { transform: translate(4px,-22px); opacity: 0.1; }
-  75%  { transform: translate(-4px,-42px); opacity: 0.04; }
+  15%  { opacity: 0.32; }
+  45%  { transform: translate(4px,-22px); opacity: 0.22; }
+  75%  { transform: translate(-4px,-42px); opacity: 0.1; }
   100% { transform: translate(3px,-60px); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1204,7 +1204,7 @@ document.addEventListener('click', function(e){
     <svg class="steam-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
       <defs>
         <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="5.5"/>
+          <feGaussianBlur stdDeviation="3"/>
         </filter>
       </defs>
       <path class="steam-wisp steam-wisp-1" d="M276,592 C270,560 282,545 274,512 C267,481 280,462 272,428" fill="none" stroke="#f2ede0" stroke-width="3.4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
