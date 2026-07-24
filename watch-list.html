@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Watch List | British TV Hub</title>
+<meta name="description" content="Track which British mystery and drama shows you want to watch, are watching, and have finished — no account required.">
+<link rel="canonical" href="https://britishtvhub.com/watch-list.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #2c3345; --bg-dark: #1a2135; --bg-card: #1e2433;
+    --border: #3d4a60; --gold: #c9a96e; --gold-light: #dab870;
+    --red: #8b1a2e; --red-light: #d06070;
+    --text: #e8dfc8; --text-muted: #c8c0a8; --text-dim: #a0aec8; --text-faint: #8898b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 64px 40px; }
+  .page-hero { background: linear-gradient(135deg, var(--bg-dark) 0%, #232a3a 100%); border-bottom: 1px solid var(--border); padding: 64px 40px 48px; }
+  .page-hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 16px; }
+  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 44px; color: var(--text); line-height: 1.15; margin-bottom: 16px; max-width: 700px; }
+  .page-hero-lead { font-family: 'Crimson Text', serif; font-size: 19px; color: var(--text-muted); font-style: italic; line-height: 1.6; max-width: 620px; margin-bottom: 12px; }
+  .page-hero-note { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; color: var(--text-faint); }
+  .wl-progress { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-light); margin-top: 20px; }
+  .section-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
+  .wl-col-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold-light); margin-bottom: 18px; }
+  .wl-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 48px; }
+  .wl-col { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; min-height: 140px; }
+  .wl-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .wl-item:last-child { border-bottom: none; }
+  .wl-item-title { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text); }
+  .wl-item-title a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--gold); }
+  .wl-item-remove { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-faint); background: none; border: 1px solid var(--border); padding: 5px 9px; cursor: pointer; white-space: nowrap; }
+  .wl-item-remove:hover { color: var(--text); border-color: var(--gold); }
+  .wl-empty { font-family: 'Crimson Text', serif; font-size: 15px; font-style: italic; color: var(--text-faint); }
+  .wl-cta { text-align: center; margin-top: 8px; }
+  .wl-cta a { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 12px 22px; text-decoration: none; display: inline-block; }
+  .wl-cta a:hover { background: var(--gold); color: var(--bg-dark); }
+  @media (max-width: 800px) {
+    main { padding: 40px 20px; }
+    .page-hero { padding: 40px 20px 32px; }
+    .page-hero h1 { font-size: 30px; }
+    .wl-columns { grid-template-columns: 1fr; }
+  }
+
+    /* === STANDARD NAV (canonical) === */
+    nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
+    nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
+    nav.site-nav-std .nav-links { display: flex; align-items: center; flex-wrap: nowrap; }
+    nav.site-nav-std .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c9a96e; cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nlink:hover { color: #ffffff; }
+    nav.site-nav-std .nlink.on { color: #ffffff; border-bottom: 2px solid #c9a96e; }
+    nav.site-nav-std .nav-dropdown { position: relative; }
+    nav.site-nav-std .nav-dropdown-menu { position: absolute; top: 100%; left: 0; background: #1a2135; border: 1px solid #4a5570; min-width: 200px; z-index: 200; }
+    nav.site-nav-std .nav-dropdown-menu a { display: block; padding: 12px 16px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #c9a96e; text-decoration: none; }
+    nav.site-nav-std .nav-dropdown-menu a:hover { background: #232a3a; color: #fff; }
+    nav.site-nav-std .nav-search-toggle { background: none; border: none; color: #c9a96e; font-family: 'Raleway', sans-serif; font-size: 11px; cursor: pointer; padding: 8px; }
+    @media (max-width: 900px) {
+      nav.site-nav-std { padding: 0 12px; flex-wrap: wrap; }
+      nav.site-nav-std .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
+      nav.site-nav-std .nlink { padding: 14px 9px; font-size: 10px; }
+    }
+</style>
+</head>
+<body>
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+    <div class="nav-brand">
+      <a href="/" style="display:inline-block;text-decoration:none;">
+        <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="nlink" href="/start-here">Start Here</a>
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <a class="nlink on" href="/watch-list.html">Watch List</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-eyebrow">Track Your Progress</div>
+  <h1>Your Watch List</h1>
+  <p class="page-hero-lead">Mark shows as Want to Watch, Watching, or Finished right from the guide pages, and see everything gathered here.</p>
+  <p class="page-hero-note">No account needed &mdash; your list is saved in this browser, on this device.</p>
+  <div class="wl-progress" id="wl-progress-line">Nothing tracked yet.</div>
+</div>
+
+<main>
+  <div class="section-label">Your Shows</div>
+  <div class="wl-columns" id="wl-columns">
+    <div class="wl-col">
+      <div class="wl-col-title">&#9733; Want to Watch</div>
+      <div id="wl-list-want"><p class="wl-empty">Nothing here yet.</p></div>
+    </div>
+    <div class="wl-col">
+      <div class="wl-col-title">&#128065; Watching</div>
+      <div id="wl-list-watching"><p class="wl-empty">Nothing here yet.</p></div>
+    </div>
+    <div class="wl-col">
+      <div class="wl-col-title">&#10003; Finished</div>
+      <div id="wl-list-finished"><p class="wl-empty">Nothing here yet.</p></div>
+    </div>
+  </div>
+
+  <div class="wl-cta">
+    <a href="/shows.html">Browse Shows to Track &rarr;</a>
+  </div>
+</main>
+
+<footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:48px 40px 28px;margin-top:40px;">
+  <div style="text-align:center;max-width:420px;margin:0 auto 36px;">
+    <img src="/footer-brand.webp" alt="British TV Hub — Helping fans discover the very best of British mysteries, dramas, hidden gems, and the books behind their favorite television series." loading="lazy" width="1536" height="1024" style="width:100%;height:auto;display:block;border:1px solid #3d4a60;">
+  </div>
+  <div style="border-top:1px solid #3d4a60;max-width:960px;margin:0 auto 36px;"></div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px;max-width:960px;margin:0 auto 36px;text-align:left;">
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Community</div>
+      <a href="/#nl-anchor" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Newsletter</a>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Facebook Community</a>
+      <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Contact</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Resources</div>
+      <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">FAQ</a>
+      <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Partner Information</a>
+    </div>
+  </div>
+  <div style="border-top:1px solid #3d4a60;max-width:960px;margin:0 auto;padding-top:24px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;">&copy; <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp; <a href="/privacy.html" style="color:#88898b;text-decoration:underline;">Privacy</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el){ el.textContent = year; });
+})();
+</script>
+
+<script src="/watchlist.js"></script>
+<script>
+(function(){
+  var REGISTRY = {
+    'inspector-morse': { title: 'Inspector Morse', url: '/shows/inspector-morse.html' },
+    'vera': { title: 'Vera', url: '/shows/vera.html' },
+    'broadchurch': { title: 'Broadchurch', url: '/shows.html' },
+    'hinterland': { title: 'Hinterland', url: '/shows.html' },
+    'miss-marple': { title: 'Miss Marple (1984)', url: '/shows/miss-marple.html' },
+    'happy-valley': { title: 'Happy Valley', url: '/shows/happy-valley.html' }
+  };
+
+  function render(){
+    var all = window.BTVHWatchlist ? window.BTVHWatchlist.getAll() : {};
+    var groups = { want: [], watching: [], finished: [] };
+    Object.keys(all).forEach(function(slug){
+      var status = all[slug];
+      if(groups[status] && REGISTRY[slug]){
+        groups[status].push(slug);
+      }
+    });
+
+    var total = groups.want.length + groups.watching.length + groups.finished.length;
+    var progressEl = document.getElementById('wl-progress-line');
+    if(progressEl){
+      progressEl.textContent = total === 0
+        ? 'Nothing tracked yet.'
+        : groups.finished.length + ' finished \u00b7 ' + groups.watching.length + ' watching \u00b7 ' + groups.want.length + ' on your list';
+    }
+
+    ['want','watching','finished'].forEach(function(status){
+      var el = document.getElementById('wl-list-' + status);
+      if(!el) return;
+      if(groups[status].length === 0){
+        el.innerHTML = '<p class="wl-empty">Nothing here yet.</p>';
+        return;
+      }
+      el.innerHTML = groups[status].map(function(slug){
+        var show = REGISTRY[slug];
+        return '<div class="wl-item"><div class="wl-item-title"><a href="' + show.url + '">' + show.title + '</a></div><button type="button" class="wl-item-remove" data-slug="' + slug + '">Remove</button></div>';
+      }).join('');
+    });
+
+    el_bindRemoveButtons();
+  }
+
+  function el_bindRemoveButtons(){
+    document.querySelectorAll('.wl-item-remove').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var slug = this.getAttribute('data-slug');
+        window.BTVHWatchlist.setStatus(slug, null);
+        render();
+      });
+    });
+  }
+
+  document.addEventListener('btvh:watchlist-change', render);
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', render);
+  } else {
+    render();
+  }
+})();
+</script>
+</body>
+</html>
