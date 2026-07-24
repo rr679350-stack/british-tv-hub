@@ -361,20 +361,30 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   }
 }
 
-/* Hero steam animation — narrow base at the cup (~18%/58% of hero.webp), rising about two mug heights, several thin soft wisps rather than one ribbon. Deliberately subtle: low opacity, slow drift, gradual fade. */
-.steam-animation { mix-blend-mode: screen; }
-.steam-wisp { transform-origin: center bottom; animation: steamRise 3.5s ease-in-out infinite; }
-.steam-wisp-2 { animation-duration: 4.2s; animation-delay: 0.7s; }
-.steam-wisp-3 { animation-duration: 4.8s; animation-delay: 1.4s; }
+/* Hero steam animation — fixed-size box anchored at 24%/62% of #hero, whole box rises/sways/scales as one unit */
+.steam-animation {
+  mix-blend-mode: screen;
+  animation: steamRise 10s ease-in-out infinite;
+}
 @keyframes steamRise {
-  0%   { transform: translate(0,0); opacity: 0; }
-  15%  { opacity: 1; }
-  45%  { transform: translate(3px,-16px); opacity: 0.72; }
-  75%  { transform: translate(-3px,-32px); opacity: 0.32; }
-  100% { transform: translate(2px,-46px); opacity: 0; }
+  0% {
+    transform: translate(-50%, -92%) translateX(0) scale(0.9);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.22;
+  }
+  60% {
+    transform: translate(-50%, -105%) translateX(4px) scale(1);
+    opacity: 0.16;
+  }
+  100% {
+    transform: translate(-50%, -118%) translateX(-3px) scale(1.05);
+    opacity: 0;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
-  .steam-wisp { animation: none; opacity: 0.08; }
+  .steam-animation { animation: none; opacity: 0.1; }
 }
 
 </style>
@@ -1202,16 +1212,11 @@ document.addEventListener('click', function(e){
   <div style="position:absolute;inset:0;transform:scale(1.06) translateX(-50px);transform-origin:center;">
     <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
   </div>
-  <div class="steam-animation" style="position:absolute;left:24%;top:64%;width:110px;height:190px;transform:translate(-50%,-100%);pointer-events:none;z-index:3;opacity:0.45;">
-    <svg viewBox="0 0 110 190" style="width:100%;height:100%;" aria-hidden="true">
-      <defs>
-        <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="2.5"/>
-        </filter>
-      </defs>
-      <path class="steam-wisp steam-wisp-1" d="M55,188 C50,165 60,150 54,128 C48,108 58,95 52,75 C47,58 56,48 51,25" fill="none" stroke="#f2ede0" stroke-width="4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-2" d="M62,188 C68,166 75,152 70,130 C66,110 74,96 69,78 C65,60 72,50 68,28" fill="none" stroke="#f2ede0" stroke-width="2.8" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-3" d="M46,188 C40,167 33,153 38,131 C33,111 25,97 30,79 C26,61 20,51 24,30" fill="none" stroke="#f2ede0" stroke-width="2.4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+  <div class="steam-animation" style="position:absolute;left:24%;top:62%;width:75px;height:145px;transform:translate(-50%,-100%);opacity:0.22;filter:blur(3px);pointer-events:none;z-index:3;transform-origin:bottom center;">
+    <svg viewBox="0 0 75 145" style="width:100%;height:100%;" aria-hidden="true">
+      <path d="M37,143 C33,124 41,112 36,94 C32,78 40,67 35,50 C31,36 39,28 34,10" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round"/>
+      <path d="M43,143 C48,126 54,114 50,96 C46,80 53,69 49,53 C45,40 51,31 47,14" fill="none" stroke="#f2ede0" stroke-width="2.1" stroke-linecap="round"/>
+      <path d="M31,143 C26,127 20,115 24,97 C20,81 13,70 17,54 C14,41 8,32 12,16" fill="none" stroke="#f2ede0" stroke-width="1.8" stroke-linecap="round"/>
     </svg>
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(10,14,24,0.8),rgba(10,14,24,0.42));"></div>
