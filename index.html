@@ -1246,10 +1246,9 @@ document.addEventListener('click', function(e){
 
   <div style="background:#1e2433;padding:40px 40px;border-left:1px solid #3d4a60;display:flex;flex-direction:column;justify-content:center;">
     <div>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:10px;">British TV Hub Pick</div>
-      <h2 id="card-title" style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;margin:0 0 10px;line-height:1.2;">Happy Valley</h2>
-      <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#a0aec8;margin:0 0 18px;">Our recommendation for this month.</p>
-      <a id="guide-btn" href="/shows/happy-valley.html" style="display:inline-block;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">Read the Guide &rarr;</a>
+      <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;">This Month at British TV Hub</div>
+      <h2 id="card-title" style="font-family:'Playfair Display',serif;font-size:34px;font-weight:400;color:#c9a96e;margin:0 0 20px;line-height:1.2;">&#11088; Inspector Ellis</h2>
+      <a id="guide-btn" href="/acorn.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:3px;font-weight:600;">&rarr; Read Guide</a>
     </div>
   </div>
 
@@ -1579,28 +1578,7 @@ document.addEventListener('click', function(e){
   </div>
 </footer>
 
-<script>
-(function(){
-  // British TV Hub Pick — refreshed once per month (not daily). Update this array's
-  // order or add new entries to change what surfaces in future months; the card's
-  // static HTML above should be kept in sync with SHOWS[0] so there's no load-time flash.
-  const SHOWS = [
-    {title:'Happy Valley',meta:'BritBox · 3 series · 2014–2023',desc:'A Yorkshire police sergeant navigates brutal crime while holding her fractured family together. Sarah Lancashire delivers one of the greatest performances in British TV history.',tags:['Dark','Crime drama','Yorkshire','Award-winning'],platform:'BritBox',watchUrl:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',guideUrl:'/shows/happy-valley.html'},
-    {title:'Inspector Morse',meta:'BritBox · 1987–2000',desc:'The gold standard of British detective drama. John Thaw\'s Morse remains unmatched in literary intelligence and melancholic depth. Start here if you haven\'t already.',tags:['Oxford','Detective','Classic','All-time favourite'],platform:'BritBox',watchUrl:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',guideUrl:'/shows/inspector-morse.html'},
-    {title:'Vera',meta:'BritBox · 14 series · 2011–2025',desc:'Brenda Blethyn\'s Vera Stanhope is one of television\'s great detectives — unconventional, brilliant, and deeply human. Set against the wild Northumberland coast.',tags:['Northumberland','Crime','Cosy','Long-runner'],platform:'BritBox',watchUrl:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',guideUrl:'/shows/vera.html'},
-    {title:'Miss Marple (1984)',meta:'BritBox · 12 films · 1984–1992',desc:'Joan Hickson\'s definitive portrayal of Miss Marple remains the benchmark. Quietly devastating, impeccably cast, and deeply satisfying to watch over and over again.',tags:['Cosy','Agatha Christie','Classic','Period'],platform:'BritBox',watchUrl:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',guideUrl:'/shows/miss-marple.html'},
-    {title:'Shetland',meta:'BritBox · 7 series · 2013–present',desc:'A detective series set on the remote Shetland Islands. Stunning scenery, tight plotting, and Douglas Henshall as one of British TV\'s most compelling detectives.',tags:['Scotland','Atmospheric','Crime','Stunning scenery'],platform:'BritBox',watchUrl:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',guideUrl:'/shows/shetland.html'},
-    {title:'Midsomer Murders',meta:'Acorn TV · 25+ series · 1997–present',desc:'The longest-running British crime drama, set in the picture-perfect English countryside. Cosy, witty, and endlessly rewatchable — our community\'s comfort show.',tags:['Cosy','Village','Long-runner','Classic'],platform:'Acorn TV',watchUrl:'https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20',guideUrl:'/shows/midsomer-murders.html'},
-  ];
-  const today = new Date();
-  const idx = (today.getFullYear()*12 + today.getMonth()) % SHOWS.length;
-  const show = SHOWS[idx];
-  const titleEl = document.getElementById('card-title');
-  const guideEl = document.getElementById('guide-btn');
-  if(titleEl) titleEl.textContent = show.title;
-  if(guideEl){ if(show.guideUrl){ guideEl.href=show.guideUrl; guideEl.style.display='inline-block'; } else { guideEl.style.display='none'; } }
-})();
-</script>
+<!-- British TV Hub Pick is now set manually in the card markup above (This Month at British TV Hub) — update the title, star line, and Read Guide link there directly each month. -->
 
 
 <script>
