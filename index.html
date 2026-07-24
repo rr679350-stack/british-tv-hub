@@ -362,16 +362,16 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 }
 
 /* Hero steam animation — narrow base at the cup (~18%/58% of hero.webp), rising about two mug heights, several thin soft wisps rather than one ribbon. Deliberately subtle: low opacity, slow drift, gradual fade. */
-.steam-overlay { mix-blend-mode: screen; }
+.steam-animation { mix-blend-mode: screen; }
 .steam-wisp { transform-origin: center bottom; animation: steamRise 3.5s ease-in-out infinite; }
 .steam-wisp-2 { animation-duration: 4.2s; animation-delay: 0.7s; }
 .steam-wisp-3 { animation-duration: 4.8s; animation-delay: 1.4s; }
 @keyframes steamRise {
   0%   { transform: translate(0,0); opacity: 0; }
-  15%  { opacity: 0.5; }
-  45%  { transform: translate(4px,-22px); opacity: 0.36; }
-  75%  { transform: translate(-4px,-42px); opacity: 0.16; }
-  100% { transform: translate(3px,-60px); opacity: 0; }
+  15%  { opacity: 1; }
+  45%  { transform: translate(3px,-16px); opacity: 0.72; }
+  75%  { transform: translate(-3px,-32px); opacity: 0.32; }
+  100% { transform: translate(2px,-46px); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .steam-wisp { animation: none; opacity: 0.08; }
@@ -1201,15 +1201,17 @@ document.addEventListener('click', function(e){
 
   <div style="position:absolute;inset:0;transform:scale(1.06) translateX(-50px);transform-origin:center;">
     <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
-    <svg class="steam-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+  </div>
+  <div class="steam-animation" style="position:absolute;left:24%;top:64%;width:110px;height:190px;transform:translate(-50%,-100%);pointer-events:none;z-index:3;opacity:0.45;">
+    <svg viewBox="0 0 110 190" style="width:100%;height:100%;" aria-hidden="true">
       <defs>
         <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="3"/>
+          <feGaussianBlur stdDeviation="2.5"/>
         </filter>
       </defs>
-      <path class="steam-wisp steam-wisp-1" d="M300,592 C294,560 306,545 298,512 C291,481 304,462 296,428" fill="none" stroke="#f2ede0" stroke-width="5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-2" d="M305,592 C313,562 322,547 316,514 C311,484 321,466 315,432" fill="none" stroke="#f2ede0" stroke-width="3.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-3" d="M294,592 C285,563 275,548 282,516 C276,486 264,468 271,436" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-1" d="M55,188 C50,165 60,150 54,128 C48,108 58,95 52,75 C47,58 56,48 51,25" fill="none" stroke="#f2ede0" stroke-width="4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-2" d="M62,188 C68,166 75,152 70,130 C66,110 74,96 69,78 C65,60 72,50 68,28" fill="none" stroke="#f2ede0" stroke-width="2.8" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-3" d="M46,188 C40,167 33,153 38,131 C33,111 25,97 30,79 C26,61 20,51 24,30" fill="none" stroke="#f2ede0" stroke-width="2.4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
     </svg>
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(10,14,24,0.8),rgba(10,14,24,0.42));"></div>
