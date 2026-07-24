@@ -179,7 +179,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
 .nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 12px !important;font-size:11px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
 .nav-nl-btn:hover{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
-#hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+#hero{position:relative;overflow:hidden}
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,58px);font-weight:400;color:#eee8d0;line-height:1.15;margin-bottom:16px;text-align:left}
 .hero-italic{font-family:'Playfair Display',serif;font-size:clamp(16px,2vw,24px);font-style:italic;color:#c9a96e;margin-bottom:24px;text-align:left}
 .hero-divider{width:48px;height:1px;background:#3d4a60;margin:0 0 24px}
@@ -271,11 +271,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   .hero-h1{font-size:32px}
   .page{padding:32px 16px}
   .watch-actions{width:100%}
-  #hero{grid-template-columns:1fr !important;min-height:auto !important;}
-  #hero > div:first-child{min-height:420px;}
-  #hero > div:first-child img{object-fit:cover !important;}
-  #hero > div:first-child > div:last-child{padding:32px 24px !important;}
-  #hero > div:last-child{padding:32px 24px !important;border-left:none !important;border-top:1px solid #3d4a60 !important;}
+  #hero{min-height:auto !important;}
 }
 
     /* === STANDARD NAV (canonical) === */
@@ -305,10 +301,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   nav.site-nav-std .nav-links { flex-wrap: wrap !important; width: 100% !important; gap: 2px !important; overflow-x: visible !important; justify-content: center !important; }
   nav.site-nav-std .nlink { padding: 8px 8px !important; font-size: 10px !important; }
   nav.site-nav-std .nav-guide-btn, nav.site-nav-std .nav-nl-btn { font-size: 10px !important; padding: 8px 10px !important; margin: 4px 2px !important; }
-  #hero { grid-template-columns: 1fr !important; min-height: auto !important; }
-  #hero > div:first-child { min-height: 360px !important; }
-  #hero > div:first-child img { object-fit: cover !important; object-position: center !important; }
-  #hero > div:last-child { border-left: none !important; border-top: 1px solid #3d4a60 !important; }
+  #hero { min-height: auto !important; }
 }
   
 
@@ -759,26 +752,14 @@ div[style*="border:1px solid #3d4a60"] {
   }
 
   /* Hero section */
-  #hero, [style*="grid-template-columns:1fr 1fr"] {
-    grid-template-columns: 1fr !important;
+  #hero {
     min-height: auto !important;
-    gap: 0 !important;
   }
 
-  #hero > div:first-child {
-    min-height: 300px !important;
-  }
-
-  #hero > div:first-child img {
+  #hero img {
     object-fit: cover !important;
     object-position: center !important;
     height: 100% !important;
-  }
-
-  #hero > div:last-child {
-    border-left: none !important;
-    border-top: 1px solid #3d4a60 !important;
-    padding: 24px 16px !important;
   }
 
   /* Typography mobile */
@@ -1216,7 +1197,7 @@ document.addEventListener('click', function(e){
 <div style="background:#2c3345;border-bottom:1px solid #3d4a60;padding:10px 24px;text-align:center;">
   <p style="margin:0;font-family:'Raleway',sans-serif;font-size:12px;color:#c8c0a8;">&#11088; Now available: <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="color:#c9a96e;text-decoration:underline;">become a British TV Hub Member on Facebook</a> for exclusive watchlists, hidden gems, and subscriber extras.</p>
 </div>
-<div id="hero" style="position:relative;overflow:hidden;min-height:600px;">
+<div id="hero" style="position:relative;overflow:hidden;height:600px;">
 
   <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
   <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(10,14,24,0.8),rgba(10,14,24,0.42));"></div>
