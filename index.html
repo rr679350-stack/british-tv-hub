@@ -1578,7 +1578,29 @@ document.addEventListener('click', function(e){
   </div>
 </footer>
 
-<!-- British TV Hub Pick is now set manually in the card markup above (This Month at British TV Hub) — update the title, star line, and Read Guide link there directly each month. -->
+<script>
+(function(){
+  // British TV Hub Pick — refreshed once per month (not daily). Update this array's
+  // order or add new entries to change what surfaces in future months; the card's
+  // static HTML above should be kept in sync with SHOWS[0] so there's no load-time flash.
+  const SHOWS = [
+    {title:'&#11088; Inspector Ellis',guideUrl:'/acorn.html'},
+    {title:'&#11088; Happy Valley',guideUrl:'/shows/happy-valley.html'},
+    {title:'&#11088; Inspector Morse',guideUrl:'/shows/inspector-morse.html'},
+    {title:'&#11088; Vera',guideUrl:'/shows/vera.html'},
+    {title:'&#11088; Miss Marple',guideUrl:'/shows/miss-marple.html'},
+    {title:'&#11088; Shetland',guideUrl:'/shows/shetland.html'},
+    {title:'&#11088; Midsomer Murders',guideUrl:'/shows/midsomer-murders.html'},
+  ];
+  const today = new Date();
+  const idx = (today.getFullYear()*12 + today.getMonth()) % SHOWS.length;
+  const show = SHOWS[idx];
+  const titleEl = document.getElementById('card-title');
+  const guideEl = document.getElementById('guide-btn');
+  if(titleEl) titleEl.innerHTML = show.title;
+  if(guideEl){ guideEl.href = show.guideUrl; }
+})();
+</script>
 
 
 <script>
