@@ -73,7 +73,14 @@ gtag('config', 'G-P1L8CVNKS6');
       nav.site-nav-std { padding: 0 12px; flex-wrap: wrap; }
       nav.site-nav-std .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
       nav.site-nav-std .nlink { padding: 14px 9px; font-size: 10px; }
-    }
+    }  .wl-how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 56px; }
+  .wl-how-step { background: var(--bg-card); border: 1px solid var(--border); padding: 22px; }
+  .wl-how-num { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--gold); line-height: 1; margin-bottom: 10px; }
+  .wl-how-title { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text); margin-bottom: 8px; }
+  .wl-how-desc { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+  @media (max-width: 800px) {
+    .wl-how { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -100,25 +107,43 @@ gtag('config', 'G-P1L8CVNKS6');
 <div class="page-hero">
   <div class="page-hero-eyebrow">Track Your Progress</div>
   <h1>Your Watch List</h1>
-  <p class="page-hero-lead">Mark shows as Want to Watch, Watching, or Finished right from the guide pages, and see everything gathered here.</p>
-  <p class="page-hero-note">No account needed &mdash; your list is saved in this browser, on this device.</p>
+  <p class="page-hero-lead">Every British TV Hub show card has three buttons &mdash; Want to Watch, Watching, and Finished. Click one on any show, and it shows up right here.</p>
+  <p class="page-hero-note">No account needed &mdash; your list is saved in this browser, on this device. Clearing your cookies or switching devices will clear it too.</p>
   <div class="wl-progress" id="wl-progress-line">Nothing tracked yet.</div>
 </div>
 
 <main>
+  <div class="wl-how">
+    <div class="wl-how-step">
+      <div class="wl-how-num">01</div>
+      <div class="wl-how-title">Find a show</div>
+      <div class="wl-how-desc">Browse the <a href="/shows.html" style="color:var(--gold);">Best Of Guide</a> or any show page across the site.</div>
+    </div>
+    <div class="wl-how-step">
+      <div class="wl-how-num">02</div>
+      <div class="wl-how-title">Mark your progress</div>
+      <div class="wl-how-desc">Click Want to Watch, Watching, or Finished right on the show card.</div>
+    </div>
+    <div class="wl-how-step">
+      <div class="wl-how-num">03</div>
+      <div class="wl-how-title">Come back anytime</div>
+      <div class="wl-how-desc">This page always shows everything you've marked, sorted by status.</div>
+    </div>
+  </div>
+
   <div class="section-label">Your Shows</div>
   <div class="wl-columns" id="wl-columns">
     <div class="wl-col">
       <div class="wl-col-title">&#9733; Want to Watch</div>
-      <div id="wl-list-want"><p class="wl-empty">Nothing here yet.</p></div>
+      <div id="wl-list-want"><p class="wl-empty">Shows you mark Want to Watch will appear here.</p></div>
     </div>
     <div class="wl-col">
       <div class="wl-col-title">&#128065; Watching</div>
-      <div id="wl-list-watching"><p class="wl-empty">Nothing here yet.</p></div>
+      <div id="wl-list-watching"><p class="wl-empty">Shows you're currently watching will appear here.</p></div>
     </div>
     <div class="wl-col">
       <div class="wl-col-title">&#10003; Finished</div>
-      <div id="wl-list-finished"><p class="wl-empty">Nothing here yet.</p></div>
+      <div id="wl-list-finished"><p class="wl-empty">Shows you've finished will appear here.</p></div>
     </div>
   </div>
 
@@ -195,11 +220,17 @@ gtag('config', 'G-P1L8CVNKS6');
         : groups.finished.length + ' finished \u00b7 ' + groups.watching.length + ' watching \u00b7 ' + groups.want.length + ' on your list';
     }
 
+    var emptyText = {
+      want: "Shows you mark Want to Watch will appear here.",
+      watching: "Shows you're currently watching will appear here.",
+      finished: "Shows you've finished will appear here."
+    };
+
     ['want','watching','finished'].forEach(function(status){
       var el = document.getElementById('wl-list-' + status);
       if(!el) return;
       if(groups[status].length === 0){
-        el.innerHTML = '<p class="wl-empty">Nothing here yet.</p>';
+        el.innerHTML = '<p class="wl-empty">' + emptyText[status] + '</p>';
         return;
       }
       el.innerHTML = groups[status].map(function(slug){
