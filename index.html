@@ -375,9 +375,9 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .steam-wisp-3 { animation-duration: 7.2s; animation-delay: 2.6s; }
 @keyframes steamRise {
   0%   { transform: translate(0,0); opacity: 0; }
-  15%  { opacity: 0.4; }
-  50%  { transform: translate(5px,-26px); opacity: 0.22; }
-  85%  { opacity: 0.08; }
+  15%  { opacity: 0.5; }
+  50%  { transform: translate(5px,-26px); opacity: 0.32; }
+  85%  { opacity: 0.12; }
   100% { transform: translate(-4px,-64px); opacity: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1226,16 +1226,10 @@ document.addEventListener('click', function(e){
         <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
           <feGaussianBlur stdDeviation="5"/>
         </filter>
-        <linearGradient id="steamFade" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0%" stop-color="#f2ede0" stop-opacity="0.55"/>
-          <stop offset="45%" stop-color="#f2ede0" stop-opacity="0.3"/>
-          <stop offset="75%" stop-color="#f2ede0" stop-opacity="0.1"/>
-          <stop offset="100%" stop-color="#f2ede0" stop-opacity="0"/>
-        </linearGradient>
       </defs>
-      <path class="steam-wisp steam-wisp-1" d="M420,560 C398,505 452,478 432,415 C412,355 466,325 442,262 C422,212 456,188 446,148" fill="none" stroke="url(#steamFade)" stroke-width="8" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-2" d="M456,560 C440,508 484,482 466,422 C449,366 490,340 472,282 C456,236 486,212 476,172" fill="none" stroke="url(#steamFade)" stroke-width="5.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-      <path class="steam-wisp steam-wisp-3" d="M400,555 C382,510 420,486 404,432 C388,380 424,356 408,304 C394,262 422,240 412,204" fill="none" stroke="url(#steamFade)" stroke-width="5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-1" d="M420,560 C398,505 452,478 432,415 C412,355 466,325 442,262 C422,212 456,188 446,148" fill="none" stroke="#f2ede0" stroke-width="13" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-2" d="M456,560 C440,508 484,482 466,422 C449,366 490,340 472,282 C456,236 486,212 476,172" fill="none" stroke="#f2ede0" stroke-width="9" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-3" d="M400,555 C382,510 420,486 404,432 C388,380 424,356 408,304 C394,262 422,240 412,204" fill="none" stroke="#f2ede0" stroke-width="8" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
     </svg>
     <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:48px 40px;">
       <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0e8d4;font-weight:600;text-shadow:0 1px 4px rgba(0,0,0,0.85),0 0 12px rgba(0,0,0,0.5);margin:0 0 14px;">Watch. Read. Discover.</p>
