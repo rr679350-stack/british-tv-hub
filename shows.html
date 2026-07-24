@@ -149,17 +149,17 @@ gtag('config', 'G-P1L8CVNKS6');
   .show-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--border); padding: 32px; display: grid; grid-template-columns: 64px 1fr; gap: 24px; align-items: start; transition: border-color 0.2s; }
   .show-card:hover { border-color: var(--gold); border-left-color: var(--gold); }
   .show-card.top { border-left-color: var(--gold); }
-  .byl { margin-top: 18px; }
-  .byl-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: #9090a8; margin-bottom: 8px; }
-  .byl-label span { color: var(--gold); font-family: 'Playfair Display', serif; font-style: italic; text-transform: none; letter-spacing: 0; font-size: 13px; }
-  .byl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
-  .byl-card { display: block; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 4px; padding: 8px 10px; font-family: 'Playfair Display', serif; font-size: 13px; color: #e8dfc8; text-decoration: none; transition: border-color 0.2s; }
-  .byl-card:hover { border-color: var(--gold); }
-  .byl-card.na { color: #9090a8; cursor: default; }
-  .wl-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
-  .wl-btn { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; background: transparent; border: 1px solid var(--border); color: var(--text-dim); padding: 7px 12px; cursor: pointer; border-radius: 2px; transition: border-color 0.2s, color 0.2s, background 0.2s; }
-  .wl-btn:hover { border-color: var(--gold); color: var(--text); }
-  .wl-btn.active { border-color: var(--gold); background: rgba(201,169,110,0.14); color: var(--gold-light); }
+  .wl-dropdown { position: relative; display: inline-block; margin-top: 12px; }
+  .wl-dd-toggle { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; background: transparent; border: 1px solid var(--border); color: var(--text-faint); padding: 6px 10px; cursor: pointer; border-radius: 2px; display: inline-flex; align-items: center; gap: 6px; transition: border-color 0.2s, color 0.2s; }
+  .wl-dd-toggle:hover { border-color: var(--gold); color: var(--text-dim); }
+  .wl-dd-toggle.active { border-color: var(--gold); color: var(--gold-light); }
+  .wl-dd-caret { font-size: 8px; }
+  .wl-dd-menu { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; background: var(--bg-dark); border: 1px solid var(--border); min-width: 150px; z-index: 20; }
+  .wl-dropdown.open .wl-dd-menu { display: block; }
+  .wl-dd-item { display: block; width: 100%; text-align: left; font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; background: none; border: none; color: var(--text-dim); padding: 8px 12px; cursor: pointer; }
+  .wl-dd-item:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+  .wl-dd-item.active { color: var(--gold-light); }
+  .wl-dd-item.active::before { content: "\2713  "; }
   .show-rank { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-faint); margin-bottom: 4px; }
   .show-number { font-family: 'Playfair Display', serif; font-size: 48px; color: var(--border); line-height: 1; }
   .show-badge { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-faint); margin-bottom: 10px; }
@@ -1341,18 +1341,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title"><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Inspector Morse</a></h3>
           <p class="show-desc">The gold standard of British detective drama. John Thaw's Morse remains unmatched in literary intelligence and melancholic depth. Start here if you haven't already &mdash; then follow with Endeavour and Lewis.</p>
           <div class="show-tags"><span class="tag">Oxford</span><span class="tag">Detective</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-buttons" data-slug="inspector-morse">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Inspector Morse</span></div>
-            <div class="byl-grid">
-              <span class="byl-card na">Endeavour</span>
-              <span class="byl-card na">Lewis</span>
-              <span class="byl-card na">Foyle's War</span>
-              <a class="byl-card" href="/shows/grantchester.html">Grantchester</a>
+          <div class="wl-dropdown" data-slug="inspector-morse">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
           <div style="margin-top:12px;"><a href="/shows/inspector-morse.html" style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
@@ -1366,18 +1360,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title"><a href="/shows/vera.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Vera</a></h3>
           <p class="show-desc">Brenda Blethyn's Vera Stanhope is one of television's great detectives &mdash; unconventional, brilliant, and deeply human. Set against the wild Northumberland coast. Fourteen series completed, a masterclass in crime drama.</p>
           <div class="show-tags"><span class="tag">Northumberland</span><span class="tag">Crime</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-buttons" data-slug="vera">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Vera</span></div>
-            <div class="byl-grid">
-              <a class="byl-card" href="/shows/shetland.html">Shetland</a>
-              <span class="byl-card na">Dalgliesh</span>
-              <span class="byl-card na">Whitstable Pearl</span>
-              <a class="byl-card" href="/shows/blue-lights.html">Blue Lights</a>
+          <div class="wl-dropdown" data-slug="vera">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
           <div style="margin-top:12px;"><a href="/shows/vera.html" style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
@@ -1391,18 +1379,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title">Broadchurch</h3>
           <p class="show-desc">The defining British crime drama of the 2010s. A small coastal town, a devastating crime, and a community torn apart. Olivia Colman and David Tennant at their absolute best.</p>
           <div class="show-tags"><span class="tag">Coastal</span><span class="tag">Thriller</span><span class="tag platform">Free on Tubi</span></div>
-          <div class="wl-buttons" data-slug="broadchurch">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Broadchurch</span></div>
-            <div class="byl-grid">
-              <a class="byl-card" href="/shows/happy-valley.html">Happy Valley</a>
-              <a class="byl-card" href="/shows/unforgotten.html">Unforgotten</a>
-              <a class="byl-card" href="/shows/line-of-duty.html">Line of Duty</a>
-              <span class="byl-card na">The Fall</span>
+          <div class="wl-dropdown" data-slug="broadchurch">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
         </div>
@@ -1415,18 +1397,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title">Hinterland</h3>
           <p class="show-desc">Filmed twice — once in Welsh and once in English — this brooding detective series set in rural Wales is criminally underrated. Dark, atmospheric, and unlike anything else in the genre.</p>
           <div class="show-tags"><span class="tag">Wales</span><span class="tag">Atmospheric</span><a class="tag platform acorn" href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener">Acorn TV</a></div>
-          <div class="wl-buttons" data-slug="hinterland">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Hinterland</span></div>
-            <div class="byl-grid">
-              <span class="byl-card na">Bloodlands</span>
-              <a class="byl-card" href="/shows/unforgotten.html">Unforgotten</a>
-              <a class="byl-card" href="/shows/blue-lights.html">Blue Lights</a>
-              <span class="byl-card na">Marcella</span>
+          <div class="wl-dropdown" data-slug="hinterland">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
         </div>
@@ -1439,18 +1415,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title"><a href="/shows/miss-marple.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Miss Marple (1984)</a></h3>
           <p class="show-desc">Joan Hickson's definitive portrayal of Miss Marple remains the benchmark. Quietly devastating, impeccably cast, and deeply satisfying to watch over and over again.</p>
           <div class="show-tags"><span class="tag">Cozy Mystery</span><span class="tag">Classic</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-buttons" data-slug="miss-marple">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Miss Marple (1984)</span></div>
-            <div class="byl-grid">
-              <span class="byl-card na">Poirot</span>
-              <span class="byl-card na">Father Brown</span>
-              <a class="byl-card" href="/shows/midsomer-murders.html">Midsomer Murders</a>
-              <span class="byl-card na">Sister Boniface Mysteries</span>
+          <div class="wl-dropdown" data-slug="miss-marple">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
           <div style="margin-top:12px;"><a href="/shows/miss-marple.html" style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
@@ -1464,18 +1434,12 @@ document.addEventListener('click', function(e){
           <h3 class="show-title"><a href="/shows/happy-valley.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Happy Valley</a></h3>
           <p class="show-desc">Sarah Lancashire is extraordinary as a Yorkshire police sergeant. Dark, powerful and one of the best shows ever made. Three series, each better than the last.</p>
           <div class="show-tags"><span class="tag">Yorkshire</span><span class="tag">Crime Drama</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-buttons" data-slug="happy-valley">
-            <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
-            <button type="button" class="wl-btn" data-status="watching">Watching</button>
-            <button type="button" class="wl-btn" data-status="finished">Finished</button>
-          </div>
-          <div class="byl">
-            <div class="byl-label">Because you loved <span>Happy Valley</span></div>
-            <div class="byl-grid">
-              <span class="byl-card na">Broadchurch</span>
-              <a class="byl-card" href="/shows/line-of-duty.html">Line of Duty</a>
-              <a class="byl-card" href="/shows/unforgotten.html">Unforgotten</a>
-              <a class="byl-card" href="/shows/blue-lights.html">Blue Lights</a>
+          <div class="wl-dropdown" data-slug="happy-valley">
+            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
+            <div class="wl-dd-menu">
+              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
+              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
+              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
             </div>
           </div>
           <div style="margin-top:12px;"><a href="/shows/happy-valley.html" style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>

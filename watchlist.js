@@ -1,5 +1,6 @@
 (function(){
   var KEY = 'btvh_watchlist_v1';
+  var LABELS = { want: 'Want to Watch', watching: 'Watching', finished: 'Finished' };
 
   function getAll(){
     try {
@@ -30,32 +31,61 @@
   function paint(el){
     var slug = el.getAttribute('data-slug');
     var current = getStatus(slug);
-    var btns = el.querySelectorAll('.wl-btn');
-    for(var i = 0; i < btns.length; i++){
-      var btn = btns[i];
-      var isActive = current === btn.getAttribute('data-status');
-      btn.classList.toggle('active', isActive);
-      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    var toggle = el.querySelector('.wl-dd-toggle');
+    var label = el.querySelector('.wl-dd-label');
+    if(!toggle || !label) return;
+    if(current && LABELS[current]){
+      label.textContent = LABELS[current];
+      toggle.classList.add('active');
+    } else {
+      label.textContent = 'Add to Watch List';
+      toggle.classList.remove('active');
+    }
+    var items = el.querySelectorAll('.wl-dd-item');
+    for(var i = 0; i < items.length; i++){
+      items[i].classList.toggle('active', items[i].getAttribute('data-status') === current);
+    }
+  }
+
+  function closeAllMenus(except){
+    var open = document.querySelectorAll('.wl-dropdown.open');
+    for(var i = 0; i < open.length; i++){
+      if(open[i] !== except){ open[i].classList.remove('open'); }
     }
   }
 
   function init(){
-    var groups = document.querySelectorAll('.wl-buttons[data-slug]');
+    var groups = document.querySelectorAll('.wl-dropdown[data-slug]');
     for(var g = 0; g < groups.length; g++){
       (function(el){
         paint(el);
-        var btns = el.querySelectorAll('.wl-btn');
-        for(var i = 0; i < btns.length; i++){
-          btns[i].addEventListener('click', function(){
+        var toggle = el.querySelector('.wl-dd-toggle');
+        if(toggle){
+          toggle.addEventListener('click', function(e){
+            e.stopPropagation();
+            var wasOpen = el.classList.contains('open');
+            closeAllMenus();
+            if(!wasOpen){ el.classList.add('open'); }
+          });
+        }
+        var items = el.querySelectorAll('.wl-dd-item');
+        for(var i = 0; i < items.length; i++){
+          items[i].addEventListener('click', function(e){
+            e.stopPropagation();
             var slug = el.getAttribute('data-slug');
             var val = this.getAttribute('data-status');
             var current = getStatus(slug);
             setStatus(slug, current === val ? null : val);
             paint(el);
+            el.classList.remove('open');
           });
         }
       })(groups[g]);
     }
+    document.addEventListener('click', function(){ closeAllMenus(); });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ closeAllMenus(); }
+    });
   }
 
   window.BTVHWatchlist = { getAll: getAll, getStatus: getStatus, setStatus: setStatus, paint: paint, init: init };
