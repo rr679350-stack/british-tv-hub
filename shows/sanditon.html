@@ -127,7 +127,12 @@ gtag('config', 'G-P1L8CVNKS6');
       nav.site-nav-std .nav-guide-btn, nav.site-nav-std .nav-nl-btn { font-size: 10px; padding: 9px 12px; }
     }
 
-  </style>
+  
+    .wl-buttons { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 0; }
+    .wl-btn { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; background: transparent; border: 1px solid var(--border); color: var(--text-dim); padding: 7px 12px; cursor: pointer; border-radius: 2px; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+    .wl-btn:hover { border-color: var(--gold); color: var(--text); }
+    .wl-btn.active { border-color: var(--gold); background: rgba(201,169,110,0.14); color: var(--gold-light); }
+</style>
 <style>
 /* Fix: allow header nav to wrap instead of clipping items when it overflows (narrow screens only) */
 @media (max-width: 1300px) {
@@ -333,6 +338,12 @@ document.addEventListener('click', function(e){
     <span class="tag">Romance</span>
   </div>
 
+  <div class="wl-buttons" data-slug="sanditon">
+    <button type="button" class="wl-btn" data-status="want">Want to Watch</button>
+    <button type="button" class="wl-btn" data-status="watching">Watching</button>
+    <button type="button" class="wl-btn" data-status="finished">Finished</button>
+  </div>
+
   <p class="show-description">Based on Jane Austen's final, unfinished novel, Sanditon transports you to a fashionable seaside resort where romance, intrigue, and fortune-hunting abound from the sandy shore to the candlelit assembly rooms. Rose Williams stars as bold, modern heroine Charlotte Heywood alongside Crystal Clarke's heiress Georgiana Lambe. Gorgeous costumes, sparkling wit, love triangles, and addictive drama penned by renowned Austen adapter Andrew Davies — your carriage awaits.</p>
 
   <hr class="divider">
@@ -453,5 +464,6 @@ document.addEventListener('click', function(e){
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
 </script>
+<script src="/watchlist.js"></script>
 </body>
 </html>
