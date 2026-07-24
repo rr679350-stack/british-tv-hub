@@ -1199,19 +1199,21 @@ document.addEventListener('click', function(e){
 </div>
 <div id="hero" style="position:relative;overflow:hidden;height:600px;">
 
-  <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+  <div style="position:absolute;inset:0;transform:scale(1.06) translateX(-50px);transform-origin:center;">
+    <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+    <svg class="steam-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+      <defs>
+        <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="5.5"/>
+        </filter>
+      </defs>
+      <path class="steam-wisp steam-wisp-1" d="M276,592 C270,560 282,545 274,512 C267,481 280,462 272,428" fill="none" stroke="#f2ede0" stroke-width="3.4" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-2" d="M281,592 C289,562 298,547 292,514 C287,484 297,466 291,432" fill="none" stroke="#f2ede0" stroke-width="2.25" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+      <path class="steam-wisp steam-wisp-3" d="M270,592 C261,563 251,548 258,516 C252,486 240,468 247,436" fill="none" stroke="#f2ede0" stroke-width="1.9" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
+    </svg>
+  </div>
   <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(10,14,24,0.8),rgba(10,14,24,0.42));"></div>
-  <svg class="steam-overlay" viewBox="0 0 1536 1024" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
-    <defs>
-      <filter id="steamblur" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="5.5"/>
-      </filter>
-    </defs>
-    <path class="steam-wisp steam-wisp-1" d="M276,592 C270,560 282,545 274,512 C267,481 280,462 272,428" fill="none" stroke="#f2ede0" stroke-width="4.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-    <path class="steam-wisp steam-wisp-2" d="M281,592 C289,562 298,547 292,514 C287,484 297,466 291,432" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-    <path class="steam-wisp steam-wisp-3" d="M270,592 C261,563 251,548 258,516 C252,486 240,468 247,436" fill="none" stroke="#f2ede0" stroke-width="2.5" stroke-linecap="round" opacity="0" filter="url(#steamblur)"/>
-  </svg>
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:48px 64px;">
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:48px 154px 48px 64px;">
     <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0e8d4;font-weight:600;text-shadow:0 1px 4px rgba(0,0,0,0.85),0 0 12px rgba(0,0,0,0.5);margin:0 0 14px;">Watch. Read. Discover.</p>
     <h1 style="font-family:'Playfair Display',serif;font-size:48px;font-weight:400;line-height:1.2;color:#f6f1e6;margin:0 0 12px;text-shadow:0 2px 10px rgba(0,0,0,.7);">Your Guide to<br><em style="color:#e6c778;">British TV &amp; Books</em></h1>
     <div style="width:40px;height:1px;background:#c9a96e;margin:16px 0;"></div>
