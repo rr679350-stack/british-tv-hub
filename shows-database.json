@@ -2817,5 +2817,837 @@
     "au": [],
     "verified": "2026-07-26",
     "sources": []
+  },
+  {
+    "title": "Trigger Point",
+    "years": "2022–present",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Professor T",
+    "years": "2021–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Unforgotten",
+    "years": "2015–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Blue Lights",
+    "years": "2023–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "A Cruel Love: The Ruth Ellis Story",
+    "years": "2025",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "A Taste for Murder",
+    "years": "2026–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Agatha Christie's Tommy & Tuppence",
+    "years": "2025–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Agatha Christie's Towards Zero",
+    "years": "2025",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Dalziel and Pascoe",
+    "years": "2027 (upcoming)",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      },
+      {
+        "name": "STV Player",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Hercule",
+    "years": "2024",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BritBox UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Lynley",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC One",
+        "tag": "free"
+      },
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Outrageous",
+    "years": "2025–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Riot Women",
+    "years": "2026",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Cadburys",
+    "years": "2026 (upcoming)",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Lady",
+    "years": "2026",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BritBox UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Other Bennet Sister",
+    "years": "2025–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Harry Wild",
+    "years": "2022–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Art Detectives",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "My Life Is Murder",
+    "years": "2019–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Darby and Joan",
+    "years": "2023–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Under the Vines",
+    "years": "2021–present",
+    "genre": "Romantic Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Brokenwood Mysteries",
+    "years": "2014–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Bäckström",
+    "years": "2020–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Hidden Assets",
+    "years": "2021–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Irish Blood",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Jack Irish",
+    "years": "2012–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Mrs Sidhu Investigates",
+    "years": "2024–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Ms. Fisher's Modern Murder Mysteries",
+    "years": "2019–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Murder Before Evensong",
+    "years": "2025–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Channel 5",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Murdoch Mysteries",
+    "years": "2008–present",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Alibi",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Mystery Road: Origin",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Queens of Mystery",
+    "years": "2019–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Alibi",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Real Manhunter",
+    "years": "2021–present",
+    "genre": "True Crime Documentary",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Channel 5",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Recipes for Love and Murder",
+    "years": "2022–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
   }
 ]
