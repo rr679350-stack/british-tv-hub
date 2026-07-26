@@ -164,6 +164,11 @@ gtag('config', 'G-P1L8CVNKS6');
     padding: 12px 0; border-bottom: 1px solid rgba(61,74,96,.45);
   }
   .service-row:last-child { border-bottom: none; }
+  .service-group-label {
+    list-style: none; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--gold-bright); padding: 14px 0 4px; opacity: .85;
+  }
+  .service-group-label:first-child { padding-top: 0; }
   .service-name { font-size: 16px; font-weight: 600; color: var(--cream); text-decoration: none; cursor: pointer; border-bottom: 1px solid transparent; transition: border-color .15s ease, color .15s ease; }
   .service-name:hover { color: var(--gold-bright); border-bottom-color: var(--gold-bright); }
   .service-note { font-size: 13px; color: var(--muted); font-style: italic; }
@@ -1345,7 +1350,7 @@ document.addEventListener('click', function(e){
   <section class="hero">
     
     <h1 class="hero-title">The Case of the <em>Elusive Episode</em></h1>
-    <p class="hero-sub">Every show is hiding somewhere. Type a title, and we'll tell you where to find it.</p>
+    <p class="hero-sub">Every British series is hiding somewhere. Enter a title and we'll help you find where it's streaming.</p>
   </section>
 
   <div class="wrap">
@@ -1353,7 +1358,7 @@ document.addEventListener('click', function(e){
     <div class="search-zone">
       <span class="search-icon">🔍</span>
       <input type="text" class="search-input" id="searchInput" autocomplete="off"
-             placeholder="Name your suspect… e.g. Vera, Midsomer Murders">
+             placeholder="Name your suspect… e.g. Vera, Shetland, Doc Martin">
       <ul class="suggest" id="suggestList"></ul>
     </div>
 
@@ -1370,8 +1375,7 @@ document.addEventListener('click', function(e){
       
       <div class="vpn-title">Some of the best clues are hiding on UK telly</div>
       <p class="vpn-body">
-        Shows like Vera, Happy Valley and Call the Midwife often stream <strong style="color:var(--cream)">free</strong>
-        on UK services such as BBC iPlayer and ITVX. Expats and travellers reach them from abroad with a VPN —
+        Many British series are available free to UK viewers through BBC iPlayer and ITVX, though availability varies by title and broadcast rights — <em>Vera</em> is an ITVX show, while <em>Happy Valley</em> and <em>Call the Midwife</em> are on BBC iPlayer. Travellers sometimes access their home subscriptions while abroad using a VPN, subject to each service's terms and local laws —
         we use <a href="https://nordvpn.com/special/?utm_medium=affiliate&utm_term=&utm_content&utm_source=aff148975&utm_campaign=off15" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">NordVPN</a> to keep our own British TV nights going.
       </p>
     </div>
@@ -1559,14 +1563,21 @@ function renderResult(show) {
   if (!services.length) {
     rows = `<li class="service-row"><span class="service-note">No streaming home on file for this region yet — try our <a href="/streaming.html" style="color:var(--gold)">streaming guide</a>.</span></li>`;
   } else {
-    rows = services.map(sv => `
+    const order = ['stream', 'free', 'buy'];
+    const groups = {};
+    services.forEach(sv => { (groups[sv.tag] = groups[sv.tag] || []).push(sv); });
+    const presentTags = order.filter(t => groups[t] && groups[t].length);
+    const showHeaders = presentTags.length > 1;
+    rows = presentTags.map(tag => `
+      ${showHeaders ? `<li class="service-group-label">${TAG_TEXT[tag]}</li>` : ''}
+      ${groups[tag].map(sv => `
       <li class="service-row">
         <span>
           <a class="service-name" href="${sv.url || '#'}" target="_blank" rel="noopener sponsored">${sv.name}</a>
           ${sv.note ? `<span class="service-note"> — ${sv.note}</span>` : ''}
         </span>
-        <span class="service-tag tag-${sv.tag}">${TAG_TEXT[sv.tag]}</span>
-      </li>`).join('');
+        ${!showHeaders ? `<span class="service-tag tag-${sv.tag}">${TAG_TEXT[sv.tag]}</span>` : ''}
+      </li>`).join('')}`).join('');
   }
   resultEl.innerHTML = `
     <div class="case-file">
