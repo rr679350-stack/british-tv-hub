@@ -511,7 +511,7 @@
     "sources": []
   },
   {
-    "title": "Miss Marple (Agatha Christie's Marple)",
+    "title": "Miss Marple",
     "years": "2004–2013",
     "genre": "Cozy Mystery",
     "us": [
@@ -1049,7 +1049,7 @@
   {
     "title": "Death Valley",
     "years": "2025–present",
-    "genre": "Cosy Mystery Comedy",
+    "genre": "Cozy Mystery Comedy",
     "us": [
       {
         "name": "BritBox",
@@ -1081,7 +1081,7 @@
   {
     "title": "The Marlow Murder Club",
     "years": "2024–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "PBS Masterpiece",
@@ -1113,7 +1113,7 @@
   {
     "title": "Sister Boniface Mysteries",
     "years": "2022–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "BritBox",
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "Upstairs, Downstairs",
-    "years": "1971–1975 (2010 revival)",
+    "years": "1971–1975 (2010–2012 revival)",
     "genre": "Period Drama",
     "us": [
       {
@@ -1483,7 +1483,7 @@
     "sources": []
   },
   {
-    "title": "The Durrells",
+    "title": "The Durrells in Corfu",
     "years": "2016–2019",
     "genre": "Period Drama",
     "us": [
@@ -2949,7 +2949,7 @@
   {
     "title": "A Taste for Murder",
     "years": "2026–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "BritBox",
@@ -3048,27 +3048,29 @@
   },
   {
     "title": "Hercule",
-    "years": "2024",
+    "years": "2026 (upcoming)",
     "genre": "Mystery",
     "us": [
       {
         "name": "BritBox",
         "tag": "stream"
-      },
-      {
-        "name": "BritBox via Amazon",
-        "tag": "stream"
       }
     ],
     "uk": [
       {
-        "name": "BritBox UK",
-        "tag": "stream"
+        "name": "BBC One",
+        "tag": "free"
+      },
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
       }
     ],
     "au": [],
     "verified": "2026-07-26",
-    "sources": []
+    "sources": [
+      "https://variety.com/2026/tv/global/edward-bluemel-hercule-poirot-bbc-britbox-series-1236769294/"
+    ]
   },
   {
     "title": "Lynley",
@@ -3221,7 +3223,7 @@
   {
     "title": "Harry Wild",
     "years": "2022–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "Acorn TV",
@@ -3461,7 +3463,7 @@
   {
     "title": "Mrs Sidhu Investigates",
     "years": "2024–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "Acorn TV",
@@ -3509,7 +3511,7 @@
   {
     "title": "Murder Before Evensong",
     "years": "2025–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "Acorn TV",
@@ -3581,7 +3583,7 @@
   {
     "title": "Queens of Mystery",
     "years": "2019–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "Acorn TV",
@@ -3629,7 +3631,7 @@
   {
     "title": "Recipes for Love and Murder",
     "years": "2022–present",
-    "genre": "Cosy Mystery",
+    "genre": "Cozy Mystery",
     "us": [
       {
         "name": "Acorn TV",
