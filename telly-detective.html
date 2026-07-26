@@ -26,9 +26,9 @@ gtag('config', 'G-P1L8CVNKS6');
       gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
     } else if(href.indexOf('nordvpn.com') > -1){
       gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('britbox.com') > -1){
+    } else if(href.indexOf('britbox.com') > -1 || href.indexOf('c984b526') > -1){
       gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('acorn.tv') > -1){
+    } else if(href.indexOf('acorn.tv') > -1 || href.indexOf('c8382769') > -1){
       gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
     }
   }, true);
@@ -164,7 +164,8 @@ gtag('config', 'G-P1L8CVNKS6');
     padding: 12px 0; border-bottom: 1px solid rgba(61,74,96,.45);
   }
   .service-row:last-child { border-bottom: none; }
-  .service-name { font-size: 16px; font-weight: 600; color: var(--cream); }
+  .service-name { font-size: 16px; font-weight: 600; color: var(--cream); text-decoration: none; cursor: pointer; border-bottom: 1px solid transparent; transition: border-color .15s ease, color .15s ease; }
+  .service-name:hover { color: var(--gold-bright); border-bottom-color: var(--gold-bright); }
   .service-note { font-size: 13px; color: var(--muted); font-style: italic; }
   .service-tag {
     font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
@@ -1561,7 +1562,7 @@ function renderResult(show) {
     rows = services.map(sv => `
       <li class="service-row">
         <span>
-          <span class="service-name">${sv.name}</span>
+          <a class="service-name" href="${sv.url || '#'}" target="_blank" rel="noopener sponsored">${sv.name}</a>
           ${sv.note ? `<span class="service-note"> — ${sv.note}</span>` : ''}
         </span>
         <span class="service-tag tag-${sv.tag}">${TAG_TEXT[sv.tag]}</span>

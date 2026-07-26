@@ -6,31 +6,37 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Foxtel / Binge",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.binge.com.au"
       }
     ],
     "verified": "2026-07-20",
@@ -48,31 +54,37 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -90,27 +102,32 @@
     "us": [
       {
         "name": "AMC+ / Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Stan",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.stan.com.au"
       }
     ],
     "verified": "2026-07-20",
@@ -129,23 +146,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -163,27 +184,32 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -202,27 +228,32 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -239,36 +270,43 @@
     "us": [
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       },
       {
         "name": "Peacock",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
       },
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       }
     ],
     "uk": [
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       },
       {
         "name": "Buy on Amazon / Apple",
-        "tag": "buy"
+        "tag": "buy",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "10 play",
         "tag": "free",
-        "note": "selected"
+        "note": "selected",
+        "url": "https://10play.com.au"
       }
     ],
     "verified": "2026-07-20",
@@ -287,31 +325,37 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Hulu",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.hulu.com"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "verified": "2026-07-20",
@@ -331,23 +375,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -365,23 +413,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-20",
@@ -400,37 +452,44 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "Prime Video",
         "tag": "stream",
-        "note": "S1–5"
+        "note": "S1–5",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "ABC iview",
         "tag": "free",
-        "note": "selected"
+        "note": "selected",
+        "url": "https://iview.abc.net.au"
       }
     ],
     "verified": "2026-07-03",
@@ -443,23 +502,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-03",
@@ -472,39 +535,47 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "verified": "2026-07-03",
@@ -517,31 +588,37 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "verified": "2026-07-03",
@@ -554,36 +631,43 @@
     "us": [
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       },
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Stan",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.stan.com.au"
       },
       {
         "name": "ABC iview",
         "tag": "free",
-        "note": "selected"
+        "note": "selected",
+        "url": "https://iview.abc.net.au"
       }
     ],
     "verified": "2026-07-03",
@@ -596,27 +680,32 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "Peacock",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
       }
     ],
     "uk": [
       {
         "name": "Channel 5 / My5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-03",
@@ -629,32 +718,38 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Roku / Pluto",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://pluto.tv"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "7plus",
         "tag": "free",
-        "note": "selected"
+        "note": "selected",
+        "url": "https://7plus.com.au"
       }
     ],
     "verified": "2026-07-03",
@@ -667,23 +762,27 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-03",
@@ -696,27 +795,32 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Prime Video",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "UKTV Play",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-03",
@@ -729,19 +833,22 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-03",
@@ -754,7 +861,8 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [],
@@ -772,23 +880,27 @@
     "us": [
       {
         "name": "Peacock",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "au": [
       {
         "name": "Binge / Foxtel",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.binge.com.au"
       }
     ],
     "verified": "2026-07-15",
@@ -806,19 +918,22 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -834,23 +949,27 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -867,19 +986,22 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -896,19 +1018,22 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -924,23 +1049,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Stan",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.stan.com.au"
       },
       {
         "name": "7plus",
         "tag": "free",
-        "note": "selected"
+        "note": "selected",
+        "url": "https://7plus.com.au"
       }
     ],
     "verified": "2026-07-15",
@@ -958,23 +1087,27 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -991,23 +1124,27 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -1024,19 +1161,22 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "au": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "verified": "2026-07-15",
@@ -1053,21 +1193,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BBC One",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1085,21 +1229,25 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       },
       {
         "name": "U (UKTV streaming)",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -1117,21 +1265,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       },
       {
         "name": "U (UKTV streaming)",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -1148,21 +1300,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       },
       {
         "name": "U (UKTV streaming)",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -1179,21 +1335,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       },
       {
         "name": "U (UKTV streaming)",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -1209,17 +1369,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BBC One",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1237,21 +1400,25 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       },
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1265,21 +1432,25 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       },
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1293,17 +1464,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1317,25 +1491,30 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1349,17 +1528,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -1373,17 +1555,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1397,17 +1582,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "Channel 4",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel4.com"
       }
     ],
     "au": [],
@@ -1421,13 +1609,15 @@
     "us": [
       {
         "name": "MGM+",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.mgmplus.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1441,17 +1631,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1465,17 +1658,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1489,17 +1685,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1513,17 +1712,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -1537,21 +1739,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       },
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1565,17 +1771,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1589,17 +1798,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1613,17 +1825,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1637,17 +1852,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1661,17 +1879,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1685,17 +1906,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1709,17 +1933,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1733,17 +1960,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1757,17 +1987,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1781,17 +2014,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -1805,17 +2041,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -1829,17 +2068,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -1853,17 +2095,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U (UKTV streaming)",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -1877,17 +2122,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1901,21 +2149,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "Free on Pluto TV",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://pluto.tv"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -1929,17 +2181,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1953,17 +2208,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -1977,17 +2235,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2001,17 +2262,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2025,13 +2289,15 @@
     "us": [
       {
         "name": "Amazon Video",
-        "tag": "buy"
+        "tag": "buy",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2045,25 +2311,30 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2077,17 +2348,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2101,21 +2375,25 @@
     "us": [
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2129,13 +2407,15 @@
     "us": [
       {
         "name": "Netflix",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2149,21 +2429,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "S4C",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.s4c.cymru"
       }
     ],
     "au": [],
@@ -2177,21 +2461,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       },
       {
         "name": "U&Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -2205,17 +2493,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2229,21 +2520,25 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "UKTV Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -2257,17 +2552,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -2281,17 +2579,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2305,17 +2606,20 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2329,17 +2633,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2353,17 +2660,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2377,13 +2687,15 @@
     "us": [
       {
         "name": "Apple TV+",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://tv.apple.com"
       }
     ],
     "uk": [
       {
         "name": "Apple TV+",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://tv.apple.com"
       }
     ],
     "au": [],
@@ -2397,17 +2709,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2421,17 +2736,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2445,21 +2763,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Sky",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.sky.com/watch"
       },
       {
         "name": "U&Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -2473,17 +2795,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -2497,17 +2822,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2521,17 +2849,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2545,17 +2876,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2569,17 +2903,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2593,17 +2930,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2617,25 +2957,30 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2649,17 +2994,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2673,17 +3021,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2697,17 +3048,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -2721,17 +3075,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2745,17 +3102,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2769,17 +3129,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2793,25 +3156,30 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       },
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -2825,17 +3193,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2849,17 +3220,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2873,25 +3247,30 @@
     "us": [
       {
         "name": "PBS Masterpiece",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
       },
       {
         "name": "PBS Passport",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
       },
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2905,17 +3284,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -2929,17 +3311,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -2953,17 +3338,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -2977,17 +3365,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3001,17 +3392,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3025,21 +3419,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       },
       {
         "name": "STV Player",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://player.stv.tv"
       }
     ],
     "au": [],
@@ -3053,17 +3451,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC One",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3079,21 +3480,25 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC One",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3107,17 +3512,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -3131,17 +3539,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3155,17 +3566,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "U&Drama",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -3179,17 +3593,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BritBox UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.britbox.com/uk"
       }
     ],
     "au": [],
@@ -3203,17 +3620,20 @@
     "us": [
       {
         "name": "BritBox",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
         "name": "BritBox via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
@@ -3227,17 +3647,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3251,17 +3674,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3275,17 +3701,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3299,17 +3728,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3323,17 +3755,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3347,17 +3782,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3371,17 +3809,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3395,17 +3836,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3419,17 +3863,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3443,17 +3890,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3467,17 +3917,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3491,17 +3944,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3515,17 +3971,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -3539,17 +3998,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -3563,17 +4025,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3587,17 +4052,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Alibi",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://u.co.uk"
       }
     ],
     "au": [],
@@ -3611,17 +4079,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -3635,17 +4106,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3659,17 +4133,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3683,17 +4160,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3707,17 +4187,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3731,17 +4214,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3755,17 +4241,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -3779,17 +4268,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -3803,17 +4295,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 5",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -3827,17 +4322,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -3851,17 +4349,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Channel 4",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.channel4.com"
       }
     ],
     "au": [],
@@ -3875,21 +4376,25 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       },
       {
         "name": "S4C",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.s4c.cymru"
       }
     ],
     "au": [],
@@ -3903,17 +4408,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -3927,17 +4435,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "ITVX",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
       }
     ],
     "au": [],
@@ -3951,17 +4462,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Sky Max",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.sky.com/watch"
       }
     ],
     "au": [],
@@ -3975,17 +4489,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -3999,17 +4516,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "Acorn TV UK",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://acorn.tv"
       }
     ],
     "au": [],
@@ -4023,17 +4543,20 @@
     "us": [
       {
         "name": "Acorn TV",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
         "name": "Acorn TV via Amazon",
-        "tag": "stream"
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [
       {
         "name": "BBC iPlayer",
-        "tag": "free"
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
     "au": [],
