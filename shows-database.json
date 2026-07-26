@@ -3651,5 +3651,393 @@
     "au": [],
     "verified": "2026-07-26",
     "sources": []
+  },
+  {
+    "title": "The Attaché",
+    "years": "2023",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Balthazar",
+    "years": "2018–2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Blinded – Those Who Kill",
+    "years": "2021",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Candice Renoir",
+    "years": "2013–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Cannes Confidential",
+    "years": "2018",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Channel 5",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Conviction: The Case of Stephen Lawrence",
+    "years": "2021",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Drowning",
+    "years": "2021",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Channel 5",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Good Karma Hospital",
+    "years": "2017–2022",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Help",
+    "years": "2021",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Channel 4",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Keeping Faith",
+    "years": "2017–2020",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      },
+      {
+        "name": "S4C",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Larkins",
+    "years": "2021–present",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Manhunt: The Night Stalker",
+    "years": "2021",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "The Midwich Cuckoos: Village of the Damned",
+    "years": "2022",
+    "genre": "Supernatural Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Sky Max",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "One Lane Bridge",
+    "years": "2020–2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "A Remarkable Place to Die",
+    "years": "2023–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Acorn TV UK",
+        "tag": "stream"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
+  },
+  {
+    "title": "Steeltown Murders",
+    "years": "2023",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": []
   }
 ]
