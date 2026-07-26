@@ -218,6 +218,9 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .top5-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .show-card{background:#1e2433;border:1px solid #3d4a60;padding:22px;transition:all 0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .show-card:hover{background:#232a3a;box-shadow:0 4px 16px rgba(0,0,0,0.35);border-color:var(--border2)}
+.lobby-path{background:rgba(30,36,51,0.72);border:1px solid #3d4a60;padding:30px 18px 26px;text-decoration:none;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color 0.2s ease,background 0.2s ease,transform 0.2s ease;}
+.lobby-path:hover{border-color:#c9a96e;background:rgba(35,42,58,0.95);transform:translateY(-3px);}
+@media (max-width:720px){.lobby-grid{grid-template-columns:repeat(2,1fr) !important;max-width:420px !important;}.lobby-h1{font-size:32px !important;}}
 .card-num{font-family:'Playfair Display',serif;font-size:12px;color:#8898b8;letter-spacing:2px;margin-bottom:10px}
 .card-name{font-family:'Playfair Display',serif;font-size:17px;color:#dab870;margin-bottom:5px;line-height:1.3}
 .card-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
@@ -1204,33 +1207,41 @@ document.addEventListener('click', function(e){
 </script>
 
 <main>
-<div style="background:#2c3345;border-bottom:1px solid #3d4a60;padding:10px 24px;text-align:center;">
-  <p style="margin:0;font-family:'Raleway',sans-serif;font-size:12px;color:#c8c0a8;">&#11088; Now available: <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="color:#c9a96e;text-decoration:underline;">become a British TV Hub Member on Facebook</a> for exclusive watchlists, hidden gems, and subscriber extras.</p>
-</div>
-<div id="hero" style="position:relative;overflow:hidden;height:600px;">
+<div id="homepage-lobby" style="position:relative;background:linear-gradient(to bottom,rgba(10,14,24,0.55),rgba(10,14,24,0.88)),#171c2b;min-height:560px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px 56px;border-bottom:1px solid #3d4a60;">
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;">Watch &middot; Read &middot; Discover</p>
+  <h1 class="lobby-h1" style="font-family:'Playfair Display',serif;font-weight:400;font-size:46px;line-height:1.15;color:#f6f1e6;margin:0 0 16px;max-width:700px;">Welcome to <em style="color:#e6c778;font-style:normal;">British TV Hub</em></h1>
+  <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:19px;color:#c8c0a8;line-height:1.6;max-width:480px;margin:0 0 40px;">Helping fans discover the best British mysteries, dramas, and the books behind their favourite shows.</p>
 
-  <div style="position:absolute;inset:0;transform:scale(1.06) translateX(-50px);transform-origin:center;">
-    <img src="/hero.webp" alt="A book titled British Mysteries with reading glasses on top, a steaming mug on a coaster, and a cozy village scene on the TV in the background" width="1536" height="1024" fetchpriority="high" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;">
+  <div style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a93a8;margin:0 0 22px;display:flex;align-items:center;gap:14px;">
+    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;"></span>
+    Choose where you'd like to begin
+    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;"></span>
   </div>
-  <div class="steam-animation" style="position:absolute;left:24%;top:62%;width:75px;height:145px;transform:translate(-50%,-100%);opacity:0.22;filter:blur(3px);pointer-events:none;z-index:3;transform-origin:bottom center;">
-    <svg viewBox="0 0 75 145" style="width:100%;height:100%;" aria-hidden="true">
-      <path d="M37,143 C33,124 41,112 36,94 C32,78 40,67 35,50 C31,36 39,28 34,10" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round"/>
-      <path d="M43,143 C48,126 54,114 50,96 C46,80 53,69 49,53 C45,40 51,31 47,14" fill="none" stroke="#f2ede0" stroke-width="2.1" stroke-linecap="round"/>
-      <path d="M31,143 C26,127 20,115 24,97 C20,81 13,70 17,54 C14,41 8,32 12,16" fill="none" stroke="#f2ede0" stroke-width="1.8" stroke-linecap="round"/>
-    </svg>
+
+  <div class="lobby-grid" style="display:grid;grid-template-columns:repeat(4,minmax(160px,200px));gap:16px;max-width:900px;width:100%;">
+    <a href="/shows-index.html" class="lobby-path">
+      <div style="font-size:26px;margin-bottom:14px;">&#128250;</div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 6px;">Find a Show</div>
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.5px;color:#8a93a8;margin:0;">Browse the full index</p>
+    </a>
+    <a href="/books" class="lobby-path">
+      <div style="font-size:26px;margin-bottom:14px;">&#128218;</div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 6px;">Find a Book</div>
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.5px;color:#8a93a8;margin:0;">The Ultimate Bookshelf</p>
+    </a>
+    <a href="/streaming.html" class="lobby-path">
+      <div style="font-size:26px;margin-bottom:14px;">&#127871;</div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 6px;">See What's Streaming</div>
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.5px;color:#8a93a8;margin:0;">BritBox, Acorn &amp; more</p>
+    </a>
+    <a href="/essentials.html" class="lobby-path">
+      <div style="font-size:26px;margin-bottom:14px;">&#9749;</div>
+      <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 6px;">Visit The Snug</div>
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.5px;color:#8a93a8;margin:0;">Curated cosy picks</p>
+    </a>
   </div>
-  <div style="position:absolute;inset:0;background:linear-gradient(to left,rgba(10,14,24,0.8),rgba(10,14,24,0.42));"></div>
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-end;text-align:right;padding:48px 154px 48px 64px;">
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#f0e8d4;font-weight:600;text-shadow:0 1px 4px rgba(0,0,0,0.85),0 0 12px rgba(0,0,0,0.5);margin:0 0 14px;">Watch. Read. Discover.</p>
-    <h1 style="font-family:'Playfair Display',serif;font-size:48px;font-weight:400;line-height:1.2;color:#f6f1e6;margin:0 0 12px;text-shadow:0 2px 10px rgba(0,0,0,.7);">Your Guide to<br><em style="color:#e6c778;">British TV &amp; Books</em></h1>
-    <div style="width:40px;height:1px;background:#c9a96e;margin:16px 0;"></div>
-    <p style="font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#e8dfc8;line-height:1.6;margin:0 0 28px;max-width:420px;text-shadow:0 1px 6px rgba(0,0,0,.7);">We help you discover the best of British television and the stories behind it.</p>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;max-width:520px;">
-      <a href="/start-here" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;border:none;padding:15px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:700;">&#127968; New Here? Start Here &rarr;</a>
-      <a href="/streaming.html" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;border:none;padding:15px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;">📺 Explore Streaming Guides &rarr;</a>
-      <a href="/books" style="display:block;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:14px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;">📚 Browse the Bookshelf &rarr;</a>
-    </div>
-  </div>
+
+  <p style="margin-top:34px;font-family:'Raleway',sans-serif;font-size:12px;color:#8a93a8;">New to British TV? <a href="/start-here" style="color:#c9a96e;text-decoration:underline;text-underline-offset:3px;">Start Here &rarr;</a></p>
 </div>
 
 <div style="padding:40px 40px;border-bottom:1px solid #3d4a60;background:#171c2b;">
