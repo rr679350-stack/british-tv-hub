@@ -1045,5 +1045,189 @@
       "https://www.justwatch.com/uk/tv-series/hetty-wainthropp-investigates/season-3",
       "https://www.imdb.com/title/tt0127376/"
     ]
+  },
+  {
+    "title": "Death Valley",
+    "years": "2025–present",
+    "genre": "Cosy Mystery Comedy",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      },
+      {
+        "name": "BBC One",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Death_Valley_(British_TV_series)",
+      "https://cybernews.com/stream-online/how-to-watch-death-valley/",
+      "https://blog.reelgood.com/?p=169044"
+    ]
+  },
+  {
+    "title": "The Marlow Murder Club",
+    "years": "2024–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      },
+      {
+        "name": "U (UKTV streaming)",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Marlow_Murder_Club_(TV_series)",
+      "https://www.pbs.org/wgbh/masterpiece/shows/the-marlow-murder-club/",
+      "https://www.techradar.com/streaming/watch-marlow-murder-club-season-2-online"
+    ]
+  },
+  {
+    "title": "Sister Boniface Mysteries",
+    "years": "2022–present",
+    "genre": "Cosy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      },
+      {
+        "name": "U (UKTV streaming)",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://u.co.uk/shows/sister-boniface-mysteries/watch-online",
+      "https://blog.reelgood.com/how-to-watch-sister-boniface-mysteries-season-4-outside-the-us"
+    ]
+  },
+  {
+    "title": "The Chelsea Detective",
+    "years": "2022–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      },
+      {
+        "name": "U (UKTV streaming)",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://www.vitalthrills.com/the-chelsea-detective-season-4-trailer-and-key-art-debut/",
+      "https://www.amcglobalmedia.com/2025/08/05/acorn-tv-and-zdf-greenlight-fourth-season-of-gritty-crime-drama-the-chelsea-detective/"
+    ]
+  },
+  {
+    "title": "Inspector Ellis",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Drama",
+        "tag": "free"
+      },
+      {
+        "name": "U (UKTV streaming)",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://www.amcglobalmedia.com/2026/07/20/amc-global-medias-august-streaming-highlights-include-new-episodes-of-the-walking-dead-dead-city-the-debut-of-the-vampire-lestat-one-night-only-live-special-the-launch-of-new-acorn-tv-mys/"
+    ]
+  },
+  {
+    "title": "Time",
+    "years": "2021–present",
+    "genre": "Prison Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free"
+      },
+      {
+        "name": "BBC One",
+        "tag": "free"
+      }
+    ],
+    "au": [],
+    "verified": "2026-07-26",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Time_(2021_TV_series)",
+      "https://www.tvinsider.com/1232370/time-season-3-cast-premiere-date-trailer-details/",
+      "https://www.tellyvisions.org/time-season-3-cast-plot-fliming-news/"
+    ]
   }
 ]
