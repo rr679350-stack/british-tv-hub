@@ -1206,6 +1206,14 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 .genre-chip{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease;}
 .genre-chip:hover{border-color:#c9a96e;background:#48577a;transform:translateY(-2px);}
 </style>
+<style>
+.editorial-card{max-width:900px;margin:0 auto 48px;background:linear-gradient(135deg,#28304a 0%,#1c2338 100%);border:1px solid #4a5570;border-left:5px solid #c9a96e;border-radius:8px;padding:32px 36px;text-align:left;display:flex;gap:24px;align-items:center;box-shadow:0 10px 32px rgba(0,0,0,0.4);}
+.editorial-card-logo{width:64px;height:64px;object-fit:contain;flex-shrink:0;}
+@media (max-width:600px){
+  .editorial-card{flex-direction:column;align-items:flex-start;padding:26px;gap:16px;}
+  .editorial-card-logo{width:48px;height:48px;}
+}
+</style>
 
 </head>
 <body>
@@ -1276,10 +1284,13 @@ document.addEventListener('click', function(e){
 <div class="page-wrap">
 
 <!-- EDITORIAL CARD -->
-<div style="max-width:900px;margin:0 auto 48px;background:#232a3d;border:1px solid #3d4a60;border-left:4px solid #c9a96e;border-radius:6px;padding:28px 32px;text-align:left;">
-  <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 10px;font-weight:600;">From British TV Hub</p>
-  <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0 0 12px;">British TV Hub spends every month watching new releases, revisiting classics, and uncovering hidden gems &mdash; so you can spend less time searching and more time watching.</p>
-  <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#9090a8;margin:0;letter-spacing:0.3px;">26 curated guides and growing.</p>
+<div class="editorial-card">
+  <img src="/BTH_Logo.png" alt="British TV Hub" class="editorial-card-logo">
+  <div>
+    <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 10px;font-weight:600;">From British TV Hub</p>
+    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0 0 12px;">British TV Hub spends every month watching new releases, revisiting classics, and uncovering hidden gems &mdash; so you can spend less time searching and more time watching.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#9090a8;margin:0;letter-spacing:0.3px;">26 curated guides and growing.</p>
+  </div>
 </div>
 
 <!-- BROWSE BY GENRE -->
