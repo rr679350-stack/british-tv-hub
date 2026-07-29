@@ -45,13 +45,13 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Not Found — British TV Hub</title>
-<meta name="description" content="This page doesn't exist, but we have plenty of British TV recommendations waiting for you. Let us help you find your next favourite show.">
+<meta name="description" content="This page doesn't exist, but British TV Hub has plenty of recommendations waiting to help you find your next favourite show.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://britishtvhub.com/404.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/404.html">
 <meta property="og:title" content="Page Not Found — British TV Hub">
-<meta property="og:description" content="This page doesn't exist, but we have plenty of British TV recommendations waiting for you. Let us help you find your next favourite show.">
+<meta property="og:description" content="This page doesn't exist, but British TV Hub has plenty of recommendations waiting to help you find your next favourite show.">
 <meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/BTH_Logo.png">
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
@@ -1195,6 +1195,32 @@ nav.site-nav-std {
 </style>
 <script src="/search-index.js" defer></script>
 <script src="/site-search.js" defer></script>
+<style>
+/* Two-row nav: primary links + brand on top, action buttons below (added for consistency with rest of site) */
+nav.site-nav-std { flex-direction: column !important; align-items: stretch !important; padding: 8px 16px !important; }
+.nav-top-row { display: grid !important; grid-template-columns: auto 1fr auto; align-items: center !important; width: 100%; gap: 16px; }
+.nav-top-row .nav-links { display: flex !important; justify-content: center !important; }
+@media (max-width: 1300px) {
+  nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; justify-content: center !important; }
+}
+/* Bigger nav tabs on the top row */
+nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px !important; letter-spacing: 1px !important; }
+/* Nav stays pinned at a constant size while scrolling */
+nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 !important; }
+/* Mobile nav fix */
+@media (max-width:640px){
+  nav.site-nav-std{ position:static !important; padding:8px 12px !important; }
+  .nav-top-row{ grid-template-columns:1fr !important; row-gap:4px; }
+  .nav-brand{ justify-self:center !important; padding:6px 0 !important; }
+  .nav-brand img{ height:38px !important; }
+  .nav-links{ flex-wrap:wrap !important; justify-content:center !important; row-gap:0 !important; column-gap:0 !important; }
+  nav.site-nav-std .nlink, .nlink{ font-size:10.5px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
+  .nav-dropdown-toggle{ padding:7px 6px !important; }
+  .nav-search{ justify-self:center !important; margin-top:2px; }
+  .nav-search-toggle{ padding:7px 12px !important; font-size:10px !important; }
+  .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
+}
+</style>
 </head>
 
 <body>
@@ -1254,7 +1280,7 @@ document.addEventListener('click', function(e){
     <div class="error-code">404</div>
     <h1 class="error-title">Page Not Found</h1>
     <p class="error-description">
-      It looks like you've taken a wrong turn — like getting lost in a British countryside mystery! 🕵️ Don't worry, we've got plenty of brilliant shows to help you find your way.
+      It looks like you've taken a wrong turn — like getting lost in a British countryside mystery! 🕵️ Don't worry, there are plenty of brilliant shows to help you find your way.
     </p>
 
     <div class="cta-buttons">
@@ -1278,14 +1304,14 @@ document.addEventListener('click', function(e){
       <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
         <li><a href="/quiz.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Match Me Quiz</a><br><span style="font-size: 12px; color: var(--text);">Find shows based on your taste</span></li>
         <li><a href="/agatha-christie.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Agatha Christie Guide</a><br><span style="font-size: 12px; color: var(--text);">All adaptations of her classics</span></li>
-        <li><a href="/meet-tilly.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Ask Tilly (AI)</a><br><span style="font-size: 12px; color: var(--text);">Chat with our AI show expert</span></li>
+        <li><a href="/meet-tilly.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Ask Tilly (AI)</a><br><span style="font-size: 12px; color: var(--text);">Chat with the AI show expert</span></li>
         <li><a href="/essentials.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ The Snug</a><br><span style="font-size: 12px; color: var(--text);">DVDs, books, and streaming picks in one place</span></li>
       </ul>
     </div>
 
     <div style="background: rgba(201, 168, 76, 0.08); border: 1px dashed var(--border); padding: 20px; border-radius: 4px; text-align: center; margin-bottom: 24px;">
       <p style="font-size: 16px; color: var(--cream); margin-bottom: 12px;">
-        <strong>Join Our Community</strong>
+        <strong>Join the Community</strong>
       </p>
       <p style="font-size: 14px; color: var(--text); margin-bottom: 16px;">
         Connect with 5,000+ British TV fans & get weekly show recommendations
@@ -1295,7 +1321,7 @@ document.addEventListener('click', function(e){
     </div>
 
     <p style="color: #666; font-size: 13px; text-align: center;">
-      Still can't find what you need? <a href="mailto:info@britishtvhub.com" style="color: var(--gold); text-decoration: none; font-weight: 600;">Get in touch</a> — we're here to help! 💌
+      Still can't find what you need? <a href="mailto:info@britishtvhub.com" style="color: var(--gold); text-decoration: none; font-weight: 600;">Get in touch</a> — happy to help! 💌
     </p>
   </div>
 </main>
@@ -1359,7 +1385,7 @@ document.addEventListener('click', function(e){
     <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Discover &nbsp;&bull;&nbsp; Watch &nbsp;&bull;&nbsp; Read &nbsp;&bull;&nbsp; Explore</div>
     <p style="font-family:'Crimson Text',serif;font-size:15px;font-style:italic;color:#9090a8;margin:0 0 14px;">See you back for the next recommendation.</p>
     <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">&copy; <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp; <a href="/privacy.html" style="color:#88898b;text-decoration:underline;">Privacy</a></div>
-    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">As an Amazon Associate I earn from qualifying purchases. We may earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 
