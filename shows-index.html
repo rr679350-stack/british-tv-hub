@@ -1205,15 +1205,21 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 <style>
 .genre-chip{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease;}
 .genre-chip:hover{border-color:#c9a96e;background:#48577a;transform:translateY(-2px);}
+.genre-chip.featured{border-color:#c9a96e;}
+.guide-chip{font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#e8dfc8;padding:10px 16px;text-decoration:none;border-radius:20px;border:1px solid #4a5570;display:inline-block;transition:transform .15s ease,border-color .15s ease,background .15s ease;}
+.guide-chip:hover{border-color:#c9a96e;background:#37415c;transform:translateY(-2px);}
 </style>
 <style>
-.editorial-card{max-width:1100px;margin:0 auto 48px;background:linear-gradient(135deg,#3a4566 0%,#28304e 100%);border:1px solid #5a6a90;border-radius:8px;padding:40px 44px;text-align:left;display:flex;gap:52px;align-items:flex-start;box-shadow:0 12px 36px rgba(0,0,0,0.45);}
-.editorial-card-logo{width:128px;height:128px;object-fit:contain;flex-shrink:0;}
+.editorial-card{max-width:1100px;margin:0 auto 60px;background:linear-gradient(135deg,#3a4566 0%,#28304e 100%);border:1px solid #5a6a90;border-radius:8px;padding:40px 44px;text-align:left;display:flex;gap:44px;align-items:center;box-shadow:0 12px 36px rgba(0,0,0,0.45);}
+.editorial-card-logo{width:92px;height:92px;object-fit:contain;flex-shrink:0;}
 .editorial-card-divider{width:44px;height:2px;background:#c9a96e;margin:10px 0 16px;border:none;}
-.editorial-card-stat{display:inline-flex;align-items:baseline;gap:8px;margin-top:18px;padding:10px 18px;background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.4);border-radius:20px;}
+.editorial-card-stat{display:flex;align-items:baseline;gap:10px;margin-top:20px;}
+.editorial-card-stat .stat-num{font-family:'Playfair Display',serif;font-size:32px;color:#c9a96e;line-height:1;}
+.editorial-card-stat .stat-label{font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#a8a494;}
+.hero-divider{width:60px;height:3px;background:#c9a96e;margin:0 auto 40px;border:none;border-radius:2px;}
 @media (max-width:600px){
   .editorial-card{flex-direction:column;align-items:flex-start;padding:30px;gap:20px;}
-  .editorial-card-logo{width:80px;height:80px;}
+  .editorial-card-logo{width:72px;height:72px;}
 }
 </style>
 
@@ -1285,26 +1291,28 @@ document.addEventListener('click', function(e){
 <!-- SHOW GRID -->
 <div class="page-wrap">
 
+<hr class="hero-divider">
+
 <!-- EDITORIAL CARD -->
 <div class="editorial-card">
   <img src="/BTH_Logo.png" alt="British TV Hub" class="editorial-card-logo">
   <div>
-    <p style="font-family:'Raleway',sans-serif;font-size:17px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e;margin:0;font-weight:700;">From British TV Hub</p>
-    <hr class="editorial-card-divider">
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0;">British TV Hub spends every month watching new releases, revisiting classics, and uncovering hidden gems &mdash; so you can spend less time searching and more time watching.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;font-weight:700;">From British TV Hub</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 12px;line-height:1.25;">Discover Your Next Favourite British Series</h2>
+    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0;">Finding your next British series shouldn't take an hour. British TV Hub watches new releases, revisits classics, and uncovers hidden gems every month &mdash; so you can spend less time searching and more time watching.</p>
     <div class="editorial-card-stat">
-      <span style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;">26 Curated Guides</span>
-      <span style="font-family:'Crimson Text',serif;font-size:15px;font-style:italic;color:#9090a8;letter-spacing:0.2px;">and growing</span>
+      <span class="stat-num">26+</span>
+      <span class="stat-label">Curated Guides</span>
     </div>
   </div>
 </div>
 
 <!-- BROWSE BY GENRE -->
-<div id="genres" style="background:linear-gradient(135deg,#2c3345 0%,#1a2135 100%);border:1px solid #3d4a60;border-radius:4px;padding:24px;margin:0 auto 20px;max-width:1100px;">
+<div id="genres" style="background:linear-gradient(135deg,#2c3345 0%,#1a2135 100%);border:1px solid #3d4a60;border-radius:4px;padding:24px;margin:0 auto 36px;max-width:1100px;">
   <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;">Browse by Genre</p>
   <div style="display:flex;flex-wrap:wrap;gap:10px;">
-    <a href="/cozy.html" class="genre-chip">Cozy Mysteries</a>
-    <a href="/top10.html" class="genre-chip">Detective Series</a>
+    <a href="/cozy.html" class="genre-chip featured">Cozy Mysteries</a>
+    <a href="/top10.html" class="genre-chip featured">Detective Series</a>
     <a href="/shows.html" class="genre-chip">Crime Dramas</a>
     <a href="/masterpiece2026.html" class="genre-chip">Period Dramas</a>
     <a href="/shows.html#hidden-gems" class="genre-chip">Hidden Gems</a>
@@ -1314,21 +1322,22 @@ document.addEventListener('click', function(e){
 </div>
 
 <!-- POPULAR GUIDES -->
-<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:24px;margin:0 auto 20px;max-width:1100px;">
+<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:24px;margin:0 auto 36px;max-width:1100px;">
   <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;">Popular Guides</p>
   <div style="display:flex;flex-wrap:wrap;gap:10px;">
-    <a href="/shows/vera.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Vera</a>
-    <a href="/shows/shetland.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Shetland</a>
-    <a href="/shows/call-the-midwife.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Call the Midwife</a>
-    <a href="/shows/happy-valley.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Happy Valley</a>
-    <a href="/shows/grantchester.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Grantchester</a>
-    <a href="/shows/midsomer-murders.html" style="font-family:'Playfair Display',serif;font-size:15px;color:#e8dfc8;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Midsomer Murders</a>
+    <a href="/shows/vera.html" class="guide-chip">Vera</a>
+    <a href="/shows/shetland.html" class="guide-chip">Shetland</a>
+    <a href="/shows/call-the-midwife.html" class="guide-chip">Call the Midwife</a>
+    <a href="/shows/happy-valley.html" class="guide-chip">Happy Valley</a>
+    <a href="/shows/grantchester.html" class="guide-chip">Grantchester</a>
+    <a href="/shows/midsomer-murders.html" class="guide-chip">Midsomer Murders</a>
   </div>
 </div>
 
 <!-- ALPHABETICAL INDEX -->
-<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:20px 24px;margin:0 auto 32px;max-width:1100px;">
-  <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 14px;">Browse Alphabetically</p>
+<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:28px 24px;margin:0 auto 32px;max-width:1100px;">
+  <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 6px;">Browse Alphabetically</p>
+  <p style="font-family:'Crimson Text',serif;font-size:14px;font-style:italic;color:#9090a8;margin:0 0 16px;">Browse every guide from A to Z.</p>
   <div id="az-index" style="display:flex;flex-wrap:wrap;gap:6px;font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;"></div>
   <p style="font-family:'Raleway',sans-serif;font-size:12px;color:#9090a8;margin:12px 0 0;">Looking for a specific show? <a href="#all-shows" style="color:#c9a96e;">Search the full list &darr;</a></p>
 </div>
