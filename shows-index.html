@@ -1189,6 +1189,19 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
 }
 </style>
+<style>
+.continue-reading{margin:64px auto 56px;max-width:1100px;}
+.cr-heading{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--text);margin:0 0 10px;}
+.cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted);margin:0 0 36px;}
+.cr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
+@media (max-width:860px){.cr-grid{grid-template-columns:1fr;}}
+.cr-card{display:block;background:#363f58;border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+.cr-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+.cr-body{padding:22px 24px 26px;}
+.cr-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text);margin:0 0 10px;line-height:1.3;}
+.cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;}
+.cr-link{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
+</style>
 
 </head>
 <body>
@@ -1577,15 +1590,32 @@ document.addEventListener("DOMContentLoaded", function(){
   </div>
 </div>
 
-<!-- CONTINUE EXPLORING -->
-<div style="margin-top:48px;padding:36px 40px;background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;">
-  <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;font-weight:600;text-align:center;">Continue Exploring</p>
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
-    <a href="/shows.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Best British Mysteries</a>
-    <a href="/books" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Books Behind the Shows</a>
-    <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Where to Watch British TV</a>
-    <a href="/shows.html#hidden-gems" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Hidden Gems</a>
-    <a href="/start-here" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;text-transform:uppercase;background:#2c3345;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Start Here</a>
+<!-- CONTINUE READING -->
+<div class="continue-reading">
+  <h2 class="cr-heading">Continue Reading</h2>
+  <p class="cr-sub">More recommendations from British TV Hub.</p>
+  <div class="cr-grid">
+    <a class="cr-card" href="/shows.html">
+      <div class="cr-body">
+        <div class="cr-title">Best British Mysteries</div>
+        <p class="cr-desc">The essential guide to Britain's best mystery and drama series, hand-picked and regularly updated.</p>
+        <span class="cr-link">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a class="cr-card" href="/books">
+      <div class="cr-body">
+        <div class="cr-title">Books Behind the Shows</div>
+        <p class="cr-desc">Discover the novels that inspired your favourite British dramas, from Vera to Grantchester.</p>
+        <span class="cr-link">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a class="cr-card" href="/streaming.html">
+      <div class="cr-body">
+        <div class="cr-title">Where to Watch British TV</div>
+        <p class="cr-desc">A complete guide to streaming British shows in the US, updated as availability changes.</p>
+        <span class="cr-link">Read Guide &rarr;</span>
+      </div>
+    </a>
   </div>
 </div>
 
@@ -1604,14 +1634,14 @@ document.addEventListener("DOMContentLoaded", function(){
       <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#7080a0;margin-top:10px;letter-spacing:0.5px">No spam &nbsp;&middot;&nbsp; Unsubscribe anytime</div>
     </form>
   </div>
-  <div style="border:1px solid #4a5570;background:#243050;padding:28px;display:flex;flex-direction:column;gap:16px;">
-    <div>
-      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d4b47a;margin-bottom:8px">The Cozy TV Companion Shop</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0 0 10px;line-height:1.3">Printable Journals &amp; Trackers for British TV Fans</h3>
-      <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0;">Track your watchlist, rate every episode, and keep notes on your favourite detectives.</p>
+  <div style="border:1px solid #c9a96e;background:#243050;padding:28px;display:flex;flex-direction:column;gap:16px;">
+      <div>
+        <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#d4b47a;margin-bottom:8px">British TV Hub Members &#9733;</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0 0 10px;line-height:1.3">Join the Facebook Membership</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0;">Exclusive recommendations, early updates, and subscriber-only extras for British TV Hub members &mdash; hosted on Facebook. Tap below to join in seconds.</p>
+      </div>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #c9a96e;outline-offset:3px;">Become a Member &rarr;</a>
     </div>
-    <a href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener" style="display:block;text-align:center;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #d4b47a;outline-offset:3px;">Browse the Shop on Etsy &rarr;</a>
-  </div>
 </div>
 
 <!-- FOOTER -->
