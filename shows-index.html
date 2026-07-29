@@ -1202,6 +1202,10 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;}
 .cr-link{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
 </style>
+<style>
+.genre-chip{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;border:1px solid transparent;transition:transform .15s ease,background .15s ease,border-color .15s ease;}
+.genre-chip:hover{border-color:#c9a96e;background:#48577a;transform:translateY(-2px);}
+</style>
 
 </head>
 <body>
@@ -1262,6 +1266,7 @@ document.addEventListener('click', function(e){
   <div class="page-hero-text">
 <h1 class="hero-title">Browse Britain's Best Mystery &amp; Drama Series</h1>
     <p class="hero-sub">Discover detailed guides to Britain's most beloved mysteries, dramas, period pieces, and hidden gems. Every guide includes where to watch, similar series, and recommendations for what to watch next.</p>
+    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-dim);margin:10px 0 0;">Browse detailed guides for British detective series, crime dramas, cozy mysteries, period dramas, and literary adaptations.</p>
   </div>
   <div class="page-hero-img">
     <img src="/shows-index-hero.webp" alt="A cozy living room at night with British TV Hub on the television, a mug of tea, a book, and a knit blanket" width="1536" height="1024" fetchpriority="high">
@@ -1272,22 +1277,23 @@ document.addEventListener('click', function(e){
 <div class="page-wrap">
 
 <!-- LIBRARY INTRO -->
-<div style="max-width:760px;margin:0 auto 32px;padding:0 40px;text-align:center;">
-  <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;font-weight:600;">Welcome to the British TV Hub Library</p>
+<div style="max-width:760px;margin:0 auto 56px;padding:0 40px;text-align:center;">
+  <p style="font-family:'Raleway',sans-serif;font-size:13.5px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;font-weight:600;">Welcome to the British TV Hub Library</p>
   <p style="font-family:'Crimson Text',serif;font-size:18px;font-style:italic;color:#c8c4b4;line-height:1.7;margin:0;">Whether you're looking for a long-running detective series, a comforting period drama, or an overlooked hidden gem, this collection is designed to help you discover your next favourite British television series.</p>
+  <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#9090a8;margin:20px 0 0;letter-spacing:0.3px;">26 detailed guides covering Britain's best mysteries, dramas, and hidden gems.</p>
 </div>
 
 <!-- BROWSE BY GENRE -->
 <div id="genres" style="background:linear-gradient(135deg,#2c3345 0%,#1a2135 100%);border:1px solid #3d4a60;border-radius:4px;padding:24px;margin:0 auto 20px;max-width:1100px;">
   <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;">Browse by Genre</p>
   <div style="display:flex;flex-wrap:wrap;gap:10px;">
-    <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Cozy Mysteries</a>
-    <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Detective Series</a>
-    <a href="/shows.html" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Crime Dramas</a>
-    <a href="/masterpiece2026.html" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Period Dramas</a>
-    <a href="/shows.html#hidden-gems" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Hidden Gems</a>
-    <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Literary Adaptations</a>
-    <a href="#most-watched" style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;text-transform:uppercase;background:#3d4a60;color:#c9a96e;padding:11px 18px;text-decoration:none;border-radius:3px;display:inline-block;">Most Watched</a>
+    <a href="/cozy.html" class="genre-chip">Cozy Mysteries</a>
+    <a href="/top10.html" class="genre-chip">Detective Series</a>
+    <a href="/shows.html" class="genre-chip">Crime Dramas</a>
+    <a href="/masterpiece2026.html" class="genre-chip">Period Dramas</a>
+    <a href="/shows.html#hidden-gems" class="genre-chip">Hidden Gems</a>
+    <a href="/books" class="genre-chip">Literary Adaptations</a>
+    <a href="#most-watched" class="genre-chip">Most Watched</a>
   </div>
 </div>
 
