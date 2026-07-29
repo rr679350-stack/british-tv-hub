@@ -1336,8 +1336,10 @@ document.addEventListener('click', function(e){
 document.addEventListener("DOMContentLoaded", function(){
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
   var present = new Set();
-  document.querySelectorAll(".show-card[data-name]").forEach(function(card){
-    var name = card.getAttribute("data-name").trim();
+  document.querySelectorAll("a.show-card").forEach(function(card){
+    var nameEl = card.querySelector(".show-card-name");
+    if (!nameEl) return;
+    var name = nameEl.textContent.trim();
     if (/^the\s+/i.test(name)) name = name.replace(/^the\s+/i, "");
     var first = name.charAt(0).toUpperCase();
     present.add(first);
@@ -1409,11 +1411,11 @@ document.addEventListener("DOMContentLoaded", function(){
   <p class="section-label" id="most-watched">British TV Hub Favourite Picks</p>
   <div class="shows-grid" style="margin-bottom:24px;">
 
-    <a href="/shows/call-the-midwife.html" class="show-card">
+    <a href="/shows/inspector-morse.html" class="show-card">
       <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;">British TV Hub Pick</p>
-      <p class="show-card-name">Call the Midwife</p>
-      <p class="show-card-meta">Period Drama · 15+ Seasons · BBC</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
+      <p class="show-card-name">Inspector Morse</p>
+      <p class="show-card-meta">Crime Drama · 7 Series · ITV</p>
+      <span class="platform-btn">BritBox &rarr;</span>
     </a>
 
     <a href="/shows/all-creatures-great-and-small.html" class="show-card">
