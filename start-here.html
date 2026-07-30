@@ -506,42 +506,6 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<div class="section" id="pick-for-me" style="text-align:center;">
-  <div class="section-head">
-    <span class="kicker">Not Sure Yet?</span>
-    <h2>&#127922; Get a Pick, No Overthinking</h2>
-  </div>
-  <p class="section-intro">Can't decide? One click, one recommendation.</p>
-  <button type="button" id="pick-for-me-btn" onclick="pickForMe()" style="font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--navy-deep); background:var(--gold-bright); border:none; padding:15px 28px; cursor:pointer;">&#127922; Pick a Show for Me</button>
-  <div id="pick-for-me-result" style="display:none; max-width:420px; margin:28px auto 0; background:var(--navy); border:1px solid var(--navy-line); padding:26px 24px; text-align:left;">
-    <div style="font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;">Tonight's Pick</div>
-    <h3 id="pick-for-me-title" style="font-family:'Playfair Display', serif; font-size:22px; margin:0 0 8px;"></h3>
-    <p id="pick-for-me-desc" style="color:var(--cream-dim); font-size:16px; line-height:1.6; margin:0 0 16px;"></p>
-    <a id="pick-for-me-link" href="#" style="display:inline-block; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--navy-deep); background:var(--gold-bright); text-decoration:none; padding:11px 20px;">Watch This &rarr;</a>
-  </div>
-</div>
-<script>
-var pickForMeShows = [
-  {title:"Vera", desc:"Brenda Blethyn's Northumberland detective drama.", href:"/shows/vera.html"},
-  {title:"Shetland", desc:"A moody Scottish mystery from Ann Cleeves.", href:"/shows/shetland.html"},
-  {title:"Midsomer Murders", desc:"England's most dangerous fictional county.", href:"/shows/midsomer-murders.html"},
-  {title:"Death in Paradise", desc:"A lighthearted murder mystery in the Caribbean.", href:"/shows/death-in-paradise.html"},
-  {title:"All Creatures Great and Small", desc:"A Yorkshire Dales veterinary drama.", href:"/shows/all-creatures-great-and-small.html"},
-  {title:"Grantchester", desc:"A vicar-turned-detective drama set in Cambridgeshire.", href:"/shows/grantchester.html"},
-  {title:"Sherlock", desc:"A modern-day take on Conan Doyle's detective.", href:"/shows/sherlock.html"},
-  {title:"Happy Valley", desc:"A gritty Yorkshire police drama.", href:"/shows/happy-valley.html"},
-  {title:"Poldark", desc:"A sweeping Cornish period drama.", href:"/shows/poldark.html"},
-  {title:"Call the Midwife", desc:"A heartfelt drama set in 1950s East London.", href:"/shows/call-the-midwife.html"}
-];
-function pickForMe(){
-  var pick = pickForMeShows[Math.floor(Math.random() * pickForMeShows.length)];
-  document.getElementById('pick-for-me-title').textContent = pick.title;
-  document.getElementById('pick-for-me-desc').textContent = pick.desc;
-  document.getElementById('pick-for-me-link').href = pick.href;
-  document.getElementById('pick-for-me-result').style.display = 'block';
-}
-</script>
-
 <style>
 .bookmark-toggle summary{list-style:none;}
 .bookmark-toggle summary::-webkit-details-marker{display:none;}
