@@ -5420,5 +5420,48 @@
       "https://en.wikipedia.org/wiki/Above_Suspicion_(TV_series)",
       "https://acorn.tv/abovesuspicion/"
     ]
+  },
+  {
+    "title": "River",
+    "years": "2015",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/river",
+      "https://en.wikipedia.org/wiki/River_(TV_series)"
+    ]
+  },
+  {
+    "title": "The Shadow Line",
+    "years": "2011",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.primevideo.com/detail/0S1M7E4T46HH2FRDOCDBO46RMM",
+      "https://tvmaze.com/shows/1665/the-shadow-line"
+    ]
   }
 ]
