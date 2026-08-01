@@ -5274,5 +5274,151 @@
       "https://en.wikipedia.org/wiki/The_Ruth_Rendell_Mysteries",
       "https://reelgood.com/show/the-ruth-rendell-mysteries-1987"
     ]
+  },
+  {
+    "title": "The Sweeney",
+    "years": "1975–1978",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-sweeney"
+    ]
+  },
+  {
+    "title": "The Professionals",
+    "years": "1977–1983",
+    "genre": "Action Crime Drama",
+    "us": [],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/uk/tv-series/the-professionals"
+    ]
+  },
+  {
+    "title": "Trial & Retribution",
+    "years": "1997–2009",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://reelgood.com/show/trial-retribution-1997/season/13",
+      "https://www.pressreader.com/uk/crime-monthly/20210701/283038352520819"
+    ]
+  },
+  {
+    "title": "The Last Detective",
+    "years": "2003–2007",
+    "genre": "Crime Comedy Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-last-detective",
+      "https://en.wikipedia.org/wiki/The_Last_Detective"
+    ]
+  },
+  {
+    "title": "Murphy's Law",
+    "years": "2001–2007",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.primevideo.com/detail/Murphys-Law/0FYXTLH8UB51O8AXRO8UJHFOCK",
+      "https://en.wikipedia.org/wiki/Murphy%27s_Law_(British_TV_series)"
+    ]
+  },
+  {
+    "title": "The Vice",
+    "years": "1999–2003",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.britishtv.com/british-mysteries-crime-dramas-on-britbox/"
+    ]
+  },
+  {
+    "title": "Above Suspicion",
+    "years": "2009–2012",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Above_Suspicion_(TV_series)",
+      "https://acorn.tv/abovesuspicion/"
+    ]
   }
 ]
