@@ -101,11 +101,6 @@
         "name": "BBC iPlayer",
         "tag": "free",
         "url": "https://www.bbc.co.uk/iplayer"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -120,7 +115,7 @@
         "url": "https://www.stan.com.au"
       }
     ],
-    "verified": "2026-07-20",
+    "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/happy-valley",
       "https://screenrant.com/happy-valley-streaming-release-date-august-2025/",
@@ -244,11 +239,6 @@
     "genre": "Crime Drama",
     "us": [
       {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      },
-      {
         "name": "Peacock",
         "tag": "stream",
         "url": "https://www.peacocktv.com"
@@ -260,11 +250,6 @@
       }
     ],
     "uk": [
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      },
       {
         "name": "Buy on Amazon / Apple",
         "tag": "buy",
@@ -284,7 +269,7 @@
         "url": "https://10play.com.au"
       }
     ],
-    "verified": "2026-07-20",
+    "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/broadchurch",
       "https://www.whats-on-netflix.com/news/broadchurch-returning-to-netflix/",
@@ -314,11 +299,6 @@
         "name": "BBC iPlayer",
         "tag": "free",
         "url": "https://www.bbc.co.uk/iplayer"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -326,14 +306,9 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
-    "verified": "2026-07-20",
+    "verified": "2026-08-01",
     "sources": [
       "https://en.wikipedia.org/wiki/Line_of_Duty",
       "https://www.justwatch.com/us/tv-show/line-of-duty",
@@ -513,11 +488,6 @@
         "name": "ITVX",
         "tag": "free",
         "url": "https://www.itv.com/watch"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -525,11 +495,6 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "verified": "2026-08-01",
@@ -555,11 +520,6 @@
         "name": "ITVX",
         "tag": "free",
         "url": "https://www.itv.com/watch"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -567,11 +527,6 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "verified": "2026-08-01",
@@ -587,11 +542,6 @@
     "genre": "Period Drama",
     "us": [
       {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      },
-      {
         "name": "PBS Masterpiece",
         "tag": "stream",
         "url": "https://www.pbs.org/wgbh/masterpiece/"
@@ -602,11 +552,6 @@
         "name": "BBC iPlayer",
         "tag": "free",
         "url": "https://www.bbc.co.uk/iplayer"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -854,11 +799,6 @@
         "name": "ITVX",
         "tag": "free",
         "url": "https://www.itv.com/watch"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "au": [
@@ -868,7 +808,7 @@
         "url": "https://www.binge.com.au"
       }
     ],
-    "verified": "2026-07-15",
+    "verified": "2026-08-01",
     "sources": [
       "https://www.techradar.com/streaming/entertainment/how-to-watch-downton-abbey-stream-every-episode",
       "https://cybernews.com/stream-online/how-to-watch-downton-abbey/",
@@ -1099,13 +1039,7 @@
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
-    "uk": [
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      }
-    ],
+    "uk": [],
     "au": [
       {
         "name": "Acorn TV",
@@ -1373,11 +1307,6 @@
         "name": "PBS Passport",
         "tag": "stream",
         "url": "https://www.pbs.org/passport/"
-      },
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
       }
     ],
     "uk": [
@@ -1388,7 +1317,7 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
+    "verified": "2026-08-01",
     "sources": []
   },
   {
@@ -2340,11 +2269,6 @@
     "genre": "Crime Thriller",
     "us": [
       {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      },
-      {
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
@@ -2363,20 +2287,14 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
+    "verified": "2026-08-01",
     "sources": []
   },
   {
     "title": "Marcella",
     "years": "2016–2021",
     "genre": "Crime Thriller",
-    "us": [
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      }
-    ],
+    "us": [],
     "uk": [
       {
         "name": "ITVX",
@@ -2385,7 +2303,7 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
+    "verified": "2026-08-01",
     "sources": []
   },
   {
