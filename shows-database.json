@@ -4528,5 +4528,245 @@
     "au": [],
     "verified": "2026-07-26",
     "sources": []
+  },
+  {
+    "title": "Cooper & Fry",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "My5",
+        "tag": "free",
+        "url": "https://www.my5.tv"
+      }
+    ],
+    "au": [
+      {
+        "name": "ABC iview",
+        "tag": "free",
+        "url": "https://iview.abc.net.au"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cooper_and_Fry_(TV_series)",
+      "https://deadline.com/2026/07/uk-crime-drama-cooper-fry-lands-us-home-at-britbox-1236983876/",
+      "https://blog.reelgood.com/en-au/how-to-watch-cooper-fry-in-australia"
+    ]
+  },
+  {
+    "title": "The Gold",
+    "years": "2023–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "note": "Season 2 premieres October 18, 2026",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.tellyvisions.org/the-gold-season-2-strikes-october-return-to-pbs/",
+      "https://www.tvmaze.com/shows/57137/the-gold/seasons"
+    ]
+  },
+  {
+    "title": "The Hardacres",
+    "years": "2024–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "My5",
+        "tag": "free",
+        "url": "https://www.my5.tv"
+      }
+    ],
+    "au": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.theviewersguide.com/tvau/news/the-hardacres-abc-premiere",
+      "https://www.whattowatch.com/news/how-to-watch-the-hardacres-online-or-on-tv"
+    ]
+  },
+  {
+    "title": "The Good Ship Murder",
+    "years": "2023–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "My5",
+        "tag": "free",
+        "url": "https://www.my5.tv"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Good_Ship_Murder",
+      "https://www.whattowatch.com/news/watch-the-good-ship-murder-season-2-online"
+    ]
+  },
+  {
+    "title": "The Assassin",
+    "years": "2025–present",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.primevideo.com"
+      }
+    ],
+    "au": [
+      {
+        "name": "Stan",
+        "tag": "stream",
+        "url": "https://www.stan.com.au"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Assassin_(TV_series)",
+      "https://www.vitalthrills.com/acorn-tv-august-2026/"
+    ]
+  },
+  {
+    "title": "Blue Murder Motel",
+    "years": "2026–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "note": "Premieres August 24, 2026",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.vitalthrills.com/acorn-tv-august-2026/"
+    ]
+  },
+  {
+    "title": "The Ridge",
+    "years": "2026–present",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.vitalthrills.com/acorn-tv-august-2026/"
+    ]
+  },
+  {
+    "title": "Lord of the Flies",
+    "years": "2026",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Netflix",
+        "tag": "stream",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [
+      {
+        "name": "Stan",
+        "tag": "stream",
+        "url": "https://www.stan.com.au"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://deadline.com/2026/01/lord-of-the-flies-trailer-premiere-date-bbc-1236699793/",
+      "https://collider.com/netflix-lord-of-the-flies-adaptation-tv-series-release-date-may-4-2026/",
+      "https://blog.reelgood.com/en-au/how-to-watch-lord-of-the-flies-2026-in-australia"
+    ]
+  },
+  {
+    "title": "Prey",
+    "years": "2014–2015",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Netflix",
+        "tag": "stream",
+        "note": "Coming to Netflix 2026",
+        "url": "https://www.netflix.com"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.hellomagazine.com/film/893155/john-simm-gripping-crime-thriller-prey-coming-to-netflix/",
+      "https://en.wikipedia.org/wiki/Prey_(British_TV_series)"
+    ]
   }
 ]
