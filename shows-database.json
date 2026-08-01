@@ -4820,5 +4820,176 @@
     "sources": [
       "https://www.vitalthrills.com/acorn-tv-august-2026/"
     ]
+  },
+  {
+    "title": "Touching Evil",
+    "years": "1997–1999",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Touching_Evil",
+      "https://www.justwatch.com/uk/tv-series/touching-evil"
+    ]
+  },
+  {
+    "title": "Taggart",
+    "years": "1983–2010",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/ca/tv-show/taggart/season-26"
+    ]
+  },
+  {
+    "title": "Ridley",
+    "years": "2022–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://variety.com/2022/tv/news/adrian-dunbar-ridley-pbs-1235237696/",
+      "https://www.whattowatch.com/news/itv-gives-huge-update-on-future-of-ridley-with-adrian-dunbar"
+    ]
+  },
+  {
+    "title": "DI Ray",
+    "years": "2022–2024",
+    "genre": "Police Procedural",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [
+      {
+        "name": "SBS On Demand",
+        "tag": "free",
+        "url": "https://www.sbs.com.au/ondemand"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/DI_Ray",
+      "https://www.techradar.com/streaming/entertainment/watch-di-ray-season-2-online"
+    ]
+  },
+  {
+    "title": "No Offence",
+    "years": "2015–2018",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/ca/tv-show/no-offence"
+    ]
+  },
+  {
+    "title": "Bancroft",
+    "years": "2017–2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/bancroft"
+    ]
+  },
+  {
+    "title": "The Tower",
+    "years": "2021–2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://m.imdb.com/news/ni63456781",
+      "https://blog.reelgood.com/?p=88303"
+    ]
   }
 ]
