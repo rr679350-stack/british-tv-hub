@@ -832,7 +832,7 @@
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-07-15",
+    "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/ballykissangel",
       "https://reelgood.com/uk/show/ballykissangel-1996"
@@ -1018,7 +1018,13 @@
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
-    "uk": [],
+    "uk": [
+      {
+        "name": "ITVX Premium",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
     "au": [
       {
         "name": "BritBox",
@@ -1037,7 +1043,7 @@
         "url": "https://7plus.com.au"
       }
     ],
-    "verified": "2026-07-15",
+    "verified": "2026-08-01",
     "sources": [
       "https://newonbritbox.info/info/39753",
       "https://tv.apple.com/au/episode/the-handsome-stranger/umc.cmc.6beojel94rmpheglky5jesppe",
