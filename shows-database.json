@@ -5126,5 +5126,153 @@
       "https://acorn.tv/signoravolpe/",
       "https://www.justwatch.com/au/tv-show/signora-volpe"
     ]
+  },
+  {
+    "title": "Bergerac",
+    "years": "1981–1991",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/bergerac"
+    ]
+  },
+  {
+    "title": "Campion",
+    "years": "1989–1990",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/campion",
+      "https://www.willowandthatch.com/period-dramas-on-britbox-us/"
+    ]
+  },
+  {
+    "title": "Cadfael",
+    "years": "1994–1998",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.willowandthatch.com/period-dramas-on-britbox-us/"
+    ]
+  },
+  {
+    "title": "Maigret (1992)",
+    "years": "1992–1993",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "note": "Michael Gambon as Maigret",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.willowandthatch.com/period-dramas-on-britbox-us/"
+    ]
+  },
+  {
+    "title": "Maigret (2016)",
+    "years": "2016–2017",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "note": "Rowan Atkinson as Maigret",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.willowandthatch.com/period-dramas-on-britbox-us/"
+    ]
+  },
+  {
+    "title": "Van der Valk",
+    "years": "2020–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://jerrygallucci.substack.com/p/new-seasons-of-pbs-mystery-start"
+    ]
+  },
+  {
+    "title": "The Inspector Lynley Mysteries",
+    "years": "2001–2007",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/ch/Serie/inspector-lynley"
+    ]
+  },
+  {
+    "title": "The Ruth Rendell Mysteries",
+    "years": "1987–2000",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Ruth_Rendell_Mysteries",
+      "https://reelgood.com/show/the-ruth-rendell-mysteries-1987"
+    ]
   }
 ]
