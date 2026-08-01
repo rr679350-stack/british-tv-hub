@@ -4991,5 +4991,140 @@
       "https://m.imdb.com/news/ni63456781",
       "https://blog.reelgood.com/?p=88303"
     ]
+  },
+  {
+    "title": "Shakespeare & Hathaway: Private Investigators",
+    "years": "2018–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/shakespeare-and-hathaway-private-investigators"
+    ]
+  },
+  {
+    "title": "Murder in Provence",
+    "years": "2022",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "stream",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Murder_in_Provence",
+      "https://www.whattowatch.com/watching-guides/murder-in-provence-release-date-cast-plot-trailer-and-all-you-need-to-know"
+    ]
+  },
+  {
+    "title": "The Coroner",
+    "years": "2015–2016",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-coroner"
+    ]
+  },
+  {
+    "title": "Pie in the Sky",
+    "years": "1994–1997",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/pie-in-the-sky",
+      "https://www.britishtv.com/british-mysteries-crime-dramas-on-britbox/"
+    ]
+  },
+  {
+    "title": "Lovejoy",
+    "years": "1986–1994",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.pbs.org/show/lovejoy/"
+    ]
+  },
+  {
+    "title": "The Mallorca Files",
+    "years": "2019–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-mallorca-files"
+    ]
+  },
+  {
+    "title": "Signora Volpe",
+    "years": "2022–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://acorn.tv/signoravolpe/",
+      "https://www.justwatch.com/au/tv-show/signora-volpe"
+    ]
   }
 ]
