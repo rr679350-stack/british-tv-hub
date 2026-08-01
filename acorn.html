@@ -84,14 +84,15 @@ gtag('config', 'G-P1L8CVNKS6');
     .section-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
     .section h2 { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--cream); margin-bottom: 6px; }
     .section-sub { font-family: 'Crimson Text', serif; font-size: 16px; font-style: italic; color: var(--muted); margin-bottom: 28px; }
-    .highlight-card { background: var(--navy-card); border: 1px solid var(--gold); border-radius: 4px; padding: 28px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+    .highlight-card { background: var(--navy-card); border: 1px solid var(--gold); border-radius: 12px; padding: 28px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .highlight-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .highlight-card h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--cream); margin-bottom: 6px; }
     .highlight-badge { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
     .highlight-card p { font-family: 'Crimson Text', serif; font-size: 16px; color: var(--gold-muted); line-height: 1.6; margin-bottom: 14px; }
     @media (max-width: 600px) { .highlight-card { grid-template-columns: 1fr; } }
     .arrivals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    .arrival-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 8px; transition: border-color 0.2s; }
-    .arrival-card:hover { border-color: var(--gold); }
+    .arrival-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .arrival-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .arrival-card.editors-pick { border-color: #3a4a30; }
     .arrival-badge { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); background: #1a2135; border: 1px solid var(--border); padding: 2px 7px; border-radius: 2px; white-space: nowrap; }
     .arrival-pick-star { font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; color: #90c090; background: #1a2e1a; border: 1px solid #2a5030; padding: 2px 7px; border-radius: 2px; white-space: nowrap; }
@@ -104,7 +105,8 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-link { display: inline-block; align-self: flex-start; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); text-decoration: none; padding: 10px 18px; border-radius: 2px; transition: background 0.2s; margin-top: 8px; }
     .watch-link:hover { background: var(--gold-muted); }
     .originals-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    .original-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .original-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .original-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .original-card h3 { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--cream); }
     .original-seasons { font-size: 11px; color: var(--muted); }
     .original-card p { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--gold-muted); line-height: 1.55; flex: 1; }

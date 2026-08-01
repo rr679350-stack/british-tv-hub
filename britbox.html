@@ -193,14 +193,8 @@ gtag('config', 'G-P1L8CVNKS6');
     }
 
     /* ── HIGHLIGHT CARD ── */
-    .highlight-card {
-      background: var(--navy-card);
-      border: 1px solid var(--gold);
-      border-radius: 4px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+    .highlight-card { background: var(--navy-card); border: 1px solid var(--gold); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .highlight-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .highlight-card h3 {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
@@ -231,17 +225,8 @@ gtag('config', 'G-P1L8CVNKS6');
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
     }
-    .arrival-card {
-      background: var(--navy-card);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      transition: border-color 0.2s;
-    }
-    .arrival-card:hover { border-color: var(--gold); }
+    .arrival-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .arrival-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .arrival-card.editors-pick { border-color: #4a3a60; }
     .arrival-card-top {
       display: flex;
@@ -316,15 +301,8 @@ gtag('config', 'G-P1L8CVNKS6');
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
     }
-    .original-card {
-      background: var(--navy-card);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
+    .original-card { background: var(--navy-card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .original-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .original-card h3 {
       font-family: 'Playfair Display', serif;
       font-size: 17px;

@@ -127,7 +127,8 @@ gtag('config', 'G-P1L8CVNKS6');
   .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; color: var(--cream); line-height: 1.2; margin-bottom: 0.75rem; }
   .section-header h2 em { font-style: italic; color: var(--gold-light); }
   .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
-  .show-card { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 3rem 0; gap: 1.5rem; }
+  .show-card { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 3rem 0; gap: 1.5rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   .show-card:last-of-type { border-bottom: none; }
   .show-card-inner { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: start; }
   @media (max-width: 700px) { .show-card-inner { grid-template-columns: 1fr; gap: 1.5rem; } nav { gap: 0; } .site-header-inner { flex-direction: column; align-items: flex-start; } }

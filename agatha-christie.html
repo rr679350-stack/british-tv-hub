@@ -320,7 +320,8 @@ gtag('config', 'G-P1L8CVNKS6');
   .btn-stream { background: var(--gold); color: var(--navy); font-weight: 600; border: none; }
   .btn-stream:hover { background: var(--gold-light); }
 
-  .card-featured { background: var(--navy-light); border: 1px solid var(--border-bright); border-radius: 4px; padding: 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start; }
+  .card-featured { background: var(--navy-light); border: 1px solid var(--border-bright); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: start; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .card-featured:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   @media (max-width: 640px) { .card-featured { grid-template-columns: 1fr; } }
   .featured-label { font-size: 0.7rem; letter-spacing: 0.18em; font-variant: small-caps; color: var(--gold); margin-bottom: 0.75rem; }
   .featured-title { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--cream); line-height: 1.2; margin-bottom: 0.5rem; }
@@ -344,8 +345,8 @@ gtag('config', 'G-P1L8CVNKS6');
 
   /* Books section */
   .books-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
-  .book-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: 4px; padding: 1.25rem 1.25rem 1rem; display: flex; flex-direction: column; gap: 0.6rem; transition: border-color 0.25s, transform 0.2s; }
-  .book-card:hover { border-color: var(--border-bright); transform: translateY(-2px); }
+  .book-card { background: var(--navy-light); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.25rem 1rem; display: flex; flex-direction: column; gap: 0.6rem; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .book-card:hover { border-color: var(--border-bright); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   .book-tag { font-size: 0.68rem; letter-spacing: 0.1em; font-variant: small-caps; color: var(--gold); }
   .book-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--cream); line-height: 1.3; }
   .book-note { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; flex: 1; font-family: 'Crimson Pro', serif; }

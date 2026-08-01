@@ -146,8 +146,8 @@ gtag('config', 'G-P1L8CVNKS6');
   .section-title { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--gold-light); margin-bottom: 12px; }
   .section-intro { font-family: 'Crimson Text', serif; font-size: 18px; color: var(--text-muted); font-style: italic; line-height: 1.7; margin-bottom: 40px; max-width: 700px; }
   .shows-grid { display: grid; gap: 24px; margin-bottom: 64px; }
-  .show-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--border); padding: 32px; display: grid; grid-template-columns: 64px 1fr; gap: 24px; align-items: start; transition: border-color 0.2s; }
-  .show-card:hover { border-color: var(--gold); border-left-color: var(--gold); }
+  .show-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--border); padding: 32px; display: grid; grid-template-columns: 64px 1fr; gap: 24px; align-items: start; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; border-radius: 12px; }
+  .show-card:hover { border-color: var(--gold); border-left-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   .show-card.top { border-left-color: var(--gold); }
   .wl-dropdown { position: relative; display: inline-block; margin-top: 12px; }
   .wl-dd-toggle { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 0.5px; text-transform: uppercase; background: transparent; border: 1px solid var(--border); color: var(--text-faint); padding: 6px 10px; cursor: pointer; border-radius: 2px; display: inline-flex; align-items: center; gap: 6px; transition: border-color 0.2s, color 0.2s; }
@@ -171,8 +171,8 @@ gtag('config', 'G-P1L8CVNKS6');
   .tag.platform.acorn { background: #1a2e1a; border-color: #4a8; color: #4a8; }
   .tag.platform.pbs { background: #1a1a2e; border-color: #5588cc; color: #5588cc; }
   .gems-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 64px; }
-  .gem-card { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; transition: border-color 0.2s; }
-  .gem-card:hover { border-color: var(--gold); }
+  .gem-card { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; border-radius: 12px; }
+  .gem-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   .gem-label { font-family: 'Raleway', sans-serif; font-size: 8px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
   .gem-title { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold-light); margin-bottom: 10px; }
   .gem-desc { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--text-muted); line-height: 1.65; margin-bottom: 14px; }

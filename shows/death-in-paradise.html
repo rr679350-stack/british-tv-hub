@@ -65,7 +65,8 @@ gtag('config', 'G-P1L8CVNKS6');
 
     .show-description { font-size: 20px; line-height: 1.75; color: var(--text); margin-bottom: 32px; }
 
-    .watch-card { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 4px; padding: 24px 28px; margin-bottom: 32px; }
+    .watch-card { background: var(--bg-card); border: 1px solid var(--gold); border-radius: 12px; padding: 24px 28px; margin-bottom: 32px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .watch-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .watch-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
     .watch-service { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--text); margin-bottom: 4px; }
     .watch-detail { font-family: 'Raleway', sans-serif; font-size: 12px; letter-spacing: 1px; color: #d4c4a4; margin-bottom: 16px; }
@@ -76,8 +77,8 @@ gtag('config', 'G-P1L8CVNKS6');
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
-    .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 3px; padding: 16px 18px; transition: border-color 0.2s; }
-    .similar-card:hover { border-color: var(--gold); }
+    .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .similar-name { font-family: 'Playfair Display', serif; font-size: 17px; color: #f0e8d4; margin-bottom: 5px; }
     .similar-where { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #d4b47a; }
 

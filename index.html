@@ -217,8 +217,8 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .b-bbc{background:#181408;color:#d0c050;border:1px solid #282010}
 .b-amazon{background:#0a1020;color:#70b0f0;border:1px solid #102030}
 .top5-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.show-card{background:#1e2433;border:1px solid #3d4a60;padding:22px;transition:all 0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
-.show-card:hover{background:#232a3a;box-shadow:0 4px 16px rgba(0,0,0,0.35);border-color:var(--border2)}
+.show-card{ background: #1e2433; border: 1px solid #3d4a60; padding: 22px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.25); border-radius: 12px; }
+.show-card:hover{ background: #232a3a; box-shadow: 0 4px 16px rgba(0,0,0,0.35); border-color: var(--border2); transform: translateY(-4px); }
 .lobby-path{background:rgba(30,36,51,0.72);border:1px solid #3d4a60;padding:22px 18px 20px;text-decoration:none;display:flex;flex-direction:column;align-items:center;text-align:center;transition:border-color 0.2s ease,background 0.2s ease,transform 0.2s ease;}
 .lobby-path:hover{border-color:#c9a96e;background:rgba(35,42,58,0.95);transform:translateY(-3px);}
 @media (max-width:720px){.lobby-grid{grid-template-columns:repeat(2,1fr) !important;max-width:420px !important;}.lobby-h1{font-size:32px !important;}}
