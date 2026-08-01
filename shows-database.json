@@ -5720,5 +5720,138 @@
     "sources": [
       "https://www.willowandthatch.com/period-dramas-on-britbox-us/"
     ]
+  },
+  {
+    "title": "The Night Manager",
+    "years": "2016–present",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Night_Manager_(British_TV_series)"
+    ]
+  },
+  {
+    "title": "Spooks",
+    "years": "2002–2011",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [
+      {
+        "name": "ABC iview",
+        "tag": "free",
+        "url": "https://iview.abc.net.au"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/mi-5",
+      "https://www.justwatch.com/au/tv-show/spooks/season-5"
+    ]
+  },
+  {
+    "title": "A Very English Scandal",
+    "years": "2018",
+    "genre": "Political Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/a-very-english-scandal"
+    ]
+  },
+  {
+    "title": "The Split",
+    "years": "2018–2022",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.smartmove.us/streaming/services/britbox"
+    ]
+  },
+  {
+    "title": "Quiz",
+    "years": "2020",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.smartmove.us/streaming/services/britbox"
+    ]
+  },
+  {
+    "title": "The Salisbury Poisonings",
+    "years": "2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Salisbury_Poisonings",
+      "https://www.justwatch.com/uk/tv-series/the-salisbury-poisonings"
+    ]
   }
 ]
