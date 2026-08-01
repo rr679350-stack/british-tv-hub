@@ -4715,13 +4715,7 @@
     "title": "Lord of the Flies",
     "years": "2026",
     "genre": "Drama",
-    "us": [
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "url": "https://www.netflix.com"
-      }
-    ],
+    "us": [],
     "uk": [
       {
         "name": "BBC iPlayer",
@@ -4747,14 +4741,7 @@
     "title": "Prey",
     "years": "2014–2015",
     "genre": "Crime Thriller",
-    "us": [
-      {
-        "name": "Netflix",
-        "tag": "stream",
-        "note": "Coming to Netflix 2026",
-        "url": "https://www.netflix.com"
-      }
-    ],
+    "us": [],
     "uk": [
       {
         "name": "ITVX",
