@@ -8,9 +8,17 @@ acorn-new.json / britbox-new.json content, AND a rotating batch of the
 schema.org TVSeries claims embedded in the site's HTML pages (episode
 counts, air dates, season counts, and the short factual description text)
 using the Anthropic API with web search, then:
-  - updates "verified" / "sources" metadata for anything confirmed
-  - appends a run summary to fact-check-log.json
-  - opens a GitHub Issue if anything looks wrong or out of date
+  - for show-database entries: if a region's platform list is wrong, applies
+    the model's confident replacement directly (structured data, safe to
+    auto-apply); if it's only "uncertain" or no confident replacement was
+    found, leaves the data untouched and flags it for a human instead
+  - for acorn-new.json / britbox-new.json and the embedded editorial claims
+    (richer prose/dates, riskier to auto-edit unreviewed): only flags issues,
+    never rewrites them automatically
+  - updates "verified" / "sources" metadata for anything checked
+  - appends a run summary (including any auto-applied fixes) to fact-check-log.json
+  - opens a GitHub Issue listing what was auto-fixed and what still needs a
+    human look, if anything came back as an issue or uncertain
 
 Editorial HTML claims are tracked separately in editorial-verified.json,
 keyed by "page::show name", with a content hash so that editing a claim
@@ -117,11 +125,24 @@ Respond with ONLY a JSON array, one object per show, in this exact shape:
     "title": "...",
     "status": "confirmed" | "issue" | "uncertain",
     "notes": "short explanation, only needed if status is not confirmed",
-    "sources": ["https://...", "..."]
+    "sources": ["https://...", "..."],
+    "corrected": {{
+      "us": [{{"name": "...", "tag": "stream|free", "url": "..."}}],
+      "uk": [{{"name": "...", "tag": "stream|free", "url": "..."}}],
+      "au": [{{"name": "...", "tag": "stream|free", "url": "..."}}]
+    }}
   }}
 ]
-"confirmed" = everything listed checks out. "issue" = something is wrong or has
-changed. "uncertain" = couldn't verify either way. No prose outside the JSON."""
+"confirmed" = everything listed checks out — omit "corrected" entirely.
+"issue" = something is wrong or has changed — include "corrected" with the FULL
+replacement platform list for every region you have a confident answer for
+(carry forward any region you didn't find a problem with unchanged; omit a
+region from "corrected" entirely if you're not confident enough to replace it,
+rather than guessing). Use real working URLs: for BritBox use
+https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20,
+for Acorn TV use https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20,
+otherwise the platform's real official watch/show page. "uncertain" = couldn't
+verify either way — omit "corrected". No prose outside the JSON."""
 
 
 def build_britbox_acorn_prompt(acorn, britbox):
@@ -293,13 +314,30 @@ def main():
     # Only bump "verified" for shows we actually got a real answer for — never
     # mark something as freshly checked when the API call itself failed, or
     # the rotation would skip it for weeks having never really been checked.
+    # When the model flagged an issue AND gave us a confident replacement
+    # ("corrected"), apply it region-by-region so the database actually gets
+    # fixed — not just annotated as checked while the wrong data stays live.
     checked_titles = {r["title"] for r in shows_result}
+    applied_fixes = []
     for s in shows:
         if s["title"] in checked_titles:
             s["verified"] = TODAY
             match = next((r for r in shows_result if r["title"] == s["title"]), None)
             if match:
                 s["sources"] = match.get("sources", [])
+                corrected = match.get("corrected") or {}
+                changed_regions = []
+                for region in ("us", "uk", "au"):
+                    if region in corrected and corrected[region]:
+                        if corrected[region] != s.get(region):
+                            changed_regions.append(region)
+                        s[region] = corrected[region]
+                if changed_regions:
+                    applied_fixes.append({
+                        "title": s["title"],
+                        "regions": changed_regions,
+                        "notes": match.get("notes", ""),
+                    })
     save_json("shows-database.json", shows)
 
     # --- Editorial HTML claims (schema.org TVSeries entries embedded in pages) ---
@@ -384,32 +422,53 @@ def main():
         "confirmed_count": len(all_confirmed),
         "issue_count": len(all_issues),
         "issues": all_issues,
+        "applied_fixes": applied_fixes,
         "shows_check_failed": shows_check_failed,
         "arrivals_check_failed": arrivals_check_failed,
         "editorial_check_failed": editorial_check_failed,
     })
     save_json("fact-check-log.json", log)
 
-    if all_issues:
-        body_lines = [
-            f"Automated fact-check run on {TODAY} found {len(all_issues)} item(s) "
-            "that may need a human look:\n"
+    if applied_fixes or all_issues:
+        body_lines = []
+        if applied_fixes:
+            body_lines.append(
+                f"Automated fact-check run on {TODAY} auto-corrected "
+                f"{len(applied_fixes)} show(s) in shows-database.json:\n"
+            )
+            for fix in applied_fixes:
+                body_lines.append(f"### {fix['title']} — updated {', '.join(r.upper() for r in fix['regions'])}")
+                if fix.get("notes"):
+                    body_lines.append(fix["notes"])
+                body_lines.append("")
+        applied_titles = {f["title"] for f in applied_fixes}
+        remaining = [
+            issue for issue in all_issues
+            if not (issue.get("source_file") == "shows-database.json"
+                    and issue.get("title") in applied_titles)
         ]
-        for issue in all_issues:
-            body_lines.append(f"### {issue.get('title', 'Unknown')} ({issue.get('source_file','')})")
-            body_lines.append(f"**Status:** {issue.get('status')}")
-            if issue.get("notes"):
-                body_lines.append(f"**Notes:** {issue['notes']}")
-            if issue.get("sources"):
-                body_lines.append("**Sources:** " + ", ".join(issue["sources"]))
-            body_lines.append("")
+        if remaining:
+            body_lines.append(f"\n{len(remaining)} item(s) still need a human look "
+                               "(uncertain, or no confident replacement was found):\n")
+            for issue in remaining:
+                body_lines.append(f"### {issue.get('title', 'Unknown')} ({issue.get('source_file','')})")
+                body_lines.append(f"**Status:** {issue.get('status')}")
+                if issue.get("notes"):
+                    body_lines.append(f"**Notes:** {issue['notes']}")
+                if issue.get("sources"):
+                    body_lines.append("**Sources:** " + ", ".join(issue["sources"]))
+                body_lines.append("")
         body_lines.append(
             "\n_This issue was opened automatically by `.github/workflows/fact-check.yml`. "
-            "Check the flagged item(s) and update the site content directly (or ask Claude "
-            "to do it), then close this issue._"
+            "Auto-corrected items are already live — spot-check them if you like. Remaining "
+            "items need the site content updated directly (or ask Claude to do it), then close "
+            "this issue._"
         )
-        open_issue(f"Fact-check: {len(all_issues)} item(s) flagged ({TODAY})", "\n".join(body_lines))
-        print(f"Opened issue for {len(all_issues)} flagged item(s).")
+        open_issue(
+            f"Fact-check: {len(applied_fixes)} auto-fixed, {len(remaining)} flagged ({TODAY})",
+            "\n".join(body_lines),
+        )
+        print(f"Applied {len(applied_fixes)} fix(es); {len(remaining)} item(s) still flagged.")
     else:
         print("No issues found this run.")
 
