@@ -1,23 +1,53 @@
 {
   "month": "August 2026",
-  "updated": "2026-07-02",
+  "updated": "2026-08-01",
   "highlight": {
-    "title": "Time",
-    "badge": "BritBox · Coming Soon · Series 3",
-    "description": "David Tennant joins the cast as Prison Officer Bobby Bailey for the third series of Jimmy McGovern's BAFTA-winning drama, with Siobhan Finneran reprising her role as chaplain Marie-Louise. Written by McGovern (Unforgivable, Cracker, The Street) and Samuel Bailey (Shook), this series is set in a Young Offenders Institution and explores the impact of incarcerating teenagers and the effects on those who look after them. No premiere date confirmed yet.",
+    "title": "A Woman of Substance",
+    "badge": "BritBox Original · Season Finale",
+    "description": "Brenda Blethyn and Jessica Reynolds share the role of Emma Harte in this sweeping saga of a Yorkshire maid's rise to a global business empire. Based on Barbara Taylor Bradford's beloved novel, the series wraps up its first season with a finale airing August 5.",
     "tags": [
-      "Drama",
-      "David Tennant",
-      "Siobhan Finneran",
-      "Coming Soon"
+      "Period drama",
+      "Female lead",
+      "Brenda Blethyn",
+      "Season finale"
     ],
     "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
   },
   "new_arrivals": [
     {
+      "title": "The Hardacres",
+      "season": "Series 2",
+      "available": "August 5 · New episodes weekly",
+      "badge": "BritBox Original · North America Premiere",
+      "description": "Claire Cooper and Liam McMahon return as Mary and Sam Hardacre, the Yorkshire dockworking family turned country-estate gentry, alongside Julie Graham. Series 2 finds the family settling into Hardacre Hall and reckoning with the friction their new wealth brings.",
+      "tags": [
+        "Period drama",
+        "Claire Cooper",
+        "Liam McMahon",
+        "New series"
+      ],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "The Good Ship Murder",
+      "season": "Series 3",
+      "available": "August 25",
+      "badge": "BritBox Exclusive · North America Premiere",
+      "description": "Shayne Ward and Catherine Tyldesley return as a former detective turned cabaret singer and his First Officer sleuthing partner, solving murders aboard a Mediterranean cruise ship. Series 3 sails to Cannes, Istanbul, Crete and beyond, with 8 episodes released weekly.",
+      "tags": [
+        "Cozy mystery",
+        "Shayne Ward",
+        "Cruise ship",
+        "New series"
+      ],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
       "title": "Gone",
       "season": "Series 1",
-      "available": "July 23",
+      "available": "Premiered July 23 · New episodes weekly",
       "badge": "BritBox Exclusive · North America Premiere",
       "description": "A married music teacher from Bristol disappears, and her husband becomes the focus of a tense police investigation. Three episodes on release, then weekly — a gripping mystery starring David Morrissey and Eve Myles.",
       "tags": [
@@ -26,63 +56,19 @@
         "Eve Myles",
         "New series"
       ],
-      "editors_pick": true,
+      "editors_pick": false,
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
     },
     {
-      "title": "A Woman of Substance",
-      "season": "Series 1 — New episodes weekly",
-      "available": "Premiered June 24 · New episodes Wednesdays · Finale August 5",
-      "badge": "BritBox Original",
-      "description": "Brenda Blethyn and Jessica Reynolds share the role of Emma Harte in this sweeping saga of a Yorkshire maid's rise to a global business empire. The series premiered June 24 and continues weekly on Wednesdays through the August 5 finale. Based on Barbara Taylor Bradford's beloved novel — the 1984 original miniseries with Jenny Seagrove joins BritBox July 29 for anyone who wants to compare.",
+      "title": "Vanity Fair",
+      "season": "2018 Series — complete",
+      "available": "August 19",
+      "badge": "New to BritBox · Classic Adaptation",
+      "description": "Olivia Cooke stars as Becky Sharp in this acclaimed 2018 adaptation of Thackeray's novel, following her ruthless climb through Regency-era society against the backdrop of the Napoleonic Wars. With Tom Bateman, Suranne Jones and Claudia Jessie.",
       "tags": [
         "Period drama",
-        "Female lead",
-        "Brenda Blethyn",
-        "Yorkshire"
-      ],
-      "editors_pick": true,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Grace",
-      "season": "Season 6",
-      "available": "July 2",
-      "badge": "BritBox Original · Premiere",
-      "description": "John Simm returns as Detective Superintendent Roy Grace for a sixth season of feature-length mysteries based on Peter James's bestselling novels. Months after a major arrest, Grace and his team face devastating new cases across Brighton.",
-      "tags": [
-        "Crime drama",
-        "John Simm",
-        "Peter James",
-        "Brighton"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Return to Paradise",
-      "season": "Season 2",
-      "available": "July 14",
-      "badge": "BritBox Co-Exclusive · US Premiere",
-      "description": "Detective Sergeant Mackenzie Clarke is back in Dolphin Cove, juggling high-stakes murder investigations with the messy reality of her personal life. The sun-soaked Death in Paradise spin-off returns with new episodes weekly.",
-      "tags": [
-        "Cozy mystery",
-        "Australia",
-        "Death in Paradise universe"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Escape to the Country",
-      "season": "Season 33",
-      "available": "July 10",
-      "badge": "US Premiere",
-      "description": "The long-running favorite returns, following prospective buyers as they hunt for their dream rural retreat with the help of expert presenters. The ultimate comfort watch — property tours, local history, and gorgeous countryside.",
-      "tags": [
-        "Lifestyle",
-        "Countryside",
-        "Comfort watch"
+        "Classic literature",
+        "Olivia Cooke"
       ],
       "editors_pick": false,
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
