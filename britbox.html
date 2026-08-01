@@ -1644,7 +1644,7 @@ document.addEventListener('click', function(e){
 
   <!-- WHAT'S NEW THIS MONTH -->
   <section class="section">
-    <div class="section-label">New arrivals</div>
+    <div class="section-label" id="arrivals-kicker">New arrivals</div>
     <h2 id="arrivals-heading">New on BritBox This Month</h2>
     <p class="section-sub">Every new show landing on BritBox this month — with honest notes on what's worth your time.</p>
 
@@ -1679,14 +1679,6 @@ document.addEventListener('click', function(e){
     </div>
 
     <div id="originals-content" class="originals-grid" style="display:none;"></div>
-
-    <div class="cta-block" style="margin-top:28px;">
-      <div>
-        <div class="cta-block-text">Stream all BritBox Originals with one subscription.</div>
-        <div class="cta-block-sub">Check current price at signup · Cancel anytime</div>
-      </div>
-      <a class="cta-btn" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20">Start Free Trial →</a>
-    </div>
   </section>
 
   <!-- FOOTER --><style>
@@ -1888,6 +1880,7 @@ document.addEventListener('click', function(e){
 
     function renderArrivals(arrivals, month) {
       document.getElementById('arrivals-heading').textContent = 'New on BritBox: ' + month;
+      document.getElementById('arrivals-kicker').textContent = 'Updated ' + month;
 
       const grid = document.getElementById('whats-new-content');
       arrivals.forEach(show => {
@@ -1899,7 +1892,7 @@ document.addEventListener('click', function(e){
           ${show.editors_pick ? '<span class="arrival-pick-star">★ Pick</span>' : ''}
         </div>`;
 
-        const tags = show.tags.map(t => `<span class="tag">${t}</span>`).join('');
+        const tags = show.tags.slice(0, 2).map(t => `<span class="tag">${t}</span>`).join('');
 
         card.innerHTML = `
           ${topRow}
@@ -1920,7 +1913,7 @@ document.addEventListener('click', function(e){
     function renderOriginals(originals) {
       const grid = document.getElementById('originals-content');
       originals.forEach(show => {
-        const tags = show.tags.map(t => `<span class="tag">${t}</span>`).join('');
+        const tags = show.tags.slice(0, 2).map(t => `<span class="tag">${t}</span>`).join('');
         const card = document.createElement('div');
         card.className = 'original-card';
         card.innerHTML = `
@@ -1929,7 +1922,7 @@ document.addEventListener('click', function(e){
           <div class="original-seasons">${show.seasons}</div>
           <p>${show.description}</p>
           <div class="tags">${tags}</div>
-          <a class="watch-link" href="${show.affiliate_url}">Watch on BritBox →</a>
+          <a class="watch-link" href="${show.affiliate_url}">View Series →</a>
         `;
         grid.appendChild(card);
       });

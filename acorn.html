@@ -1251,7 +1251,7 @@ document.addEventListener('click', function(e){
   </section>
 
   <section class="section">
-    <div class="section-label">New arrivals</div>
+    <div class="section-label" id="arrivals-kicker">New arrivals</div>
     <h2 id="arrivals-heading">New on Acorn TV This Month</h2>
     <p class="section-sub">Every new show landing on Acorn TV this month — with honest notes on what's worth your time.</p>
     <div id="whats-new-loading" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
@@ -1280,13 +1280,6 @@ document.addEventListener('click', function(e){
       <div class="original-card skeleton"><div class="skeleton-line short"></div><div class="skeleton-line"></div><div class="skeleton-line"></div></div>
     </div>
     <div id="originals-content" class="originals-grid" style="display:none;"></div>
-    <div class="cta-block" style="margin-top:28px;">
-      <div>
-        <div class="cta-block-text">Stream all Acorn TV originals with one subscription.</div>
-        <div class="cta-block-sub">Check current price at signup · Cancel anytime</div>
-      </div>
-      <a class="cta-btn" href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20">Start Free Trial →</a>
-    </div>
   </section>
 
 <style>
@@ -1482,11 +1475,12 @@ document.addEventListener('click', function(e){
 
     function renderArrivals(arrivals, month) {
       document.getElementById('arrivals-heading').textContent = 'New on Acorn TV: ' + month;
+      document.getElementById('arrivals-kicker').textContent = 'Updated ' + month;
       const grid = document.getElementById('whats-new-content');
       arrivals.forEach(show => {
         const card = document.createElement('div');
         card.className = 'arrival-card' + (show.editors_pick ? ' editors-pick' : '');
-        const tags = show.tags.map(t => `<span class="tag">${t}</span>`).join('');
+        const tags = show.tags.slice(0, 2).map(t => `<span class="tag">${t}</span>`).join('');
         card.innerHTML = `
           <div class="arrival-card-top">
             <span class="arrival-badge">${show.badge}</span>
@@ -1507,7 +1501,7 @@ document.addEventListener('click', function(e){
     function renderOriginals(originals) {
       const grid = document.getElementById('originals-content');
       originals.forEach(show => {
-        const tags = show.tags.map(t => `<span class="tag">${t}</span>`).join('');
+        const tags = show.tags.slice(0, 2).map(t => `<span class="tag">${t}</span>`).join('');
         const card = document.createElement('div');
         card.className = 'original-card';
         card.innerHTML = `
@@ -1516,7 +1510,7 @@ document.addEventListener('click', function(e){
           <div class="original-seasons">${show.seasons}</div>
           <p>${show.description}</p>
           <div class="tags">${tags}</div>
-          <a class="watch-link" href="${show.affiliate_url}">Watch on Acorn TV →</a>`;
+          <a class="watch-link" href="${show.affiliate_url}">View Series →</a>`;
         grid.appendChild(card);
       });
       document.getElementById('originals-loading').style.display = 'none';
