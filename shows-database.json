@@ -4673,5 +4673,152 @@
       "https://www.hellomagazine.com/film/893155/john-simm-gripping-crime-thriller-prey-coming-to-netflix/",
       "https://en.wikipedia.org/wiki/Prey_(British_TV_series)"
     ]
+  },
+  {
+    "title": "Cracker",
+    "years": "1993–2006",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cracker",
+      "https://en.wikipedia.org/wiki/Cracker_(British_TV_series)"
+    ]
+  },
+  {
+    "title": "Rebus",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [
+      {
+        "name": "SBS On Demand",
+        "tag": "free",
+        "url": "https://www.sbs.com.au/ondemand"
+      }
+    ],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rebus_(2024_TV_series)",
+      "https://guides.justwatch.com/au/tv-show/rebus-2024"
+    ]
+  },
+  {
+    "title": "The Bay",
+    "years": "2019–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://tomsguide.com/entertainment/streaming/watch-the-bay-season-5-online"
+    ]
+  },
+  {
+    "title": "Vigil",
+    "years": "2021–present",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://sportskeeda.com/pop-culture/where-watch-bbc-s-vigil-season-2-all-streaming-options-explored",
+      "https://www.tvmaze.com/shows/45879/vigil/seasons"
+    ]
+  },
+  {
+    "title": "Grace",
+    "years": "2021–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.tvmaze.com/news/4578/grace-itv-britbox-recommissions-grace-starring-john-simm-richie-campbell"
+    ]
+  },
+  {
+    "title": "Beyond Paradise",
+    "years": "2023–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.vitalthrills.com/acorn-tv-august-2026/"
+    ]
   }
 ]
