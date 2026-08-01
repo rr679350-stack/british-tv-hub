@@ -539,5 +539,140 @@
     "shows_check_failed": false,
     "arrivals_check_failed": false,
     "editorial_check_failed": false
+  },
+  {
+    "date": "2026-08-01",
+    "shows_checked": [
+      "Agatha Christie's Poirot",
+      "All Creatures Great and Small",
+      "Call the Midwife",
+      "Doc Martin",
+      "Father Brown",
+      "Grantchester",
+      "Keeping Up Appearances",
+      "Last of the Summer Wine",
+      "Miss Marple",
+      "The Detectorists"
+    ],
+    "arrivals_checked": [],
+    "editorial_checked": [],
+    "confirmed_count": 0,
+    "issue_count": 10,
+    "issues": [
+      {
+        "title": "Grantchester",
+        "status": "issue",
+        "notes": "Year range issue: the show has continued beyond 'present' — it is now in Season 11 (2026), so the year range itself is not wrong, but several streaming claims are inaccurate. For the US: Netflix is NOT currently confirmed as a streaming home for Grantchester (one source explicitly states 'No, Grantchester is not available on Netflix'); it streams via PBS Masterpiece and Prime Video (PBS Masterpiece Amazon Channel). For the UK: ITVX is confirmed correct, but BritBox UK no longer exists as a standalone service — it was absorbed into ITVX Premium in April 2024. For AU: The show streams on Acorn TV and ABC iview (free), but BritBox AU is NOT listed as a current platform; the guide omits ABC iview and incorrectly includes BritBox.",
+        "sources": [
+          "https://www.cloudwards.net/how-to-watch-grantchester/",
+          "https://www.justwatch.com/au/tv-show/grantchester",
+          "https://cybernews.com/stream-online/how-to-watch-grantchester-from-anywhere/",
+          "https://www.whattowatch.com/news/how-to-watch-granchester-season-10-online-or-on-tv-from-around-the-world"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Father Brown",
+        "status": "issue",
+        "notes": "Year range is correct (2013–present, now in Season 13 as of 2026). US: BritBox is confirmed correct; Hoopla and Roku Channel also carry it. UK: BBC iPlayer is confirmed correct; however BritBox UK no longer exists as a standalone service (it merged into ITVX Premium in April 2024), so listing 'BritBox' for the UK is misleading/inaccurate. AU: BritBox AU is confirmed correct. The UK entry is the main issue.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/father-brown",
+          "https://www.justwatch.com/au/tv-show/father-brown-2013",
+          "https://en.wikipedia.org/wiki/BritBox"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Agatha Christie's Poirot",
+        "status": "issue",
+        "notes": "Year range (1989–2013) is correct. US: BritBox and Acorn TV are confirmed; however Netflix is NOT currently listed as a US streaming platform for Poirot — JustWatch US shows BritBox, Acorn TV, Hulu, and PBS but not Netflix. UK: ITVX is confirmed; BritBox UK no longer exists as a standalone platform (absorbed into ITVX Premium April 2024). Netflix UK listing could not be confirmed. AU: BritBox AU is confirmed; Netflix AU availability is uncertain/not confirmed by current sources.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/agatha-christies-poirot",
+          "https://www.cyberghostvpn.com/privacyhub/how-to-watch-poirot/",
+          "https://en.wikipedia.org/wiki/BritBox"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Miss Marple",
+        "status": "issue",
+        "notes": "Year range (2004–2013) is correct per Wikipedia. US: BritBox is confirmed; Netflix US is NOT confirmed (JustWatch US only lists BritBox Amazon Channel for this show, not Netflix). UK: ITVX is confirmed correct; Netflix UK was added in January 2026 (so this is now accurate). AU: BritBox AU is confirmed; Netflix AU for Miss Marple could not be confirmed from current sources. The main issue is the Netflix US listing, which appears inaccurate.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/agatha-christies-miss-marple",
+          "https://britbrief.co.uk/entertainment/television/netflix-adds-itvs-marpleall-episodes-available.html",
+          "https://www.hellomagazine.com/film/877355/iconic-detective-drama-agatha-christie-marple-coming-to-netflix/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Call the Midwife",
+        "status": "issue",
+        "notes": "Year range (2012–present) is correct (Season 15 aired in 2026). US: Netflix is confirmed; PBS Masterpiece is also confirmed for the Christmas special and recent seasons. UK: BBC iPlayer is confirmed; Netflix UK availability for Call the Midwife is uncertain/not prominently listed in current sources. AU: The claimed platforms Stan and ABC iview have issues — Stan only carries older seasons (1–12), and ABC iview carries some episodes for free. BritBox AU is the primary/exclusive home for new seasons in Australia, which is missing from the guide. The AU entry omits BritBox (the most current platform) and overstates Stan's coverage.",
+        "sources": [
+          "https://www.comparetv.com.au/news/how-to-watch-call-the-midwife-in-australia/",
+          "https://www.justwatch.com/au/tv-show/call-the-midwife/season-14",
+          "https://www.moviefone.com/tv-shows/call-the-midwife/xqYYb7xcfxfZsAd9VZMzy1/where-to-watch/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "All Creatures Great and Small",
+        "status": "issue",
+        "notes": "Year range needs updating: the show ran through at least 2025 (Season 6 confirmed, with Seasons 7 and 8 announced), so '2020–present' is correct in spirit but TV Guide lists it as '2020–2025'. US: PBS Masterpiece is confirmed correct; however Peacock is NOT confirmed as a current platform — JustWatch US lists PBS Masterpiece Amazon Channel, WETA+, and Thirteen, but not Peacock. AU: BritBox is confirmed; the guide omits ABC iview, which also carries the show for free in Australia. The Peacock US claim is the primary issue.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/all-creatures-great-and-small-2020",
+          "https://www.justwatch.com/au/tv-show/all-creatures-great-and-small-2020",
+          "https://www.pbs.org/wgbh/masterpiece/shows/all-creatures-great-and-small/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Doc Martin",
+        "status": "issue",
+        "notes": "Year range (2004–2022) is correct — the series concluded with Season 10 and a Christmas special in 2022. US: Acorn TV is confirmed correct; 'Roku / Pluto' is partially correct (The Roku Channel and Pluto TV both carry it free). UK: ITVX is confirmed; however 'Acorn TV' for the UK is uncertain — JustWatch UK lists ITVX only (not Acorn TV UK). AU: '7plus' is NOT confirmed as a current Doc Martin platform — JustWatch AU lists BritBox and ABC iview (free), not 7plus. Acorn TV AU is not prominently listed for Australia either. The AU listing of 7plus appears inaccurate.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/doc-martin",
+          "https://www.justwatch.com/uk/tv-series/doc-martin/season-1",
+          "https://www.justwatch.com/au/tv-show/doc-martin/season-10"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "The Detectorists",
+        "status": "issue",
+        "notes": "Year range needs a check: the show ran 2014–2017 for series 1–3, with a Christmas special in December 2022 — so 2014–2022 is technically correct. US: Acorn TV is confirmed correct. UK: BBC iPlayer is confirmed; 'Acorn TV' for the UK — JustWatch UK lists Disney Plus, Sky Go, and BBC iPlayer (free), but NOT Acorn TV UK specifically. AU: Acorn TV is NOT confirmed as a current Australian streaming platform for Detectorists — Flicks.com.au lists it on YouTube and Prime Video in Australia, not Acorn TV. The AU Acorn TV claim and UK Acorn TV claim are both uncertain/likely inaccurate.",
+        "sources": [
+          "https://www.justwatch.com/uk/tv-series/detectorists",
+          "https://www.justwatch.com/us/tv-show/detectorists/season-1",
+          "https://www.flicks.com.au/tv/detectorists-series-1/"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Last of the Summer Wine",
+        "status": "issue",
+        "notes": "Year range (1973–2010) is correct. US: BritBox is confirmed; Prime Video is also confirmed (various seasons stream on Amazon Prime Video). UK: UKTV Play is confirmed (available free with ads); BritBox UK no longer exists as a standalone platform — it was absorbed into ITVX Premium in April 2024, so the 'BritBox' UK listing is inaccurate. The show appears on Now TV (Sky) and UKTV Play in the UK. AU: BritBox AU availability could not be fully confirmed from current sources — uncertain.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/last-of-the-summer-wine/season-4",
+          "https://guides.justwatch.com/uk/tv-series/last-of-the-summer-wine",
+          "https://en.wikipedia.org/wiki/BritBox"
+        ],
+        "source_file": "shows-database.json"
+      },
+      {
+        "title": "Keeping Up Appearances",
+        "status": "issue",
+        "notes": "Year range (1990–1995) is correct. US: BritBox is confirmed correct. UK: The standalone BritBox UK service no longer exists — it was absorbed into ITVX Premium in April 2024. The show is currently listed on BBC iPlayer (free), ITVX Premium, and Now TV in the UK, not 'BritBox' as a standalone. AU: BritBox AU is confirmed, but Stan is also listed as a platform in Australia (JustWatch AU shows BritBox and Stan), which the guide omits.",
+        "sources": [
+          "https://www.justwatch.com/us/tv-show/keeping-up-appearances",
+          "https://www.justwatch.com/uk/tv-series/keeping-up-appearances/season-2",
+          "https://guides.justwatch.com/au/tv-show/keeping-up-appearances"
+        ],
+        "source_file": "shows-database.json"
+      }
+    ],
+    "shows_check_failed": false,
+    "arrivals_check_failed": true,
+    "editorial_check_failed": true
   }
 ]
