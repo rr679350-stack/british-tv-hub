@@ -490,6 +490,156 @@ Before any page is published or updated:
 - Page reviewed on mobile.
 - Ready to publish.
 
+## PART 26 — Source Documentation
+
+For every page, maintain a private record of what was used to verify it.
+
+- Last audited date
+- Next scheduled review
+- Primary sources consulted
+- Secondary sources consulted (if needed)
+- Time-sensitive claims noted
+- Reviewer initials or audit version
+
+This creates an audit trail and makes future updates much faster.
+
+## PART 27 — Statement Inventory
+
+Instead of only reviewing pages, count and classify factual statements.
+For each page record:
+
+- Total factual statements
+- Verified statements
+- Updated statements
+- Removed statements
+- Remaining statements requiring verification
+
+This helps measure progress over time.
+
+## PART 28 — Risk Rating
+
+Assign each page a verification priority.
+
+High Risk — needs frequent review because information changes often:
+- Streaming pages
+- "What's New"
+- Pricing
+- Free trials
+- Release schedules
+
+Medium Risk:
+- TV series pages
+- Episode counts
+- Cast
+- Books
+
+Low Risk:
+- History articles
+- Author biographies
+- Classic novels
+- Evergreen guides
+
+This tells you where to spend review time first.
+
+## PART 29 — Broken Promise Audit
+
+Check whether every page still delivers on what it promises. Ask:
+
+- Does the title match the content?
+- Does the introduction match the content?
+- Does every heading deliver what it promises?
+- Is anything misleading?
+- Is anything exaggerated?
+
+## PART 30 — Reader Experience Audit
+
+Read each page from start to finish.
+
+- Easy to scan
+- Easy to read
+- No repetitive wording
+- No unnecessary sections
+- Strong conclusion
+- Helpful next step
+
+## PART 31 — Recommendation Quality
+
+Since British TV Hub is built around curated recommendations, for every
+recommendation ask:
+
+- Does it genuinely deserve to be recommended?
+- Does it add variety?
+- Is it different from the surrounding recommendations?
+- Would a new visitor discover something worthwhile?
+- Is there an obvious omission that should be included?
+
+## PART 32 — Future-Proofing
+
+For every page ask:
+
+- Will this still be accurate in six months?
+- Will it still make sense in a year?
+- Can time-sensitive wording be rewritten to be evergreen?
+- Should this page have a reminder for review?
+
+## PART 33 — Content Performance Review
+
+Use analytics to improve content without compromising editorial quality.
+Review:
+
+- High bounce-rate pages
+- Low engagement pages
+- High-performing pages
+- Top landing pages
+- Internal click-through rates (where available)
+
+The goal isn't to chase clicks, but to identify pages that may need
+clearer structure or stronger guidance.
+
+## PART 34 — Archive & Retirement Review
+
+Not every page should remain indefinitely. For each page, decide:
+
+- Keep as-is
+- Refresh
+- Merge with another page
+- Archive
+- Redirect
+- Delete
+
+This helps prevent unnecessary page growth and keeps the site
+intentionally curated rather than sprawling.
+
+## PART 35 — Final Certification
+
+Every monthly audit should end with a signed summary:
+
+British TV Hub Editorial Certification
+- Pages reviewed:
+- Pages fully verified:
+- Factual statements checked:
+- Confirmed factual errors:
+- Needs updating:
+- Unsupported claims:
+- Conflicting sources:
+- Broken internal links:
+- Broken affiliate links:
+- Formatting issues:
+- Missing images:
+- Overall accuracy score:
+- Overall site health score:
+- Date completed:
+
+## Guiding principle
+
+Accuracy is more important than speed. Original writing is more
+important than volume. Curation is more valuable than completeness.
+Every page should help readers discover outstanding British television
+and books through carefully verified, trustworthy recommendations — not
+by trying to cover everything. British TV Hub is a compact, carefully
+maintained publication with original, warm editorial writing and
+rigorous fact-checking, not an exhaustive database.
+
 ## Known false-positive traps (don't "fix" these)
 
 - American spellings that are actually code, not copy: center, color,
