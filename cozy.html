@@ -1461,8 +1461,9 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
 .nav-search-results a:hover { background: #2c3345; color: #ffffff; }
 .nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+.nav-actions{display:flex;align-items:center;gap:2px;justify-self:end;}
 .nav-tea{position:relative;display:inline-flex;align-items:center;}
-.nav-tea-link{font-size:19px;text-decoration:none;line-height:1;padding:8px 6px;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
+.nav-tea-link{font-size:27px;text-decoration:none;line-height:1;padding:6px 6px 6px 2px;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
 .nav-tea-link:hover,.nav-tea-link:focus{transform:scale(1.15);filter:grayscale(0);outline:none;}
 .nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:11px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
 .nav-tea-tooltip strong{display:block;color:#c9a96e;font-family:'Playfair Display',serif;font-size:13px;font-weight:400;font-style:normal;margin-bottom:2px;}
@@ -1547,6 +1548,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
         </div>
       </div>
     </div>
+<div class="nav-actions">
 <div class="nav-tea">
       <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
@@ -1558,6 +1560,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
+</div>
     </div>
 </nav>
 <script>
