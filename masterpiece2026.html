@@ -283,41 +283,50 @@ gtag('config', 'G-P1L8CVNKS6');
 
     /* ── HERO ── */
     .hero {
-      background: var(--navy);
+      position: relative;
+      background: radial-gradient(ellipse at top, #263252 0%, #141a2c 65%), linear-gradient(160deg, #1a2135 0%, #241a2e 100%);
       border-bottom: 1px solid var(--gold-dim);
-      padding: 48px 32px 36px;
+      padding: 84px 32px 72px;
+      text-align: center;
     }
     .hero-tag {
-      font-size: 10px;
-      letter-spacing: 0.18em;
+      font-size: 11px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 12px;
+      margin-bottom: 18px;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(24px, 4vw, 34px);
+      font-size: clamp(30px, 5vw, 46px);
       font-weight: 700;
       color: var(--cream);
       line-height: 1.15;
-      margin-bottom: 14px;
-      max-width: 640px;
+      margin: 0 auto 18px;
+      max-width: 720px;
     }
     .hero-divider {
       width: 48px;
       height: 2px;
       background: var(--gold);
-      margin-bottom: 16px;
+      margin: 0 auto 22px;
     }
     .hero p {
       font-family: 'Crimson Text', serif;
-      font-size: 18px;
+      font-size: 19px;
+      font-style: italic;
       color: var(--cream-dim);
-      max-width: 580px;
+      max-width: 620px;
       line-height: 1.65;
-      margin-bottom: 20px;
+      margin: 0 auto 32px;
     }
-    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; }
+    .hero-cta { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 15px 28px; border-radius: 4px; text-decoration: none; }
+
+    /* ── INTRO SECTION ── */
+    .page-intro { max-width: 720px; margin: 0 auto; padding: 48px 32px 8px; text-align: center; }
+    .page-intro p { font-family: 'Crimson Text', serif; font-size: 18px; color: var(--cream-dim); line-height: 1.75; margin-bottom: 16px; }
+
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
     .filter-btn {
       background: transparent;
       border: 1px solid var(--gold-dim);
@@ -335,15 +344,29 @@ gtag('config', 'G-P1L8CVNKS6');
     .filter-btn:hover, .filter-btn.active { background: var(--gold); color: #1a2135; }
 
     /* ── MAIN ── */
-    .content { padding: 32px 32px 0; max-width: 1100px; }
+    .content { padding: 56px 32px 0; max-width: 1100px; }
 
+    .section-block { margin-bottom: 72px; }
+    .section-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--cream);
+      margin-bottom: 10px;
+    }
+    .section-intro {
+      font-family: 'Crimson Text', serif;
+      font-size: 16px;
+      font-style: italic;
+      color: var(--gold-mid);
+      margin-bottom: 20px;
+    }
     .section-label {
       font-family: 'Raleway', sans-serif;
       font-size: 10px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 18px;
+      margin-bottom: 24px;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -358,11 +381,11 @@ gtag('config', 'G-P1L8CVNKS6');
     /* ── SHOW CARDS ── */
     .shows-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      gap: 16px;
-      margin-bottom: 32px;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 28px;
+      margin-bottom: 0;
     }
-    .show-card { background: var(--navy-dark); border: 1px solid var(--gold-faint); border-radius: 12px; padding: 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card { background: var(--navy-dark); border: 1px solid var(--gold-faint); border-radius: 12px; padding: 28px; display: flex; flex-direction: column; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .show-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
 
     .sc-header {
@@ -370,11 +393,11 @@ gtag('config', 'G-P1L8CVNKS6');
       justify-content: space-between;
       align-items: flex-start;
       gap: 8px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
     .sc-title {
       font-family: 'Playfair Display', serif;
-      font-size: 15px;
+      font-size: 17px;
       color: var(--cream);
       line-height: 1.3;
     }
@@ -395,33 +418,34 @@ gtag('config', 'G-P1L8CVNKS6');
 
     .sc-meta {
       font-family: 'Raleway', sans-serif;
-      font-size: 10px;
+      font-size: 11px;
       color: var(--gold-mid);
       text-transform: uppercase;
       letter-spacing: 0.07em;
-      margin-bottom: 7px;
+      margin-bottom: 12px;
     }
     .sc-desc {
       font-family: 'Crimson Text', serif;
-      font-size: 13px;
+      font-size: 14.5px;
       color: var(--cream-dim);
-      line-height: 1.55;
-      margin-bottom: 10px;
+      line-height: 1.65;
+      margin-bottom: 16px;
+      flex: 1;
     }
-    .streaming-pills { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 8px; }
+    .streaming-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
     .spill {
       font-family: 'Raleway', sans-serif;
       font-size: 9px;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 3px 8px;
+      padding: 4px 9px;
       border-radius: 3px;
       background: #1a2535;
       color: #6fa3d4;
       border: 1px solid rgba(111,163,212,0.2);
     }
-    .card-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 12px; }
-    .watch-link { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 10px 18px; border-radius: 2px; text-decoration: none; }
+    .card-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 18px; }
+    .watch-link { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 12px 20px; border-radius: 4px; text-decoration: none; align-self: flex-start; }
     .tag {
       font-family: 'Raleway', sans-serif;
       font-size: 9px;
@@ -445,7 +469,7 @@ gtag('config', 'G-P1L8CVNKS6');
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      margin-bottom: 32px;
+      margin-bottom: 56px;
       flex-wrap: wrap;
     }
     .aff-text {
@@ -456,6 +480,7 @@ gtag('config', 'G-P1L8CVNKS6');
     .aff-text span { color: var(--gold); font-weight: 600; }
     .aff-btn { background: var(--gold); color: #1a2135; font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 18px; border-radius: 2px; border: none; cursor: pointer; white-space: nowrap; font-weight: 600; transition: opacity 0.2s; text-decoration: none; }
     .aff-btn:hover { opacity: 0.85; }
+    .cr-card:hover { border-color: rgba(201,168,76,0.4) !important; transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
 
     /* ── NEWSLETTER ── */
     .newsletter-wrap {
@@ -1677,7 +1702,13 @@ document.addEventListener('click', function(e){
     <div class="hero-tag">Your complete guide</div>
     <h1>What's on PBS MASTERPIECE in 2026</h1>
     <div class="hero-divider"></div>
-    <p>From gaslit Victorian mysteries to sweeping Edwardian family sagas — everything on MASTERPIECE this year, and where to watch it in the US.</p>
+    <p>Everything airing on MASTERPIECE this year, and where to watch it in the US.</p>
+    <a href="#airing-now" class="hero-cta">See What's Airing Now &rarr;</a>
+  </div>
+
+  <div class="page-intro">
+    <p>Looking for everything airing on PBS MASTERPIECE in 2026?</p>
+    <p>This guide brings together every confirmed premiere, returning favourite, and streaming collection in one place, with updates as new announcements are made.</p>
     <div class="filter-bar">
       <button class="filter-btn active">All shows</button>
       <button class="filter-btn">New this year</button>
@@ -1691,7 +1722,9 @@ document.addEventListener('click', function(e){
     
 
     <!-- AIRING NOW -->
-    <div style="margin-top: 8px;"></div>
+    <div class="section-block" id="airing-now">
+    <h2 class="section-heading">Airing Right Now</h2>
+    <p class="section-intro">Currently on air in the US, with new episodes each week.</p>
     <div class="section-label">Airing now</div>
     <div class="shows-grid">
 
@@ -1708,8 +1741,12 @@ document.addEventListener('click', function(e){
       </div>
 
     </div>
+    </div>
 
     <!-- COMING THIS FALL -->
+    <div class="section-block">
+    <h2 class="section-heading">Coming This Fall</h2>
+    <p class="section-intro">Confirmed premieres landing later this year.</p>
     <div class="section-label">Coming this fall</div>
     <div class="shows-grid">
 
@@ -1738,8 +1775,12 @@ document.addEventListener('click', function(e){
       </div>
 
     </div>
+    </div>
 
     <!-- ALREADY AIRED THIS YEAR -->
+    <div class="section-block">
+    <h2 class="section-heading">Streaming Now</h2>
+    <p class="section-intro">Already aired in full this year and available on demand.</p>
     <div class="section-label">Aired earlier in 2026</div>
     <div class="shows-grid">
 
@@ -1761,7 +1802,7 @@ document.addEventListener('click', function(e){
           <span class="sc-badge badge-back">Complete</span>
         </div>
         <div class="sc-meta">PBS MASTERPIECE · Premiered March 22</div>
-        <div class="sc-desc">Sam Claflin and Jeremy Irons star in this epic revenge saga adapted from Alexandre Dumas's classic. Widely regarded as one of 2026's standout period dramas.</div>
+        <div class="sc-desc">Sam Claflin and Jeremy Irons star in this new adaptation of Alexandre Dumas's classic revenge saga.</div>
         <div class="streaming-pills"><span class="spill">PBS Passport</span><span class="spill">Amazon</span></div>
         <div class="card-tags"><span class="tag">Adventure</span><span class="tag">Classic</span></div>
         <a class="watch-link" href="https://www.pbs.org/passport" target="_blank" rel="noopener">Watch Now &rarr;</a>
@@ -1773,15 +1814,19 @@ document.addEventListener('click', function(e){
           <span class="sc-badge badge-back">Back on PBS</span>
         </div>
         <div class="sc-meta">PBS MASTERPIECE · All 6 Seasons</div>
-        <div class="sc-desc">Downton Abbey returns to PBS, with all six seasons available and broadcast airings continuing on Sunday nights through the fall.</div>
+        <div class="sc-desc">All six seasons are available through PBS Passport. PBS began re-airing the series from the beginning in May 2026. Check your local PBS listings for the current broadcast schedule.</div>
         <div class="streaming-pills"><span class="spill">PBS Passport</span><span class="spill">Amazon</span></div>
         <div class="card-tags"><span class="tag">Edwardian</span><span class="tag">Period drama</span></div>
         <a class="watch-link" href="https://www.pbs.org/passport" target="_blank" rel="noopener">Watch Now &rarr;</a>
       </div>
 
     </div>
+    </div>
 
     <!-- RETURNING FAVOURITES -->
+    <div class="section-block">
+    <h2 class="section-heading">Returning Favourites</h2>
+    <p class="section-intro">Familiar series back with new seasons this year.</p>
     <div class="section-label">Returning favourites</div>
     <div class="shows-grid">
 
@@ -1822,11 +1867,32 @@ document.addEventListener('click', function(e){
       </div>
 
     </div>
+    </div>
 
     <!-- AFF BOX -->
     <div class="aff-box">
       <div class="aff-text">Watch MASTERPIECE programs through the <span>PBS MASTERPIECE Prime Video Channel</span> — a separate channel subscription, available to Amazon Prime members.</div>
       <a href="https://www.amazon.com/gp/video/storefront/?benefitId=pbs&tag=britishtvhub-20" target="_blank" rel="noopener"><button class="aff-btn">Watch on Amazon →</button></a>
+    </div>
+
+    <!-- CONTINUE READING -->
+    <div class="section-block" style="margin-bottom: 56px;">
+      <h2 class="section-heading">Go Deeper</h2>
+      <p class="section-intro">More British TV Hub guides worth exploring.</p>
+      <div class="cr-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;">
+        <a href="/britbox.html" class="cr-card" style="display:block;background:var(--navy-dark);border:1px solid var(--gold-faint);border-radius:12px;padding:24px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+          <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);margin-bottom:8px;">BritBox Guide</div>
+          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--cream-dim);line-height:1.6;">This month's new arrivals and premieres, plus the BritBox Originals worth the subscription alone.</div>
+        </a>
+        <a href="/acorn.html" class="cr-card" style="display:block;background:var(--navy-dark);border:1px solid var(--gold-faint);border-radius:12px;padding:24px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+          <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);margin-bottom:8px;">Acorn TV Guide</div>
+          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--cream-dim);line-height:1.6;">This month's new arrivals and premieres, plus the Acorn Originals worth the subscription alone.</div>
+        </a>
+        <a href="/shows.html" class="cr-card" style="display:block;background:var(--navy-dark);border:1px solid var(--gold-faint);border-radius:12px;padding:24px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+          <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);margin-bottom:8px;">Best Of Guide</div>
+          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--cream-dim);line-height:1.6;">The essential British mystery and drama shows every fan should know, hand-picked across every era.</div>
+        </a>
+      </div>
     </div>
 
     <div style="padding-bottom: 32px;"></div>
