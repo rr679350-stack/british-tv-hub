@@ -1,18 +1,222 @@
-# British TV Hub — Sitewide Quality Check Checklist
+# British TV Hub — Master Accuracy & Quality Audit Checklist
 
-Reference doc for running a full sitewide quality check (not just a spot check
-of recent changes). Covers: affiliate links, broken links, old/dead code,
-fact-check accuracy, mobile compatibility, unverifiable claims, spelling, and
-nav/footer consistency. Pairs with the standing biweekly quality-audit cadence
-and the monthly "What's New" / streaming-availability review.
+This is the official British TV Hub Editorial Accuracy Standard. Every
+audit — weekly (Sundays) or ad hoc — runs this full checklist, not a spot
+check of recent changes. Where a section below has a runnable check, run
+it; where it doesn't, review manually against the criteria listed.
 
-Run these from the repo root. All are read-only checks — nothing here writes
-files, so it's safe to run anytime.
+Run checks from the repo root. All the runnable checks are read-only —
+nothing here writes files, so it's safe to run anytime.
 
-## 1. Broken internal links & missing assets
+## Severity labels
 
-Checks every `href`/`src` across all `.html` files (including `/shows/`)
-resolves to a real file.
+Every issue found gets one of these labels:
+
+- Confirmed Factual Error (red) — the information is incorrect; correct it.
+- Needs Updating (orange) — was accurate but has since changed (new season,
+  price change, cast change, premiere passed, etc.).
+- Unsupported Claim (yellow) — too broad, or lacks reliable evidence
+  (includes every superlative/banned-word hit from Part 9).
+- Conflicting Sources (purple) — reliable sources disagree; note the
+  uncertainty or revise to the more authoritative source.
+- Verified Accurate (green) — confirmed against an authoritative source.
+
+## Absolute site rule: no direct quotations, ever
+
+British TV Hub never reproduces a direct quotation from any person, book,
+review, interview, script, or article — not a single line, not even
+attributed and under normal fair-use length. This applies everywhere:
+show descriptions, book descriptions, blurbs, testimonials, "critics say"
+style callouts, everywhere. Always paraphrase in the site's own voice
+instead. This is a zero-tolerance rule, not a soften-if-possible one —
+if content can't be paraphrased without losing its meaning, cut it rather
+than quote it.
+
+Audit check (manual + regex assist — a regex can't fully distinguish real
+quotes from HTML attribute values, so treat hits as a worklist to eyeball,
+not an automatic pass/fail):
+
+```bash
+# Curly/typographic quotes are the strongest signal of an actual quotation
+grep -rno '"[^"]\{8,200\}"' *.html shows/*.html
+
+# Straight-quote sentences in visible text (excludes common attribute noise)
+grep -rnoE '"[A-Z][^"<>]{15,150}[.!?]"' *.html shows/*.html \
+  | grep -viE 'support british tv hub|footer-brand|alt=|title=|href=|class=|style=|content=|name=|id=|type=|src='
+```
+
+Anything that reads like an actual quoted line from a person or published
+work — not UI copy, meta description, or placeholder text — gets removed
+or rewritten as paraphrase.
+
+## PART 1 — Books (every book on the site)
+
+- Title correct
+- Subtitle correct
+- Author name correct
+- Publication year correct
+- Correct series
+- Correct book order within series
+- Standalone vs. series correctly labeled
+- Publisher correct (if stated)
+- Character names correct
+- Plot description accurate and spoiler-light
+- TV/film adaptation statement accurate
+- Cover image present and correct (if used)
+- Amazon link resolves
+- Affiliate tag (britishtvhub-20) intact
+- No direct quotations from the book, a review, or the author
+
+## PART 2 — Television shows (every show on the site)
+
+- Title correct
+- Original broadcaster correct
+- Current streaming service(s) correct (US-facing, per site scope)
+- Country of origin correct — flag anything non-British/non-Commonwealth
+  that isn't clearly labeled "Beyond Britain" or similar
+- Premiere year correct
+- End year correct (or "present" if ongoing)
+- Number of series/seasons correct
+- Number of episodes correct (if stated)
+- Main cast correct and current (accounts for recast/departed leads)
+- Character names correct
+- Show description accurate, no unsupported claims
+- Adaptation details correct (if based on a book)
+- Creator credited correctly (if mentioned)
+- Production company correct (if mentioned)
+- Awards correct and specific (never a bare "award-winning" — name the
+  actual award)
+- No direct quotations from reviews, interviews, or dialogue
+
+## PART 3 — Streaming services (every streaming statement)
+
+BritBox:
+- Current monthly price (if stated)
+- Current annual price (if stated)
+- Free-trial language is non-absolute (eligibility varies by
+  account/promo — never a bare guarantee)
+- Affiliate link correct: c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20
+- Featured titles list is current
+
+Acorn TV:
+- Monthly price (if stated)
+- Annual price (if stated)
+- Trial-availability language is non-absolute
+- Affiliate link correct: c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20
+
+PBS:
+- Passport information accurate (what it unlocks, not a specific price
+  unless verified same-day)
+- Membership wording accurate, not overstated
+
+Netflix: never listed as a platform anywhere (standing rule)
+
+Prime Video: current availability accurate (channel vs. included)
+
+Tubi: current availability accurate; flag anything not re-verified in the
+last month
+
+Pluto TV: current availability accurate; every claim carries an
+"availability checked [month/year]" note since FAST-channel catalogs
+change often
+
+## PART 4 — Geography
+
+- Counties named correctly
+- Cities named correctly
+- Villages named correctly
+- Regions named correctly
+- Islands named correctly
+- Countries named correctly
+- Filming locations accurate and sourced (not guessed)
+
+## PART 5 — Quotations
+
+Per the absolute site rule above: there should be zero direct quotations
+anywhere on the site. This section exists only to catch violations, not to
+police wording, punctuation, or sourcing of a quote that should never have
+been added.
+
+- Confirm zero direct quotations found (see regex checks above)
+- Any hit gets removed or paraphrased in the same edit that finds it —
+  don't leave a flagged quote live pending a later pass
+
+## PART 6 — Historical facts
+
+- Dates correct
+- Historical events described accurately
+- Awards correct and specific
+- Broadcasting history correct (original network, revivals, etc.)
+- Novel publication history correct
+
+## PART 7 — Homepage
+
+- Featured show accurate and current
+- Featured book accurate and current
+- Monthly recommendations rotated this month
+- "Updated [Month Year]" marker matches the actual current month
+- Release/premiere dates current (swap to evergreen copy once a premiere
+  or finale has passed — see standing rule on temporary cards)
+- Prices, if shown, current
+- All homepage links resolve
+
+## PART 8 — Affiliate audit
+
+Amazon:
+- Link resolves
+- Affiliate tag britishtvhub-20 present (or Influencer Storefront path
+  format, which doesn't use ?tag= — not a bug, see known non-issue below)
+- Product still available/listed (not discontinued)
+
+BritBox: link resolves
+Acorn TV: link resolves
+Audible: link resolves (if any Audible links exist on the site)
+Kindle: link resolves (if any Kindle-specific links exist)
+
+## PART 9 — Editorial accuracy: banned/superlative language
+
+Remove or replace unsupported superlatives. Only flag when a superlative
+pairs with a specific unverifiable number or unbacked factual claim —
+vague, clearly-opinion editorial voice ("one of our favourites") is fine
+and should be left alone.
+
+Words/phrases to remove when used as unsupported absolute claims:
+- Best / The Best
+- Greatest
+- Everyone loves / Everyone's favourite
+- Perfect / Completely safe / Zero darkness (absolute suitability claims)
+- Most popular
+- Finest
+- Largest
+- Only (as in "the only show that…")
+- Trusted by [specific number]
+- Guaranteed
+- Industry-leading / world-class / unmatched / unparalleled /
+  fastest-growing
+
+Replace with (attributed-opinion framing):
+- One of our favourites
+- Widely regarded
+- Popular
+- Acclaimed
+- Recommended
+- British TV Hub's pick / British TV Hub's top recommendation for X
+
+```bash
+grep -rniE "trusted by|guaranteed|industry.leading|world.class|unmatched|unparalleled|fastest.growing" *.html shows/*.html
+grep -rniE "\bthe best\b|\bgreatest\b|\beveryone loves\b|\bperfect\b|\bmost popular\b|\bfinest\b|\blargest\b|\bonly show\b" *.html shows/*.html
+```
+
+## PART 10 — SEO (every page)
+
+- H1 present and accurate
+- Meta title present and accurate
+- Meta description present and accurate
+- Internal links relevant and working
+- No broken links (see Part 11 runnable check)
+- Image ALT text present and descriptive
+
+## PART 11 — Navigation & links
 
 ```python
 import re, os, glob
@@ -36,122 +240,132 @@ for p in pages:
         if candidate not in all_files and path not in all_files:
             print(f"BROKEN: {p}: {href}")
 ```
+Do the same with src="..." for images/scripts.
 
-Do the same with `src="..."` for images/scripts.
-
-**Known non-issues:** JS template literals (`${show.url}`, `' + show.url + '`)
-inside `<script>` blocks will false-positive on a naive regex — exclude
-anything containing `${` or `' +`.
-
-## 2. Affiliate link consistency
-
-```bash
-grep -rn 'amazon\.com/channels/[a-f0-9-]\+' *.html shows/*.html   # old broken channel URL format — should be zero
-grep -c "c984b526-fff5-46bf-af6d-68abb4a6a5d2" *.html shows/*.html   # BritBox — every hit should include ?tag=britishtvhub-20
-grep -c "c8382769-b3fd-49e8-818c-021154583c89" *.html shows/*.html   # Acorn TV — same
-grep -roh "nordvpn.com/special[^\"]*" *.html shows/*.html | sort -u  # should be exactly one URL sitewide
-```
-
-**Known non-issue:** `amazon.com/shop/influencer-*` URLs (the Amazon
-Influencer Storefront, used on gift-ideas.html) don't use `?tag=`— that's a
-different affiliate program tied to the URL path itself, not a missing tag.
-
-## 3. Fact accuracy (streaming platforms, season counts)
-
-- The automated pipeline (`scripts/fact_check.py`, runs via GitHub Actions on
-  the 1st and 15th) checks a rotating batch of `shows-database.json` entries,
-  `britbox-new.json`/`acorn-new.json`, and embedded schema.org claims. As of
-  August 2026 it auto-applies confident streaming-platform corrections and
-  opens a GitHub Issue listing what was auto-fixed vs. what still needs a
-  human look.
-- Check `fact-check-log.json`'s most recent entry for `applied_fixes` and
-  `issues` before assuming the database is current — only ~10 shows get
-  checked per run, so full coverage of all 150 shows takes months.
-- **Recurring error to watch for:** "BritBox" listed as a UK platform.
-  BritBox UK stopped existing as a standalone service in April 2024 (absorbed
-  into ITVX Premium) — this has turned up repeatedly across the show
-  database. Quick check:
-  ```python
-  import json
-  d = json.load(open('shows-database.json'))
-  print([s['title'] for s in d if any(x['name']=='BritBox' for x in s.get('uk',[]))])
-  ```
-  Should return an empty list. If a show's UK region would end up with zero
-  platforms after removing it, verify a real replacement via JustWatch UK
-  before removing — don't leave it empty on a guess.
-
-## 4. Stale dates
-
-```bash
-grep -rl "July 2026" *.html shows/*.html   # swap the month for whatever the previous month was
-```
-**Known non-issue:** `privacy.html`'s "Last Updated: [month]" is a legal date
-— only bump it when the policy text actually changes, not automatically.
-
-## 5. American spellings
-
-Brand content should use British spelling. A naive word-list regex produces
-massive false-positive noise — filter these out before trusting results:
-
-- **`center`, `color`, `behavior` and variants**: these are CSS property
-  values / JS Web API option names (`text-align: center`, `transition: color`,
-  `scroll-behavior: smooth`, `{behavior: 'smooth'}`) — the American spelling
-  is the *only valid* keyword here. Do not "fix" these; it will break styling.
-- **`"Organization"` inside `<script type="application/ld+json">`**: this is
-  a fixed schema.org vocabulary term (`@type": "Organization"`), not free
-  text — changing it to "Organisation" breaks the structured data.
-- **Known accepted exception:** `footer-brand.webp`'s alt text says "...their
-  favorite television series" — this is baked into the image file itself and
-  was reviewed/accepted already; the American spelling there is intentional
-  (matches the image), not a bug.
-
-After excluding those, check what's left — that's the real signal.
-
-## 6. Superlatives / unverifiable claims
-
-```bash
-grep -rniE "trusted by|guaranteed|industry.leading|world.class|unmatched|unparalleled|fastest.growing" *.html
-```
-Most hits are legitimate editorial voice ("the best cozy mysteries," a
-curated recommendation) — only flag ones that pair a superlative with a
-**specific unverifiable number or unbacked factual claim** (e.g., a follower
-count, "#1 rated," an award not actually verified). The sitewide "5,000+
-fans" issue (fixed August 2026, see git log) is the template for what a real
-issue looks like: specific number + unverifiable claim = fix it. Vague
-opinion language ("the best," "always a good time") = leave it.
-
-## 7. Nav/footer consistency
+Known non-issue: JS template literals (${show.url}, ' + show.url + ')
+inside script blocks false-positive on a naive regex — exclude anything
+containing ${ or ' +.
 
 ```bash
 for f in *.html shows/*.html; do grep -q "watch-list.html" "$f" || echo "MISSING watch-list nav: $f"; done
 for f in *.html shows/*.html; do grep -q "gift-ideas.html" "$f" || echo "MISSING gift-ideas nav: $f"; done
 for f in *.html shows/*.html; do grep -q "footer-brand.webp" "$f" || echo "MISSING standard footer: $f"; done
+grep -roh "G-[A-Z0-9]*" *.html shows/*.html | sort -u   # should return exactly one GA ID: G-P1L8CVNKS6
 ```
-All three should return nothing. Also spot-check the GA tag is identical
-everywhere: `grep -roh "G-[A-Z0-9]*" *.html shows/*.html | sort -u` should
-return exactly one ID (`G-P1L8CVNKS6`).
 
-## 8. Old/dead code
+- Navigation consistent sitewide
+- Footer consistent sitewide
+- Related-guides / cross-link modules present where expected
+- CTA button styling and wording consistent (gold pill style; no bare
+  "Start Free Trial" — see Part 3)
 
-```bash
-grep -l 'class="footer-links"' *.html shows/*.html   # leftover pre-standard-footer markup — should be empty
-```
-Also worth an occasional look: orphaned files in the repo root not referenced
-by any page (check `git log` for recently-removed-from-nav pages like the old
-`beginners.html` pattern), and duplicate/stray script blocks left over from
-before a redesign.
+## PART 12 — Visual audit
 
-## 9. Mobile compatibility
+- No missing images (broken img src)
+- Image quality acceptable (no obviously stretched/low-res assets)
+- No broken formatting (unclosed tags, stray inline styles)
+- Mobile layout reviewed (see viewport check below; deeper responsive QA
+  needs an actual browser/device check, not just text)
+- Desktop layout reviewed
+- Card styling consistent sitewide ("Go Deeper" card shape: 12px rounded
+  corners + hover-lift)
 
 ```bash
 for f in *.html shows/*.html; do grep -q 'name="viewport"' "$f" || echo "MISSING viewport: $f"; done
 ```
-Should return nothing. Deeper mobile QA (actual responsive rendering) isn't
-covered by this text-based checklist — that needs a browser/device check.
+
+## PART 13 — Monthly freshness
+
+- Current month shown correctly wherever a month is referenced
+- "New this month" / featured recommendations reflect the actual current
+  month
+- Release/premiere dates current
+- Prices current (if shown)
+- Affiliate offers current (no expired promo language)
+
+```bash
+grep -rl "July 2026" *.html shows/*.html   # swap for the actual previous month; adjust the search term each cycle
+```
+Known non-issue: privacy.html's "Last Updated: [month]" is a legal date —
+only bump it when the policy text actually changes, not automatically.
+
+## PART 14 — Triple verification
+
+Every factual statement that matters should be checked against, in this
+order of preference:
+
+1. Official broadcaster
+2. Official streaming service
+3. Official publisher or author
+
+If those aren't available:
+
+4. Production company
+5. Official press release
+
+Only if still needed:
+
+6. One high-quality secondary source, used to confirm or resolve a
+   disagreement between sources — not as a first-choice source
+
+## Known false-positive traps (don't "fix" these)
+
+- American spellings that are actually code, not copy: center, color,
+  behavior in CSS/JS (text-align: center, scroll-behavior: smooth) are the
+  only valid keyword form — leave them.
+- "Organization" inside script type="application/ld+json" is a fixed
+  schema.org vocabulary term — leave it.
+- footer-brand.webp's alt text ("...their favorite television series") is
+  baked into the image file and was reviewed/accepted — leave the
+  American spelling there.
+- Amazon Influencer Storefront links (amazon.com/shop/influencer-*) don't
+  use ?tag= — that's a different affiliate program tied to the URL path
+  itself, not a missing tag.
+- BritBox listed as a UK platform is a recurring real error (BritBox UK
+  stopped existing as a standalone service in April 2024, absorbed into
+  ITVX Premium) — this is NOT a false positive, always flag and fix it:
+  ```python
+  import json
+  d = json.load(open('shows-database.json'))
+  print([s['title'] for s in d if any(x['name']=='BritBox' for x in s.get('uk',[]))])
+  ```
+  Should return an empty list. If removing it leaves a show's UK region
+  with zero platforms, verify a real replacement via JustWatch UK before
+  removing — don't leave it empty on a guess.
+
+## Automated pipeline context
+
+scripts/fact_check.py runs via GitHub Actions on the 1st and 15th of each
+month, checking a rotating batch of shows-database.json entries,
+britbox-new.json / acorn-new.json, and embedded schema.org claims. It
+auto-applies confident streaming-platform corrections and opens a GitHub
+Issue listing what was auto-fixed vs. what still needs a human look. Check
+fact-check-log.json's most recent entry for applied_fixes and issues
+before assuming the database is current — only ~10 shows get checked per
+run, so full coverage of all ~340+ shows takes months. This automated
+pipeline is a supplement to the manual weekly audit, not a replacement for
+it.
+
+## Audit report format
+
+Every audit concludes with a short report using this structure:
+
+- Overall Accuracy Score (rough %, or a qualitative read if a number isn't
+  meaningful)
+- Pages Audited
+- Number of Statements Verified
+- Confirmed Factual Errors
+- Needs Updating
+- Unsupported Claims
+- Conflicting Sources
+- Affiliate-Link Issues
+- Quick Fixes (under 30 minutes to resolve)
+- Fix First (highest-priority corrections — usually the Confirmed Factual
+  Errors and any Needs-Updating item that's already past its trigger date)
 
 ---
 
-**Last full sitewide run:** August 1, 2026 — no issues found beyond what's
-listed as "known non-issue" above; the BritBox-UK sweep and follower-count
-sweep from that session are reflected as the worked examples in sections 3
-and 6.
+Last full sitewide run: August 2, 2026 (accuracy audit covering
+Unforgotten platform/cast, homepage overreach claim, cozy-mystery absolute
+claims, Murdoch/Brokenwood classification, Pluto TV caveats, and sitewide
+"Start Free Trial" wording — see git log commit 97c42e2).
