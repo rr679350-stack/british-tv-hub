@@ -199,9 +199,9 @@ gtag('config', 'G-P1L8CVNKS6');
   .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; color: var(--cream); line-height: 1.2; margin-bottom: 0.75rem; }
   .section-header h2 em { font-style: italic; color: var(--gold-light); }
   .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
-  .show-card { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid rgba(255,255,255,0.06); padding: 3rem 0; gap: 1.5rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
-    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
-  .show-card:last-of-type { border-bottom: none; }
+  .show-card { display: grid; grid-template-columns: 1fr; background: var(--navy-mid); border: 1px solid rgba(201,168,76,0.12); padding: 2rem; margin-bottom: 1.5rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: rgba(201,168,76,0.3); }
+  .show-card:last-of-type { margin-bottom: 0; }
   .show-card-inner { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: start; }
   @media (max-width: 700px) { .show-card-inner { grid-template-columns: 1fr; gap: 1.5rem; } nav { gap: 0; } .site-header-inner { flex-direction: column; align-items: flex-start; } }
   .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
@@ -1376,28 +1376,32 @@ document.addEventListener('click', function(e){
 <div class="jump-nav">
   <div class="jump-nav-inner">
     <span class="jump-label">Jump to</span>
+    <a href="#start-with">Start Here</a>
     <a href="#classics">Classics</a>
-    <a href="#modern">Modern Dramas</a>
-    <a href="#comfort">Comfort Viewing</a>
-    <a href="#where-to-watch">Where to Stream</a>
+    <a href="#modern">Modern</a>
+    <a href="#comfort">Comfort</a>
+    <a href="#women-detectives">Female Detectives</a>
+    <a href="#where-to-watch">Streaming Guide</a>
     <a href="#faq">FAQ</a>
   </div>
 </div>
 
 <div class="page-body">
-<div style="background:#1e2433;border:1px solid rgba(201,168,76,0.2);border-left:3px solid #c9a84c;padding:14px 20px;margin:32px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-  <p style="font-family:'Crimson Pro',serif;font-size:16px;font-style:italic;color:#9090a8;margin:0;">Looking for cozy mysteries, Agatha Christie, and more?</p>
-  <a href="/shows-index.html" style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a84c;text-decoration:none;border:1px solid rgba(201,168,76,0.4);padding:7px 14px;white-space:nowrap;">Browse All Shows →</a>
-</div>
 
-  <div style="max-width:760px;margin:0 0 1rem;">
-    <p style="font-size:1.15rem;color:var(--text-light);line-height:1.85;margin-bottom:1.25rem;">No one does the police procedural quite like the British. From the slow-burn intelligence of <em>Inspector Morse</em> to the breathless tension of <em>Line of Duty</em>, British police procedurals have spent four decades proving that the genre can be as much about character and place as it is about the crime. The best of them trust the viewer to keep up — and reward you when you do.</p>
+  <div style="max-width:760px;margin:32px 0;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--cream);margin:0 0 0.75rem;">What Is a <em style="font-style:italic;color:var(--gold-light);">British Police Procedural</em>?</h2>
+    <p style="font-size:1.05rem;color:var(--text-light);line-height:1.75;margin:0;">A British police procedural follows professional detectives investigating crimes through evidence and process rather than shootouts — character and atmosphere over spectacle.</p>
+  </div>
 
+  <div id="start-with" style="background:#1e2433;border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:24px;margin:0 0 2rem;max-width:760px;">
+    <div style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-muted);margin-bottom:10px;">British TV Hub's Editor's Pick</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin:0 0 10px;">New to British Police Dramas? Start Here.</h3>
+    <p style="font-size:0.95rem;color:var(--text-light);line-height:1.7;margin:0;"><strong>Inspector Morse</strong> for the genre's gold standard, <strong>Vera</strong> for warm, character-driven comfort viewing, <strong>Broadchurch</strong> for a self-contained emotional gut-punch, <strong>Happy Valley</strong> for something darker and modern, and <strong>Midsomer Murders</strong> if you'd rather ease in gently. Prefer something even cosier first? The <a href="/cozy.html" style="color:var(--gold);">Cozy British Mysteries guide</a> is the gentler starting point.</p>
   </div>
 
   <div class="section-header" id="classics">
     
-    <h2>The Classics That <em>Started It All</em></h2>
+    <h2>The <em>Timeless Classics</em></h2>
     <p>These are the shows that invented the genre. Foundational, essential, and every one of them still completely gripping today.</p>
   </div>
 
@@ -1540,7 +1544,7 @@ document.addEventListener('click', function(e){
 
   <div class="section-header" id="modern">
     
-    <h2>The Best of <em>Modern Police Drama</em></h2>
+    <h2>Modern Crime <em>at Its Best</em></h2>
     <p>British police procedurals didn't peak in the eighties — the golden age is still happening. These are the modern shows the community won't stop talking about.</p>
   </div>
 
@@ -1676,7 +1680,7 @@ document.addEventListener('click', function(e){
 
   <div class="section-header" id="comfort">
     
-    <h2>Comfort Viewing — <em>Always Reliable</em></h2>
+    <h2><em>Comfort</em> Viewing</h2>
     <p>Not everything needs to wreck you. These are the shows you return to again and again — warm, clever, and utterly dependable.</p>
   </div>
 
@@ -1742,6 +1746,14 @@ document.addEventListener('click', function(e){
         <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link">Watch on Acorn TV →</a>
       </div>
     </div>
+  </div>
+
+  <hr class="section-divider" style="border:none;border-top:1px solid rgba(201,168,76,0.15);margin:2rem 0;">
+
+  <div id="women-detectives" style="background:#1e2433;border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:24px;margin:0 0 2rem;max-width:760px;">
+    <div style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-muted);margin-bottom:10px;">A Closer Look</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin:0 0 10px;">Brilliant Women Detectives</h3>
+    <p style="font-size:0.95rem;color:var(--text-light);line-height:1.7;margin:0;">Some of the genre's most memorable leads are women: Helen Mirren's <a href="#classics" style="color:var(--gold);">Prime Suspect</a>, Brenda Blethyn's <a href="#comfort" style="color:var(--gold);">Vera</a>, and Sarah Lancashire's <a href="#modern" style="color:var(--gold);">Happy Valley</a> are all featured on this page.</p>
   </div>
 
   <div class="section-header" id="where-to-watch">
