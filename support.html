@@ -1185,14 +1185,25 @@ document.addEventListener('click', function(e){
 });
 </script>
 
-<div style="width:100%;height:420px;overflow:hidden;border-bottom:1px solid var(--border);">
-  <img src="/support-hero.webp" alt="A cozy British sitting room with tea and a rainy cottage window on the TV screen" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+<style>
+  .support-hero { width: 100%; height: 420px; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .support-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; display: block; }
+  .support-intro { padding-top: 70px; }
+  @media (max-width: 768px) {
+    .support-hero { height: 290px; }
+    .support-hero img { object-position: 62% center; }
+    .support-intro { padding-top: 45px; }
+  }
+</style>
+
+<div class="support-hero">
+  <img src="/support-hero.webp" alt="A cozy British sitting room with tea and a rainy cottage window on the TV screen">
 </div>
 
 <main>
 
   <!-- HERO COPY -->
-  <div style="text-align:center;max-width:640px;margin:56px auto 0;">
+  <div class="support-intro" style="text-align:center;max-width:640px;margin:0 auto;">
     <h1 style="font-family:'Playfair Display',serif;font-size:40px;color:var(--text);line-height:1.15;margin-bottom:8px;">Support British TV Hub</h1>
     <p style="font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:var(--gold-light);margin-bottom:24px;">Help keep the kettle on.</p>
     <p style="font-family:'Crimson Text',serif;font-size:18px;color:var(--text-muted);line-height:1.75;margin-bottom:18px;">Every guide, recommendation, and hidden gem is thoughtfully curated to help fans discover the very best of British television. If British TV Hub has helped you find a new favorite series, your support helps keep the site growing.</p>
