@@ -8134,5 +8134,53 @@
     "sources": [
       "British TV Hub internal audit: Triple-Checked A-Z Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
     ]
+  },
+  {
+    "title": "Hotel Portofino",
+    "years": "2022–2024",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-02",
+    "sources": [
+      "https://www.pbssocal.org/shows/hotel-portofino",
+      "https://www.pbs.org/about/about-pbs/blogs/news/travel-back-to-hotel-portofino-for-season-2-premiering-october-15-on-pbs"
+    ]
+  },
+  {
+    "title": "Miss Scarlet",
+    "years": "2020–present",
+    "genre": "Period Crime Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-02",
+    "sources": [
+      "https://www.pbs.org/show/miss-scarlet-duke/",
+      "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-miss-scarlet-and-the-duke"
+    ]
   }
 ]
