@@ -8,6 +8,21 @@ it; where it doesn't, review manually against the criteria listed.
 Run checks from the repo root. All the runnable checks are read-only —
 nothing here writes files, so it's safe to run anytime.
 
+## Editorial Rule #1 and #2 (apply above everything else)
+
+**Editorial Rule #1:** Accuracy takes priority over everything else. If a
+statement cannot be confidently verified using authoritative sources, it
+should be revised or removed. When in doubt, remove or soften the claim
+rather than stretching the evidence — rewrite to be more precise, or omit
+it until it can be verified.
+
+**Editorial Rule #2:** British TV Hub uses 100% original editorial copy.
+The site should never include quotations from books, television programs,
+publishers, broadcasters, reviews, interviews, or other copyrighted
+sources. All descriptions are independently written summaries in British
+TV Hub's own voice (see the absolute no-quotations rule and Part 15
+below).
+
 ## Severity labels
 
 Every issue found gets one of these labels:
@@ -308,6 +323,173 @@ Only if still needed:
 6. One high-quality secondary source, used to confirm or resolve a
    disagreement between sources — not as a first-choice source
 
+## PART 15 — Copyright & Editorial Compliance
+
+Quotations — British TV Hub Editorial Standard:
+
+- No quotations anywhere on the site.
+- Do not quote books.
+- Do not quote television dialogue.
+- Do not quote publishers' descriptions.
+- Do not quote streaming-service marketing copy.
+- Do not quote reviews.
+- Do not quote interviews.
+- Do not quote author websites.
+- Do not use epigraphs.
+- Do not use "famous lines" from television shows.
+
+Required approach:
+
+- Write every description in original British TV Hub editorial voice.
+- Summarize rather than quote.
+- Attribute facts, never copy wording.
+- Keep all copy unique and independently written.
+
+Add this section to every Monthly Audit Summary — Copyright & Editorial
+Review:
+
+- No quotations found anywhere on the site.
+- No copied publisher descriptions.
+- No copied streaming-service descriptions.
+- No copied Amazon descriptions.
+- No copyright concerns identified.
+- Editorial copy remains original throughout.
+
+## PART 16 — Naming & Styling Consistency
+
+Ensure every page follows the same editorial conventions.
+
+- Show titles are styled consistently.
+- Book titles are styled consistently.
+- Streaming service names are consistent (BritBox, Acorn TV, PBS Passport,
+  etc.).
+- Character names use the same spelling everywhere.
+- Author names are identical across all pages.
+
+## PART 17 — Evergreen Content Audit
+
+Avoid language that becomes outdated.
+
+Remove or update:
+
+- "Coming soon"
+- "New this month"
+- "Next week"
+- "Recently added"
+- "Currently available"
+- "Premieres today"
+
+If time-sensitive wording is necessary:
+
+- Include an "Updated [Month Year]" date.
+- Add a reminder to revisit the page after the relevant event.
+
+## PART 18 — Internal Consistency Audit
+
+The same show should never be described differently on different pages
+unless there is a reason. Example: if Vera is described on one page as "A
+Northumberland detective drama," it should not appear elsewhere as "A
+crime series set in Newcastle" unless the difference is intentional and
+accurate.
+
+Audit:
+
+- Show descriptions
+- Book descriptions
+- Author biographies
+- Streaming recommendations
+
+## PART 19 — Link Integrity Audit
+
+Every link.
+
+Internal:
+- No 404s
+- No redirects
+- HTTPS
+- Correct anchor text
+
+External:
+- Publisher links
+- Streaming links
+- Affiliate links
+- Amazon links
+
+## PART 20 — Grammar & Style Audit
+
+Every page:
+
+- No spelling mistakes.
+- No punctuation errors.
+- No repeated wording.
+- No awkward sentences.
+- No inconsistent capitalization.
+- Oxford comma usage is consistent (or consistently omitted — choose one
+  style).
+- Headings follow a consistent capitalization style.
+
+## PART 21 — Reader Trust Audit
+
+Review every page from a visitor's perspective. Ask:
+
+- Would a reader trust this statement?
+- Is there any exaggeration?
+- Does anything sound like marketing instead of editorial?
+- Is the wording clear about opinion versus fact?
+- Would an expert agree with this description?
+
+## PART 22 — AI Hallucination Check
+
+Because some content may have originated from AI-assisted drafting, check
+for:
+
+- Invented awards.
+- Invented cast members.
+- Invented filming locations.
+- Invented episode counts.
+- Invented publication dates.
+- Invented streaming availability.
+- Invented trivia.
+- Composite or merged plots from different series.
+- Unsourced "fun facts."
+
+## PART 23 — Editorial Voice Audit
+
+Every page should sound like British TV Hub.
+
+- Friendly but authoritative.
+- Informative, not promotional.
+- Original wording throughout.
+- Consistent tone across pages.
+- No clickbait headlines.
+- No sensational language.
+
+## PART 24 — Accessibility Audit
+
+- Images have descriptive alt text.
+- Headings follow a logical order (H1 → H2 → H3).
+- Link text is descriptive (avoid "Click here").
+- Colour contrast meets accessibility guidelines.
+- Keyboard navigation works where applicable.
+
+## PART 25 — Final Editorial Sign-Off
+
+Before any page is published or updated:
+
+- Facts verified.
+- Internal links checked.
+- External links checked.
+- Affiliate links tested.
+- Copyright review completed.
+- Original copy confirmed.
+- Grammar checked.
+- Formatting reviewed.
+- Accessibility reviewed.
+- Editorial voice confirmed.
+- Page reviewed on desktop.
+- Page reviewed on mobile.
+- Ready to publish.
+
 ## Known false-positive traps (don't "fix" these)
 
 - American spellings that are actually code, not copy: center, color,
@@ -362,6 +544,15 @@ Every audit concludes with a short report using this structure:
 - Quick Fixes (under 30 minutes to resolve)
 - Fix First (highest-priority corrections — usually the Confirmed Factual
   Errors and any Needs-Updating item that's already past its trigger date)
+
+Copyright & Editorial Review (Part 15 summary — include every audit):
+
+- No quotations found anywhere on the site.
+- No copied publisher descriptions.
+- No copied streaming-service descriptions.
+- No copied Amazon descriptions.
+- No copyright concerns identified.
+- Editorial copy remains original throughout.
 
 ---
 
