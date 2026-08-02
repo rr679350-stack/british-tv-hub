@@ -8182,5 +8182,29 @@
       "https://www.pbs.org/show/miss-scarlet-duke/",
       "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-miss-scarlet-and-the-duke"
     ]
+  },
+  {
+    "title": "North & South",
+    "years": "2004",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-02",
+    "sources": [
+      "https://weta.org/watch/shows/north-and-south",
+      "https://en.wikipedia.org/wiki/North_%26_South_(TV_serial)"
+    ]
   }
 ]
