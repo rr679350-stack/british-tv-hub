@@ -1450,21 +1450,23 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   </div>
     <div class="nav-links">
       <a class="nlink" href="/start-here">Start Here</a>
-      <a class="nlink" href="/">Home</a>
       <a class="nlink" href="/shows-index.html">Shows</a>
       <a class="nlink" href="/books">Books</a>
       <a class="nlink" href="/streaming.html">Where to Watch</a>
-      <a class="nlink" href="/essentials.html">The Snug</a>
-      <a class="nlink" href="/watch-list.html">Watch List</a>
-      <a class="nlink" href="/gift-ideas.html">Gifts and More</a>
       <div class="nav-dropdown">
         <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
         <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
-          <a href="/shows-index.html#genres">Genres</a>
-          <a href="/telly-detective.html">&#128373;&#65039; Meet The Telly Detective</a>
-          <a href="/shows.html">&#9733; Best Of Guide</a>
+          <a href="/shows-index.html#genres">By Genre</a>
+          <a href="/top10.html">Best Police Procedurals</a>
+          <a href="/cozy.html">Cozy Mysteries</a>
+          <a href="/books">Literary Adaptations</a>
+          <a href="/masterpiece2026.html">PBS Masterpiece</a>
+          <a href="/shows.html#hidden-gems">Hidden Gems</a>
+          <a href="/streaming.html">Streaming Guides</a>
           <a href="/quiz.html">Match Me a Mystery</a>
           <a href="/meet-tilly.html">Ask Tilly</a>
+          <a href="/telly-detective.html">&#128373;&#65039; Meet The Telly Detective</a>
+          <a href="/watch-list.html">Watch List</a>
         </div>
       </div>
     </div>
@@ -1474,7 +1476,7 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search" onclick="toggleSiteSearch()">&#128269; Search</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
         <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
