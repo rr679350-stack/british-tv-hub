@@ -92,28 +92,36 @@ gtag('config', 'G-P1L8CVNKS6');
   }
   .disclosure a{color:var(--gold-bright); text-decoration:underline;}
 
-  /* ---- hero ---- */
-  .sh-hero{
-    position:relative; min-height:52vh; display:flex; align-items:center; justify-content:center;
-    overflow:hidden; text-align:center; padding:56px 24px;
+  /* ---- combined hero + welcome background ---- */
+  .sh-combined-bg{
+    position:relative; overflow:hidden;
   }
-  .sh-hero img.bg{
-    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;
-    opacity:0; animation:sh-crossfade 18s infinite; transform:scale(1.35);
+  .sh-combined-bg img.bg{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+    opacity:0; animation:sh-crossfade 9s infinite; transform:scale(1.35);
   }
-  .sh-hero img.bg:nth-child(1){ animation-delay:0s; object-position:75% 40%; }
-  .sh-hero img.bg:nth-child(2){ animation-delay:6s; object-position:65% 50%; }
-  .sh-hero img.bg:nth-child(3){ animation-delay:12s; object-position:60% 55%; }
+  .sh-combined-bg img.bg:nth-child(1){ animation-delay:0s; object-position:75% 40%; }
+  .sh-combined-bg img.bg:nth-child(2){ animation-delay:3s; object-position:65% 50%; }
+  .sh-combined-bg img.bg:nth-child(3){ animation-delay:6s; object-position:60% 55%; }
   @keyframes sh-crossfade{
-    0%{opacity:0;} 5%{opacity:1;} 28%{opacity:1;} 33%{opacity:0;} 100%{opacity:0;}
+    0%{opacity:0;} 10%{opacity:1;} 23%{opacity:1;} 33%{opacity:0;} 100%{opacity:0;}
   }
   @media (prefers-reduced-motion: reduce){
-    .sh-hero img.bg{ animation:none; opacity:0; }
-    .sh-hero img.bg:nth-child(1){ opacity:1; }
+    .sh-combined-bg img.bg{ animation:none; opacity:0; }
+    .sh-combined-bg img.bg:nth-child(1){ opacity:1; }
   }
-  .sh-hero::before{
-    content:""; position:absolute; inset:0; z-index:1;
-    background:linear-gradient(180deg, rgba(6,10,20,.8) 0%, rgba(6,10,20,.86) 55%, var(--navy-deep) 100%);
+  .sh-combined-fade{
+    position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(6,10,20,.86) 0%, rgba(6,10,20,.89) 40%, rgba(16,28,51,.94) 70%, var(--navy-deep) 100%);
+  }
+  .sh-combined-bg > .sh-hero,
+  .sh-combined-bg > .section,
+  .sh-combined-bg > div{ position:relative; z-index:2; }
+
+  /* ---- hero ---- */
+  .sh-hero{
+    display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:56px 24px;
   }
   .sh-hero-content{
     position:relative; z-index:2; max-width:680px;
@@ -139,25 +147,6 @@ gtag('config', 'G-P1L8CVNKS6');
     animation:sh-blink .8s step-end infinite;
   }
   @keyframes sh-blink{ 50%{opacity:0;} }
-  .sh-welcome-bg{
-    position:relative; overflow:hidden;
-  }
-  .sh-welcome-bg img.bg{
-    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;
-    opacity:0; animation:sh-crossfade 18s infinite; transform:scale(1.35);
-  }
-  .sh-welcome-bg img.bg:nth-child(1){ animation-delay:0s; object-position:75% 40%; }
-  .sh-welcome-bg img.bg:nth-child(2){ animation-delay:6s; object-position:65% 50%; }
-  .sh-welcome-bg img.bg:nth-child(3){ animation-delay:12s; object-position:60% 55%; }
-  .sh-welcome-bg::before{
-    content:""; position:absolute; inset:0; z-index:1;
-    background:linear-gradient(180deg, rgba(16,28,51,.55) 0%, rgba(16,28,51,.82) 55%, var(--navy-deep) 100%);
-  }
-  .sh-welcome-bg > .section{ position:relative; z-index:2; }
-  @media (prefers-reduced-motion: reduce){
-    .sh-welcome-bg img.bg{ animation:none; opacity:0; }
-    .sh-welcome-bg img.bg:nth-child(1){ opacity:1; }
-  }
   .sh-hero-note{
     font-family:'Raleway',sans-serif; font-size:15px; color:var(--cream); max-width:520px; margin:0 auto;
     line-height:1.7; text-shadow:0 1px 4px rgba(0,0,0,.9);
@@ -249,7 +238,7 @@ gtag('config', 'G-P1L8CVNKS6');
   footer{ margin-top:70px; }
 
   @media (max-width:760px){
-    .sh-hero{ min-height:auto; padding:40px 20px; }
+    .sh-hero{ padding:40px 20px; }
     .sh-hero-content{ padding:28px 20px; }
   }
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
@@ -414,44 +403,43 @@ document.addEventListener('click', function(e){
   British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. <a href="#affiliate-disclosure">Full affiliate disclosure</a>
 </div>
 
-<div class="sh-hero">
+<div class="sh-combined-bg">
   <img class="bg" src="/start-here-hero.webp" alt="A cozy armchair by a window overlooking a British village at sunset" width="1536" height="1024" fetchpriority="high">
   <img class="bg" src="/teacup-window.webp" alt="A steaming cup of tea by a rainy window" width="1536" height="1024">
   <img class="bg" src="/rainy-village.webp" alt="A rainy British village street seen through a wet window" width="1536" height="1024">
-  <div class="sh-hero-content">
-    <div class="sh-eyebrow">Welcome to British TV Hub</div>
-    <h1>Start <em>Here</em></h1>
-    <p class="sub" id="sh-tagline"><span id="sh-tagline-text"></span><span class="type-cursor" id="sh-cursor">&nbsp;</span><noscript>A friendly guide to finding your next favourite British mystery, drama, or book &mdash; in under two minutes.</noscript></p>
-  </div>
-</div>
-<script>
-(function(){
-  var fullText = "A friendly guide to finding your next favourite British mystery, drama, or book \u2014 in under two minutes.";
-  var target = document.getElementById('sh-tagline-text');
-  var cursor = document.getElementById('sh-cursor');
-  if(!target) return;
-  var i = 0;
-  function typeNext(){
-    if(i <= fullText.length){
-      target.textContent = fullText.slice(0, i);
-      i++;
-      setTimeout(typeNext, 22);
-    } else if(cursor){
-      setTimeout(function(){ cursor.style.display = 'none'; }, 1200);
-    }
-  }
-  setTimeout(typeNext, 400);
-})();
-</script>
+  <div class="sh-combined-fade"></div>
 
-<div class="sh-welcome-bg">
-  <img class="bg" src="/start-here-hero.webp" alt="" role="presentation">
-  <img class="bg" src="/teacup-window.webp" alt="" role="presentation">
-  <img class="bg" src="/rainy-village.webp" alt="" role="presentation">
+  <div class="sh-hero">
+    <div class="sh-hero-content">
+      <div class="sh-eyebrow">Welcome to British TV Hub</div>
+      <h1>Start <em>Here</em></h1>
+      <p class="sub" id="sh-tagline"><span id="sh-tagline-text"></span><span class="type-cursor" id="sh-cursor">&nbsp;</span><noscript>A friendly guide to finding your next favourite British mystery, drama, or book &mdash; in under two minutes.</noscript></p>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var fullText = "A friendly guide to finding your next favourite British mystery, drama, or book \u2014 in under two minutes.";
+    var target = document.getElementById('sh-tagline-text');
+    var cursor = document.getElementById('sh-cursor');
+    if(!target) return;
+    var i = 0;
+    function typeNext(){
+      if(i <= fullText.length){
+        target.textContent = fullText.slice(0, i);
+        i++;
+        setTimeout(typeNext, 22);
+      } else if(cursor){
+        setTimeout(function(){ cursor.style.display = 'none'; }, 1200);
+      }
+    }
+    setTimeout(typeNext, 400);
+  })();
+  </script>
+
   <div class="section" id="welcome" style="padding-top:48px; padding-bottom:8px;">
     <div class="closing" style="max-width:580px;">
-      <h2 style="font-family:'Playfair Display', serif; font-style:italic; color:var(--gold-bright); font-size:26px; margin:0 0 16px;">Welcome to Your British TV Journey</h2>
-      <p style="color:var(--cream-dim); font-size:18px; line-height:1.75; margin:0;">If this is your first visit, you're in the right place. British TV Hub was created to make discovering great British television simple, enjoyable, and a little less overwhelming. Whether you're here for mysteries, period dramas, or the books behind your favourite shows, the right direction is easy to find.</p>
+      <h2 style="font-family:'Playfair Display', serif; font-style:italic; color:var(--gold-bright); font-size:26px; margin:0 0 16px; text-shadow:0 2px 10px rgba(0,0,0,.7);">Welcome to Your British TV Journey</h2>
+      <p style="color:var(--cream-dim); font-size:18px; line-height:1.75; margin:0; text-shadow:0 1px 8px rgba(0,0,0,.7);">If this is your first visit, you're in the right place. British TV Hub was created to make discovering great British television simple, enjoyable, and a little less overwhelming. Whether you're here for mysteries, period dramas, or the books behind your favourite shows, the right direction is easy to find.</p>
     </div>
   </div>
 
