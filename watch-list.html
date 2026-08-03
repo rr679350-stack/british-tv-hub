@@ -98,6 +98,7 @@ gtag('config', 'G-P1L8CVNKS6');
   }
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
 .site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
+#wl-continue-list a:hover{transform:translateY(-3px);border-color:#c9a96e;}
 </style>
 <script src="/search-index.js" defer></script>
 <script src="/site-search.js" defer></script>
@@ -204,6 +205,14 @@ document.addEventListener('click', function(e){
 </div>
 
 <main>
+  <div id="wl-continue" style="display:none;max-width:1100px;margin:0 auto 40px;padding:0 40px;">
+    <div style="background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:28px 32px;">
+      <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;">&#128065; Continue Watching</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8dfc8;margin:0 0 18px;">Pick Up Where You Left Off</h2>
+      <div id="wl-continue-list" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;"></div>
+    </div>
+  </div>
+
   <div class="wl-how">
     <div class="wl-how-step">
       <div class="wl-how-num">01</div>
@@ -533,6 +542,20 @@ document.addEventListener('click', function(e){
         groups[status].push(slug);
       }
     });
+
+    var continueWrap = document.getElementById('wl-continue');
+    var continueList = document.getElementById('wl-continue-list');
+    if(continueWrap && continueList){
+      if(groups.watching.length === 0){
+        continueWrap.style.display = 'none';
+      } else {
+        continueWrap.style.display = 'block';
+        continueList.innerHTML = groups.watching.map(function(slug){
+          var show = REGISTRY[slug];
+          return '<a href="' + show.url + '" style="display:block;background:#1e2433;border:1px solid #3d4a60;border-radius:8px;padding:16px 18px;text-decoration:none;transition:transform .15s ease,border-color .15s ease;"><div style="font-family:\'Playfair Display\',serif;font-size:17px;color:#e8dfc8;margin-bottom:4px;">' + show.title + '</div><div style="font-family:\'Raleway\',sans-serif;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;">Resume &rarr;</div></a>';
+        }).join('');
+      }
+    }
 
     var total = groups.want.length + groups.watching.length + groups.finished.length;
     var progressEl = document.getElementById('wl-progress-line');
