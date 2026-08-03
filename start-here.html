@@ -97,11 +97,22 @@ gtag('config', 'G-P1L8CVNKS6');
     position:relative; min-height:78vh; display:flex; align-items:center; justify-content:center;
     overflow:hidden; text-align:center; padding:80px 24px;
   }
-  .sh-hero img{
+  .sh-hero img.bg{
     position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;
+    opacity:0; animation:sh-crossfade 18s infinite;
+  }
+  .sh-hero img.bg:nth-child(1){ animation-delay:0s; }
+  .sh-hero img.bg:nth-child(2){ animation-delay:6s; }
+  .sh-hero img.bg:nth-child(3){ animation-delay:12s; }
+  @keyframes sh-crossfade{
+    0%{opacity:0;} 5%{opacity:1;} 28%{opacity:1;} 33%{opacity:0;} 100%{opacity:0;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .sh-hero img.bg{ animation:none; opacity:0; }
+    .sh-hero img.bg:nth-child(1){ opacity:1; }
   }
   .sh-hero::before{
-    content:""; position:absolute; inset:0;
+    content:""; position:absolute; inset:0; z-index:1;
     background:linear-gradient(180deg, rgba(6,10,20,.8) 0%, rgba(6,10,20,.86) 55%, var(--navy-deep) 100%);
   }
   .sh-hero-content{
@@ -121,8 +132,13 @@ gtag('config', 'G-P1L8CVNKS6');
   .sh-hero h1 em{ font-style:italic; color:var(--gold-bright); }
   .sh-hero .sub{
     font-size:20px; color:#eee6d8; max-width:580px; margin:0 auto 28px; line-height:1.6;
-    text-shadow:0 1px 8px rgba(0,0,0,.5);
+    text-shadow:0 1px 8px rgba(0,0,0,.5); min-height:1.6em;
   }
+  .sh-hero .sub .type-cursor{
+    display:inline-block; width:2px; background:var(--gold-bright); margin-left:2px;
+    animation:sh-blink .8s step-end infinite;
+  }
+  @keyframes sh-blink{ 50%{opacity:0;} }
   .sh-hero-note{
     font-family:'Raleway',sans-serif; font-size:15px; color:var(--cream); max-width:520px; margin:0 auto;
     line-height:1.7; text-shadow:0 1px 4px rgba(0,0,0,.9);
@@ -380,14 +396,35 @@ document.addEventListener('click', function(e){
 </div>
 
 <div class="sh-hero">
-  <img src="/start-here-hero.webp" alt="A cozy armchair by a window overlooking a British village at sunset" width="1536" height="1024" fetchpriority="high">
+  <img class="bg" src="/start-here-hero.webp" alt="A cozy armchair by a window overlooking a British village at sunset" width="1536" height="1024" fetchpriority="high">
+  <img class="bg" src="/teacup-window.webp" alt="A steaming cup of tea by a rainy window" width="1536" height="1024">
+  <img class="bg" src="/rainy-village.webp" alt="A rainy British village street seen through a wet window" width="1536" height="1024">
   <div class="sh-hero-content">
     <div class="sh-eyebrow">Welcome to British TV Hub</div>
     <h1>Start <em>Here</em></h1>
-    <p class="sub">A friendly guide to finding your next favourite British mystery, drama, or book &mdash; in under two minutes.</p>
+    <p class="sub" id="sh-tagline"><span id="sh-tagline-text"></span><span class="type-cursor" id="sh-cursor">&nbsp;</span><noscript>A friendly guide to finding your next favourite British mystery, drama, or book &mdash; in under two minutes.</noscript></p>
     <p class="sh-hero-note">New to British television? You've come to the right place. There are hundreds of wonderful British series, and that can feel like a lot. These paths are narrowed down based on what you're in the mood for. Choose the one that sounds most like you.</p>
   </div>
 </div>
+<script>
+(function(){
+  var fullText = "A friendly guide to finding your next favourite British mystery, drama, or book \u2014 in under two minutes.";
+  var target = document.getElementById('sh-tagline-text');
+  var cursor = document.getElementById('sh-cursor');
+  if(!target) return;
+  var i = 0;
+  function typeNext(){
+    if(i <= fullText.length){
+      target.textContent = fullText.slice(0, i);
+      i++;
+      setTimeout(typeNext, 22);
+    } else if(cursor){
+      setTimeout(function(){ cursor.style.display = 'none'; }, 1200);
+    }
+  }
+  setTimeout(typeNext, 400);
+})();
+</script>
 
 <div class="section" id="welcome" style="padding-top:48px; padding-bottom:8px;">
   <div class="closing" style="max-width:580px;">
