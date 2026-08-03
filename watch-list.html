@@ -46,7 +46,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .wl-progress { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold-light); margin-top: 20px; }
   .section-label { font-family: 'Raleway', sans-serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
   .wl-col-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold-light); margin-bottom: 18px; }
-  .wl-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 48px; }
+  .wl-columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 48px; max-width: 700px; margin-left: auto; margin-right: auto; }
   .wl-col { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; min-height: 140px; }
   .wl-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
   .wl-item:last-child { border-bottom: none; }
@@ -236,10 +236,6 @@ document.addEventListener('click', function(e){
     <div class="wl-col">
       <div class="wl-col-title">&#9733; Want to Watch</div>
       <div id="wl-list-want"><p class="wl-empty">Shows you mark Want to Watch will appear here.</p></div>
-    </div>
-    <div class="wl-col">
-      <div class="wl-col-title">&#128065; Watching</div>
-      <div id="wl-list-watching"><p class="wl-empty">Shows you're currently watching will appear here.</p></div>
     </div>
     <div class="wl-col">
       <div class="wl-col-title">&#10003; Finished</div>
@@ -567,11 +563,10 @@ document.addEventListener('click', function(e){
 
     var emptyText = {
       want: "Shows you mark Want to Watch will appear here.",
-      watching: "Shows you're currently watching will appear here.",
       finished: "Shows you've finished will appear here."
     };
 
-    ['want','watching','finished'].forEach(function(status){
+    ['want','finished'].forEach(function(status){
       var el = document.getElementById('wl-list-' + status);
       if(!el) return;
       if(groups[status].length === 0){
