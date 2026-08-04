@@ -27,16 +27,6 @@
       "permanent": true
     },
     {
-      "source": "/hidden-gems.html",
-      "destination": "/shows-index.html",
-      "permanent": true
-    },
-    {
-      "source": "/hidden-gems",
-      "destination": "/shows-index.html",
-      "permanent": true
-    },
-    {
       "source": "/mysteries.html",
       "destination": "/shows-index.html",
       "permanent": true
@@ -50,6 +40,10 @@
     {
       "source": "/start-here",
       "destination": "/start-here.html"
+    },
+    {
+      "source": "/hidden-gems",
+      "destination": "/hidden-gems.html"
     },
     {
       "source": "/cozy-guide",
