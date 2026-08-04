@@ -8206,5 +8206,180 @@
       "https://weta.org/watch/shows/north-and-south",
       "https://en.wikipedia.org/wiki/North_%26_South_(TV_serial)"
     ]
+  },
+  {
+    "title": "Killing Eve",
+    "years": "2018–2022",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/killing-eve",
+      "https://en.wikipedia.org/wiki/Killing_Eve"
+    ]
+  },
+  {
+    "title": "Baptiste",
+    "years": "2019–2021",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/shows/baptiste/",
+      "https://www.justwatch.com/us/tv-show/baptiste/season-1"
+    ]
+  },
+  {
+    "title": "Mrs Wilson",
+    "years": "2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.pbs.org/show/mrs-wilson/",
+      "https://www.justwatch.com/us/tv-show/mrs-wilson"
+    ]
+  },
+  {
+    "title": "Whitechapel",
+    "years": "2009–2013",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.justwatch.com/ca/tv-show/whitechapel/season-1",
+      "https://en.wikipedia.org/wiki/Whitechapel_(TV_series)"
+    ]
+  },
+  {
+    "title": "Little Boy Blue",
+    "years": "2017",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/little-boy-blue",
+      "https://en.wikipedia.org/wiki/Little_Boy_Blue_(TV_series)"
+    ]
+  },
+  {
+    "title": "Innocent",
+    "years": "2018–2021",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://newonbritbox.info/info/43317",
+      "https://en.wikipedia.org/wiki/Innocent_(TV_series)"
+    ]
+  },
+  {
+    "title": "The Long Song",
+    "years": "2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/shows/long-song/",
+      "https://www.justwatch.com/us/tv-show/the-long-song"
+    ]
   }
 ]
