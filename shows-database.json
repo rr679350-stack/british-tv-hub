@@ -8456,5 +8456,188 @@
       "https://tellyvisions.org/article/long-shadow-us-premiere-date-and-where-stream",
       "https://en.wikipedia.org/wiki/The_Long_Shadow_(TV_series)"
     ]
+  },
+  {
+    "title": "The Red King",
+    "years": "2024–2025",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Alibi",
+        "tag": "stream",
+        "url": "https://uktvplay.co.uk/"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.metacritic.com/tv/the-red-king/",
+      "https://tellyvisions.org/article/red-king-season-1-how-watch-stream-us"
+    ]
+  },
+  {
+    "title": "After the Flood",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/After_the_Flood_(TV_series)",
+      "https://borg.com/2024/05/31/now-streaming-after-the-flood-a-unique-police-show-on-britbox/"
+    ]
+  },
+  {
+    "title": "The Village",
+    "years": "2013–2014",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Village_(2013_TV_series)",
+      "https://www.justwatch.com/us/tv-show/the-village-2013"
+    ]
+  },
+  {
+    "title": "The Mill",
+    "years": "2013–2014",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/s?k=The+Mill+TV+series&tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Mill_(TV_series)",
+      "https://www.justwatch.com/us/tv-show/the-mill"
+    ]
+  },
+  {
+    "title": "The Paradise",
+    "years": "2012–2013",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/shows/the-paradise/",
+      "https://www.spiritualityandpractice.com/films/reviews/view/27981/the-paradise"
+    ]
+  },
+  {
+    "title": "South Riding",
+    "years": "2011",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/South_Riding_(2011_TV_series)",
+      "https://www.willowandthatch.com/interwar-era-item/south-riding-2011-bbc/"
+    ]
+  },
+  {
+    "title": "The Halcyon",
+    "years": "2017",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/s?k=The+Halcyon+TV+series&tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Halcyon",
+      "https://www.rottentomatoes.com/tv/the_halcyon"
+    ]
+  },
+  {
+    "title": "The Crimson Field",
+    "years": "2014",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Crimson_Field",
+      "https://tellyvisions.org/article/period-drama-crimson-field-begins-june-21-pbs"
+    ]
+  },
+  {
+    "title": "The Last Post",
+    "years": "2017",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/s?k=The+Last+Post+TV+series&tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Last_Post_(TV_series)",
+      "https://bonafide.co.uk/productions/the-last-post/"
+    ]
   }
 ]
