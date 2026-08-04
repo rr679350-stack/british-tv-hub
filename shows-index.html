@@ -92,11 +92,17 @@ gtag('config', 'G-P1L8CVNKS6');
     .page-hero { background: var(--bg-dark); border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 270px; }
     .page-hero-text { padding: 32px 40px 28px; display: flex; flex-direction: column; justify-content: center; }
     .page-hero-img { position: relative; overflow: hidden; }
-    .page-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .page-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; animation: heroZoom 22s ease-in-out infinite alternate; }
     .page-hero-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--bg-dark) 0%, rgba(19,25,38,0.35) 30%, rgba(19,25,38,0.1) 100%); }
+    @keyframes heroZoom { from { transform: scale(1); } to { transform: scale(1.07); } }
     .hero-eyebrow { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 400; color: var(--text); margin-bottom: 12px; line-height: 1.15; }
-    .hero-sub { font-family: 'Crimson Text', serif; font-size: 21px; color: var(--text-muted); max-width: 620px; font-style: italic; line-height: 1.6; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 400; color: var(--text); margin-bottom: 12px; line-height: 1.15; opacity: 0; transform: translateY(18px); animation: heroFadeUp 0.8s ease forwards 0.15s; }
+    .hero-sub { font-family: 'Crimson Text', serif; font-size: 21px; color: var(--text-muted); max-width: 620px; font-style: italic; line-height: 1.6; opacity: 0; transform: translateY(18px); animation: heroFadeUp 0.8s ease forwards 0.4s; }
+    @keyframes heroFadeUp { to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      .page-hero-img img { animation: none; }
+      .hero-title, .hero-sub { animation: none; opacity: 1; transform: none; }
+    }
 
     /* SHOW GRID */
     .page-wrap { max-width: 1100px; margin: 0 auto; padding: 56px 40px 72px; }
@@ -1223,7 +1229,28 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 .editorial-card-stat{display:flex;align-items:baseline;gap:10px;margin-top:20px;}
 .editorial-card-stat .stat-num{font-family:'Playfair Display',serif;font-size:32px;color:#c9a96e;line-height:1;}
 .editorial-card-stat .stat-label{font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#a8a494;}
-.hero-divider{width:60px;height:3px;background:#c9a96e;margin:0 auto 40px;border:none;border-radius:2px;}
+/* Nav link underline on hover + sticky shrink */
+.nlink{position:relative;}
+.nlink::after{content:'';position:absolute;left:11px;right:11px;bottom:8px;height:2px;background:#c9a96e;transform:scaleX(0);transform-origin:left;transition:transform .25s cubic-bezier(.4,0,.2,1);}
+.nlink:hover::after{transform:scaleX(1);}
+.nlink.on::after{transform:scaleX(1);}
+.nav-brand img{transition:height .25s ease, filter .3s ease !important;}
+nav.site-nav-std.nav-scrolled .nav-brand img{height:48px !important;}
+nav.site-nav-std.nav-scrolled .nlink{padding-top:12px !important;padding-bottom:12px !important;}
+nav.site-nav-std{transition:box-shadow .25s ease;}
+nav.site-nav-std.nav-scrolled{box-shadow:0 6px 18px rgba(0,0,0,0.35);}
+@media (prefers-reduced-motion: reduce){
+  .nlink::after{transition:none;}
+  nav.site-nav-std .nav-brand img,nav.site-nav-std .nlink{transition:none;}
+}
+.hero-divider{width:0;height:3px;background:#c9a96e;margin:0 auto 40px;border:none;border-radius:2px;transition:width .8s cubic-bezier(.4,0,.2,1);}
+.hero-divider.hd-visible{width:60px;}
+.editorial-card.ec-hidden{opacity:0;transform:translateY(30px);}
+.editorial-card{transition:opacity .7s ease,transform .7s ease,box-shadow .2s ease,border-color .2s ease;}
+@media (prefers-reduced-motion: reduce){
+  .hero-divider{transition:none;width:60px;}
+  .editorial-card.ec-hidden{opacity:1;transform:none;}
+}
 @media (max-width:600px){
   .editorial-card{flex-direction:column;align-items:flex-start;padding:30px;gap:20px;}
   .editorial-card-logo{width:72px;height:72px;}
@@ -1313,17 +1340,17 @@ document.addEventListener('click', function(e){
 <!-- SHOW GRID -->
 <div class="page-wrap">
 
-<hr class="hero-divider">
+<hr class="hero-divider" id="heroDivider">
 
 <!-- EDITORIAL CARD -->
-<div class="editorial-card">
+<div class="editorial-card ec-hidden" id="editorialCard">
   <img src="/BTH_Logo.png" alt="British TV Hub" class="editorial-card-logo">
   <div>
     <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;font-weight:700;">From British TV Hub</p>
     <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 12px;line-height:1.25;">Discover Your Next Favourite British Series</h2>
     <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0;">Finding your next British series shouldn't take an hour. British TV Hub watches new releases, revisits classics, and uncovers hidden gems every month &mdash; so you can spend less time searching and more time watching.</p>
     <div class="editorial-card-stat">
-      <span class="stat-num">26+</span>
+      <span class="stat-num" id="statNum">0+</span>
       <span class="stat-label">Curated Guides</span>
     </div>
   </div>
@@ -1890,6 +1917,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+</script>
+
+<script>
+// Sticky nav shrink on scroll
+(function(){
+  var nav = document.querySelector('nav.site-nav-std');
+  if (!nav) return;
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 80) nav.classList.add('nav-scrolled');
+    else nav.classList.remove('nav-scrolled');
+  }, { passive: true });
+})();
+
+// Divider draw-in + editorial card reveal + stat count-up
+(function(){
+  var divider = document.getElementById('heroDivider');
+  var card = document.getElementById('editorialCard');
+  var statNum = document.getElementById('statNum');
+  if (!divider && !card) return;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var counted = false;
+
+  function countUp(el, target, duration){
+    if (reduceMotion){ el.textContent = target + '+'; return; }
+    var start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      el.textContent = Math.floor(progress * target) + '+';
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target + '+';
+    }
+    requestAnimationFrame(step);
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (!entry.isIntersecting) return;
+      if (entry.target === divider) divider.classList.add('hd-visible');
+      if (entry.target === card){
+        card.classList.remove('ec-hidden');
+        if (!counted && statNum){ counted = true; countUp(statNum, 26, 1400); }
+      }
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.3 });
+
+  if (divider) io.observe(divider);
+  if (card) io.observe(card);
+})();
 </script>
 </body>
 </html>
