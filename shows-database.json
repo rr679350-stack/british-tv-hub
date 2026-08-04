@@ -8381,5 +8381,80 @@
       "https://www.pbs.org/wgbh/masterpiece/shows/long-song/",
       "https://www.justwatch.com/us/tv-show/the-long-song"
     ]
+  },
+  {
+    "title": "Bookish",
+    "years": "2025–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "PBS",
+        "tag": "free",
+        "url": "https://www.pbs.org/show/bookish/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "U&Alibi",
+        "tag": "stream",
+        "url": "https://uktvplay.co.uk/"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.pbs.org/articles/bookish-everything-you-need-to-know",
+      "https://en.wikipedia.org/wiki/Bookish_(TV_series)"
+    ]
+  },
+  {
+    "title": "The Responder",
+    "years": "2022–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://www.tvinsider.com/1046132/martin-freeman-the-responder-season-1-britbox/",
+      "https://www.hellomagazine.com/film/858560/the-responder-martin-freeman-available-to-stream-bbc-iplayer/"
+    ]
+  },
+  {
+    "title": "The Long Shadow",
+    "years": "2023",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Sundance Now",
+        "tag": "stream",
+        "url": "https://www.sundancenow.com"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-04",
+    "sources": [
+      "https://tellyvisions.org/article/long-shadow-us-premiere-date-and-where-stream",
+      "https://en.wikipedia.org/wiki/The_Long_Shadow_(TV_series)"
+    ]
   }
 ]
