@@ -186,6 +186,8 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; }
 .nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
 .nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
+.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:#7d8bab; border-top:1px solid #3d4a60; margin-top:4px; }
+.nav-dropdown-label:first-child{ border-top:none; margin-top:0; padding-top:6px; }
 @media (max-width: 1300px) {
   .nav-search-box { right: auto; left: 0; }
 }
@@ -298,21 +300,20 @@ iframe[id*="chatbase-bubble-button"],
       <div class="nav-dropdown">
         <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
         <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-label">Browse</div>
           <a href="/shows-index.html#genres">By Genre</a>
-          <a href="/top10.html">Best Police Procedurals</a>
-          <a href="/detective-partnerships.html">British Detective Partnerships</a>
+          <a href="/top10.html">Police Procedurals</a>
           <a href="/cozy.html">Cozy Mysteries</a>
-          <a href="/cozy-autumn-mysteries.html">Cozy Autumn Mysteries</a>
-          <a href="/best-cozy-mystery-authors.html">Best Cozy Mystery Authors</a>
+          <a href="/books">Literary Adaptations</a>
+          <a href="/shows.html#hidden-gems">Hidden Gems</a>
+          <div class="nav-dropdown-label">Popular Guides</div>
           <a href="/shows-like-vera-tv.html">Shows Like Vera</a>
           <a href="/shows-like-shetland-tv.html">Shows Like Shetland</a>
-          <a href="/books">Literary Adaptations</a>
+          <a href="/detective-partnerships.html">British Detective Partnerships</a>
           <a href="/masterpiece2026.html">PBS Masterpiece</a>
-          <a href="/shows.html#hidden-gems">Hidden Gems</a>
-          <a href="/streaming.html">Streaming Guides</a>
+          <div class="nav-dropdown-label">Interactive</div>
           <a href="/quiz.html">Match Me a Mystery</a>
           <a href="/meet-tilly.html">Ask Tilly</a>
-          <a href="/telly-detective.html">&#128373;&#65039; Meet The Telly Detective</a>
           <a href="/watch-list.html">Watch List</a>
         </div>
       </div>
