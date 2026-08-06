@@ -454,40 +454,191 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <div class="section" id="submit">
-    <div class="section-head">
-      <h2>What's in Your Snug?</h2>
-      <span>Tell Us About Your Evening</span>
-    </div>
-    <p class="section-intro">Fill this out and it may be featured below as a Community Snug. Every submission is reviewed by British TV Hub before it's published &mdash; nothing goes live automatically.</p>
+  <div class="section" id="submit" style="padding-bottom:10px;">
+    <section class="share-snug" aria-labelledby="share-snug-title">
+      <div class="share-snug__inner">
+        <header class="share-snug__header">
+          <p class="share-snug__eyebrow">The Community Snug</p>
+          <h2 id="share-snug-title"><span aria-hidden="true">&#9749;</span> What's in Your Snug?</h2>
+          <p class="share-snug__tagline">Every British TV fan has their own cozy tradition. We'd love to see yours.</p>
+          <p class="share-snug__intro">Recommend a favorite tea, blanket, candle, book, mug, snack, puzzle, or streaming accessory that makes your British TV evenings feel complete.</p>
+          <p class="share-snug__note">Every submission is reviewed before it appears on British TV Hub. If your recommendation is selected, British TV Hub will locate the product and add its own approved shopping link later.</p>
+        </header>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width:640px;background:#232b42;border:1px solid #3d4a60;border-radius:12px;padding:36px;display:flex;flex-direction:column;gap:20px;">
-      <div>
-        <label for="snug-name" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What should we call your Snug?</label>
-        <input type="text" id="snug-name" name="snug_name" placeholder="e.g. Susan's Rainy Sunday Snug" required style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+        <form id="share-snug-form" class="share-snug__form" action="https://formspree.io/f/mnpanvby" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Share Your Snug Submission">
+
+          <div class="share-snug__trap" aria-hidden="true">
+            <label>Leave this field empty
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <div class="share-snug__grid">
+            <div class="share-snug__field">
+              <label for="snug-name">Your name <span>(optional)</span></label>
+              <input id="snug-name" name="name" type="text" maxlength="80" autocomplete="name" placeholder="First name is fine">
+            </div>
+            <div class="share-snug__field">
+              <label for="snug-location">Where are you from? <span>(optional)</span></label>
+              <input id="snug-location" name="location" type="text" maxlength="100" placeholder="Example: Illinois, USA">
+            </div>
+          </div>
+
+          <div class="share-snug__field">
+            <label for="snug-item">What are you recommending?</label>
+            <input id="snug-item" name="recommended_item" type="text" maxlength="150" placeholder="Example: Yorkshire Gold Tea" required>
+          </div>
+
+          <div class="share-snug__grid">
+            <div class="share-snug__field">
+              <label for="snug-category">Category</label>
+              <select id="snug-category" name="category" required>
+                <option value="" selected disabled>Choose a category</option>
+                <option value="Tea and Coffee">Tea &amp; Coffee</option>
+                <option value="Blankets and Throws">Blankets &amp; Throws</option>
+                <option value="Candles">Candles</option>
+                <option value="Books">Books</option>
+                <option value="Mugs">Mugs</option>
+                <option value="Snacks and Treats">Snacks &amp; Treats</option>
+                <option value="Streaming Accessories">Streaming Accessories</option>
+                <option value="Home Decor">Home D&eacute;cor</option>
+                <option value="Games and Puzzles">Games &amp; Puzzles</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="share-snug__field">
+              <label for="snug-show">What are you watching with it? <span>(optional)</span></label>
+              <input id="snug-show" name="watching" type="text" maxlength="120" placeholder="Example: Vera">
+            </div>
+          </div>
+
+          <div class="share-snug__field">
+            <label for="snug-reason">Why do you love it?</label>
+            <textarea id="snug-reason" name="why_recommended" rows="6" minlength="20" maxlength="750" placeholder="Tell us why it belongs in a cozy British TV night." required></textarea>
+            <p class="share-snug__counter"><span id="snug-count">0</span>/750 characters</p>
+          </div>
+
+          <div class="share-snug__field">
+            <label for="snug-photo">Share a photo <span>(optional)</span></label>
+            <input id="snug-photo" name="photo" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp">
+            <p class="share-snug__help">Upload only a photo you own and have permission to share. Maximum recommended size: 5 MB.</p>
+          </div>
+
+          <fieldset class="share-snug__permissions">
+            <legend>Permission</legend>
+            <label class="share-snug__check">
+              <input type="checkbox" name="permission_to_publish" value="Yes" required>
+              <span>I give British TV Hub permission to feature my recommendation and any submitted photo on its website and social media.</span>
+            </label>
+            <label class="share-snug__check">
+              <input type="checkbox" name="show_first_name" value="Yes">
+              <span>British TV Hub may show my first name with the recommendation.</span>
+            </label>
+          </fieldset>
+
+          <div class="share-snug__field">
+            <label for="snug-email">Email <span>(optional and never published)</span></label>
+            <input id="snug-email" name="email" type="email" maxlength="150" autocomplete="email" placeholder="Used only if we need to contact you">
+          </div>
+
+          <button class="share-snug__button" type="submit">Share My Snug</button>
+
+          <p class="share-snug__privacy">Submissions are reviewed and are not published automatically. Please do not include private information in your recommendation.</p>
+
+          <div id="share-snug-status" class="share-snug__status" role="status" aria-live="polite" hidden></div>
+        </form>
       </div>
-      <div>
-        <label for="snug-drink" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What are you drinking?</label>
-        <input type="text" id="snug-drink" name="drink" placeholder="e.g. Yorkshire Gold Tea" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
-      </div>
-      <div>
-        <label for="snug-watch" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What are you watching or reading?</label>
-        <input type="text" id="snug-watch" name="watching_reading" placeholder="e.g. Vera, or The Thursday Murder Club" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
-      </div>
-      <div>
-        <label for="snug-essential" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What's your cozy essential?</label>
-        <input type="text" id="snug-essential" name="cozy_essential" placeholder="e.g. a wool blanket, a candle, shortbread" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
-      </div>
-      <div>
-        <label for="snug-why" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Why is this your perfect evening? (optional)</label>
-        <textarea id="snug-why" name="why" rows="3" placeholder="e.g. Rain outside, tea, Vera, wool blanket, and shortbread." style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;resize:vertical;"></textarea>
-      </div>
-      <div>
-        <label for="snug-email" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Your email (so we can credit you &mdash; never published)</label>
-        <input type="email" id="snug-email" name="email" placeholder="you@example.com" required style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
-      </div>
-      <button type="submit" class="btn" style="align-self:flex-start;border:none;cursor:pointer;">Share Your Snug &rarr;</button>
-    </form>
+    </section>
+
+    <style>
+      .share-snug {
+        --navy: #0d1b2a;
+        --navy-soft: #17283a;
+        --gold: #c9a84c;
+        --cream: #f4ede0;
+        --paper: #fffdf8;
+        --ink: #24313d;
+        --muted: #66717b;
+        --border: #ded6c7;
+        padding: clamp(42px, 7vw, 88px) 20px;
+        background: radial-gradient(circle at top right, rgba(201, 168, 76, 0.13), transparent 34%), var(--cream);
+        color: var(--ink);
+        border-radius: 16px;
+      }
+      .share-snug__inner { width: min(920px, 100%); margin: 0 auto; }
+      .share-snug__header { max-width: 740px; margin: 0 auto 30px; text-align: center; }
+      .share-snug__eyebrow { margin: 0 0 8px; color: #806821; font-family: "Raleway", Arial, sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+      .share-snug__header h2 { margin: 0 0 12px; color: var(--navy); font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.1rem, 5vw, 3.5rem); line-height: 1.08; }
+      .share-snug__tagline { margin: 0 auto 12px; color: var(--navy); font-family: "Crimson Text", Georgia, serif; font-size: clamp(1.25rem, 2.6vw, 1.55rem); font-style: italic; line-height: 1.45; }
+      .share-snug__intro, .share-snug__note { margin: 0 auto 12px; font-family: "Crimson Text", Georgia, serif; font-size: 1.12rem; line-height: 1.55; }
+      .share-snug__note { color: var(--muted); font-size: 1rem; }
+      .share-snug__form { padding: clamp(24px, 5vw, 48px); border: 1px solid var(--border); border-radius: 22px; background: var(--paper); box-shadow: 0 18px 50px rgba(13, 27, 42, 0.12); }
+      .share-snug__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      .share-snug__field { margin-bottom: 22px; }
+      .share-snug__field label, .share-snug__permissions legend { display: block; margin-bottom: 8px; color: var(--navy); font-family: "Raleway", Arial, sans-serif; font-size: 0.96rem; font-weight: 700; }
+      .share-snug__field label span { color: var(--muted); font-weight: 500; }
+      .share-snug__field input, .share-snug__field select, .share-snug__field textarea { width: 100%; box-sizing: border-box; border: 1px solid #cfc6b7; border-radius: 10px; background: #fff; color: var(--ink); font: inherit; font-size: 1rem; line-height: 1.4; padding: 13px 14px; transition: border-color 160ms ease, box-shadow 160ms ease; }
+      .share-snug__field textarea { min-height: 150px; resize: vertical; }
+      .share-snug__field input:focus, .share-snug__field select:focus, .share-snug__field textarea:focus { border-color: var(--gold); outline: none; box-shadow: 0 0 0 4px rgba(201, 168, 76, 0.2); }
+      .share-snug__field input[type="file"] { padding: 10px; background: #faf7f0; }
+      .share-snug__help, .share-snug__privacy, .share-snug__counter { margin: 7px 0 0; color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+      .share-snug__counter { text-align: right; }
+      .share-snug__permissions { margin: 2px 0 22px; padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: #faf7f0; }
+      .share-snug__check { display: flex; align-items: flex-start; gap: 11px; margin-top: 12px; color: var(--ink); font-size: 0.96rem; line-height: 1.45; cursor: pointer; }
+      .share-snug__check input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--navy); flex: 0 0 auto; }
+      .share-snug__button { display: flex; width: 100%; min-height: 52px; align-items: center; justify-content: center; border: 2px solid var(--gold); border-radius: 999px; background: var(--navy); color: #fff; cursor: pointer; font-family: "Raleway", Arial, sans-serif; font-size: 1rem; font-weight: 700; letter-spacing: 0.02em; padding: 13px 24px; transition: transform 160ms ease, background 160ms ease; }
+      .share-snug__button:hover { background: var(--navy-soft); transform: translateY(-1px); }
+      .share-snug__button:focus-visible { outline: 3px solid rgba(201, 168, 76, 0.55); outline-offset: 3px; }
+      .share-snug__button:disabled { cursor: wait; opacity: 0.72; transform: none; }
+      .share-snug__privacy { margin-top: 14px; text-align: center; }
+      .share-snug__status { margin-top: 20px; border-radius: 12px; padding: 16px 18px; font-weight: 700; line-height: 1.5; text-align: center; }
+      .share-snug__status.is-success { border: 1px solid rgba(47, 107, 79, 0.35); background: rgba(47, 107, 79, 0.1); color: #2f6b4f; }
+      .share-snug__status.is-error { border: 1px solid rgba(159, 47, 47, 0.35); background: rgba(159, 47, 47, 0.08); color: #9f2f2f; }
+      .share-snug__trap { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; white-space: nowrap !important; }
+      @media (max-width: 700px) { .share-snug__grid { grid-template-columns: 1fr; gap: 0; } .share-snug__form { border-radius: 16px; } }
+      @media (prefers-reduced-motion: reduce) { .share-snug__button, .share-snug__field input, .share-snug__field select, .share-snug__field textarea { transition: none; } }
+    </style>
+
+    <script>
+      (() => {
+        const form = document.getElementById("share-snug-form");
+        if (!form) return;
+        const reason = document.getElementById("snug-reason");
+        const count = document.getElementById("snug-count");
+        const status = document.getElementById("share-snug-status");
+        const button = form.querySelector('button[type="submit"]');
+        const originalButtonText = button.textContent;
+        const updateCount = () => { count.textContent = reason.value.length; };
+        reason.addEventListener("input", updateCount);
+        updateCount();
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          if (!form.reportValidity()) return;
+          status.hidden = true;
+          status.className = "share-snug__status";
+          button.disabled = true;
+          button.textContent = "Sharing Your Snug…";
+          try {
+            const response = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+            if (!response.ok) throw new Error("Form submission failed.");
+            form.reset();
+            updateCount();
+            status.textContent = "\u2615 Thank you for sharing your snug! Every recommendation is personally reviewed before it is added to the Community Snug Collection.";
+            status.classList.add("is-success");
+            status.hidden = false;
+            status.scrollIntoView({ behavior: "smooth", block: "center" });
+          } catch (error) {
+            status.textContent = "Your recommendation could not be submitted. Please check the form and try again.";
+            status.classList.add("is-error");
+            status.hidden = false;
+          } finally {
+            button.disabled = false;
+            button.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
   </div>
 
   <div class="section" id="gallery">
