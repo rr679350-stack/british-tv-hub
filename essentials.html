@@ -150,16 +150,18 @@ gtag('config', 'G-P1L8CVNKS6');
 
   /* ---- section nav ---- */
   .sectionnav{
-    max-width:1080px; margin:56px auto 0; padding:0 24px;
-    display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
+    max-width:1080px; margin:8px auto 0; padding:0 24px;
+    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
     font-family:'Raleway',sans-serif;
     position:static; top:auto; z-index:auto; background:none; border-bottom:none; height:auto;
   }
   .sectionnav a{
-    font-size:12.5px; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--cream-dim); text-decoration:none; padding:8px 16px;
-    border:1px solid var(--navy-line);
+    font-size:13px; letter-spacing:.12em; text-transform:uppercase; font-weight:600;
+    color:var(--gold-bright); text-decoration:none; padding:12px 22px;
+    border:1.5px solid var(--gold); border-radius:2px;
+    transition:background .15s ease, color .15s ease;
   }
+  .sectionnav a:hover{ background:var(--gold); color:var(--navy-deep); }
   .sectionnav a:hover{ color:var(--gold-bright); border-color:var(--gold); }
 
   /* ---- sections ---- */
@@ -511,14 +513,17 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <nav class="sectionnav">
-    <a href="/essentials-watch.html">Watch</a>
-    <a href="/essentials-read.html">Read</a>
-    <a href="/essentials-stream.html">Stream</a>
-    <a href="/essentials-cozy.html">Cozy Corner</a>
-    <a href="/essentials-collections.html">Shop by Theme</a>
-    <a href="/essentials-gifts.html">Gift Guides</a>
-  </nav>
+  <div style="max-width:1080px;margin:32px auto 0;padding:28px 24px 0;border-top:1px solid var(--navy-line);text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8b95b8;margin-bottom:16px;">Explore More of The Snug</div>
+    <nav class="sectionnav">
+      <a href="/essentials-watch.html">Watch</a>
+      <a href="/essentials-read.html">Read</a>
+      <a href="/essentials-stream.html">Stream</a>
+      <a href="/essentials-cozy.html">Cozy Corner</a>
+      <a href="/essentials-collections.html">Shop by Theme</a>
+      <a href="/essentials-gifts.html">Gift Guides</a>
+    </nav>
+  </div>
 
   <div class="section" id="six-essentials">
     <div class="section-head">
