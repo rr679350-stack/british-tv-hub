@@ -478,17 +478,49 @@ document.addEventListener('click', function(e){
   </div>
 
   <div style="max-width:1080px;margin:32px auto 0;padding:28px 24px 0;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8b95b8;margin-bottom:16px;">Explore More of The Snug</div>
-    <nav class="sectionnav">
-      <a href="/essentials-watch.html">Watch</a>
-      <a href="/essentials-read.html">Read</a>
-      <a href="/essentials-cozy.html">Cozy Corner</a>
-      <a href="/essentials-collections.html">Shop by Theme</a>
-      <span style="width:1px;background:var(--navy-line);align-self:stretch;margin:4px 2px;"></span>
-      <a href="/essentials-gifts.html">Gift Ideas</a>
-      <a href="/community-snug.html">Share Your Snug</a>
-    </nav>
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8b95b8;margin-bottom:20px;">Explore More of The Snug</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;">
+      <a href="/essentials-watch.html" class="nav-photo-card" style="background-image:url('/snug-nav-watch.webp');">
+        <span>Watch</span>
+      </a>
+      <a href="/essentials-read.html" class="nav-photo-card" style="background-image:url('/snug-nav-read.webp');">
+        <span>Read</span>
+      </a>
+      <a href="/essentials-cozy.html" class="nav-photo-card" style="background-image:url('/snug-nav-cozy.webp');">
+        <span>Cozy Corner</span>
+      </a>
+      <a href="/essentials-collections.html" class="nav-photo-card" style="background-image:url('/snug-nav-collections.webp');">
+        <span>Shop by Theme</span>
+      </a>
+      <a href="/essentials-gifts.html" class="nav-photo-card" style="background-image:url('/snug-nav-gifts.webp');">
+        <span>Gift Ideas</span>
+      </a>
+      <a href="/community-snug.html" class="nav-photo-card" style="background-image:url('/snug-nav-share.webp');">
+        <span>Share Your Snug</span>
+      </a>
+    </div>
   </div>
+
+  <style>
+    .nav-photo-card{
+      position:relative; display:flex; align-items:flex-end; justify-content:center;
+      height:140px; border-radius:12px; overflow:hidden;
+      background-size:cover; background-position:center;
+      text-decoration:none; border:1px solid var(--navy-line);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .nav-photo-card:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,0.35); }
+    .nav-photo-card::before{
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(10,17,32,0.92) 0%, rgba(10,17,32,0.45) 55%, rgba(10,17,32,0.1) 100%);
+    }
+    .nav-photo-card span{
+      position:relative; z-index:1; padding:14px 10px;
+      font-family:'Raleway',sans-serif; font-size:13px; font-weight:600;
+      letter-spacing:.08em; text-transform:uppercase; color:#f0e8d4;
+      text-align:center;
+    }
+  </style>
 
   <div class="section" id="six-essentials">
     <div class="section-head">
