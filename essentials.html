@@ -339,6 +339,23 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 .card-label { display:block; font-family:'Raleway', sans-serif; font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#c9a96e; margin-bottom:8px; }
 .disclosure-line { font-family:'Raleway', sans-serif; font-size:13px; color:#9aa3bd; text-align:center; margin:0 0 28px; }
 .explore-more-wrap { text-align:center; margin:12px 0 40px; }
+.editorial-pick{ max-width:960px; margin:0 auto 8px; padding:0 24px; }
+.editorial-pick-inner{ display:flex; gap:44px; align-items:center; border-top:1px solid var(--navy-line); border-bottom:1px solid var(--navy-line); padding:52px 0; flex-wrap:wrap; }
+.editorial-pick-art{ flex:0 0 170px; }
+.editorial-pick-art svg{ width:100%; height:auto; display:block; }
+.editorial-pick-body{ flex:1; min-width:260px; }
+.editorial-eyebrow{ font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#c9a96e; margin-bottom:12px; }
+.editorial-pick-body h2{ font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#f0e8d4; margin:0 0 16px; }
+.editorial-pick-body p{ font-family:'Crimson Text',serif; font-size:19px; font-style:italic; color:#c8c0a8; line-height:1.6; margin:0 0 20px; }
+.quiet-link{ font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:0.5px; color:#c9a96e; text-decoration:none; border-bottom:1px solid rgba(201,169,110,0.4); padding-bottom:2px; }
+.quiet-link:hover{ border-bottom-color:#c9a96e; }
+.editorial-list{ max-width:960px; margin:48px auto 8px; padding:0 24px; display:grid; grid-template-columns:repeat(3,1fr); gap:44px 36px; }
+.editorial-item{ text-align:left; }
+.editorial-item .editorial-art{ width:72px; margin-bottom:16px; }
+.editorial-item .editorial-art svg{ width:100%; height:auto; display:block; }
+.editorial-item h3{ font-family:'Playfair Display',serif; font-size:19px; font-weight:600; margin:0 0 8px; color:#f0e8d4; }
+.editorial-item p{ font-family:'Crimson Text',serif; font-size:15.5px; color:#c8c0a8; line-height:1.55; margin:0 0 12px; }
+@media(max-width:700px){ .editorial-list{grid-template-columns:1fr 1fr;} .editorial-pick-inner{flex-direction:column;text-align:center;} .editorial-pick-body{text-align:center;} }
 </style>
 <style>
 /* Larger text sitewide for readability (senior-friendly pass) */
@@ -494,49 +511,97 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <div class="section" id="six-essentials">
+  <div class="section" id="six-essentials" style="padding-bottom:24px;">
     <div class="section-head">
-      <h2>Six Cozy Essentials</h2>
-      <span>Everything You Need for the Perfect British Mystery Night</span>
+      <h2>Cozy Essentials</h2>
+      <span>Six Favourites, Simply Presented</span>
     </div>
-    <div class="grid">
-      <div class="card" data-tags="six essentials stream">
-        <span class="card-label">Stream British TV</span>
-        <h3>&#128250; BritBox</h3>
-        <p>An extensive library of classic and contemporary British TV available in the US.</p>
-        <a class="card-link" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="sponsored noopener">View Options &rarr;</a>
+
+    <div class="editorial-pick">
+      <div class="editorial-pick-inner">
+        <div class="editorial-pick-art">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="92" height="122" fill="none" stroke="#c9a96e" stroke-width="1.5"/>
+            <text x="50" y="58" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="13" font-weight="700">INSPECTOR</text>
+            <text x="50" y="74" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="13" font-weight="700">MORSE</text>
+            <line x1="24" y1="86" x2="76" y2="86" stroke="#c9a96e" stroke-width="1"/>
+            <text x="50" y="100" text-anchor="middle" fill="#e6c778" font-family="Raleway, sans-serif" font-size="7" letter-spacing="2">COMPLETE SERIES</text>
+          </svg>
+        </div>
+        <div class="editorial-pick-body">
+          <div class="editorial-eyebrow">&#11088; Editor's Pick</div>
+          <h2>Inspector Morse</h2>
+          <p>My favourite recommendation for anyone new to British mysteries.</p>
+          <a class="quiet-link" href="https://amzn.to/4w73jZ2" target="_blank" rel="sponsored noopener">View Collection &rarr;</a>
+        </div>
       </div>
-      <div class="card" data-tags="six essentials pick" style="border:1px solid #c9a96e;">
-        <div class="badge-row"><span class="badge">&#11088; British TV Hub Pick</span></div>
-        <span class="card-label">Classic Collection</span>
-        <h3>Inspector Morse: The Complete Series</h3>
-        <p>If British TV Hub could recommend just one detective series to begin with, it would be this one &mdash; thoughtful mysteries, unforgettable characters, and one of the finest detective dramas ever made.</p>
-        <a class="card-link" href="https://amzn.to/4w73jZ2" target="_blank" rel="sponsored noopener">View the Collection &rarr;</a>
+    </div>
+
+    <div class="editorial-list">
+      <div class="editorial-item">
+        <div class="editorial-art">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="33" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+            <text x="36" y="43" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="22">&#128250;</text>
+          </svg>
+        </div>
+        <span class="card-label">Stream</span>
+        <h3>BritBox</h3>
+        <p>Classic and contemporary British TV, all in one place.</p>
+        <a class="quiet-link" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="sponsored noopener">View &rarr;</a>
       </div>
-      <div class="card" data-tags="six essentials read">
-        <span class="card-label">Read the Originals</span>
-        <h3>&#128218; The Inspector Morse Novels</h3>
-        <p>Return to Morse's Oxford through Colin Dexter's original novels.</p>
-        <a class="card-link" href="https://amzn.to/4vwOxKb" target="_blank" rel="sponsored noopener">View the Book &rarr;</a>
+      <div class="editorial-item">
+        <div class="editorial-art">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="33" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+            <text x="36" y="43" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="22">&#128218;</text>
+          </svg>
+        </div>
+        <span class="card-label">Book</span>
+        <h3>The Inspector Morse Novels</h3>
+        <p>Colin Dexter's originals, where it all began.</p>
+        <a class="quiet-link" href="https://amzn.to/4vwOxKb" target="_blank" rel="sponsored noopener">View &rarr;</a>
       </div>
-      <div class="card" data-tags="six essentials tea">
-        <span class="card-label">Perfect Cup of Tea</span>
-        <h3>&#9749; Twinings English Breakfast Tea</h3>
-        <p>A traditional tea for settling in with a book or an evening mystery.</p>
-        <a class="card-link" href="https://amzn.to/4fdyXgj" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
+      <div class="editorial-item">
+        <div class="editorial-art">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="33" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+            <text x="36" y="43" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="22">&#9749;</text>
+          </svg>
+        </div>
+        <span class="card-label">Tea</span>
+        <h3>Twinings English Breakfast</h3>
+        <p>The tea for settling in with a good mystery.</p>
+        <a class="quiet-link" href="https://amzn.to/4fdyXgj" target="_blank" rel="sponsored noopener">View &rarr;</a>
       </div>
-      <div class="card" data-tags="six essentials blanket">
-        <span class="card-label">Cozy Comfort</span>
-        <h3>&#128717; Chunky Knit Throw Blanket</h3>
-        <p>For the long evenings spent with a book or a boxset.</p>
-        <a class="card-link" href="https://amzn.to/44n66RN" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
+      <div class="editorial-item">
+        <div class="editorial-art">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="33" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+            <text x="36" y="43" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="22">&#128717;</text>
+          </svg>
+        </div>
+        <span class="card-label">Cozy Home</span>
+        <h3>Chunky Knit Blanket</h3>
+        <p>For the long evenings spent watching or reading.</p>
+        <a class="quiet-link" href="https://amzn.to/44n66RN" target="_blank" rel="sponsored noopener">View &rarr;</a>
       </div>
-      <div class="card" data-tags="six essentials candle">
-        <span class="card-label">Set the Mood</span>
-        <h3>&#128367; Sweet Water Decor "Warm + Cozy" Soy Candle</h3>
-        <p>Pine, orange, and cinnamon &mdash; a cozy-night staple.</p>
-        <a class="card-link" href="https://amzn.to/4wMXL5T" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
+      <div class="editorial-item">
+        <div class="editorial-art">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="33" fill="none" stroke="#c9a96e" stroke-width="1.2"/>
+            <text x="36" y="43" text-anchor="middle" fill="#c9a96e" font-family="Playfair Display, serif" font-size="22">&#128367;</text>
+          </svg>
+        </div>
+        <span class="card-label">Candle</span>
+        <h3>Warm + Cozy Soy Candle</h3>
+        <p>Pine, orange, and cinnamon for a cozy night in.</p>
+        <a class="quiet-link" href="https://amzn.to/4wMXL5T" target="_blank" rel="sponsored noopener">View &rarr;</a>
       </div>
+    </div>
+
+    <div style="text-align:center;padding:16px 24px 0;">
+      <a class="quiet-link" href="/gift-ideas.html">Looking for more? Browse the complete British TV Hub Marketplace &rarr;</a>
     </div>
   </div>
 
