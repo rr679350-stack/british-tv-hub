@@ -49,9 +49,9 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Snug | British TV Hub</title>
-<meta name="description" content="A cozy corner of British TV Hub — favourite shows, favourite books, and the small comforts that make a British mystery evening complete.">
-<link rel="canonical" href="https://britishtvhub.com/essentials.html">
+<title>Share Your Snug | Community | British TV Hub</title>
+<meta name="description" content="Share your perfect British TV evening and see what fellow fans are curling up with — tea, blankets, mysteries, and more.">
+<link rel="canonical" href="https://britishtvhub.com/community-snug.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -150,18 +150,16 @@ gtag('config', 'G-P1L8CVNKS6');
 
   /* ---- section nav ---- */
   .sectionnav{
-    max-width:1080px; margin:8px auto 0; padding:0 24px;
-    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+    max-width:1080px; margin:56px auto 0; padding:0 24px;
+    display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
     font-family:'Raleway',sans-serif;
     position:static; top:auto; z-index:auto; background:none; border-bottom:none; height:auto;
   }
   .sectionnav a{
-    font-size:13px; letter-spacing:.12em; text-transform:uppercase; font-weight:600;
-    color:var(--gold-bright); text-decoration:none; padding:12px 22px;
-    border:1.5px solid var(--gold); border-radius:2px;
-    transition:background .15s ease, color .15s ease;
+    font-size:12.5px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--cream-dim); text-decoration:none; padding:8px 16px;
+    border:1px solid var(--navy-line);
   }
-  .sectionnav a:hover{ background:var(--gold); color:var(--navy-deep); }
   .sectionnav a:hover{ color:var(--gold-bright); border-color:var(--gold); }
 
   /* ---- sections ---- */
@@ -341,23 +339,6 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 .card-label { display:block; font-family:'Raleway', sans-serif; font-size:10px; letter-spacing:1.4px; text-transform:uppercase; color:#c9a96e; margin-bottom:8px; }
 .disclosure-line { font-family:'Raleway', sans-serif; font-size:13px; color:#9aa3bd; text-align:center; margin:0 0 28px; }
 .explore-more-wrap { text-align:center; margin:12px 0 40px; }
-.editorial-pick{ max-width:960px; margin:0 auto 8px; padding:0 24px; }
-.editorial-pick-inner{ display:flex; gap:44px; align-items:center; border-top:1px solid var(--navy-line); border-bottom:1px solid var(--navy-line); padding:52px 0; flex-wrap:wrap; }
-.editorial-pick-art{ flex:0 0 170px; }
-.editorial-pick-art svg{ width:100%; height:auto; display:block; }
-.editorial-pick-body{ flex:1; min-width:260px; }
-.editorial-eyebrow{ font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:2.5px; text-transform:uppercase; color:#c9a96e; margin-bottom:12px; }
-.editorial-pick-body h2{ font-family:'Playfair Display',serif; font-size:36px; font-weight:700; color:#f0e8d4; margin:0 0 16px; }
-.editorial-pick-body p{ font-family:'Crimson Text',serif; font-size:19px; font-style:italic; color:#c8c0a8; line-height:1.6; margin:0 0 20px; }
-.quiet-link{ font-family:'Raleway',sans-serif; font-size:13px; letter-spacing:0.5px; color:#c9a96e; text-decoration:none; border-bottom:1px solid rgba(201,169,110,0.4); padding-bottom:2px; }
-.quiet-link:hover{ border-bottom-color:#c9a96e; }
-.editorial-list{ max-width:960px; margin:48px auto 8px; padding:0 24px; display:grid; grid-template-columns:repeat(3,1fr); gap:44px 36px; }
-.editorial-item{ text-align:left; }
-.editorial-item .editorial-art{ width:72px; margin-bottom:16px; }
-.editorial-item .editorial-art svg{ width:100%; height:auto; display:block; }
-.editorial-item h3{ font-family:'Playfair Display',serif; font-size:19px; font-weight:600; margin:0 0 8px; color:#f0e8d4; }
-.editorial-item p{ font-family:'Crimson Text',serif; font-size:15.5px; color:#c8c0a8; line-height:1.55; margin:0 0 12px; }
-@media(max-width:700px){ .editorial-list{grid-template-columns:1fr 1fr;} .editorial-pick-inner{flex-direction:column;text-align:center;} .editorial-pick-body{text-align:center;} }
 </style>
 <style>
 /* Larger text sitewide for readability (senior-friendly pass) */
@@ -461,123 +442,75 @@ document.addEventListener('click', function(e){
     British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. <a href="#affiliate-disclosure">Full affiliate disclosure</a>
   </div>
 
+
   <div class="page-hero">
-    <img src="/essentials-hero.webp" alt="Cozy British TV viewing" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.1);">
+    <img src="/gift-guides-hero.webp" alt="A cozy reading nook with tea, a blanket, and books" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.9);">
     <div style="position:absolute;inset:0;background:linear-gradient(to right,var(--navy-deep) 42%,rgba(16,28,51,0.75) 62%,rgba(16,28,51,0.05) 100%);"></div>
-    <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:560px;">
-      <div class="page-hero-eyebrow">British TV Hub's Favourites</div>
-      <h1>The <em>Snug</em></h1>
-      <p class="page-hero-lead">A curated collection of British TV favourites&mdash;beloved mysteries, unforgettable books, streaming picks, and cozy finds. Every recommendation is handpicked because it's something worth sharing with a fellow fan.</p>
-      <p class="page-hero-lead">The Snug isn't a catalogue&mdash;it's a collection. Each recommendation has been chosen to help British TV fans discover something worth watching, reading, or enjoying next.</p>
-      <div class="page-hero-meta">
-        <span>&#10003; Personally Curated</span>
-        <span>&#10003; Updated Monthly</span>
-      </div>
+    <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:600px;">
+      <div class="page-hero-eyebrow">Community</div>
+      <h1>Share Your <em>Snug</em></h1>
+      <p class="page-hero-lead">Everyone's cozy evening looks a little different. Share your favourite blanket, tea, candle, mystery novel, or snack, and help inspire other British TV fans.</p>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;color:#c9a96e;text-decoration:underline;">&larr; Back to The Snug</a>
     </div>
   </div>
 
-  <div class="exclusives" id="exclusives">
-    <div class="section">
-      <div class="section-head">
-        <h2>British TV Hub Exclusives</h2>
-        <span>For Fellow Fans</span>
-      </div>
-      <p class="section-intro">A few printables and trackers, for anyone who likes to keep track of what they've watched, read, and want to get to next.</p>
-      <div class="grid" id="grid-exclusives">
-        <div class="card" data-tags="journal exclusive own product">
-          <div class="badge-row"><span class="badge">British TV Hub Favourite</span></div>
-          <div class="card-art"><img src="essentials-img-4.jpeg" alt="The Golden Age of British TV Journal cover"></div>
-          <h3>The British TV Journal</h3>
-          <p>A guided journal for logging every series, rating episodes, and jotting down theories before the reveal.</p>
-          <a class="card-link" href="https://www.etsy.com/listing/4523157292" rel="sponsored nofollow">View on Etsy &rarr;</a>
-        </div>
-        <div class="card" data-tags="tracker exclusive own product">
-          <div class="card-art"><img src="essentials-img-3.jpeg" alt="Cozy Mystery Casebook cover"></div>
-          <h3>Mystery Tracker &amp; Casebook</h3>
-          <p>Track clues, suspects, and your own guesses show by show &mdash; built for the way British TV fans actually watch.</p>
-          <a class="card-link" href="https://www.etsy.com/listing/4515914484" rel="sponsored nofollow">View on Etsy &rarr;</a>
-        </div>
-        <div class="card" data-tags="reading log exclusive own product">
-          <div class="card-art"><img src="essentials-img-2.jpeg" alt="My Cozy Reading & Watching Log journal cover"></div>
-          <h3>My Cozy Reading &amp; Watching Log</h3>
-          <p>For tracking the novels behind the dramas &mdash; and everything else on your British mystery reading list.</p>
-          <a class="card-link" href="https://www.etsy.com/listing/4516011360" rel="sponsored nofollow">View on Etsy &rarr;</a>
-        </div>
-        <div class="card" data-tags="crime drama tracker watchlist exclusive own product">
-          <div class="card-art"><img src="essentials-img-1.jpeg" alt="British Crime Drama Tracker journal cover"></div>
-          <h3>British Crime Drama Tracker</h3>
-          <p>A watch list and investigation journal for tracking every British crime drama case, clue by clue.</p>
-          <a class="card-link" href="https://www.etsy.com/listing/4517658257" rel="sponsored nofollow">View on Etsy &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="max-width:1080px;margin:32px auto 0;padding:28px 24px 0;border-top:1px solid var(--navy-line);text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8b95b8;margin-bottom:16px;">Explore More of The Snug</div>
-    <nav class="sectionnav">
-      <a href="/essentials-watch.html">Watch</a>
-      <a href="/essentials-read.html">Read</a>
-      <a href="/essentials-stream.html">Stream</a>
-      <a href="/essentials-cozy.html">Cozy Corner</a>
-      <a href="/essentials-collections.html">Shop by Theme</a>
-      <a href="/essentials-gifts.html">Gift Guides</a>
-      <a href="/community-snug.html">Share Your Snug</a>
-    </nav>
-  </div>
-
-  <div class="section" id="six-essentials">
+  <div class="section" id="submit">
     <div class="section-head">
-      <h2>Cozy Essentials</h2>
-      <span style="font-size:16px;">Everything You Need for the Perfect British Mystery Night</span>
+      <h2>What's in Your Snug?</h2>
+      <span>Tell Us About Your Evening</span>
     </div>
+    <p class="section-intro">Fill this out and it may be featured below as a Community Snug. Every submission is reviewed by British TV Hub before it's published &mdash; nothing goes live automatically.</p>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width:640px;background:#232b42;border:1px solid #3d4a60;border-radius:12px;padding:36px;display:flex;flex-direction:column;gap:20px;">
+      <div>
+        <label for="snug-name" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What should we call your Snug?</label>
+        <input type="text" id="snug-name" name="snug_name" placeholder="e.g. Susan's Rainy Sunday Snug" required style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+      </div>
+      <div>
+        <label for="snug-drink" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What are you drinking?</label>
+        <input type="text" id="snug-drink" name="drink" placeholder="e.g. Yorkshire Gold Tea" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+      </div>
+      <div>
+        <label for="snug-watch" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What are you watching or reading?</label>
+        <input type="text" id="snug-watch" name="watching_reading" placeholder="e.g. Vera, or The Thursday Murder Club" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+      </div>
+      <div>
+        <label for="snug-essential" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">What's your cozy essential?</label>
+        <input type="text" id="snug-essential" name="cozy_essential" placeholder="e.g. a wool blanket, a candle, shortbread" style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+      </div>
+      <div>
+        <label for="snug-why" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Why is this your perfect evening? (optional)</label>
+        <textarea id="snug-why" name="why" rows="3" placeholder="e.g. Rain outside, tea, Vera, wool blanket, and shortbread." style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;resize:vertical;"></textarea>
+      </div>
+      <div>
+        <label for="snug-email" style="display:block;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Your email (so we can credit you &mdash; never published)</label>
+        <input type="email" id="snug-email" name="email" placeholder="you@example.com" required style="width:100%;box-sizing:border-box;background:#1a2135;border:1px solid #3d4a60;border-radius:4px;padding:12px 14px;color:#f0e8d4;font-family:'Crimson Text',serif;font-size:16px;">
+      </div>
+      <button type="submit" class="btn" style="align-self:flex-start;border:none;cursor:pointer;">Share Your Snug &rarr;</button>
+    </form>
+  </div>
+
+  <div class="section" id="gallery">
+    <div class="section-head">
+      <h2>Community Snugs</h2>
+      <span>Curated by British TV Hub</span>
+    </div>
+    <p class="section-intro">A few favourite evenings, shared by fellow fans.</p>
     <div class="grid">
-      <div class="card" data-tags="six essentials stream">
-        <span class="card-label">Stream British TV</span>
-        <h3>&#128250; BritBox</h3>
-        <p>An extensive library of classic and contemporary British TV available in the US.</p>
-        <a class="card-link" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="sponsored noopener">View Options &rarr;</a>
+      <div class="card" data-tags="community snug example">
+        <span class="card-label">Rainy Sunday</span>
+        <h3>Susan's Rainy Sunday Snug</h3>
+        <p>&#127861; Yorkshire Gold Tea &middot; &#128367; Lavender Candle &middot; &#128250; <em>Vera</em> &middot; &#127850; Shortbread &middot; &#128218; <em>The Thursday Murder Club</em></p>
+        <p style="font-style:italic;color:#9aa3bd;">"Rain outside, tea, Vera, wool blanket, and shortbread."</p>
       </div>
-      <div class="card" data-tags="six essentials pick" style="border:1px solid #c9a96e;">
-        <div class="badge-row"><span class="badge">&#11088; British TV Hub Pick</span></div>
-        <span class="card-label">Classic Collection</span>
-        <h3>Inspector Morse: The Complete Series</h3>
-        <p>If British TV Hub could recommend just one detective series to begin with, it would be this one &mdash; thoughtful mysteries, unforgettable characters, and one of the finest detective dramas ever made.</p>
-        <a class="card-link" href="https://amzn.to/4w73jZ2" target="_blank" rel="sponsored noopener">View the Collection &rarr;</a>
-      </div>
-      <div class="card" data-tags="six essentials read">
-        <span class="card-label">Read the Originals</span>
-        <h3>&#128218; The Inspector Morse Novels</h3>
-        <p>Return to Morse's Oxford through Colin Dexter's original novels.</p>
-        <a class="card-link" href="https://amzn.to/4vwOxKb" target="_blank" rel="sponsored noopener">View the Book &rarr;</a>
-      </div>
-      <div class="card" data-tags="six essentials tea">
-        <span class="card-label">Perfect Cup of Tea</span>
-        <h3>&#9749; Twinings English Breakfast Tea</h3>
-        <p>A traditional tea for settling in with a book or an evening mystery.</p>
-        <a class="card-link" href="https://amzn.to/4fdyXgj" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
-      </div>
-      <div class="card" data-tags="six essentials blanket">
-        <span class="card-label">Cozy Comfort</span>
-        <h3>&#128717; Chunky Knit Throw Blanket</h3>
-        <p>For the long evenings spent with a book or a boxset.</p>
-        <a class="card-link" href="https://amzn.to/44n66RN" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
-      </div>
-      <div class="card" data-tags="six essentials candle">
-        <span class="card-label">Set the Mood</span>
-        <h3>&#128367; Sweet Water Decor "Warm + Cozy" Soy Candle</h3>
-        <p>Pine, orange, and cinnamon &mdash; a cozy-night staple.</p>
-        <a class="card-link" href="https://amzn.to/4wMXL5T" target="_blank" rel="sponsored noopener">Check Today's Price &rarr;</a>
-      </div>
-      <div class="card" data-tags="six essentials gifts">
-        <span class="card-label">For a Fellow Fan</span>
-        <h3>&#127873; Gift Guides</h3>
-        <p>A few ideas, gathered by mood and by budget, for any British TV fan.</p>
-        <a class="card-link" href="/essentials-gifts.html">See the Guides &rarr;</a>
+      <div class="card" data-tags="community snug example">
+        <span class="card-label">Winter Mystery Night</span>
+        <h3>James's Winter Mystery Night</h3>
+        <p>&#9749; Earl Grey &middot; &#129525; Wool Blanket &middot; &#128250; <em>Shetland</em> &middot; &#127851; Dark Chocolate</p>
+        <p style="font-style:italic;color:#9aa3bd;">"Cold outside, dark chocolate, and a case only Jimmy Perez can crack."</p>
       </div>
     </div>
   </div>
-
 
 <style>
 .bookmark-toggle summary{list-style:none;}
