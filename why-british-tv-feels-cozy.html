@@ -177,7 +177,7 @@ document.addEventListener('click', function(e){
 
 <div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
   <img src="/why-british-tv-feels-cozy-hero.webp" alt="A dark navy knit blanket beside a rain-streaked window glowing with warm bokeh lights" style="position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
-  <div class="rain-overlay" aria-hidden="true" style="position:absolute;right:0;top:0;width:55%;height:100%;overflow:hidden;pointer-events:none;z-index:1;"></div>
+  <div class="rain-overlay" aria-hidden="true" style="position:absolute;right:0;top:0;width:33%;height:57%;overflow:hidden;pointer-events:none;z-index:1;"></div>
   <style>
     .rain-overlay .drop {
       position: absolute;
@@ -199,13 +199,13 @@ document.addEventListener('click', function(e){
     (function(){
       var overlay = document.querySelector('.rain-overlay');
       if (!overlay) return;
-      var count = 40;
+      var count = 22;
       for (var i = 0; i < count; i++) {
         var drop = document.createElement('div');
         drop.className = 'drop';
         drop.style.left = (Math.random() * 100) + '%';
-        drop.style.height = (40 + Math.random() * 60) + 'px';
-        drop.style.animationDuration = (0.7 + Math.random() * 0.9) + 's';
+        drop.style.height = (24 + Math.random() * 36) + 'px';
+        drop.style.animationDuration = (0.6 + Math.random() * 0.8) + 's';
         drop.style.animationDelay = (Math.random() * 2) + 's';
         drop.style.opacity = (0.4 + Math.random() * 0.5);
         overlay.appendChild(drop);
