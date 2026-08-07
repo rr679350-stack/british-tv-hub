@@ -11,6 +11,7 @@ window.SITE_SEARCH_INDEX = [
   {"title":"What's New on BritBox","url":"/britbox.html"},
   {"title":"British Historical Fiction Books","url":"/british-historical-fiction-books.html"},
   {"title":"Who Outranks Who? British Detective Ranks","url":"/who-outranks-who.html"},
+  {"title":"British TV Acronyms Explained","url":"/british-tv-acronyms-explained.html"},
   {"title":"Best Cozy British Mystery Shows","url":"/cozy.html"},
   {"title":"If You Love Downton Abbey, Read These Books","url":"/downton-abbey-books.html"},
   {"title":"British TV Essentials","url":"/essentials.html"},
