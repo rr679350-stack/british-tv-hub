@@ -14,6 +14,7 @@ window.SITE_SEARCH_INDEX = [
   {"title":"British TV Acronyms Explained","url":"/british-tv-acronyms-explained.html"},
   {"title":"Cozy Mystery Settings","url":"/cozy-mystery-settings.html"},
   {"title":"Cozy Mystery Detectives","url":"/cozy-mystery-detectives.html"},
+  {"title":"Why British TV Feels Cozy","url":"/why-british-tv-feels-cozy.html"},
   {"title":"Best Cozy British Mystery Shows","url":"/cozy.html"},
   {"title":"If You Love Downton Abbey, Read These Books","url":"/downton-abbey-books.html"},
   {"title":"British TV Essentials","url":"/essentials.html"},
