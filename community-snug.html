@@ -49,12 +49,12 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Share Your Snug | Community | British TV Hub</title>
+<title>Share a Gift Idea | Community | British TV Hub</title>
 <meta name="description" content="Share your perfect British TV evening and see what fellow fans are curling up with — tea, blankets, mysteries, and more.">
 <link rel="canonical" href="https://britishtvhub.com/community-snug.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/community-snug.html">
-<meta property="og:title" content="Share Your Snug | Community | British TV Hub">
+<meta property="og:title" content="Share a Gift Idea | Community | British TV Hub">
 <meta property="og:description" content="Share your perfect British TV evening and see what fellow fans are curling up with — tea, blankets, mysteries, and more.">
 <meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
 <meta property="og:image:width" content="1200">
@@ -63,14 +63,14 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Share Your Snug | Community | British TV Hub">
+<meta name="twitter:title" content="Share a Gift Idea | Community | British TV Hub">
 <meta name="twitter:description" content="Share your perfect British TV evening and see what fellow fans are curling up with — tea, blankets, mysteries, and more.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Share Your Snug | Community | British TV Hub",
+  "name": "Share a Gift Idea | Community | British TV Hub",
   "description": "Share your perfect British TV evening and see what fellow fans are curling up with — tea, blankets, mysteries, and more.",
   "url": "https://britishtvhub.com/community-snug.html",
   "isPartOf": {
@@ -94,7 +94,7 @@ gtag('config', 'G-P1L8CVNKS6');
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Share Your Snug",
+      "name": "Share a Gift Idea",
       "item": "https://britishtvhub.com/community-snug.html"
     }
   ]
@@ -497,7 +497,7 @@ document.addEventListener('click', function(e){
     <div style="position:absolute;inset:0;background:linear-gradient(to right,var(--navy-deep) 42%,rgba(16,28,51,0.75) 62%,rgba(16,28,51,0.05) 100%);"></div>
     <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:600px;">
       <div class="page-hero-eyebrow">Community</div>
-      <h1>Share Your <em>Snug</em></h1>
+      <h1>Share a <em>Gift Idea</em></h1>
       <p class="page-hero-lead">Everyone's cozy evening looks a little different. Share your favourite blanket, tea, candle, mystery novel, or snack, and help inspire other British TV fans.</p>
       <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;color:#c9a96e;text-decoration:underline;">&larr; Back to The Snug</a>
     </div>
@@ -515,7 +515,7 @@ document.addEventListener('click', function(e){
         </header>
 
         <form id="share-snug-form" class="share-snug__form" action="https://formspree.io/f/mnpanvby" method="POST">
-          <input type="hidden" name="_subject" value="New Share Your Snug Submission">
+          <input type="hidden" name="_subject" value="New Gift Idea Submission">
 
           <div class="share-snug__trap" aria-hidden="true">
             <label>Leave this field empty
@@ -585,7 +585,7 @@ document.addEventListener('click', function(e){
             <input id="snug-email" name="email" type="email" maxlength="150" autocomplete="email" placeholder="Used only if we need to contact you">
           </div>
 
-          <button class="share-snug__button" type="submit">Share My Snug</button>
+          <button class="share-snug__button" type="submit">Share My Gift Idea</button>
 
           <p class="share-snug__privacy">Submissions are reviewed and are not published automatically. Please do not include private information in your recommendation.</p>
 
@@ -660,13 +660,13 @@ document.addEventListener('click', function(e){
           status.hidden = true;
           status.className = "share-snug__status";
           button.disabled = true;
-          button.textContent = "Sharing Your Snug\u2026";
+          button.textContent = "Sharing Your Gift Idea\u2026";
           try {
             const response = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
             if (!response.ok) throw new Error("Form submission failed.");
             form.reset();
             updateCount();
-            status.textContent = "\u2615 Thank you for sharing your snug! Every recommendation is personally reviewed before it is added to the Community Snug Collection.";
+            status.textContent = "\u2615 Thank you for sharing your gift idea! Every recommendation is personally reviewed before it is added to the Community Snug Collection.";
             status.classList.add("is-success");
             status.hidden = false;
             status.scrollIntoView({ behavior: "smooth", block: "center" });
