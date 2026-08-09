@@ -706,7 +706,8 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: August 2, 2026 (accuracy audit covering
-Unforgotten platform/cast, homepage overreach claim, cozy-mystery absolute
-claims, Murdoch/Brokenwood classification, Pluto TV caveats, and sitewide
-"Start Free Trial" wording — see git log commit 97c42e2).
+Last full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
+compliance, banned-superlative sweep, link/nav/footer/GA-ID integrity, monthly
+freshness, BritBox-UK false-listing check, fact-check-log reconciliation, and
+spot-verification of BritBox/Acorn "What's New" claims for August 2026 — see
+git log commit range from the accuracy-fixes commit through this run).
