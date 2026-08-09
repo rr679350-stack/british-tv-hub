@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunday Picks — Last Days of Summer</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1520;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #e8e4d8;
+  }
+  .email-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #10192b;
+  }
+  .header {
+    background-color: #0a1520;
+    padding: 40px 30px 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(201,169,110,0.25);
+  }
+  .header .eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 10px;
+  }
+  .header h1 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #c9a96e;
+    font-size: 34px;
+    margin: 0;
+  }
+  .theme-block {
+    margin: 30px 30px 10px;
+    padding: 18px 22px;
+    border-left: 3px solid #c9a96e;
+    background-color: rgba(201,169,110,0.06);
+  }
+  .theme-block h2 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 21px;
+    color: #f2efe4;
+    margin: 0 0 8px;
+  }
+  .theme-block p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0;
+  }
+  .pick {
+    margin: 30px 30px 0;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pick:last-of-type {
+    border-bottom: none;
+  }
+  .pick-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 6px;
+  }
+  .pick h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .pick p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #8b1a2e;
+    color: #f2efe4 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 2px;
+  }
+  .hidden-gem {
+    margin: 30px 30px 0;
+    padding: 22px 24px;
+    background-color: rgba(201,169,110,0.08);
+    border: 1px dashed rgba(201,169,110,0.4);
+  }
+  .hidden-gem .pick-eyebrow { color: #c9a96e; }
+  .hidden-gem h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 20px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .hidden-gem p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .storefront-cta {
+    margin: 36px 30px 0;
+    padding: 22px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 6px;
+  }
+  .storefront-cta p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 14px;
+  }
+  .merch-section {
+    margin: 40px 30px 0;
+    background-color: #0a1520;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 26px;
+  }
+  .merch-section img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .merch-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 22px 0 8px;
+  }
+  .merch-section h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+    padding: 0 20px;
+  }
+  .merch-section p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 20px;
+    padding: 0 30px;
+  }
+  .merch-buttons a {
+    display: inline-block;
+    margin: 0 6px 10px;
+    background-color: #c9a96e;
+    color: #1a2135 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 11px 18px;
+    border-radius: 2px;
+  }
+  .footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer a {
+    color: #c9a96e;
+    text-decoration: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+  }
+  .footer p {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    color: #7a7a8c;
+    margin: 14px 0 0;
+  }
+</style>
+</head>
+<body>
+<div class="email-wrapper">
+
+  <div class="header">
+    <p class="eyebrow">British TV Hub</p>
+    <h1>Sunday Picks</h1>
+  </div>
+
+  <div class="theme-block">
+    <h2>Last Days of Summer</h2>
+    <p>That bittersweet stretch before autumn creeps in — five shows to savor while the light's still golden, plus one hidden gem worth tracking down.</p>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 01</p>
+    <h3>Doc Martin</h3>
+    <p>A grumpy former surgeon trades London for a tiny Cornish village, and somehow the scenery steals almost every scene. Warm, funny, and soaked in that late-summer coastal light.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox →</a>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 02</p>
+    <h3>The Durrells</h3>
+    <p>A family swaps grey England for sun-drenched Corfu, and the result is pure golden nostalgia — messy, warm, and full of that "just one more summer" feeling.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/shows/the-durrells-in-corfu/" class="btn">Watch on PBS Masterpiece →</a>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 03</p>
+    <h3>Death in Paradise</h3>
+    <p>Easy island charm and a detective who never quite settles into paradise. Perfect for stretching that summer feeling a little further, wherever you're watching from.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox →</a>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 04</p>
+    <h3>Grantchester</h3>
+    <p>Long warm evenings, village fêtes, and a vicar who can't resist getting pulled into a mystery. Cambridgeshire in the 1950s has rarely looked so inviting.</p>
+    <a href="https://www.pbs.org/show/grantchester/" class="btn">Watch on PBS Masterpiece →</a>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 05</p>
+    <h3>The Detectorists</h3>
+    <p>Quiet, wistful, and gently funny — two friends wander the English countryside with metal detectors, chasing treasure and turning up something closer to peace.</p>
+    <a href="https://acorn.tv/detectorists/" class="btn">Watch on Acorn TV →</a>
+  </div>
+
+  <div class="hidden-gem">
+    <p class="pick-eyebrow">Hidden Gem</p>
+    <h3>The Café</h3>
+    <p>An easy-to-miss little sitcom set in a seafront café in Weston-super-Mare — only two series, but full of the same warm, small-town charm that makes a good seaside escape.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox →</a>
+  </div>
+
+  <div class="merch-section">
+    <img src="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/merch-collection-lifestyle-v2.png" alt="">
+    <h3>The British TV Hub Collection</h3>
+    <p>Cozy essentials for your next binge-watch — mugs, watchlist journals, and totes made for tea, telly, and turning pages.</p>
+    <div class="merch-buttons">
+      <a href="#">Add Some Cozy</a>
+      <a href="#">Start My List</a>
+      <a href="#">Carry the Cozy</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#">Support British TV Hub</a>
+    <p>© 2026 British TV Hub · britishtvhub.com</p>
+  </div>
+
+</div>
+</body>
+</html>
