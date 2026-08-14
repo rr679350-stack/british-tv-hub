@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The British TV Hub Autumn Gift Guide | Cozy Autumn Gifts for British TV & Mystery Fans</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/autumn-gift-guide.html">
+<meta property="og:title" content="The British TV Hub Autumn Gift Guide | British TV Hub">
+<meta property="og:description" content="Cozy autumn gifts for British TV and mystery fans — tea, throws, candles, books, and a few splurges for darkening evenings and rainy weekends.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/autumn-gift-hero.webp">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The British TV Hub Autumn Gift Guide | British TV Hub">
+<meta name="twitter:description" content="Cozy autumn gifts for British TV and mystery fans — tea, throws, candles, books, and a few splurges for darkening evenings and rainy weekends.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/autumn-gift-hero.webp">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Cozy autumn gifts for British TV and mystery fans — tea and teacups, throws, candles, books for autumn evenings, and British mystery night-in pairings.">
+<link rel="canonical" href="https://britishtvhub.com/autumn-gift-guide.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+  :root{
+    --navy: #1a2135;
+    --navy-deep: #0a1520;
+    --gold: #c9a96e;
+    --cream: #f3ede2;
+    --text-muted: #9090a8;
+    --card: #363f58;
+    --card-border: rgba(201,168,76,0.2);
+  }
+  .agg-body{
+    background:var(--navy-deep);
+    color:var(--cream);
+    font-family:'Crimson Text', serif;
+    line-height:1.6;
+  }
+  .agg-hero{
+    position:relative;
+    min-height:520px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    padding:60px 5% 70px;
+    text-align:center;
+    overflow:hidden;
+    background-image:
+      linear-gradient(180deg, rgba(10,21,32,0.15) 0%, rgba(10,21,32,0.55) 55%, rgba(10,21,32,0.92) 100%),
+      url('/autumn-gift-hero.webp');
+    background-size:cover;
+    background-position:center 30%;
+  }
+  .agg-hero-content{ position:relative; z-index:3; max-width:850px; margin:0 auto; }
+  .agg-leaf-field{ position:absolute; inset:0; z-index:2; overflow:hidden; pointer-events:none; }
+  .agg-leaf{
+    position:absolute; top:-60px; opacity:0.9;
+    filter:drop-shadow(0 3px 4px rgba(0,0,0,0.35));
+    animation-name:agg-leaf-fall; animation-timing-function:linear; animation-iteration-count:infinite;
+  }
+  .agg-leaf svg{ display:block; animation-name:agg-leaf-spin; animation-timing-function:ease-in-out; animation-iteration-count:infinite; }
+  @keyframes agg-leaf-fall{
+    0%{ transform:translate(0, -10%); } 25%{ transform:translate(28px, 190px); }
+    50%{ transform:translate(-18px, 380px); } 75%{ transform:translate(24px, 560px); }
+    100%{ transform:translate(0, 740px); }
+  }
+  @keyframes agg-leaf-spin{
+    0%{ transform:rotate(0deg) rotateY(0deg); } 50%{ transform:rotate(190deg) rotateY(180deg); } 100%{ transform:rotate(360deg) rotateY(360deg); }
+  }
+  @media (prefers-reduced-motion: reduce){ .agg-leaf{ animation:none; display:none; } }
+  .agg-eyebrow{ font-family:'Raleway', sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+  .agg-hero h1{ font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(2.1rem, 4.5vw, 3.4rem); margin:0 0 20px; color:var(--cream); line-height:1.15; }
+  .agg-hero-sub{ font-family:'Crimson Text', serif; font-style:italic; font-size:1.25rem; color:var(--text-muted); max-width:600px; margin:0 auto; }
+  .agg-part{ padding:70px 5%; max-width:1100px; margin:0 auto; }
+  .agg-part-header{ display:flex; align-items:baseline; gap:18px; margin-bottom:36px; border-bottom:1px solid rgba(201,168,76,0.2); padding-bottom:18px; }
+  .agg-part-number{ font-family:'Playfair Display', serif; font-style:italic; font-size:1rem; color:var(--gold); white-space:nowrap; }
+  .agg-part-title{ font-family:'Playfair Display', serif; font-weight:600; font-size:1.8rem; color:var(--cream); margin:0; }
+  .agg-part-intro{ font-size:1.05rem; color:var(--text-muted); max-width:640px; margin:0 0 24px; }
+  .agg-section-photo{ width:100%; max-height:380px; object-fit:cover; border-radius:14px; border:1px solid var(--card-border); box-shadow:0 16px 40px rgba(0,0,0,0.3); margin-bottom:34px; display:block; }
+  .agg-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .agg-product-card{ background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .agg-product-card:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.3); }
+  .agg-product-card .agg-thumb{ height:150px; overflow:hidden; border-bottom:1px solid var(--card-border); }
+  .agg-product-card .agg-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .agg-product-body{ padding:20px 22px 24px; }
+  .agg-product-card.agg-no-thumb .agg-product-body{ padding:22px 24px 26px; }
+  .agg-product-name{ font-family:'Playfair Display', serif; font-size:1.05rem; color:var(--cream); margin:0 0 8px; }
+  .agg-product-desc{ font-size:0.92rem; color:var(--text-muted); line-height:1.55; margin:0 0 16px; }
+  .agg-cta-pill{ display:inline-block; font-family:'Raleway', sans-serif; font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--navy); background:var(--gold); padding:10px 18px; border-radius:2px; text-decoration:none; }
+  .agg-callout{ max-width:1100px; margin:20px auto 70px; padding:36px 5%; }
+  .agg-callout-box{ background:linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.03)); border:1px solid var(--card-border); border-radius:14px; padding:36px 40px; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; }
+  .agg-callout-text h3{ font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--cream); margin:0 0 8px; }
+  .agg-callout-text p{ color:var(--text-muted); margin:0; font-size:0.98rem; }
+  .agg-disclosure{ text-align:center; padding:0 5% 40px; font-family:'Raleway',sans-serif; font-size:11px; color:var(--text-muted); max-width:700px; margin:0 auto; }
+</style>
+</head>
+<body class="agg-body">
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <div class="nav-links">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-label">Browse</div>
+          <a href="/shows-index.html#genres">By Genre</a>
+          <a href="/top10.html">Police Procedurals</a>
+          <a href="/cozy.html">Cozy Mysteries</a>
+          <a href="/seasonal-collections.html">Seasonal Collections</a>
+          <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+          <a href="/books">Literary Adaptations</a>
+          <a href="/hidden-gems.html">Hidden Gems</a>
+          <a href="/page-to-screen.html">From Page to Screen</a>
+          <div class="nav-dropdown-label">Popular Collections</div>
+          <a href="/shows-like-vera-tv.html">Shows Like Vera</a>
+          <a href="/shows-like-shetland-tv.html">Shows Like Shetland</a>
+          <a href="/detective-partnerships.html">British Detective Partnerships</a>
+          <a href="/masterpiece2026.html">PBS Masterpiece</a>
+          <div class="nav-dropdown-label">Interactive</div>
+          <a href="/quiz.html">Match Me a Mystery</a>
+          <a href="/meet-tilly.html">Ask Tilly</a>
+          <a href="/watch-list.html">Watch List</a>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<div class="agg-hero">
+  <div class="agg-leaf-field">
+    <span class="agg-leaf" style="left:73.5%; animation-duration:14.5s; animation-delay:5.6s;"><svg width="19" height="19" viewBox="0 0 24 24" style="animation-duration:4.7s; animation-delay:5.6s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#a8531f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:62.8%; animation-duration:11.9s; animation-delay:8.0s;"><svg width="16" height="16" viewBox="0 0 24 24" style="animation-duration:5.0s; animation-delay:8.0s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#d4a24c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:67.4%; animation-duration:13.9s; animation-delay:0.9s;"><svg width="14" height="14" viewBox="0 0 24 24" style="animation-duration:5.2s; animation-delay:0.9s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#d4a24c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:94.6%; animation-duration:12.7s; animation-delay:6.5s;"><svg width="14" height="14" viewBox="0 0 24 24" style="animation-duration:3.9s; animation-delay:6.5s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#a8531f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:57.6%; animation-duration:14.3s; animation-delay:0.4s;"><svg width="22" height="22" viewBox="0 0 24 24" style="animation-duration:5.0s; animation-delay:0.4s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#b5651d" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:73.1%; animation-duration:12.1s; animation-delay:8.4s;"><svg width="19" height="19" viewBox="0 0 24 24" style="animation-duration:5.1s; animation-delay:8.4s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#e8b45c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:58.5%; animation-duration:11.4s; animation-delay:6.5s;"><svg width="23" height="23" viewBox="0 0 24 24" style="animation-duration:4.9s; animation-delay:6.5s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#c9822e" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:84.0%; animation-duration:10.4s; animation-delay:3.2s;"><svg width="15" height="15" viewBox="0 0 24 24" style="animation-duration:4.2s; animation-delay:3.2s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#9c5a2a" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:59.4%; animation-duration:10.7s; animation-delay:1.1s;"><svg width="14" height="14" viewBox="0 0 24 24" style="animation-duration:3.7s; animation-delay:1.1s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#e8b45c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:55.0%; animation-duration:14.5s; animation-delay:2.1s;"><svg width="24" height="24" viewBox="0 0 24 24" style="animation-duration:4.7s; animation-delay:2.1s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#d4a24c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:72.2%; animation-duration:10.2s; animation-delay:5.7s;"><svg width="17" height="17" viewBox="0 0 24 24" style="animation-duration:5.2s; animation-delay:5.7s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#b5651d" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:68.6%; animation-duration:13.5s; animation-delay:9.6s;"><svg width="16" height="16" viewBox="0 0 24 24" style="animation-duration:3.8s; animation-delay:9.6s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#c9822e" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:55.4%; animation-duration:11.9s; animation-delay:4.6s;"><svg width="16" height="16" viewBox="0 0 24 24" style="animation-duration:5.2s; animation-delay:4.6s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#a8531f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:62.8%; animation-duration:9.8s; animation-delay:7.3s;"><svg width="15" height="15" viewBox="0 0 24 24" style="animation-duration:5.1s; animation-delay:7.3s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#d4a24c" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:95.6%; animation-duration:14.2s; animation-delay:0.0s;"><svg width="20" height="20" viewBox="0 0 24 24" style="animation-duration:5.9s; animation-delay:0.0s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#c9822e" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:63.6%; animation-duration:14.1s; animation-delay:3.9s;"><svg width="15" height="15" viewBox="0 0 24 24" style="animation-duration:5.1s; animation-delay:3.9s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#e0973f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:63.7%; animation-duration:13.6s; animation-delay:2.6s;"><svg width="17" height="17" viewBox="0 0 24 24" style="animation-duration:4.3s; animation-delay:2.6s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#c9822e" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+    <span class="agg-leaf" style="left:58.0%; animation-duration:12.8s; animation-delay:2.1s;"><svg width="18" height="18" viewBox="0 0 24 24" style="animation-duration:3.5s; animation-delay:2.1s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#a8531f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
+  </div>
+  <div class="agg-hero-content">
+    <div class="agg-eyebrow">A British TV Hub Guide</div>
+    <h1>The British TV Hub Autumn Gift Guide</h1>
+    <p class="agg-hero-sub">For the darkening evenings, the rainy weekends, and everyone who's happiest with a mystery on and a cup of tea in hand.</p>
+  </div>
+</div>
+
+
+<!-- PART ONE: TEA & TEACUPS -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">First</span>
+    <h2 class="agg-part-title">Tea &amp; Teacups</h2>
+  </div>
+  <p class="agg-part-intro">Every good autumn evening starts here. A proper cuppa and something worth drinking it from.</p>
+  <img class="agg-section-photo" src="/autumn-gift-tea.webp" alt="Tea service by an autumn window" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Twinings Tea Selection</h3>
+        <p class="agg-product-desc">A proper British staple — the tea that's always in the cupboard when the nights start drawing in.</p>
+        <a href="https://amzn.to/4fdyXgj" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British Royal Tea Set</h3>
+        <p class="agg-product-desc">Six cups of quiet ceremony — the kind of set that turns an ordinary evening into something a little more special.</p>
+        <a href="https://amzn.to/4bPGUat" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART TWO: BLANKETS & THROWS -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Second</span>
+    <h2 class="agg-part-title">Blankets &amp; Throws</h2>
+  </div>
+  <p class="agg-part-intro">For the moment you finally sit down and don't plan on moving again for a while.</p>
+  <img class="agg-section-photo" src="/autumn-gift-blankets.webp" alt="Knit throw draped over a couch in a cozy living room" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Berkshire Faux Fur Throw</h3>
+        <p class="agg-product-desc">Reversible, generously sized, and about as far from "watching TV cold" as it gets.</p>
+        <a href="https://amzn.to/4vA38Ew" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Chunky Knit Throw</h3>
+        <p class="agg-product-desc">Heavier and slower to make, which is rather the point on a proper autumn night.</p>
+        <a href="https://amzn.to/44n66RN" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART THREE: CANDLES & COZY ATMOSPHERE -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Third</span>
+    <h2 class="agg-part-title">Candles &amp; Cozy Atmosphere</h2>
+  </div>
+  <p class="agg-part-intro">Small things that change the whole feel of a room once the sun sets before dinner.</p>
+  <img class="agg-section-photo" src="/autumn-gift-candles.webp" alt="Cluster of lit candles in a cozy room" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Warm &amp; Cozy Soy Candle</h3>
+        <p class="agg-product-desc">A candle that makes the room feel like autumn arrived on purpose.</p>
+        <a href="https://amzn.to/4wMXL5T" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART FOUR: BOOKS FOR AUTUMN EVENINGS -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Fourth</span>
+    <h2 class="agg-part-title">Books for Autumn Evenings</h2>
+  </div>
+  <p class="agg-part-intro">Something to read once the tea's gone cold and the telly's off for the night.</p>
+  <img class="agg-section-photo" src="/autumn-gift-books.webp" alt="Stack of books with tea by a fireplace" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">The Thursday Murder Club</h3>
+        <p class="agg-product-desc">By Richard Osman. Four retirees in a retirement village solve cold cases over tea and biscuits — the quintessential cozy modern mystery.</p>
+        <a href="https://www.amazon.com/dp/1984880969?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Agatha Raisin and the Quiche of Death</h3>
+        <p class="agg-product-desc">By M.C. Beaton. Villagey, funny, and a little prickly — the book that kicked off the whole cozy-village mystery wave.</p>
+        <a href="https://amzn.to/4x9KvsH" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">The No. 1 Ladies' Detective Agency</h3>
+        <p class="agg-product-desc">By Alexander McCall Smith. Gentle, warm-hearted mysteries set in Botswana — a beloved cozy staple, autumn evening or not.</p>
+        <a href="https://amzn.to/4x30n06" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">The Marlow Murder Club</h3>
+        <p class="agg-product-desc">By Robert Thorogood. Three unlikely women solving murders along the Thames — perfect for anyone who tore through Thursday Murder Club.</p>
+        <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Miss Marple: The Complete Short Stories</h3>
+        <p class="agg-product-desc">By Agatha Christie. Bite-sized mysteries, perfect for reading one a night by the fire.</p>
+        <a href="https://amzn.to/4wZ1jCy" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Magpie Murders</h3>
+        <p class="agg-product-desc">By Anthony Horowitz. A book-within-a-book mystery — a modern cozy classic with a clever twisty structure.</p>
+        <a href="https://amzn.to/4ga3Xhw" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART FIVE: NIGHT-IN PAIRINGS -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Fifth</span>
+    <h2 class="agg-part-title">British Mystery Night-In Pairings</h2>
+  </div>
+  <p class="agg-part-intro">A show and its shelf-mate, for when you want to watch it and then keep living in it a little longer.</p>
+  <img class="agg-section-photo" src="/autumn-gift-pairings.webp" alt="Book, tea, and candle in front of a TV showing a cozy village scene" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Vera &rarr; The Crow Trap</h3>
+        <p class="agg-product-desc">By Ann Cleeves. The novel that started it all — moody Northumberland atmosphere in book form.</p>
+        <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Shetland &rarr; Raven Black</h3>
+        <p class="agg-product-desc">By Ann Cleeves. Same author, wilder setting — the first Jimmy Perez mystery.</p>
+        <a href="https://www.amazon.com/dp/0312359675?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Midsomer Murders &rarr; The Killings at Badger's Drift</h3>
+        <p class="agg-product-desc">By Caroline Graham. The source novel behind the very first episode.</p>
+        <a href="https://www.amazon.com/dp/1631943294?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Inspector Morse &rarr; Last Bus to Woodstock</h3>
+        <p class="agg-product-desc">By Colin Dexter. Where it all began for Morse, Lewis, and Oxford's dreaming spires.</p>
+        <a href="https://www.amazon.com/dp/1509875514?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Grantchester &rarr; Sidney Chambers and the Shadow of Death</h3>
+        <p class="agg-product-desc">By James Runcie. The first Grantchester Mysteries book — same vicar-detective partnership.</p>
+        <a href="https://www.amazon.com/dp/1632862891?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Father Brown &rarr; The Innocence of Father Brown</h3>
+        <p class="agg-product-desc">By G.K. Chesterton. The original short story collection that introduced the priest-detective.</p>
+        <a href="https://www.amazon.com/dp/1603749667?tag=britishtvhub-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART SIX: A FEW SPLURGES (includes British TV Hub Shop) -->
+<section class="agg-part">
+  <div class="agg-part-header">
+    <span class="agg-part-number">And, finally</span>
+    <h2 class="agg-part-title">A Few Splurges</h2>
+  </div>
+  <p class="agg-part-intro">Not essential. Just genuinely lovely, if you're in the mood to treat yourself &mdash; or someone else &mdash; including a few favourites from the British TV Hub Shop.</p>
+  <img class="agg-section-photo" src="/autumn-gift-splurges.webp" alt="Cozy evening scene with British TV Hub mug, books, and lantern" loading="lazy">
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Tilley T1 Hat</h3>
+        <p class="agg-product-desc">Less "cozy night in," more "long autumn walk before you come home to one." A proper countryside classic.</p>
+        <a href="https://amzn.to/44FwBC3" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-cozy-cup.webp" alt="A Cozy Cup for British TV Nights" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">A Cozy Cup for British TV Nights &mdash; $19.99</h3>
+        <p class="agg-product-desc">Tea, coffee, or whatever keeps you company through one more episode. Made with British TV nights in mind.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552182691" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-journal.webp" alt="British TV Notes Hardcover Journal" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Notes Hardcover Journal &mdash; $24.99</h3>
+        <p class="agg-product-desc">For jotting down favorite mysteries and characters &mdash; the recommendations you swear you'll remember later.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552950826" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-watchlist.webp" alt="British TV Watchlist Notebook" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Watchlist Notebook &mdash; $24.99</h3>
+        <p class="agg-product-desc">For the inevitable "what are we watching next?" &mdash; keep this autumn's watchlist all in one place.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552217499" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-pillow.webp" alt="British TV Hub Pillow" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Pillow &mdash; $39.99</h3>
+        <p class="agg-product-desc">A little British TV Hub for your favorite viewing spot. Add a throw and something good on, and the evening's sorted.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552961525" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-enamel-mug.webp" alt="British TV Hub Enamel Mug" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Enamel Mug &mdash; $30.00</h3>
+        <p class="agg-product-desc">For tea in the garden, on a walk, or wherever your autumn reading happens to take you.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552012228" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-tote.webp" alt="British TV Hub Tote Bag" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Tote Bag &mdash; $44.99</h3>
+        <p class="agg-product-desc">For library trips, bookshop browsing, and carrying home whatever mystery you didn't intend to buy.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552239525" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSS-LINK CALLOUT -->
+<div class="agg-callout">
+  <div class="agg-callout-box">
+    <div class="agg-callout-text">
+      <h3>Need something to watch with your tea?</h3>
+      <p>Pair tonight's cup with a pick from our Cozy Autumn Mysteries guide.</p>
+    </div>
+    <a href="/cozy-autumn-mysteries.html" class="agg-cta-pill">Explore the Guide &rarr;</a>
+  </div>
+</div>
+
+<p class="agg-disclosure">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases.</p>
+
+<footer style="background:#1a2135;border-top:1px solid #3d4a60;padding:48px 40px 28px;">
+  <!-- Brand -->
+  <div style="text-align:center;max-width:420px;margin:0 auto 36px;">
+    <img src="/footer-brand.webp" alt="British TV Hub — Helping fans discover the very best of British mysteries, dramas, hidden gems, and the books behind their favorite television series." loading="lazy" width="1536" height="1024" style="width:100%;height:auto;display:block;border:1px solid #3d4a60;">
+  </div>
+
+  <div style="border-top:1px solid #3d4a60;max-width:960px;margin:0 auto 36px;"></div>
+
+  <!-- Link columns -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:32px;max-width:960px;margin:0 auto 36px;text-align:left;">
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/start-here" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Discover</a>
+      <a href="/shows-index.html#genres" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Browse by Genre</a>
+      <a href="/agatha-christie.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Agatha Christie</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Community</div>
+      <a href="/#nl-anchor" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Newsletter</a>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Membership</a>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Facebook Community</a>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Ultimate British Bookshelf</a>
+      <a href="mailto:info@britishtvhub.com" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Contact</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Resources</div>
+      <a href="/faq.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">FAQ</a>
+      <a href="/partner.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Partner Information</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">Gifts and More</div>
+      <a href="/merch.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">British TV Hub Merch</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">British TV Hub Marketplace (on Amazon)</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8b95b8;margin-bottom:12px;">About</div>
+      <a href="/about.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">About</a>
+      <a href="/support.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Support British TV Hub</a>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-bottom:24px;">
+    <a href="/meet-tilly.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;background:transparent;color:#c9a96e;border:1px solid #c9a96e;padding:11px 20px;text-decoration:none;display:inline-block;font-weight:600;">Ask Tilly &rarr;</a>
+  </div>
+
+  <div style="display:flex;gap:10px;justify-content:center;margin:0 auto 24px;flex-wrap:wrap;">
+    <button onclick="shareOnFacebook()" title="Share on Facebook" style="display:inline-flex;align-items:center;justify-content:center;gap:4px;background:#c9a96e;color:#1a2135;border:none;padding:10px 18px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">f <span style="font-size:9px;">FB</span></button>
+    <button onclick="shareOnTwitter()" title="Share on Twitter" style="display:inline-flex;align-items:center;justify-content:center;gap:4px;background:#c9a96e;color:#1a2135;border:none;padding:10px 18px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">&#120143; <span style="font-size:9px;">X</span></button>
+    <button onclick="shareOnPinterest()" title="Save to Pinterest" style="display:inline-flex;align-items:center;justify-content:center;gap:4px;background:#c9a96e;color:#1a2135;border:none;padding:10px 18px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">P <span style="font-size:9px;">PIN</span></button>
+    <button onclick="copyLink()" title="Copy link to clipboard" style="display:inline-flex;align-items:center;justify-content:center;gap:4px;background:#c9a96e;color:#1a2135;border:none;padding:10px 18px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;">&#128279; <span style="font-size:9px;">COPY</span></button>
+  </div>
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <!-- Bottom bar -->
+  <div style="border-top:1px solid #3d4a60;max-width:960px;margin:0 auto;padding-top:24px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Discover &nbsp;&bull;&nbsp; Watch &nbsp;&bull;&nbsp; Read &nbsp;&bull;&nbsp; Explore</div>
+    <p style="font-family:'Crimson Text',serif;font-size:15px;font-style:italic;color:#9090a8;margin:0 0 14px;">See you back for the next recommendation.</p>
+    <div style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;letter-spacing:1px;margin-bottom:10px;">&copy; <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp; <a href="/privacy.html" style="color:#88898b;text-decoration:underline;">Privacy</a></div>
+    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#88898b;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html></body></html>
