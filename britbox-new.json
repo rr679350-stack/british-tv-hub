@@ -1,110 +1,110 @@
 {
-  "month": "August 2026",
-  "updated": "2026-08-01",
-  "highlight": {
-    "title": "A Woman of Substance",
-    "badge": "BritBox Original · Complete Season",
-    "description": "Jessica Reynolds portrays the young Emma Harte, while Brenda Blethyn plays Emma later in life, in this sweeping saga of a Yorkshire maid's rise to a global business empire. Based on Barbara Taylor Bradford's novel, the complete first season is now available to stream.",
-    "tags": [
-      "Period drama",
-      "Brenda Blethyn"
+    "month": "August 2026",
+    "updated": "2026-08-01",
+    "highlight": {
+        "title": "The Hardacres",
+        "badge": "BritBox Original · North America Premiere",
+        "description": "Claire Cooper and Liam McMahon return as Mary and Sam Hardacre. Series 2 follows the family as they adjust to life at Hardacre Hall after their rise into Yorkshire's landed society.",
+        "tags": [
+            "Period drama",
+            "New series"
+        ],
+        "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    "new_arrivals": [
+        {
+            "title": "A Woman of Substance",
+            "season": "Complete Season",
+            "available": "Now streaming",
+            "badge": "BritBox Original · North America Premiere",
+            "description": "Jessica Reynolds portrays the young Emma Harte, while Brenda Blethyn plays Emma later in life, in this sweeping saga of a Yorkshire maid's rise to a global business empire. Based on Barbara Taylor Bradford's novel, the complete first season is now available to stream.",
+            "tags": [
+                "Period drama",
+                "Brenda Blethyn"
+            ],
+            "editors_pick": false,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "The Good Ship Murder",
+            "season": "Series 3",
+            "available": "August 25",
+            "badge": "BritBox Exclusive · North America Premiere",
+            "description": "Shayne Ward and Catherine Tyldesley return as a former detective turned cabaret singer and his First Officer sleuthing partner. Series 3 follows Jack and Kate as they investigate murders aboard a luxury cruise ship touring the Mediterranean.",
+            "tags": [
+                "Cozy mystery",
+                "New series"
+            ],
+            "editors_pick": true,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "Gone",
+            "season": "Series 1",
+            "available": "Now streaming",
+            "badge": "BritBox Exclusive · North America Premiere",
+            "description": "David Morrissey and Eve Myles star in this mystery about the disappearance of a married music teacher, whose husband becomes the focus of a tense police investigation.",
+            "tags": [
+                "Thriller",
+                "New series"
+            ],
+            "editors_pick": false,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "Vanity Fair",
+            "season": "2018 Series — complete",
+            "available": "August 19",
+            "badge": "New to BritBox · Classic Adaptation",
+            "description": "Olivia Cooke stars as Becky Sharp in this acclaimed 2018 adaptation of Thackeray's novel, following her ambitious rise through Regency-era society against the backdrop of the Napoleonic Wars.",
+            "tags": [
+                "Period drama",
+                "Olivia Cooke"
+            ],
+            "editors_pick": false,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        }
     ],
-    "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-  },
-  "new_arrivals": [
-    {
-      "title": "The Hardacres",
-      "season": "Series 2",
-      "available": "August 5 · New episodes weekly",
-      "badge": "BritBox Original · North America Premiere",
-      "description": "Claire Cooper and Liam McMahon return as Mary and Sam Hardacre. Series 2 follows the family as they adjust to life at Hardacre Hall after their rise into Yorkshire's landed society.",
-      "tags": [
-        "Period drama",
-        "New series"
-      ],
-      "editors_pick": true,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "The Good Ship Murder",
-      "season": "Series 3",
-      "available": "August 25",
-      "badge": "BritBox Exclusive · North America Premiere",
-      "description": "Shayne Ward and Catherine Tyldesley return as a former detective turned cabaret singer and his First Officer sleuthing partner. Series 3 follows Jack and Kate as they investigate murders aboard a luxury cruise ship touring the Mediterranean.",
-      "tags": [
-        "Cozy mystery",
-        "New series"
-      ],
-      "editors_pick": true,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Gone",
-      "season": "Series 1",
-      "available": "Now streaming",
-      "badge": "BritBox Exclusive · North America Premiere",
-      "description": "David Morrissey and Eve Myles star in this mystery about the disappearance of a married music teacher, whose husband becomes the focus of a tense police investigation.",
-      "tags": [
-        "Thriller",
-        "New series"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Vanity Fair",
-      "season": "2018 Series — complete",
-      "available": "August 19",
-      "badge": "New to BritBox · Classic Adaptation",
-      "description": "Olivia Cooke stars as Becky Sharp in this acclaimed 2018 adaptation of Thackeray's novel, following her ambitious rise through Regency-era society against the backdrop of the Napoleonic Wars.",
-      "tags": [
-        "Period drama",
-        "Olivia Cooke"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    }
-  ],
-  "originals": [
-    {
-      "title": "Happy Valley",
-      "seasons": "3 series",
-      "description": "Sarah Lancashire won a BAFTA for her portrayal of West Yorkshire police sergeant Catherine Cawood, among other honours. Intense, perfectly written, and utterly unmissable.",
-      "tags": [
-        "Crime drama",
-        "Yorkshire"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Trigger Point",
-      "seasons": "Seasons 1–3",
-      "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
-      "tags": [
-        "Thriller",
-        "Vicky McClure"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "Beyond Paradise",
-      "seasons": "Seasons 1–4",
-      "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
-      "tags": [
-        "Cozy mystery",
-        "Devon & Cornwall"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    {
-      "title": "The Other Bennet Sister",
-      "seasons": "Series 1 — complete",
-      "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
-      "tags": [
-        "Regency drama",
-        "Jane Austen"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    }
-  ]
+    "originals": [
+        {
+            "title": "Happy Valley",
+            "seasons": "3 series",
+            "description": "Sarah Lancashire won a BAFTA for her portrayal of West Yorkshire police sergeant Catherine Cawood, among other honours. Intense, perfectly written, and utterly unmissable.",
+            "tags": [
+                "Crime drama",
+                "Yorkshire"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "Trigger Point",
+            "seasons": "Seasons 1–3",
+            "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
+            "tags": [
+                "Thriller",
+                "Vicky McClure"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "Beyond Paradise",
+            "seasons": "Seasons 1–4",
+            "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
+            "tags": [
+                "Cozy mystery",
+                "Devon & Cornwall"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        },
+        {
+            "title": "The Other Bennet Sister",
+            "seasons": "Series 1 — complete",
+            "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
+            "tags": [
+                "Regency drama",
+                "Jane Austen"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        }
+    ]
 }
