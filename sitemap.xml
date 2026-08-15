@@ -10,6 +10,12 @@
   
   <!-- Primary Guide Pages -->
   <url>
+    <loc>https://britishtvhub.com/start-here.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://britishtvhub.com/shows.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -482,6 +488,12 @@
   <url>
     <loc>https://britishtvhub.com/why-british-tv-feels-cozy.html</loc>
     <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/merch.html</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
