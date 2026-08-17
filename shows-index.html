@@ -159,7 +159,7 @@ gtag('config', 'G-P1L8CVNKS6');
     .show-card { background: var(--bg-card); border: 1px solid var(--border); padding: 22px 24px; transition: border-color 0.2s, background 0.2s; display: block; }
     .show-card:hover { border-color: var(--gold); background: #2a3248; }
     .show-card-name { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); margin-bottom: 6px; line-height: 1.3; }
-    .show-card-meta { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 10px; }
+    .show-card-meta { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
     .show-card-where { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); }
     .platform-btn { display: inline-block; margin-top: 10px; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,169,110,0.5); background: transparent; padding: 6px 12px; border-radius: 2px; transition: background 0.2s, color 0.2s; text-decoration: none; }
     .show-card:hover .platform-btn { background: var(--gold); color: var(--bg-dark); border-color: var(--gold); }
@@ -1406,7 +1406,6 @@ document.addEventListener('click', function(e){
   <a href="/british-period-dramas.html" class="genre-chip">Period Dramas</a>
   <a href="/cozy.html" class="genre-chip">Cozy &amp; Gentle</a>
   <a href="/hidden-gems.html" class="genre-chip">Hidden Gems</a>
-  <a href="#all-shows" class="genre-chip">All Shows</a>
   <input type="text" id="show-search-input" placeholder="Find a series..." autocomplete="off" oninput="filterShowCards(this.value)" style="flex:1;min-width:180px;max-width:260px;box-sizing:border-box;background:#1e2433;border:1px solid #4a5570;color:#f0e8d4;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;border-radius:20px;outline:none;">
 </div>
 <p id="show-search-empty" style="display:none;max-width:1100px;margin:-20px auto 20px;font-family:'Crimson Text',serif;font-style:italic;color:#9090a8;">No shows match your search.</p>
@@ -1504,181 +1503,7 @@ function filterShowCards(query){
 </div>
 <!-- END NEW THIS MONTH -->
 
-  <p class="section-label" id="most-watched">Our Picks</p>
-  <div class="shows-grid" style="margin-bottom:48px;">
 
-    <a href="/shows/inspector-morse.html" class="show-card" data-name="Inspector Morse">
-      <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;">British TV Hub Pick</p>
-      <p class="show-card-name">Inspector Morse</p>
-      <p class="show-card-meta">Crime Drama · 7 Series · ITV</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/all-creatures-great-and-small.html" class="show-card" data-name="All Creatures Great and Small">
-      <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;">British TV Hub Pick</p>
-      <p class="show-card-name">All Creatures Great and Small</p>
-      <p class="show-card-meta">Period Drama · 6+ Seasons · PBS</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/sherlock.html" class="show-card" data-name="Sherlock">
-      <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;">British TV Hub Pick</p>
-      <p class="show-card-name">Sherlock</p>
-      <p class="show-card-meta">Crime Drama · 4 Seasons · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/grantchester.html" class="show-card" data-name="Grantchester">
-      <p class="show-card-name">Grantchester</p>
-      <p class="show-card-meta">Cozy Mystery · 11 Seasons · PBS</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-  </div>
-
-  <p class="section-label" id="all-shows">The British TV Hub Library</p>
-  <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-dim);margin:-12px 0 28px;max-width:640px;">Browse the full library below, or head to the <a href="/hidden-gems.html" style="color:#c9a96e;">Hidden Gems collection</a> for shows beyond the household names.</p>
-
-  <div class="shows-grid">
-
-    <a href="/shows/blue-lights.html" class="show-card" data-name="Blue Lights">
-      <p class="show-card-name">Blue Lights</p>
-      <p class="show-card-meta">Crime Drama · 3 Seasons · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/death-in-paradise.html" class="show-card" data-name="Death in Paradise">
-      <p class="show-card-name">Death in Paradise</p>
-      <p class="show-card-meta">Cozy Mystery · 15 Seasons · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/doc-martin.html" class="show-card" data-name="Doc Martin">
-      <p class="show-card-name">Doc Martin</p>
-      <p class="show-card-meta">Drama · 10 Seasons · ITV</p>
-      <span class="platform-btn">Acorn TV &rarr;</span>
-    </a>
-
-    <a href="/shows/happy-valley.html" class="show-card" data-name="Happy Valley">
-      <p class="show-card-name">Happy Valley</p>
-      <p class="show-card-meta">Crime Drama · 3 Seasons · BBC</p>
-      <span class="platform-btn">BritBox →</span>
-    </a>
-
-    <a href="/shows/inspector-morse.html" class="show-card" data-name="Inspector Morse">
-      <p class="show-card-name">Inspector Morse</p>
-      <p class="show-card-meta">Crime Drama · 33 Episodes · ITV</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/line-of-duty.html" class="show-card" data-name="Line of Duty">
-      <p class="show-card-name">Line of Duty</p>
-      <p class="show-card-meta">Thriller · 6 Seasons · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/ludwig.html" class="show-card" data-name="Ludwig">
-      <p class="show-card-name">Ludwig</p>
-      <p class="show-card-meta">Mystery Comedy · 1 Season · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/marlow-murder-club.html" class="show-card" data-name="The Marlow Murder Club">
-      <p class="show-card-name">The Marlow Murder Club</p>
-      <p class="show-card-meta">Cozy Mystery · 2 Seasons · PBS</p>
-      <span class="platform-btn">PBS Masterpiece &rarr;</span>
-    </a>
-
-    <a href="/shows/midsomer-murders.html" class="show-card" data-name="Midsomer Murders">
-      <p class="show-card-name">Midsomer Murders</p>
-      <p class="show-card-meta">Cozy Mystery · 25+ Seasons · ITV</p>
-      <span class="platform-btn">Acorn TV &rarr;</span>
-    </a>
-
-    <a href="/shows/miss-marple.html" class="show-card" data-name="Miss Marple">
-      <p class="show-card-name">Miss Marple</p>
-      <p class="show-card-meta">Cozy Mystery · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/professor-t.html" class="show-card" data-name="Professor T">
-      <p class="show-card-name">Professor T</p>
-      <p class="show-card-meta">Crime Drama · 4 Seasons · ITV</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/shetland.html" class="show-card" data-name="Shetland">
-      <p class="show-card-name">Shetland</p>
-      <p class="show-card-meta">Crime Drama · 10 Seasons · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/tommy-and-tuppence.html" class="show-card" data-name="Tommy &amp; Tuppence">
-      <p class="show-card-name">Tommy &amp; Tuppence</p>
-      <p class="show-card-meta">Mystery Drama · New · BBC</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/trigger-point.html" class="show-card" data-name="Trigger Point">
-      <p class="show-card-name">Trigger Point</p>
-      <p class="show-card-meta">Thriller · 3 Seasons · ITV</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-    <a href="/shows/unforgotten.html" class="show-card" data-name="Unforgotten">
-      <p class="show-card-name">Unforgotten</p>
-      <p class="show-card-meta">Crime Drama · 6 Seasons · ITV</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/vera.html" class="show-card" data-name="Vera">
-      <p class="show-card-name">Vera</p>
-      <p class="show-card-meta">Crime Drama · 14 Seasons · ITV</p>
-      <span class="platform-btn">BritBox &rarr;</span>
-    </a>
-
-  </div>
-
-  <p class="section-label" style="margin-top:56px;">Comforting Period Dramas</p>
-  <div class="shows-grid">
-
-    <a href="/shows/the-durrells-in-corfu.html" class="show-card" data-name="The Durrells in Corfu">
-      <p class="show-card-name">The Durrells in Corfu</p>
-      <p class="show-card-meta">Comedy Drama · 4 Seasons · ITV</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/home-fires.html" class="show-card" data-name="Home Fires">
-      <p class="show-card-name">Home Fires</p>
-      <p class="show-card-meta">Period Drama · 2 Seasons · ITV</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/little-women.html" class="show-card" data-name="Little Women">
-      <p class="show-card-name">Little Women</p>
-      <p class="show-card-meta">Period Drama · 3 Episodes · BBC</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/poldark.html" class="show-card" data-name="Poldark">
-      <p class="show-card-name">Poldark</p>
-      <p class="show-card-meta">Period Drama · 5 Seasons · BBC</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/sanditon.html" class="show-card" data-name="Sanditon">
-      <p class="show-card-name">Sanditon</p>
-      <p class="show-card-meta">Period Drama · 3 Seasons · ITV</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-    <a href="/shows/victoria.html" class="show-card" data-name="Victoria">
-      <p class="show-card-name">Victoria</p>
-      <p class="show-card-meta">Royal Drama · 3 Seasons · ITV</p>
-      <span class="platform-btn">PBS Passport &rarr;</span>
-    </a>
-
-  </div>
 </div>
 
 <!-- EXPLORE MORE -->
