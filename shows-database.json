@@ -9197,5 +9197,69 @@
     "sources": [
       "https://thenerdy.com/acorn-tv-july-2026/"
     ]
+  },
+  {
+    "title": "Little Dorrit",
+    "years": "2008",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/little-dorrit"
+    ]
+  },
+  {
+    "title": "Bleak House",
+    "years": "2005",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.justwatch.com/ca/tv-show/bleak-house/season-1"
+    ]
+  },
+  {
+    "title": "Vanity Fair",
+    "years": "1998",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.justwatch.com/ca/tv-show/vanity-fair-1998"
+    ]
   }
 ]
