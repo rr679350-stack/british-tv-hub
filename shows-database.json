@@ -8689,5 +8689,71 @@
       "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-mr-bates-vs-the-post-office",
       "https://www.whattowatch.com/watching-guides/mr-bates-vs-the-post-office-cast-plot-and-everything-we-know"
     ]
+  },
+  {
+    "title": "A Spy Among Friends",
+    "years": "2022",
+    "genre": "Espionage Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.whathifi.com/advice/how-to-watch-a-spy-among-friends-spy-thriller-with-damian-lewis-and-guy-pearce",
+      "https://en.wikipedia.org/wiki/A_Spy_Among_Friends"
+    ]
+  },
+  {
+    "title": "Litvinenko",
+    "years": "2022",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amc.com/"
+      },
+      {
+        "name": "Sundance Now",
+        "tag": "stream",
+        "url": "https://www.sundancenow.com/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://variety.com/2022/tv/global/itv-studios-litvinenko-80-plus-territories-1235405507",
+      "https://www.techradar.com/how-to/how-to-watch-litvinenko-online-stream-the-david-tennant-series-from-anywhere"
+    ]
   }
 ]
