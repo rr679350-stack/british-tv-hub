@@ -1385,11 +1385,11 @@ document.addEventListener('click', function(e){
 <!-- HERO -->
 <div class="page-hero">
   <div class="page-hero-text">
-<h1 class="hero-title">Browse Britain's Best Mystery &amp; Drama Series</h1>
-    <p class="hero-sub">Discover detailed guides to Britain's favourite mysteries, dramas, period pieces, and hidden gems. Every guide includes where to watch, similar series, and recommendations for what to watch next.</p>
+<h1 class="hero-title">Browse British Mystery &amp; Drama Series</h1>
+    <p class="hero-sub">Discover Britain's best mysteries, dramas, period pieces, and hidden gems — with where to watch, similar series, and what to watch next.</p>
   </div>
   <div class="page-hero-img">
-    <img src="/shows-index-hero.webp" alt="A cozy living room at night with British TV Hub on the television, a mug of tea, a book, and a knit blanket" width="1536" height="1024" fetchpriority="high">
+    <img src="/shows-index-hero.webp" alt="A British TV Hub mug and remote on a table, with a mystery drama's rainy village and castle on the TV screen behind" width="1536" height="1024" fetchpriority="high">
   </div>
 </div>
 
@@ -1398,43 +1398,18 @@ document.addEventListener('click', function(e){
 
 <hr class="hero-divider" id="heroDivider">
 
-<!-- EDITORIAL CARD -->
-<div class="editorial-card ec-hidden" id="editorialCard">
-  <img src="/BTH_Logo.png" alt="British TV Hub" class="editorial-card-logo">
-  <div>
-    <p style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;font-weight:700;">From British TV Hub</p>
-    <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 12px;line-height:1.25;">Discover Your Next Favourite British Series</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:0;">Finding your next British series shouldn't take an hour. British TV Hub watches new releases, revisits classics, and uncovers hidden gems every month &mdash; so you can spend less time searching and more time watching.</p>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:12px 0 0;">Browse by theme in our <a href="/essentials-collections.html" style="color:#c9a96e;">Curated Collections</a>, or dig into some genuinely <a href="/hidden-dramas.html" style="color:#c9a96e;">Hidden British Dramas</a>.</p>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#e0d9c8;line-height:1.6;margin:12px 0 0;">Two new collections: <a href="/british-period-dramas.html" style="color:#c9a96e;">British Period Dramas</a> and <a href="/modern-crime-procedurals.html" style="color:#c9a96e;">Modern Crime Procedurals</a>. Or settle in with <a href="/sunday-night-dramas.html" style="color:#c9a96e;">Sunday Night Dramas</a>, spot the familiar faces in <a href="/actor-crossovers.html" style="color:#c9a96e;">You'll Recognize Them From...</a>, or try the <a href="/weekend-binge-guide.html" style="color:#c9a96e;">Weekend Binge Guide</a> for something shorter.</p>
-    <div class="editorial-card-stat">
-      <span class="stat-num" id="statNum">0+</span>
-      <span class="stat-label">Curated Guides</span>
-    </div>
-  </div>
+<!-- BROWSE BY: quick nav -->
+<div id="genres" style="max-width:1100px;margin:0 auto 32px;display:flex;flex-wrap:wrap;align-items:center;gap:14px;">
+  <span style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;font-weight:700;">Browse by:</span>
+  <a href="/top10.html" class="genre-chip">Mysteries</a>
+  <a href="/shows.html" class="genre-chip">Crime Dramas</a>
+  <a href="/british-period-dramas.html" class="genre-chip">Period Dramas</a>
+  <a href="/cozy.html" class="genre-chip">Cozy &amp; Gentle</a>
+  <a href="/hidden-gems.html" class="genre-chip">Hidden Gems</a>
+  <a href="#all-shows" class="genre-chip">All Shows</a>
+  <input type="text" id="show-search-input" placeholder="Find a series..." autocomplete="off" oninput="filterShowCards(this.value)" style="flex:1;min-width:180px;max-width:260px;box-sizing:border-box;background:#1e2433;border:1px solid #4a5570;color:#f0e8d4;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;border-radius:20px;outline:none;">
 </div>
-
-<!-- BROWSE BY GENRE -->
-<div id="genres" style="background:linear-gradient(135deg,#2c3345 0%,#1a2135 100%);border:1px solid #3d4a60;border-radius:4px;padding:24px;margin:0 auto 20px;max-width:1100px;">
-  <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;">Browse by Genre</p>
-  <div style="display:flex;flex-wrap:wrap;gap:10px;">
-    <a href="/cozy.html" class="genre-chip featured">Cozy Mysteries</a>
-    <a href="/top10.html" class="genre-chip featured">Police Procedurals</a>
-    <a href="/detective-partnerships.html" class="genre-chip">Detective Partnerships</a>
-    <a href="/shows.html" class="genre-chip">Crime Dramas</a>
-    <a href="/masterpiece2026.html" class="genre-chip">Period Dramas</a>
-    <a href="/hidden-gems.html" class="genre-chip">Hidden Gems</a>
-    <a href="/books" class="genre-chip">Literary Adaptations</a>
-    <a href="#most-watched" class="genre-chip">Most Watched</a>
-  </div>
-</div>
-
-<!-- SEARCH THE LIBRARY -->
-<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:24px;margin:0 auto 32px;max-width:1100px;">
-  <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 14px;">Search the Library</p>
-  <input type="text" id="show-search-input" placeholder="Search shows by name..." autocomplete="off" oninput="filterShowCards(this.value)" style="width:100%;max-width:480px;box-sizing:border-box;background:#1e2433;border:1px solid #4a5570;color:#f0e8d4;padding:12px 16px;font-family:'Crimson Text',serif;font-size:16px;border-radius:3px;outline:none;">
-  <p id="show-search-empty" style="display:none;font-family:'Crimson Text',serif;font-style:italic;color:#9090a8;margin:14px 0 0;">No shows match your search.</p>
-</div>
+<p id="show-search-empty" style="display:none;max-width:1100px;margin:-20px auto 20px;font-family:'Crimson Text',serif;font-style:italic;color:#9090a8;">No shows match your search.</p>
 <script>
 function filterShowCards(query){
   var q = query.trim().toLowerCase();
@@ -1451,83 +1426,29 @@ function filterShowCards(query){
 }
 </script>
 
-<!-- ALPHABETICAL INDEX -->
-<div style="background:var(--bg-dark);border:1px solid var(--border);border-radius:4px;padding:24px;margin:0 auto 32px;max-width:1100px;">
-  <p style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 14px;">Browse Alphabetically</p>
-  <div id="az-index" style="display:flex;flex-wrap:wrap;gap:6px;font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;"></div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-  var present = new Set();
-  document.querySelectorAll("a.show-card").forEach(function(card){
-    var nameEl = card.querySelector(".show-card-name");
-    if (!nameEl) return;
-    var name = nameEl.textContent.trim();
-    if (/^the\s+/i.test(name)) name = name.replace(/^the\s+/i, "");
-    var first = name.charAt(0).toUpperCase();
-    present.add(first);
-    if (!card.id) {
-      var anchorId = "letter-" + first;
-      if (!document.getElementById(anchorId)) card.id = anchorId;
-    }
-  });
-  var wrap = document.getElementById("az-index");
-  letters.forEach(function(letter){
-    if (present.has(letter)) {
-      var a = document.createElement("a");
-      a.href = "#letter-" + letter;
-      a.textContent = letter;
-      a.style.cssText = "color:#c9a96e;text-decoration:none;padding:4px 8px;border:1px solid #3d4a60;border-radius:3px;";
-      wrap.appendChild(a);
-    } else {
-      var span = document.createElement("span");
-      span.textContent = letter;
-      span.style.cssText = "color:#4a5570;padding:4px 8px;";
-      wrap.appendChild(span);
-    }
-  });
-});
-</script>
-
-<!-- FEATURED COLLECTIONS -->
+<!-- NOT SURE WHERE TO START -->
 <div style="max-width:1100px;margin:0 auto 40px;">
-  <p class="section-label">Featured Collections</p>
-
-  <a href="/hidden-gems.html" class="fc-hero-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:280px;text-decoration:none;margin-bottom:20px;border:1px solid #3d4a60;">
-    <img src="/hidden-gems-hero.webp" alt="A rain-streaked window with a vintage file box labeled Hidden Gems" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-    <div style="position:absolute;inset:0;background:linear-gradient(to right,#131926 25%,rgba(19,25,38,0.75) 55%,rgba(19,25,38,0.25) 100%);"></div>
-    <div style="position:relative;z-index:2;padding:40px;max-width:520px;">
-      <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 12px;font-weight:700;">Featured Collection</p>
-      <h3 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#f0e8d4;margin:0 0 10px;">Hidden Gems</h3>
-      <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;margin:0 0 20px;">13 overlooked British mysteries and dramas worth discovering &mdash; beyond the household names.</p>
-      <span style="display:inline-block;background:#c9a96e;color:#1a2135;padding:11px 22px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;">Explore Hidden Gems &rarr;</span>
-    </div>
-  </a>
-
+  <p class="section-label">Not Sure Where to Start?</p>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
-    <a href="/top10.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:160px;text-decoration:none;border:1px solid #3d4a60;">
-      <img src="/top10-hero.webp" alt="Police procedural collection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 15%,rgba(19,25,38,0.35) 70%);"></div>
-      <div style="position:relative;z-index:2;padding:20px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#f0e8d4;margin:0 0 4px;">Police Procedurals</h4>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin:0;">15 Guides</p>
+    <a href="/cozy.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
+      <img src="/cozy-hero.webp" alt="A Cozy Mystery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
+      <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
+        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Cozy Mystery</h4>
       </div>
     </a>
-    <a href="/cozy.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:160px;text-decoration:none;border:1px solid #3d4a60;">
-      <img src="/cozy-hero.webp" alt="Cozy mysteries collection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 15%,rgba(19,25,38,0.35) 70%);"></div>
-      <div style="position:relative;z-index:2;padding:20px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#f0e8d4;margin:0 0 4px;">Cozy Mysteries</h4>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin:0;">18 Guides</p>
+    <a href="/top10.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
+      <img src="/top10-hero.webp" alt="A Gripping Drama" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
+      <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
+        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Gripping Drama</h4>
       </div>
     </a>
-    <a href="/books" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:160px;text-decoration:none;border:1px solid #3d4a60;">
-      <img src="/books-hero.webp" alt="Literary adaptations collection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 15%,rgba(19,25,38,0.35) 70%);"></div>
-      <div style="position:relative;z-index:2;padding:20px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#f0e8d4;margin:0 0 4px;">Literary Adaptations</h4>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin:0;">The Books Behind the Dramas</p>
+    <a href="/hidden-gems.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
+      <img src="/hidden-gems-hero.webp" alt="A Hidden Gem" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
+      <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
+        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Hidden Gem</h4>
       </div>
     </a>
   </div>
@@ -1539,7 +1460,7 @@ document.addEventListener("DOMContentLoaded", function(){
   div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
 }
 </style>
-<!-- END FEATURED COLLECTIONS -->
+<!-- END NOT SURE WHERE TO START -->
 
 <!-- START WATCHING TONIGHT -->
 <div style="background:linear-gradient(135deg,#1e2433 0%,#161c2a 100%);border:1px solid #4a5570;border-left:4px solid #8b1a2e;border-radius:4px;padding:36px 40px;margin:0 auto 32px;max-width:1100px;">
@@ -1757,6 +1678,25 @@ document.addEventListener("DOMContentLoaded", function(){
       <span class="platform-btn">PBS Passport &rarr;</span>
     </a>
 
+  </div>
+</div>
+
+<!-- MORE COLLECTIONS (compact, secondary tier) -->
+<div style="max-width:1100px;margin:0 auto 32px;padding-top:8px;border-top:1px solid #3d4a60;">
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#8a8fa3;margin:16px 0 10px;">More Themed Collections</p>
+  <div style="font-family:'Crimson Text',serif;font-size:15px;line-height:2;">
+    <a href="/british-period-dramas.html" style="color:#c9a96e;">British Period Dramas</a> &middot;
+    <a href="/modern-crime-procedurals.html" style="color:#c9a96e;">Modern Crime Procedurals</a> &middot;
+    <a href="/sunday-night-dramas.html" style="color:#c9a96e;">Sunday Night Dramas</a> &middot;
+    <a href="/weekend-binge-guide.html" style="color:#c9a96e;">Weekend Binge Guide</a> &middot;
+    <a href="/actor-crossovers.html" style="color:#c9a96e;">You'll Recognize Them From...</a> &middot;
+    <a href="/shows-like-vera-tv.html" style="color:#c9a96e;">Shows Like Vera</a> &middot;
+    <a href="/shows-like-shetland-tv.html" style="color:#c9a96e;">Shows Like Shetland</a> &middot;
+    <a href="/cozy-autumn-mysteries.html" style="color:#c9a96e;">Cozy Autumn Mysteries</a> &middot;
+    <a href="/best-cozy-mystery-authors.html" style="color:#c9a96e;">Best Cozy Mystery Authors</a> &middot;
+    <a href="/rainy-day-mysteries.html" style="color:#c9a96e;">Rainy Day Mysteries</a> &middot;
+    <a href="/seasonal-collections.html" style="color:#c9a96e;">Seasonal Collections</a> &middot;
+    <a href="/hidden-dramas.html" style="color:#c9a96e;">Hidden British Dramas</a>
   </div>
 </div>
 
