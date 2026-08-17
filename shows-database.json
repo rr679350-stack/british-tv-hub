@@ -8639,5 +8639,55 @@
       "https://en.wikipedia.org/wiki/The_Last_Post_(TV_series)",
       "https://bonafide.co.uk/productions/the-last-post/"
     ]
+  },
+  {
+    "title": "Little Women",
+    "years": "2017–2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/shows/little-women/"
+      }
+    ],
+    "uk": [
+      {
+        "name": "BBC iPlayer",
+        "tag": "free",
+        "url": "https://www.bbc.co.uk/iplayer"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/shows/little-women/",
+      "https://en.wikipedia.org/wiki/Little_Women_(2017_TV_series)"
+    ]
+  },
+  {
+    "title": "Mr Bates vs The Post Office",
+    "years": "2024",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-mr-bates-vs-the-post-office"
+      }
+    ],
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [],
+    "verified": "2026-08-17",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-mr-bates-vs-the-post-office",
+      "https://www.whattowatch.com/watching-guides/mr-bates-vs-the-post-office-cast-plot-and-everything-we-know"
+    ]
   }
 ]
