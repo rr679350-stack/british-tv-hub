@@ -47,8 +47,16 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <link rel="stylesheet" href="/listing-shared.css">
 <style>
-  .sw-hero{padding:56px 40px 40px;text-align:center;background:linear-gradient(135deg,#1a2135 0%,#232c47 55%,#1a2135 100%);border-bottom:1px solid rgba(201,168,76,0.15);}
-  .sw-hero-phone{max-width:220px;width:100%;height:auto;border-radius:16px;margin:0 auto 8px;display:block;box-shadow:0 20px 50px rgba(0,0,0,0.4);}
+  .sw-hero{position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);}
+  .sw-hero-img{position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);}
+  .sw-hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,#1a2332 40%,rgba(26,35,50,0.75) 60%,rgba(26,35,50,0.05) 100%);}
+  .sw-hero-inner{position:relative;z-index:2;padding:56px 40px 40px;max-width:560px;}
+  @media (max-width:700px){
+    .sw-hero{min-height:520px;}
+    .sw-hero-img{width:100%;object-position:center 30%;}
+    .sw-hero-overlay{background:linear-gradient(180deg,rgba(26,35,50,0.35) 0%,rgba(26,35,50,0.9) 65%,#1a2332 100%);}
+    .sw-hero-inner{max-width:100%;padding:40px 24px;}
+  }
   .sw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto;}
   @media (max-width:800px){.sw-cards{grid-template-columns:1fr;}}
   .sw-card{background:var(--navy-mid);border:1px solid rgba(201,168,76,0.25);border-radius:14px;padding:32px 26px;text-align:center;display:flex;flex-direction:column;}
@@ -163,10 +171,13 @@ document.addEventListener('click', function(e){
 </div>
 
 <div class="sw-hero">
-  <img class="sw-hero-phone" src="/share-hero-phone.webp" alt="Phone showing a 'Share with a Friend' screen next to a British TV Hub mug">
-  <div class="hero-eyebrow">The Snug &middot; Share</div>
-  <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3rem);font-weight:700;color:var(--cream);line-height:1.15;margin:0 0 1rem;">Share British TV Hub <em style="font-style:italic;color:var(--gold-light);">with a Friend</em></h1>
-  <p class="hero-intro" style="max-width:520px;margin:0 auto;">Know someone who'd love a bit of British mystery and drama in their life? Here's the easiest way to pass it along.</p>
+  <img class="sw-hero-img" src="/share-hero-phone.webp" alt="Phone showing a 'Share with a Friend' screen next to a British TV Hub mug">
+  <div class="sw-hero-overlay"></div>
+  <div class="sw-hero-inner">
+    <div class="hero-eyebrow">The Snug &middot; Share</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.25rem;">Share British TV Hub <em style="font-style:italic;color:var(--gold-light);">with a Friend</em></h1>
+    <p class="hero-intro">Know someone who'd love a bit of British mystery and drama in their life? Here's the easiest way to pass it along.</p>
+  </div>
 </div>
 
 <div class="page-body">
