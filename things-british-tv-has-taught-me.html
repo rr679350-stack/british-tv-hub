@@ -346,7 +346,7 @@ function ttmToggleFlip(card){
 
 function ttmRender(){
   const pool = TTM_ENTRIES.filter(e => e !== TTM_FEATURED);
-  const picks = ttmShuffle(pool).slice(0, 9);
+  const picks = ttmShuffle(pool).slice(0, 12);
   const icons = ttmShuffle(TTM_ICONS);
   const grid = document.getElementById('ttm-grid');
   grid.innerHTML = picks.map((text, i) => `
