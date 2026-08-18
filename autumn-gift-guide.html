@@ -163,30 +163,38 @@ gtag('config', 'G-P1L8CVNKS6');
       <div class="nav-dropdown">
         <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
         <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
-          <div class="nav-dropdown-label">Browse</div>
-          <a href="/shows-index.html#genres">By Genre</a>
-          <a href="/top10.html">Police Procedurals</a>
-          <a href="/cozy.html">Cozy Mysteries</a>
-          <a href="/seasonal-collections.html">Seasonal Collections</a>
-          <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          <a href="/books">Literary Adaptations</a>
-          <a href="/hidden-gems.html">Hidden Gems</a>
-          <a href="/page-to-screen.html">From Page to Screen</a>
-          <div class="nav-dropdown-label">If You Like...</div>
-          <a href="/shows-like-vera-tv.html">Shows Like Vera</a>
-          <a href="/shows-like-shetland-tv.html">Shows Like Shetland</a>
-          <div class="nav-dropdown-label">Collections</div>
-          <a href="/detective-partnerships.html">British Detective Partnerships</a>
-          <a href="/masterpiece2026.html">PBS Masterpiece</a>
-          <a href="/british-period-dramas.html">British Period Dramas</a>
-          <a href="/sunday-night-dramas.html">Sunday Night Dramas</a>
-          <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
-          <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-          <div class="nav-dropdown-label">Interactive</div>
-          <a href="/quiz.html">Match Me a Mystery</a>
-          <a href="/meet-tilly.html">Ask Tilly</a>
-          <a href="/watch-list.html">Watch List</a>
-          <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/shows-index.html#genres">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+            <a href="/books">Literary Adaptations</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/page-to-screen.html">From Page to Screen</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Collections</div>
+            <a href="/detective-partnerships.html">British Detective Partnerships</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/sunday-night-dramas.html">Sunday Night Dramas</a>
+            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+            <a href="/who-outranks-who.html">Who Outranks Who</a>
+            <a href="/british-tv-acronyms-explained.html">British TV Acronyms</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">If You Like...</div>
+            <a href="/shows-like-vera-tv.html">Shows Like Vera</a>
+            <a href="/shows-like-shetland-tv.html">Shows Like Shetland</a>
+            <div class="nav-dropdown-label">Interactive</div>
+            <a href="/quiz.html">Match Me a Mystery</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/watch-list.html">Watch List</a>
+            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          </div>
         </div>
       </div>
     </div>
@@ -205,6 +213,20 @@ gtag('config', 'G-P1L8CVNKS6');
 </div>
     </div>
 </nav>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
 <div class="agg-hero">
   <div class="agg-leaf-field">
     <span class="agg-leaf" style="left:73.5%; animation-duration:14.5s; animation-delay:5.6s;"><svg width="19" height="19" viewBox="0 0 24 24" style="animation-duration:4.7s; animation-delay:5.6s;"><path d="M12 2C12 2 4 9 4 15.5C4 19.6421 7.35786 23 11.5 23C11.6716 23 11.8422 22.9942 12.0114 22.9827C12.1783 22.9942 12.3455 23 12.5 23C16.6421 23 20 19.6421 20 15.5C20 9 12 2 12 2Z" fill="#a8531f" stroke="rgba(0,0,0,0.15)" stroke-width="0.5"/><line x1="12" y1="4" x2="12" y2="21" stroke="rgba(0,0,0,0.2)" stroke-width="0.6"/></svg></span>
