@@ -59,8 +59,10 @@ gtag('config', 'G-P1L8CVNKS6');
   }
   .sw-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto;}
   @media (max-width:800px){.sw-cards{grid-template-columns:1fr;}}
-  .sw-card{background:var(--navy-mid);border:1px solid rgba(201,168,76,0.25);border-radius:14px;padding:32px 26px;text-align:center;display:flex;flex-direction:column;}
-  .sw-card-icon{font-size:1.8rem;margin-bottom:14px;}
+  .sw-card{background:var(--navy-mid);border:1px solid rgba(201,168,76,0.25);border-radius:14px;overflow:hidden;text-align:center;display:flex;flex-direction:column;}
+  .sw-card-photo{width:100%;height:150px;object-fit:cover;display:block;}
+  .sw-card-icon{width:56px;height:56px;border-radius:50%;background:var(--navy-mid);border:1px solid rgba(201,168,76,0.4);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:-28px auto 14px;position:relative;z-index:2;}
+  .sw-card-body{padding:0 26px 30px;display:flex;flex-direction:column;flex:1;}
   .sw-card h3{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--cream);margin:0 0 10px;}
   .sw-card p{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);line-height:1.55;margin:0 0 20px;flex:1;}
   .sw-primary-btn{display:block;background:var(--gold);color:#1a2135;padding:14px 20px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;text-decoration:none;}
@@ -68,14 +70,18 @@ gtag('config', 'G-P1L8CVNKS6');
   .sw-social-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;}
   .sw-social-row button{display:inline-flex;align-items:center;justify-content:center;gap:4px;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:11px 16px;border-radius:2px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;flex:1;}
   .sw-status{font-family:'Raleway',sans-serif;font-size:11px;color:var(--gold);margin-top:10px;display:none;}
-  .sw-message-box{max-width:600px;margin:44px auto 0;background:var(--navy-mid);border:1px solid rgba(201,168,76,0.25);border-radius:14px;padding:32px 34px;text-align:center;}
-  .sw-message-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted,#9090a8);margin-bottom:14px;}
-  .sw-message-text{font-family:'Crimson Text',serif;font-style:italic;font-size:1.2rem;color:var(--cream);line-height:1.6;margin:0 0 20px;}
+  .sw-two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:24px auto 0;}
+  @media (max-width:700px){.sw-two-col{grid-template-columns:1fr;}}
+  .sw-panel-split{background:var(--navy-mid);border:1px solid rgba(201,168,76,0.25);border-radius:14px;overflow:hidden;display:flex;min-height:220px;}
+  .sw-panel-split-photo{width:42%;flex-shrink:0;object-fit:cover;display:block;}
+  .sw-panel-split-body{flex:1;padding:26px 24px;text-align:center;display:flex;flex-direction:column;justify-content:center;}
+  .sw-message-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-muted,#b39456);margin-bottom:14px;}
+  .sw-message-text{font-family:'Crimson Text',serif;font-style:italic;font-size:1.15rem;color:var(--cream);line-height:1.55;margin:0 0 18px;}
   .sw-message-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
   .sw-shuffle-btn{background:transparent;border:none;color:var(--text-muted,#9090a8);font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-decoration:underline;cursor:pointer;padding:13px 6px;}
-  .sw-qr-strip{max-width:600px;margin:36px auto 0;text-align:center;padding-top:28px;border-top:1px solid #3d4a60;}
-  .sw-qr-strip p{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);margin:0 0 14px;}
-  .sw-qr-strip img{width:90px;height:90px;border-radius:6px;border:1px solid #3d4a60;background:#fff;padding:5px;}
+  .sw-qr-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-muted,#b39456);margin-bottom:10px;}
+  .sw-qr-text{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream);margin:0 0 18px;}
+  .sw-qr-strip img{width:110px;height:110px;border-radius:6px;border:1px solid #3d4a60;background:#fff;padding:6px;}
 </style>
 </head>
 <body>
@@ -183,43 +189,60 @@ document.addEventListener('click', function(e){
 <div class="page-body">
   <div class="sw-cards">
     <div class="sw-card">
+      <img class="sw-card-photo" src="/share-card-send-directly.webp" alt="">
       <div class="sw-card-icon">&#128233;</div>
-      <h3>Send It Directly</h3>
-      <p>Know exactly who needs another British mystery in their life?</p>
-      <a class="sw-primary-btn" href="mailto:?subject=A%20good%20find%20for%20a%20fellow%20British%20TV%20fan&body=Thought%20of%20you%20%E2%80%94%20British%20TV%20Hub%20has%20mystery%20and%20drama%20recommendations%2C%20streaming%20guides%2C%20and%20more%3A%20https%3A%2F%2Fbritishtvhub.com">Email a Friend</a>
+      <div class="sw-card-body">
+        <h3>Send It Directly</h3>
+        <p>Know exactly who needs another British mystery in their life?</p>
+        <a class="sw-primary-btn" href="mailto:?subject=A%20good%20find%20for%20a%20fellow%20British%20TV%20fan&body=Thought%20of%20you%20%E2%80%94%20British%20TV%20Hub%20has%20mystery%20and%20drama%20recommendations%2C%20streaming%20guides%2C%20and%20more%3A%20https%3A%2F%2Fbritishtvhub.com">Email a Friend</a>
+      </div>
     </div>
     <div class="sw-card">
+      <img class="sw-card-photo" src="/share-card-send-link.webp" alt="">
       <div class="sw-card-icon">&#128279;</div>
-      <h3>Send the Link</h3>
-      <p>Perfect for texts, group chats, and that friend who's always asking what to watch next.</p>
-      <button class="sw-secondary-btn" onclick="copySiteLink()">Copy Link</button>
-      <p class="sw-status" id="sw-status">Link copied!</p>
+      <div class="sw-card-body">
+        <h3>Send the Link</h3>
+        <p>Perfect for texts, group chats, and that friend who's always asking what to watch next.</p>
+        <button class="sw-secondary-btn" onclick="copySiteLink()">Copy Link</button>
+        <p class="sw-status" id="sw-status">Link copied!</p>
+      </div>
     </div>
     <div class="sw-card">
+      <img class="sw-card-photo" src="/share-card-share-everyone.webp" alt="">
       <div class="sw-card-icon">&#128226;</div>
-      <h3>Share with Everyone</h3>
-      <p>Post it where your fellow British TV fans will actually see it.</p>
-      <div class="sw-social-row">
-        <button onclick="shareSiteOnFacebook()" title="Share on Facebook">FB</button>
-        <button onclick="shareSiteOnTwitter()" title="Share on X">X</button>
-        <button onclick="shareSiteOnPinterest()" title="Save to Pinterest">PIN</button>
+      <div class="sw-card-body">
+        <h3>Share with Everyone</h3>
+        <p>Post it where your fellow British TV fans will actually see it.</p>
+        <div class="sw-social-row">
+          <button onclick="shareSiteOnFacebook()" title="Share on Facebook">FB</button>
+          <button onclick="shareSiteOnTwitter()" title="Share on X">X</button>
+          <button onclick="shareSiteOnPinterest()" title="Save to Pinterest">PIN</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="sw-message-box">
-    <div class="sw-message-label">Need a Message? Steal This One</div>
-    <p class="sw-message-text" id="sw-message-text">&ldquo;Found this British TV site and immediately thought of you.&rdquo;</p>
-    <div class="sw-message-actions">
-      <button class="sw-secondary-btn" onclick="copySwMessage()" style="display:inline-block;">Copy Message</button>
-      <button class="sw-shuffle-btn" onclick="shuffleSwMessage()">Try Another &rarr;</button>
+  <div class="sw-two-col">
+    <div class="sw-panel-split">
+      <img class="sw-panel-split-photo" src="/share-card-send-directly.webp" alt="" style="object-position:left center;">
+      <div class="sw-panel-split-body">
+        <div class="sw-message-label">Need a Message? Steal This One</div>
+        <p class="sw-message-text" id="sw-message-text">&ldquo;Found this British TV site and immediately thought of you.&rdquo;</p>
+        <div class="sw-message-actions">
+          <button class="sw-secondary-btn" onclick="copySwMessage()" style="display:inline-block;">Copy Message</button>
+          <button class="sw-shuffle-btn" onclick="shuffleSwMessage()">Try Another &rarr;</button>
+        </div>
+        <p class="sw-status" id="sw-message-status">Message copied!</p>
+      </div>
     </div>
-    <p class="sw-status" id="sw-message-status">Message copied!</p>
-  </div>
-
-  <div class="sw-qr-strip">
-    <p>Sharing with someone nearby? Let them scan this.</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&bgcolor=ffffff&color=1a2135&data=https%3A%2F%2Fbritishtvhub.com" alt="QR code linking to britishtvhub.com" width="90" height="90" loading="lazy">
+    <div class="sw-panel-split">
+      <img class="sw-panel-split-photo" src="/share-card-nearby.webp" alt="">
+      <div class="sw-panel-split-body">
+        <div class="sw-qr-label">Sharing With Someone Nearby?</div>
+        <p class="sw-qr-text">Let them scan this.</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=110x110&bgcolor=ffffff&color=1a2135&data=https%3A%2F%2Fbritishtvhub.com" alt="QR code linking to britishtvhub.com" width="110" height="110" loading="lazy" style="margin:0 auto;">
+      </div>
+    </div>
   </div>
 </div>
 
