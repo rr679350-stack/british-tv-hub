@@ -50,10 +50,13 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <link rel="stylesheet" href="/listing-shared.css">
 <style>
-  .ttm-hero{position:relative;overflow:hidden;min-height:440px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);background:#1a2135;}
-  .ttm-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:brightness(0.92);animation:ttmKenBurns 26s ease-in-out infinite alternate;}
+  .ttm-hero{position:relative;overflow:hidden;min-height:620px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);background:#1a2135;}
+  .ttm-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;filter:brightness(0.92);animation:ttmKenBurns 26s ease-in-out infinite alternate;}
   .ttm-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#0e1424 0%,rgba(14,20,36,0.82) 32%,rgba(14,20,36,0.35) 60%,rgba(14,20,36,0.55) 100%);}
-  .ttm-hero-inner{position:relative;z-index:2;padding:56px 40px;max-width:520px;margin:0;text-align:left;}
+  .ttm-hero-inner{position:relative;z-index:2;padding:56px 40px;max-width:600px;margin:0;text-align:left;}
+  .ttm-hero-inner .hero-eyebrow{font-size:13px;letter-spacing:0.25em;}
+  .ttm-hero-inner h1{font-size:clamp(2.4rem,5.2vw,3.8rem)!important;}
+  .ttm-hero-inner .hero-intro{font-size:1.45rem!important;line-height:1.6!important;max-width:560px!important;}
   @keyframes ttmKenBurns{
     0%{transform:scale(1) translate(0,0);}
     100%{transform:scale(1.08) translate(-1.5%,-1%);}
@@ -64,16 +67,36 @@ gtag('config', 'G-P1L8CVNKS6');
   @media (max-width:700px){
     .ttm-hero{min-height:520px;}
     .ttm-hero-inner{max-width:100%;text-align:center;padding:40px 24px;}
+    .ttm-hero-inner h1{font-size:clamp(2rem,9vw,2.8rem)!important;}
+    .ttm-hero-inner .hero-intro{font-size:1.15rem!important;max-width:100%!important;}
     .ttm-hero-overlay{background:linear-gradient(180deg,rgba(14,20,36,0.55) 0%,rgba(14,20,36,0.88) 65%,#0e1424 100%);}
   }
   .ttm-featured{background:var(--navy-mid);border:1px solid rgba(201,168,76,0.35);border-radius:12px;padding:40px 44px;max-width:720px;margin:0 auto 3rem;text-align:center;position:relative;}
   .ttm-featured::before{content:"“";position:absolute;top:6px;left:20px;font-family:'Playfair Display',serif;font-size:4rem;color:rgba(201,168,76,0.25);line-height:1;}
   .ttm-featured-label{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
   .ttm-featured-text{font-family:'Playfair Display',serif;font-style:italic;font-size:1.5rem;color:var(--cream);line-height:1.5;margin:0;}
-  .ttm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1000px;margin:0 auto;}
-  .ttm-card{background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:26px 24px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
-  .ttm-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
-  .ttm-card p{font-family:'Crimson Text',serif;font-size:16px;line-height:1.6;color:var(--cream);margin:0;}
+  .ttm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;max-width:1000px;margin:0 auto;}
+  .ttm-flip{perspective:1200px;height:250px;cursor:pointer;opacity:0;transform:translateY(14px);animation:ttmCardIn .5s ease forwards;}
+  @keyframes ttmCardIn{to{opacity:1;transform:translateY(0);}}
+  .ttm-flip-inner{position:relative;width:100%;height:100%;transition:transform .7s cubic-bezier(.34,1.56,.64,1);transform-style:preserve-3d;}
+  .ttm-flip.is-flipped .ttm-flip-inner{transform:rotateY(180deg);}
+  .ttm-flip-front,.ttm-flip-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;border:1px solid rgba(201,168,76,0.35);overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+  .ttm-flip-front{background:#05070c;display:flex;flex-direction:column;}
+  .ttm-flip:not(.is-flipped):hover .ttm-flip-front{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 16px 32px rgba(0,0,0,0.4);}
+  .ttm-flip-photo{width:100%;flex:1 1 0;min-height:0;object-fit:cover;object-position:center;display:block;}
+  .ttm-flip-caption{padding:12px 10px 14px;text-align:center;}
+  .ttm-flip-hint{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);}
+  .ttm-flip-flourish{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:6px;}
+  .ttm-flip-flourish span{width:16px;height:1px;background:rgba(201,168,76,0.45);}
+  .ttm-flip-flourish i{font-size:7px;color:var(--gold);font-style:normal;transform:rotate(45deg);display:inline-block;}
+  .ttm-flip-back{background:#363f58;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;transform:rotateY(180deg);}
+  .ttm-flip-back p{font-family:'Crimson Text',serif;font-size:16px;line-height:1.55;color:var(--cream);margin:0;}
+  .ttm-flip:focus-visible .ttm-flip-front,.ttm-flip:focus-visible .ttm-flip-back{outline:2px solid var(--gold);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){
+    .ttm-flip{opacity:1;transform:none;animation:none;}
+    .ttm-flip-inner{transition:none;}
+    .ttm-flip:not(.is-flipped):hover .ttm-flip-front{transform:none;}
+  }
   .ttm-shuffle-wrap{text-align:center;margin:30px 0 0;}
   .ttm-shuffle-btn{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;background:transparent;color:var(--gold);border:1px solid var(--gold);padding:11px 22px;border-radius:2px;cursor:pointer;}
   .ttm-shuffle-btn:hover{background:rgba(201,168,76,0.1);}
@@ -143,6 +166,7 @@ gtag('config', 'G-P1L8CVNKS6');
           <a href="/quiz.html">Match Me a Mystery</a>
           <a href="/meet-tilly.html">Ask Tilly</a>
           <a href="/watch-list.html">Watch List</a>
+          <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
         </div>
       </div>
     </div>
@@ -207,7 +231,7 @@ document.addEventListener('click', function(e){
 
   <div style="max-width:700px;margin:0 auto 2.5rem;text-align:center;">
     <h2 style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--cream);margin:0 0 0.6rem;">The <em style="font-style:italic;color:var(--gold-light);">Collection</em></h2>
-    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);margin:0;">A fresh mix each time you visit. Refresh the page — or hit the button below — for another round.</p>
+    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);margin:0;">Tap a card to reveal it. A fresh mix each time you visit — hit the button below for another round.</p>
   </div>
 
   <div class="ttm-grid" id="ttm-grid"></div>
@@ -238,6 +262,7 @@ document.addEventListener('click', function(e){
     <p class="cr-sub">More hand-picked recommendations from the editors of British TV Hub.</p>
     <div class="cr-grid">
       <a class="cr-card" href="/essentials.html">
+        <img src="/essentials-hero.webp" alt="The Snug" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
         <div class="cr-body">
           <div class="cr-title">The Snug</div>
           <p class="cr-desc">British TV Hub's community hub — join the conversation, find your people, and settle in.</p>
@@ -245,6 +270,7 @@ document.addEventListener('click', function(e){
         </div>
       </a>
       <a class="cr-card" href="/weekend-binge-guide.html">
+        <img src="/weekend-binge-guide-hero.webp" alt="Weekend Binge Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
         <div class="cr-body">
           <div class="cr-title">Weekend Binge Guide</div>
           <p class="cr-desc">Short series built for finishing in a weekend, so you've always got a next watch ready.</p>
@@ -252,6 +278,7 @@ document.addEventListener('click', function(e){
         </div>
       </a>
       <a class="cr-card" href="/cozy-autumn-mysteries.html">
+        <img src="/cozy-autumn-hero.webp" alt="Cozy Autumn Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
         <div class="cr-body">
           <div class="cr-title">Cozy Autumn Mysteries</div>
           <p class="cr-desc">The gentler side of British crime drama, for evenings that call for something a little softer.</p>
@@ -279,10 +306,29 @@ const TTM_ENTRIES = [
   "If you inherit a beautiful country house, ask why nobody else wanted it.",
   "The village fête will not go according to plan.",
   "Detectives apparently survive on tea, biscuits, and very little sleep.",
-  "Anyone described as “a pillar of the community” deserves a closer look."
+  "Anyone described as “a pillar of the community” deserves a closer look.",
+  "People can have full, friendly conversations while riding a bicycle at 15mph.",
+  "Police officers can turn up, solve the case, and leave without paperwork.",
+  "The same three actors appear in every series, and it's completely normal.",
+  "Every mysterious event can be solved over a cup of tea and a packet of biscuits."
 ];
 
 const TTM_FEATURED = "Everyone knows everyone — but somehow nobody knows anything.";
+
+// Icons echo the line-icon style from British TV Hub's own graphics — bespoke illustrated stills
+const TTM_ICONS = [
+  "/things-taught-me-icon-door.webp",
+  "/things-taught-me-icon-case-file.webp",
+  "/things-taught-me-icon-deerstalker.webp",
+  "/things-taught-me-icon-candle.webp",
+  "/things-taught-me-icon-lantern.webp",
+  "/things-taught-me-icon-tv.webp",
+  "/things-taught-me-icon-suspects-notebook.webp",
+  "/things-taught-me-icon-telephone.webp",
+  "/things-taught-me-icon-police-helmet.webp",
+  "/things-taught-me-icon-bunting.webp",
+  "/things-taught-me-icon-teacup.webp"
+];
 
 function ttmShuffle(arr){
   const a = arr.slice();
@@ -293,11 +339,40 @@ function ttmShuffle(arr){
   return a;
 }
 
+function ttmToggleFlip(card){
+  const flipped = card.classList.toggle('is-flipped');
+  card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+}
+
 function ttmRender(){
   const pool = TTM_ENTRIES.filter(e => e !== TTM_FEATURED);
   const picks = ttmShuffle(pool).slice(0, 9);
+  const icons = ttmShuffle(TTM_ICONS);
   const grid = document.getElementById('ttm-grid');
-  grid.innerHTML = picks.map(text => `<div class="ttm-card"><p>${text}</p></div>`).join('');
+  grid.innerHTML = picks.map((text, i) => `
+    <div class="ttm-flip" tabindex="0" role="button" aria-pressed="false" aria-label="Reveal this one" style="animation-delay:${i * 55}ms;">
+      <div class="ttm-flip-inner">
+        <div class="ttm-flip-front">
+          <img class="ttm-flip-photo" src="${icons[i % icons.length]}" alt="" loading="lazy">
+          <div class="ttm-flip-caption">
+            <span class="ttm-flip-hint">Tap to Reveal</span>
+            <div class="ttm-flip-flourish"><span></span><i>&#9670;</i><span></span></div>
+          </div>
+        </div>
+        <div class="ttm-flip-back"><p>${text}</p></div>
+      </div>
+    </div>
+  `).join('');
+
+  grid.querySelectorAll('.ttm-flip').forEach(card => {
+    card.addEventListener('click', () => ttmToggleFlip(card));
+    card.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        ttmToggleFlip(card);
+      }
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function(){
