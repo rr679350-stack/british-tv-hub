@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Redirecting to checkout…</title>
+<meta name="robots" content="noindex">
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #faf7f2;
+    color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .card {
+    max-width: 420px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  a {
+    color: #1a4d8f;
+  }
+  .spinner {
+    margin: 0 auto 20px auto;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e0dbd2;
+    border-top-color: #1a4d8f;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="spinner"></div>
+    <h1>Taking you to checkout…</h1>
+    <p id="message">Redirecting you to complete your purchase on Etsy.</p>
+    <p id="fallback" style="display:none;">
+      If you are not redirected automatically,
+      <a id="fallback-link" href="https://cozytvcompanion.etsy.com">click here to visit the shop</a>.
+    </p>
+  </div>
+
+<script>
+  // Maps Facebook/Instagram Commerce Manager content_id -> Etsy listing URL
+  var PRODUCT_MAP = {
+    "vl2kevaxu":   "https://cozytvcompanion.etsy.com/listing/4552961525", // British TV Hub Pillow
+    "8zlcqlyogg":  "https://cozytvcompanion.etsy.com/listing/4556611410", // Warm Wishes Holiday Card
+    "hdtamrrxfd":  "https://cozytvcompanion.etsy.com/listing/4552182691", // A Cozy Cup for British TV Nights (mug)
+    "19ncw3yg0f":  "https://cozytvcompanion.etsy.com/listing/4552217499", // British TV Watchlist Notebook (spiral)
+    "t6ewv38cmn":  "https://cozytvcompanion.etsy.com/listing/4552950826"  // British TV Notes Hardcover Journal
+  };
+
+  var SHOP_FALLBACK = "https://cozytvcompanion.etsy.com";
+
+  function getParams() {
+    var params = {};
+    var query = window.location.search.substring(1);
+    var pairs = query.split("&");
+    for (var i = 0; i < pairs.length; i++) {
+      if (!pairs[i]) continue;
+      var kv = pairs[i].split("=");
+      var key = decodeURIComponent(kv[0] || "");
+      var val = decodeURIComponent((kv[1] || "").replace(/\+/g, " "));
+      params[key] = val;
+    }
+    return params;
+  }
+
+  function findFirstProductId(params) {
+    // Meta's checkout URL spec generally sends product ids as a
+    // comma-separated "product_ids" param, or sometimes "content_ids"[]
+    // style params. We check a few common shapes defensively.
+    if (params.product_ids) {
+      return params.product_ids.split(",")[0].trim();
+    }
+    if (params.content_ids) {
+      return params.content_ids.split(",")[0].trim();
+    }
+    // Fallback: look for any query param whose VALUE matches a known id
+    for (var key in params) {
+      if (PRODUCT_MAP.hasOwnProperty(params[key])) {
+        return params[key];
+      }
+    }
+    return null;
+  }
+
+  var params = getParams();
+  var productId = findFirstProductId(params);
+  var destination = (productId && PRODUCT_MAP[productId]) ? PRODUCT_MAP[productId] : SHOP_FALLBACK;
+
+  document.getElementById("fallback-link").href = destination;
+
+  if (!productId || !PRODUCT_MAP[productId]) {
+    document.getElementById("message").textContent =
+      "We couldn't find that exact item, so we're taking you to the shop instead.";
+  }
+
+  document.getElementById("fallback").style.display = "block";
+
+  setTimeout(function () {
+    window.location.href = destination;
+  }, 1200);
+</script>
+</body>
+</html>
