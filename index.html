@@ -886,6 +886,20 @@ div[style*="border:1px solid #3d4a60"] {
     font-size: 12px !important;
   }
 
+  /* Footer tagline bar - prevent letter-spaced text from overflowing past its own border */
+  footer > div:first-child {
+    padding: 16px 16px 14px !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Footer link columns - single column on mobile, was a fixed 4-column grid that overflowed */
+  footer > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 28px 20px !important;
+  }
+
   /* Links in footer */
   footer a {
     padding: 4px !important;
