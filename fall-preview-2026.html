@@ -67,7 +67,7 @@ gtag('config', 'G-P1L8CVNKS6');
   "itemListElement": [
     {"@type":"ListItem","position":1,"item":{"@type":"TVSeries","name":"Agatha Christie's Tommy & Tuppence","description":"A contemporary reimagining of Christie's crime-solving couple, premiering on BritBox on the writer's birthday.","startDate":"2026-09-15","numberOfSeasons":1,"actor":[{"@type":"Person","name":"Antonia Thomas"},{"@type":"Person","name":"Josh Dylan"}],"genre":["Mystery","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":2,"item":{"@type":"TVSeries","name":"Ludwig","description":"David Mitchell returns as a reclusive puzzle-setter posing as his missing twin brother, a detective.","startDate":"2026-10-13","numberOfSeasons":2,"actor":[{"@type":"Person","name":"David Mitchell"}],"genre":["Mystery","Comedy Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
-    {"@type":"ListItem","position":3,"item":{"@type":"TVSeries","name":"Death Valley","description":"A washed-up TV detective actor and a young DS solve real crimes in the Welsh valleys.","startDate":"2026-11-17","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Timothy Spall"}],"genre":["Mystery","Comedy Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":3,"item":{"@type":"TVSeries","name":"Death Valley","description":"A washed-up TV detective actor and a young DS solve real crimes in the Welsh countryside.","startDate":"2026-11-17","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Timothy Spall"}],"genre":["Mystery","Comedy Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":4,"item":{"@type":"TVSeries","name":"Blue Lights","description":"Rookie police officers navigate danger and politics on the streets of Belfast.","numberOfSeasons":4,"actor":[{"@type":"Person","name":"Siân Brooke"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":5,"item":{"@type":"TVSeries","name":"Time","description":"Jimmy McGovern's acclaimed anthology drama returns with David Tennant.","numberOfSeasons":3,"actor":[{"@type":"Person","name":"David Tennant"}],"genre":["Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":6,"item":{"@type":"TVSeries","name":"Blue Murder Motel","description":"Retired detectives running a New Zealand motel are pulled back into investigating when a body turns up on opening week.","startDate":"2026-08-24","numberOfSeasons":1,"genre":["Mystery","Comedy Drama"],"countryOfOrigin":{"@type":"Country","name":"New Zealand"}}},
@@ -151,12 +151,16 @@ gtag('config', 'G-P1L8CVNKS6');
   .fp-card-flagship{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold);}
   .fp-flagship-badge{display:inline-block;font-family:'Raleway',sans-serif;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:5px 10px;border-radius:2px;margin-bottom:12px;}
   .fp-tba-note{font-family:'Crimson Text',serif;font-style:italic;font-size:13px;color:var(--text-muted,#9090a8);margin:0 0 18px;}
-  .bts-section{background:#141a2a;padding:60px 24px;margin-top:4rem;}
-  .bts-inner{max-width:1000px;margin:0 auto;}
-  .bts-header{text-align:center;max-width:700px;margin:0 auto 3rem;}
+  .bts-section{background:#141a2a;padding:0 24px 60px;margin-top:4rem;border-top:3px solid var(--gold);position:relative;}
+  .bts-section::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:3px;background:var(--gold-light);}
+  .bts-badge-wrap{display:flex;justify-content:center;margin-top:-1px;}
+  .bts-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#1a2135;font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:10px 24px;border-radius:0 0 8px 8px;}
+  .bts-inner{max-width:1000px;margin:0 auto;padding-top:44px;}
+  .bts-header{text-align:center;max-width:700px;margin:0 auto 1rem;}
   .bts-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
-  .bts-header h2{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--cream);margin:0 0 0.75rem;}
+  .bts-header h2{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--cream);margin:0 0 0.75rem;}
   .bts-header p{font-family:'Crimson Text',serif;font-size:17px;color:var(--text-light);line-height:1.6;margin:0;}
+  .bts-tagline{text-align:center;max-width:640px;margin:1.25rem auto 3rem;font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted,#9090a8);line-height:1.6;padding-top:1.25rem;border-top:1px solid rgba(201,168,76,0.2);}
   .bts-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-bottom:3rem;}
   @media (max-width:800px){.bts-grid{grid-template-columns:1fr;}}
   .bts-grid img{width:100%;border-radius:12px;display:block;}
@@ -340,7 +344,7 @@ document.addEventListener('click', function(e){
     <div class="fp-card-body">
       <div class="fp-card-date">Premieres November 17</div>
       <h3 class="fp-card-title">Death Valley — Season 2</h3>
-      <p class="fp-card-desc">Timothy Spall and Gwyneth Keyworth return for more unconventional sleuthing in the Welsh valleys, pairing a washed-up former TV detective with a sharp young DS.</p>
+      <p class="fp-card-desc">Timothy Spall and Gwyneth Keyworth return for more unconventional sleuthing in the Welsh countryside, pairing a washed-up former TV detective with a sharp young DS.</p>
       <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch on BritBox &rarr;</a>
     </div>
   </div>
@@ -428,12 +432,16 @@ document.addEventListener('click', function(e){
 </div>
 
 <div class="bts-section" id="beyond-the-stream">
+  <div class="bts-badge-wrap">
+    <span class="bts-badge">&#9670; A British TV Hub Feature &#9670;</span>
+  </div>
   <div class="bts-inner">
     <div class="bts-header">
       <div class="bts-eyebrow">Beyond the Stream</div>
       <h2>Agatha Christie's Tommy &amp; Tuppence</h2>
       <p>A closer look at the couple headlining BritBox's fall slate — the cast, the century-old source material, and why this adaptation is a first for Christie.</p>
     </div>
+    <p class="bts-tagline">Beyond the Stream is British TV Hub's recurring deep-dive on the season's biggest show — the cast, the source material, and the story behind the story. Look for a new one each season.</p>
 
     <div class="bts-grid">
       <img src="/fall-preview-tommy-tuppence.webp" alt="Antonia Thomas and Josh Dylan as Tuppence and Tommy Beresford">
@@ -449,7 +457,7 @@ document.addEventListener('click', function(e){
       <div class="bts-cast">
         <div class="bts-cast-item">
           <div class="bts-cast-name">Antonia Thomas</div>
-          <div class="bts-cast-role">Tuppence Cowley — the sharp, impulsive half of the pair</div>
+          <div class="bts-cast-role">Tuppence — the sharp, impulsive half of the pair</div>
         </div>
         <div class="bts-cast-item">
           <div class="bts-cast-name">Josh Dylan</div>
@@ -457,20 +465,48 @@ document.addEventListener('click', function(e){
         </div>
         <div class="bts-cast-item">
           <div class="bts-cast-name">Imelda Staunton</div>
-          <div class="bts-cast-role">Part of the supporting cast</div>
+          <div class="bts-cast-role">Aunt Ada — Tommy's difficult, sharp-eyed elderly aunt</div>
         </div>
       </div>
     </div>
 
     <div class="bts-book-card">
       <h3>From the Page: The Secret Adversary</h3>
-      <p>Tommy and Tuppence first appeared in Christie's 1922 novel The Secret Adversary — her second published book, and the one that introduced two amateur detectives-for-hire with more nerve than experience. Unlike Poirot or Marple, the Beresfords aged in real time across Christie's novels, appearing as newlyweds here and, decades later, as grandparents in her final Tommy &amp; Tuppence book. This new series draws its central relationship from that same source, even as it updates the setting entirely.</p>
-      <a href="https://amzn.to/4fkeV3J" class="bts-book-btn" target="_blank" rel="noopener">Read The Secret Adversary &rarr;</a>
+      <p>Tommy and Tuppence first appeared in Christie's 1922 novel The Secret Adversary — her second published book, and the one that introduced two amateur detectives-for-hire with more nerve than experience. Unlike Poirot or Marple, the Beresfords aged in real time across Christie's novels: they're unmarried and just starting out here, newlyweds by the following book, and grandparents by the time of her final Tommy &amp; Tuppence novel. This new series draws its central relationship from that same source, even as it updates the setting entirely.</p>
+      <a href="https://amzn.to/4qzCta6" class="bts-book-btn" target="_blank" rel="noopener">Read The Secret Adversary &rarr;</a>
     </div>
 
     <div class="bts-book-card">
-      <h3>Part of a Bigger Celebration</h3>
-      <p>Tommy &amp; Tuppence's premiere anchors a month-long "Eras of Agatha Christie" celebration on BritBox, resurfacing classics like Marple and Poirot alongside recent adaptations including Why Didn't They Ask Evans?, Murder Is Easy, and Towards Zero — a chance to revisit decades of Christie storytelling in one place before diving into her newest incarnation.</p>
+      <h3>"Eras of Agatha Christie": Part of a Bigger BritBox Celebration</h3>
+      <p>Tommy &amp; Tuppence's September 15 premiere anchors a month-long "Eras of Agatha Christie" celebration on BritBox. A run of classic Marple and Poirot films joins the platform that same day, sorted into five themed collections:</p>
+      <div class="bts-cast" style="margin-top:1rem;grid-template-columns:1fr;">
+        <div class="bts-cast-item">
+          <div class="bts-cast-name">A Taste for Poison</div>
+          <div class="bts-cast-role">The ones laced with something deadlier than tea — Murder Is Easy (1982)</div>
+        </div>
+        <div class="bts-cast-item">
+          <div class="bts-cast-name">Secrets &amp; Spies</div>
+          <div class="bts-cast-role">Undercover work and hidden identities — Tommy &amp; Tuppence (2026), Murder Most Foul (1964), Thirteen at Dinner (1985)</div>
+        </div>
+        <div class="bts-cast-item">
+          <div class="bts-cast-name">Destination: Murder</div>
+          <div class="bts-cast-role">Murder with a change of scenery — A Caribbean Mystery (1983), Murder Ahoy (1964)</div>
+        </div>
+        <div class="bts-cast-item">
+          <div class="bts-cast-name">Murders in the Village</div>
+          <div class="bts-cast-role">English village life, deadlier than it looks — Murder Most Foul (1964), Murder She Said (1962), Murder at the Gallop (1963), Murder Is Easy (1982)</div>
+        </div>
+        <div class="bts-cast-item">
+          <div class="bts-cast-name">Her Darker Side</div>
+          <div class="bts-cast-role">Christie at her most sinister — The Alphabet Murders (1966), Murder Is Easy (1982)</div>
+        </div>
+      </div>
+      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:13px;color:var(--text-muted,#9090a8);margin-top:1.25rem;">All titles above are new to BritBox on September 15, 2026, the same day as Tommy &amp; Tuppence.</p>
+    </div>
+
+    <div class="bts-book-card">
+      <h3>Want More Christie?</h3>
+      <p>British TV Hub keeps a running guide to every Agatha Christie adaptation worth watching, from classic Marple and Poirot to the newest reimaginings, updated as new ones arrive.</p>
       <a href="/agatha-christie.html" class="bts-book-btn">See the Full Christie Guide &rarr;</a>
     </div>
 
