@@ -1527,6 +1527,22 @@ document.addEventListener('click', function(e){
 
 
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+<style>
+@media (max-width: 768px) {
+  /* Footer tagline bar - prevent letter-spaced text from overflowing past its own border (was causing a gold line to appear to cut through the text) */
+  footer > div:first-child {
+    padding: 16px 16px 14px !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.5 !important;
+  }
+  /* Footer link columns - collapse fixed 4-column grid to single column (was overflowing/unreadable on mobile) */
+  footer > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 28px 20px !important;
+  }
+}
+</style>
   <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
     British Mysteries. Dramas. Cozy Viewing.
     <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
