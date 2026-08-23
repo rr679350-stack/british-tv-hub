@@ -73,6 +73,7 @@
   .aside-link:hover { background: var(--gold-light); }
   .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
   .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+  .aside-link-note { display: block; margin-top: 0.5rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; color: var(--text-dim, #8a93a8); letter-spacing: 0.3px; }
   .newsletter-section { background: var(--navy-mid); border-top: 1px solid rgba(201,168,76,0.2); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 3.5rem 1.5rem; text-align: center; margin: 4rem 0 0; }
   .newsletter-section h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--cream); margin-bottom: 0.5rem; }
   .newsletter-section p { font-size: 1rem; color: var(--text-muted); margin-bottom: 1.5rem; }
