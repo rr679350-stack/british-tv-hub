@@ -342,6 +342,17 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
     font-size: 9px !important;
     padding: 12px 6px !important;
   }
+
+  /* Shrink the "What are you looking for today?" divider label so it fits on one line without overflowing */
+  .lobby-divider-label {
+    letter-spacing: 1.2px !important;
+    font-size: 9.5px !important;
+    gap: 8px !important;
+  }
+  .lobby-divider-label span:first-child,
+  .lobby-divider-label span:last-child {
+    width: 14px !important;
+  }
 }
 @media (max-width: 480px) {
   /* Make logo smaller on mobile */
@@ -1038,12 +1049,10 @@ div[style*="border:1px solid #3d4a60"] {
 
 @media (max-width: 480px) {
   /* Extra small phones - even more aggressive */
-  [style*="width:"],
   div[style*="width"] {
     width: 100% !important;
   }
 
-  [style*="max-width:"],
   div[style*="max-width"] {
     max-width: 100% !important;
   }
@@ -1347,10 +1356,10 @@ document.addEventListener('click', function(e){
   <a href="/start-here" class="start-here-cta" style="display:inline-block;background:#c9a96e;color:#1a2135;border:none;padding:20px 52px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;margin-bottom:36px;">New to British TV? Start Here &rarr;</a>
   </div>
 
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a93a8;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
-    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;"></span>
-    What are you looking for today?
-    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;"></span>
+  <div class="lobby-divider-label" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a93a8;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
+    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
+    <span style="white-space:nowrap;">What are you looking for today?</span>
+    <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
   </div>
 
   <div class="lobby-grid" style="display:grid;grid-template-columns:repeat(4,minmax(160px,200px));gap:16px;max-width:900px;width:100%;">
