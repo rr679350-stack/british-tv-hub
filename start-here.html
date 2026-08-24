@@ -208,7 +208,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .rule{ width:64px; height:2px; background:var(--gold); margin:26px auto 0; }
 
   /* ---- choose your adventure (4 large cards) ---- */
-  .path-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; }
+  .path-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:24px; }
   .path-card{ background: var(--navy); border: 1px solid var(--navy-line); padding: 36px 28px; display: flex; flex-direction: column; gap: 12px; text-align: left; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; border-radius: 12px; }
   .path-card:hover{ border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
   .path-icon{ font-size:30px; line-height:1; margin-bottom:4px; }
@@ -220,10 +220,11 @@ gtag('config', 'G-P1L8CVNKS6');
   @media (max-width:600px){ .path-grid{ grid-template-columns:1fr; } }
 
   /* ---- most popular guides (3 cards) ---- */
-  .unsure-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
-  .unsure-card{ background: var(--ink); border: 1px solid var(--navy-line); padding: 28px 22px; text-align: center; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .unsure-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; }
+  .unsure-card{ background: var(--ink); border: 1px solid var(--navy-line); border-radius: 12px; overflow:hidden; text-align: center; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .unsure-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
-  .unsure-card .u-icon{ font-size:26px; margin-bottom:10px; }
+  .unsure-card img{ width:100%; height:140px; object-fit:cover; display:block; }
+  .unsure-card-body{ padding: 26px 22px 28px; }
   .unsure-card h4{ font-family:'Playfair Display', serif; font-size:19px; margin:0 0 8px; }
   .unsure-card p{ color:var(--cream-dim); font-size:15px; line-height:1.5; margin:0 0 16px; }
   .unsure-card a{
@@ -553,6 +554,12 @@ document.addEventListener('click', function(e){
       <p>Discover the novels behind your favourite British series, starting with the ultimate bookshelf.</p>
       <a class="path-btn" href="/books.html">Browse British Books &rarr;</a>
     </div>
+    <div class="path-card">
+      <svg viewBox="0 0 32 32" style="width:30px;height:30px;margin-bottom:4px;" aria-hidden="true"><path d="M17 3a2.85 2.83 0 1 1 4 4L9.5 19.5 4 21l1.5-5.5Z" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <h3>I Loved a Show, Want More Like It</h3>
+      <p>Just finished a favourite? Find your next watch matched to Vera, Line of Duty, and more.</p>
+      <a class="path-btn" href="/shows-like.html">Find What's Next &rarr;</a>
+    </div>
   </div>
 </div>
 
@@ -563,22 +570,28 @@ document.addEventListener('click', function(e){
   </div>
   <div class="unsure-grid">
     <div class="unsure-card">
-      <div class="u-icon">&#127922;</div>
-      <h4>Match Me a Mystery</h4>
-      <p>Answer a few quick questions and find a series based on your preferences.</p>
-      <a href="/quiz.html">Take the Quiz &rarr;</a>
+      <img src="/collections-hero.webp" alt="Browse by Theme">
+      <div class="unsure-card-body">
+        <h4>Browse by Theme</h4>
+        <p>Family sagas, detective partnerships, period dramas, and more — organized by what you're in the mood for.</p>
+        <a href="/collections.html">See All Collections &rarr;</a>
+      </div>
     </div>
     <div class="unsure-card">
-      <div class="u-icon">&#128373;&#65039;</div>
-      <h4>Meet The Telly Detective</h4>
-      <p>Still can't decide? Answer a few simple questions to find the perfect British series to start with.</p>
-      <a href="/telly-detective.html">Meet The Telly Detective &rarr;</a>
+      <img src="/hidden-gems-hero.webp" alt="Hidden Gems">
+      <div class="unsure-card-body">
+        <h4>Hidden Gems</h4>
+        <p>Underseen British shows that deserve a bigger audience.</p>
+        <a href="/hidden-gems.html">Discover Hidden Gems &rarr;</a>
+      </div>
     </div>
     <div class="unsure-card">
-      <div class="u-icon">&#11088;</div>
-      <h4>Best Of Guide</h4>
-      <p>The mysteries and dramas British TV fans come back to again and again.</p>
-      <a href="/shows.html">See the Best Of Guide &rarr;</a>
+      <img src="/shows-hero.webp" alt="Best Of Guide">
+      <div class="unsure-card-body">
+        <h4>Best Of Guide</h4>
+        <p>The mysteries and dramas British TV fans come back to again and again.</p>
+        <a href="/shows.html">See the Best Of Guide &rarr;</a>
+      </div>
     </div>
   </div>
 </div>
