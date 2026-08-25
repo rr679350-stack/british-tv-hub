@@ -43,23 +43,23 @@ gtag('config', 'G-P1L8CVNKS6');
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Which British Streaming Service Is Right for You? | British TV Hub</title>
-<meta name="description" content="BritBox, Acorn TV, or PBS Passport? Answer three quick questions to see which British streaming service best fits how you actually watch. For fun — always confirm current plans directly with each service.">
-<link rel="canonical" href="https://britishtvhub.com/streaming-quiz.html">
+<title>Which Cozy English Village Would You Live In? | British TV Hub</title>
+<meta name="description" content="A bit of fun: answer three quick questions and find out which cozy English village fits your personality — Willowmere-on-Thames, Hollyhurst Green, Ravensbrook, or Thistledown Vale.">
+<link rel="canonical" href="https://britishtvhub.com/village-quiz.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://britishtvhub.com/streaming-quiz.html">
-<meta property="og:title" content="Which British Streaming Service Is Right for You? | British TV Hub">
-<meta property="og:description" content="BritBox, Acorn TV, or PBS Passport? Answer three quick questions to see which British streaming service best fits how you actually watch.">
-<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/quiz-hero.webp">
+<meta property="og:url" content="https://britishtvhub.com/village-quiz.html">
+<meta property="og:title" content="Which Cozy English Village Would You Live In? | British TV Hub">
+<meta property="og:description" content="A bit of fun: answer three quick questions and find out which cozy English village fits your personality.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/rainy-village.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="British TV Hub — best British TV dramas and mysteries guide">
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Which British Streaming Service Is Right for You? | British TV Hub">
-<meta name="twitter:description" content="BritBox, Acorn TV, or PBS Passport? Answer three quick questions to see which British streaming service best fits how you actually watch.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/quiz-hero.webp">
+<meta name="twitter:title" content="Which Cozy English Village Would You Live In? | British TV Hub">
+<meta name="twitter:description" content="A bit of fun: answer three quick questions and find out which cozy English village fits your personality.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/rainy-village.webp">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -87,11 +87,6 @@ body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;m
 .quiz-hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;color:#e8d0a0;line-height:1.2;margin-bottom:12px;text-shadow:0 2px 10px rgba(0,0,0,.8)}
 .quiz-hero-sub{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#c8d0e0;max-width:520px;margin:0 auto;line-height:1.6;text-shadow:0 1px 6px rgba(0,0,0,.8)}
 
-/* DISCLAIMER BANNER */
-.disclaimer-banner{max-width:660px;margin:28px auto 0;padding:0 24px}
-.disclaimer-box{background:rgba(139,26,46,0.12);border:1px solid rgba(139,26,46,0.4);border-radius:8px;padding:16px 20px;font-family:'Raleway',sans-serif;font-size:12.5px;line-height:1.6;color:#c8c0a8;}
-.disclaimer-box strong{color:#e8a0a8;}
-
 /* QUIZ CARD */
 .quiz-container{max-width:660px;margin:32px auto;padding:0 24px 64px}
 .quiz-card{ background: #1e2433; border: 1px solid #3d4a60; box-shadow: 0 4px 24px rgba(0,0,0,0.35); border-radius: 12px; }
@@ -115,11 +110,10 @@ body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;m
 /* RESULT */
 .result-wrap{padding:36px;display:none}
 .result-label{font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px}
-.result-show{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#c9a96e;margin-bottom:6px;font-style:italic;line-height:1.2}
+.result-show{font-family:'Playfair Display',serif;font-size:34px;font-weight:400;color:#c9a96e;margin-bottom:6px;font-style:italic;line-height:1.2}
 .result-meta{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:16px}
 .result-divider{width:40px;height:1px;background:#3d4a60;margin:0 0 20px}
-.result-desc{font-family:'Crimson Text',serif;font-size:18px;color:#c8c0a8;line-height:1.7;margin-bottom:20px}
-.result-fineprint{font-family:'Raleway',sans-serif;font-size:11px;line-height:1.6;color:#8a93a8;margin-bottom:24px;padding:12px 14px;background:rgba(0,0,0,0.15);border-radius:6px;border-left:2px solid #3d4a60;}
+.result-desc{font-family:'Crimson Text',serif;font-size:18px;color:#c8c0a8;line-height:1.7;margin-bottom:24px}
 .watch-btn{ display: block; text-align: center; background: var(--gold); color: #1a2135; padding: 12px 18px; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; margin-bottom: 10px; transition: background 0.2s; cursor: pointer; border: none; width: 100%; border-radius: 2px; }
 .watch-btn:hover{background:#a01f36}
 .retry-btn{display:block;text-align:center;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:11px 18px;font-family:'Raleway',sans-serif;font-weight:600;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;cursor:pointer;width:100%;transition:all 0.2s;margin-bottom:10px}
@@ -348,6 +342,7 @@ body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;m
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
             <a href="/shows-like.html">Browse All</a>
             <a href="/quiz.html">Match Me a Mystery</a>
+            <a href="/village-quiz.html">Which Village Are You?</a>
             <a href="/meet-tilly.html">Ask Tilly</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
@@ -402,18 +397,12 @@ document.addEventListener('click', function(e){
 <!-- HERO -->
 <div class="quiz-hero" style="position:relative;overflow:hidden;padding:0;min-height:340px;display:flex;align-items:center;">
   <img src="/original-badge.png" alt="A British TV Hub Original" title="A British TV Hub Original" class="original-badge" style="position:absolute;top:20px;right:20px;width:76px;height:76px;z-index:3;">
-  <img src="/quiz-hero.webp" alt="Moody London detective scene at night" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right top;filter:brightness(0.5);">
+  <img src="/rainy-village.webp" alt="A rainy cobblestone English village lane with a church spire" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.5);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 35%,rgba(26,33,53,0.7) 60%,rgba(26,33,53,0.1) 100%);"></div>
   <div style="position:relative;z-index:2;width:100%;text-align:center;padding:48px 40px 40px;">
-    <div class="quiz-eyebrow">A Bit of Fun &middot; Not Financial Advice</div>
-    <h1 class="quiz-hero-title">Which Streaming Service Is Right for You?</h1>
-    <p class="quiz-hero-sub">Answer three quick questions about how you actually watch British TV, and we'll point you toward BritBox, Acorn TV, or PBS Passport.</p>
-  </div>
-</div>
-
-<div class="disclaimer-banner">
-  <div class="disclaimer-box">
-    <strong>For entertainment purposes only.</strong> This quiz reflects general impressions of each service's content and isn't financial, legal, or purchasing advice. Pricing, plans, and available shows change often and vary by service and region — always check current plans directly on each provider's own site before subscribing. British TV Hub may earn a commission if you sign up through a link on this page; that never affects which result you get.
+    <div class="quiz-eyebrow">Just a Bit of Fun</div>
+    <h1 class="quiz-hero-title">Which Cozy English Village Would You Live In?</h1>
+    <p class="quiz-hero-sub">Answer three quick questions and find out where you truly belong — Willowmere-on-Thames, Hollyhurst Green, Ravensbrook, or Thistledown Vale.</p>
   </div>
 </div>
 
@@ -434,12 +423,11 @@ document.addEventListener('click', function(e){
     </div>
 
     <div class="result-wrap" id="result-wrap">
-      <div class="result-label">Your match is...</div>
+      <div class="result-label">You belong in...</div>
       <div class="result-show" id="r-show"></div>
       <div class="result-meta" id="r-meta"></div>
       <div class="result-divider"></div>
       <div class="result-desc" id="r-desc"></div>
-      <div class="result-fineprint" id="r-fineprint"></div>
       <button class="watch-btn" id="r-watch-btn"></button>
       <button class="retry-btn" id="retry-btn">Try again &rarr;</button>
       <div class="share-row">
@@ -454,72 +442,59 @@ document.addEventListener('click', function(e){
 <script>
 const QUESTIONS = [
   {
-    text: "What matters most to you in a streaming service?",
+    text: "It's a quiet Sunday afternoon. What are you doing?",
     opts: [
-      {label:"The biggest possible library of British shows", scores:{britbox:2}},
-      {label:"A curated archive of classics and hidden gems", scores:{acorn:2}},
-      {label:"Current PBS Masterpiece premieres as they air", scores:{pbs:2}},
-      {label:"Whatever's cheapest", scores:{acorn:1,britbox:1}}
+      {label:"Baking something to bring to the village fete", val:"willowmere"},
+      {label:"Pottering in the garden with a cup of tea", val:"hollyhurst"},
+      {label:"Walking the cliffs before the weather turns", val:"ravensbrook"},
+      {label:"Investigating the odd noise from next door's shed", val:"thistledown"}
     ]
   },
   {
-    text: "How do you like to watch a new season?",
+    text: "Pick a name for your local pub.",
     opts: [
-      {label:"Binge the whole thing the moment it drops", scores:{britbox:1,acorn:1}},
-      {label:"Follow along weekly, appointment-TV style", scores:{pbs:2}},
-      {label:"A bit of both, depending on the show", scores:{britbox:1,pbs:1}},
-      {label:"I mostly rewatch old favourites", scores:{acorn:2}}
+      {label:"The King's Arms", val:"willowmere"},
+      {label:"The Rose & Crown", val:"hollyhurst"},
+      {label:"The Black Anchor", val:"ravensbrook"},
+      {label:"The Dancing Goat", val:"thistledown"}
     ]
   },
   {
-    text: "Which of these sounds most appealing tonight?",
+    text: "A stranger arrives in the village. What happens next?",
     opts: [
-      {label:"Vera, Shetland, or Happy Valley", scores:{britbox:2}},
-      {label:"Doc Martin, Agatha Raisin, or Miss Fisher", scores:{acorn:2}},
-      {label:"Downton Abbey, All Creatures, or Sanditon", scores:{pbs:2}},
-      {label:"Whatever's newest and buzziest", scores:{britbox:1,acorn:1}}
+      {label:"Everyone invites them to the fundraiser within the hour", val:"willowmere"},
+      {label:"A polite nod, then back to the roses", val:"hollyhurst"},
+      {label:"Suspicious glances and hushed whispers", val:"ravensbrook"},
+      {label:"Someone's already started a betting pool on why they're really here", val:"thistledown"}
     ]
   }
 ];
 
-const RESULTS = {
-  britbox: {
-    name: "BritBox",
-    meta: "Biggest overall British library",
-    desc: "You want depth and breadth — new originals, long-running favourites, and a deep back catalog all in one place. BritBox is built by BBC Studios and ITV and is the closest thing to a one-stop shop for British television in the US.",
-    fineprint: "BritBox carries many of our most-recommended shows, including Vera, Happy Valley, and Time. Check britbox.com for current plans and pricing.",
-    url: "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20",
-    btn: "See BritBox on Amazon"
+const VILLAGES = {
+  willowmere: {
+    name: "Willowmere-on-Thames",
+    meta: "The Warm & Sociable Type",
+    desc: "A postcard-pretty market town along a gentle bend in the river, where the tea shop knows your order and the church bells mark the hours. You're happiest surrounded by people, always first to volunteer for the fete committee, and never miss a Sunday roast at the pub."
   },
-  acorn: {
-    name: "Acorn TV",
-    meta: "Curated cozy & classic mysteries",
-    desc: "You'd rather have a smaller, carefully chosen library than an overwhelming one — cozy village mysteries, classic favourites, and shows from across the Commonwealth, without a lot of digging required.",
-    fineprint: "Acorn TV is especially strong for cozy mysteries like Doc Martin and Agatha Raisin. Check acorn.tv for current plans and pricing.",
-    url: "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
-    btn: "See Acorn TV on Amazon"
+  hollyhurst: {
+    name: "Hollyhurst Green",
+    meta: "The Quiet & Content Type",
+    desc: "A hushed little village tucked behind hedgerows and rose gardens, where mornings move slowly and the biggest news is who won the flower show. You're happiest with muddy boots, a full kettle, and absolutely nowhere you need to be."
   },
-  pbs: {
-    name: "PBS Passport",
-    meta: "Current Masterpiece premieres",
-    desc: "You care most about following the current PBS Masterpiece lineup as it airs — period dramas like Downton Abbey, All Creatures Great and Small, and Sanditon. PBS Passport works differently from a typical subscription: it's a member benefit tied to supporting your local PBS station.",
-    fineprint: "PBS Passport access is usually included with a donation to your local PBS member station rather than a flat monthly fee. Check pbs.org/passport for how it works in your area.",
-    url: "https://www.pbs.org/passport/",
-    btn: "Learn About PBS Passport"
+  ravensbrook: {
+    name: "Ravensbrook",
+    meta: "The Moody & Atmospheric Type",
+    desc: "A windswept coastal village where the fog rolls in most evenings and the locals keep their secrets close. You love a dramatic sky, a good ghost story, and the sound of waves against the harbour wall long after everyone else has gone to bed."
   },
-  combo: {
-    name: "Probably More Than One",
-    meta: "Your taste spans a few different lanes",
-    desc: "Your answers were pretty evenly split — which honestly describes a lot of British TV fans. These three libraries barely overlap, so plenty of people end up with two (or all three) rather than picking just one.",
-    fineprint: "Our full streaming comparison breaks down what's actually on each service so you can decide what's worth it for you.",
-    url: "/streaming.html",
-    btn: "See Our Full Comparison"
+  thistledown: {
+    name: "Thistledown Vale",
+    meta: "The Curious & Eccentric Type",
+    desc: "A gloriously odd little village where the annual scarecrow competition is taken far too seriously and everyone has a theory about everyone else. You thrive on gossip, delightfully strange neighbours, and a mystery you simply cannot leave alone."
   }
 };
 
-let answers = [];
 let current = 0;
-let scores = {britbox:0, acorn:0, pbs:0};
+let tally = {willowmere:0, hollyhurst:0, ravensbrook:0, thistledown:0};
 
 function renderQuestion(){
   const q = QUESTIONS[current];
@@ -531,7 +506,7 @@ function renderQuestion(){
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
     btn.textContent = o.label;
-    btn.onclick = () => pick(o.scores, btn);
+    btn.onclick = () => pick(o.val, btn);
     grid.appendChild(btn);
   });
   for(let i=0;i<3;i++){
@@ -540,11 +515,10 @@ function renderQuestion(){
   }
 }
 
-function pick(optScores, btn){
+function pick(val, btn){
   document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
-  Object.keys(optScores).forEach(k => { scores[k] = (scores[k]||0) + optScores[k]; });
-  answers.push(optScores);
+  tally[val] = (tally[val]||0) + 1;
   setTimeout(()=>{
     current++;
     if(current < 3){
@@ -562,38 +536,25 @@ function showResult(){
   const rw = document.getElementById('result-wrap');
   rw.style.display = 'block';
 
-  const sorted = Object.entries(scores).sort((a,b) => b[1]-a[1]);
-  const top = sorted[0];
-  const second = sorted[1];
-  let key = top[0];
-  if (second && top[1] - second[1] <= 1) {
-    key = 'combo';
-  }
-
-  const result = RESULTS[key];
+  const sorted = Object.entries(tally).sort((a,b) => b[1]-a[1]);
+  const key = sorted[0][0];
+  const result = VILLAGES[key];
 
   document.getElementById('r-show').textContent = result.name;
   document.getElementById('r-meta').textContent = result.meta;
   document.getElementById('r-desc').textContent = result.desc;
-  document.getElementById('r-fineprint').textContent = result.fineprint;
 
   const wb = document.getElementById('r-watch-btn');
-  wb.textContent = result.btn + ' \u2192';
-  wb.onclick = () => {
-    if (result.url.startsWith('/')) {
-      window.location.href = result.url;
-    } else {
-      window.open(result.url, '_blank');
-    }
-  };
+  wb.textContent = 'See Cozy Village Mysteries \u2192';
+  wb.onclick = () => { window.location.href = '/cozy.html'; };
 
   document.getElementById('retry-btn').onclick = reset;
 
   document.getElementById('fb-share').onclick = () => {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=https://britishtvhub.com/streaming-quiz.html','_blank');
+    window.open('https://www.facebook.com/sharer/sharer.php?u=https://britishtvhub.com/village-quiz.html','_blank');
   };
   document.getElementById('copy-share').onclick = () => {
-    navigator.clipboard.writeText('https://britishtvhub.com/streaming-quiz.html').then(()=>{
+    navigator.clipboard.writeText('https://britishtvhub.com/village-quiz.html').then(()=>{
       document.getElementById('copy-share').textContent = 'Copied!';
       setTimeout(()=>{ document.getElementById('copy-share').textContent = 'Copy link'; },2000);
     });
@@ -601,9 +562,8 @@ function showResult(){
 }
 
 function reset(){
-  answers = [];
   current = 0;
-  scores = {britbox:0, acorn:0, pbs:0};
+  tally = {willowmere:0, hollyhurst:0, ravensbrook:0, thistledown:0};
   document.getElementById('question-wrap').style.display = 'block';
   document.getElementById('result-wrap').style.display = 'none';
   renderQuestion();
@@ -613,7 +573,7 @@ renderQuestion();
 </script>
 
 <div style="max-width:660px;margin:0 auto;padding:0 24px 56px;text-align:center;">
-  <p style="font-family:'Raleway',sans-serif;font-size:11px;line-height:1.7;color:#7d8698;">This quiz is a lighthearted way to compare general content trends across services and reflects British TV Hub's own editorial impressions — it is not an endorsement, guarantee, or substitute for checking each provider's actual current plans, pricing, and available titles. See our full <a href="/streaming.html" style="color:#c9a96e;">streaming comparison guide</a> for more detail.</p>
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;line-height:1.7;color:#7d8698;">Just a bit of fun — Willowmere-on-Thames, Hollyhurst Green, Ravensbrook, and Thistledown Vale are fictional composites inspired by the cozy English village mysteries we love, not real places or specific shows. See our full <a href="/cozy.html" style="color:#c9a96e;">cozy mysteries guide</a> for the real thing.</p>
 </div>
 
 
@@ -683,9 +643,10 @@ renderQuestion();
       <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
       <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you. This site is not affiliated with, endorsed by, or sponsored by BritBox, Acorn TV, or PBS.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:9px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
+
 
 <script>
 (function() {
