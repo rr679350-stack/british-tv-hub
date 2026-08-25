@@ -1,97 +1,97 @@
 {
-  "month": "August 2026",
-  "updated": "2026-08-01",
-  "highlight": {
-    "title": "The Chelsea Detective",
-    "badge": "Acorn TV Original · Season 4 Premiere · August 3",
-    "description": "DI Max Arnold (Adrian Scarborough) and DS Layla Walsh (Vanessa Emme) return to investigate four new murder cases in the glamorous London borough of Chelsea. New episodes stream weekly starting August 3.",
-    "tags": [
-      "Crime drama",
-      "London"
+    "month": "August 2026",
+    "updated": "2026-08-01",
+    "highlight": {
+        "title": "The Chelsea Detective",
+        "badge": "Acorn TV Original · Season 4 Premiere · August 3",
+        "description": "DI Max Arnold (Adrian Scarborough) and DS Layla Walsh (Vanessa Emme) return to investigate four new murder cases in the glamorous London borough of Chelsea. New episodes stream weekly starting August 3.",
+        "tags": [
+            "Crime drama",
+            "London"
+        ],
+        "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    "new_arrivals": [
+        {
+            "title": "Blue Murder Motel",
+            "season": "Season 1",
+            "available": "Premieres August 24 · New episodes weekly",
+            "badge": "Acorn TV Original · New Series",
+            "description": "Married retired detectives Vanessa and Peter Coleman leave their cop careers behind to run a motel in a beachside New Zealand town — only for a body to turn up in Unit 3 just a week after opening.",
+            "tags": [
+                "Cozy mystery",
+                "New Zealand"
+            ],
+            "editors_pick": true,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        },
+        {
+            "title": "The Ridge",
+            "season": "Series 1",
+            "available": "New episodes weekly · Finale August 31",
+            "badge": "Acorn TV Exclusive",
+            "description": "Lauren Lyle (Outlander) stars as a Scottish anesthetist who arrives in New Zealand for her sister's wedding, only to find her dead. A psychological thriller of grief, secrets, and small-town lies.",
+            "tags": [
+                "Psychological thriller",
+                "Lauren Lyle"
+            ],
+            "editors_pick": false,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        },
+        {
+            "title": "You're Killing Me",
+            "season": "Series 1",
+            "available": "Full season now streaming",
+            "badge": "Acorn TV Original",
+            "description": "Brooke Shields stars as a bestselling novelist who teams up with an aspiring podcaster to solve her friend's murder in a quaint New England town — a cozy mystery with genuine charm.",
+            "tags": [
+                "Cozy mystery",
+                "Brooke Shields"
+            ],
+            "editors_pick": false,
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        }
     ],
-    "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-  },
-  "new_arrivals": [
-    {
-      "title": "Blue Murder Motel",
-      "season": "Season 1",
-      "available": "Premieres August 24 · New episodes weekly",
-      "badge": "Acorn TV Original · New Series",
-      "description": "Married retired detectives Vanessa and Peter Coleman leave their cop careers behind to run a motel in a beachside New Zealand town — only for a body to turn up in Unit 3 just a week after opening.",
-      "tags": [
-        "Cozy mystery",
-        "New Zealand"
-      ],
-      "editors_pick": true,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    {
-      "title": "The Ridge",
-      "season": "Series 1",
-      "available": "New episodes weekly · Finale August 31",
-      "badge": "Acorn TV Exclusive",
-      "description": "Lauren Lyle (Outlander) stars as a Scottish anesthetist who arrives in New Zealand for her sister's wedding, only to find her dead. A psychological thriller of grief, secrets, and small-town lies.",
-      "tags": [
-        "Psychological thriller",
-        "Lauren Lyle"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    {
-      "title": "You're Killing Me",
-      "season": "Series 1",
-      "available": "Full season now streaming",
-      "badge": "Acorn TV Original",
-      "description": "Brooke Shields stars as a bestselling novelist who teams up with an aspiring podcaster to solve her friend's murder in a quaint New England town — a cozy mystery with genuine charm.",
-      "tags": [
-        "Cozy mystery",
-        "Brooke Shields"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    }
-  ],
-  "originals": [
-    {
-      "title": "Midsomer Murders",
-      "seasons": "25+ series",
-      "description": "The ultimate comfort watch — impossibly picturesque English villages with an impossibly high murder rate. 25+ series of warm, witty mystery.",
-      "tags": [
-        "Cozy mystery",
-        "English villages"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    {
-      "title": "Agatha Raisin",
-      "seasons": "4 series",
-      "description": "Ashley Jensen stars as the sharp London PR exec who retires to the Cotswolds and keeps stumbling into murders — funny, warm, and based on M.C. Beaton's novels.",
-      "tags": [
-        "Cozy mystery",
-        "Cotswolds"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    {
-      "title": "Art Detectives",
-      "seasons": "Series 1",
-      "description": "DI Mick Palmer (Stephen Moyer) and DC Shazia Malik solve murders connected to the world of art and antiques, from Old Master paintings to Banksy street art.",
-      "tags": [
-        "British mystery",
-        "Stephen Moyer"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    {
-      "title": "Doc Martin",
-      "seasons": "10 series",
-      "description": "A grumpy London surgeon retreats to a tiny Cornish fishing village as its GP in this long-running comedy drama, starring Martin Clunes as the reluctant Doc Martin.",
-      "tags": [
-        "Comedy drama",
-        "Cornwall"
-      ],
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    }
-  ]
+    "originals": [
+        {
+            "title": "The Chelsea Detective",
+            "seasons": "4 series",
+            "description": "Adrian Scarborough stars as a rumpled, sharp-eyed detective solving murders in one of London's wealthiest neighborhoods — a genuine Acorn TV Original with real bite beneath its polished setting.",
+            "tags": [
+                "Crime drama",
+                "Acorn TV Original"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        },
+        {
+            "title": "Signora Volpe",
+            "seasons": "3 series",
+            "description": "Emilia Fox stars as a disillusioned former MI6 operative who settles into a quiet new life in the Umbrian countryside, only to keep stumbling into local mysteries — a genuine Acorn TV Original commissioned with Route 24.",
+            "tags": [
+                "Crime mystery",
+                "Acorn TV Original"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        },
+        {
+            "title": "Art Detectives",
+            "seasons": "Series 1",
+            "description": "DI Mick Palmer (Stephen Moyer) and DC Shazia Malik solve murders connected to the world of art and antiques, from Old Master paintings to Banksy street art.",
+            "tags": [
+                "British mystery",
+                "Stephen Moyer"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        },
+        {
+            "title": "Dalgliesh",
+            "seasons": "3 series",
+            "description": "Bertie Carvel stars as P.D. James's enigmatic poet-detective in this atmospheric Acorn TV Original, based on the bestselling Adam Dalgliesh mystery novels.",
+            "tags": [
+                "Crime drama",
+                "Acorn TV Original"
+            ],
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        }
+    ]
 }
