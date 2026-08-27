@@ -228,8 +228,11 @@ gtag('config', 'G-P1L8CVNKS6');
   .card{
     background:var(--navy); border:1px solid var(--navy-line);
     padding:22px 22px 20px; display:flex; flex-direction:column; gap:10px;
-    transition:opacity .15s ease;
+    transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    border-radius:12px;
   }
+  .card:hover{ border-color:var(--gold); transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,0.3); }
+  .jump-pill:hover{ border-color:var(--gold) !important; background:var(--navy); }
   .badge-row{ display:flex; flex-wrap:wrap; gap:6px; }
   .badge{
     font-family:'Raleway',sans-serif; font-size:10.5px; letter-spacing:.06em;
@@ -649,7 +652,23 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <div class="section" id="gift-ideas" style="padding-top:112px;">
+  <div style="background:#0e1526;border-bottom:1px solid var(--navy-line);padding:18px 24px;">
+    <div style="max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--cream-dim);">Jump to</span>
+      <a href="#gift-ideas" class="jump-pill" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-bright);text-decoration:none;border:1px solid var(--navy-line);border-radius:2px;padding:6px 14px;transition:border-color .15s ease,background .15s ease;">Where to Start</a>
+      <a href="#holiday-cards" class="jump-pill" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-bright);text-decoration:none;border:1px solid var(--navy-line);border-radius:2px;padding:6px 14px;">Holiday Cards</a>
+      <a href="#the-collection" class="jump-pill" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-bright);text-decoration:none;border:1px solid var(--navy-line);border-radius:2px;padding:6px 14px;">The Collection</a>
+      <a href="#shop-by-collection" class="jump-pill" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-bright);text-decoration:none;border:1px solid var(--navy-line);border-radius:2px;padding:6px 14px;">Shop by Collection</a>
+      <a href="#nl-anchor" class="jump-pill" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-bright);text-decoration:none;border:1px solid var(--navy-line);border-radius:2px;padding:6px 14px;">Newsletter</a>
+    </div>
+  </div>
+
+  <div class="section" id="gift-ideas" style="padding-top:56px;">
+    <div class="section-head" style="margin-bottom:8px;">
+      <h2 style="font-size:28px;">Where to Start</h2>
+      <span>Two Easy Entry Points</span>
+    </div>
+    <p class="section-intro" style="margin:0 0 30px;">Browse the full marketplace, or head into The Snug for curated ideas by mood and theme.</p>
     <div class="grid" style="gap:28px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
 
       <div class="card" style="padding:0 0 28px; text-align:center; gap:16px; overflow:hidden;">
@@ -668,7 +687,8 @@ document.addEventListener('click', function(e){
 
     </div>
 
-    <div style="margin-top:56px;">
+    <div id="holiday-cards" style="margin-top:64px;padding-top:8px;scroll-margin-top:20px;border-top:1px solid var(--navy-line);">
+      <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-align:center;margin:24px 0 8px;">Fresh This Season</p>
       <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 8px;text-align:center;">Holiday Cards</h2>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:var(--cream-dim);text-align:center;max-width:600px;margin:0 auto 28px;">Just in time for the holiday season — get your cards early.</p>
       <img src="/holiday-cards-header.webp" alt="A steaming mug and lantern by a snowy window, with Big Ben lit up outside" style="width:100%;max-width:700px;max-height:200px;object-fit:cover;object-position:center 40%;border-radius:12px;display:block;margin:0 auto 28px;">
@@ -690,7 +710,7 @@ document.addEventListener('click', function(e){
       </div>
     </div>
 
-    <div style="margin-top:56px;background:var(--navy-deep);border:1px solid rgba(201,169,110,0.35);border-radius:12px;padding:40px;display:flex;flex-wrap:wrap;gap:36px;align-items:center;justify-content:space-between;">
+    <div id="the-collection" style="margin-top:64px;scroll-margin-top:20px;background:var(--navy-deep);border:1px solid rgba(201,169,110,0.35);border-radius:12px;padding:40px;display:flex;flex-wrap:wrap;gap:36px;align-items:center;justify-content:space-between;">
       <div style="flex:1;min-width:260px;">
         <div class="badge-row" style="margin-bottom:10px;"><span class="badge">New From British TV Hub</span></div>
         <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">The British TV Hub Collection</h2>
@@ -702,7 +722,7 @@ document.addEventListener('click', function(e){
       <img src="/merch-christmas-card.webp" alt="British TV Holiday Card, All Is Cozy and Bright, showing a snowy lamplit British street and wreathed front door" style="width:260px;height:auto;border-radius:8px;flex-shrink:0;object-fit:cover;">
     </div>
 
-    <div style="margin-top:64px;">
+    <div id="shop-by-collection" style="margin-top:64px;scroll-margin-top:20px;">
       <div class="section-head" style="margin-bottom:8px;">
         <h2 style="font-size:32px;">Shop by Collection</h2>
         <span>Browse by Collection</span>
