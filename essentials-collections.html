@@ -163,6 +163,25 @@ gtag('config', 'G-P1L8CVNKS6');
     font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-bright); display:flex; gap:18px; flex-wrap:wrap; margin-top:12px;
   }
 
+  /* ---- snow overlay ---- */
+  .snow-layer{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+  .snowflake{
+    position:absolute;
+    top:-10px;
+    background:#fff;
+    border-radius:50%;
+    animation-name:snowfall;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+  }
+  @keyframes snowfall{
+    0%{ transform:translate(0,0); }
+    100%{ transform:translate(var(--drift),440px); }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .snowflake{ animation:none; display:none; }
+  }
+
   /* ---- this week's pick, magazine style ---- */
   .pick-wrap{ max-width:960px; margin:52px auto 0; padding:0 24px; }
   .pick{
@@ -646,8 +665,39 @@ document.addEventListener('click', function(e){
 
 
   <div class="page-hero">
-    <img src="/snug-nav-collections.webp" alt="A wrapped gift box beside a basket of blankets and a candle" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.9);">
+    <img src="/shop-by-theme-hero.webp" alt="A cozy fireside scene with a British TV Hub mug and pillow, a snowy village on TV, and snow falling outside the window" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.9);">
     <div style="position:absolute;inset:0;background:linear-gradient(to right,var(--navy-deep) 42%,rgba(16,28,51,0.75) 62%,rgba(16,28,51,0.05) 100%);"></div>
+    <div class="snow-layer">
+<span class="snowflake" style="left:32.4%;width:2.5px;height:2.5px;animation-duration:12.9s;animation-delay:-14.8s;opacity:0.58;--drift:2.0px;"></span>
+<span class="snowflake" style="left:5.8%;width:3.5px;height:3.5px;animation-duration:7.3s;animation-delay:-9.1s;opacity:0.45;--drift:-26.0px;"></span>
+<span class="snowflake" style="left:42.5%;width:4.5px;height:4.5px;animation-duration:8.1s;animation-delay:-12.4s;opacity:0.87;--drift:8.0px;"></span>
+<span class="snowflake" style="left:57.7%;width:3.2px;height:3.2px;animation-duration:15.8s;animation-delay:-15.3s;opacity:0.54;--drift:22.0px;"></span>
+<span class="snowflake" style="left:14.4%;width:2.4px;height:2.4px;animation-duration:9.8s;animation-delay:-2.9s;opacity:0.69;--drift:-19.0px;"></span>
+<span class="snowflake" style="left:63.9%;width:3.1px;height:3.1px;animation-duration:11.9s;animation-delay:-15.0s;opacity:0.5;--drift:-26.0px;"></span>
+<span class="snowflake" style="left:68.0%;width:3.3px;height:3.3px;animation-duration:9.8s;animation-delay:-6.6s;opacity:0.55;--drift:-3.0px;"></span>
+<span class="snowflake" style="left:79.4%;width:4.1px;height:4.1px;animation-duration:9.2s;animation-delay:-6.8s;opacity:0.84;--drift:2.0px;"></span>
+<span class="snowflake" style="left:72.9%;width:2.9px;height:2.9px;animation-duration:15.8s;animation-delay:-14.1s;opacity:0.78;--drift:-5.0px;"></span>
+<span class="snowflake" style="left:15.2%;width:3.5px;height:3.5px;animation-duration:7.4s;animation-delay:-5.3s;opacity:0.69;--drift:16.0px;"></span>
+<span class="snowflake" style="left:87.5%;width:2.9px;height:2.9px;animation-duration:13.3s;animation-delay:-6.5s;opacity:0.63;--drift:5.0px;"></span>
+<span class="snowflake" style="left:84.0%;width:4.8px;height:4.8px;animation-duration:11.3s;animation-delay:-5.4s;opacity:0.75;--drift:-26.0px;"></span>
+<span class="snowflake" style="left:64.7%;width:5.0px;height:5.0px;animation-duration:14.4s;animation-delay:-11.4s;opacity:0.73;--drift:-7.0px;"></span>
+<span class="snowflake" style="left:2.3%;width:3.4px;height:3.4px;animation-duration:8.5s;animation-delay:-14.1s;opacity:0.78;--drift:-26.0px;"></span>
+<span class="snowflake" style="left:12.9%;width:2.7px;height:2.7px;animation-duration:10.5s;animation-delay:-2.1s;opacity:0.62;--drift:-25.0px;"></span>
+<span class="snowflake" style="left:54.9%;width:4.7px;height:4.7px;animation-duration:14.4s;animation-delay:-2.2s;opacity:0.61;--drift:-13.0px;"></span>
+<span class="snowflake" style="left:35.9%;width:4.7px;height:4.7px;animation-duration:15.6s;animation-delay:-13.6s;opacity:0.52;--drift:-19.0px;"></span>
+<span class="snowflake" style="left:23.3%;width:3.5px;height:3.5px;animation-duration:12.3s;animation-delay:-11.8s;opacity:0.61;--drift:-30.0px;"></span>
+<span class="snowflake" style="left:36.9%;width:3.7px;height:3.7px;animation-duration:15.6s;animation-delay:-5.0s;opacity:0.71;--drift:1.0px;"></span>
+<span class="snowflake" style="left:67.6%;width:2.2px;height:2.2px;animation-duration:15.1s;animation-delay:-3.5s;opacity:0.8;--drift:22.0px;"></span>
+<span class="snowflake" style="left:39.2%;width:3.2px;height:3.2px;animation-duration:7.9s;animation-delay:-5.9s;opacity:0.43;--drift:-26.0px;"></span>
+<span class="snowflake" style="left:20.9%;width:2.5px;height:2.5px;animation-duration:10.1s;animation-delay:-15.2s;opacity:0.48;--drift:-30.0px;"></span>
+<span class="snowflake" style="left:10.1%;width:3.1px;height:3.1px;animation-duration:7.2s;animation-delay:-2.0s;opacity:0.47;--drift:7.0px;"></span>
+<span class="snowflake" style="left:25.2%;width:3.0px;height:3.0px;animation-duration:10.3s;animation-delay:-14.0s;opacity:0.9;--drift:21.0px;"></span>
+<span class="snowflake" style="left:46.6%;width:3.5px;height:3.5px;animation-duration:7.8s;animation-delay:-14.4s;opacity:0.53;--drift:-9.0px;"></span>
+<span class="snowflake" style="left:82.9%;width:2.5px;height:2.5px;animation-duration:7.2s;animation-delay:-0.8s;opacity:0.47;--drift:2.0px;"></span>
+<span class="snowflake" style="left:54.3%;width:2.1px;height:2.1px;animation-duration:11.8s;animation-delay:-0.3s;opacity:0.75;--drift:22.0px;"></span>
+<span class="snowflake" style="left:26.1%;width:3.1px;height:3.1px;animation-duration:8.5s;animation-delay:-3.6s;opacity:0.79;--drift:2.0px;"></span>
+
+    </div>
     <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:600px;">
       <div class="page-hero-eyebrow">The Snug</div>
       <h1>Shop by Theme</h1>
