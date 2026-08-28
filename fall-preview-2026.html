@@ -185,6 +185,10 @@ gtag('config', 'G-P1L8CVNKS6');
   .bts-book-card{background:#232c47;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:28px 30px;margin-top:2rem;}
   .bts-book-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin:0 0 8px;}
   .bts-book-card p{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);line-height:1.65;margin:0 0 16px;}
+  .bts-collections{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:1.5rem;}
+  .bts-collections-item{background:#232c47;border:1px solid rgba(201,168,76,0.2);border-radius:10px;padding:24px 26px;}
+  .bts-collections-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--gold-light);margin-bottom:8px;}
+  .bts-collections-desc{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.6;}
   .bts-book-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;text-decoration:none;}
   .bts-photo-break{margin:3rem 0;}
   .bts-photo-break img{width:100%;max-height:480px;object-fit:cover;border-radius:12px;display:block;}
@@ -676,26 +680,26 @@ document.addEventListener('click', function(e){
     <div class="bts-book-card">
       <h3>"Eras of Agatha Christie": Part of a Bigger BritBox Celebration</h3>
       <p>Tommy &amp; Tuppence's September 15 premiere anchors a month-long "Eras of Agatha Christie" celebration on BritBox. A run of classic Marple and Poirot films joins the platform that same day, sorted into five themed collections:</p>
-      <div class="bts-cast" style="margin-top:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">A Taste for Poison</div>
-          <div class="bts-cast-role">The ones laced with something deadlier than tea — Murder Is Easy (1982)</div>
+      <div class="bts-collections">
+        <div class="bts-collections-item">
+          <div class="bts-collections-name">A Taste for Poison</div>
+          <div class="bts-collections-desc">The ones laced with something deadlier than tea — Murder Is Easy (1982)</div>
         </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Secrets &amp; Spies</div>
-          <div class="bts-cast-role">Undercover work and hidden identities — Tommy &amp; Tuppence (2026), Murder Most Foul (1964), Thirteen at Dinner (1985)</div>
+        <div class="bts-collections-item">
+          <div class="bts-collections-name">Secrets &amp; Spies</div>
+          <div class="bts-collections-desc">Undercover work and hidden identities — Tommy &amp; Tuppence (2026), Murder Most Foul (1964), Thirteen at Dinner (1985)</div>
         </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Destination: Murder</div>
-          <div class="bts-cast-role">Murder with a change of scenery — A Caribbean Mystery (1983), Murder Ahoy (1964)</div>
+        <div class="bts-collections-item">
+          <div class="bts-collections-name">Destination: Murder</div>
+          <div class="bts-collections-desc">Murder with a change of scenery — A Caribbean Mystery (1983), Murder Ahoy (1964)</div>
         </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Murders in the Village</div>
-          <div class="bts-cast-role">English village life, deadlier than it looks — Murder Most Foul (1964), Murder She Said (1962), Murder at the Gallop (1963), Murder Is Easy (1982)</div>
+        <div class="bts-collections-item">
+          <div class="bts-collections-name">Murders in the Village</div>
+          <div class="bts-collections-desc">English village life, deadlier than it looks — Murder Most Foul (1964), Murder She Said (1962), Murder at the Gallop (1963), Murder Is Easy (1982)</div>
         </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Her Darker Side</div>
-          <div class="bts-cast-role">Christie at her most sinister — The Alphabet Murders (1966), Murder Is Easy (1982)</div>
+        <div class="bts-collections-item">
+          <div class="bts-collections-name">Her Darker Side</div>
+          <div class="bts-collections-desc">Christie at her most sinister — The Alphabet Murders (1966), Murder Is Easy (1982)</div>
         </div>
       </div>
     </div>
