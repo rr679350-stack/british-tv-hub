@@ -30,8 +30,16 @@ gtag('config', 'G-P1L8CVNKS6');
       gtag('event','pbs_click',{link_url:href,page_path:location.pathname});
     }
   }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
 })();
 </script>
+
+     <script id="mcjs" defer>!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/403ae87632e96b44c01b7e780/669c6b8f2c931300f11ad3ee1.js");</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -445,6 +453,19 @@ document.addEventListener('click', function(e){
 <p style="font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin:24px 0 0;">Curated and verified by British TV Hub &middot; Premiere dates checked August 2026</p>
 </div>
 
+<div style="max-width:960px;margin:28px auto 0;padding:0 24px;">
+  <div style="background:#101c33;border:1px solid rgba(201,169,110,0.35);border-radius:12px;padding:22px 28px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;">
+    <div style="flex:1;min-width:240px;">
+      <div style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);margin:0 0 4px;">New to British TV Hub?</div>
+      <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#b8b0a0;line-height:1.5;margin:0;">Not sure where to dive in? Start with a short guide, or browse every show British TV Hub covers.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0;">
+      <a href="/start-here" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:13px 22px;border-radius:2px;">Start Here &rarr;</a>
+      <a href="/shows-index.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;background:transparent;border:1px solid #c9a96e;padding:12px 21px;border-radius:2px;">Browse All Shows &rarr;</a>
+    </div>
+  </div>
+</div>
+
 <div class="fp-platform-heading" id="britbox">
   <h2>On BritBox <em style="font-style:italic;color:var(--gold-light);">This Autumn</em></h2>
   <p>British TV Hub's most-watched streaming service brings a strong lineup of new and returning shows this autumn.</p>
@@ -739,7 +760,27 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<footer style="background:#141a2a;padding:60px 24px 30px;margin-top:60px;">
+<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;margin-top:60px;">
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px;">Before You Go</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Five British TV Picks. Every Sunday.</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#a0aec8;margin:0 auto 26px;max-width:520px;">Your weekly guide to what to watch next, plus what's new on BritBox and Acorn TV.</p>
+  <div id="nl-anchor">
+    <div id="mc_embed_shell_poll">
+      <div id="mc_embed_signup_poll">
+        <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank">
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+            <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:14px 16px;font-size:15px;background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;">
+            <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+            <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:14px 26px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;cursor:pointer;white-space:nowrap;">Get My Sunday Picks</button>
+          </div>
+          <div style="font-family:'Raleway',sans-serif;font-size:11px;color:#88898b;margin-top:10px;letter-spacing:0.5px;">No spam &middot; Unsubscribe anytime</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="background:#141a2a;padding:60px 24px 30px;">
   <div style="max-width:960px;margin:0 auto 40px;text-align:center;">
     <img src="/footer-brand.webp" alt="British TV Hub" style="max-width:280px;width:100%;height:auto;margin:0 auto 30px;display:block;">
   </div>
@@ -773,6 +814,7 @@ document.addEventListener('click', function(e){
       <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;font-weight:600;">About</div>
       <a href="/about.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">About</a>
       <a href="/support.html" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;text-decoration:none;display:block;padding:5px 0;">Support British TV Hub</a>
+      <a href="/start-here" style="display:inline-block;margin-top:8px;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
   </div>
 
