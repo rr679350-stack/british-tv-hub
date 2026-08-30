@@ -657,32 +657,53 @@ document.addEventListener('click', function(e){
   <div class="fp-anticipated-inner">
     <p class="fp-anticipated-eyebrow">A British TV Hub Feature</p>
     <h2 class="fp-anticipated-title">British TV Hub's 5 Most Anticipated</h2>
-    <ol class="fp-anticipated-list">
-      <li><span class="fp-anticipated-rank">1</span><span class="fp-anticipated-name">Agatha Christie's Tommy &amp; Tuppence</span><span class="fp-anticipated-meta">BritBox · Sept. 15</span></li>
-      <li><span class="fp-anticipated-rank">2</span><span class="fp-anticipated-name">Ludwig — Season 2</span><span class="fp-anticipated-meta">BritBox · Oct. 13</span></li>
-      <li><span class="fp-anticipated-rank">3</span><span class="fp-anticipated-name">The Marlow Murder Club — Season 3</span><span class="fp-anticipated-meta">PBS · Sept. 6</span></li>
-      <li><span class="fp-anticipated-rank">4</span><span class="fp-anticipated-name">Marble Hall Murders</span><span class="fp-anticipated-meta">PBS · Sept. 6</span></li>
-      <li><span class="fp-anticipated-rank">5</span><span class="fp-anticipated-name">Death Valley — Season 2</span><span class="fp-anticipated-meta">BritBox · Nov. 17</span></li>
-    </ol>
-    <p class="fp-anticipated-pick">British TV Hub Pick: <strong>Agatha Christie's Tommy &amp; Tuppence</strong></p>
+    <div class="fp-anticipated-grid">
+      <a href="/shows/tommy-and-tuppence.html" class="fp-anticipated-card">
+        <span class="fp-anticipated-rank">1</span>
+        <img src="/fall-preview-tommy-tuppence-keyart.webp" alt="Agatha Christie's Tommy &amp; Tuppence" loading="lazy">
+        <span class="fp-anticipated-name">Agatha Christie's Tommy &amp; Tuppence</span>
+        <span class="fp-anticipated-meta">BritBox · Sept. 15</span>
+      </a>
+      <a href="/shows/ludwig.html" class="fp-anticipated-card">
+        <span class="fp-anticipated-rank">2</span>
+        <img src="/fall-preview-ludwig-s2.webp" alt="Ludwig — Season 2" loading="lazy">
+        <span class="fp-anticipated-name">Ludwig — Season 2</span>
+        <span class="fp-anticipated-meta">BritBox · Oct. 13</span>
+      </a>
+      <a href="/shows/marlow-murder-club.html" class="fp-anticipated-card">
+        <span class="fp-anticipated-rank">3</span>
+        <img src="/fall-preview-marlow-murder-club-s3.webp" alt="The Marlow Murder Club — Season 3" loading="lazy">
+        <span class="fp-anticipated-name">The Marlow Murder Club — Season 3</span>
+        <span class="fp-anticipated-meta">PBS · Sept. 6</span>
+      </a>
+      <a href="/shows/marble-hall-murders.html" class="fp-anticipated-card">
+        <span class="fp-anticipated-rank">4</span>
+        <img src="/fall-preview-marble-hall-murders.webp" alt="Marble Hall Murders" loading="lazy">
+        <span class="fp-anticipated-name">Marble Hall Murders</span>
+        <span class="fp-anticipated-meta">PBS · Sept. 6</span>
+      </a>
+      <a href="/shows/death-valley.html" class="fp-anticipated-card">
+        <span class="fp-anticipated-rank">5</span>
+        <img src="/fall-preview-death-valley-s2.webp" alt="Death Valley — Season 2" loading="lazy">
+        <span class="fp-anticipated-name">Death Valley — Season 2</span>
+        <span class="fp-anticipated-meta">BritBox · Nov. 17</span>
+      </a>
+    </div>
   </div>
 </div>
 
 <style>
 .fp-anticipated { background: #141a2a; padding: 48px 24px; border-top: 1px solid #3d4a60; border-bottom: 1px solid #3d4a60; }
-.fp-anticipated-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+.fp-anticipated-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
 .fp-anticipated-eyebrow { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light); margin: 0 0 10px; }
-.fp-anticipated-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--cream); margin: 0 0 28px; }
-.fp-anticipated-list { list-style: none; margin: 0 0 28px; padding: 0; text-align: left; display: flex; flex-direction: column; gap: 14px; }
-.fp-anticipated-list li { display: flex; align-items: baseline; gap: 14px; font-family: 'Crimson Text', serif; font-size: 17px; color: var(--cream); border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 12px; }
-.fp-anticipated-rank { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold-light); flex-shrink: 0; width: 22px; }
-.fp-anticipated-name { flex: 1; }
-.fp-anticipated-meta { font-family: 'Raleway', sans-serif; font-size: 13px; color: var(--text-muted,#9090a8); white-space: nowrap; }
-.fp-anticipated-pick { font-family: 'Crimson Text', serif; font-style: italic; font-size: 17px; color: var(--gold-light); margin: 0; }
-@media (max-width: 480px) {
-  .fp-anticipated-list li { flex-wrap: wrap; }
-  .fp-anticipated-meta { width: 100%; padding-left: 36px; }
-}
+.fp-anticipated-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--cream); margin: 0 0 32px; }
+.fp-anticipated-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+.fp-anticipated-card { position: relative; display: flex; flex-direction: column; background: #363f58; border: 1px solid rgba(201,168,76,0.35); border-radius: 12px; overflow: hidden; text-decoration: none; text-align: left; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.fp-anticipated-card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+.fp-anticipated-card img { width: 100%; height: 130px; object-fit: cover; display: block; }
+.fp-anticipated-rank { position: absolute; top: 10px; left: 10px; width: 28px; height: 28px; background: rgba(20,26,42,0.85); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 15px; color: var(--gold-light); z-index: 1; }
+.fp-anticipated-name { font-family: 'Crimson Text', serif; font-size: 15px; color: var(--cream); line-height: 1.35; padding: 14px 14px 4px; flex: 1; }
+.fp-anticipated-meta { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 0.5px; color: var(--gold-light); padding: 0 14px 14px; }
 </style>
 
 <div class="bts-section" id="beyond-the-stream">
