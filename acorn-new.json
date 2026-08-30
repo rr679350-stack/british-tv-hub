@@ -3,7 +3,7 @@
     "updated": "2026-08-30",
     "highlight": {
         "title": "The Sommerdahl Murders",
-        "badge": "Acorn TV \u00b7 Season 7 Binge Premiere \u00b7 September 7",
+        "badge": "Acorn TV · Season 7 Binge Premiere · September 7",
         "description": "In a picturesque Danish seaside town, police chief Dan Sommerdahl works murder cases alongside his close friend Flemming Torp and forensic specialist Marianne, even as tensions in their personal lives spill into the investigation. Season 7 streams as a full binge premiere.",
         "tags": [
             "Crime drama",
@@ -16,20 +16,21 @@
             "title": "Blue Murder Motel",
             "season": "Season 1",
             "available": "New episodes weekly through September",
-            "badge": "Acorn TV Original \u00b7 Continuing",
+            "badge": "Acorn TV Original · Continuing",
             "description": "Retired detectives Vinny and Cole, now running a New Zealand coastal motel, keep getting pulled back into investigative work as fresh murder cases turn up in their new community.",
             "tags": [
                 "Cozy mystery",
                 "New Zealand"
             ],
             "editors_pick": true,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+            "guide_url": "/shows/blue-murder-motel.html"
         },
         {
             "title": "The Assassin",
             "season": "Season 1",
             "available": "New episodes weekly through September",
-            "badge": "Acorn TV Exclusive \u00b7 Continuing",
+            "badge": "Acorn TV Exclusive · Continuing",
             "description": "Keeley Hawes stars as a retired contract killer whose quiet life unravels when her estranged son comes looking for answers, forcing the pair on the run together.",
             "tags": [
                 "Thriller",
