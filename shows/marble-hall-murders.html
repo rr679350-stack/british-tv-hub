@@ -104,6 +104,8 @@ gtag('config', 'G-P1L8CVNKS6');
     .bookshelf-cta p { margin: 0; font-family: 'Crimson Text', serif; font-size: 15px; line-height: 1.5; color: var(--text-muted); }
     .bookshelf-cta a { color: var(--gold); text-decoration: none; font-weight: 600; }
     .bookshelf-cta a:hover { text-decoration: underline; }
+    .watch-read-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    .watch-read-row .watch-card, .watch-read-row .read-card { margin-bottom: 0; height: 100%; }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
@@ -130,6 +132,8 @@ gtag('config', 'G-P1L8CVNKS6');
       .page-wrap { padding: 24px 20px 60px; }
       .show-title { font-size: 36px; }
       footer { padding: 24px 20px; }
+      .watch-read-row { grid-template-columns: 1fr; gap: 32px; }
+      .watch-read-row .watch-card, .watch-read-row .read-card { margin-bottom: 0; }
     }
   
     /* === STANDARD NAV (canonical) === */
@@ -574,29 +578,6 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <div class="watch-card">
-    <p class="watch-label">Where to watch in the US</p>
-    <p class="watch-service">PBS Masterpiece</p>
-    <p class="watch-detail">Premieres September 6 · PBS Passport or PBS Masterpiece Amazon Channel</p>
-    <a href="https://www.pbs.org/show/marble-hall-murders/" class="watch-btn" target="_blank" rel="noopener">Watch on PBS →</a>
-    <div class="watch-free"><strong>Free option:</strong> Free via local PBS station; full library with PBS Passport membership</div>
-  </div>
-
-  <div class="read-card">
-    <p class="read-label">Read the book</p>
-    <p class="read-title">Marble Hall Murders</p>
-    <p class="read-author">by Anthony Horowitz &middot; Book 3 in the Susan Ryeland series</p>
-    <a href="https://www.amazon.com/s?k=Marble+Hall+Murders+Anthony+Horowitz&tag=britishtvhub-books-20" class="read-btn" target="_blank" rel="noopener">Find the Book &rarr;</a>
-  </div>
-
-  <div class="bookshelf-cta">
-    <p>📚 Love a good mystery-within-a-mystery? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for more Anthony Horowitz recommendations &rarr;</p>
-  </div>
-
-
-
-  <hr class="divider">
-
   <p class="section-label">Premieres September 6</p>
   <p class="show-description" style="font-size:16px;">Many cast members play dual roles, appearing as both present-day characters and their 1955 counterparts inside the novel Susan is editing. Patricia Hodge plays Miriam Crace, the domineering matriarch at the center of the mystery, and her fictional stand-in Lady Margaret Chalfont. Mark Bonnar plays Miriam's son Edward Crace alongside his fictional counterpart Elmer Waysmith. Tim McMullan returns as Atticus Pünd, the literary detective who steps out of the pages of the novel to help Susan work out who's really responsible. The series airs Sundays from September 6 through October 11, paired with The Marlow Murder Club Season 3 as part of PBS Masterpiece's fall mystery lineup.</p>
   <img src="/marble-hall-miriam-leilah.webp" alt="Miriam Crace / Lady Margaret Chalfont (Patricia Hodge) and Leilah Crace / Lola Chalfont (Yasmine Al Massri) in Marble Hall Murders" style="width:100%;border-radius:10px;margin:20px 0 8px;display:block;">
@@ -607,6 +588,29 @@ document.addEventListener('click', function(e){
 
   <p class="section-label">About the show</p>
   <p class="show-description" style="font-size:16px;">Marble Hall Murders is the third and final installment of Anthony Horowitz's Susan Ryeland series, following Magpie Murders (2022) and Moonflower Murders (2024). Like its predecessors, it follows Horowitz's signature format: a present-day murder investigation that mirrors the plot of a fictional detective novel within the story. The TV adaptation relocates the fictional Atticus Pünd mystery to 1955 Corfu, a change from the South of France setting used in Horowitz's original novel. Lesley Manville and Tim McMullan return as Susan Ryeland and Atticus Pünd, joined by Patricia Hodge, Mark Bonnar, Jamie Blackley, and Zubin Varla.</p>
+
+  <hr class="divider">
+
+  <div class="watch-read-row">
+    <div class="watch-card">
+      <p class="watch-label">Where to watch in the US</p>
+      <p class="watch-service">PBS Masterpiece</p>
+      <p class="watch-detail">Premieres September 6 · PBS Passport or PBS Masterpiece Amazon Channel</p>
+      <a href="https://www.pbs.org/show/marble-hall-murders/" class="watch-btn" target="_blank" rel="noopener">Watch on PBS →</a>
+      <div class="watch-free"><strong>Free option:</strong> Free via local PBS station; full library with PBS Passport membership</div>
+    </div>
+
+    <div class="read-card">
+      <p class="read-label">Read the book</p>
+      <p class="read-title">Marble Hall Murders</p>
+      <p class="read-author">by Anthony Horowitz &middot; Book 3 in the Susan Ryeland series</p>
+      <a href="https://www.amazon.com/s?k=Marble+Hall+Murders+Anthony+Horowitz&tag=britishtvhub-books-20" class="read-btn" target="_blank" rel="noopener">Find the Book &rarr;</a>
+    </div>
+  </div>
+
+  <div class="bookshelf-cta">
+    <p>📚 Love a good mystery-within-a-mystery? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for more Anthony Horowitz recommendations &rarr;</p>
+  </div>
 
   <hr class="divider">
 
