@@ -104,6 +104,8 @@ gtag('config', 'G-P1L8CVNKS6');
     .bookshelf-cta p { margin: 0; font-family: 'Crimson Text', serif; font-size: 15px; line-height: 1.5; color: var(--text-muted); }
     .bookshelf-cta a { color: var(--gold); text-decoration: none; font-weight: 600; }
     .bookshelf-cta a:hover { text-decoration: underline; }
+    .watch-read-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+    .watch-read-row .watch-card, .watch-read-row .read-card { margin-bottom: 0; height: 100%; }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
@@ -130,6 +132,8 @@ gtag('config', 'G-P1L8CVNKS6');
       .page-wrap { padding: 24px 20px 60px; }
       .show-title { font-size: 36px; }
       footer { padding: 24px 20px; }
+      .watch-read-row { grid-template-columns: 1fr; gap: 32px; }
+      .watch-read-row .watch-card, .watch-read-row .read-card { margin-bottom: 0; }
     }
   
     /* === STANDARD NAV (canonical) === */
@@ -581,19 +585,21 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <div class="watch-card">
-    <p class="watch-label">Where to watch in the US</p>
-    <p class="watch-service">PBS Masterpiece</p>
-    <p class="watch-detail">3 seasons · PBS Passport or PBS Masterpiece Amazon Channel</p>
-    <a href="https://www.pbs.org/show/the-marlow-murder-club/" class="watch-btn" target="_blank" rel="noopener">Watch on PBS →</a>
-    <div class="watch-free"><strong>Free option:</strong> Free via local PBS station; full library with PBS Passport membership</div>
-  </div>
+  <div class="watch-read-row">
+    <div class="watch-card">
+      <p class="watch-label">Where to watch in the US</p>
+      <p class="watch-service">PBS Masterpiece</p>
+      <p class="watch-detail">3 seasons · PBS Passport or PBS Masterpiece Amazon Channel</p>
+      <a href="https://www.pbs.org/show/the-marlow-murder-club/" class="watch-btn" target="_blank" rel="noopener">Watch on PBS →</a>
+      <div class="watch-free"><strong>Free option:</strong> Free via local PBS station; full library with PBS Passport membership</div>
+    </div>
 
-  <div class="read-card">
-    <p class="read-label">Read the books</p>
-    <p class="read-title">The Marlow Murder Club</p>
-    <p class="read-author">by Robert Thorogood &middot; Book 1 in the series</p>
-    <a href="https://amzn.to/4pqSej9" class="read-btn" target="_blank" rel="noopener">Start Reading &rarr;</a>
+    <div class="read-card">
+      <p class="read-label">Read the books</p>
+      <p class="read-title">The Marlow Murder Club</p>
+      <p class="read-author">by Robert Thorogood &middot; Book 1 in the series</p>
+      <a href="https://amzn.to/4pqSej9" class="read-btn" target="_blank" rel="noopener">Start Reading &rarr;</a>
+    </div>
   </div>
 
   <div class="bookshelf-cta">
