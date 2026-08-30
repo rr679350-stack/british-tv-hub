@@ -1,65 +1,52 @@
 {
-    "month": "August 2026",
-    "updated": "2026-08-01",
+    "month": "September 2026",
+    "updated": "2026-08-30",
     "highlight": {
-        "title": "The Hardacres",
-        "badge": "BritBox Original · North America Premiere",
-        "description": "Claire Cooper and Liam McMahon return as Mary and Sam Hardacre. Series 2 follows the family as they adjust to life at Hardacre Hall after their rise into Yorkshire's landed society.",
+        "title": "Agatha Christie's Tommy & Tuppence",
+        "badge": "BritBox Original \u00b7 North America Premiere",
+        "description": "Antonia Thomas and Josh Dylan star as Christie's amateur sleuthing duo in this contemporary reimagining, with Imelda Staunton as Tommy's formidable Aunt Ada. Two episodes premiere September 15 on Christie's own birthday, with one new episode weekly after that.",
         "tags": [
-            "Period drama",
+            "Mystery",
             "New series"
         ],
         "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
     },
     "new_arrivals": [
         {
-            "title": "A Woman of Substance",
-            "season": "Complete Season",
-            "available": "Now streaming",
-            "badge": "BritBox Original · North America Premiere",
-            "description": "Jessica Reynolds portrays the young Emma Harte, while Brenda Blethyn plays Emma later in life, in this sweeping saga of a Yorkshire maid's rise to a global business empire. Based on Barbara Taylor Bradford's novel, the complete first season is now available to stream.",
+            "title": "Cooper and Fry",
+            "season": "Season 1",
+            "available": "September 10",
+            "badge": "New to BritBox \u00b7 North America Premiere",
+            "description": "Robert James-Collier and Mandip Gill star as DC Ben Cooper and DC Diane Fry, a Peak District detective pairing of local roots and city reserve, tackling murders across the fictional town of Edendale.",
             "tags": [
-                "Period drama",
-                "Brenda Blethyn"
-            ],
-            "editors_pick": false,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "The Good Ship Murder",
-            "season": "Series 3",
-            "available": "Now streaming",
-            "badge": "BritBox Exclusive · North America Premiere",
-            "description": "Shayne Ward and Catherine Tyldesley return as a former detective turned cabaret singer and his First Officer sleuthing partner. Series 3 follows Jack and Kate as they investigate murders aboard a luxury cruise ship touring the Mediterranean.",
-            "tags": [
-                "Cozy mystery",
+                "Crime drama",
                 "New series"
             ],
             "editors_pick": true,
             "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
         },
         {
-            "title": "Gone",
-            "season": "Series 1",
-            "available": "Now streaming",
-            "badge": "BritBox Exclusive · North America Premiere",
-            "description": "David Morrissey and Eve Myles star in this mystery about the disappearance of a married music teacher, whose husband becomes the focus of a tense police investigation.",
+            "title": "Showtrial",
+            "season": "Season 1",
+            "available": "September 3",
+            "badge": "New to BritBox",
+            "description": "A courtroom drama following high-profile criminal cases from arrest through trial, with each season built around a new case and cast. Season 1 centres on Talitha Campbell, accused of conspiring to murder a fellow student.",
             "tags": [
-                "Thriller",
-                "New series"
+                "Legal drama",
+                "Crime"
             ],
             "editors_pick": false,
             "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
         },
         {
-            "title": "Vanity Fair",
-            "season": "2018 Series — complete",
-            "available": "Now streaming",
-            "badge": "New to BritBox · Classic Adaptation",
-            "description": "Olivia Cooke stars as Becky Sharp in this acclaimed 2018 adaptation of Thackeray's novel, following her ambitious rise through Regency-era society against the backdrop of the Napoleonic Wars.",
+            "title": "Monarch of the Glen",
+            "season": "Seasons 1\u20133",
+            "available": "September 9",
+            "badge": "Classic Returns \u00b7 North America Premiere",
+            "description": "Alastair Mackenzie stars as Archie MacDonald, who returns home to the Scottish Highlands and finds himself responsible for his family's financially troubled estate. A beloved classic, back for the first time in years.",
             "tags": [
                 "Period drama",
-                "Olivia Cooke"
+                "Scotland"
             ],
             "editors_pick": false,
             "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
@@ -78,7 +65,7 @@
         },
         {
             "title": "Trigger Point",
-            "seasons": "Seasons 1–3",
+            "seasons": "Seasons 1\u20133",
             "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
             "tags": [
                 "Thriller",
@@ -88,7 +75,7 @@
         },
         {
             "title": "Beyond Paradise",
-            "seasons": "Seasons 1–4",
+            "seasons": "Seasons 1\u20134",
             "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
             "tags": [
                 "Cozy mystery",
@@ -98,7 +85,7 @@
         },
         {
             "title": "The Other Bennet Sister",
-            "seasons": "Series 1 — complete",
+            "seasons": "Series 1 \u2014 complete",
             "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
             "tags": [
                 "Regency drama",
