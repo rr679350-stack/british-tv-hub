@@ -20,7 +20,7 @@
   <rect x="40" y="40" width="920" height="705" fill="none" stroke="#c9a96e" stroke-width="1"/>
 
   <text x="500.0" y="95" text-anchor="middle" class="smallcaps" font-size="16" fill="#c9a96e">FOR THE FESTIVE SEASON</text>
-  <text x="500.0" y="150" text-anchor="middle" class="editorial" font-size="38" fill="#071f3e">ALL IS COZY & BRIGHT</text>
+  <text x="500.0" y="150" text-anchor="middle" class="editorial" font-size="38" fill="#071f3e">ALL IS COZY &amp; BRIGHT</text>
   <line x1="360.0" y1="180" x2="640.0" y2="180" stroke="#c9a96e" stroke-width="1.5"/>
   <text x="500.0" y="216" text-anchor="middle" class="editorial" font-size="19" font-style="italic" fill="#65798a">A holiday greeting for a fellow British TV fan</text>
 
