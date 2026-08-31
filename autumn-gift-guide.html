@@ -145,11 +145,14 @@ gtag('config', 'G-P1L8CVNKS6');
   .candle-feature .agg-product-desc{ font-size:0.98rem; }
   .candle-feature .agg-cta-pill{ align-self:flex-start; }
   @media (max-width: 640px){ .candle-feature{ grid-template-columns: 1fr; } }
-  .calendar-feature{ grid-column: 1 / -1; margin-top:20px; background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; display:grid; grid-template-columns: 1.1fr 1fr; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .calendar-feature{ grid-column: 1 / -1; background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; display:grid; grid-template-columns: 1.1fr 1fr; transition:transform 0.2s ease, box-shadow 0.2s ease; }
   .calendar-feature:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.3); }
   .calendar-feature .calendar-photo{ width:100%; height:100%; aspect-ratio: 1254 / 770; object-fit:cover; display:block; }
   .calendar-feature .calendar-photo-wrap{ position:relative; }
-  .calendar-feature .calendar-badge{ position:absolute; top:16px; left:16px; background:var(--gold,#c9a96e); color:#1a2135; font-family:'Raleway',sans-serif; font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; padding:6px 12px; border-radius:2px; }
+  .calendar-feature .calendar-badge{ display:inline-block; margin:16px 0 10px 16px; background:var(--gold,#c9a96e); color:#1a2135; font-family:'Raleway',sans-serif; font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; padding:6px 12px; border-radius:2px; }
+  .calendar-header{ grid-column: 1 / -1; display:flex; align-items:baseline; gap:14px; margin-top:32px; margin-bottom:14px; }
+  .calendar-header .calendar-eyebrow{ font-family:'Playfair Display', serif; font-size:1.5rem; font-weight:600; letter-spacing:0; text-transform:none; color:var(--gold); white-space:nowrap; }
+  .calendar-header h3{ font-family:'Playfair Display', serif; font-weight:600; font-size:1.5rem; color:var(--cream); margin:0; }
   .calendar-feature .agg-product-body{ padding:28px 30px; display:flex; flex-direction:column; justify-content:center; }
   .calendar-feature .agg-product-name{ font-size:1.3rem; }
   .calendar-feature .agg-product-desc{ font-size:0.98rem; }
@@ -652,6 +655,10 @@ document.addEventListener('click', function(e){
       </div>
     </div>
 
+    <div class="calendar-header">
+      <span class="calendar-eyebrow">New for 2027</span>
+      <h3>A Whole Year of Cozy</h3>
+    </div>
     <div class="calendar-feature">
       <div class="calendar-photo-wrap">
         <span class="calendar-badge">Featured Gift</span>
