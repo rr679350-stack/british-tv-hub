@@ -1524,203 +1524,6 @@ document.addEventListener('click', function(e){
 
 <main>
 
-<div id="ultimate-bookshelf" style="margin-bottom:56px;">
-    <div class="section-label">British TV Hub Presents</div>
-    <h2 class="section-title">The Ultimate British Bookshelf</h2>
-    <p class="section-intro">Fifteen books from the shelf, ranging from Golden Age classics to modern cozy mysteries. Filter by genre below to find the next read.</p>
-
-    <div style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:28px 30px;margin-bottom:40px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;">
-      <div style="max-width:520px;">
-        <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--gold-light);margin-bottom:8px;">Follow The Ultimate British Bookshelf on Facebook</div>
-        <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-muted);line-height:1.6;margin:0;">New finds, monthly shelfies, and reader recommendations, posted throughout the week.</p>
-      </div>
-      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="background:var(--gold);color:#1a2135;font-family:'Raleway',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;white-space:nowrap;">Follow the Page &rarr;</a>
-    </div>
-
-    <div class="section-label" style="margin-top:8px;">Book Finder</div>
-    <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold-light);margin:0 0 6px;">Find Your Next Read</h3>
-    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-muted);margin:0 0 20px;">Filter by genre to browse the shelf.</p>
-    <div id="bookfinder-filters" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
-      <button class="bf-filter-btn active" data-filter="all" type="button">All Books</button>
-      <button class="bf-filter-btn" data-filter="golden-age" type="button">Golden Age Mystery</button>
-      <button class="bf-filter-btn" data-filter="modern-crime" type="button">Modern Crime</button>
-      <button class="bf-filter-btn" data-filter="cozy" type="button">Cozy Mystery</button>
-      <button class="bf-filter-btn" data-filter="classic-lit" type="button">Classic Literature</button>
-      <button class="bf-filter-btn" data-filter="nonfiction" type="button">Biography &amp; Nonfiction</button>
-    </div>
-
-    <div id="bookfinder-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;">
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0062073567-L.jpg" alt="The Murder of Roger Ackroyd cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Murder of Roger Ackroyd</div>
-          <div class="bf-card-author">Agatha Christie</div>
-          <p class="bf-card-desc">A country-house murder investigation built around one of detective fiction's most famous twists.</p>
-          <a href="https://www.amazon.com/dp/0062073567?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0062838628-L.jpg" alt="Murder on the Orient Express cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Murder on the Orient Express</div>
-          <div class="bf-card-author">Agatha Christie</div>
-          <p class="bf-card-desc">Poirot is snowbound on a luxury train with a killer somewhere among the passengers.</p>
-          <a href="https://www.amazon.com/dp/0062838628?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0062986406-L.jpg" alt="The Man in the Brown Suit cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Man in the Brown Suit</div>
-          <div class="bf-card-author">Agatha Christie</div>
-          <p class="bf-card-desc">An early Christie adventure that trades the drawing room for a diamond-smuggling chase to South Africa.</p>
-          <a href="https://www.amazon.com/dp/0062986406?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0156658992-L.jpg" alt="The Nine Tailors cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Nine Tailors</div>
-          <div class="bf-card-author">Dorothy L. Sayers</div>
-          <p class="bf-card-desc">Lord Peter Wimsey investigates a body and a secret buried deep in English bell-ringing tradition.</p>
-          <a href="https://www.amazon.com/dp/0156658992?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0684803860-L.jpg" alt="The Daughter of Time cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Daughter of Time</div>
-          <div class="bf-card-author">Josephine Tey</div>
-          <p class="bf-card-desc">A bedridden Scotland Yard detective reopens the centuries-old case against Richard III.</p>
-          <a href="https://www.amazon.com/dp/0684803860?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="golden-age">
-        <img src="https://covers.openlibrary.org/b/isbn/0743219570-L.jpg" alt="Cover Her Face cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Cover Her Face</div>
-          <div class="bf-card-author">P.D. James</div>
-          <p class="bf-card-desc">P.D. James's debut introduces Adam Dalgliesh, called in to a country house full of people with something to hide.</p>
-          <a href="https://www.amazon.com/dp/0743219570?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="modern-crime">
-        <img src="https://covers.openlibrary.org/b/isbn/1250122740-L.jpg" alt="The Crow Trap cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Crow Trap</div>
-          <div class="bf-card-author">Ann Cleeves</div>
-          <p class="bf-card-desc">The first Vera Stanhope novel, set among three women hiding secrets on a remote Northumberland fell.</p>
-          <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="modern-crime">
-        <img src="https://covers.openlibrary.org/b/isbn/0062009389-L.jpg" alt="Gallows View cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Gallows View</div>
-          <div class="bf-card-author">Peter Robinson</div>
-          <p class="bf-card-desc">The first Inspector Banks novel, unsettling the quiet calm of a Yorkshire market town.</p>
-          <a href="https://www.amazon.com/dp/0062009389?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="cozy">
-        <img src="https://covers.openlibrary.org/b/isbn/0008435901-L.jpg" alt="The Marlow Murder Club cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Marlow Murder Club</div>
-          <div class="bf-card-author">Robert Thorogood</div>
-          <p class="bf-card-desc">A crossword setter turns amateur sleuth after witnessing a murder from the banks of the Thames.</p>
-          <a href="https://www.amazon.com/dp/0008435901?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="cozy">
-        <img src="https://covers.openlibrary.org/b/isbn/059365322X-L.jpg" alt="We Solve Murders cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">We Solve Murders</div>
-          <div class="bf-card-author">Richard Osman</div>
-          <p class="bf-card-desc">A private security operative and a retired policeman are drawn into a case spanning three continents.</p>
-          <a href="https://www.amazon.com/dp/059365322X?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="cozy">
-        <img src="https://covers.openlibrary.org/b/isbn/1452618151-L.jpg" alt="The Inspector and Mrs. Jeffries cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Inspector and Mrs. Jeffries</div>
-          <div class="bf-card-author">Emily Brightwell</div>
-          <p class="bf-card-desc">A Scotland Yard inspector's housekeeper does the real detective work behind the scenes in Victorian London.</p>
-          <a href="https://www.amazon.com/dp/1452618151?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="classic-lit">
-        <img src="https://covers.openlibrary.org/b/isbn/1420952722-L.jpg" alt="The Adventures of Sherlock Holmes cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">The Adventures of Sherlock Holmes</div>
-          <div class="bf-card-author">Arthur Conan Doyle</div>
-          <p class="bf-card-desc">Twelve of the original Baker Street cases that shaped detective fiction as a genre.</p>
-          <a href="https://www.amazon.com/dp/1420952722?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="classic-lit">
-        <img src="https://covers.openlibrary.org/b/isbn/014310487X-L.jpg" alt="Excellent Women cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Excellent Women</div>
-          <div class="bf-card-author">Barbara Pym</div>
-          <p class="bf-card-desc">A gently comic portrait of a 1950s spinster whose quiet life gets pulled into her neighbours' dramas.</p>
-          <a href="https://www.amazon.com/dp/014310487X?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="classic-lit">
-        <img src="https://covers.openlibrary.org/b/isbn/0141183314-L.jpg" alt="Lark Rise to Candleford cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Lark Rise to Candleford</div>
-          <div class="bf-card-author">Flora Thompson</div>
-          <p class="bf-card-desc">A memoir-in-fiction of English rural life at the close of the nineteenth century.</p>
-          <a href="https://www.amazon.com/dp/0141183314?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-      <div class="bf-card" data-genre="nonfiction">
-        <img src="https://covers.openlibrary.org/b/isbn/1639365737-L.jpg" alt="Agatha Christie: An Elusive Woman cover" loading="lazy">
-        <div class="bf-card-body">
-          <div class="bf-card-title">Agatha Christie: An Elusive Woman</div>
-          <div class="bf-card-author">Lucy Worsley</div>
-          <p class="bf-card-desc">A biography that looks past the "ordinary housewife" image Christie cultivated for herself.</p>
-          <a href="https://www.amazon.com/dp/1639365737?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <script>
-  (function(){
-    var buttons = document.querySelectorAll('#bookfinder-filters .bf-filter-btn');
-    var cards = document.querySelectorAll('#bookfinder-grid .bf-card');
-    buttons.forEach(function(btn){
-      btn.addEventListener('click', function(){
-        buttons.forEach(function(b){ b.classList.remove('active'); });
-        btn.classList.add('active');
-        var filter = btn.getAttribute('data-filter');
-        cards.forEach(function(card){
-          card.style.display = (filter === 'all' || card.getAttribute('data-genre') === filter) ? '' : 'none';
-        });
-      });
-    });
-  })();
-  </script>
-
   <div id="page-to-screen">
     <div class="section-label">Start Browsing</div>
     <h2 class="section-title">Browse by Genre</h2>
@@ -1993,6 +1796,205 @@ document.addEventListener('click', function(e){
     <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;line-height:1.6;margin:0 0 20px;">The novels behind your favourite British dramas, plus hidden gems and new releases — follow along on Facebook for regular recommendations.</p>
     <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:inline-block;background:#d4b47a;color:#16203a;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;padding:13px 24px;font-weight:600;text-decoration:none;outline:2px solid #d4b47a;outline-offset:3px;">Follow the Page &rarr;</a>
   </div>
+
+<div id="ultimate-bookshelf" style="margin-bottom:56px;">
+    <div class="section-label">British TV Hub Presents</div>
+    <h2 class="section-title">The Ultimate British Bookshelf</h2>
+    <p class="section-intro">Fifteen books from the shelf, ranging from Golden Age classics to modern cozy mysteries. Filter by genre below to find the next read.</p>
+
+    <div style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;margin-bottom:40px;">
+      <img src="/book-pick-cozy-mug.webp" alt="A cup of tea beside an open book on a rainy windowsill, candles glowing in the background" loading="lazy" style="width:100%;height:220px;object-fit:cover;display:block;">
+      <div style="padding:28px 30px;">
+        <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold-light);margin-bottom:10px;">Follow The Ultimate British Bookshelf</div>
+        <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.7;margin:0 0 20px;max-width:640px;">New British book picks land on the page a few times a week, from Golden Age classics to the latest cozy releases. Monthly "shelfie" features spotlight what readers are currently loving, and every recommendation stays spoiler-free.</p>
+        <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:inline-block;background:var(--gold);color:#1a2135;font-family:'Raleway',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:12px 26px;border-radius:2px;text-decoration:none;">Follow the Page &rarr;</a>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:8px;">Book Finder</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--gold-light);margin:0 0 6px;">Find Your Next Read</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-muted);margin:0 0 20px;">Filter by genre to browse the shelf.</p>
+    <div id="bookfinder-filters" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
+      <button class="bf-filter-btn active" data-filter="all" type="button">All Books</button>
+      <button class="bf-filter-btn" data-filter="golden-age" type="button">Golden Age Mystery</button>
+      <button class="bf-filter-btn" data-filter="modern-crime" type="button">Modern Crime</button>
+      <button class="bf-filter-btn" data-filter="cozy" type="button">Cozy Mystery</button>
+      <button class="bf-filter-btn" data-filter="classic-lit" type="button">Classic Literature</button>
+      <button class="bf-filter-btn" data-filter="nonfiction" type="button">Biography &amp; Nonfiction</button>
+    </div>
+
+    <div id="bookfinder-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;">
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0062073567-L.jpg" alt="The Murder of Roger Ackroyd cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Murder of Roger Ackroyd</div>
+          <div class="bf-card-author">Agatha Christie</div>
+          <p class="bf-card-desc">A country-house murder investigation built around one of detective fiction's most famous twists.</p>
+          <a href="https://www.amazon.com/dp/0062073567?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0062838628-L.jpg" alt="Murder on the Orient Express cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Murder on the Orient Express</div>
+          <div class="bf-card-author">Agatha Christie</div>
+          <p class="bf-card-desc">Poirot is snowbound on a luxury train with a killer somewhere among the passengers.</p>
+          <a href="https://www.amazon.com/dp/0062838628?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0062986406-L.jpg" alt="The Man in the Brown Suit cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Man in the Brown Suit</div>
+          <div class="bf-card-author">Agatha Christie</div>
+          <p class="bf-card-desc">An early Christie adventure that trades the drawing room for a diamond-smuggling chase to South Africa.</p>
+          <a href="https://www.amazon.com/dp/0062986406?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0156658992-L.jpg" alt="The Nine Tailors cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Nine Tailors</div>
+          <div class="bf-card-author">Dorothy L. Sayers</div>
+          <p class="bf-card-desc">Lord Peter Wimsey investigates a body and a secret buried deep in English bell-ringing tradition.</p>
+          <a href="https://www.amazon.com/dp/0156658992?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0684803860-L.jpg" alt="The Daughter of Time cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Daughter of Time</div>
+          <div class="bf-card-author">Josephine Tey</div>
+          <p class="bf-card-desc">A bedridden Scotland Yard detective reopens the centuries-old case against Richard III.</p>
+          <a href="https://www.amazon.com/dp/0684803860?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="golden-age">
+        <img src="https://covers.openlibrary.org/b/isbn/0743219570-L.jpg" alt="Cover Her Face cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Cover Her Face</div>
+          <div class="bf-card-author">P.D. James</div>
+          <p class="bf-card-desc">P.D. James's debut introduces Adam Dalgliesh, called in to a country house full of people with something to hide.</p>
+          <a href="https://www.amazon.com/dp/0743219570?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="modern-crime">
+        <img src="https://covers.openlibrary.org/b/isbn/1250122740-L.jpg" alt="The Crow Trap cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Crow Trap</div>
+          <div class="bf-card-author">Ann Cleeves</div>
+          <p class="bf-card-desc">The first Vera Stanhope novel, set among three women hiding secrets on a remote Northumberland fell.</p>
+          <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="modern-crime">
+        <img src="https://covers.openlibrary.org/b/isbn/0062009389-L.jpg" alt="Gallows View cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Gallows View</div>
+          <div class="bf-card-author">Peter Robinson</div>
+          <p class="bf-card-desc">The first Inspector Banks novel, unsettling the quiet calm of a Yorkshire market town.</p>
+          <a href="https://www.amazon.com/dp/0062009389?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="cozy">
+        <img src="https://covers.openlibrary.org/b/isbn/0008435901-L.jpg" alt="The Marlow Murder Club cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Marlow Murder Club</div>
+          <div class="bf-card-author">Robert Thorogood</div>
+          <p class="bf-card-desc">A crossword setter turns amateur sleuth after witnessing a murder from the banks of the Thames.</p>
+          <a href="https://www.amazon.com/dp/0008435901?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="cozy">
+        <img src="https://covers.openlibrary.org/b/isbn/059365322X-L.jpg" alt="We Solve Murders cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">We Solve Murders</div>
+          <div class="bf-card-author">Richard Osman</div>
+          <p class="bf-card-desc">A private security operative and a retired policeman are drawn into a case spanning three continents.</p>
+          <a href="https://www.amazon.com/dp/059365322X?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="cozy">
+        <img src="https://covers.openlibrary.org/b/isbn/1452618151-L.jpg" alt="The Inspector and Mrs. Jeffries cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Inspector and Mrs. Jeffries</div>
+          <div class="bf-card-author">Emily Brightwell</div>
+          <p class="bf-card-desc">A Scotland Yard inspector's housekeeper does the real detective work behind the scenes in Victorian London.</p>
+          <a href="https://www.amazon.com/dp/1452618151?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="classic-lit">
+        <img src="https://covers.openlibrary.org/b/isbn/1420952722-L.jpg" alt="The Adventures of Sherlock Holmes cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">The Adventures of Sherlock Holmes</div>
+          <div class="bf-card-author">Arthur Conan Doyle</div>
+          <p class="bf-card-desc">Twelve of the original Baker Street cases that shaped detective fiction as a genre.</p>
+          <a href="https://www.amazon.com/dp/1420952722?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="classic-lit">
+        <img src="https://covers.openlibrary.org/b/isbn/014310487X-L.jpg" alt="Excellent Women cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Excellent Women</div>
+          <div class="bf-card-author">Barbara Pym</div>
+          <p class="bf-card-desc">A gently comic portrait of a 1950s spinster whose quiet life gets pulled into her neighbours' dramas.</p>
+          <a href="https://www.amazon.com/dp/014310487X?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="classic-lit">
+        <img src="https://covers.openlibrary.org/b/isbn/0141183314-L.jpg" alt="Lark Rise to Candleford cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Lark Rise to Candleford</div>
+          <div class="bf-card-author">Flora Thompson</div>
+          <p class="bf-card-desc">A memoir-in-fiction of English rural life at the close of the nineteenth century.</p>
+          <a href="https://www.amazon.com/dp/0141183314?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+      <div class="bf-card" data-genre="nonfiction">
+        <img src="https://covers.openlibrary.org/b/isbn/1639365737-L.jpg" alt="Agatha Christie: An Elusive Woman cover" loading="lazy">
+        <div class="bf-card-body">
+          <div class="bf-card-title">Agatha Christie: An Elusive Woman</div>
+          <div class="bf-card-author">Lucy Worsley</div>
+          <p class="bf-card-desc">A biography that looks past the "ordinary housewife" image Christie cultivated for herself.</p>
+          <a href="https://www.amazon.com/dp/1639365737?tag=britishtvhub-books-20" target="_blank" rel="noopener" class="amazon-buy-btn" style="text-align:center;margin-top:auto;">Get the Book &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    var buttons = document.querySelectorAll('#bookfinder-filters .bf-filter-btn');
+    var cards = document.querySelectorAll('#bookfinder-grid .bf-card');
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        buttons.forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        cards.forEach(function(card){
+          card.style.display = (filter === 'all' || card.getAttribute('data-genre') === filter) ? '' : 'none';
+        });
+      });
+    });
+  })();
+  </script>
+
 
   <div class="affiliate-note">
     <strong style="color:#c9a96e">Affiliate disclosure:</strong> British TV Hub is a participant in the Amazon Services LLC Associates Program. This never affects the recommendations &mdash; only books and services genuinely recommended to the community are linked.
