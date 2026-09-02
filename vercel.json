@@ -35,6 +35,11 @@
       "source": "/vera-filming-locations.html",
       "destination": "/shows/vera.html",
       "permanent": true
+    },
+    {
+      "source": "/telly-detective.html",
+      "destination": "/shows-index.html#full-database-search",
+      "permanent": true
     }
   ],
   "rewrites": [

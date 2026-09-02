@@ -54,6 +54,6 @@ window.SITE_SEARCH_INDEX = [
   {"title":"Vera","url":"/shows/vera.html"},
   {"title":"Victoria","url":"/shows/victoria.html"},
   {"title":"Where to Watch British TV in the US","url":"/streaming.html"},
-  {"title":"The Telly Detective","url":"/telly-detective.html"},
+  {"title":"Search Every Show We Track","url":"/shows-index.html#full-database-search"},
   {"title":"Best British Police Procedurals","url":"/top10.html"}
 ];

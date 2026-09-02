@@ -1692,6 +1692,185 @@ function filterShowCards(query){
 </div>
 <!-- END NEW THIS MONTH -->
 
+<!-- FULL DATABASE SEARCH -->
+<div id="full-database-search" style="max-width:700px;margin:56px auto 0;padding:0 20px;">
+  <style>
+    .fds-search-zone { margin: 0 auto 14px; max-width: 540px; position: relative; }
+    .fds-search-input {
+      width: 100%; box-sizing: border-box; background: #1e2433; border: 1px solid #3d4a60;
+      color: #e8dfc8; padding: 14px 18px; font-family: 'Crimson Text', serif; font-size: 16px;
+      border-radius: 8px; outline: none;
+    }
+    .fds-search-input::placeholder { color: #8a9ab5; }
+    .fds-search-input:focus { border-color: #c9a96e; }
+    .fds-region-row { display:flex; justify-content:center; gap:8px; margin:0 auto 20px; }
+    .fds-region-btn {
+      background: transparent; border: 1px solid #3d4a60; color: #8a9ab5; font-family:'Raleway',sans-serif;
+      font-size: 12px; letter-spacing: 0.5px; padding: 7px 14px; border-radius: 20px; cursor: pointer;
+    }
+    .fds-region-btn:hover { border-color: #c9a96e; color: #e8dfc8; }
+    .fds-region-btn.active { background: #c9a96e; border-color: #c9a96e; color: #1a2135; }
+    .fds-suggest {
+      display: none; position: absolute; top: 100%; left: 0; right: 0; margin-top: 6px;
+      background: #222b42; border: 1px solid #3d4a60; border-radius: 8px; list-style: none;
+      padding: 0; max-height: 280px; overflow-y: auto; z-index: 20;
+    }
+    .fds-suggest.show { display: block; }
+    .fds-suggest li {
+      padding: 11px 16px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-family: 'Crimson Text', serif; font-size: 15px; color: #e8dfc8; display:flex; justify-content:space-between;
+    }
+    .fds-suggest li:last-child { border-bottom: none; }
+    .fds-suggest li:hover, .fds-suggest li.highlight { background: #2c3550; color: #dab870; }
+    .fds-suggest li .fds-yr { color: #8a9ab5; font-size: 13px; margin-left: 8px; }
+    .fds-result { margin: 20px auto 0; max-width: 600px; }
+    .fds-case-file { background:#222b42; border:1px solid #3d4a60; border-radius:12px; padding:26px 28px; }
+    .fds-case-show { font-family:'Playfair Display',serif; font-size:24px; color:#e8dfc8; margin:0 0 4px; }
+    .fds-case-meta { font-family:'Raleway',sans-serif; font-size:12px; color:#8a9ab5; letter-spacing:0.5px; margin-bottom:16px; }
+    .fds-case-meta span { margin: 0 6px; }
+    .fds-verdict { font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; margin-bottom:10px; }
+    .fds-services { list-style:none; padding:0; margin:0; }
+    .fds-service-row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+    .fds-service-row:last-child { border-bottom:none; }
+    .fds-service-group-label { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8a9ab5; padding-top:14px; }
+    .fds-service-group-label:first-child { padding-top:0; }
+    .fds-service-name { font-size:16px; font-weight:600; color:#e8dfc8; text-decoration:none; }
+    .fds-service-name:hover { color:#dab870; }
+    .fds-service-note { font-size:13px; color:#8a9ab5; font-style:italic; }
+    .fds-service-tag { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:#8a9ab5; border:1px solid #3d4a60; padding:3px 8px; border-radius:10px; }
+    .fds-no-result { text-align:center; padding:24px; }
+    .fds-no-result .fds-nr-title { font-family:'Playfair Display',serif; font-size:19px; color:#e8dfc8; margin-bottom:8px; }
+    .fds-no-result p { color:#8a9ab5; font-size:14.5px; font-family:'Crimson Text',serif; margin:0; }
+    .fds-no-result a { color:#c9a96e; }
+  </style>
+
+  <p class="section-label" style="text-align:center;border-bottom:none;">Can't Find a Full Guide Above?</p>
+  <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">Search Every Show We Track</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#9090a8;margin:0 0 24px;text-align:center;">Beyond our full guides, we track streaming availability for hundreds of British shows &mdash; search by title to find where to watch.</p>
+
+  <div class="fds-search-zone">
+    <input type="text" class="fds-search-input" id="fdsSearchInput" autocomplete="off" placeholder="Search for a show — e.g. Vera, Shetland, Doc Martin">
+    <ul class="fds-suggest" id="fdsSuggestList"></ul>
+  </div>
+
+  <div class="fds-region-row" id="fdsRegionRow">
+    <button class="fds-region-btn active" data-region="us">United States</button>
+    <button class="fds-region-btn" data-region="uk">United Kingdom</button>
+    <button class="fds-region-btn" data-region="au">Australia</button>
+  </div>
+
+  <div class="fds-result" id="fdsResult"></div>
+</div>
+<!-- END FULL DATABASE SEARCH -->
+
+<script>
+(function(){
+  let FDS_SHOWS = [];
+  fetch('/shows-database.json').then(r => r.json()).then(data => { FDS_SHOWS = data; }).catch(function(err){ console.error('Could not load show database:', err); });
+
+  const FDS_REGION_LABEL = { us:"In the United States", uk:"In the United Kingdom", au:"In Australia" };
+  const FDS_TAG_TEXT = { stream:"Subscription", free:"Free", buy:"Buy / Rent" };
+
+  let fdsRegion = "us";
+  const fdsInput = document.getElementById('fdsSearchInput');
+  const fdsSuggest = document.getElementById('fdsSuggestList');
+  const fdsResultEl = document.getElementById('fdsResult');
+  let fdsActiveShow = null;
+  let fdsHighlightIdx = -1;
+
+  document.getElementById('fdsRegionRow').addEventListener('click', function(e){
+    const btn = e.target.closest('.fds-region-btn');
+    if (!btn) return;
+    document.querySelectorAll('.fds-region-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    fdsRegion = btn.dataset.region;
+    if (fdsActiveShow) fdsRenderResult(fdsActiveShow);
+  });
+
+  function fdsFindShow(title) {
+    return FDS_SHOWS.find(function(s){ return s.title.toLowerCase() === title.toLowerCase(); });
+  }
+
+  function fdsMatches(q) {
+    q = q.trim().toLowerCase();
+    if (!q) return [];
+    return FDS_SHOWS.filter(function(s){ return s.title.toLowerCase().indexOf(q) > -1; }).slice(0, 8);
+  }
+
+  fdsInput.addEventListener('input', function(){
+    const list = fdsMatches(fdsInput.value);
+    fdsHighlightIdx = -1;
+    if (!list.length) { fdsSuggest.classList.remove('show'); fdsSuggest.innerHTML = ''; return; }
+    fdsSuggest.innerHTML = list.map(function(s){
+      return '<li data-title="' + s.title.replace(/"/g,'&quot;') + '">' + s.title + '<span class="fds-yr">' + s.years + '</span></li>';
+    }).join('');
+    fdsSuggest.classList.add('show');
+    fdsSuggest.querySelectorAll('li').forEach(function(li){
+      li.onclick = function(){ fdsInput.value = li.dataset.title; fdsPick(fdsFindShow(li.dataset.title)); };
+    });
+  });
+
+  fdsInput.addEventListener('keydown', function(e){
+    const items = fdsSuggest.querySelectorAll('li');
+    if (e.key === 'ArrowDown') { e.preventDefault(); fdsHighlightIdx = Math.min(fdsHighlightIdx+1, items.length-1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); fdsHighlightIdx = Math.max(fdsHighlightIdx-1, 0); }
+    else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (fdsHighlightIdx >= 0 && items[fdsHighlightIdx]) { fdsInput.value = items[fdsHighlightIdx].dataset.title; fdsPick(fdsFindShow(items[fdsHighlightIdx].dataset.title)); }
+      else { const m = fdsMatches(fdsInput.value); if (m.length) { fdsInput.value = m[0].title; fdsPick(m[0]); } else fdsPick(null); }
+      return;
+    } else return;
+    items.forEach(function(li,i){ li.classList.toggle('highlight', i === fdsHighlightIdx); });
+  });
+
+  document.addEventListener('click', function(e){
+    if (!e.target.closest('.fds-search-zone')) fdsSuggest.classList.remove('show');
+  });
+
+  function fdsPick(show) {
+    fdsSuggest.classList.remove('show');
+    if (!show) { fdsRenderNoResult(); return; }
+    fdsActiveShow = show;
+    fdsRenderResult(show);
+  }
+
+  function fdsRenderResult(show) {
+    const services = show[fdsRegion] || [];
+    let rows;
+    if (!services.length) {
+      rows = '<li class="fds-service-row"><span class="fds-service-note">No streaming home on file for this region yet &mdash; try the <a href="/streaming.html" style="color:#c9a96e">streaming guide</a>.</span></li>';
+    } else {
+      const order = ['stream', 'free', 'buy'];
+      const groups = {};
+      services.forEach(function(sv){ (groups[sv.tag] = groups[sv.tag] || []).push(sv); });
+      const presentTags = order.filter(function(t){ return groups[t] && groups[t].length; });
+      const showHeaders = presentTags.length > 1;
+      rows = presentTags.map(function(tag){
+        return (showHeaders ? '<li class="fds-service-group-label">' + FDS_TAG_TEXT[tag] + '</li>' : '') +
+          groups[tag].map(function(sv){
+            return '<li class="fds-service-row"><span><a class="fds-service-name" href="' + (sv.url || '#') + '" target="_blank" rel="noopener sponsored">' + sv.name + '</a>' +
+              (sv.note ? '<span class="fds-service-note"> — ' + sv.note + '</span>' : '') + '</span>' +
+              (!showHeaders ? '<span class="fds-service-tag">' + FDS_TAG_TEXT[sv.tag] + '</span>' : '') + '</li>';
+          }).join('');
+      }).join('');
+    }
+    fdsResultEl.innerHTML = '<div class="fds-case-file">' +
+      '<div class="fds-case-show">' + show.title + '</div>' +
+      '<div class="fds-case-meta">' + show.years + '<span>&middot;</span>' + show.genre + '</div>' +
+      '<div class="fds-verdict">' + FDS_REGION_LABEL[fdsRegion] + ', you\'ll find it on:</div>' +
+      '<ul class="fds-services">' + rows + '</ul></div>';
+  }
+
+  function fdsRenderNoResult() {
+    fdsActiveShow = null;
+    fdsResultEl.innerHTML = '<div class="fds-no-result">' +
+      '<div class="fds-nr-title">We haven\'t tracked that one yet</div>' +
+      '<p>Try another title, or check the <a href="/streaming.html">full streaming guide</a> — and let us know what to add via <a href="https://facebook.com/britishtelevisionhub">Facebook</a>.</p></div>';
+  }
+})();
+</script>
+
+
 
 </div>
 
@@ -1706,14 +1885,6 @@ function filterShowCards(query){
         <div class="cr-title">Browse Shows</div>
         <p class="cr-desc">Know roughly what kind of programme you want? Jump straight to a genre.</p>
         <span class="cr-link">Browse &rarr;</span>
-      </div>
-    </a>
-    <a class="cr-card" href="/telly-detective.html">
-      <img src="/shows-hero.webp" alt="Telly Detective" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div class="cr-body">
-        <div class="cr-title">Telly Detective</div>
-        <p class="cr-desc">Not sure what you're after? Get a recommendation based on your tastes.</p>
-        <span class="cr-link">Read Guide &rarr;</span>
       </div>
     </a>
     <a class="cr-card" href="/weekend-binge-guide.html">
