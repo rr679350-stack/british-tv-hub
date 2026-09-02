@@ -9261,5 +9261,53 @@
     "sources": [
       "https://www.justwatch.com/ca/tv-show/vanity-fair-1998"
     ]
+  },
+  {
+    "title": "Marble Hall Murders",
+    "years": "2026",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "PBS",
+        "tag": "free",
+        "url": "https://www.pbs.org/show/marble-hall-murders/"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-02",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/shows/marble-hall-murders/",
+      "https://www.tellyvisions.org/marble-hall-murders-release-date-cast-images-synopsis-more/"
+    ]
+  },
+  {
+    "title": "Maigret (2025)",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS",
+        "tag": "free",
+        "url": "https://www.pbs.org/show/maigret/"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-02",
+    "sources": [
+      "https://www.pbs.org/wgbh/masterpiece/specialfeatures/maigret-starring-benjamin-wainwright-renewed-for-season-2-on-masterpiece/",
+      "https://en.wikipedia.org/wiki/Maigret_(2025_TV_series)"
+    ]
   }
 ]
