@@ -1693,19 +1693,35 @@ function filterShowCards(query){
 <!-- END NEW THIS MONTH -->
 
 <!-- FULL DATABASE SEARCH -->
-<div id="full-database-search" style="max-width:700px;margin:56px auto 0;padding:0 20px;">
+<div id="full-database-search" style="max-width:820px;margin:56px auto 0;padding:0 20px;">
   <style>
+    .fds-panel {
+      background: linear-gradient(180deg, #232c48 0%, #1c2440 100%);
+      border: 1px solid #c9a96e;
+      border-radius: 16px;
+      padding: 48px 40px 44px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(201,169,110,0.08) inset;
+      position: relative;
+      overflow: hidden;
+    }
+    .fds-panel::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #c9a96e, transparent);
+    }
     .fds-search-zone { margin: 0 auto 14px; max-width: 540px; position: relative; }
     .fds-search-input {
-      width: 100%; box-sizing: border-box; background: #1e2433; border: 1px solid #3d4a60;
-      color: #e8dfc8; padding: 14px 18px; font-family: 'Crimson Text', serif; font-size: 16px;
+      width: 100%; box-sizing: border-box; background: #1a2135; border: 1px solid #4a5570;
+      color: #e8dfc8; padding: 16px 20px; font-family: 'Crimson Text', serif; font-size: 17px;
       border-radius: 8px; outline: none;
     }
     .fds-search-input::placeholder { color: #8a9ab5; }
-    .fds-search-input:focus { border-color: #c9a96e; }
+    .fds-search-input:focus { border-color: #c9a96e; box-shadow: 0 0 0 3px rgba(201,169,110,0.15); }
     .fds-region-row { display:flex; justify-content:center; gap:8px; margin:0 auto 20px; }
     .fds-region-btn {
-      background: transparent; border: 1px solid #3d4a60; color: #8a9ab5; font-family:'Raleway',sans-serif;
+      background: transparent; border: 1px solid #4a5570; color: #8a9ab5; font-family:'Raleway',sans-serif;
       font-size: 12px; letter-spacing: 0.5px; padding: 7px 14px; border-radius: 20px; cursor: pointer;
     }
     .fds-region-btn:hover { border-color: #c9a96e; color: #e8dfc8; }
@@ -1724,7 +1740,7 @@ function filterShowCards(query){
     .fds-suggest li:hover, .fds-suggest li.highlight { background: #2c3550; color: #dab870; }
     .fds-suggest li .fds-yr { color: #8a9ab5; font-size: 13px; margin-left: 8px; }
     .fds-result { margin: 20px auto 0; max-width: 600px; }
-    .fds-case-file { background:#222b42; border:1px solid #3d4a60; border-radius:12px; padding:26px 28px; }
+    .fds-case-file { background:#1a2135; border:1px solid #3d4a60; border-radius:12px; padding:26px 28px; }
     .fds-case-show { font-family:'Playfair Display',serif; font-size:24px; color:#e8dfc8; margin:0 0 4px; }
     .fds-case-meta { font-family:'Raleway',sans-serif; font-size:12px; color:#8a9ab5; letter-spacing:0.5px; margin-bottom:16px; }
     .fds-case-meta span { margin: 0 6px; }
@@ -1742,8 +1758,12 @@ function filterShowCards(query){
     .fds-no-result .fds-nr-title { font-family:'Playfair Display',serif; font-size:19px; color:#e8dfc8; margin-bottom:8px; }
     .fds-no-result p { color:#8a9ab5; font-size:14.5px; font-family:'Crimson Text',serif; margin:0; }
     .fds-no-result a { color:#c9a96e; }
+    @media (max-width:600px) {
+      .fds-panel { padding:36px 22px 32px; border-radius:12px; }
+    }
   </style>
 
+  <div class="fds-panel">
   <p class="section-label" style="text-align:center;border-bottom:none;">Can't Find a Full Guide Above?</p>
   <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">Search Every Show We Track</h2>
   <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#9090a8;margin:0 0 24px;text-align:center;">Beyond our full guides, we track streaming availability for hundreds of British shows &mdash; search by title to find where to watch.</p>
@@ -1753,6 +1773,7 @@ function filterShowCards(query){
     <ul class="fds-suggest" id="fdsSuggestList"></ul>
   </div>
 
+
   <div class="fds-region-row" id="fdsRegionRow">
     <button class="fds-region-btn active" data-region="us">United States</button>
     <button class="fds-region-btn" data-region="uk">United Kingdom</button>
@@ -1760,6 +1781,7 @@ function filterShowCards(query){
   </div>
 
   <div class="fds-result" id="fdsResult"></div>
+  </div>
 </div>
 <!-- END FULL DATABASE SEARCH -->
 
