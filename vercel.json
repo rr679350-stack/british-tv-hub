@@ -30,6 +30,11 @@
       "source": "/mysteries.html",
       "destination": "/shows-index.html",
       "permanent": true
+    },
+    {
+      "source": "/vera-filming-locations.html",
+      "destination": "/shows/vera.html",
+      "permanent": true
     }
   ],
   "rewrites": [
