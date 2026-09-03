@@ -16,7 +16,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/things-british-tv-has-taught-me.html">
 <meta property="og:title" content="Things British TV Has Taught Me | British TV Hub">
-<meta property="og:description" content="A running, fan-fuelled list of the small, ridiculous, and oddly true things British television has taught us all. Submit yours.">
+<meta property="og:description" content="A running, fan-fuelled list of the small, ridiculous, and oddly true things British television has taught us all — plus a bingo card to play along while you watch.">
 <meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/things-taught-me-hero.webp">
 <meta property="og:image:width" content="1536">
 <meta property="og:image:height" content="1024">
@@ -29,7 +29,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="description" content="A running, fan-fuelled list of small, ridiculous, oddly true things British television has taught us. Submit yours — the best may appear on Facebook.">
+<meta name="description" content="A running, fan-fuelled list of small, ridiculous, oddly true things British television has taught us — plus a bingo card to play along while you watch.">
 <link rel="canonical" href="https://britishtvhub.com/things-british-tv-has-taught-me.html">
 <script type="application/ld+json">
 {
@@ -420,8 +420,9 @@ document.addEventListener('click', function(e){
   </div>
 
   <div style="max-width:700px;margin:5rem auto 2.5rem;text-align:center;" id="bingo">
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--cream);margin:0 0 0.75rem;">Play Along: <em style="font-style:italic;color:var(--gold-light);">British Mystery Bingo</em></h2>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:var(--text-light);line-height:1.6;margin:0;">Tick off a square the moment you spot it on screen. Five in a row and you officially know this genre far too well.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin:0 0 14px;">Play Along Tonight</p>
+    <h2 style="font-family:'Playfair Display',serif;font-size:1.9rem;color:var(--cream);margin:0 0 0.75rem;">British Mystery <em style="font-style:italic;color:var(--gold-light);">Bingo</em></h2>
+    <p style="font-family:'Crimson Text',serif;font-size:17px;color:var(--text-light);line-height:1.6;margin:0;">Pull this up on your phone while you watch your favourite British mystery or drama tonight. Tick off a square the moment you spot it on screen — five in a row and you officially know this genre far too well.</p>
   </div>
 
   <div class="bingo-wrap">
@@ -431,20 +432,6 @@ document.addEventListener('click', function(e){
       <button class="bingo-btn bingo-btn-outline" id="bingo-print-btn" type="button">Print This Card</button>
     </div>
     <p class="bingo-win-msg" id="bingo-win-msg">Bingo! You know this genre far too well.</p>
-  </div>
-
-  <div class="ttm-submit-section">
-    <h2>Send Us Yours</h2>
-    <p>What has British TV taught <em>you</em>? Big or small, funny or oddly true — we're collecting the best ones for future rounds.</p>
-    <form class="ttm-form" id="ttm-form" action="https://formspree.io/f/mvkpnbpl" method="POST">
-      <label for="ttm-entry">What has British TV taught you?</label>
-      <textarea id="ttm-entry" name="entry" maxlength="200" required placeholder="e.g. The village fête will not go according to plan."></textarea>
-      <label for="ttm-name">Name (optional — leave blank to stay anonymous)</label>
-      <input type="text" id="ttm-name" name="name" maxlength="60" placeholder="First name only is fine">
-      <button class="ttm-submit-btn" type="submit">Submit Yours &rarr;</button>
-      <p class="ttm-form-status" id="ttm-form-status">Thank you — your submission has been sent.</p>
-    </form>
-    <p class="ttm-loop-note">The best submissions may be featured here on the site — and turned into a future British TV Hub Facebook graphic.</p>
   </div>
 
   <div class="ttm-featured-gift" style="max-width:640px;margin:50px auto 0;background:#232a3a;border:1px solid var(--gold);border-radius:12px;padding:30px 28px;text-align:center;">
@@ -665,28 +652,6 @@ document.addEventListener('DOMContentLoaded', function(){
   document.getElementById('bingo-new-btn').addEventListener('click', bingoRender);
   document.getElementById('bingo-print-btn').addEventListener('click', () => window.print());
 
-  const form = document.getElementById('ttm-form');
-  const status = document.getElementById('ttm-form-status');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function(res){
-      if(res.ok){
-        status.style.display = 'block';
-        form.reset();
-        gtag('event','ttm_submission',{page_path:location.pathname});
-      } else {
-        status.textContent = 'Something went wrong — please try again.';
-        status.style.display = 'block';
-      }
-    }).catch(function(){
-      status.textContent = 'Something went wrong — please try again.';
-      status.style.display = 'block';
-    });
-  });
 });
 </script>
 
