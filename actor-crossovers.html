@@ -237,6 +237,21 @@ gtag('config', 'G-P1L8CVNKS6');
     align-self: flex-start;
   }
 }
+
+/* ===== Actor crossover cards — larger, higher-contrast redesign ===== */
+.crossover-pair { font-family:'Crimson Text',serif; font-size:21px; color:#f0ece2; line-height:1.9; margin-bottom:18px; }
+.crossover-pair a { color:var(--gold-light,#e8c97a); text-decoration:none; border-bottom:2px solid rgba(201,168,76,0.5); font-weight:600; }
+.crossover-pair a:hover { color:#ffffff; border-bottom-color:#ffffff; }
+.crossover-role { color:#c3cbdc; font-size:16px; }
+.crossover-arrow { color:var(--gold,#c9a84c); margin:0 16px; font-size:20px; display:inline-block; }
+.crossover-note { font-family:'Crimson Text',serif; font-style:italic; font-size:18px; color:#d2cdc0; line-height:1.7; margin:0 0 24px; }
+.crossover-links { display:flex; flex-wrap:wrap; gap:12px; }
+.crossover-link-btn { display:inline-block; font-family:'Raleway',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.4px; color:var(--gold-light,#e8c97a); background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.45); padding:11px 18px; border-radius:5px; text-decoration:none; transition:background .2s ease, border-color .2s ease, color .2s ease; }
+.crossover-link-btn:hover { background:rgba(201,168,76,0.22); border-color:var(--gold,#c9a84c); color:#ffffff; }
+@media (max-width: 600px) {
+  .crossover-pair { font-size:18px; }
+  .crossover-arrow { display:block; margin:8px 0; }
+}
 </style>
 </head>
 <body>
@@ -367,11 +382,14 @@ document.addEventListener('click', function(e){
   </div>
   <div class="show-card">
     <div class="show-card-inner" style="display:block;">
-      <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:2;margin-bottom:18px;">
-        <span style="display:inline-block;"><strong><a href="/shows/happy-valley.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Happy Valley</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(Tommy Lee Royce)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/grantchester.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Grantchester</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(Sidney Chambers)</span></span>
+      <div class="crossover-pair">
+        <a href="/shows/happy-valley.html">Happy Valley</a> <span class="crossover-role">(Tommy Lee Royce)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/grantchester.html">Grantchester</a> <span class="crossover-role">(Sidney Chambers)</span>
       </div>
-      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:14.5px;color:var(--text-muted,#9090a8);margin:0 0 20px;">He played the terrifying antagonist of one show and the warm, doubt-wracked vicar-detective of another &mdash; often within the same viewing year.</p>
-      <div><a href="/shows/happy-valley.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Happy Valley Guide &rarr;</a><a href="/shows/grantchester.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Grantchester Guide &rarr;</a></div>
+      <p class="crossover-note">He played the terrifying antagonist of one show and the warm, doubt-wracked vicar-detective of another &mdash; often within the same viewing year.</p>
+      <div class="crossover-links">
+        <a href="/shows/happy-valley.html" class="crossover-link-btn">Happy Valley Guide &rarr;</a>
+        <a href="/shows/grantchester.html" class="crossover-link-btn">Grantchester Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
@@ -380,11 +398,14 @@ document.addEventListener('click', function(e){
   </div>
   <div class="show-card">
     <div class="show-card-inner" style="display:block;">
-      <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:2;margin-bottom:18px;">
-        <span style="display:inline-block;"><strong><a href="/shows/line-of-duty.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Line of Duty</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(DS Kate Fleming)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/trigger-point.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Trigger Point</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(Lana Washington)</span></span>
+      <div class="crossover-pair">
+        <a href="/shows/line-of-duty.html">Line of Duty</a> <span class="crossover-role">(DS Kate Fleming)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/trigger-point.html">Trigger Point</a> <span class="crossover-role">(Lana Washington)</span>
       </div>
-      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:14.5px;color:var(--text-muted,#9090a8);margin:0 0 20px;">Both shows come from the same creative team &mdash; Jed Mercurio produced Line of Duty and co-created Trigger Point, so the crossover isn't a coincidence.</p>
-      <div><a href="/shows/line-of-duty.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Line of Duty Guide &rarr;</a><a href="/shows/trigger-point.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Trigger Point Guide &rarr;</a></div>
+      <p class="crossover-note">Both shows come from the same creative team &mdash; Jed Mercurio produced Line of Duty and co-created Trigger Point, so the crossover isn't a coincidence.</p>
+      <div class="crossover-links">
+        <a href="/shows/line-of-duty.html" class="crossover-link-btn">Line of Duty Guide &rarr;</a>
+        <a href="/shows/trigger-point.html" class="crossover-link-btn">Trigger Point Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
@@ -393,11 +414,14 @@ document.addEventListener('click', function(e){
   </div>
   <div class="show-card">
     <div class="show-card-inner" style="display:block;">
-      <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:2;margin-bottom:18px;">
-        <span style="display:inline-block;"><strong><a href="/shows/death-in-paradise.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Death in Paradise</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(DI Richard Poole)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/professor-t.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Professor T</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(Jasper Tempest)</span></span>
+      <div class="crossover-pair">
+        <a href="/shows/death-in-paradise.html">Death in Paradise</a> <span class="crossover-role">(DI Richard Poole)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/professor-t.html">Professor T</a> <span class="crossover-role">(Jasper Tempest)</span>
       </div>
-      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:14.5px;color:var(--text-muted,#9090a8);margin:0 0 20px;">Miller co-created Death in Paradise and starred as its uptight, fish-out-of-water lead before trading the Caribbean sun for Professor T's germ-averse Cambridge classroom.</p>
-      <div><a href="/shows/death-in-paradise.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Death in Paradise Guide &rarr;</a><a href="/shows/professor-t.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Professor T Guide &rarr;</a></div>
+      <p class="crossover-note">Miller co-created Death in Paradise and starred as its uptight, fish-out-of-water lead before trading the Caribbean sun for Professor T's germ-averse Cambridge classroom.</p>
+      <div class="crossover-links">
+        <a href="/shows/death-in-paradise.html" class="crossover-link-btn">Death in Paradise Guide &rarr;</a>
+        <a href="/shows/professor-t.html" class="crossover-link-btn">Professor T Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
@@ -406,11 +430,15 @@ document.addEventListener('click', function(e){
   </div>
   <div class="show-card">
     <div class="show-card-inner" style="display:block;">
-      <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:2;margin-bottom:18px;">
-        <span style="display:inline-block;"><strong><a href="/shows/miss-marple.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Miss Marple</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(DS Fletcher)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Inspector Morse</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(Sergeant Lewis)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Lewis</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(DI Robbie Lewis)</span></span>
+      <div class="crossover-pair">
+        <a href="/shows/miss-marple.html">Miss Marple</a> <span class="crossover-role">(DS Fletcher)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/inspector-morse.html">Inspector Morse</a> <span class="crossover-role">(Sergeant Lewis)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/inspector-morse.html">Lewis</a> <span class="crossover-role">(DI Robbie Lewis)</span>
       </div>
-      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:14.5px;color:var(--text-muted,#9090a8);margin:0 0 20px;">He played a detective sergeant in a 1985 Miss Marple adaptation two years before landing the role that made him famous &mdash; then spent thirteen years as Morse's sergeant before getting his own spin-off as the lead.</p>
-      <div><a href="/shows/miss-marple.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Miss Marple Guide &rarr;</a><a href="/shows/inspector-morse.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Inspector Morse Guide &rarr;</a><a href="/shows/inspector-morse.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Lewis Guide &rarr;</a></div>
+      <p class="crossover-note">He played a detective sergeant in a 1985 Miss Marple adaptation two years before landing the role that made him famous &mdash; then spent thirteen years as Morse's sergeant before getting his own spin-off as the lead.</p>
+      <div class="crossover-links">
+        <a href="/shows/miss-marple.html" class="crossover-link-btn">Miss Marple Guide &rarr;</a>
+        <a href="/shows/inspector-morse.html" class="crossover-link-btn">Inspector Morse Guide &rarr;</a>
+        <a href="/shows/inspector-morse.html" class="crossover-link-btn">Lewis Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
@@ -419,11 +447,14 @@ document.addEventListener('click', function(e){
   </div>
   <div class="show-card">
     <div class="show-card-inner" style="display:block;">
-      <div style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:2;margin-bottom:18px;">
-        <span style="display:inline-block;"><strong><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Inspector Morse</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(guest role)</span></span><span style="color:var(--gold,#c9a96e);margin:0 10px;">&rarr;</span><span style="display:inline-block;"><strong><a href="/shows/midsomer-murders.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);">Midsomer Murders</a></strong> <span style="color:var(--text-muted,#9090a8);font-size:13px;">(DCI John Barnaby)</span></span>
+      <div class="crossover-pair">
+        <a href="/shows/inspector-morse.html">Inspector Morse</a> <span class="crossover-role">(guest role)</span><span class="crossover-arrow">&rarr;</span><a href="/shows/midsomer-murders.html">Midsomer Murders</a> <span class="crossover-role">(DCI John Barnaby)</span>
       </div>
-      <p style="font-family:'Crimson Text',serif;font-style:italic;font-size:14.5px;color:var(--text-muted,#9090a8);margin:0 0 20px;">Dudgeon actually appeared in Midsomer Murders years before taking over as its lead &mdash; he played a minor gardener character back in series four, long before returning as the new DCI Barnaby in 2011.</p>
-      <div><a href="/shows/inspector-morse.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Inspector Morse Guide &rarr;</a><a href="/shows/midsomer-murders.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold-light,#c9a96e);text-decoration:underline;margin-right:18px;">Midsomer Murders Guide &rarr;</a></div>
+      <p class="crossover-note">Dudgeon actually appeared in Midsomer Murders years before taking over as its lead &mdash; he played a minor gardener character back in series four, long before returning as the new DCI Barnaby in 2011.</p>
+      <div class="crossover-links">
+        <a href="/shows/inspector-morse.html" class="crossover-link-btn">Inspector Morse Guide &rarr;</a>
+        <a href="/shows/midsomer-murders.html" class="crossover-link-btn">Midsomer Murders Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
