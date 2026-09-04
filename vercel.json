@@ -40,6 +40,11 @@
       "source": "/telly-detective.html",
       "destination": "/shows-index.html#full-database-search",
       "permanent": true
+    },
+    {
+      "source": "/shows-like-midsomer-murders-tv.htmlDrop",
+      "destination": "/shows-like-midsomer-murders-tv.html",
+      "permanent": true
     }
   ],
   "rewrites": [
