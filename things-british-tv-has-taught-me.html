@@ -130,6 +130,7 @@ gtag('config', 'G-P1L8CVNKS6');
 /* ===== TV Bingo ===== */
 .bingo-wrap{max-width:640px;margin:0 auto 3rem;text-align:center;}
 .bingo-card{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;background:#0a1520;border:1px solid rgba(201,168,76,0.3);border-radius:10px;padding:10px;}
+.bingo-brand{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:14px 0 0;}
 .bingo-cell{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;text-align:center;background:#232c47;border:1px solid rgba(201,168,76,0.2);border-radius:6px;padding:8px;cursor:pointer;transition:background .2s ease,border-color .2s ease,transform .15s ease;position:relative;}
 .bingo-cell:hover{border-color:var(--gold);transform:translateY(-2px);}
 .bingo-cell p{font-family:'Raleway',sans-serif;font-weight:500;font-size:13px;line-height:1.35;color:var(--text-light);margin:0;}
@@ -427,6 +428,7 @@ document.addEventListener('click', function(e){
 
   <div class="bingo-wrap">
     <div class="bingo-card" id="bingo-card"></div>
+    <p class="bingo-brand">🍵 British TV Hub &middot; BritishTVHub.com</p>
     <div class="bingo-controls">
       <button class="bingo-btn" id="bingo-new-btn" type="button">New Card &rarr;</button>
       <button class="bingo-btn bingo-btn-outline" id="bingo-print-btn" type="button">Print This Card</button>
