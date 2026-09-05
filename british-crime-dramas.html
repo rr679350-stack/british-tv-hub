@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best British Crime Dramas | British TV Hub</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/british-crime-dramas.html">
+<meta property="og:title" content="Best British Crime Dramas | British TV Hub">
+<meta property="og:description" content="Line of Duty, Happy Valley, Unforgotten, Shetland, and more — the flagship serialized British crime dramas, and where to watch each one in the US.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/tense-british-crime-drama-hero.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best British Crime Dramas | British TV Hub">
+<meta name="twitter:description" content="Line of Duty, Happy Valley, Unforgotten, Shetland, and more — the flagship serialized British crime dramas, and where to watch each one in the US.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/tense-british-crime-drama-hero.webp">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="The best British crime dramas — Line of Duty, Happy Valley, Unforgotten, Shetland, Vera, Blue Lights, and Trigger Point — with where to watch each one in the US.">
+<link rel="canonical" href="https://britishtvhub.com/british-crime-dramas.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best British Crime Dramas",
+  "description": "Flagship serialized British crime dramas, and where to watch each show in the US.",
+  "url": "https://britishtvhub.com/british-crime-dramas.html",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"item":{"@type":"TVSeries","name":"Line of Duty","description":"AC-12, a fictional anti-corruption unit, investigates police officers suspected of corruption from within their own force.","startDate":"2012","endDate":"2021","numberOfSeasons":6,"actor":[{"@type":"Person","name":"Martin Compston"},{"@type":"Person","name":"Vicky McClure"},{"@type":"Person","name":"Adrian Dunbar"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":2,"item":{"@type":"TVSeries","name":"Happy Valley","description":"A West Yorkshire police sergeant confronts the man responsible for her daughter's death across a cat-and-mouse arc spanning three series.","startDate":"2014","endDate":"2023","numberOfSeasons":3,"actor":[{"@type":"Person","name":"Sarah Lancashire"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":3,"item":{"@type":"TVSeries","name":"Unforgotten","description":"Detectives reopen decades-old cold cases, each series untangling how several strangers' lives connect to one unsolved crime.","startDate":"2015","numberOfSeasons":6,"actor":[{"@type":"Person","name":"Nicola Walker"},{"@type":"Person","name":"Sanjeev Bhaskar"},{"@type":"Person","name":"Sinéad Keenan"}],"genre":["Crime","Drama","Mystery"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":4,"item":{"@type":"TVSeries","name":"Shetland","description":"A detective inspector investigates murders within a tight-knit island community in Scotland's Shetland Isles.","startDate":"2013","numberOfSeasons":10,"actor":[{"@type":"Person","name":"Douglas Henshall"},{"@type":"Person","name":"Ashley Jensen"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":5,"item":{"@type":"TVSeries","name":"Vera","description":"DCI Vera Stanhope investigates murders across the wild Northumberland coast in a series of feature-length cases.","startDate":"2011","endDate":"2025","numberOfSeasons":14,"actor":[{"@type":"Person","name":"Brenda Blethyn"}],"genre":["Crime","Drama","Mystery"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":6,"item":{"@type":"TVSeries","name":"Blue Lights","description":"Rookie police officers navigate the unique pressures of policing in Belfast.","startDate":"2023","numberOfSeasons":4,"actor":[{"@type":"Person","name":"Sian Brooke"},{"@type":"Person","name":"Martin McCann"},{"@type":"Person","name":"Katherine Devlin"},{"@type":"Person","name":"Nathan Braniff"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":7,"item":{"@type":"TVSeries","name":"Trigger Point","description":"A Metropolitan Police bomb disposal officer defuses a fresh explosives threat across London in each series.","startDate":"2022","numberOfSeasons":4,"actor":[{"@type":"Person","name":"Vicky McClure"}],"genre":["Crime","Drama","Thriller"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Shows", "item": "https://britishtvhub.com/shows.html"},
+    {"@type": "ListItem", "position": 3, "name": "Best British Crime Dramas", "item": "https://britishtvhub.com/british-crime-dramas.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes these different from British police procedurals or cozy mysteries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "These shows are built around long-form, serialized storytelling rather than a self-contained case each episode, and they lean into psychological weight and moral complexity rather than puzzle-solving comfort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which of these shows are streaming on BritBox?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Line of Duty, Happy Valley, Shetland, Vera, Blue Lights, and Trigger Point are all available on BritBox in the US. Unforgotten streams on PBS Masterpiece."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to watch these shows in order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Line of Duty absolutely must be watched in order, since it builds one continuous story. Unforgotten, Happy Valley, Shetland, and Vera can mostly be watched out of order, since each series or case is largely self-contained, though watching in order adds context."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I watch after Line of Duty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trigger Point is a natural next stop, since it comes from the same production company and stars Line of Duty's Vicky McClure. Happy Valley offers a similarly intense, character-driven kind of crime drama."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Shetland based on books?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, on Ann Cleeves' Shetland novels, though the show has diverged from them substantially over its run."
+      }
+    }
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+
+
+
+
+
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+</style>
+</head>
+<body>
+    
+    
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/books">Literary Adaptations</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Collections</div>
+            <a href="/british-crime-dramas.html">Best British Crime Dramas</a>
+            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
+            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/the-cozy-collection.html">The Cozy Collection</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/collections.html">Browse All</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Browse All</a>
+            <a href="/quiz.html">Match Me a Mystery</a>
+            <a href="/village-quiz.html">Which Village Are You?</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="/shows.html">Shows</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Best British Crime Dramas</span>
+  </div>
+</div>
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/tense-british-crime-drama-hero.webp" alt="A UK police car with lights flashing on a rain-slicked harbor pier at dusk, beside a wall reading 'No Unauthorised Access'" style="position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 40%,rgba(26,35,50,0.75) 60%,rgba(26,35,50,0.05) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <div class="hero-eyebrow">Guides &middot; Crime Drama</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">Best British <em style="font-style:italic;color:var(--gold-light);">Crime Dramas</em></h1>
+    <p class="hero-intro">Not a case-of-the-week and not a cozy village whodunit &mdash; these are the flagship serialized crime dramas that built their reputation one long, tense story at a time.</p>
+  </div>
+</div>
+<div class="page-body">
+<p style="font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin:24px 0 0;">Curated and verified by British TV Hub &middot; Streaming availability checked September 2026</p>
+
+<div style="max-width:900px;margin:0 0 2.5rem;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--cream);margin:0 0 0.75rem;">What Sets These <em style="font-style:italic;color:var(--gold-light);">Apart</em>?</h2>
+  <p style="font-size:1.05rem;color:var(--text-light);line-height:1.75;margin:0;">These shows build one long, serialized story rather than solving a fresh case every episode, and they lean into psychological weight and moral complexity rather than the tidy comfort of a cozy mystery.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin:0 0 3rem;">
+
+  <a href="/shows/line-of-duty.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/shows-like-line-of-duty-hero.webp" alt="Line of Duty" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Line of Duty</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">AC-12, a fictional anti-corruption unit, investigates police officers suspected of corruption within their own force. Six series build to one of British TV's most talked-about mysteries, with a seventh coming in 2027.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/shows/happy-valley.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/top10-hero.webp" alt="Happy Valley" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Happy Valley</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Sarah Lancashire won two BAFTAs as Sergeant Catherine Cawood in Sally Wainwright's West Yorkshire drama, built around a cat-and-mouse arc with her nemesis across three series and nine years.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/shows/unforgotten.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/masterpiece-hero.webp" alt="Unforgotten" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Unforgotten</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Nicola Walker and Sanjeev Bhaskar led the first four series investigating decades-old cold cases; Sinéad Keenan has since stepped in opposite Bhaskar, with a seventh series already confirmed.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/shows/shetland.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/shows-like-shetland-hero.webp" alt="Shetland" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Shetland</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Douglas Henshall's DI Jimmy Perez carried the first seven series before handing over to Ashley Jensen, investigating murders within the tight-knit island community of Scotland's Shetland Isles.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/vera-beginners-guide.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/shows-like-vera-hero.webp" alt="Vera" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Vera</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Brenda Blethyn played DCI Vera Stanhope in every one of the show's 14 series, investigating feature-length cases across the wild Northumberland coast until the show's complete run ended in 2025.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/shows/blue-lights.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/fall-preview-blue-lights-s4.webp" alt="Blue Lights" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Blue Lights</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Siân Brooke, Martin McCann, Katherine Devlin, and Nathan Braniff play newly qualified PSNI officers navigating frontline policing in post-Troubles Belfast, in a series that won Best Drama at the 2025 BAFTAs.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/shows/trigger-point.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/tense-british-crime-drama-hero.webp" alt="Trigger Point" loading="lazy" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);margin-bottom:10px;">Trigger Point</div>
+      <p style="font-size:15.5px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Vicky McClure stars as a Metropolitan Police bomb disposal officer defusing a fresh explosives threat in each series, produced by Jed Mercurio's team, the creative force behind Line of Duty.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Full Guide &rarr;</span>
+    </div>
+  </a>
+
+</div>
+
+  <div class="section-header" id="where-to-watch">
+    <h2>Where to <em>Stream</em> in the US</h2>
+    <p>Six of these seven shows live on BritBox, with Unforgotten on PBS Masterpiece.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:0 0 2rem;">
+    <a href="/britbox.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/britbox-guide-card.webp" alt="BritBox Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">BritBox Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Home to Line of Duty, Happy Valley, Shetland, Vera, Blue Lights, and Trigger Point.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/masterpiece2026.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/masterpiece-hero.webp" alt="PBS Masterpiece Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">PBS Masterpiece Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Home to Unforgotten.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/streaming.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/streaming-hero.webp" alt="Full Streaming Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Full Streaming Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Every service British TV Hub recommends, all in one place.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <hr class="section-divider" style="border:none;border-top:1px solid rgba(201,168,76,0.15);margin:2rem 0;">
+
+  <div class="section-header">
+    <h2>Explore <em>More</em></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:0 0 2rem;">
+    <a href="/tense-british-crime-drama.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/tense-british-crime-drama-hero.webp" alt="Tense British Crime Drama" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Tense British Crime Drama</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Luther, Sherlock, and more of the darkest, most psychological picks.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/top10.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/top10-hero.webp" alt="Best British Police Procedurals" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Best British Police Procedurals</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Case-by-case investigations, for a more traditional whodunit format.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/genres.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/collections-hero.webp" alt="British TV by Genre" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">British TV by Genre</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Not sure what you're in the mood for? Browse by genre.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <hr class="section-divider" style="border:none;border-top:1px solid rgba(201,168,76,0.15);margin:2rem 0;">
+
+  <div class="section-header" id="faq">
+    <h2>What Readers <em>Ask Most</em></h2>
+      </div>
+  <div style="max-width:760px;margin:0 0 2rem;border-top:1px solid rgba(201,168,76,0.15);">
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">What makes these different from British police procedurals or cozy mysteries?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">These shows are built around long-form, serialized storytelling rather than a self-contained case each episode, and they lean into psychological weight and moral complexity rather than puzzle-solving comfort.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Which of these shows are streaming on BritBox?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">Line of Duty, Happy Valley, Shetland, Vera, Blue Lights, and Trigger Point are all available on BritBox in the US. Unforgotten streams on PBS Masterpiece.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Do I need to watch these shows in order?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">Line of Duty absolutely must be watched in order, since it builds one continuous story. Unforgotten, Happy Valley, Shetland, and Vera can mostly be watched out of order, since each series or case is largely self-contained, though watching in order adds context.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">What should I watch after Line of Duty?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">Trigger Point is a natural next stop, since it comes from the same production company and stars Line of Duty's Vicky McClure. Happy Valley offers a similarly intense, character-driven kind of crime drama.</p>
+    </div>
+    <div style="padding:22px 0;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Is Shetland based on books?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">Yes, on Ann Cleeves' Shetland novels, though the show has diverged from them substantially over its run. See the <a href="/shetland-books.html" style="color:var(--gold);">Shetland reading guide</a> for the full list.</p>
+    </div>
+  </div>
+
+  <p style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.08em;color:var(--text-muted);text-align:center;padding:2rem 0 1rem;line-height:1.8;">
+    Affiliate disclosure: British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. Some links on this page may be affiliate links to BritBox. This never affects the recommendations &mdash; these are genuine editorial favourites.
+  </p>
+
+</div>
+
+<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;">
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px;">Join The Conversation</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Join the British TV Hub Community</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:560px;margin-left:auto;margin-right:auto;">Thousands of British TV fans trading recommendations, debating favourite episodes, and spotting new premieres together.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:900px;margin:0 auto;text-align:left;">
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Dramas and Mysteries</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Classics & New Favourites &mdash; the main page. Thousands of followers.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Ultimate British Bookshelf</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">The novels behind your favourite British dramas, plus hidden gems and new releases.</p>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #c9a96e;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Hub Members &#9733;</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Exclusive recommendations, early updates, and subscriber-only extras for British TV Hub members.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Become a Member &rarr;</a>
+      <p style="margin:10px 0 0;font-family:'Raleway',sans-serif;font-size:14px;color:#c8c0a8;">Membership is hosted on Facebook. Tap above to join in seconds.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
+  <div style="max-width:720px;margin:0 auto;">
+    <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
+
+    <!-- Weekly Picks Row -->
+    <div style="text-align:center;padding-bottom:32px;">
+      <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 18px;">Every Sunday you&rsquo;ll get five carefully chosen British TV recommendations, plus the latest BritBox and Acorn TV arrivals, delivered straight to your inbox.</p>
+      <div id="mc_embed_shell_poll">
+        <div id="mc_embed_signup_poll">
+          <form action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701&amp;f_id=006ec6e3f0" method="post" target="_blank">
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:15px;background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:230px;box-sizing:border-box;">
+              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;">Get Picks</button>
+            </div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;color:#88898b;margin-top:10px;letter-spacing:0.5px;">No spam · Unsubscribe anytime</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #3d4a60;"></div>
+
+    <!-- Two-column row: Install as App | Bookmark -->
+    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu → star icon</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+<style>
+@media (max-width: 768px) {
+  /* Footer tagline bar - prevent letter-spaced text from overflowing past its own border (was causing a gold line to appear to cut through the text) */
+  footer > div:first-child {
+    padding: 16px 16px 14px !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.5 !important;
+  }
+  /* Footer link columns - collapse fixed 4-column grid to single column (was overflowing/unreadable on mobile) */
+  footer > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 28px 20px !important;
+  }
+}
+</style>
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Best British Police Procedurals</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="1"/></svg><a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Cozy British Mysteries</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 3-6 3V9Z"/></svg><a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Where to Watch</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M4 4h16v16H4z"/></svg><a href="/books-like-vera.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Books Like Vera</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">What to Watch Next &#11088;</a></div>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Join the Community</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:0 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html>
