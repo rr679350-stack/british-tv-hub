@@ -9,26 +9,57 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-P1L8CVNKS6');
 </script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rank Your Favorite Midsomer Murders Episodes | British TV Hub</title>
-<meta name="description" content="Reorder 15 fan-favorite Midsomer Murders episodes into your own personal top 15, saved right in your browser — then share your list with fellow fans.">
-<link rel="canonical" href="https://britishtvhub.com/midsomer-murders-episode-ranker.html">
+<title>British TV by Genre | British TV Hub</title>
+<meta name="description" content="Browse British TV by genre — cozy mysteries, police procedurals, crime dramas, period dramas, classic detective shows, literary adaptations, and family sagas.">
+<link rel="canonical" href="https://britishtvhub.com/genres.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://britishtvhub.com/midsomer-murders-episode-ranker.html">
-<meta property="og:title" content="Rank Your Favorite Midsomer Murders Episodes | British TV Hub">
-<meta property="og:description" content="Reorder 15 fan-favorite Midsomer Murders episodes into your own personal top 15 — then share your list with fellow fans.">
-<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/shows-like-midsomer-murders-hero.webp">
+<meta property="og:url" content="https://britishtvhub.com/genres.html">
+<meta property="og:title" content="British TV by Genre | British TV Hub">
+<meta property="og:description" content="Browse British TV by genre — cozy mysteries, police procedurals, crime dramas, period dramas, classic detective shows, literary adaptations, and family sagas.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/collections-hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="British TV Hub — best British TV dramas and mysteries guide">
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rank Your Favorite Midsomer Murders Episodes | British TV Hub">
-<meta name="twitter:description" content="Reorder 15 fan-favorite Midsomer Murders episodes into your own personal top 15 — then share your list with fellow fans.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/shows-like-midsomer-murders-hero.webp">
+<meta name="twitter:title" content="British TV by Genre | British TV Hub">
+<meta name="twitter:description" content="Browse British TV by genre — cozy mysteries, police procedurals, crime dramas, period dramas, classic detective shows, literary adaptations, and family sagas.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/collections-hero.webp">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -37,20 +68,15 @@ gtag('config', 'G-P1L8CVNKS6');
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
-    {"@type": "ListItem", "position": 2, "name": "Shows", "item": "https://britishtvhub.com/shows-index.html"},
-    {"@type": "ListItem", "position": 3, "name": "Midsomer Murders", "item": "https://britishtvhub.com/shows/midsomer-murders.html"},
-    {"@type": "ListItem", "position": 4, "name": "Rank Your Favorites", "item": "https://britishtvhub.com/midsomer-murders-episode-ranker.html"}
-  ]
+  "@type": "CollectionPage",
+  "name": "Collections",
+  "description": "Themed British TV guides — crime drama, family sagas, detective partnerships, period dramas, Sunday nights, and PBS Masterpiece.",
+  "url": "https://britishtvhub.com/collections.html"
 }
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <script src="/search-index.js" defer></script>
 <script src="/site-search.js" defer></script>
-
 <link rel="stylesheet" href="/listing-shared.css">
 
 <style>
@@ -100,6 +126,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .nav-hamburger.open span:nth-child(2) { opacity: 0; }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
   nav.site-nav-std .nav-links,
   nav.site-nav-std .nav-actions {
     display: none !important;
@@ -176,82 +203,11 @@ gtag('config', 'G-P1L8CVNKS6');
     align-self: flex-start;
   }
 }
-
-/* ===== Ranker-specific styles ===== */
-.rank-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: #363f58;
-  border: 1px solid rgba(201,168,76,0.2);
-  border-radius: 10px;
-  padding: 16px 18px;
-  margin-bottom: 10px;
-  transition: border-color .2s ease;
-}
-.rank-row:hover { border-color: rgba(201,168,76,0.5); }
-.rank-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  color: var(--gold-light,#c9a96e);
-  width: 36px;
-  flex-shrink: 0;
-  text-align: center;
-}
-.rank-body { flex: 1; min-width: 0; }
-.rank-tag {
-  display: inline-block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 10px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #1a2135;
-  background: var(--gold,#c9a96e);
-  padding: 3px 9px;
-  border-radius: 10px;
-  margin-bottom: 6px;
-}
-.rank-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  color: var(--cream);
-  margin: 0 0 4px;
-}
-.rank-blurb {
-  font-family: 'Crimson Text', serif;
-  font-size: 14.5px;
-  color: var(--text-muted,#9090a8);
-  line-height: 1.5;
-  margin: 0;
-}
-.rank-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex-shrink: 0;
-}
-.rank-btn {
-  width: 34px;
-  height: 30px;
-  border: 1px solid rgba(201,168,76,0.4);
-  background: transparent;
-  color: var(--gold-light,#c9a96e);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1;
-  transition: background .15s ease, opacity .15s ease;
-}
-.rank-btn:hover:not(:disabled) { background: rgba(201,169,110,0.12); }
-.rank-btn:disabled { opacity: 0.25; cursor: default; }
-@media (max-width: 600px) {
-  .rank-row { padding: 12px 14px; gap: 10px; }
-  .rank-title { font-size: 1rem; }
-  .rank-blurb { display: none; }
-}
 </style>
 </head>
 <body>
+
+
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
     <div class="nav-brand">
@@ -347,73 +303,98 @@ document.addEventListener('click', function(e){
   <div class="breadcrumb page-body">
     <span class="breadcrumb-item"><a href="/">Home</a></span>
     <span class="breadcrumb-separator">/</span>
-    <span class="breadcrumb-item"><a href="/shows-index.html">Shows</a></span>
-    <span class="breadcrumb-separator">/</span>
-    <span class="breadcrumb-item"><a href="/shows/midsomer-murders.html">Midsomer Murders</a></span>
-    <span class="breadcrumb-separator">/</span>
-    <span class="breadcrumb-item active">Rank Your Favorites</span>
+    <span class="breadcrumb-item active">British TV by Genre</span>
   </div>
 </div>
-
-<div style="position:relative;overflow:hidden;min-height:340px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
-  <img src="/shows-like-midsomer-murders-hero.webp" alt="A quiet English village green, evoking the fictional county of Midsomer" style="position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/collections-hero.webp" alt="A leather notebook embossed 'British TV Collections' beside a cup of tea, with a cozy English village playing on a TV in the background" style="position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 40%,rgba(26,35,50,0.75) 60%,rgba(26,35,50,0.05) 100%);"></div>
-  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:640px;">
-    <div class="hero-eyebrow">Interactive &middot; Fan Favorites</div>
-    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">Rank Your <em style="font-style:italic;color:var(--gold-light);">Favorite Episodes</em></h1>
-    <p class="hero-intro">15 fan-favorite Midsomer Murders episodes, from the original pilot to John Barnaby's first case. Reorder them into your own personal top 15 &mdash; your list is saved right here in your browser.</p>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <div class="hero-eyebrow">Guides &middot; Discover</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6vw,4.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">British TV by <em style="font-style:italic;color:var(--gold-light);">Genre</em></h1>
+    <p class="hero-intro">Not sure where to start? Pick the mood or genre that fits, and find the shows built for it &mdash; with where to stream each one in the US.</p>
   </div>
 </div>
-
 <div class="page-body">
-  <p style="font-size:14px;color:var(--text-muted);font-style:italic;max-width:760px;margin:24px 0 1.5rem;">Spoiler-free descriptions throughout. This is a curated set of 15 widely-loved episodes, not the full 140+ &mdash; a good excuse to come back and build a second list later.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin:40px 0;">
 
-  <div style="max-width:760px;background:rgba(201,169,110,0.08);border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:18px 22px;margin:0 0 1.75rem;">
-    <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light,#d8d4c8);margin:0;">Use the <strong style="color:var(--gold-light,#c9a96e);">&uarr; &darr;</strong> arrows to move an episode up or down. The list starts in chronological order (Series 1 &rarr; Series 14) &mdash; not a ranking &mdash; so the first move is entirely up to you.</p>
-  </div>
-
-  <div id="rank-list" style="max-width:760px;"></div>
-
-  <div style="max-width:760px;display:flex;gap:12px;flex-wrap:wrap;margin:1.5rem 0 2.5rem;">
-    <button type="button" onclick="resetRanking()" class="watch-btn-secondary" style="border:1px solid var(--gold,#c9a96e);background:transparent;color:var(--gold,#c9a96e);font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 20px;border-radius:2px;cursor:pointer;">Reset to Chronological</button>
-    <button type="button" onclick="copyTop5()" style="border:none;background:var(--gold,#c9a96e);color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;">Copy My Top 5</button>
-    <button type="button" onclick="shareOnFacebook()" style="border:none;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 20px;border-radius:2px;cursor:pointer;">Share to Facebook</button>
-  </div>
-  <p id="copy-confirm" style="max-width:760px;font-family:'Raleway',sans-serif;font-size:13px;color:var(--gold-light,#c9a96e);margin:-1.5rem 0 2rem;display:none;">Copied! Paste it into your Facebook post or comment.</p>
-
-  <hr class="divider" style="margin:2.5rem 0;">
-
-  <div style="max-width:1100px;">
-    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:var(--cream);margin:0 0 1.25rem;">Explore <em style="font-style:italic;color:var(--gold-light);">More</em></h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-      <a href="/shows/midsomer-murders.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-        <img src="/shows-like-midsomer-murders-hero.webp" alt="Midsomer Murders full guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-          <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Midsomer Murders: Full Guide</div>
-          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Where to watch, cast history, and the story behind the series.</div>
-          <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-        </div>
-      </a>
-      <a href="/midsomer-murders-beginners-guide.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-        <img src="/midsomer-murders-beginners-guide-hero.webp" alt="New to Midsomer Murders beginner's guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-          <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">New to Midsomer Murders?</div>
-          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Tom Barnaby vs. John Barnaby, and where to start.</div>
-          <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-        </div>
-      </a>
-      <a href="/shows-like-midsomer-murders-tv.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-        <img src="/shows-like-midsomer-murders-hero.webp" alt="Shows Like Midsomer Murders" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-        <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-          <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Shows Like Midsomer Murders</div>
-          <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Seven more cozy village mysteries with the same charm and body count.</div>
-          <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-        </div>
-      </a>
+  <a href="/cozy.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/cozy-hero.webp" alt="Cozy Mysteries" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Cozy Mysteries</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Gentle, comforting whodunits set in picture-postcard villages, with a body count that never gets too dark.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
     </div>
-  </div>
+  </a>
+
+  <a href="/top10.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/top10-hero.webp" alt="Police Procedurals" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Police Procedurals</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Case-by-case investigations with real detective work at the center &mdash; from Line of Duty to Vera.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/tense-british-crime-drama.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/tense-british-crime-drama-hero.webp" alt="Crime Dramas" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Crime Dramas</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Dark, psychological thrillers that get inside the minds of detectives and killers alike &mdash; edge-of-your-seat viewing.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/british-period-dramas.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/cozy-hero.webp" alt="Period Dramas" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Period Dramas</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Corsets, country houses, and beautifully-shot eras gone by &mdash; from Poldark to Sanditon.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/classic-british-detective-shows.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/detective-partnerships-hero.webp" alt="Classic Detective Shows" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Classic Detective Shows</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">The 70s, 80s, and 90s golden era &mdash; Bergerac, Prime Suspect, Taggart, and more.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/books.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/books-hero.webp" alt="Literary Adaptations" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Literary Adaptations</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">The novels behind your favourite shows, and the shows built from beloved books.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
+
+  <a href="/family-sagas.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+    <img src="/family-sagas-hero.webp" alt="Family Sagas & Historical Drama" style="width:100%;height:170px;object-fit:cover;display:block;">
+    <div style="padding:24px;display:flex;flex-direction:column;flex:1;">
+      <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--cream);margin-bottom:10px;">Family Sagas &amp; Historical Drama</div>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.6;margin:0 0 16px;">Sweeping multi-generational stories, from Downton Abbey to the brand-new Forsytes.</p>
+      <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:9px 18px;border-radius:2px;">Explore &rarr;</span>
+    </div>
+  </a>
 
 </div>
+
+<p style="max-width:900px;margin:8px 0 40px;font-family:'Crimson Text',serif;font-size:15.5px;font-style:italic;color:var(--text-muted,#9090a8);">Looking for something more specific? See the full <a href="/collections.html" style="color:var(--gold-light,#c9a96e);">Collections</a> page for themed guides organized by mood and era.</p>
+
+<style>
+.bookmark-toggle summary{list-style:none;}
+.bookmark-toggle summary::-webkit-details-marker{display:none;}
+.bookmark-toggle summary::marker{content:"";}
+@media (max-width:600px){
+  .stay-connected-cols{flex-direction:column;}
+  .stay-connected-cols .stay-connected-divider{width:auto !important;height:1px;background:#3d4a60;margin:28px 24px;}
+  .stay-connected-cols > div:not(.stay-connected-divider){padding:0 12px !important;}
+}
+</style>
 
 <div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;">
   <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px;">Join The Conversation</div>
@@ -443,6 +424,7 @@ document.addEventListener('click', function(e){
   <div style="max-width:720px;margin:0 auto;">
     <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
 
+    <!-- Weekly Picks Row -->
     <div style="text-align:center;padding-bottom:32px;">
       <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 18px;">Every Sunday you&rsquo;ll get five carefully chosen British TV recommendations, plus the latest BritBox and Acorn TV arrivals, delivered straight to your inbox.</p>
       <div id="mc_embed_shell_poll">
@@ -453,22 +435,65 @@ document.addEventListener('click', function(e){
               <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
               <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;">Get Picks</button>
             </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;color:#88898b;margin-top:10px;letter-spacing:0.5px;">No spam · Unsubscribe anytime</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;color:#9aa3b8;margin-top:10px;letter-spacing:0.5px;">No spam · Unsubscribe anytime</div>
           </form>
         </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid #3d4a60;"></div>
+
+    <!-- Two-column row: Install as App | Bookmark -->
+    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu → star icon</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
       </div>
     </div>
   </div>
 </div>
 
+
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
 <style>
 @media (max-width: 768px) {
+  /* Footer tagline bar - prevent letter-spaced text from overflowing past its own border */
   footer > div:first-child {
     padding: 16px 16px 14px !important;
     letter-spacing: 1.5px !important;
     line-height: 1.5 !important;
   }
+  /* Footer link columns - collapse fixed 4-column grid to single column */
   footer > div[style*="grid-template-columns"] {
     grid-template-columns: 1fr !important;
     gap: 28px !important;
@@ -505,7 +530,6 @@ document.addEventListener('click', function(e){
       <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Best British Police Procedurals</a></div>
       <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="1"/></svg><a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Cozy British Mysteries</a></div>
       <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 3-6 3V9Z"/></svg><a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Where to Watch</a></div>
-      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M4 4h16v16H4z"/></svg><a href="/books-like-vera.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Books Like Vera</a></div>
       <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">What to Watch Next &#11088;</a></div>
     </div>
     <div>
@@ -518,6 +542,10 @@ document.addEventListener('click', function(e){
       </div>
     </div>
   </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
     <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
@@ -532,6 +560,7 @@ document.addEventListener('click', function(e){
   </div>
 </footer>
 
+
 <script>
 (function() {
   var year = new Date().getFullYear();
@@ -544,6 +573,7 @@ document.addEventListener('click', function(e){
 <button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
 
 <script>
+// Show/hide back-to-top button
 window.addEventListener('scroll', function() {
   const backToTop = document.getElementById('backToTop');
   if (window.pageYOffset > 300) {
@@ -554,117 +584,58 @@ window.addEventListener('scroll', function() {
     backToTop.style.opacity = '0';
   }
 });
+
+// Smooth scroll to top
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
-
-<script>
-function shareOnFacebook(){
-  const e = { title: document.title, url: window.location.href };
-  window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`, "facebook-share", "width=600,height=400");
-}
-</script>
-
-<script>
-// ===== Episode Ranker =====
-var EPISODES = [
-  { id: "badgers-drift", series: 1, episode: 1, title: "The Killings at Badger's Drift", blurb: "The pilot. An elderly woman's death draws Barnaby and Troy into decades of buried village secrets." },
-  { id: "written-in-blood", series: 1, episode: 2, title: "Written in Blood", blurb: "A writers' circle chairman is murdered the night after a tense reunion with a famous novelist." },
-  { id: "deaths-shadow", series: 2, episode: 1, title: "Death's Shadow", blurb: "Badger's Drift turns deadly again when a property developer's murder reopens secrets buried decades before." },
-  { id: "dead-mans-eleven", series: 2, episode: 3, title: "Dead Man's Eleven", blurb: "A cricket captain's young wife is found beaten near an old quarry, reopening a death from years before." },
-  { id: "judgement-day", series: 3, episode: 3, title: "Judgement Day", blurb: "A burglar's murder threatens the village's shot at winning 'Perfect Village' \u2014 and reopens a case from decades earlier." },
-  { id: "ring-out-your-dead", series: 5, episode: 3, title: "Ring Out Your Dead", blurb: "A big horse-race win divides the village bell-ringers, with fatal results." },
-  { id: "painted-in-blood", series: 6, episode: 3, title: "Painted in Blood", blurb: "Joyce joins the local watercolour society for an open-air art class that ends in murder." },
-  { id: "the-green-man", series: 7, episode: 1, title: "The Green Man", blurb: "Skeletons uncovered during a canal restoration project reopen a mystery decades in the making." },
-  { id: "ghosts-of-christmas-past", series: 7, episode: 7, title: "Ghosts of Christmas Past", blurb: "A tense family Christmas reunion falls on the anniversary of an old, unresolved tragedy." },
-  { id: "orchis-fatalis", series: 8, episode: 3, title: "Orchis Fatalis", blurb: "A rare-orchid collecting scandal blooms into a case of obsession and smuggling." },
-  { id: "hidden-depths", series: 8, episode: 6, title: "Hidden Depths", blurb: "An apparent suicide turns out to be something far darker." },
-  { id: "vixens-run", series: 9, episode: 3, title: "Vixen's Run", blurb: "A wealthy eccentric's death at his own gathering exposes secrets among his assembled relatives." },
-  { id: "blood-wedding", series: 11, episode: 2, title: "Blood Wedding", blurb: "Preparations for Cully Barnaby's wedding take a sharply sinister turn." },
-  { id: "small-mercies", series: 12, episode: 5, title: "Small Mercies", blurb: "The end of the tourist season at a model village uncovers a killer's decades-old secret." },
-  { id: "death-in-the-slow-lane", series: 14, episode: 1, title: "Death in the Slow Lane", blurb: "DCI John Barnaby's first case: a vintage car rally reopens a mystery 45 years in the making." }
-];
-
-var STORAGE_KEY = "btvh_midsomer_rank_v1";
-var defaultOrder = EPISODES.map(function(e){ return e.id; });
-var byId = {};
-EPISODES.forEach(function(e){ byId[e.id] = e; });
-
-function loadOrder(){
-  try {
-    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    if (Array.isArray(saved) && saved.length === defaultOrder.length && saved.every(function(id){ return byId[id]; })) {
-      return saved;
-    }
-  } catch (e) {}
-  return defaultOrder.slice();
-}
-
-function saveOrder(order){
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(order)); } catch (e) {}
-}
-
-var currentOrder = loadOrder();
-
-function renderRanking(){
-  var container = document.getElementById("rank-list");
-  container.innerHTML = "";
-  currentOrder.forEach(function(id, index){
-    var ep = byId[id];
-    var row = document.createElement("div");
-    row.className = "rank-row";
-    row.innerHTML =
-      '<div class="rank-number">' + (index + 1) + '</div>' +
-      '<div class="rank-body">' +
-        '<span class="rank-tag">Series ' + ep.series + ' &middot; Episode ' + ep.episode + '</span>' +
-        '<p class="rank-title">' + ep.title + '</p>' +
-        '<p class="rank-blurb">' + ep.blurb + '</p>' +
-      '</div>' +
-      '<div class="rank-controls">' +
-        '<button type="button" class="rank-btn" aria-label="Move up" onclick="moveRank(' + index + ',-1)"' + (index === 0 ? ' disabled' : '') + '>&uarr;</button>' +
-        '<button type="button" class="rank-btn" aria-label="Move down" onclick="moveRank(' + index + ',1)"' + (index === currentOrder.length - 1 ? ' disabled' : '') + '>&darr;</button>' +
-      '</div>';
-    container.appendChild(row);
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 }
+</script>
 
-function moveRank(index, direction){
-  var newIndex = index + direction;
-  if (newIndex < 0 || newIndex >= currentOrder.length) return;
-  var temp = currentOrder[index];
-  currentOrder[index] = currentOrder[newIndex];
-  currentOrder[newIndex] = temp;
-  saveOrder(currentOrder);
-  renderRanking();
-}
 
-function resetRanking(){
-  currentOrder = defaultOrder.slice();
-  saveOrder(currentOrder);
-  renderRanking();
-  document.getElementById("copy-confirm").style.display = "none";
-}
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
 
-function copyTop5(){
-  var top5 = currentOrder.slice(0, 5).map(function(id, i){
-    var ep = byId[id];
-    return (i + 1) + ". " + ep.title + " (Series " + ep.series + ", Episode " + ep.episode + ")";
-  }).join("\n");
-  var text = "My Top 5 Midsomer Murders Episodes \ud83d\udd0d\n" + top5 + "\n\nBuild your own list: " + window.location.href;
-  var confirm = document.getElementById("copy-confirm");
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(function(){
-      confirm.style.display = "block";
-    }).catch(function(){
-      alert(text);
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
     });
   } else {
-    alert(text);
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
   }
-}
-
-renderRanking();
+});
 </script>
 </body>
 </html>
