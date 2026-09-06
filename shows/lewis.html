@@ -45,11 +45,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -99,6 +134,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -634,27 +674,56 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">Is This Series for You?</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Best For</span>
-      <p class="book-note">Viewers who enjoyed Inspector Morse's unhurried pace and Oxford setting but want a somewhat warmer central relationship at the center.</p>
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Fans of Unhurried, Character-First Mystery</h3>
+        <p class="show-desc">Viewers who enjoyed Inspector Morse's unhurried pace and Oxford setting but want a somewhat warmer central relationship at the center.</p>
+        <div class="show-tags"><span class="tag">Character-Driven</span><span class="tag">Oxford</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Thoughtful, warm</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Unhurried</span></div>
+        <div class="aside-row"><span class="aside-key">Similar To</span><span class="aside-val">Inspector Morse</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Tone</span>
-      <p class="book-note">Thoughtful and character-driven rather than tense, with genuine warmth between its two leads.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Time Commitment</div>
+        <h3 class="show-title">One Mystery, One Sitting</h3>
+        <p class="show-desc">Each mystery runs approximately 90 minutes, although ITV originally divided some of the later stories into two shorter installments.</p>
+        <div class="show-tags"><span class="tag">Feature-Length</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Runtime</span><span class="aside-val">~90 min per mystery</span></div>
+        <div class="aside-row"><span class="aside-key">Later Series</span><span class="aside-val">Sometimes split in two</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Time Commitment</span>
-      <p class="book-note">Each mystery runs approximately 90 minutes, although ITV originally divided some of the later stories into two shorter installments.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Content Note</span>
-      <p class="book-note">Mild by genre standards, generally suitable for the same audience as Morse and Endeavour.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">British TV Hub Verdict</span>
-      <p class="book-note">A worthy successor that stands entirely on its own, anchored by one of British TV's most likeable detective partnerships.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">Mild, Suitable for the Whole Morse Universe's Audience</h3>
+        <p class="show-desc">Mild by genre standards, generally suitable for the same audience as Morse and Endeavour. British TV Hub's verdict: a worthy successor that stands entirely on its own, anchored by one of British TV's most likeable detective partnerships.</p>
+        <div class="show-tags"><span class="tag">Family-Friendly</span><span class="tag">Recommended</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Mild</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Recommended</span></div>
+      </div>
     </div>
   </div>
 
@@ -677,200 +746,393 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">New Viewer's Guide</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Where to Start</span>
-      <p class="book-note">The pilot, unofficially known as <em>Reputation</em> (2006) — Lewis returns to Oxford after two years away following his wife's death, and is partnered with Hathaway for the first time.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Watch Order</span>
-      <p class="book-note">Not strictly required, since most cases are self-contained, but the pilot sets up the central relationship and is worth starting from.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Cast Note</span>
-      <p class="book-note">Laurence Fox's Hathaway is promoted from Detective Sergeant to Detective Inspector before the eighth series, and Angela Griffin joins as DS Lizzie Maddox from that point on.</p>
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title">The Pilot, <em>Reputation</em> (2006)</h3>
+        <p class="show-desc">Lewis returns to Oxford after two years away following his wife's death, and is partnered with Hathaway for the first time.</p>
+        <div class="show-tags"><span class="tag">Pilot</span><span class="tag">2006</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Not strictly required</span></div>
+        <div class="aside-row"><span class="aside-key">Cast Change</span><span class="aside-val">Hathaway promoted, Series 8</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Best Episodes, Ranked</p>
-  <div class="books-grid">
-
-    <div class="book-card">
-      <span class="book-tag">1 &middot; 2006 &middot; Pilot</span>
-      <h3 class="book-title"><em>Reputation</em></h3>
-      <p class="book-note">The pilot episode, introducing Lewis and Hathaway's partnership as they investigate the murder of an Oxford student, with Morse's own past cases quietly shadowing the case.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">2 &middot; Series 1</span>
-      <h3 class="book-title"><em>Whom the Gods Would Destroy</em></h3>
-      <p class="book-note">The first episode of the regular series gives Lewis and Hathaway's partnership more room to develop while they investigate the murder of an Oxford graduate.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">3</span>
-      <h3 class="book-title"><em>Allegory of Love</em></h3>
-      <p class="book-note">One of British TV Hub's selections for its intricate plotting and intellectual depth, particularly its use of Oxford's literary world.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">4</span>
-      <h3 class="book-title"><em>Counter Culture Blues</em></h3>
-      <p class="book-note">A British TV Hub pick for viewers who want to see the series blend music, nostalgia and an unusually personal investigation.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">5</span>
-      <h3 class="book-title"><em>The Quality of Mercy</em></h3>
-      <p class="book-note">A British TV Hub pick for new viewers finding their footing with the show.</p>
-    </div>
-
+  <div class="section-header">
+    <h2>Best Episodes, <em>Ranked</em></h2>
   </div>
 
-  <hr class="divider">
-
-  <p class="section-label">Main Characters and Cast</p>
-  <div class="similar-grid">
-    <div class="similar-card">
-      <p class="similar-name">Kevin Whately</p>
-      <p class="similar-where">DI Robert <em>Robbie</em> Lewis</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Laurence Fox</p>
-      <p class="similar-where">DS/DI James Hathaway</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Clare Holman</p>
-      <p class="similar-where">Pathologist Dr. Laura Hobson</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Rebecca Front</p>
-      <p class="similar-where">Chief Superintendent Jean Innocent</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Angela Griffin</p>
-      <p class="similar-where">DS Lizzie Maddox (from Series 8)</p>
-    </div>
-  </div>
-  <p class="show-description" style="font-size:15px;">Hathaway is promoted to Detective Inspector before Series 8, and Angela Griffin's DS Lizzie Maddox joins the team from that point onward.</p>
-
-  <hr class="divider">
-
-  <p class="section-label">What Makes the Series Special</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">The Lewis-Hathaway Partnership</span>
-      <p class="book-note">Kevin Whately's world-weary, working-class Lewis paired with Laurence Fox's Cambridge-educated, quietly private Hathaway gives the show a genuinely warm double act at its center.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Continuity with Inspector Morse</span>
-      <p class="book-note">Clare Holman reprises her role as Dr. Laura Hobson from the original series, and the show carries Morse's legacy forward without leaning on nostalgia alone.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Oxford as a Recurring Backdrop</span>
-      <p class="book-note">Like Morse and Endeavour, Lewis uses the city's colleges and academic world as a rich, often darkly ironic setting for its mysteries.</p>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">1 &middot; Pilot &middot; 2006</div>
+        <h3 class="show-title"><em>Reputation</em></h3>
+        <p class="show-desc">The pilot episode, introducing Lewis and Hathaway's partnership as they investigate the murder of an Oxford student, with Morse's own past cases quietly shadowing the case.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Pilot, 2006</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">First-time viewers</span></div>
+      </div>
     </div>
   </div>
 
-  <hr class="divider">
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">2 &middot; Series 1</div>
+        <h3 class="show-title"><em>Whom the Gods Would Destroy</em></h3>
+        <p class="show-desc">The first episode of the regular series gives Lewis and Hathaway's partnership more room to develop while they investigate the murder of an Oxford graduate.</p>
+        <div class="show-tags"><span class="tag">Series 1</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Established fans</span></div>
+      </div>
+    </div>
+  </div>
 
-  <p class="section-label">Setting and Filming Locations</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Setting</span>
-      <p class="book-note">Present-day Oxford, England.</p>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">3</div>
+        <h3 class="show-title"><em>Allegory of Love</em></h3>
+        <p class="show-desc">One of British TV Hub's selections for its intricate plotting and intellectual depth, particularly its use of Oxford's literary world.</p>
+        <div class="show-tags"><span class="tag">Oxford Academia</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Fans of layered mysteries</span></div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Cerebral</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Filming</span>
-      <p class="book-note">Filmed on location using many of the same university buildings, streets, and colleges featured in Inspector Morse and later in Endeavour.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">4</div>
+        <h3 class="show-title"><em>Counter Culture Blues</em></h3>
+        <p class="show-desc">A British TV Hub pick for viewers who want to see the series blend music, nostalgia and an unusually personal investigation.</p>
+        <div class="show-tags"><span class="tag">Music &amp; Nostalgia</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Fans of personal stakes</span></div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Nostalgic</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Shared Identity</span>
-      <p class="book-note">The consistent Oxford setting continues the visual identity that ties the whole Morse universe together.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">5</div>
+        <h3 class="show-title"><em>The Quality of Mercy</em></h3>
+        <p class="show-desc">A British TV Hub pick for new viewers finding their footing with the show.</p>
+        <div class="show-tags"><span class="tag">Good Entry Point</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">New viewers</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Books Behind the Series</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Original Stories, Not Adaptations</span>
-      <p class="book-note">Lewis is not a direct adaptation of any Colin Dexter novel — it uses the character of Robert Lewis, who first appeared as Morse's sergeant in Dexter's original Inspector Morse books, but tells entirely original stories.</p>
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Kevin Whately</h3>
+        <p class="show-desc">DI Robert "Robbie" Lewis — practical, patient, and far more approachable than his old boss, Morse.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DI Robert Lewis</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All 9 series</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Where to Start Reading</span>
-      <p class="book-note">Readers wanting the source material should start with the original Inspector Morse novels.</p>
-      <a class="book-link" href="/inspector-morse-books.html">Inspector Morse Reading Guide &rarr;</a>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Laurence Fox</h3>
+        <p class="show-desc">DS/DI James Hathaway — Cambridge-educated, quietly private, and Lewis's opposite in almost every way.</p>
+        <div class="show-tags"><span class="tag">Detective Sergeant/Inspector</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DS/DI James Hathaway</span></div>
+        <div class="aside-row"><span class="aside-key">Promoted</span><span class="aside-val">Before Series 8</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Clare Holman</h3>
+        <p class="show-desc">Pathologist Dr. Laura Hobson, reprising her role from the original Inspector Morse series.</p>
+        <div class="show-tags"><span class="tag">Pathologist</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Dr. Laura Hobson</span></div>
+        <div class="aside-row"><span class="aside-key">Continuity</span><span class="aside-val">From Inspector Morse</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Rebecca Front</h3>
+        <p class="show-desc">Chief Superintendent Jean Innocent, Lewis and Hathaway's commanding officer.</p>
+        <div class="show-tags"><span class="tag">Chief Superintendent</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Supt. Jean Innocent</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Joins Series 8</div>
+        <h3 class="show-title">Angela Griffin</h3>
+        <p class="show-desc">DS Lizzie Maddox, joining the team once Hathaway is promoted to Detective Inspector.</p>
+        <div class="show-tags"><span class="tag">Detective Sergeant</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DS Lizzie Maddox</span></div>
+        <div class="aside-row"><span class="aside-key">Joins</span><span class="aside-val">Series 8</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">What to Watch Next</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/inspector-morse.html" class="similar-card">
-      <p class="similar-name">Inspector Morse</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/endeavour.html" class="similar-card">
-      <p class="similar-name">Endeavour</p>
-      <p class="similar-where">PBS Masterpiece</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/poirot.html" class="similar-card">
-      <p class="similar-name">Agatha Christie's Poirot</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/classic-british-detective-shows.html" class="similar-card">
-      <p class="similar-name">Classic Detective Shows</p>
-      <p class="similar-where">Various</p>
-    </a>
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
   </div>
-  <p class="show-description" style="font-size:15px;">Each pairs naturally with Lewis: Inspector Morse is the original series this show continues, Endeavour tells Morse's earlier story, and Poirot and Classic British Detective Shows share its unhurried, character-first approach to mystery.</p>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Partnership</div>
+        <h3 class="show-title">The Lewis-Hathaway Partnership</h3>
+        <p class="show-desc">Kevin Whately's world-weary, working-class Lewis paired with Laurence Fox's Cambridge-educated, quietly private Hathaway gives the show a genuinely warm double act at its center.</p>
+        <div class="show-tags"><span class="tag">Mismatched Pair</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Lewis</span><span class="aside-val">Working-class, grounded</span></div>
+        <div class="aside-row"><span class="aside-key">Hathaway</span><span class="aside-val">Cambridge, private</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Continuity</div>
+        <h3 class="show-title">Continuity with Inspector Morse</h3>
+        <p class="show-desc">Clare Holman reprises her role as Dr. Laura Hobson from the original series, and the show carries Morse's legacy forward without leaning on nostalgia alone.</p>
+        <div class="show-tags"><span class="tag">Shared Cast</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Carried Over</span><span class="aside-val">Dr. Laura Hobson</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting as Character</div>
+        <h3 class="show-title">Oxford as a Recurring Backdrop</h3>
+        <p class="show-desc">Like Morse and Endeavour, Lewis uses the city's colleges and academic world as a rich, often darkly ironic setting for its mysteries.</p>
+        <div class="show-tags"><span class="tag">Oxford</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">Oxford colleges</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
-  <p class="section-label">Frequently Asked Questions</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Naming</span>
-      <h3 class="book-title">Is Lewis the same show as Inspector Lewis?</h3>
-      <p class="book-note">Yes. The show is titled Lewis in the UK and Inspector Lewis in the US, particularly on PBS Masterpiece Mystery, but it's the same series.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Status</span>
-      <h3 class="book-title">Is Lewis finished?</h3>
-      <p class="book-note">Yes. Lewis concluded after nine series in 2015, bringing Lewis and Hathaway's partnership to a planned close.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Episode Count</span>
-      <h3 class="book-title">How many episodes of Lewis are there?</h3>
-      <p class="book-note">There are 33 complete mysteries across the pilot and nine numbered series. Some later mysteries were originally broadcast by ITV in two shorter parts.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Viewing Order</span>
-      <h3 class="book-title">Do I need to watch Inspector Morse before Lewis?</h3>
-      <p class="book-note">No, though it deepens the experience. Lewis stands on its own, but Kevin Whately's character was Morse's sergeant in the original series, and the show carries that history with it.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Streaming</span>
-      <h3 class="book-title">Where can I watch Lewis in the US?</h3>
-      <p class="book-note">BritBox is Lewis's primary US home. Some episodes may also appear through participating PBS stations or PBS Passport under the title Inspector Lewis. Availability varies by station and membership.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Filming Location</span>
-      <h3 class="book-title">Where is Lewis filmed?</h3>
-      <p class="book-note">Lewis is filmed on location in Oxford, England, the same city where Inspector Morse and Endeavour are set.</p>
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">Present-Day Oxford</h3>
+        <p class="show-desc">Filmed on location using many of the same university buildings, streets, and colleges featured in Inspector Morse and later in Endeavour. The consistent Oxford setting continues the visual identity that ties the whole Morse universe together.</p>
+        <div class="show-tags"><span class="tag">Oxford, England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">City</span><span class="aside-val">Oxford</span></div>
+        <div class="aside-row"><span class="aside-key">Shared With</span><span class="aside-val">Morse, Endeavour</span></div>
+      </div>
     </div>
   </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Books Behind the <em>Series</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Original Stories</div>
+        <h3 class="show-title">Not a Direct Adaptation</h3>
+        <p class="show-desc">Lewis is not a direct adaptation of any Colin Dexter novel — it uses the character of Robert Lewis, who first appeared as Morse's sergeant in Dexter's original Inspector Morse books, but tells entirely original stories.</p>
+        <div class="show-tags"><span class="tag">Original Screen Stories</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Source</span><span class="aside-val">Character only</span></div>
+        <a href="/inspector-morse-books.html" class="aside-link">Inspector Morse Reading Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Naming</div>
+        <h3 class="show-title">Is Lewis the same show as Inspector Lewis?</h3>
+        <p class="show-desc">Yes. The show is titled Lewis in the UK and Inspector Lewis in the US, particularly on PBS Masterpiece Mystery, but it's the same series.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">UK Title</span><span class="aside-val">Lewis</span></div>
+        <div class="aside-row"><span class="aside-key">US Title</span><span class="aside-val">Inspector Lewis</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Is Lewis finished?</h3>
+        <p class="show-desc">Yes. Lewis concluded after nine series in 2015, bringing Lewis and Hathaway's partnership to a planned close.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Complete</span></div>
+        <div class="aside-row"><span class="aside-key">Ended</span><span class="aside-val">2015</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes of Lewis are there?</h3>
+        <p class="show-desc">There are 33 complete mysteries across the pilot and nine numbered series. Some later mysteries were originally broadcast by ITV in two shorter parts.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Mysteries</span><span class="aside-val">33</span></div>
+        <div class="aside-row"><span class="aside-key">Series</span><span class="aside-val">9 + pilot</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Viewing Order</div>
+        <h3 class="show-title">Do I need to watch Inspector Morse before Lewis?</h3>
+        <p class="show-desc">No, though it deepens the experience. Lewis stands on its own, but Kevin Whately's character was Morse's sergeant in the original series, and the show carries that history with it.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Required?</span><span class="aside-val">No</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Lewis in the US?</h3>
+        <p class="show-desc">BritBox is Lewis's primary US home. Some episodes may also appear through participating PBS stations or PBS Passport under the title Inspector Lewis. Availability varies by station and membership.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Primary</span><span class="aside-val">BritBox</span></div>
+        <div class="aside-row"><span class="aside-key">Also</span><span class="aside-val">PBS Passport</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where is Lewis filmed?</h3>
+        <p class="show-desc">Lewis is filmed on location in Oxford, England, the same city where Inspector Morse and Endeavour are set.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">City</span><span class="aside-val">Oxford</span></div>
+      </div>
+    </div>
+  </div>
+
   <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
     <a href="https://britishtvhub.com/shows/inspector-morse.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
