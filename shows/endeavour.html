@@ -45,11 +45,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -99,6 +134,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -633,27 +673,54 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">Is This Series for You?</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Best For</span>
-      <p class="book-note">Viewers who enjoy slow-burn character work alongside their mysteries, and don't mind a long-running story that rewards watching in order.</p>
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Slow-Burn Character Work</h3>
+        <p class="show-desc">Viewers who enjoy slow-burn character work alongside their mysteries, and don't mind a long-running story that rewards watching in order.</p>
+        <div class="show-tags"><span class="tag">Character-Driven</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Measured, melancholy</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Slow-burn</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Tone</span>
-      <p class="book-note">Measured and melancholy rather than tense or violent — closer to literary drama than a modern thriller.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Time Commitment</div>
+        <h3 class="show-title">A Real Weekly Commitment</h3>
+        <p class="show-desc">Episodes run around 90 minutes each — a real weekly-viewing commitment rather than a quick binge.</p>
+        <div class="show-tags"><span class="tag">Feature-Length</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Runtime</span><span class="aside-val">~90 min per episode</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Time Commitment</span>
-      <p class="book-note">Episodes run around 90 minutes each — a real weekly-viewing commitment rather than a quick binge.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Content Note</span>
-      <p class="book-note">Generally mild by crime-drama standards, though later series touch on darker institutional corruption and personal loss.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">British TV Hub Verdict</span>
-      <p class="book-note">The rare prequel that earns its place beside the original — essential viewing for any Inspector Morse fan.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">Mild, With Darker Later Series</h3>
+        <p class="show-desc">Generally mild by crime-drama standards, though later series touch on darker institutional corruption and personal loss. British TV Hub's verdict: the rare prequel that earns its place beside the original — essential viewing for any Inspector Morse fan.</p>
+        <div class="show-tags"><span class="tag">Recommended</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Mild, darker later on</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Recommended</span></div>
+      </div>
     </div>
   </div>
 
@@ -677,205 +744,408 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">New Viewer's Guide</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Where to Start</span>
-      <p class="book-note">Start with the original 2012 pilot, followed by Series 1, Episode 1, <em>Girl</em>. The pilot introduces Shaun Evans as the young Morse and establishes his early relationship with Fred Thursday.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Watch Order</span>
-      <p class="book-note">Because the characters and personal storylines develop across the entire run, watching in broadcast order is strongly recommended — it isn't as purely episodic as Vera or Midsomer Murders.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Format Note</span>
-      <p class="book-note">The original 2012 pilot film sits slightly apart in tone and cast from the series proper that followed in 2013, but it's still the correct starting point.</p>
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title">The 2012 Pilot, Then Series 1</h3>
+        <p class="show-desc">Start with the original 2012 pilot, followed by Series 1, Episode 1, <em>Girl</em>. The pilot introduces Shaun Evans as the young Morse and establishes his early relationship with Fred Thursday. Because the characters and personal storylines develop across the entire run, watching in broadcast order is strongly recommended — it isn't as purely episodic as Vera or Midsomer Murders.</p>
+        <div class="show-tags"><span class="tag">Pilot</span><span class="tag">2012</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Strongly recommended</span></div>
+        <div class="aside-row"><span class="aside-key">Format Note</span><span class="aside-val">Pilot differs slightly in tone</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">British TV Hub's Best Endeavour Episodes</p>
-  <div class="books-grid">
-
-    <div class="book-card">
-      <span class="book-tag">1 &middot; Series 1, Episode 2</span>
-      <h3 class="book-title"><em>Fugue</em> (2013)</h3>
-      <p class="book-note">A serial killer stalks Oxford, and Morse works to stay one step ahead — one of our picks for the show's very best episodes.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">2 &middot; Series 2, Episode 4</span>
-      <h3 class="book-title"><em>Neverland</em> (2014)</h3>
-      <p class="book-note">A darker, more disturbing case, and our pick for a high point of the show's early run.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">3 &middot; Series 3, Episode 4</span>
-      <h3 class="book-title"><em>Coda</em> (2016)</h3>
-      <p class="book-note">The Series 3 finale, and one of our picks among the strongest closing episodes across the show's nine-series run.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">4 &middot; Series 5, Episode 5</span>
-      <h3 class="book-title"><em>Quartet</em> (2018)</h3>
-      <p class="book-note">Our pick for a standout in Series 5, a season we'd count among the show's strongest overall.</p>
-    </div>
-
-    <div class="book-card">
-      <span class="book-tag">5 &middot; Series 9, Episode 3</span>
-      <h3 class="book-title"><em>Exeunt</em> (2023)</h3>
-      <p class="book-note">The emotional series finale, bringing Endeavour's story to a close while carefully preparing the world viewers will later encounter in Inspector Morse.</p>
-    </div>
-
+  <div class="section-header">
+    <h2>British TV Hub's Best <em>Endeavour Episodes</em></h2>
   </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">1 &middot; Series 1, Episode 2</div>
+        <h3 class="show-title"><em>Fugue</em> (2013)</h3>
+        <p class="show-desc">A serial killer stalks Oxford, and Morse works to stay one step ahead — one of our picks for the show's very best episodes.</p>
+        <div class="show-tags"><span class="tag">Series 1</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">S1, E2</span></div>
+        <div class="aside-row"><span class="aside-key">Year</span><span class="aside-val">2013</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">2 &middot; Series 2, Episode 4</div>
+        <h3 class="show-title"><em>Neverland</em> (2014)</h3>
+        <p class="show-desc">A darker, more disturbing case, and our pick for a high point of the show's early run.</p>
+        <div class="show-tags"><span class="tag">Series 2</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">S2, E4</span></div>
+        <div class="aside-row"><span class="aside-key">Year</span><span class="aside-val">2014</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">3 &middot; Series 3, Episode 4</div>
+        <h3 class="show-title"><em>Coda</em> (2016)</h3>
+        <p class="show-desc">The Series 3 finale, and one of our picks among the strongest closing episodes across the show's nine-series run.</p>
+        <div class="show-tags"><span class="tag">Series Finale</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">S3, E4</span></div>
+        <div class="aside-row"><span class="aside-key">Year</span><span class="aside-val">2016</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">4 &middot; Series 5, Episode 5</div>
+        <h3 class="show-title"><em>Quartet</em> (2018)</h3>
+        <p class="show-desc">Our pick for a standout in Series 5, a season we'd count among the show's strongest overall.</p>
+        <div class="show-tags"><span class="tag">Series 5</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">S5, E5</span></div>
+        <div class="aside-row"><span class="aside-key">Year</span><span class="aside-val">2018</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">5 &middot; Series 9, Episode 3</div>
+        <h3 class="show-title"><em>Exeunt</em> (2023)</h3>
+        <p class="show-desc">The emotional series finale, bringing Endeavour's story to a close while carefully preparing the world viewers will later encounter in Inspector Morse.</p>
+        <div class="show-tags"><span class="tag">Series Finale</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">S9, E3</span></div>
+        <div class="aside-row"><span class="aside-key">Year</span><span class="aside-val">2023</span></div>
+      </div>
+    </div>
+  </div>
+
   <p class="show-description" style="font-size:15px;">After completing the series, watch the retrospective documentary <em>Morse and the Last Endeavour</em> for interviews and a behind-the-scenes look at the production — it's a separate documentary, not the series finale itself.</p>
 
   <hr class="divider">
 
-  <p class="section-label">Main Characters and Cast</p>
-  <div class="similar-grid">
-    <div class="similar-card">
-      <p class="similar-name">Shaun Evans</p>
-      <p class="similar-where">DC/DS Endeavour Morse</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Roger Allam</p>
-      <p class="similar-where">DI Fred Thursday</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Anton Lesser</p>
-      <p class="similar-where">Chief Superintendent Reginald Bright</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">James Bradshaw</p>
-      <p class="similar-where">Pathologist Max DeBryn</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Sean Rigby</p>
-      <p class="similar-where">DS Jim Strange</p>
-    </div>
-    <div class="similar-card">
-      <p class="similar-name">Abigail Thaw</p>
-      <p class="similar-where">Journalist Dorothea Frazil</p>
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Shaun Evans</h3>
+        <p class="show-desc">DC/DS Endeavour Morse — a young detective working his way through the ranks of Oxford City Police.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DC/DS Endeavour Morse</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All 9 series</span></div>
+      </div>
     </div>
   </div>
-  <p class="show-description" style="font-size:15px;">Abigail Thaw is the daughter of John Thaw, who played the original Inspector Morse — a deliberate, well-known piece of casting.</p>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Roger Allam</h3>
+        <p class="show-desc">DI Fred Thursday — Morse's mentor, whose own compromises and regrets shadow the series.</p>
+        <div class="show-tags"><span class="tag">Mentor</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DI Fred Thursday</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Anton Lesser</h3>
+        <p class="show-desc">Chief Superintendent Reginald Bright, commanding Oxford City Police CID.</p>
+        <div class="show-tags"><span class="tag">Chief Superintendent</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Supt. Reginald Bright</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">James Bradshaw</h3>
+        <p class="show-desc">Pathologist Max DeBryn, providing forensic insight throughout the series.</p>
+        <div class="show-tags"><span class="tag">Pathologist</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Max DeBryn</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Sean Rigby</h3>
+        <p class="show-desc">DS Jim Strange, a colleague and friend to Morse across the CID.</p>
+        <div class="show-tags"><span class="tag">Detective Sergeant</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DS Jim Strange</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Abigail Thaw</h3>
+        <p class="show-desc">Journalist Dorothea Frazil — a deliberate, well-known piece of casting, as Abigail is the real-life daughter of John Thaw, who played the original Inspector Morse.</p>
+        <div class="show-tags"><span class="tag">Journalist</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Dorothea Frazil</span></div>
+        <div class="aside-row"><span class="aside-key">Real-Life Tie</span><span class="aside-val">John Thaw's daughter</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
-  <p class="section-label">What Makes the Series Special</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">The Morse-Thursday Partnership</span>
-      <p class="book-note">Roger Allam's world-weary DI Fred Thursday gives young Morse a mentor whose own compromises and regrets shadow the whole series, making it as much about Thursday as about Morse himself.</p>
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Partnership</div>
+        <h3 class="show-title">The Morse-Thursday Partnership</h3>
+        <p class="show-desc">Roger Allam's world-weary DI Fred Thursday gives young Morse a mentor whose own compromises and regrets shadow the whole series, making it as much about Thursday as about Morse himself.</p>
+        <div class="show-tags"><span class="tag">Mentor Relationship</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Mentor</span><span class="aside-val">DI Fred Thursday</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">Continuity Across 36 Episodes</span>
-      <p class="book-note">Written entirely by Russell Lewis, Endeavour maintains remarkable continuity across all 36 episodes, threading details forward into the world of Inspector Morse.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Continuity</div>
+        <h3 class="show-title">One Writer, 36 Episodes</h3>
+        <p class="show-desc">Written entirely by Russell Lewis, Endeavour maintains remarkable continuity across all 36 episodes, threading details forward into the world of Inspector Morse.</p>
+        <div class="show-tags"><span class="tag">Single Writer</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Writer</span><span class="aside-val">Russell Lewis</span></div>
+        <div class="aside-row"><span class="aside-key">Episodes</span><span class="aside-val">All 36</span></div>
+      </div>
     </div>
-    <div class="book-card">
-      <span class="book-tag">1960s &amp; '70s Oxford</span>
-      <p class="book-note">The show's period detail and cinematography recreate an Oxford in transition, giving it a visual identity distinct from both Morse and Lewis.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting as Character</div>
+        <h3 class="show-title">1960s &amp; '70s Oxford</h3>
+        <p class="show-desc">The show's period detail and cinematography recreate an Oxford in transition, giving it a visual identity distinct from both Morse and Lewis.</p>
+        <div class="show-tags"><span class="tag">Period Detail</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Era</span><span class="aside-val">1960s-70s</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Setting and Filming Locations</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Setting</span>
-      <p class="book-note">1960s and '70s Oxford, tracking the city's transition through that era.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Filming</span>
-      <p class="book-note">Filmed on location in and around Oxford, using many of the same colleges, streets, and buildings recognizable from Inspector Morse and Lewis.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Shared Identity</span>
-      <p class="book-note">The consistent Oxford setting across all three shows is part of what ties the wider Morse universe together visually.</p>
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">Oxford, 1960s-70s</h3>
+        <p class="show-desc">Filmed on location in and around Oxford, using many of the same colleges, streets, and buildings recognizable from Inspector Morse and Lewis. The consistent Oxford setting across all three shows is part of what ties the wider Morse universe together visually.</p>
+        <div class="show-tags"><span class="tag">Oxford, England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">City</span><span class="aside-val">Oxford</span></div>
+        <div class="aside-row"><span class="aside-key">Era</span><span class="aside-val">1960s-70s</span></div>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Books Behind the Series</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Original Stories, Not Adaptations</span>
-      <p class="book-note">Endeavour isn't a direct adaptation of any single Colin Dexter novel — it uses the characters Dexter created for his 13 Inspector Morse novels, but tells original stories set earlier in Morse's career.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Where to Start Reading</span>
-      <p class="book-note">Readers wanting the source material should start with the novels themselves.</p>
-      <a class="book-link" href="/inspector-morse-books.html">Inspector Morse Reading Guide &rarr;</a>
+  <div class="section-header">
+    <h2>Books Behind the <em>Series</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Original Stories</div>
+        <h3 class="show-title">Not a Direct Adaptation</h3>
+        <p class="show-desc">Endeavour isn't a direct adaptation of any single Colin Dexter novel — it uses the characters Dexter created for his 13 Inspector Morse novels, but tells original stories set earlier in Morse's career.</p>
+        <div class="show-tags"><span class="tag">Original Screen Stories</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Source</span><span class="aside-val">Characters only</span></div>
+        <a href="/inspector-morse-books.html" class="aside-link">Inspector Morse Reading Guide &rarr;</a>
+      </div>
     </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">What to Watch Next</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/inspector-morse.html" class="similar-card">
-      <p class="similar-name">Inspector Morse</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/vera.html" class="similar-card">
-      <p class="similar-name">Vera</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/poirot.html" class="similar-card">
-      <p class="similar-name">Agatha Christie's Poirot</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/classic-british-detective-shows.html" class="similar-card">
-      <p class="similar-name">Classic Detective Shows</p>
-      <p class="similar-where">Various</p>
-    </a>
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
   </div>
-  <p class="show-description" style="font-size:15px;">Each pairs naturally with Endeavour: Inspector Morse completes the story this show sets up, Vera and Poirot share its unhurried, character-first pace, and Classic British Detective Shows rounds out the era it's part of.</p>
 
-  <hr class="divider">
-
-  <p class="section-label">Frequently Asked Questions</p>
-  <div class="books-grid">
-    <div class="book-card">
-      <span class="book-tag">Status</span>
-      <h3 class="book-title">Is Endeavour finished?</h3>
-      <p class="book-note">Yes. Endeavour concluded after nine series in 2023. The finale brings the prequel to an emotional close while including several carefully placed references to Inspector Morse.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Episode Count</span>
-      <h3 class="book-title">How many episodes of Endeavour are there?</h3>
-      <p class="book-note">Endeavour consists of the original 2012 pilot and 35 episodes across nine numbered series, for a total of 36 feature-length stories.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Viewing Order</span>
-      <h3 class="book-title">Do I need to watch Endeavour in order?</h3>
-      <p class="book-note">Yes. Endeavour builds relationships and character arcs across series, particularly between Morse and DI Fred Thursday, so watching in broadcast order is strongly recommended.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Streaming</span>
-      <h3 class="book-title">Where can I watch Endeavour in the US?</h3>
-      <p class="book-note">PBS Masterpiece is Endeavour's primary US home. Availability varies by participating PBS station and membership eligibility. It's also available through Amazon Prime Video and the PBS Masterpiece Amazon Channel.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Books</span>
-      <h3 class="book-title">Is Endeavour based on Colin Dexter's novels?</h3>
-      <p class="book-note">Not directly. Endeavour uses the characters Colin Dexter created for the Inspector Morse novels, but tells original stories set earlier in Morse's career rather than adapting specific books.</p>
-    </div>
-    <div class="book-card">
-      <span class="book-tag">Filming Location</span>
-      <h3 class="book-title">Where is Endeavour filmed?</h3>
-      <p class="book-note">Endeavour is filmed on location in and around Oxford, England, recreating the city's 1960s and '70s appearance.</p>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Is Endeavour finished?</h3>
+        <p class="show-desc">Yes. Endeavour concluded after nine series in 2023. The finale brings the prequel to an emotional close while including several carefully placed references to Inspector Morse.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Complete</span></div>
+        <div class="aside-row"><span class="aside-key">Ended</span><span class="aside-val">2023</span></div>
+      </div>
     </div>
   </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes of Endeavour are there?</h3>
+        <p class="show-desc">Endeavour consists of the original 2012 pilot and 35 episodes across nine numbered series, for a total of 36 feature-length stories.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Total</span><span class="aside-val">36 stories</span></div>
+        <div class="aside-row"><span class="aside-key">Series</span><span class="aside-val">9 + pilot</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Viewing Order</div>
+        <h3 class="show-title">Do I need to watch Endeavour in order?</h3>
+        <p class="show-desc">Yes. Endeavour builds relationships and character arcs across series, particularly between Morse and DI Fred Thursday, so watching in broadcast order is strongly recommended.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Required?</span><span class="aside-val">Yes</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Endeavour in the US?</h3>
+        <p class="show-desc">PBS Masterpiece is Endeavour's primary US home. Availability varies by participating PBS station and membership eligibility. It's also available through Amazon Prime Video and the PBS Masterpiece Amazon Channel.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Primary</span><span class="aside-val">PBS Masterpiece</span></div>
+        <div class="aside-row"><span class="aside-key">Also</span><span class="aside-val">Prime Video</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Books</div>
+        <h3 class="show-title">Is Endeavour based on Colin Dexter's novels?</h3>
+        <p class="show-desc">Not directly. Endeavour uses the characters Colin Dexter created for the Inspector Morse novels, but tells original stories set earlier in Morse's career rather than adapting specific books.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Adaptation?</span><span class="aside-val">Characters only</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where is Endeavour filmed?</h3>
+        <p class="show-desc">Endeavour is filmed on location in and around Oxford, England, recreating the city's 1960s and '70s appearance.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">City</span><span class="aside-val">Oxford</span></div>
+      </div>
+    </div>
+  </div>
+
   <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
     <a href="https://britishtvhub.com/shows/inspector-morse.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
