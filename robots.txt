@@ -8,3 +8,4 @@ Sitemap: https://britishtvhub.com/sitemap.xml
 Disallow: /app/
 Disallow: /*.pdf$
 Disallow: /.git/
+Disallow: /cozy-guide
