@@ -1449,6 +1449,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/books">Books</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Books Like Vera</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Books", "item": "https://britishtvhub.com/books"},
+    {"@type": "ListItem", "position": 3, "name": "Books Like Vera", "item": "https://britishtvhub.com/books-like-vera.html"}
+  ]
+}
+</script>
+
 <div class="page-hero" style="position:relative;overflow:hidden;min-height:360px;padding:0;display:flex;align-items:center;">
   <img src="/books-hero.webp" alt="Cosy living room with tea and a book, evoking a Vera-style evening in" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.15);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 42%,rgba(26,33,53,0.75) 62%,rgba(26,33,53,0.05) 100%);"></div>

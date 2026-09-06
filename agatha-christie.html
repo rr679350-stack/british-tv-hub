@@ -1672,6 +1672,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/books">Books</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Agatha Christie</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Books", "item": "https://britishtvhub.com/books"},
+    {"@type": "ListItem", "position": 3, "name": "Agatha Christie", "item": "https://britishtvhub.com/agatha-christie.html"}
+  ]
+}
+</script>
+
 <section class="hero">
   <div class="hero-image"></div>
   <div class="hero-overlay"></div>

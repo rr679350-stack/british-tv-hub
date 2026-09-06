@@ -1439,6 +1439,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/books">Books</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Tartan Noir</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Books", "item": "https://britishtvhub.com/books"},
+    {"@type": "ListItem", "position": 3, "name": "Tartan Noir", "item": "https://britishtvhub.com/tartan-noir.html"}
+  ]
+}
+</script>
+
 <div class="page-hero" style="position:relative;overflow:hidden;min-height:400px;padding:0;display:flex;align-items:center;background:none;">
   <img src="/tartan-noir-hero.webp" alt="Rainy Edinburgh rooftops seen through a window, with books and a tartan bookmark on the sill" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 48%,rgba(26,33,53,0.75) 66%,rgba(26,33,53,0.05) 100%);"></div>

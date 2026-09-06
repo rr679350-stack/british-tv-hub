@@ -1884,6 +1884,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/collections.html">Collections</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">PBS Masterpiece</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Collections", "item": "https://britishtvhub.com/collections.html"},
+    {"@type": "ListItem", "position": 3, "name": "PBS Masterpiece", "item": "https://britishtvhub.com/masterpiece2026.html"}
+  ]
+}
+</script>
+
   <!-- HERO -->
   <div class="hero">
     <div class="hero-tag">Your complete guide</div>
