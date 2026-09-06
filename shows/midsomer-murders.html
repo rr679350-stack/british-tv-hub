@@ -45,11 +45,44 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -109,6 +142,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .bookshelf-cta a:hover { text-decoration: underline; }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -544,10 +582,17 @@ document.addEventListener('click', function(e){
   Midsomer Murders
 </div>
 
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/shows-like-midsomer-murders-hero.webp" alt="A picturesque English village churchyard, the setting for Midsomer Murders" style="position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 15%,rgba(26,35,50,0.55) 55%,rgba(26,35,50,0.1) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <p class="show-eyebrow" style="margin-bottom:10px;">British Cozy Mystery · ITV · 1997–present</p>
+    <h1 class="show-title" style="margin-bottom:0;">Midsomer Murders</h1>
+  </div>
+</div>
+
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Cozy Mystery · ITV · 1997–present</p>
-  <h1 class="show-title">Midsomer Murders</h1>
   <div class="show-tags">
     <span class="tag">25 Series</span>
     <span class="tag">English Villages</span>
@@ -595,7 +640,7 @@ document.addEventListener('click', function(e){
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">Acorn TV</p>
     <p class="watch-detail">25 series · Subscription required · Check current price at signup</p>
-    <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Start free trial →</a>
+    <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Check availability on Acorn TV →</a>
     <a href="https://amzn.to/4zPOH2F" class="watch-btn-secondary" target="_blank" rel="noopener">Buy Season 1 on DVD &rarr;</a>
     <div class="watch-free"><strong>Free option:</strong> Selected seasons and a dedicated Midsomer Murders channel are available free with ads on Pluto TV; availability can change</div>
     <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection.</p>
@@ -617,18 +662,47 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px;">
-    <span style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:var(--gold-light,#c9a96e);background:rgba(201,169,110,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:6px 14px;">Since 1997</span>
-    <span style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:var(--gold-light,#c9a96e);background:rgba(201,169,110,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:6px 14px;">140+ episodes</span>
-    <span style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:var(--gold-light,#c9a96e);background:rgba(201,169,110,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:6px 14px;">Two DCI Barnabys</span>
-    <span style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:var(--gold-light,#c9a96e);background:rgba(201,169,110,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:6px 14px;">200+ territories</span>
+  <div class="section-header">
+    <h2>About the <em>Show</em></h2>
   </div>
-  <p class="show-description" style="font-size:16px;">Based on seven Caroline Graham novels, the show has long outpaced its source material. John Nettles led as DCI Tom Barnaby for 13 series before Neil Dudgeon took over in 2011 as his cousin, DCI John Barnaby.</p>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Two DCI Barnabys</div>
+        <h3 class="show-title">John Nettles &amp; Neil Dudgeon</h3>
+        <p class="show-desc">John Nettles led as DCI Tom Barnaby for 13 series before Neil Dudgeon took over in 2011 as his cousin, DCI John Barnaby.</p>
+        <div class="show-tags"><span class="tag">Two Barnabys</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tom Barnaby</span><span class="aside-val">Series 1-13</span></div>
+        <div class="aside-row"><span class="aside-key">John Barnaby</span><span class="aside-val">Series 14-present</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Longevity</div>
+        <h3 class="show-title">Nearly 30 Years on Air</h3>
+        <p class="show-desc">Based on seven Caroline Graham novels, the show has long outpaced its source material, running to over 140 episodes and export to more than 200 territories worldwide.</p>
+        <div class="show-tags"><span class="tag">Since 1997</span><span class="tag">140+ episodes</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">On Air Since</span><span class="aside-val">1997</span></div>
+        <div class="aside-row"><span class="aside-key">Exported To</span><span class="aside-val">200+ territories</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
-  <p class="section-label">Watch the Trailer</p>
+  <div class="section-header">
+    <h2>Watch the <em>Trailer</em></h2>
+  </div>
   <div style="position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin-bottom:16px;">
     <iframe src="https://www.youtube.com/embed/wGXGlQLUy94" title="Midsomer Murders Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
@@ -638,7 +712,9 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">If you like Midsomer Murders, try these</p>
+  <div class="section-header">
+    <h2>If You Like Midsomer Murders, <em>Try These</em></h2>
+  </div>
   <div class="similar-grid">
     <a href="https://britishtvhub.com/shows/miss-marple.html" class="similar-card">
       <p class="similar-name">Miss Marple</p>
@@ -660,7 +736,9 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
     <a href="https://britishtvhub.com/midsomer-murders-episode-ranker.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
