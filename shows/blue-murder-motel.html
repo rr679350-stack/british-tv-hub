@@ -543,13 +543,23 @@ document.addEventListener('click', function(e){
 </script>
 
 <div class="breadcrumb">
-  <a href="https://britishtvhub.com/start-here.html">Start Here</a><span>&middot;</span>
-    <a href="https://britishtvhub.com/">Home</a>
+  <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
   <a href="https://britishtvhub.com/shows-index.html">Browse Shows</a>
   <span>·</span>
   Blue Murder Motel
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Browse Shows", "item": "https://britishtvhub.com/shows-index.html"},
+    {"@type": "ListItem", "position": 3, "name": "Blue Murder Motel", "item": "https://britishtvhub.com/shows/blue-murder-motel.html"}
+  ]
+}
+</script>
 
 <div class="page-wrap">
 
