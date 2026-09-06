@@ -45,11 +45,44 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -106,6 +139,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .bookshelf-cta a:hover { text-decoration: underline; }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -533,6 +571,7 @@ document.addEventListener('click', function(e){
 </script>
 
 <div class="breadcrumb">
+  <div class="breadcrumb">
   <a href="https://britishtvhub.com/start-here">Start Here</a><span>&middot;</span>
     <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
@@ -541,10 +580,17 @@ document.addEventListener('click', function(e){
   Shetland
 </div>
 
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/shows-like-shetland-hero.webp" alt="A windswept Shetland Isles coastline" style="position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 15%,rgba(26,35,50,0.55) 55%,rgba(26,35,50,0.1) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <p class="show-eyebrow" style="margin-bottom:10px;">British Crime Drama · BBC · 2013–present</p>
+    <h1 class="show-title" style="margin-bottom:0;">Shetland</h1>
+  </div>
+</div>
+
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Crime Drama · BBC · 2013–present</p>
-  <h1 class="show-title">Shetland</h1>
   <div class="show-tags">
     <span class="tag">10 Seasons</span>
     <span class="tag">Scottish Isles</span>
@@ -571,7 +617,7 @@ document.addEventListener('click', function(e){
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">BritBox</p>
     <p class="watch-detail">All series · Subscription required · Check current price at signup</p>
-    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Start free trial →</a>
+    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Check availability on BritBox →</a>
     <div class="watch-free"><strong>Free option:</strong> Not currently available free in the US</div>
     <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection.</p>
   </div>
@@ -594,12 +640,47 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Ann Cleeves' novels inspired Shetland, though the show has diverged enough from the books over ten series that the credits now read simply "inspired by" rather than "based on." Douglas Henshall played DI Jimmy Perez for the first seven series, winning a BAFTA Scotland for Best Actor along the way, before Ashley Jensen took over as DI Ruth Calder — a native Shetlander returning from twenty years with the Met in London — for series eight onward. Cleeves has said she now watches the show as an ordinary viewer rather than a creative collaborator, but calls the current pairing of Jensen and Alison O'Donnell "a bit of a Cagney and Lacey feel" that she genuinely enjoys.</p>
+  <div class="section-header">
+    <h2>About the <em>Show</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Inspired By, Not Based On</div>
+        <h3 class="show-title">Ann Cleeves' Shetland Novels</h3>
+        <p class="show-desc">Ann Cleeves' novels inspired Shetland, though the show has diverged enough from the books over ten series that the credits now read simply "inspired by" rather than "based on."</p>
+        <div class="show-tags"><span class="tag">Ann Cleeves</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Novelist</span><span class="aside-val">Ann Cleeves</span></div>
+        <div class="aside-row"><span class="aside-key">Credit</span><span class="aside-val">"Inspired by"</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Two Leads</div>
+        <h3 class="show-title">Douglas Henshall &amp; Ashley Jensen</h3>
+        <p class="show-desc">Douglas Henshall played DI Jimmy Perez for the first seven series, winning a BAFTA Scotland for Best Actor along the way, before Ashley Jensen took over as DI Ruth Calder — a native Shetlander returning from twenty years with the Met in London — for series eight onward. Cleeves has said she now watches the show as an ordinary viewer rather than a creative collaborator, and enjoys the current pairing of Jensen and Alison O'Donnell.</p>
+        <div class="show-tags"><span class="tag">BAFTA Scotland Winner</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Perez Era</span><span class="aside-val">Series 1-7</span></div>
+        <div class="aside-row"><span class="aside-key">Calder Era</span><span class="aside-val">Series 8-present</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
-  <p class="section-label">Watch the Trailer</p>
+  <div class="section-header">
+    <h2>Watch the <em>Trailer</em></h2>
+  </div>
   <div style="position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin-bottom:16px;">
     <iframe src="https://www.youtube.com/embed/IWHelCrYpHA" title="Shetland Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
@@ -609,7 +690,9 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">If you like Shetland, try these</p>
+  <div class="section-header">
+    <h2>If You Like Shetland, <em>Try These</em></h2>
+  </div>
   <div class="similar-grid">
     <a href="https://britishtvhub.com/shows/vera.html" class="similar-card">
       <p class="similar-name">Vera</p>
@@ -631,7 +714,9 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
     <a href="https://britishtvhub.com/ann-cleeves.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
