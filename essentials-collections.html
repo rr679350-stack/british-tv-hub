@@ -673,6 +673,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/essentials.html">The Snug</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Shop by Theme</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "The Snug", "item": "https://britishtvhub.com/essentials.html"},
+    {"@type": "ListItem", "position": 3, "name": "Shop by Theme", "item": "https://britishtvhub.com/essentials-collections.html"}
+  ]
+}
+</script>
+
 
   <div class="disclosure">
     British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. <a href="/privacy.html#affiliate-disclosure">Full affiliate disclosure</a>

@@ -571,6 +571,27 @@ document.addEventListener('click', function(e){
 });
 </script>
 
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/essentials.html">The Snug</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">The British TV Hub Collection</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "The Snug", "item": "https://britishtvhub.com/essentials.html"},
+    {"@type": "ListItem", "position": 3, "name": "The British TV Hub Collection", "item": "https://britishtvhub.com/merch.html"}
+  ]
+}
+</script>
+
 
 <!-- HERO -->
 <section class="merch-hero">
