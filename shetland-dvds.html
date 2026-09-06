@@ -552,13 +552,23 @@ document.addEventListener('click', function(e){
 </script>
 
 <div class="breadcrumb">
-  <a href="https://britishtvhub.com/start-here.html">Start Here</a><span>&middot;</span>
-    <a href="https://britishtvhub.com/">Home</a>
+  <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
   <a href="https://britishtvhub.com/shows/shetland.html">Shetland</a>
   <span>·</span>
   Best Seasons Ranked
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Shetland", "item": "https://britishtvhub.com/shows/shetland.html"},
+    {"@type": "ListItem", "position": 3, "name": "Best Seasons Ranked", "item": "https://britishtvhub.com/shetland-dvds.html"}
+  ]
+}
+</script>
 
 <div class="page-wrap">
 

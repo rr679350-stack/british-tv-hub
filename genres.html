@@ -306,6 +306,16 @@ document.addEventListener('click', function(e){
     <span class="breadcrumb-item active">British TV by Genre</span>
   </div>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "British TV by Genre", "item": "https://britishtvhub.com/genres.html"}
+  ]
+}
+</script>
 <div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
   <img src="/collections-hero.webp" alt="A leather notebook embossed 'British TV Collections' beside a cup of tea, with a cozy English village playing on a TV in the background" style="position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 40%,rgba(26,35,50,0.75) 60%,rgba(26,35,50,0.05) 100%);"></div>

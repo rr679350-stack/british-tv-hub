@@ -536,13 +536,23 @@ document.addEventListener('click', function(e){
 </script>
 
 <div class="breadcrumb">
-  <a href="https://britishtvhub.com/start-here.html">Start Here</a><span>&middot;</span>
-    <a href="https://britishtvhub.com/">Home</a>
+  <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
   <a href="https://britishtvhub.com/books">Books</a>
   <span>·</span>
   Inspector Morse Books
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Books", "item": "https://britishtvhub.com/books"},
+    {"@type": "ListItem", "position": 3, "name": "Inspector Morse Books", "item": "https://britishtvhub.com/inspector-morse-books.html"}
+  ]
+}
+</script>
 
 <div class="page-wrap">
 
