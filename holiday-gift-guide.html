@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var form = e.target;
+    if(form && form.action && form.action.indexOf('list-manage.com') > -1){
+      gtag('event','newsletter_signup',{page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The British TV Hub Holiday Guide: Gift Edition | British TV Hub</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/holiday-gift-guide.html">
+<meta property="og:title" content="The British TV Hub Holiday Guide: Gift Edition | British TV Hub">
+<meta property="og:description" content="Curated Christmas gifts for British TV fans — stocking stuffers, cozy box sets, and British TV Hub originals, organized by budget.">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/merch-christmas-card.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The British TV Hub Holiday Guide: Gift Edition | British TV Hub">
+<meta name="twitter:description" content="Curated Christmas gifts for British TV fans — stocking stuffers, cozy box sets, and British TV Hub originals, organized by budget.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/merch-christmas-card.webp">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="The British TV Hub Holiday Guide's Gift Edition — Christmas gifts for British TV fans organized by budget, from stocking stuffers to splurge-worthy box sets.">
+<link rel="canonical" href="https://britishtvhub.com/holiday-gift-guide.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+  :root{
+    --navy: #1a2135;
+    --navy-deep: #0a1520;
+    --gold: #c9a96e;
+    --cream: #f3ede2;
+    --text-muted: #9090a8;
+    --card: #363f58;
+    --card-border: rgba(201,168,76,0.2);
+  }
+  .agg-body{
+    background:var(--navy-deep);
+    color:var(--cream);
+    font-family:'Crimson Text', serif;
+    line-height:1.6;
+  }
+  .agg-hero{
+    position:relative;
+    min-height:520px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    padding:60px 5% 70px;
+    text-align:center;
+    overflow:hidden;
+    background-image:
+      linear-gradient(180deg, rgba(10,21,32,0.15) 0%, rgba(10,21,32,0.55) 55%, rgba(10,21,32,0.92) 100%),
+      url('/merch-christmas-card.webp');
+    background-size:cover;
+    background-position:center 30%;
+  }
+  .agg-hero-content{ position:relative; z-index:3; max-width:850px; margin:0 auto; }
+  .hgg-snow-field{ position:absolute; inset:0; z-index:2; overflow:hidden; pointer-events:none; }
+  .hgg-snow{
+    position:absolute; top:-20px; border-radius:50%;
+    background:#ffffff; box-shadow:0 0 4px rgba(255,255,255,0.6);
+    animation-name:hgg-snow-fall; animation-timing-function:linear; animation-iteration-count:infinite;
+  }
+  @keyframes hgg-snow-fall{
+    0%{ transform:translate(0, -5%); }
+    25%{ transform:translate(var(--drift), 130px); }
+    50%{ transform:translate(0, 260px); }
+    75%{ transform:translate(calc(var(--drift) * -1), 390px); }
+    100%{ transform:translate(0, 500px); }
+  }
+  @media (prefers-reduced-motion: reduce){ .hgg-snow{ animation:none; display:none; } }
+  .agg-eyebrow{ font-family:'Raleway', sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+  .agg-hero h1{ font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(2.1rem, 4.5vw, 3.4rem); margin:0 0 20px; color:var(--cream); line-height:1.15; }
+  .agg-hero-sub{ font-family:'Crimson Text', serif; font-style:italic; font-size:1.25rem; color:var(--text-muted); max-width:600px; margin:0 auto; }
+  .agg-part{ padding:70px 5%; max-width:1100px; margin:0 auto; }
+  .agg-part-header{ display:flex; align-items:baseline; gap:18px; margin-bottom:36px; border-bottom:1px solid rgba(201,168,76,0.2); padding-bottom:18px; }
+  .agg-part-number{ font-family:'Playfair Display', serif; font-style:italic; font-size:1rem; color:var(--gold); white-space:nowrap; }
+  .agg-part-title{ font-family:'Playfair Display', serif; font-weight:600; font-size:1.8rem; color:var(--cream); margin:0; }
+  .agg-part-intro{ font-size:1.05rem; color:var(--text-muted); max-width:640px; margin:0 0 24px; }
+  .agg-section-photo{ width:100%; max-height:380px; object-fit:cover; border-radius:14px; border:1px solid var(--card-border); box-shadow:0 16px 40px rgba(0,0,0,0.3); margin-bottom:34px; display:block; }
+  .agg-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .agg-product-card{ background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .agg-product-card:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.3); }
+  .agg-product-card .agg-thumb{ height:150px; overflow:hidden; border-bottom:1px solid var(--card-border); }
+  .agg-product-card .agg-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .agg-product-body{ padding:20px 22px 24px; }
+  .agg-product-card.agg-no-thumb .agg-product-body{ padding:22px 24px 26px; }
+  .agg-product-name{ font-family:'Playfair Display', serif; font-size:1.05rem; color:var(--cream); margin:0 0 8px; }
+  .agg-product-desc{ font-size:0.92rem; color:var(--text-muted); line-height:1.55; margin:0 0 16px; }
+  .agg-cta-pill{ display:inline-block; font-family:'Raleway', sans-serif; font-size: 11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--navy); background:var(--gold); padding: 12px 24px; border-radius:2px; text-decoration:none; }
+  .candle-feature{ grid-column: 1 / -1; background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; display:grid; grid-template-columns: 1.1fr 1fr; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .candle-feature:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.3); }
+  .candle-feature .candle-photo{ width:100%; height:100%; aspect-ratio: 1537 / 1023; object-fit:cover; display:block; }
+  .candle-feature .agg-product-body{ padding:28px 30px; display:flex; flex-direction:column; justify-content:center; }
+  .candle-feature .agg-product-name{ font-size:1.3rem; }
+  .candle-feature .agg-product-desc{ font-size:0.98rem; }
+  .candle-feature .agg-cta-pill{ align-self:flex-start; }
+  @media (max-width: 640px){ .candle-feature{ grid-template-columns: 1fr; } }
+  .calendar-feature{ grid-column: 1 / -1; background:var(--card); border:1px solid var(--card-border); border-radius:12px; overflow:hidden; display:grid; grid-template-columns: 1.1fr 1fr; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .calendar-feature:hover{ transform:translateY(-4px); box-shadow:0 12px 24px rgba(0,0,0,0.3); }
+  .calendar-feature .calendar-photo{ width:100%; height:100%; aspect-ratio: 1254 / 770; object-fit:cover; display:block; }
+  .calendar-feature .calendar-photo-wrap{ position:relative; }
+  .calendar-feature .calendar-badge{ display:inline-block; margin:16px 0 10px 16px; background:var(--gold,#c9a96e); color:#1a2135; font-family:'Raleway',sans-serif; font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; padding:6px 12px; border-radius:2px; }
+  .calendar-header{ grid-column: 1 / -1; display:flex; align-items:baseline; gap:14px; margin-top:32px; margin-bottom:14px; }
+  .calendar-header .calendar-eyebrow{ font-family:'Playfair Display', serif; font-size:1.5rem; font-weight:600; letter-spacing:0; text-transform:none; color:var(--gold); white-space:nowrap; }
+  .calendar-header h3{ font-family:'Playfair Display', serif; font-weight:600; font-size:1.5rem; color:var(--cream); margin:0; }
+  .calendar-feature .agg-product-body{ padding:28px 30px; display:flex; flex-direction:column; justify-content:center; }
+  .calendar-feature .agg-product-name{ font-size:1.3rem; }
+  .calendar-feature .agg-product-desc{ font-size:0.98rem; }
+  .calendar-feature .agg-cta-pill{ align-self:flex-start; }
+  @media (max-width: 640px){ .calendar-feature{ grid-template-columns: 1fr; } }
+  .agg-callout{ max-width:1100px; margin:20px auto 70px; padding:36px 5%; }
+  .agg-callout-box{ background:linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.03)); border:1px solid var(--card-border); border-radius:14px; padding:36px 40px; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; }
+  .agg-callout-text h3{ font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--cream); margin:0 0 8px; }
+  .agg-callout-text p{ color:var(--text-muted); margin:0; font-size:0.98rem; }
+  .agg-disclosure{ text-align:center; padding:0 5% 40px; font-family:'Raleway',sans-serif; font-size:11px; color:var(--text-muted); max-width:700px; margin:0 auto; }
+
+  .hgg-jumpnav{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; max-width:1100px; margin:-30px auto 0; padding:0 5% 50px; position:relative; z-index:4; }
+  .hgg-jumpnav a{ font-family:'Raleway',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.8px; text-transform:uppercase; color:var(--cream); background:rgba(54,63,88,0.85); border:1px solid var(--card-border); padding:10px 18px; border-radius:22px; text-decoration:none; white-space:nowrap; backdrop-filter:blur(2px); }
+  .hgg-jumpnav a:hover{ border-color:var(--gold); color:var(--gold-light,var(--gold)); }
+
+  .hgg-editor-band{ max-width:1100px; margin:0 auto 20px; padding:0 5%; }
+  .hgg-editor-eyebrow{ text-align:center; font-family:'Raleway',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+  .hgg-editor-title{ text-align:center; font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(1.7rem,3.5vw,2.4rem); color:var(--cream); margin:0 0 36px; }
+  .hgg-editor-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  @media (max-width:800px){ .hgg-editor-grid{ grid-template-columns:1fr; } }
+  .hgg-editor-card{ background:var(--card); border:1px solid var(--card-border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s ease, box-shadow 0.2s ease; }
+  .hgg-editor-card:hover{ transform:translateY(-5px); box-shadow:0 16px 32px rgba(0,0,0,0.35); }
+  .hgg-editor-card .hgg-editor-thumb{ height:190px; overflow:hidden; position:relative; }
+  .hgg-editor-card .hgg-editor-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .hgg-editor-badge{ position:absolute; top:14px; left:14px; background:var(--gold); color:var(--navy,#1a2135); font-family:'Raleway',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.3px; text-transform:uppercase; padding:6px 12px; border-radius:2px; }
+  .hgg-editor-body{ padding:22px 24px 26px; display:flex; flex-direction:column; flex:1; }
+  .hgg-editor-name{ font-family:'Playfair Display', serif; font-size:1.15rem; color:var(--cream); margin:0 0 8px; }
+  .hgg-editor-desc{ font-size:0.94rem; color:var(--text-muted); line-height:1.6; margin:0 0 18px; flex:1; }
+</style>
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+</style>
+</head>
+<body class="agg-body">
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here.html">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/books">Literary Adaptations</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Collections</div>
+            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
+            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/the-cozy-collection.html">The Cozy Collection</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/collections.html">Browse All</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Browse All</a>
+            <a href="/quiz.html">Match Me a Mystery</a>
+            <a href="/village-quiz.html">Which Village Are You?</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+            <a href="/gift-ideas.html">Gift Ideas</a>
+            <a href="/essentials-gifts.html">Gift Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="https://britishtvhub.com/essentials.html">The Snug</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Holiday Guide: Gift Edition</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "The Snug", "item": "https://britishtvhub.com/essentials.html"},
+    {"@type": "ListItem", "position": 3, "name": "Holiday Guide: Gift Edition", "item": "https://britishtvhub.com/holiday-gift-guide.html"}
+  ]
+}
+</script>
+<div class="agg-hero">
+  <div class="hgg-snow-field">
+    <span class="hgg-snow" style="left:63.4%; width:5px; height:5px; opacity:0.61; animation-duration:9.2s; animation-delay:-2.5s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:67.0%; width:7px; height:7px; opacity:0.56; animation-duration:15.2s; animation-delay:-1.3s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:23.0%; width:5px; height:5px; opacity:0.84; animation-duration:12.5s; animation-delay:-0.3s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:54.3%; width:10px; height:10px; opacity:0.9; animation-duration:10.5s; animation-delay:-6.2s; --drift:-18px;"></span>
+    <span class="hgg-snow" style="left:69.0%; width:10px; height:10px; opacity:0.68; animation-duration:11.4s; animation-delay:-1.8s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:38.5%; width:6px; height:6px; opacity:0.87; animation-duration:11.5s; animation-delay:-4.0s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:46.1%; width:4px; height:4px; opacity:0.77; animation-duration:9.9s; animation-delay:-9.1s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:61.4%; width:9px; height:9px; opacity:0.58; animation-duration:15.0s; animation-delay:-8.7s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:23.9%; width:5px; height:5px; opacity:0.9; animation-duration:11.0s; animation-delay:-0.9s; --drift:-24px;"></span>
+    <span class="hgg-snow" style="left:28.7%; width:6px; height:6px; opacity:0.69; animation-duration:13.4s; animation-delay:-4.9s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:27.6%; width:8px; height:8px; opacity:0.8; animation-duration:15.6s; animation-delay:-10.1s; --drift:30px;"></span>
+    <span class="hgg-snow" style="left:72.0%; width:9px; height:9px; opacity:0.83; animation-duration:10.1s; animation-delay:-3.8s; --drift:-18px;"></span>
+    <span class="hgg-snow" style="left:67.7%; width:5px; height:5px; opacity:0.88; animation-duration:14.9s; animation-delay:-11.6s; --drift:24px;"></span>
+    <span class="hgg-snow" style="left:40.5%; width:8px; height:8px; opacity:0.9; animation-duration:9.5s; animation-delay:-8.7s; --drift:24px;"></span>
+    <span class="hgg-snow" style="left:22.4%; width:9px; height:9px; opacity:0.73; animation-duration:12.5s; animation-delay:-11.1s; --drift:24px;"></span>
+    <span class="hgg-snow" style="left:15.4%; width:9px; height:9px; opacity:0.78; animation-duration:14.2s; animation-delay:-7.7s; --drift:30px;"></span>
+    <span class="hgg-snow" style="left:40.3%; width:8px; height:8px; opacity:0.75; animation-duration:10.5s; animation-delay:-10.5s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:84.7%; width:9px; height:9px; opacity:0.72; animation-duration:10.1s; animation-delay:-1.6s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:38.9%; width:6px; height:6px; opacity:0.94; animation-duration:13.2s; animation-delay:-6.2s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:67.3%; width:10px; height:10px; opacity:0.66; animation-duration:9.8s; animation-delay:-8.7s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:34.7%; width:4px; height:4px; opacity:0.93; animation-duration:11.1s; animation-delay:-1.8s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:27.3%; width:4px; height:4px; opacity:0.9; animation-duration:12.5s; animation-delay:-2.2s; --drift:24px;"></span>
+  </div>
+  <div class="agg-hero-content">
+    <div class="agg-eyebrow">The British TV Hub Holiday Guide</div>
+    <h1>Gift <em style="font-style:italic;">Edition</em></h1>
+    <p class="agg-hero-sub">Something for every fan on your list, organized by budget &mdash; from a $12 bookmark set to the complete Line of Duty collection.</p>
+  </div>
+</div>
+
+<div class="hgg-jumpnav">
+  <a href="#stocking-stuffers">Stocking Stuffers</a>
+  <a href="#cozy-nights-in">Cozy Nights In</a>
+  <a href="#complete-collections">Complete Collections</a>
+  <a href="#bth-originals">British TV Hub Originals</a>
+  <a href="#holiday-cards">Holiday Cards</a>
+</div>
+
+<div class="hgg-editor-band">
+  <div class="hgg-editor-eyebrow">Where to Start</div>
+  <h2 class="hgg-editor-title">Three Gifts Worth Leading With</h2>
+  <div class="hgg-editor-grid">
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb">
+        <span class="hgg-editor-badge">Most Giftable</span>
+        <img src="/shop-cozy-cup.webp" alt="A Cozy Cup for British TV Nights">
+      </div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">A Cozy Cup for British TV Nights &mdash; $19.99</h3>
+        <p class="hgg-editor-desc">The easiest yes on this whole list. Tea, coffee, or cocoa &mdash; whatever gets someone through one more episode, in the British TV Hub navy-and-gold design.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552182691" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb">
+        <span class="hgg-editor-badge">The Splurge</span>
+        <img src="/shop-journal.webp" alt="British TV Hub Collection lifestyle photo">
+      </div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Line of Duty: Series 1&ndash;5 Collection &mdash; Under $100</h3>
+        <p class="hgg-editor-desc">For the fan who's already seen everything cozy. The complete anti-corruption thriller, start to finish, in one box &mdash; a genuine event to unwrap.</p>
+        <a href="https://amzn.to/4ymeVca" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb">
+        <span class="hgg-editor-badge">Just For Fun</span>
+        <img src="/merch-christmas-card.webp" alt="British TV Hub holiday card">
+      </div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Happy Holidays to a Fellow British TV Fan &mdash; $8.99</h3>
+        <p class="hgg-editor-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="agg-callout" style="margin:0 auto 20px;">
+  <div class="agg-callout-box">
+    <div class="agg-callout-text">
+      <h3>British TV Hub Marketplace (on Amazon)</h3>
+      <p>Books, streaming accessories, cozy home d&eacute;cor, kitchen finds, puzzles, and more &mdash; all hand-picked for fans of British television.</p>
+    </div>
+    <a href="https://www.amazon.com/shop/influencer-cffc6cc5?ccs_id=190fd8a7-32bb-4c32-8134-4454db668675&isPublicView=true" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Explore the Marketplace &rarr;</a>
+  </div>
+</div>
+
+<!-- PART ONE: STOCKING STUFFERS -->
+<section class="agg-part" id="stocking-stuffers">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Part One</span>
+    <h2 class="agg-part-title">Stocking Stuffers</h2>
+  </div>
+  <p class="agg-part-intro">Small, thoughtful, and easy to tuck in with everything else &mdash; every one of these is under $25.</p>
+  <div class="agg-grid">
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-watchlist.webp" alt="Gritin LED Rechargeable Book Light" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Gritin LED Rechargeable Book Light</h3>
+        <p class="agg-product-desc">Eye-caring, rechargeable, and small enough to tuck into any book bag &mdash; for the one more chapter before bed.</p>
+        <a href="https://amzn.to/4fhL3oE" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Keep Calm &amp; Read On Beaded Bookmark</h3>
+        <p class="agg-product-desc">A small, lighthearted nod to every book lover on your list.</p>
+        <a href="https://amzn.to/3Rfy1jF" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">London Magnetic Bookmark Set</h3>
+        <p class="agg-product-desc">48 pieces of London-themed bookmarks &mdash; enough to share, or enough to never lose one again.</p>
+        <a href="https://amzn.to/4gLuB2w" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/holiday-cards-header.webp" alt="A Holiday Card for British TV Lovers" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">A Holiday Card for British TV Lovers &mdash; $8.99</h3>
+        <p class="agg-product-desc">A cozy London-inspired winter scene on the front, a warm holiday message inside.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4562111965" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART TWO: COZY NIGHTS IN -->
+<section class="agg-part" id="cozy-nights-in">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Part Two</span>
+    <h2 class="agg-part-title">Gifts for Cozy Nights In</h2>
+  </div>
+  <p class="agg-part-intro">Comfort viewing essentials and a few shorter box sets &mdash; all under $50.</p>
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Chunky Knit Throw Blanket</h3>
+        <p class="agg-product-desc">For the long Vera-and-a-blanket evenings ahead.</p>
+        <a href="https://amzn.to/44n66RN" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Cozy Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Berkshire Faux Fur &amp; Velisse Reversible Throw</h3>
+        <p class="agg-product-desc">Faux fur on one side, silky Velisse on the other &mdash; a step up for the cozy-obsessed.</p>
+        <a href="https://amzn.to/4vA38Ew" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Cozy Details &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Midsomer Murders: The Early Cases Collection</h3>
+        <p class="agg-product-desc">10 discs of village whodunits &mdash; a must for British mystery fans.</p>
+        <a href="https://amzn.to/3R6rYxP" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">DCI Banks: Seasons 1&ndash;3 &amp; Aftermath</h3>
+        <p class="agg-product-desc">Four seasons of Yorkshire crime drama in one set.</p>
+        <a href="https://amzn.to/3RKxfLF" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">McDonald &amp; Dodds: Series 1&ndash;4</h3>
+        <p class="agg-product-desc">The complete Bath-set detective series on DVD.</p>
+        <a href="https://amzn.to/4wcnqVX" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Inspector Morse: The Complete Series</h3>
+        <p class="agg-product-desc">Every case, all in one 17-disc set &mdash; the genre-defining classic.</p>
+        <a href="https://amzn.to/4w73jZ2" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART THREE: THE COMPLETE COLLECTIONS -->
+<section class="agg-part" id="complete-collections">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Part Three</span>
+    <h2 class="agg-part-title">The Complete Collections</h2>
+  </div>
+  <p class="agg-part-intro">For the fan who wants the whole thing, start to finish, wrapped and ready to binge. All under $100.</p>
+  <div class="agg-grid">
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Death in Paradise: Series 1&ndash;5</h3>
+        <p class="agg-product-desc">All 40 episodes of sun, sand, and impossible murders.</p>
+        <a href="https://amzn.to/3RmDlBC" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Line of Duty: Series 1&ndash;5 Collection</h3>
+        <p class="agg-product-desc">The complete anti-corruption thriller, start to finish.</p>
+        <a href="https://amzn.to/4ymeVca" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Professor T: Seasons 1&ndash;4</h3>
+        <p class="agg-product-desc">Complete seasons plus a bonus PBS sticker.</p>
+        <a href="https://amzn.to/4hmn8qE" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">The Agatha Christie Hour: Complete Series</h3>
+        <p class="agg-product-desc">All ten episodes of the classic anthology series.</p>
+        <a href="https://amzn.to/4fpgugT" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART FOUR: BRITISH TV HUB ORIGINALS -->
+<section class="agg-part" id="bth-originals">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Part Four</span>
+    <h2 class="agg-part-title">British TV Hub Originals</h2>
+  </div>
+  <p class="agg-part-intro">The signature navy-and-gold British TV Hub Collection &mdash; made to order through the British TV Hub Etsy shop.</p>
+  <div class="agg-grid">
+    <div class="calendar-header">
+      <span class="calendar-eyebrow">New</span>
+      <h3>A Year of British TV Comfort</h3>
+    </div>
+    <div class="calendar-feature">
+      <div class="calendar-photo-wrap">
+        <span class="calendar-badge">2027 Wall Calendar</span>
+        <img class="calendar-photo" src="/shop-journal.webp" alt="2027 British TV Inspired Wall Calendar">
+      </div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">2027 British TV Inspired Wall Calendar &mdash; $28.99</h3>
+        <p class="agg-product-desc">Twelve months of evocative British objects &mdash; a streetlamp, a teacup, a phone box &mdash; each page a small British TV Hub original.</p>
+        <a href="https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-cozy-cup.webp" alt="A Cozy Cup for British TV Nights" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">A Cozy Cup for British TV Nights &mdash; $19.99</h3>
+        <p class="agg-product-desc">Tea, coffee, or whatever keeps you company through one more episode.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552182691" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-journal.webp" alt="British TV Notes Hardcover Journal" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Notes Hardcover Journal &mdash; $24.99</h3>
+        <p class="agg-product-desc">For jotting down favorite mysteries and characters &mdash; the recommendations you swear you'll remember later.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552950826" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/shop-watchlist.webp" alt="British TV Watchlist Notebook" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Watchlist Notebook &mdash; $24.99</h3>
+        <p class="agg-product-desc">For the inevitable "what are we watching next?" &mdash; keep the whole season's plans in one place.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552217499" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Enamel Mug &mdash; $30.00</h3>
+        <p class="agg-product-desc">The signature navy-and-gold design, ready for tea and the next episode.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552012228" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Pillow &mdash; $39.99</h3>
+        <p class="agg-product-desc">A soft landing spot for the next long-haul binge.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552961525" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">British TV Hub Tote Bag &mdash; $44.99</h3>
+        <p class="agg-product-desc">Room for a stack of books, or just the one show you're currently obsessed with.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4552239525" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+
+    <div class="candle-feature">
+      <img class="candle-photo" src="/shop-watchlist.webp" alt="One More Episode soy candle">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">"One More Episode" Soy Candle &mdash; $22.99</h3>
+        <p class="agg-product-desc">Made for the marathon nights. Light it, settle in, and let the next episode start itself.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4565791612" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PART FIVE: HOLIDAY CARDS -->
+<section class="agg-part" id="holiday-cards">
+  <div class="agg-part-header">
+    <span class="agg-part-number">Part Five</span>
+    <h2 class="agg-part-title">Holiday Cards</h2>
+  </div>
+  <p class="agg-part-intro">Three designs, all $8.99, printed both sides with an envelope included &mdash; get them early.</p>
+  <div class="agg-grid">
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/holiday-cards-header.webp" alt="A Holiday Card for British TV Lovers" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">A Holiday Card for British TV Lovers &mdash; $8.99</h3>
+        <p class="agg-product-desc">A cozy London-inspired winter scene on the front, a warm holiday message inside.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4562111965" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card agg-no-thumb">
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">Happy Holidays to a Fellow British TV Fan &mdash; $8.99</h3>
+        <p class="agg-product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+    <div class="agg-product-card">
+      <div class="agg-thumb"><img src="/merch-christmas-card.webp" alt="All Is Cozy and Bright holiday card" loading="lazy"></div>
+      <div class="agg-product-body">
+        <h3 class="agg-product-name">All Is Cozy &amp; Bright &mdash; $8.99</h3>
+        <p class="agg-product-desc">A snowy cobblestone street, a wreathed front door, and warm gold lettering &mdash; simple, seasonal, and quietly lovely.</p>
+        <a href="https://cozytvcompanion.etsy.com/listing/4556506783" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSS-LINK CALLOUTS -->
+<div class="agg-callout">
+  <div class="agg-callout-box">
+    <div class="agg-callout-text">
+      <h3>Shopping ahead for a cozier season?</h3>
+      <p>Visit British TV Hub's Autumn Gift Guide for tea, throws, and rainy-evening picks.</p>
+    </div>
+    <a href="/autumn-gift-guide.html" class="agg-cta-pill">Explore the Guide &rarr;</a>
+  </div>
+</div>
+<div class="agg-callout" style="margin-top:-40px;">
+  <div class="agg-callout-box">
+    <div class="agg-callout-text">
+      <h3>Want to know what's actually new this Christmas?</h3>
+      <p>See this year's confirmed specials on the Holiday Guide: What to Watch.</p>
+    </div>
+    <a href="/holiday-guide-watch.html" class="agg-cta-pill">See What's New &rarr;</a>
+  </div>
+</div>
+
+<div style="max-width:900px;margin:0 auto 20px;padding:0 5%;">
+  <div style="position:relative;padding-top:1.5rem;margin-bottom:1.5rem;">
+    <div style="width:48px;height:3px;background:var(--gold);margin-bottom:1.25rem;"></div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700;color:var(--cream);line-height:1.2;">What Readers <em style="font-style:italic;color:var(--gold);">Ask Most</em></h2>
+  </div>
+  <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">What's a good gift for a British TV fan on a budget?</h3>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">The <a href="#stocking-stuffers" style="color:var(--gold);">Stocking Stuffers</a> section covers thoughtful picks under $25, like a rechargeable book light or a set of London-themed bookmarks. For something a bit more substantial without a big spend, <a href="#cozy-nights-in" style="color:var(--gold);">Gifts for Cozy Nights In</a> stays under $50.</p>
+  </div>
+  <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Is there anything from British TV Hub itself I can gift?</h3>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">Yes &mdash; the <a href="#bth-originals" style="color:var(--gold);">British TV Hub Originals</a> section features the site's own Collection: mugs, journals, a tote, a candle, a wall calendar, and three holiday card designs, all made to order through the British TV Hub Etsy shop.</p>
+  </div>
+  <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">What's the best gift for a serious box-set collector?</h3>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">The <a href="#complete-collections" style="color:var(--gold);">Complete Collections</a> section is built for exactly that &mdash; full-series DVD box sets like Line of Duty, Death in Paradise, and the Agatha Christie Hour, all under $100.</p>
+  </div>
+  <div style="padding:22px 0;">
+    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">How is this different from the Autumn Gift Guide?</h3>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">The <a href="/autumn-gift-guide.html" style="color:var(--gold);">Autumn Gift Guide</a> is about the feeling of a cozy autumn evening &mdash; tea, blankets, candles. This Gift Edition is built specifically for the December holiday season, organized by budget with a wider range of shows, box sets, and British TV Hub's own holiday cards.</p>
+  </div>
+</div>
+
+<p class="agg-disclosure">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. Some links on this page are affiliate links to Amazon and Etsy; this never affects the recommendations &mdash; these are genuine editorial picks.</p>
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+<style>
+@media (max-width: 768px) {
+  /* Footer tagline bar - prevent letter-spaced text from overflowing past its own border (was causing a gold line to appear to cut through the text) */
+  footer > div:first-child {
+    padding: 16px 16px 14px !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.5 !important;
+  }
+  /* Footer link columns - collapse fixed 4-column grid to single column (was overflowing/unreadable on mobile) */
+  footer > div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    padding: 28px 20px !important;
+  }
+}
+</style>
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Best British Police Procedurals</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="1"/></svg><a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Cozy British Mysteries</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 3-6 3V9Z"/></svg><a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Where to Watch</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M4 4h16v16H4z"/></svg><a href="/books-like-vera.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">Books Like Vera</a></div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:5px 0;"><svg style="width:14px !important;height:14px !important;min-width:14px;max-width:14px;flex-shrink:0;margin-top:2px;display:block;" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.6"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg><a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;">What to Watch Next &#11088;</a></div>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Join the Community</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:0 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html></body></html>
