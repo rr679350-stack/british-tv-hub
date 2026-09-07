@@ -169,7 +169,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .hgg-editor-band{ max-width:1100px; margin:0 auto 20px; padding:0 5%; }
   .hgg-editor-eyebrow{ text-align:center; font-family:'Raleway',sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
   .hgg-editor-title{ text-align:center; font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(1.7rem,3.5vw,2.4rem); color:var(--cream); margin:0 0 36px; }
-  .hgg-editor-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .hgg-editor-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:24px; }
   @media (max-width:800px){ .hgg-editor-grid{ grid-template-columns:1fr; } }
   .hgg-editor-card{ background:var(--card); border:1px solid var(--card-border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:transform 0.2s ease, box-shadow 0.2s ease; }
   .hgg-editor-card:hover{ transform:translateY(-5px); box-shadow:0 16px 32px rgba(0,0,0,0.35); }
@@ -469,8 +469,19 @@ document.addEventListener('click', function(e){
 
 <div class="hgg-editor-band">
   <div class="hgg-editor-eyebrow">Where to Start</div>
-  <h2 class="hgg-editor-title">Three Gifts Worth Leading With</h2>
+  <h2 class="hgg-editor-title">The Gifts Worth Leading With</h2>
   <div class="hgg-editor-grid">
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb">
+        <span class="hgg-editor-badge">New for 2027</span>
+        <img src="/shop-journal.webp" alt="2027 British TV Inspired Wall Calendar">
+      </div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">2027 British TV Inspired Wall Calendar &mdash; $28.99</h3>
+        <p class="hgg-editor-desc">The newest British TV Hub original, and the one to open first. Twelve months of evocative British objects &mdash; a streetlamp, a teacup, a phone box &mdash; each page its own small original.</p>
+        <a href="https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
+      </div>
+    </div>
     <div class="hgg-editor-card">
       <div class="hgg-editor-thumb">
         <span class="hgg-editor-badge">Most Giftable</span>
