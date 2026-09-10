@@ -32,7 +32,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Broadchurch: Where to Watch in the US | British TV Hub">
-<meta name="twitter:description" content="Where to watch Broadchurch in the US. All 3 series of the ITV crime drama starring David Tennant and Olivia Colman stream free on Tubi.">
+<meta name="twitter:description" content="Where to watch Broadchurch in the US. All 3 series stream free on Tubi.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/tense-british-crime-drama-hero.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,11 +45,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -99,6 +134,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -243,21 +283,15 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   "@context": "https://schema.org",
   "@type": "TVSeries",
   "name": "Broadchurch",
-  "description": "The murder of an 11-year-old boy tears apart a small Dorset seaside town, forcing mismatched detectives DI Alec Hardy and DS Ellie Miller to confront secrets everyone in the community has been keeping. Dark, absorbing, and beautifully shot, with two of Britain's best actors at the center of it.",
+  "description": "The murder of an 11-year-old boy tears apart a small Dorset seaside town, forcing mismatched detectives DI Alec Hardy and DS Ellie Miller to confront secrets everyone in the community has been keeping. A self-contained three-series story, written entirely by creator Chris Chibnall.",
   "genre": "British Crime Drama",
   "numberOfSeasons": 3,
   "startDate": "2013",
   "endDate": "2017",
-  "productionCompany": [
-    {
-      "@type": "Organization",
-      "name": "Kudos"
-    },
-    {
-      "@type": "Organization",
-      "name": "Imaginary Friends"
-    }
-  ],
+  "productionCompany": {
+    "@type": "Organization",
+    "name": "Kudos"
+  },
   "actor": [
     {
       "@type": "Person",
@@ -273,6 +307,62 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
     "name": "United Kingdom"
   },
   "url": "https://britishtvhub.com/shows/broadchurch.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Broadchurch based on a true story?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Broadchurch is an original story by creator Chris Chibnall, who began developing it in 2002. It's not based on or connected to the Danish drama The Killing, despite frequent comparisons — Chibnall's script actually predates The Killing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will there be a Broadchurch Season 4?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Chris Chibnall has confirmed Broadchurch is a complete, self-contained three-series story and will not return, though his novel Death at the White Hart revisits Hardy and Miller in a Broadchurch-adjacent setting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many episodes of Broadchurch are there?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "24 episodes across 3 series, 8 episodes per series."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I watch Broadchurch in the US?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All 3 series stream free on Tubi, supported by ads, with no subscription required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Broadchurch filmed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fictional town of Broadchurch is largely filmed in and around West Bay, a real seaside town on the Dorset coast."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Broadchurch connected to Gracepoint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gracepoint is an American remake of Broadchurch, also created by Chris Chibnall and starring David Tennant in the same lead role, but it tells its own version of the story with a different resolution."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -571,15 +661,22 @@ document.addEventListener('click', function(e){
 }
 </script>
 
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/tense-british-crime-drama-hero.webp" alt="A moody UK coastal town at dusk" style="position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 15%,rgba(26,35,50,0.55) 55%,rgba(26,35,50,0.1) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <p class="show-eyebrow" style="margin-bottom:10px;">British Crime Drama &middot; ITV &middot; 2013&ndash;2017 &middot; Complete Series</p>
+    <h1 class="show-title" style="margin-bottom:0;">Broadchurch</h1>
+  </div>
+</div>
+
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Crime Drama · ITV · 2013–2017 (Complete)</p>
-  <h1 class="show-title">Broadchurch</h1>
   <div class="show-tags">
     <span class="tag">3 Series (Complete)</span>
+    <span class="tag">24 Episodes</span>
     <span class="tag">Stars David Tennant &amp; Olivia Colman</span>
     <span class="tag">Dorset Coast</span>
-    <span class="tag">Crime Drama</span>
     <span class="tag">BAFTA-winning</span>
   </div>
 
@@ -592,17 +689,71 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">The murder of an 11-year-old boy tears apart the small, close-knit Dorset seaside town of Broadchurch, forcing mismatched detectives DI Alec Hardy and DS Ellie Miller to confront secrets everyone in the community has been keeping. Dark, absorbing, and beautifully shot, with two of Britain's best actors carrying every scene.</p>
-  <p class="show-description" style="font-size:15px;">Ready for an absorbing weekend watch? The complete story spans 24 episodes across three series — and it streams free.</p>
+  <p class="show-description">The murder of an 11-year-old boy tears apart the small, close-knit Dorset seaside town of Broadchurch, forcing mismatched detectives DI Alec Hardy (David Tennant) and DS Ellie Miller (Olivia Colman) to confront secrets everyone in the community has been keeping. Dark, absorbing, and beautifully shot, created and written entirely by Chris Chibnall as a self-contained three-series story.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Fans of Slow-Burn, Character-Driven Whodunits</h3>
+        <p class="show-desc">Viewers who want real emotional weight behind their mystery — a grieving community, complicated relationships, and a resolution that earns its reveal rather than rushing to it.</p>
+        <div class="show-tags"><span class="tag">Character-Driven</span><span class="tag">Slow Burn</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Dark, emotional</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Slow burn</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Time Commitment</div>
+        <h3 class="show-title">Watch in Order, Series by Series</h3>
+        <p class="show-desc">Each series is 8 episodes and tells one continuous story, so unlike an episodic mystery show, Broadchurch needs to be watched in order from the start.</p>
+        <div class="show-tags"><span class="tag">Serialized</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Episodes per Series</span><span class="aside-val">8</span></div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Required</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">Genuinely Heavy Subject Matter</h3>
+        <p class="show-desc">The series deals with a child's death and its aftermath throughout, and Series 3 centers on a sexual assault case — handled seriously rather than for shock value. British TV Hub's verdict: essential viewing and one of the defining British crime dramas of the 2010s.</p>
+        <div class="show-tags"><span class="tag">Heavy Themes</span><span class="tag">Essential</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Grief, sexual assault (S3)</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Essential</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">Tubi</p>
-    <p class="watch-detail">All 3 series · Free with ads · No subscription required</p>
-    <a href="https://tubitv.com" class="watch-btn" target="_blank" rel="noopener">Watch Free on Tubi →</a>
+    <p class="watch-detail">All 3 series &middot; Free with ads &middot; No subscription required</p>
+    <a href="https://tubitv.com" class="watch-btn">Watch Free on Tubi &rarr;</a>
     <div class="watch-free"><strong>Free option:</strong> The entire series streams free on Tubi, supported by ads — no subscription needed.</div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection. Checked September 2026.</p>
 
   <div class="bookshelf-cta">
     <p>📚 Love Broadchurch? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for the books behind your favourite British dramas &rarr;</p>
@@ -613,51 +764,395 @@ document.addEventListener('click', function(e){
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Chris Chibnall created Broadchurch and personally wrote all 24 episodes across its three series, having first developed the idea back in 2002 — a decade before it reached ITV. The series is not based on or connected to the Danish drama The Killing, despite the comparisons; Chibnall's original script actually predates The Killing by several years. Its success led to an American remake, Gracepoint, again starring David Tennant, and a French remake, Malaterra.</p>
-  <p class="show-description" style="font-size:16px;">Series 1 centers on the murder of 11-year-old Danny Latimer and the town's unraveling secrets; Series 2 follows the fallout of the trial alongside a case from Hardy's past; Series 3 turns to a new case, the assault of a local woman at a party. Chibnall has confirmed the series is complete as a three-part story and will not return, though his first novel, Death at the White Hart, revisits Hardy and Miller in a Broadchurch-adjacent setting.</p>
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
 
-  <hr class="divider">
-
-  <p class="section-label">If you like Broadchurch, try these</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/happy-valley.html" class="similar-card">
-      <p class="similar-name">Happy Valley</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/unforgotten.html" class="similar-card">
-      <p class="similar-name">Unforgotten</p>
-      <p class="similar-where">PBS Passport</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/line-of-duty.html" class="similar-card">
-      <p class="similar-name">Line of Duty</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/shetland.html" class="similar-card">
-      <p class="similar-name">Shetland</p>
-      <p class="similar-where">BritBox</p>
-    </a>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title">Series 1, Episode 1 (2013)</h3>
+        <p class="show-desc">The discovery that sets everything in motion, and the introduction of DI Alec Hardy and DS Ellie Miller's uneasy partnership. Must be watched first — the series builds continuously from here.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Required from Episode 1</span></div>
+      </div>
+    </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Best Episodes, <em>Ranked</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">1 &middot; Series 1, Episode 1 &middot; 2013</div>
+        <h3 class="show-title">The Setup</h3>
+        <p class="show-desc">A quietly devastating opener that introduces the town, the case, and the mismatched detective partnership at the show's center — spoiler-free, but essential viewing to understand everything that follows.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 1, Episode 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">First-time viewers</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">2 &middot; Series 1, Episode 8</div>
+        <h3 class="show-title">The Series 1 Finale</h3>
+        <p class="show-desc">Widely cited as one of British TV's most talked-about reveals of the decade — kept spoiler-free here, but it's the payoff the entire first series has been building toward.</p>
+        <div class="show-tags"><span class="tag">Series Finale</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 1, Episode 8</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Payoff-seekers</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">3 &middot; Series 2, Episode 1</div>
+        <h3 class="show-title">A Bold Structural Choice</h3>
+        <p class="show-desc">Series 2 opens by splitting its focus between the courtroom fallout of Series 1 and a cold case from Hardy's past — a risk that divided critics at the time but rewards patient viewers.</p>
+        <div class="show-tags"><span class="tag">Series 2 Opener</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 2, Episode 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Courtroom-drama fans</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">4 &middot; Series 3, Episode 1</div>
+        <h3 class="show-title">A Darker, More Mature Turn</h3>
+        <p class="show-desc">Series 3 leaves the Latimer case behind entirely for a new investigation, handling its subject matter — a sexual assault — with unusual seriousness for the genre.</p>
+        <div class="show-tags"><span class="tag">Series 3 Opener</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 3, Episode 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Viewers wanting a fresh case</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">5 &middot; Series 3, Episode 8</div>
+        <h3 class="show-title">The Series Finale</h3>
+        <p class="show-desc">The last episode of the show, closing out both the Series 3 case and the three-series arc as a whole — the ending Chris Chibnall always intended for Hardy and Miller.</p>
+        <div class="show-tags"><span class="tag">Series Finale</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 3, Episode 8</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Series completionists</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">David Tennant</h3>
+        <p class="show-desc">DI Alec Hardy — a brilliant but troubled detective carrying the weight of a previous failed case, and Broadchurch's first major post-Doctor Who leading role for Tennant.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DI Alec Hardy</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All 3 series</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Olivia Colman</h3>
+        <p class="show-desc">DS Ellie Miller — a local officer whose own life becomes entangled with the case in ways she never expected, in a role that won Colman a BAFTA.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DS Ellie Miller</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All 3 series</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Series 1&ndash;2</div>
+        <h3 class="show-title">Jodie Whittaker</h3>
+        <p class="show-desc">Beth Latimer, the grieving mother at the center of the Series 1 case, whose family's story anchors the emotional core of the first two series.</p>
+        <div class="show-tags"><span class="tag">Grieving Parent</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Beth Latimer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Series 1&ndash;2</div>
+        <h3 class="show-title">Andrew Buchan</h3>
+        <p class="show-desc">Mark Latimer, Beth's husband, whose grief and secrets both come under scrutiny as the investigation unfolds.</p>
+        <div class="show-tags"><span class="tag">Grieving Parent</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Mark Latimer</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Arthur Darvill</h3>
+        <p class="show-desc">Reverend Paul Coates, the town's vicar, who becomes a steady presence for the Latimer family and the wider community as they process their grief.</p>
+        <div class="show-tags"><span class="tag">Local Vicar</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Rev. Paul Coates</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Central Partnership</div>
+        <h3 class="show-title">Tennant and Colman's Chemistry</h3>
+        <p class="show-desc">Two mismatched detectives — one an outsider, one a local — carry the entire show through performances that both actors have called among the best work of their careers.</p>
+        <div class="show-tags"><span class="tag">Lead Performances</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Leads</span><span class="aside-val">Tennant &amp; Colman</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting as Character</div>
+        <h3 class="show-title">The Real Dorset Coast</h3>
+        <p class="show-desc">Filmed largely in the real seaside town of West Bay, the show's coastal setting grounds its grief-stricken story in a genuinely beautiful, and genuinely ordinary, English community.</p>
+        <div class="show-tags"><span class="tag">Dorset Coast</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Location</span><span class="aside-val">West Bay, Dorset</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Creative Vision</div>
+        <h3 class="show-title">One Writer, One Complete Story</h3>
+        <p class="show-desc">Chris Chibnall wrote all 24 episodes himself and deliberately concluded the story after three series rather than stretching it further — a rare instance of a hit crime drama ending exactly when its creator intended.</p>
+        <div class="show-tags"><span class="tag">Complete Story</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Writer</span><span class="aside-val">Chris Chibnall</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">West Bay, Dorset</h3>
+        <p class="show-desc">The fictional town of Broadchurch is largely filmed in and around West Bay, a real seaside town on the Dorset coast known for its distinctive golden cliffs — since the show aired, the area has become a popular filming-location tourist destination.</p>
+        <div class="show-tags"><span class="tag">Dorset, England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Town</span><span class="aside-val">West Bay</span></div>
+        <div class="aside-row"><span class="aside-key">County</span><span class="aside-val">Dorset</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Watch the <em>Trailer</em></h2>
+  </div>
+
+  <div style="position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin-bottom:16px;">
+    <iframe src="https://www.youtube.com/embed/qMFHSYTqLME" title="Broadchurch Series 2 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+  <p style="text-align:center;">
+    <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:var(--gold);padding:12px 24px;border-radius:2px;">More Trailers on British TV Hub — Trailers &amp; Previews &rarr;</a>
+  </p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Origins</div>
+        <h3 class="show-title">Is Broadchurch based on a true story?</h3>
+        <p class="show-desc">No. Broadchurch is an original story by creator Chris Chibnall, who began developing it in 2002. It's not based on or connected to the Danish drama The Killing, despite frequent comparisons — Chibnall's script actually predates The Killing.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Based on</span><span class="aside-val">Original story</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Will there be a Broadchurch Season 4?</h3>
+        <p class="show-desc">No. Chris Chibnall has confirmed Broadchurch is a complete, self-contained three-series story and will not return, though his novel Death at the White Hart revisits Hardy and Miller in a Broadchurch-adjacent setting.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Complete</span></div>
+        <div class="aside-row"><span class="aside-key">More seasons?</span><span class="aside-val">No</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes of Broadchurch are there?</h3>
+        <p class="show-desc">24 episodes across 3 series, 8 episodes per series.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Episodes</span><span class="aside-val">24</span></div>
+        <div class="aside-row"><span class="aside-key">Series</span><span class="aside-val">3</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Broadchurch in the US?</h3>
+        <p class="show-desc">All 3 series stream free on Tubi, supported by ads, with no subscription required.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Platform</span><span class="aside-val">Tubi (free)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where is Broadchurch filmed?</h3>
+        <p class="show-desc">The fictional town of Broadchurch is largely filmed in and around West Bay, a real seaside town on the Dorset coast.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Location</span><span class="aside-val">West Bay, Dorset</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Related Shows</div>
+        <h3 class="show-title">Is Broadchurch connected to Gracepoint?</h3>
+        <p class="show-desc">Gracepoint is an American remake of Broadchurch, also created by Chris Chibnall and starring David Tennant in the same lead role, but it tells its own version of the story with a different resolution.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Gracepoint</span><span class="aside-val">US remake</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-    <a href="https://britishtvhub.com/top10.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/top10-hero.webp" alt="Best British Police Procedurals" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+    <a href="https://britishtvhub.com/shows/happy-valley.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/tense-british-crime-drama-hero.webp" alt="Happy Valley Show Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Best British Police Procedurals</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">A curated lineup of standout detective dramas worth your time.</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Happy Valley Show Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Sarah Lancashire's acclaimed Yorkshire crime drama.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
 
-    <a href="https://britishtvhub.com/streaming.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/streaming-hero.webp" alt="Where to Watch" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+    <a href="https://britishtvhub.com/shows/unforgotten.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/601840831_122103956973171997_2569099953403615155_n.png" alt="Unforgotten Show Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Where to Watch</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Unforgotten Show Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">A cold-case unit reopens decades-old murders.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -671,6 +1166,15 @@ document.addEventListener('click', function(e){
       </div>
     </a>
 
+    <a href="https://britishtvhub.com/streaming.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/streaming-hero.webp" alt="Where to Watch" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Where to Watch</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+
     <a href="https://britishtvhub.com/shows-index.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
       <img src="/shows-index-hero.webp" alt="Browse All Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
@@ -679,19 +1183,11 @@ document.addEventListener('click', function(e){
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
-
-    <a href="https://britishtvhub.com/shows-like-shetland-tv.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/shows-like-shetland-hero.webp" alt="Shows Like Shetland" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Shows Like Shetland</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">More windswept island mysteries to try next.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
   </div>
-</div>
+  </div>
 
 </div>
+
 
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
 <style>

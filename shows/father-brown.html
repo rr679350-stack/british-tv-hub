@@ -18,12 +18,12 @@ gtag('config', 'G-P1L8CVNKS6');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Father Brown: Where to Watch in the US | British TV Hub</title>
-  <meta name="description" content="Where to watch Father Brown in the US. The BBC cozy-mystery series about a crime-solving priest in 1950s Cotswolds streams on BritBox.">
+  <meta name="description" content="Where to watch Father Brown in the US. Explore all 13 series of the BBC cozy mystery starring Mark Williams as the crime-solving Cotswolds priest.">
   <link rel="canonical" href="https://britishtvhub.com/shows/father-brown.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/shows/father-brown.html">
 <meta property="og:title" content="Father Brown: Where to Watch in the US | British TV Hub">
-<meta property="og:description" content="Where to watch Father Brown in the US. The BBC cozy-mystery series about a crime-solving priest in 1950s Cotswolds streams on BritBox.">
+<meta property="og:description" content="Where to watch Father Brown in the US. Explore all 13 series of the BBC cozy mystery starring Mark Williams as the crime-solving Cotswolds priest.">
 <meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -32,7 +32,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Father Brown: Where to Watch in the US | British TV Hub">
-<meta name="twitter:description" content="Where to watch Father Brown in the US. The BBC cozy-mystery series about a crime-solving priest in 1950s Cotswolds streams on BritBox.">
+<meta name="twitter:description" content="Where to watch Father Brown in the US. Explore all 13 series of the BBC cozy mystery starring Mark Williams.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/601840831_122103956973171997_2569099953403615155_n.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,11 +45,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -91,21 +126,19 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-detail { font-family: 'Raleway', sans-serif; font-size: 12px; letter-spacing: 1px; color: #d4c4a4; margin-bottom: 16px; }
     .watch-btn{ display: inline-block; background: var(--gold); color: #1a2135; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; padding: 12px 24px; border-radius: 2px; text-decoration: none; }
     .watch-btn:hover { background: var(--gold-light); color: var(--bg-dark); }
-    .watch-free { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-family: 'Raleway', sans-serif; font-size: 11px; color: var(--text-dim); }
-    .watch-free strong { color: var(--text-muted); }
-    .read-card { background: var(--bg-card); border: 1px solid var(--red); border-radius: 12px; padding: 24px 28px; margin-bottom: 32px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
-    .read-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
-    .read-label { font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #e57373; margin-bottom: 12px; }
-    .read-title { font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; color: var(--text); margin-bottom: 4px; }
-    .read-author { font-family: 'Raleway', sans-serif; font-size: 12px; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 16px; }
-    .read-btn{ display: inline-block; background: var(--gold); color: #1a2135; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; padding: 12px 24px; border-radius: 2px; text-decoration: none; }
-    .read-btn:hover { opacity: 0.88; }
     .bookshelf-cta { background: rgba(201,169,110,0.08); border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; padding: 14px 20px; margin-bottom: 32px; }
     .bookshelf-cta p { margin: 0; font-family: 'Crimson Text', serif; font-size: 15px; line-height: 1.5; color: var(--text-muted); }
     .bookshelf-cta a { color: var(--gold); text-decoration: none; font-weight: 600; }
     .bookshelf-cta a:hover { text-decoration: underline; }
+    .watch-free { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); font-family: 'Raleway', sans-serif; font-size: 11px; color: var(--text-dim); }
+    .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -250,19 +283,85 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   "@context": "https://schema.org",
   "@type": "TVSeries",
   "name": "Father Brown",
-  "description": "A mild-mannered Catholic priest in the fictional 1950s Cotswold village of Kembleford solves murders through quiet intuition and a deep understanding of human nature. Gentle, witty, and endlessly comforting — the kind of cozy mystery you can put on any afternoon and instantly feel at home in.",
+  "description": "A mild-mannered Roman Catholic priest in the fictional 1950s Cotswold village of Kembleford solves murders through quiet intuition and a deep understanding of human nature rather than force. Loosely adapted from G.K. Chesterton's short stories, the series has run for 13 series since 2013 with a 14th confirmed.",
   "genre": "British Cozy Mystery",
   "numberOfSeasons": 13,
   "startDate": "2013",
   "productionCompany": {
     "@type": "Organization",
-    "name": "BBC"
+    "name": "BBC Studios"
   },
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Mark Williams"
+    },
+    {
+      "@type": "Person",
+      "name": "John Burton"
+    }
+  ],
   "countryOfOrigin": {
     "@type": "Country",
     "name": "United Kingdom"
   },
   "url": "https://britishtvhub.com/shows/father-brown.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Father Brown based on a true story or real books?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The character comes from G.K. Chesterton's short stories, first published between 1911 and 1936. The TV series loosely adapts them, moving the setting to a fixed 1950s timeframe in the fictional Cotswold village of Kembleford."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Father Brown still being made?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Father Brown has aired 13 series since 2013, and a 14th has been confirmed and began filming in the Cotswolds."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many episodes of Father Brown are there?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There are well over 140 episodes across 13 series, with most series running 10 episodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to watch Father Brown in order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Nearly every episode is a self-contained mystery, so you can start with any series. Character relationships evolve gradually, but the cases themselves don't require prior episodes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I watch Father Brown in the US?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BritBox is Father Brown's primary US streaming home, with all 13 series available. It's also accessible through Hoopla with a participating library card."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Father Brown filmed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fictional village of Kembleford is filmed in Blockley, a real village in Gloucestershire, with the local church standing in for Father Brown's St Mary's."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -561,16 +660,23 @@ document.addEventListener('click', function(e){
 }
 </script>
 
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/601840831_122103956973171997_2569099953403615155_n.png" alt="A cozy Cotswolds village street" style="position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 15%,rgba(26,35,50,0.55) 55%,rgba(26,35,50,0.1) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
+    <p class="show-eyebrow" style="margin-bottom:10px;">British Cozy Mystery &middot; BBC &middot; 2013&ndash;present</p>
+    <h1 class="show-title" style="margin-bottom:0;">Father Brown</h1>
+  </div>
+</div>
+
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Cozy Mystery · BritBox · 2013–present</p>
-  <h1 class="show-title">Father Brown</h1>
   <div class="show-tags">
     <span class="tag">13 Series</span>
+    <span class="tag">140+ Episodes</span>
+    <span class="tag">Stars Mark Williams</span>
     <span class="tag">1950s Cotswolds</span>
-    <span class="tag">Cozy Mystery</span>
     <span class="tag">Priest Sleuth</span>
-    <span class="tag">BBC</span>
   </div>
 
   <div class="wl-dropdown" data-slug="father-brown">
@@ -582,79 +688,503 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">A mild-mannered Roman Catholic priest in the fictional 1950s Cotswold village of Kembleford solves murders through quiet intuition and a deep understanding of human nature rather than force. Gentle, witty, and endlessly comforting — the kind of cozy mystery you can put on any afternoon and instantly feel at home in.</p>
-  <p class="show-description" style="font-size:15px;">See more in <a href="/cozy.html" style="color:var(--gold,#c9a96e);">Cozy British Mysteries</a>.</p>
+  <p class="show-description">Mark Williams stars as the mild-mannered Roman Catholic priest of the fictional Cotswold village of Kembleford, whose gentle exterior hides a razor-sharp understanding of human nature. Loosely adapted from G.K. Chesterton's short stories and moved to a fixed 1950s setting, Father Brown has run for 13 series since 2013, with a 14th already filming — one of the BBC's most enduring daytime dramas.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Fans of Gentle, Low-Stakes Village Mysteries</h3>
+        <p class="show-desc">Viewers who want a warm, unhurried whodunit they can put on any afternoon — think Midsomer Murders' body count with a priest's compassion instead of a detective's badge.</p>
+        <div class="show-tags"><span class="tag">Comfort Watch</span><span class="tag">Episodic</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Warm, gentle</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Easygoing</span></div>
+        <div class="aside-row"><span class="aside-key">Similar To</span><span class="aside-val">Midsomer Murders</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Time Commitment</div>
+        <h3 class="show-title">One Mystery, One Sitting</h3>
+        <p class="show-desc">Each episode runs about 45 minutes and wraps up its own case, so you can dip in anywhere without worrying about continuity.</p>
+        <div class="show-tags"><span class="tag">45 Min Episodes</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Runtime</span><span class="aside-val">~45 min per episode</span></div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Not required</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">About as Gentle as Murder Mysteries Get</h3>
+        <p class="show-desc">Murders happen, but they're handled with a light touch — little violence or graphic content on screen. British TV Hub's verdict: an easy, dependable comfort watch that's stayed consistent across 13 series.</p>
+        <div class="show-tags"><span class="tag">Mild Content</span><span class="tag">Recommended</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Mild, low violence</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Recommended</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">BritBox</p>
-    <p class="watch-detail">All 13 series · Subscription required · Check current price at signup</p>
-    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Watch on BritBox →</a>
+    <p class="watch-detail">All 13 series &middot; Subscription required</p>
+    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn">Watch on BritBox &rarr;</a>
     <div class="watch-free"><strong>Free option:</strong> Also available through Hoopla with a participating library card. Availability may vary by library.</div>
-  </div>
-
-  <div class="read-card">
-    <p class="read-label">Read the books</p>
-    <p class="read-title">The Innocence of Father Brown</p>
-    <p class="read-author">by G.K. Chesterton &middot; the first collection of Father Brown short stories</p>
-    <a href="https://www.amazon.com/s?k=The+Innocence+of+Father+Brown+G.K.+Chesterton&tag=britishtvhub-20" class="read-btn" target="_blank" rel="noopener">Start Reading &rarr;</a>
-  </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection. Checked September 2026.</p>
 
   <div class="bookshelf-cta">
     <p>📚 Love Father Brown? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for more classic mystery recommendations &rarr;</p>
     <p>Looking for your next watch? See <a href="/shows-like-father-brown-tv.html">Shows Like Father Brown</a> &rarr;</p>
   </div>
 
-
-
-  <hr class="divider">
-
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Developed by Rachel Flowerday and Tahsin Guner, the series loosely adapts G.K. Chesterton's short stories — which originally ran from 1911 to 1936 with Father Brown travelling the world — into a fixed 1950s setting in the fictional Cotswold village of Kembleford. Mark Williams, best known to many as Arthur Weasley in the Harry Potter films, has played the title role since the series began in January 2013. The show has been renewed well beyond its original run, with Series 14 confirmed and filming in the Cotswolds.</p>
-
-  <hr class="divider">
-
-  <p class="section-label">If you like Father Brown, try these</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/grantchester.html" class="similar-card">
-      <p class="similar-name">Grantchester</p>
-      <p class="similar-where">PBS Masterpiece</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/miss-marple.html" class="similar-card">
-      <p class="similar-name">Miss Marple</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/midsomer-murders.html" class="similar-card">
-      <p class="similar-name">Midsomer Murders</p>
-      <p class="similar-where">Acorn TV</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/poirot.html" class="similar-card">
-      <p class="similar-name">Poirot</p>
-      <p class="similar-where">BritBox</p>
-    </a>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title"><em>The Blue Cross</em> (2013)</h3>
+        <p class="show-desc">The pilot episode introduces Father Brown, his housekeeper Mrs McCarthy, and the master thief Flambeau — a recurring nemesis-turned-friend across the series.</p>
+        <div class="show-tags"><span class="tag">Pilot</span><span class="tag">2013</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Not strictly required</span></div>
+        <div class="aside-row"><span class="aside-key">Introduces</span><span class="aside-val">Flambeau</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Best Episodes, <em>Ranked</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">1 &middot; Pilot &middot; 2013</div>
+        <h3 class="show-title"><em>The Blue Cross</em></h3>
+        <p class="show-desc">The series premiere, in which Father Brown's priceless Blue Cross relic is targeted by the infamous thief Flambeau — establishing the cat-and-mouse relationship that recurs throughout the show's run.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 1, Episode 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">First-time viewers</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">2 &middot; Series 1</div>
+        <h3 class="show-title"><em>The Eye of Apollo</em></h3>
+        <p class="show-desc">A charismatic cult leader arrives in Kembleford, and when his wife is found murdered inside a locked room, Father Brown must work out how the killer could have reached her at all.</p>
+        <div class="show-tags"><span class="tag">Locked-Room Mystery</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 1, Episode 5</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Puzzle-plot fans</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">3 &middot; Series 3</div>
+        <h3 class="show-title"><em>The Sign of the Broken Sword</em></h3>
+        <p class="show-desc">Widely cited by fans as one of the show's most faithful and best-executed Chesterton adaptations, with a strong spotlight on the recurring character Sid Carter.</p>
+        <div class="show-tags"><span class="tag">Fan Favorite</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 3, Episode 4</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Chesterton purists</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">4 &middot; Series 13 &middot; 2026</div>
+        <h3 class="show-title"><em>The Good Refuge</em></h3>
+        <p class="show-desc">The current series opener, which brings Mrs McCarthy back to Kembleford for what should have been a quiet homecoming — until a fresh murder disrupts it.</p>
+        <div class="show-tags"><span class="tag">Series 13 Opener</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 13, Episode 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Current fans</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">5 &middot; Series 13 &middot; 2026</div>
+        <h3 class="show-title"><em>The Bishop's Revenge</em></h3>
+        <p class="show-desc">The Series 13 finale, resolving the season-long thread involving Canon Fox and bringing several ongoing personal storylines to a head.</p>
+        <div class="show-tags"><span class="tag">Series Finale</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Series 13, Episode 10</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Season finale payoff</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Mark Williams</h3>
+        <p class="show-desc">Father Brown — a quietly perceptive priest, best known to many viewers as Arthur Weasley in the Harry Potter films, who has played the role since the series began in 2013.</p>
+        <div class="show-tags"><span class="tag">Lead</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Father Brown</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All 13 series</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">John Burton</h3>
+        <p class="show-desc">Sergeant Goodfellow, Kembleford's dependable local police sergeant and one of the show's longest-running supporting cast members.</p>
+        <div class="show-tags"><span class="tag">Police Sergeant</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Sergeant Goodfellow</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Early Seasons</div>
+        <h3 class="show-title">Sorcha Cusack</h3>
+        <p class="show-desc">Mrs McCarthy, Father Brown's devoted housekeeper for the early series, who has made occasional returns in later ones.</p>
+        <div class="show-tags"><span class="tag">Housekeeper</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Mrs McCarthy</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Nancy Carroll</h3>
+        <p class="show-desc">Lady Felicia, the glamorous, mischievous aristocrat and one of Father Brown's closest friends in the village.</p>
+        <div class="show-tags"><span class="tag">Lady of the Manor</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Lady Felicia</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Later Seasons</div>
+        <h3 class="show-title">Tom Chambers</h3>
+        <p class="show-desc">Inspector Sullivan, the local police inspector who becomes a recurring presence and, eventually, a married man within Kembleford's tight-knit community.</p>
+        <div class="show-tags"><span class="tag">Police Inspector</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Inspector Sullivan</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Central Performance</div>
+        <h3 class="show-title">Mark Williams's Warmth</h3>
+        <p class="show-desc">Williams brings a gentle, unshowy warmth to the role that's made Father Brown feel like a trusted companion for over a decade, rather than just another eccentric TV detective.</p>
+        <div class="show-tags"><span class="tag">Lead Performance</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Actor</span><span class="aside-val">Mark Williams</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting as Character</div>
+        <h3 class="show-title">Kembleford's 1950s Cotswolds World</h3>
+        <p class="show-desc">The fixed post-war setting gives the show a consistent, nostalgic backdrop — honey-colored stone villages, vintage cars, and a slower pace of life that's central to its comfort-viewing appeal.</p>
+        <div class="show-tags"><span class="tag">1950s Cotswolds</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">Kembleford, 1950s</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Longevity</div>
+        <h3 class="show-title">Remarkable Consistency</h3>
+        <p class="show-desc">Few British dramas have run as long or as steadily — 13 series since 2013 with a 14th on the way, all built around the same dependable formula that keeps bringing viewers back.</p>
+        <div class="show-tags"><span class="tag">13 Series</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Running Since</span><span class="aside-val">2013</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">Blockley, Gloucestershire</h3>
+        <p class="show-desc">The fictional village of Kembleford is filmed in Blockley, a real Cotswold village, with the local Church of St Peter and St Paul standing in as Father Brown's St Mary's, and the former Moreton-in-Marsh hospital used for the police station and Father Brown's kitchen.</p>
+        <div class="show-tags"><span class="tag">Cotswolds, England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Village</span><span class="aside-val">Blockley</span></div>
+        <div class="aside-row"><span class="aside-key">County</span><span class="aside-val">Gloucestershire</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Books Behind the <em>Series</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Original Stories</div>
+        <h3 class="show-title">G.K. Chesterton's Father Brown Stories</h3>
+        <p class="show-desc">The TV series loosely adapts Chesterton's short stories, which originally ran from 1911 to 1936 with Father Brown travelling the world. The show fixes the setting to 1950s Kembleford instead.</p>
+        <div class="show-tags"><span class="tag">1911&ndash;1936 Original Stories</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Author</span><span class="aside-val">G.K. Chesterton</span></div>
+        <a href="https://www.amazon.com/s?k=The+Innocence+of+Father+Brown+G.K.+Chesterton&tag=britishtvhub-20" class="aside-link">The Innocence of Father Brown &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Watch the <em>Trailer</em></h2>
+  </div>
+
+  <div style="position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin-bottom:16px;">
+    <iframe src="https://www.youtube.com/embed/blyiR1oICqg" title="Father Brown Series 10 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+  <p style="text-align:center;">
+    <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:var(--gold);padding:12px 24px;border-radius:2px;">More Trailers on British TV Hub — Trailers &amp; Previews &rarr;</a>
+  </p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Origins</div>
+        <h3 class="show-title">Is Father Brown based on a true story or real books?</h3>
+        <p class="show-desc">The character comes from G.K. Chesterton's short stories, first published between 1911 and 1936. The TV series loosely adapts them, moving the setting to a fixed 1950s timeframe in the fictional village of Kembleford.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Source</span><span class="aside-val">G.K. Chesterton stories</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Is Father Brown still being made?</h3>
+        <p class="show-desc">Yes. Father Brown has aired 13 series since 2013, and a 14th has been confirmed and began filming in the Cotswolds.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Ongoing</span></div>
+        <div class="aside-row"><span class="aside-key">Next</span><span class="aside-val">Series 14 filming</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes of Father Brown are there?</h3>
+        <p class="show-desc">There are well over 140 episodes across 13 series, with most series running 10 episodes.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Episodes</span><span class="aside-val">140+</span></div>
+        <div class="aside-row"><span class="aside-key">Series</span><span class="aside-val">13</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Viewing Order</div>
+        <h3 class="show-title">Do I need to watch Father Brown in order?</h3>
+        <p class="show-desc">No. Nearly every episode is a self-contained mystery, so you can start with any series. Character relationships evolve gradually, but the cases themselves don't require prior episodes.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Required?</span><span class="aside-val">No</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Father Brown in the US?</h3>
+        <p class="show-desc">BritBox is Father Brown's primary US home, with all 13 series available. It's also accessible through Hoopla with a participating library card.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Primary</span><span class="aside-val">BritBox</span></div>
+        <div class="aside-row"><span class="aside-key">Also</span><span class="aside-val">Hoopla</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where is Father Brown filmed?</h3>
+        <p class="show-desc">The fictional village of Kembleford is filmed in Blockley, a real village in Gloucestershire, with the local church standing in for Father Brown's St Mary's.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Village</span><span class="aside-val">Blockley, Gloucestershire</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
-    <a href="https://britishtvhub.com/top10.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/top10-hero.webp" alt="Best British Police Procedurals" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+    <a href="https://britishtvhub.com/cozy.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/cozy-hero.webp" alt="Cozy British Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Best British Police Procedurals</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">A curated lineup of standout detective dramas worth your time.</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Cozy British Mysteries</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Gentle, comforting whodunits for a rainy afternoon.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
 
-    <a href="https://britishtvhub.com/detective-partnerships.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/detective-partnerships-hero.webp" alt="British Detective Partnerships" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+    <a href="https://britishtvhub.com/shows/grantchester.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/601840831_122103956973171997_2569099953403615155_n.png" alt="Grantchester Show Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">British Detective Partnerships</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The best detective-and-sergeant duos in British TV.</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Grantchester Show Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Another vicar-turned-detective, in 1950s Cambridgeshire.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://britishtvhub.com/classic-british-detective-shows.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/classic-british-detective-shows-hero.webp" alt="Classic British Detective Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Classic British Detective Shows</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Bergerac, Prime Suspect, Taggart, and more from the 70s-90s.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -668,24 +1198,6 @@ document.addEventListener('click', function(e){
       </div>
     </a>
 
-    <a href="https://britishtvhub.com/cozy.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/cozy-hero.webp" alt="Cozy British Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Cozy British Mysteries</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Gentle, comforting whodunits for a rainy afternoon.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
-    <a href="https://britishtvhub.com/cozy-autumn-mysteries.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/cozy-autumn-hero.webp" alt="Cozy Autumn Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Cozy Autumn Mysteries</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Perfect whodunits for sweater weather.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
     <a href="https://britishtvhub.com/shows-index.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
       <img src="/shows-index-hero.webp" alt="Browse All Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
@@ -695,9 +1207,10 @@ document.addEventListener('click', function(e){
       </div>
     </a>
   </div>
-</div>
+  </div>
 
 </div>
+
 
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
 <style>
@@ -782,4 +1295,3 @@ document.addEventListener('click', function(e){
 <script src="/watchlist.js"></script>
 </body>
 </html>
-
