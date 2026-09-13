@@ -39,7 +39,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:url" content="https://britishtvhub.com/shows/dalgliesh.html">
 <meta property="og:title" content="Dalgliesh: Where to Watch in the US | British TV Hub">
 <meta property="og:description" content="Where to watch Dalgliesh in the US. Bertie Carvel stars as P.D. James's detective-poet Adam Dalgliesh in this Acorn TV adaptation, with Season 4 greenlit for 2027.">
-<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/site-default-og-image.webp">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/lewis-hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="British TV Hub — best British TV dramas and mysteries guide">
@@ -48,7 +48,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dalgliesh: Where to Watch in the US | British TV Hub">
 <meta name="twitter:description" content="Where to watch Dalgliesh in the US. Bertie Carvel stars as P.D. James's detective-poet Adam Dalgliesh in this Acorn TV adaptation, with Season 4 greenlit for 2027.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/site-default-og-image.webp">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/lewis-hero.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,11 +60,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -114,6 +149,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -440,111 +480,6 @@ iframe[id*="chatbase-bubble-button"],
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
-    <div class="nav-brand">
-    <a href="/" style="display:inline-block;text-decoration:none;">
-      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
-    </a>
-  </div>
-    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links-panel">
-      <a class="nlink" href="/">Home</a>
-      <a class="nlink" href="/start-here.html">Start Here</a>
-      <a class="nlink" href="/shows-index.html">Shows</a>
-      <a class="nlink" href="/books">Books</a>
-      <a class="nlink" href="/streaming.html">Where to Watch</a>
-      <a class="nlink" href="/essentials.html">The Snug</a>
-      <a class="nlink" href="/season-preview.html">Season Preview</a>
-      <div class="nav-dropdown">
-        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
-        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Browse</div>
-            <a href="/genres.html">By Genre</a>
-            <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
-            <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
-            <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
-            <a href="/this-week.html">This Week in British TV</a>
-            <a href="/hidden-gems.html">Hidden Gems</a>
-            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/essentials-gifts.html">Gift Guides</a>
-          </div>
-        </div>
-      </div>
-    </div>
-<div class="nav-actions">
-<div class="nav-tea">
-      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
-      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
-    </div>
-<div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
-      <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
-        <div id="nav-search-results" class="nav-search-results"></div>
-      </div>
-    </div>
-</div>
-    </div>
-</nav>
-<script>
-function toggleMobileNav(){
-  var nav = document.querySelector('nav.site-nav-std');
-  var btn = document.getElementById('nav-hamburger-btn');
-  if(!nav || !btn) return;
-  var isOpen = nav.classList.toggle('mobile-menu-open');
-  btn.classList.toggle('open', isOpen);
-  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-}
-</script>
-<script>
-function toggleDiscoverMenu(){
-  var m = document.getElementById('nav-discover-menu');
-  if(!m) return;
-  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
-}
-document.addEventListener('click', function(e){
-  var menu = document.getElementById('nav-discover-menu');
-  var toggle = document.querySelector('.nav-dropdown-toggle');
-  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
-    menu.style.display = 'none';
-  }
-});
-</script>
-
 <div class="breadcrumb">
   <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
@@ -566,12 +501,14 @@ document.addEventListener('click', function(e){
 
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Mystery · Acorn TV · 2021–present</p>
+  <p class="show-eyebrow">British Mystery &middot; Acorn TV &middot; 2021&ndash;present</p>
   <h1 class="show-title">Dalgliesh</h1>
+
   <div class="show-tags">
     <span class="tag">3 Seasons</span>
     <span class="tag">Bertie Carvel</span>
     <span class="tag">P.D. James Adaptation</span>
+    <span class="tag">1970s Setting</span>
     <span class="tag">Season 4 Renewed</span>
   </div>
 
@@ -584,76 +521,453 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">Bertie Carvel plays P.D. James's brooding detective-poet Adam Dalgliesh in this atmospheric run of adaptations, each investigation unfolding at the same unhurried, literary pace as James's novels. Season 4 has been greenlit for 2027 and will include the series' first fully original, non-novel story. Dalgliesh is available on Acorn TV in the US — see British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">where to watch British TV in the US</a>.</p>
+  <p class="show-description">Bertie Carvel plays P.D. James's brooding detective-poet Commander Adam Dalgliesh in this atmospheric period adaptation, set in 1970s England and shadowed throughout by Dalgliesh's private grief over the death of his wife. Each season adapts three of James's novels across six hour-long episodes, unfolding at the same unhurried, literary pace as the books themselves. Dalgliesh streams on Acorn TV in the US &mdash; see British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">where to watch British TV in the US</a>.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Fans of Slow-Burn, Literary Mystery</h3>
+        <p class="show-desc">Viewers who want their detective drama to breathe &mdash; Dalgliesh favours mood, period detail, and psychological complexity over fast-paced procedural beats.</p>
+        <div class="show-tags"><span class="tag">Literary Adaptation</span><span class="tag">Period Drama</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Brooding, literary</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Slow burn</span></div>
+        <div class="aside-row"><span class="aside-key">Similar To</span><span class="aside-val">Grace, Unforgotten</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Time Commitment</div>
+        <h3 class="show-title">Three Novels, Six Episodes, Per Season</h3>
+        <p class="show-desc">Each season adapts three P.D. James novels, with each novel told across two hour-long episodes, making six episodes per season in total.</p>
+        <div class="show-tags"><span class="tag">Two-Part Stories</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Episodes per Novel</span><span class="aside-val">2</span></div>
+        <div class="aside-row"><span class="aside-key">Episodes per Season</span><span class="aside-val">6</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">Somber Rather Than Graphic</h3>
+        <p class="show-desc">Dalgliesh deals in grief, institutional secrecy, and murder, but leans on atmosphere and psychology rather than graphic violence. British TV Hub's verdict: a handsome, faithful showcase for one of crime fiction's most literary detectives.</p>
+        <div class="show-tags"><span class="tag">Moderate Content</span><span class="tag">Recommended</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Grief, murder, moderate violence</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Recommended</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">Acorn TV</p>
-    <p class="watch-detail">3 seasons available · Season 4 renewed for 2027 · Subscription required</p>
-    <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+    <p class="watch-detail">3 seasons available &middot; Season 4 renewed for 2027 &middot; Subscription required</p>
+    <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="watch-btn">Watch on Acorn TV &rarr;</a>
     <div class="watch-free"><strong>Free option:</strong> Not currently available free in the US</div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection. Checked September 2026.</p>
   </div>
 
   <div class="watch-card">
     <p class="watch-label">Find the books</p>
-    <p class="watch-service">P.D. James's novels</p>
+    <p class="watch-service">P.D. James's Adam Dalgliesh novels</p>
     <p class="watch-detail">The source novels behind the series &middot; Check current editions and formats</p>
-    <a href="https://www.amazon.com/s?k=P.D.+James+novels&tag=britishtvhub-books-20" class="watch-btn" target="_blank" rel="noopener">Find the Books &rarr;</a>
+    <a href="https://www.amazon.com/s?k=P.D.+James+Adam+Dalgliesh+novels&tag=britishtvhub-books-20" class="watch-btn" target="_blank" rel="noopener">Find the Books &rarr;</a>
   </div>
 
 <div class="bookshelf-cta">
-    <p>📚 Love Dalgliesh? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for the books behind your favourite British dramas &rarr;</p>
+    <p>&#128218; Love Dalgliesh? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for the books behind your favourite British dramas &rarr;</p>
+    <p>Looking for your next watch? See <a href="/shows-like.html">What to Watch Next</a> &rarr;</p>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Dalgliesh adapts the detective novels of P.D. James, one of the genre's most acclaimed literary crime writers, with Bertie Carvel taking on the title role of the poet-turned-Scotland Yard commander. The series has largely worked through James's Dalgliesh novels in its first three seasons, and the announced fourth season marks a departure with the show's first entirely original story.</p>
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
 
-  <hr class="divider">
-
-  <p class="section-label">If you like Dalgliesh, try these</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/unforgotten.html" class="similar-card">
-      <p class="similar-name">Unforgotten</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/grace.html" class="similar-card">
-      <p class="similar-name">Grace</p>
-      <p class="similar-where">BritBox</p>
-    </a>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title"><em>Shroud for a Nightingale</em> (Season 1, 2021)</h3>
+        <p class="show-desc">The series premiere sends Dalgliesh to a nursing school to investigate the death of a student nurse poisoned during a training demonstration, introducing his new sergeant, Kate Miskin.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span><span class="tag">2021</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Recommended in order</span></div>
+        <div class="aside-row"><span class="aside-key">Based On</span><span class="aside-val">P.D. James novel</span></div>
+      </div>
+    </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Best Cases, <em>Ranked</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">1 &middot; Season 1</div>
+        <h3 class="show-title"><em>Shroud for a Nightingale</em></h3>
+        <p class="show-desc">The series premiere, sending Dalgliesh into the closed world of a nursing school after a student nurse is poisoned during a training exercise &mdash; a strong showcase for the show's institutional-secrecy storytelling.</p>
+        <div class="show-tags"><span class="tag">Season 1</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Season 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">First-time viewers</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">2 &middot; Season 1</div>
+        <h3 class="show-title"><em>The Black Tower</em></h3>
+        <p class="show-desc">Dalgliesh visits an old friend in Dorset only to learn he died days earlier, pulling him into the suspicious world of a care home for the disabled.</p>
+        <div class="show-tags"><span class="tag">Season 1</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Season 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Atmosphere-first viewers</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">3 &middot; Season 1</div>
+        <h3 class="show-title"><em>A Taste for Death</em></h3>
+        <p class="show-desc">Two bodies are found in a London church vestry &mdash; a recently-resigned Tory MP and a homeless man &mdash; in one of Season 1's most politically charged cases.</p>
+        <div class="show-tags"><span class="tag">Season 1</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Season 1</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Political-intrigue fans</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">4 &middot; Season 3</div>
+        <h3 class="show-title"><em>Death in Holy Orders</em></h3>
+        <p class="show-desc">Dalgliesh travels to a remote seminary overlooking a windswept lake, where a body has been found gruesomely murdered &mdash; and nearly everyone has a motive.</p>
+        <div class="show-tags"><span class="tag">Season 3</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Season 3</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Established fans</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">5 &middot; Season 3</div>
+        <h3 class="show-title"><em>Devices and Desires</em></h3>
+        <p class="show-desc">Dalgliesh is sent on an urgent mission to investigate a terrorist plot against a nuclear power station on the Kent coast, only to be drawn into a hunt for a serial killer.</p>
+        <div class="show-tags"><span class="tag">Season 3</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Position</span><span class="aside-val">Season 3</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Fans of higher-stakes plotting</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on Acorn TV &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Bertie Carvel</h3>
+        <p class="show-desc">Commander Adam Dalgliesh &mdash; a published poet and Metropolitan Police detective, recently widowed and quietly grieving throughout the series.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Commander Adam Dalgliesh</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">All seasons</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Recurring</div>
+        <h3 class="show-title">Carlyss Peer</h3>
+        <p class="show-desc">DS/DCI Kate Miskin &mdash; Dalgliesh's sergeant, who rises through the ranks alongside him across the series.</p>
+        <div class="show-tags"><span class="tag">Detective Sergeant</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Kate Miskin</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Season 1</div>
+        <h3 class="show-title">Jeremy Irvine</h3>
+        <p class="show-desc">DS Charles Masterson &mdash; Dalgliesh's sergeant in the first season, before Kate Miskin becomes his regular partner.</p>
+        <div class="show-tags"><span class="tag">Detective Sergeant</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Charles Masterson</span></div>
+        <div class="aside-row"><span class="aside-key">Appears</span><span class="aside-val">Season 1</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Source Fidelity</div>
+        <h3 class="show-title">Faithful to P.D. James</h3>
+        <p class="show-desc">The series has worked steadily through James's acclaimed Dalgliesh novels, preserving the 1970s setting and the character's identity as a published poet as much as a detective.</p>
+        <div class="show-tags"><span class="tag">Literary Adaptation</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Source</span><span class="aside-val">P.D. James novels</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Performance</div>
+        <h3 class="show-title">Bertie Carvel's Interior Performance</h3>
+        <p class="show-desc">Carvel plays Dalgliesh's grief and detachment with restraint, letting the character's poetry and private sorrow surface quietly rather than dramatically.</p>
+        <div class="show-tags"><span class="tag">Bertie Carvel</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Lead</span><span class="aside-val">Bertie Carvel</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Period Detail</div>
+        <h3 class="show-title">A Convincing 1970s England</h3>
+        <p class="show-desc">Season 3 pushes into the start of the Thatcher era, using its period setting to explore the wider social and political implications behind each murder.</p>
+        <div class="show-tags"><span class="tag">1970s Britain</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">1970s England</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">1970s England, Filmed Across the UK</h3>
+        <p class="show-desc">Dalgliesh is set across 1970s England, with each novel's story moving to a new location &mdash; a nursing school, a Dorset care home, a London church, a Kent nuclear power station. Season 3 filmed in Northern Ireland, doubling for the English settings of its source novels.</p>
+        <div class="show-tags"><span class="tag">1970s England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">1970s England</span></div>
+        <div class="aside-row"><span class="aside-key">Season 3 Filmed In</span><span class="aside-val">Northern Ireland</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Books Behind the <em>Series</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Source Novels</div>
+        <h3 class="show-title">P.D. James's Adam Dalgliesh Series</h3>
+        <p class="show-desc">Dalgliesh adapts three novels per season from P.D. James's acclaimed detective series: Season 1 covers Shroud for a Nightingale, The Black Tower, and A Taste for Death; Season 3 covers Death in Holy Orders, Cover Her Face, and Devices and Desires. Season 4 will include the show's first entirely original, non-novel story.</p>
+        <div class="show-tags"><span class="tag">P.D. James</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Author</span><span class="aside-val">P.D. James</span></div>
+        <a href="https://www.amazon.com/s?k=P.D.+James+Adam+Dalgliesh+novels&tag=britishtvhub-books-20" class="aside-link">Find the Books &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Source Material</div>
+        <h3 class="show-title">Is Dalgliesh based on real novels?</h3>
+        <p class="show-desc">Yes. Dalgliesh adapts P.D. James's acclaimed Adam Dalgliesh detective novels, three per season, each told across two episodes.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Based On</span><span class="aside-val">P.D. James novels</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Is there a Dalgliesh Season 4?</h3>
+        <p class="show-desc">Yes. Season 4 has been greenlit for 2027 and will include the series' first fully original, non-novel story.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Renewed</span></div>
+        <div class="aside-row"><span class="aside-key">Next</span><span class="aside-val">Season 4, expected 2027</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes of Dalgliesh are there?</h3>
+        <p class="show-desc">Three seasons have aired, each with six episodes (two per adapted novel), for 18 episodes in total so far.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Seasons</span><span class="aside-val">3</span></div>
+        <div class="aside-row"><span class="aside-key">Episodes</span><span class="aside-val">18</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Predecessor</div>
+        <h3 class="show-title">Is this the first TV Dalgliesh?</h3>
+        <p class="show-desc">No. An earlier ITV/Masterpiece adaptation starring Roy Marsden as Dalgliesh aired from 1983 to 1998. This is a fresh, unconnected adaptation.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Earlier Version</span><span class="aside-val">1983&ndash;1998, Roy Marsden</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Dalgliesh in the US?</h3>
+        <p class="show-desc">Acorn TV is Dalgliesh's home in the US, with all three seasons available to stream.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Primary</span><span class="aside-val">Acorn TV</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+    <a href="https://britishtvhub.com/shows/grace.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Grace</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Peter James's Roy Grace novels, adapted for ITV.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="https://britishtvhub.com/shows/lynley.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Lynley</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Elizabeth George's detective novels, freshly adapted.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
     <a href="https://britishtvhub.com/best-british-mystery-shows-2026.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
       <img src="/best-british-mystery-shows-2026-hero.webp" alt="Best British Mystery Shows: 25 to Watch in 2026" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">25 Mysteries to Watch in 2026</div>
         <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Where Dalgliesh fits among this year's best British mystery shows.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
-    <a href="https://britishtvhub.com/streaming.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/streaming-hero.webp" alt="Where to Watch" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Where to Watch</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
-    <a href="https://britishtvhub.com/shows-index.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/shows-index-hero.webp" alt="Browse All Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Browse All Shows</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Every British mystery and drama on the site, organized by genre and platform.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
