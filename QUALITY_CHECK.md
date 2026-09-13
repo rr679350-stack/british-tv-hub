@@ -264,7 +264,7 @@ containing ${ or ' +.
 ```bash
 for f in *.html shows/*.html; do grep -q "watch-list.html" "$f" || echo "MISSING watch-list nav: $f"; done
 for f in *.html shows/*.html; do grep -q "gift-ideas.html" "$f" || echo "MISSING gift-ideas nav: $f"; done
-for f in *.html shows/*.html; do grep -q "footer-brand.webp" "$f" || echo "MISSING standard footer: $f"; done
+for f in *.html shows/*.html; do grep -q "footer-teacup-mark.png" "$f" || echo "MISSING standard footer: $f"; done
 grep -roh "G-[A-Z0-9]*" *.html shows/*.html | sort -u   # should return exactly one GA ID: G-P1L8CVNKS6
 ```
 
@@ -706,7 +706,15 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
+Last full sitewide run: September 13, 2026 (extensive accuracy audit covering
+quotation-rule compliance, banned-superlative sweep, broken internal link/image
+check, nav/footer/GA-ID integrity, monthly freshness, BritBox-UK false-listing
+check, and spot-verification of masterpiece2026.html, fall-preview-2026.html,
+and Bookish Season 2 claims against current sources — fixed an unattributed
+"largest" superlative on streaming.html and corrected this file's stale
+footer-check filename, footer-brand.webp → footer-teacup-mark.png).
+
+Previous full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
 compliance, banned-superlative sweep, link/nav/footer/GA-ID integrity, monthly
 freshness, BritBox-UK false-listing check, fact-check-log reconciliation, and
 spot-verification of BritBox/Acorn "What's New" claims for August 2026 — see
