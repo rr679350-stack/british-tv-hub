@@ -39,7 +39,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:url" content="https://britishtvhub.com/shows/sherwood.html">
 <meta property="og:title" content="Sherwood: Where to Watch in the US | British TV Hub">
 <meta property="og:description" content="Where to watch Sherwood in the US. The acclaimed BBC ensemble crime drama set in a former Nottinghamshire mining village streams on BritBox, with Series 3 in production.">
-<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/site-default-og-image.webp">
+<meta property="og:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/lewis-hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="British TV Hub — best British TV dramas and mysteries guide">
@@ -48,7 +48,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sherwood: Where to Watch in the US | British TV Hub">
 <meta name="twitter:description" content="Where to watch Sherwood in the US. The acclaimed BBC ensemble crime drama set in a former Nottinghamshire mining village streams on BritBox, with Series 3 in production.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/site-default-og-image.webp">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/lewis-hero.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,11 +60,46 @@ gtag('config', 'G-P1L8CVNKS6');
       --border: #4a5570;
       --gold: #c9a96e;
       --gold-light: #dab870;
+      --gold-muted: #b89860;
       --red: #8b1a2e;
+      --red-accent: #c0392b;
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-muted); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    .show-aside .aside-link-secondary { display: block; margin-top: 0.6rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); background: transparent; border: 1px solid rgba(201,168,76,0.4); padding: 9px 18px; border-radius: 2px; text-decoration: none; transition: background 0.2s, border-color 0.2s; }
+    .show-aside .aside-link-secondary:hover { background: rgba(201,168,76,0.1); border-color: var(--gold); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -114,6 +149,11 @@ gtag('config', 'G-P1L8CVNKS6');
     .watch-free strong { color: var(--text-muted); }
 
     .section-label { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #b0bcd4; margin-bottom: 16px; }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     .similar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
     .similar-card { background: #2a3450; border: 1px solid #5a6885; border-radius: 12px; padding: 16px 18px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
@@ -440,111 +480,6 @@ iframe[id*="chatbase-bubble-button"],
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
-    <div class="nav-brand">
-    <a href="/" style="display:inline-block;text-decoration:none;">
-      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
-    </a>
-  </div>
-    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links-panel">
-      <a class="nlink" href="/">Home</a>
-      <a class="nlink" href="/start-here.html">Start Here</a>
-      <a class="nlink" href="/shows-index.html">Shows</a>
-      <a class="nlink" href="/books">Books</a>
-      <a class="nlink" href="/streaming.html">Where to Watch</a>
-      <a class="nlink" href="/essentials.html">The Snug</a>
-      <a class="nlink" href="/season-preview.html">Season Preview</a>
-      <div class="nav-dropdown">
-        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
-        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Browse</div>
-            <a href="/genres.html">By Genre</a>
-            <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
-            <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
-            <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
-            <a href="/this-week.html">This Week in British TV</a>
-            <a href="/hidden-gems.html">Hidden Gems</a>
-            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/essentials-gifts.html">Gift Guides</a>
-          </div>
-        </div>
-      </div>
-    </div>
-<div class="nav-actions">
-<div class="nav-tea">
-      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
-      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
-    </div>
-<div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
-      <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
-        <div id="nav-search-results" class="nav-search-results"></div>
-      </div>
-    </div>
-</div>
-    </div>
-</nav>
-<script>
-function toggleMobileNav(){
-  var nav = document.querySelector('nav.site-nav-std');
-  var btn = document.getElementById('nav-hamburger-btn');
-  if(!nav || !btn) return;
-  var isOpen = nav.classList.toggle('mobile-menu-open');
-  btn.classList.toggle('open', isOpen);
-  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-}
-</script>
-<script>
-function toggleDiscoverMenu(){
-  var m = document.getElementById('nav-discover-menu');
-  if(!m) return;
-  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
-}
-document.addEventListener('click', function(e){
-  var menu = document.getElementById('nav-discover-menu');
-  var toggle = document.querySelector('.nav-dropdown-toggle');
-  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
-    menu.style.display = 'none';
-  }
-});
-</script>
-
 <div class="breadcrumb">
   <a href="https://britishtvhub.com/">Home</a>
   <span>·</span>
@@ -566,8 +501,9 @@ document.addEventListener('click', function(e){
 
 <div class="page-wrap">
 
-  <p class="show-eyebrow">British Crime Drama · BBC · 2022–present</p>
+  <p class="show-eyebrow">British Crime Drama &middot; BBC &middot; 2022&ndash;present</p>
   <h1 class="show-title">Sherwood</h1>
+
   <div class="show-tags">
     <span class="tag">2 Series</span>
     <span class="tag">Ensemble Cast</span>
@@ -584,69 +520,362 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">A present-day murder in a former Nottinghamshire mining village reopens decades-old wounds from the 1984 miners' strike, in this acclaimed ensemble crime drama created by playwright James Graham. Series 3 is confirmed and began filming in early 2026. Sherwood is available on BritBox in the US — see British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">where to watch British TV in the US</a>.</p>
+  <p class="show-description">Created by playwright James Graham and loosely inspired by real events in his hometown, Sherwood follows a present-day murder in a former Nottinghamshire mining village that reopens decades-old wounds from the 1984-85 miners' strike. Each series is a single, six-episode ensemble story rather than a case-of-the-week procedural, with a different central mystery per series. Sherwood streams on BritBox in the US &mdash; see British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">where to watch British TV in the US</a>.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Is This Series <em>for You?</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Best For</div>
+        <h3 class="show-title">Fans of Slow-Burn Ensemble Crime</h3>
+        <p class="show-desc">Viewers who want a whole community's history and politics woven into a single murder investigation, told through a large, overlapping ensemble cast.</p>
+        <div class="show-tags"><span class="tag">Ensemble Drama</span><span class="tag">Social Realism</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Tone</span><span class="aside-val">Somber, layered</span></div>
+        <div class="aside-row"><span class="aside-key">Pace</span><span class="aside-val">Slow burn</span></div>
+        <div class="aside-row"><span class="aside-key">Similar To</span><span class="aside-val">Unforgotten, Broadchurch</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Format</div>
+        <h3 class="show-title">One Series, One Complete Story</h3>
+        <p class="show-desc">Unlike most detective dramas on this site, Sherwood isn't case-of-the-week: each six-episode series is a single continuous mystery with its own new cast of suspects, connected by the same Nottinghamshire setting and its aftermath of the miners' strike.</p>
+        <div class="show-tags"><span class="tag">Limited Series Format</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Episodes per Series</span><span class="aside-val">6</span></div>
+        <div class="aside-row"><span class="aside-key">Story Format</span><span class="aside-val">One case per series</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Content Note &amp; Verdict</div>
+        <h3 class="show-title">Grounded, Politically Charged</h3>
+        <p class="show-desc">Sherwood deals with real historical trauma, undercover policing, and community division alongside its murder plots, with a tone closer to prestige drama than genre mystery. British TV Hub's verdict: one of the most acclaimed British crime dramas of the decade, anchored by a genuinely exceptional cast.</p>
+        <div class="show-tags"><span class="tag">Prestige Drama</span><span class="tag">Highly Recommended</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Content</span><span class="aside-val">Violence, political themes</span></div>
+        <div class="aside-row"><span class="aside-key">Verdict</span><span class="aside-val">Highly recommended</span></div>
+      </div>
+    </div>
+  </div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">BritBox</p>
-    <p class="watch-detail">2 series available · Series 3 filming, not yet released · Subscription required</p>
-    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Watch on BritBox &rarr;</a>
+    <p class="watch-detail">2 series available &middot; Series 3 filming, not yet released &middot; Subscription required</p>
+    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn">Watch on BritBox &rarr;</a>
     <div class="watch-free"><strong>Free option:</strong> Not currently available free in the US</div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Check the linked service for the current season and episode selection. Checked September 2026.</p>
   </div>
 
 <div class="bookshelf-cta">
-    <p>📚 Love Sherwood? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for the books behind your favourite British dramas &rarr;</p>
+    <p>&#128218; Love Sherwood? Join <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener">The Ultimate British Bookshelf</a> for more British drama recommendations &rarr;</p>
+    <p>Looking for your next watch? See <a href="/shows-like.html">What to Watch Next</a> &rarr;</p>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Sherwood was created by James Graham, who loosely based the series on real events in his hometown of Annesley Woodhouse, Nottinghamshire, including two murders that shook the community two decades apart. The ensemble cast has included David Morrissey, Lesley Manville, Robert Glenister, and Stephen Dillane, with each series built around a new, self-contained mystery rooted in the lasting scars of the 1984-85 miners' strike.</p>
+  <div class="section-header">
+    <h2>Series <em>Guide</em></h2>
+  </div>
 
-  <hr class="divider">
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Series 1 &middot; 2022</div>
+        <h3 class="show-title">Series 1</h3>
+        <p class="show-desc">Two shocking, seemingly unrelated murders shatter an already fractured Nottinghamshire mining village, triggering one of the largest manhunts in British policing history and forcing the community to confront the still-raw divisions left by the 1984-85 miners' strike.</p>
+        <div class="show-tags"><span class="tag">Series Premiere</span><span class="tag">6 Episodes</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Aired</span><span class="aside-val">June 2022</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">First-time viewers</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on BritBox &rarr;</a>
+      </div>
+    </div>
+  </div>
 
-  <p class="section-label">If you like Sherwood, try these</p>
-  <div class="similar-grid">
-    <a href="https://britishtvhub.com/shows/unforgotten.html" class="similar-card">
-      <p class="similar-name">Unforgotten</p>
-      <p class="similar-where">BritBox</p>
-    </a>
-    <a href="https://britishtvhub.com/shows/broadchurch.html" class="similar-card">
-      <p class="similar-name">Broadchurch</p>
-      <p class="similar-where">Tubi</p>
-    </a>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Series 2 &middot; 2024</div>
+        <h3 class="show-title">Series 2</h3>
+        <p class="show-desc">A new, self-contained mystery returns to the same Nottinghamshire community with a partly new cast, continuing the show's exploration of how the area's past keeps shaping its present.</p>
+        <div class="show-tags"><span class="tag">6 Episodes</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Aired</span><span class="aside-val">August 2024</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Fans of Series 1</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener">Watch on BritBox &rarr;</a>
+      </div>
+    </div>
   </div>
 
   <hr class="divider">
 
-  <p class="section-label">Related guides</p>
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">David Morrissey</h3>
+        <p class="show-desc">DCS Ian St Clair &mdash; a Nottinghamshire officer who has risen through the ranks locally and is tasked with finding the link between the series' central killings.</p>
+        <div class="show-tags"><span class="tag">Lead Detective</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DCS Ian St Clair</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Lead</div>
+        <h3 class="show-title">Lesley Manville</h3>
+        <p class="show-desc">Julie Jackson &mdash; estranged from her sister Cathy over their divided loyalties during the 1984-85 miners' strike, decades before the series begins.</p>
+        <div class="show-tags"><span class="tag">Ensemble Lead</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Julie Jackson</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Series 1</div>
+        <h3 class="show-title">Robert Glenister</h3>
+        <p class="show-desc">DI Kevin Salisbury &mdash; a Metropolitan Police detective and old rival of St Clair's, whose return to the town raises old tensions.</p>
+        <div class="show-tags"><span class="tag">Detective Inspector</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">DI Kevin Salisbury</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Series 1</div>
+        <h3 class="show-title">Alun Armstrong</h3>
+        <p class="show-desc">Gary Jackson &mdash; a committed former union man and one of the few miners from Ashfield who stayed on the picket line throughout the 1984-85 strike.</p>
+        <div class="show-tags"><span class="tag">Ensemble Cast</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Gary Jackson</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Real History</div>
+        <h3 class="show-title">Rooted in Real Events</h3>
+        <p class="show-desc">Creator James Graham loosely based the series on real murders that shook his hometown of Annesley Woodhouse, Nottinghamshire, using the fictional frame to explore the still-unhealed wounds of the 1984-85 miners' strike.</p>
+        <div class="show-tags"><span class="tag">James Graham</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Creator</span><span class="aside-val">James Graham</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Cast</div>
+        <h3 class="show-title">An Exceptional Ensemble</h3>
+        <p class="show-desc">David Morrissey, Lesley Manville, Robert Glenister, and Alun Armstrong lead a deep supporting cast that has drawn some of the strongest reviews of any British drama in recent years.</p>
+        <div class="show-tags"><span class="tag">Ensemble Cast</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Leads</span><span class="aside-val">Morrissey, Manville</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting as Character</div>
+        <h3 class="show-title">A Divided Mining Community</h3>
+        <p class="show-desc">The former mining village setting is as central to Sherwood as any individual character, with the strike's old fractures shaping who trusts whom decades later.</p>
+        <div class="show-tags"><span class="tag">Nottinghamshire</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">Nottinghamshire mining village</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">Nottinghamshire</h3>
+        <p class="show-desc">Sherwood is set in a fictionalized former mining village standing in for the real Nottinghamshire communities affected by the 1984-85 strike, drawing on writer James Graham's own hometown of Annesley Woodhouse for its inspiration.</p>
+        <div class="show-tags"><span class="tag">Nottinghamshire, England</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">County</span><span class="aside-val">Nottinghamshire</span></div>
+        <div class="aside-row"><span class="aside-key">Inspiration</span><span class="aside-val">Annesley Woodhouse</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Source Material</div>
+        <h3 class="show-title">Is Sherwood based on a true story?</h3>
+        <p class="show-desc">Loosely. Creator James Graham drew on real murders that took place in his hometown of Annesley Woodhouse, Nottinghamshire, using them as inspiration for an otherwise fictional story.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Based On</span><span class="aside-val">Real events, fictionalized</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Status</div>
+        <h3 class="show-title">Is Sherwood coming back for Series 3?</h3>
+        <p class="show-desc">Yes. Series 3 was announced and began filming in early 2026, though no release date has been confirmed yet.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Status</span><span class="aside-val">Filming</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Viewing Order</div>
+        <h3 class="show-title">Do I need to watch Series 1 before Series 2?</h3>
+        <p class="show-desc">Not strictly &mdash; each series tells its own self-contained mystery with a partly new cast &mdash; but Series 1 introduces the town and its history, which deepens Series 2.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Required?</span><span class="aside-val">Not strictly</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Sherwood in the US?</h3>
+        <p class="show-desc">BritBox is Sherwood's home in the US, with both series available to stream.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Primary</span><span class="aside-val">BritBox</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where is Sherwood filmed?</h3>
+        <p class="show-desc">Sherwood is filmed in and around Nottinghamshire, the same region as the real events that inspired it.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">County</span><span class="aside-val">Nottinghamshire</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim,#b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked September 2026. Spot an error or an outdated streaming link? Let us know via the contact page.</p>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Related <em>Guides</em></h2>
+  </div>
   <div class="related-links">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+    <a href="https://britishtvhub.com/shows/unforgotten.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Unforgotten</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Cold cases with the same character-first depth.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="https://britishtvhub.com/shows/broadchurch.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Broadchurch</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Another community torn apart by a single murder.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
     <a href="https://britishtvhub.com/best-british-mystery-shows-2026.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
       <img src="/best-british-mystery-shows-2026-hero.webp" alt="Best British Mystery Shows: 25 to Watch in 2026" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">25 Mysteries to Watch in 2026</div>
         <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Where Sherwood fits among this year's best British mystery shows.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
-    <a href="https://britishtvhub.com/streaming.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/streaming-hero.webp" alt="Where to Watch" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Where to Watch</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
-      </div>
-    </a>
-
-    <a href="https://britishtvhub.com/shows-index.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
-      <img src="/shows-index-hero.webp" alt="Browse All Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
-      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Browse All Shows</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Every British mystery and drama on the site, organized by genre and platform.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
