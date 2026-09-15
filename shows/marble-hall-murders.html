@@ -128,6 +128,13 @@ gtag('config', 'G-P1L8CVNKS6');
     .similar-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
     .similar-name { font-family: 'Playfair Display', serif; font-size: 17px; color: #f0e8d4; margin-bottom: 5px; }
     .similar-where { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #d4b47a; }
+    .cast-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 12px; }
+    .cast-card { background: #363f58; border: 1px solid rgba(201,169,110,0.2); border-radius: 12px; padding: 18px 20px; transition: transform .2s ease, box-shadow .2s ease; }
+    .cast-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); }
+    .cast-name { font-family: 'Playfair Display', serif; font-size: 16.5px; color: #f0e8d4; margin: 0 0 4px; }
+    .cast-actor { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 0.5px; color: var(--gold,#c9a96e); margin: 0 0 8px; }
+    .cast-seen { font-family: 'Raleway', sans-serif; font-size: 11.5px; color: var(--text-muted,#9090a8); margin: 0 0 10px; }
+    .cast-desc { font-family: 'Crimson Text', serif; font-size: 14.5px; line-height: 1.55; color: #d8d4c8; margin: 0; }
 
     .related-links { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
     .related-link { font-family: 'Raleway', sans-serif; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #e0d4b8; border: 1px solid #5a6885; padding: 9px 16px; border-radius: 2px; }
@@ -640,6 +647,82 @@ document.addEventListener('click', function(e){
 
   <p class="section-label">About the show</p>
   <p class="show-description" style="font-size:16px;">Marble Hall Murders is the third and final installment of Anthony Horowitz's Susan Ryeland series, following Magpie Murders (2022) and Moonflower Murders (2024). Like its predecessors, it follows Horowitz's signature format: a present-day murder investigation that mirrors the plot of a fictional detective novel within the story. The TV adaptation relocates the fictional Atticus Pünd mystery to 1955 Corfu, a change from the South of France setting used in Horowitz's original novel. Lesley Manville and Tim McMullan return as Susan Ryeland and Atticus Pünd, joined by Patricia Hodge, Mark Bonnar, Jamie Blackley, and Zubin Varla.</p>
+
+  <hr class="divider">
+
+  <p class="section-label">Meet the Cast</p>
+  <p class="show-description" style="font-size:15px;margin-bottom:20px;">Many of the actors play dual roles — one in Susan Ryeland's present-day world, one in the Atticus Pünd novel she's editing.</p>
+  <div class="cast-grid">
+    <div class="cast-card">
+      <p class="cast-name">Susan Ryeland</p>
+      <p class="cast-actor">Played by Lesley Manville</p>
+      <p class="cast-seen">Seen in: World on Fire, Phantom Thread, The Crown</p>
+      <p class="cast-desc">Susan is back in London editing a new Atticus Pünd manuscript, and finds herself drawn into a case that echoes one from her own past.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Atticus Pünd</p>
+      <p class="cast-actor">Played by Tim McMullan</p>
+      <p class="cast-seen">Seen in: Foyle's War, King Charles III, The Crown</p>
+      <p class="cast-desc">The famed detective travels to Corfu in the novel-within-the-show, hoping to reconnect with his family roots.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Eliot Crace</p>
+      <p class="cast-actor">Played by Jamie Blackley</p>
+      <p class="cast-seen">Seen in: Outrageous, The Last Kingdom, Endeavour</p>
+      <p class="cast-desc">Miriam Crace's grandson and an aspiring writer, working with Susan on the Pünd continuation novel.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Miriam Crace / Lady Margaret Chalfont</p>
+      <p class="cast-actor">Played by Patricia Hodge</p>
+      <p class="cast-seen">Seen in: All Creatures Great and Small, Roadkill, A Very English Scandal</p>
+      <p class="cast-desc">Hodge plays a matriarch in both timelines: beloved children's author Miriam Crace in the present day, and the kinder Lady Margaret Chalfont within the novel.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Edward Crace / Elmer Waysmith</p>
+      <p class="cast-actor">Played by Mark Bonnar</p>
+      <p class="cast-seen">Seen in: Guilt, World on Fire, Unforgotten, Line of Duty</p>
+      <p class="cast-desc">Bonnar plays Miriam's mild-mannered son Edward in the present day, and antiques dealer Elmer Waysmith within the novel.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Roland Crace / Robert Waysmith</p>
+      <p class="cast-actor">Played by Harry Lloyd</p>
+      <p class="cast-seen">Seen in: Game of Thrones, Slow Horses, Great Expectations (2011)</p>
+      <p class="cast-desc">Lloyd is Miriam's grandson and PR manager for the family's publishing empire in the present day, and Lady Chalfont's stepson within the novel.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Jonathan Crace / Jeffrey Chalfont</p>
+      <p class="cast-actor">Played by Rupert Penry-Jones</p>
+      <p class="cast-seen">Seen in: Silk, Persuasion, MI-5</p>
+      <p class="cast-desc">Penry-Jones plays the heir apparent in both stories: a corporate figure overseeing the Crace estate in the present, and an earl heir within the novel.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Frederick Turner / Achilles Vassilikos</p>
+      <p class="cast-actor">Played by Zubin Varla</p>
+      <p class="cast-seen">Seen in: Andor, Hostage, Little Dorrit</p>
+      <p class="cast-desc">Varla is Miriam's adopted son, who manages Marble Hall, in the present day, and a police lieutenant within the novel's Corfu-set investigation.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Elaine Clover</p>
+      <p class="cast-actor">Played by Amelia Bullmore</p>
+      <p class="cast-seen">Seen in: Happy Valley, Gentleman Jack, Sherlock</p>
+      <p class="cast-desc">The wife of Susan's would-be murderer from Magpie Murders, who reaches out to Susan with information about Eliot Crace.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">DI Ian Blakeney</p>
+      <p class="cast-actor">Played by Danny Sapani</p>
+      <p class="cast-seen">Seen in: Killing Eve, The Diplomat, Harlots</p>
+      <p class="cast-desc">A calm, capable detective investigating the present-day case — with Susan herself among his suspects.</p>
+    </div>
+    <div class="cast-card">
+      <p class="cast-name">Katie Williams</p>
+      <p class="cast-actor">Played by Claire Rushbrook</p>
+      <p class="cast-seen">Seen in: Home Fires, Rivals, A Very Royal Scandal</p>
+      <p class="cast-desc">Susan's sister, navigating a new relationship after her divorce.</p>
+    </div>
+  </div>
+  <p style="text-align:center;margin:-4px 0 24px;">
+    <a href="https://www.pbs.org/wgbh/masterpiece/specialfeatures/marble-hall-murders-characters/" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:12px;color:var(--gold-light,#dab870);">Full cast guide on PBS Masterpiece &rarr;</a>
+  </p>
 
   <hr class="divider">
 
