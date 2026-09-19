@@ -17,6 +17,11 @@
       "permanent": true
     },
     {
+      "source": "/essentials-gifts.html",
+      "destination": "/holiday-gift-guide.html",
+      "permanent": true
+    },
+    {
       "source": "/beginners.html",
       "destination": "/cozy.html",
       "permanent": true
