@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1 || href.indexOf('c984b526') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Ghost Story for Halloween: Britain's Christmas Ghost Tradition | British TV Hub</title>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/ghost-story-for-halloween.html">
+<meta property="og:title" content="A Ghost Story for Halloween | British TV Hub">
+<meta property="og:description" content="Britain has been telling ghost stories on TV for over 50 years — just not at Halloween. The real history of the BBC's 'A Ghost Story for Christmas' tradition, borrowed for October.">
+<meta property="og:image" content="https://britishtvhub.com/ghost-story-for-halloween-hero.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Ghost Story for Halloween | British TV Hub">
+<meta name="twitter:description" content="Britain has been telling ghost stories on TV for over 50 years — just not at Halloween. The real history of the BBC's 'A Ghost Story for Christmas' tradition, borrowed for October.">
+<meta name="twitter:image" content="https://britishtvhub.com/ghost-story-for-halloween-hero.webp">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Long before Halloween marathons, the BBC had 'A Ghost Story for Christmas' — antiquarian tales by M.R. James, revived by Mark Gatiss. The true history, the full list, and where to watch in the US.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is 'A Ghost Story for Christmas' actually a Halloween tradition?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — it's a real BBC Christmas tradition dating back to 1971, built on M.R. James's own habit of reading his ghost stories aloud at Christmastime at King's College, Cambridge. British TV Hub is simply borrowing it for October, since the tone — slow-building dread, no gore — suits Halloween viewing just as well." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who was M.R. James?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Montague Rhodes James (1862–1936) was a medieval scholar and Provost of King's College, Cambridge, and later of Eton. He wrote antiquarian ghost stories in his spare time, and few writers have shaped the genre more profoundly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I watch 'A Ghost Story for Christmas' in the US?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Selected titles have appeared on BritBox in the US. Which entries are currently available can vary, so check BritBox directly for the current selection." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between the original run and the Mark Gatiss revival?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The original run (1971–1978) was made by the BBC under producer-director Lawrence Gordon Clark. The strand returned intermittently before becoming a more regular Christmas fixture under Mark Gatiss, who has led it since 2013, mostly adapting M.R. James but also drawing on other writers." }
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+
+.story-card {
+  background: #363f58;
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 12px;
+  padding: 24px 26px;
+  margin-bottom: 18px;
+}
+.story-year {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #1a2135;
+  background: var(--gold);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.story-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--cream);
+  margin: 0 0 6px;
+}
+.story-meta {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted, #9090a8);
+  margin-bottom: 10px;
+}
+.story-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin: 0;
+}
+</style>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2630840');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+<body>
+
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here.html">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <a class="nlink" href="/season-preview.html">Season Preview</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/books">Literary Adaptations</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Collections</div>
+            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
+            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
+            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/the-cozy-collection.html">The Cozy Collection</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/collections.html">Browse All</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Browse All</a>
+            <a href="/this-week.html">This Week in British TV</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
+            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Play &amp; Connect</div>
+            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
+            <a href="/gift-ideas.html">Gift Ideas</a>
+            <a href="/gift-guide-hub.html">All Gift Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="/seasonal-collections.html">Seasonal Collections</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">A Ghost Story for Halloween</span>
+  </div>
+</div>
+
+<div style="position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window with old books on the sill" style="position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.95);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 38%,rgba(26,35,50,0.78) 58%,rgba(26,35,50,0.15) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:640px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;">A British TV Hub Feature</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">A Ghost Story <em style="font-style:italic;color:var(--gold-light);">for Halloween</em></h1>
+    <p class="hero-intro">For over fifty years, the BBC has told Britain's best ghost stories at Christmas &mdash; antiquarian tales of cursed relics and things that shouldn't be dug up, read first by candlelight at Cambridge. It's a genuinely eerie tradition, just aimed at the wrong holiday. Here's its real history, borrowed for October.</p>
+    <a href="#origins" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:12px 24px;border-radius:2px;text-decoration:none;">Meet the Tradition &rarr;</a>
+  </div>
+</div>
+
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <span class="jump-label">Jump to</span>
+    <a href="#origins">The Origins</a>
+    <a href="#classic-run">The Classic Run</a>
+    <a href="#revival">The Gatiss Revival</a>
+    <a href="#where-to-watch">Where to Watch</a>
+    <a href="#why-halloween">Why Halloween</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <p style="font-family:'Montserrat',sans-serif;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin:24px 0 0;">Researched and verified by British TV Hub &middot; Streaming availability checked September 2026</p>
+
+  <div class="section-header" id="origins">
+    <h2>The Cambridge Don Behind <em>the Tradition</em></h2>
+    <p>Few writers have shaped the British antiquarian ghost story more profoundly than one Cambridge medievalist with an unusual Christmastime habit.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-title">Montague Rhodes James (1862&ndash;1936)</div>
+    <div class="story-meta">Medieval scholar &middot; Provost of King's College, Cambridge (1905&ndash;1918) &middot; later Provost of Eton (1918&ndash;1936)</div>
+    <p class="story-desc">By day, M.R. James was one of the great medievalists of his era, an expert in old manuscripts and cathedral libraries. In his spare time, he wrote ghost stories &mdash; and read them aloud to undergraduates and friends at Christmastime in his rooms at King's College. His tales follow a familiar shape: a bookish, rational man &mdash; a scholar, an antiquarian, a collector &mdash; disturbs something old and half-forgotten, and it disturbs him back. No blood, no monsters in the usual sense; just dread that builds, quietly and precisely, until it doesn't. Few writers have shaped the British antiquarian ghost story more profoundly, and generations of writers, including the ones behind this BBC tradition, have been adapting his method ever since.</p>
+  </div>
+
+  <div class="section-header" id="classic-run" style="margin-top:4rem;">
+    <h2>The Classic Run <em>(1971&ndash;1978)</em></h2>
+    <p>The BBC's first attempt at bringing James to the screen, and the run that gave the strand its name and its template.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1968 &middot; The Precursor</div>
+    <div class="story-title">Whistle and I'll Come to You</div>
+    <div class="story-meta">Director: Jonathan Miller &middot; Starring Michael Hordern &middot; Based on the M.R. James story "Oh, Whistle, and I'll Come to You, My Lad"</div>
+    <p class="story-desc">A fussy, rationalist professor finds an old whistle on a Suffolk beach and blows it, with consequences he refuses to believe are supernatural until it's too late. Broadcast three years before the official strand began, it's usually cited as the film that proved James could work brilliantly on screen.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1971</div>
+    <div class="story-title">The Stalls of Barchester</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">The first official "A Ghost Story for Christmas," and the one that set the template: an archdeacon, a cathedral close, and carved wooden stalls that turn out to remember exactly how they were made.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1972</div>
+    <div class="story-title">A Warning to the Curious</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">An amateur archaeologist digs up one of three buried Anglo-Saxon crowns said to protect England from invasion &mdash; and finds out why the other two are still in the ground. Widely regarded as one of the strongest entries in the entire run.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1973</div>
+    <div class="story-title">Lost Hearts</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A young orphan comes to live with his elderly cousin in a remote country house, unaware of the alchemical experiments &mdash; and the previous wards &mdash; that came before him.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1974</div>
+    <div class="story-title">The Treasure of Abbot Thomas</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A clergyman follows a coded trail of stained-glass clues left by a medieval abbot, convinced he's about to find buried gold rather than whatever the abbot actually left behind to guard it.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1975</div>
+    <div class="story-title">The Ash-tree</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A new squire inherits an ancestral hall and the ash tree just outside his bedroom window &mdash; the same tree implicated in his ancestor's role in a 17th-century witch trial.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1976</div>
+    <div class="story-title">The Signalman</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Writer: Andrew Davies &middot; Based on the Charles Dickens story of the same name</div>
+    <p class="story-desc">A break from James: a railway signalman is haunted by a spectral warning before each disaster on his stretch of line, and can't convince anyone &mdash; least of all himself &mdash; what it means.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1977</div>
+    <div class="story-title">Stigma</div>
+    <div class="story-meta">Director: Lawrence Gordon Clark &middot; Writer: Clive Exton &middot; Original story</div>
+    <p class="story-desc">A contemporary, non-James entry: a family clears a standing stone from their garden and disturbs whatever was buried beneath it, with the strand's most visceral consequences yet.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">1978</div>
+    <div class="story-title">The Ice House</div>
+    <div class="story-meta">Director: Derek Lister &middot; Writer: John Bowen &middot; Original story</div>
+    <p class="story-desc">A health-spa guest becomes fixated on a strange couple and the ice house on the grounds in an unusually oblique, dreamlike finale to the original run.</p>
+  </div>
+
+  <div class="section-header" id="revival" style="margin-top:4rem;">
+    <h2>The Mark Gatiss <em>Revival</em></h2>
+    <p>Decades later, the co-creator of Sherlock and Dracula brought the strand back &mdash; and has been quietly keeping it alive ever since.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2005 &amp; 2006</div>
+    <div class="story-title">A View from a Hill &middot; Number 13</div>
+    <div class="story-meta">The BBC's first attempts to revive the strand, three decades after it ended</div>
+    <p class="story-desc">Two standalone M.R. James adaptations that tested whether audiences still had an appetite for the format. They did &mdash; it just took Mark Gatiss, a lifelong James devotee, to make the revival stick.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2010</div>
+    <div class="story-title">Whistle and I'll Come to You (remake)</div>
+    <div class="story-meta">Starring John Hurt &middot; A new adaptation of the same M.R. James story as the 1968 original</div>
+    <p class="story-desc">A looser, more emotionally raw take on the 1968 classic, built around John Hurt's performance as a man unraveling after his wife's decline into dementia &mdash; with something else in the house besides.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2013</div>
+    <div class="story-title">The Tractate Middoth</div>
+    <div class="story-meta">Written and directed by Mark Gatiss &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">Gatiss's first outing as writer-director for the strand: a librarian, a vindictive will, and a very particular book that a dead man does not want found.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2018</div>
+    <div class="story-title">The Dead Room</div>
+    <div class="story-meta">Written and directed by Mark Gatiss &middot; Starring Simon Callow &middot; Original story</div>
+    <p class="story-desc">Gatiss's first original screenplay for the strand: a veteran radio horror host records one more Christmas Eve broadcast in a studio with a genuinely unsettling history.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2019</div>
+    <div class="story-title">Martin's Close</div>
+    <div class="story-meta">Written and directed by Mark Gatiss &middot; Starring Peter Capaldi &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A 17th-century murder trial, told partly as courtroom drama, in which the chief witness against the accused may not entirely be among the living.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2021</div>
+    <div class="story-title">The Mezzotint</div>
+    <div class="story-meta">Adapted by Mark Gatiss &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A museum curator acquires an unremarkable engraving of a country house &mdash; except the picture keeps changing, one figure at a time, getting closer.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2022</div>
+    <div class="story-title">Count Magnus</div>
+    <div class="story-meta">Adapted by Mark Gatiss &middot; Based on the M.R. James story of the same name</div>
+    <p class="story-desc">A travel writer researching a Swedish nobleman's tomb learns, too late, exactly what Count Magnus brought back from his "Black Pilgrimage."</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2023</div>
+    <div class="story-title">Lot No. 249</div>
+    <div class="story-meta">Adapted by Mark Gatiss &middot; Starring Kit Harington and Freddie Fox &middot; Based on the story by Arthur Conan Doyle</div>
+    <p class="story-desc">Gatiss turns to Arthur Conan Doyle for this wonderfully macabre Oxford tale of Egyptology, rivalry, and a reanimated mummy.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2024</div>
+    <div class="story-title">Woman of Stone</div>
+    <div class="story-meta">Written and directed by Mark Gatiss &middot; Based on the E. Nesbit story "Man-Size in Marble"</div>
+    <p class="story-desc">Gatiss looks past James again for a rare female-led entry: a newlywed couple in a country cottage learn what the local legend about two marble knights actually means.</p>
+  </div>
+
+  <div class="story-card">
+    <div class="story-year">2025</div>
+    <div class="story-title">The Room in the Tower</div>
+    <div class="story-meta">Written and directed by Mark Gatiss &middot; Starring Tobias Menzies and Joanna Lumley &middot; Based on the E.F. Benson story of the same name</div>
+    <p class="story-desc">The strand's most recent entry: a recurring nightmare about a room that shouldn't exist turns out to be a warning, adapted from another giant of the classic British ghost story alongside James.</p>
+  </div>
+
+  <div class="section-header" id="where-to-watch" style="margin-top:4rem;">
+    <h2>Where to <em>Watch</em></h2>
+    <p>Selected titles from the anthology have appeared on BritBox. Availability can vary by installment, so check current listings before you commit an evening to a specific title.</p>
+  </div>
+
+  <div style="max-width:760px;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:28px 30px;margin-bottom:2rem;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin:0 0 10px;">BritBox</div>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.7;margin:0 0 18px;">Selected "A Ghost Story for Christmas" titles have appeared on BritBox. Which ones are currently streaming can change, so check BritBox directly for the current selection.</p>
+    <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:12px 24px;border-radius:2px;text-decoration:none;">Check BritBox &rarr;</a>
+  </div>
+
+  <div class="section-header" id="why-halloween" style="margin-top:4rem;">
+    <h2>Why a <em>Christmas</em> Tradition Works for Halloween</h2>
+  </div>
+  <div style="max-width:760px;margin:0 0 2.5rem;">
+    <p style="font-size:1.05rem;color:var(--text-light);line-height:1.75;margin:0 0 1.2rem;">There's nothing to correct here &mdash; this genuinely is a Christmas tradition, tied to a very specific Victorian habit of telling ghost stories around the fire in the depths of winter. Dickens leaned on the same custom for A Christmas Carol.</p>
+    <p style="font-size:1.05rem;color:var(--text-light);line-height:1.75;margin:0;">But the tone travels. These aren't jump-scare horror &mdash; they're slow, atmospheric, and built around the very British fear of disturbing something that should have been left alone. That's a mood October understands just as well as December, and it's exactly the kind of eerie-without-gore viewing this site tends to recommend anyway. Consider it borrowed, not reinvented.</p>
+  </div>
+
+  <div class="section-header" id="faq">
+    <h2>What Readers <em>Ask Most</em></h2>
+  </div>
+  <div style="max-width:760px;margin:0 0 2rem;border-top:1px solid rgba(201,168,76,0.15);">
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Is "A Ghost Story for Christmas" actually a Halloween tradition?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">No &mdash; it's a real BBC Christmas tradition dating back to 1971, built on M.R. James's own habit of reading his ghost stories aloud at Christmastime at King's College, Cambridge. British TV Hub is simply borrowing it for October, since the tone &mdash; slow-building dread, no gore &mdash; suits Halloween viewing just as well.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Who was M.R. James?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">Montague Rhodes James (1862&ndash;1936) was a medieval scholar and Provost of King's College, Cambridge, and later of Eton. He wrote antiquarian ghost stories in his spare time, and few writers have shaped the genre more profoundly &mdash; see <a href="#origins" style="color:var(--gold);">The Origins</a> above.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Where can I watch these in the US?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;"><a href="#where-to-watch" style="color:var(--gold);">BritBox</a> carries the anthology, though which individual entries are available can rotate.</p>
+    </div>
+    <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">What's the difference between the original run and the Mark Gatiss revival?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;">The <a href="#classic-run" style="color:var(--gold);">original run</a> (1971&ndash;1978) was made by the BBC under producer-director Lawrence Gordon Clark and wasn't exclusively M.R. James even then &mdash; it closed with adaptations of Charles Dickens and two original screenplays. The strand returned intermittently before becoming a more regular Christmas fixture under Mark Gatiss, who has written and directed every <a href="#revival" style="color:var(--gold);">revival</a> entry since 2013, adapting James most often but also Arthur Conan Doyle, E. Nesbit, and E.F. Benson.</p>
+    </div>
+    <div style="padding:22px 0;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Where should I start?</h3>
+      <p style="font-size:16px;color:var(--text-light);line-height:1.7;margin:0;"><a href="#classic-run" style="color:var(--gold);">A Warning to the Curious</a> (1972) is the most frequently cited standout from the original run. For the revival, <a href="#revival" style="color:var(--gold);">Martin's Close</a> (2019), with Peter Capaldi, is a strong, self-contained entry point.</p>
+    </div>
+  </div>
+
+  <hr class="section-divider" style="border:none;border-top:1px solid rgba(201,168,76,0.15);margin:2rem 0;">
+
+  <div class="section-header">
+    <h2>Explore <em>More</em></h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:0 0 2rem;">
+    <a href="/cozy-autumn-mysteries.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/cozy-autumn-hero.webp" alt="Cozy Autumn Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Cozy Autumn Mysteries</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">For when you want autumn atmosphere without the dread.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/seasonal-collections.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/seasonal-collections-hero.webp" alt="Seasonal Collections" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Seasonal Collections</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Every seasonal guide on the site, in one place.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/quizzes-and-games.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/things-taught-me-hero.webp" alt="Games and Quizzes" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Games &amp; Quizzes</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted);line-height:1.55;margin:0 0 16px;">Match Me a Mystery, British Mystery Bingo, and more.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Play &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <p style="font-family:'Montserrat',sans-serif;font-size:9px;letter-spacing:0.08em;color:var(--text-muted);text-align:center;padding:2rem 0 1rem;line-height:1.8;">
+    Affiliate disclosure: British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. The BritBox link on this page is an affiliate link. This never affects the recommendations &mdash; these are genuine editorial favourites.
+  </p>
+
+</div>
+
+
+<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;">
+  <div style="font-family:'Raleway',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#e57373;margin-bottom:12px;">Join The Conversation</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Join the British TV Hub Community</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:560px;margin-left:auto;margin-right:auto;">Thousands of British TV fans trading recommendations, debating favourite episodes, and spotting new premieres together.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:900px;margin:0 auto;text-align:left;">
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Dramas and Mysteries</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Classics & New Favourites &mdash; the main page. Thousands of followers.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Ultimate British Bookshelf</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">The novels behind your favourite British dramas, plus hidden gems and new releases.</p>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #c9a96e;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Hub Members &#9733;</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Exclusive recommendations, early updates, and subscriber-only extras for British TV Hub members.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Become a Member &rarr;</a>
+      <p style="margin:10px 0 0;font-family:'Raleway',sans-serif;font-size:14px;color:#c8c0a8;">Membership is hosted on Facebook. Tap above to join in seconds.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
+  <div style="max-width:720px;margin:0 auto;">
+    <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
+
+    <div style="border-top:1px solid #3d4a60;"></div>
+
+    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps &rarr;</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share &rarr; Add to Home Screen</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu &rarr; Install app</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut &rarr;</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu &rarr; star icon</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Best British Police Procedurals</a>
+      <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Cozy British Mysteries</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What to Watch Next</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+      <a href="https://www.youtube.com/@TheCotswoldSnug" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; The Cotswold Snug (YouTube)</a>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('.story-card');
+    const textSections = document.querySelectorAll('section, article, .content-section');
+
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html>
