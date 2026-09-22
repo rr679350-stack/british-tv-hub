@@ -29,6 +29,9 @@
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 700; color: var(--cream); line-height: 1.15; max-width: 720px; margin-bottom: 1.5rem; }
   .hero h1 em { font-style: italic; color: var(--gold-light); }
   .hero-intro { font-size: 1.2rem; color: var(--text-light); max-width: 640px; line-height: 1.75; margin-bottom: 2rem; }
+  .hero-intro a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 2px; }
+  .hero-intro a:visited { color: var(--gold-light); }
+  .hero-intro a:hover { color: var(--gold); }
   .hero-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); display: flex; gap: 1.5rem; flex-wrap: wrap; }
   .hero-meta span { color: var(--gold-muted); }
   .jump-nav { background: var(--navy-light); border-top: 1px solid rgba(201,168,76,0.15); border-bottom: 1px solid rgba(201,168,76,0.15); padding: 1.25rem 1.5rem; }
