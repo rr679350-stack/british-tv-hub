@@ -280,6 +280,8 @@ gtag('config', 'G-P1L8CVNKS6');
   }
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
 .site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
+@media (max-width:760px){ .hgg-footer-grid{ grid-template-columns:1fr 1fr !important; padding:30px 20px !important; } }
+@media (max-width:460px){ .hgg-footer-grid{ grid-template-columns:1fr !important; } }
 </style>
 <style>
 nav { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: auto; position: sticky; top: 0; z-index: 100; }
@@ -739,6 +741,12 @@ document.addEventListener('click', function(e){
       <p>Just finished a favourite? Find your next watch matched to Midsomer Murders, Line of Duty, and more.</p>
       <a class="path-btn" href="/shows-like.html">Find What's Next &rarr;</a>
     </div>
+    <div class="path-card">
+      <svg viewBox="0 0 32 32" style="width:30px;height:30px;margin-bottom:4px;" aria-hidden="true"><rect x="5" y="12" width="22" height="15" rx="1.5" fill="none" stroke="#c9a96e" stroke-width="1.5"/><rect x="4" y="9" width="24" height="4" rx="1" fill="none" stroke="#c9a96e" stroke-width="1.5"/><path d="M16 9v18" fill="none" stroke="#c9a96e" stroke-width="1.5"/><path d="M16 9c-1.5-3-5.5-4-6-1.5S13 9 16 9Zm0 0c1.5-3 5.5-4 6-1.5S19 9 16 9Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      <h3>I'm Shopping for a Fan</h3>
+      <p>Gifts for the British TV lover on your list, from cozy mugs and candles to books and box sets, sorted by season and budget.</p>
+      <a class="path-btn" href="/gift-guide-hub.html">See Gift Guides &rarr;</a>
+    </div>
   </div>
 </div>
 
@@ -822,7 +830,7 @@ document.addEventListener('click', function(e){
     <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
   </div>
 
-  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+  <div class="hgg-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
     <div>
       <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
