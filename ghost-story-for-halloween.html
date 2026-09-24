@@ -253,6 +253,44 @@ gtag('config', 'G-P1L8CVNKS6');
   line-height: 1.7;
   margin: 0;
 }
+
+/* === SPOOKY SEASON TOUCHES === */
+.spooky-hero{ isolation:isolate; }
+.spk-layer{ position:absolute; inset:0; pointer-events:none; z-index:3; overflow:hidden; }
+.spk-web{ position:absolute; width:240px; height:240px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20240%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C228%2C236%2C0.55%29%22%20stroke-width%3D%221.1%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L239.9%208.4%22/%3E%3Cpath%20d%3D%22M0%200L232.6%2059.2%22/%3E%3Cpath%20d%3D%22M0%200L214.7%20107.4%22/%3E%3Cpath%20d%3D%22M0%200L186.9%20150.6%22/%3E%3Cpath%20d%3D%22M0%200L150.6%20186.9%22/%3E%3Cpath%20d%3D%22M0%200L107.4%20214.7%22/%3E%3Cpath%20d%3D%22M0%200L59.2%20232.6%22/%3E%3Cpath%20d%3D%22M0%200L8.4%20239.9%22/%3E%3Cpath%20d%3D%22M26.8%200.9Q22.9%203.3%2026.0%206.6Q21.6%208.1%2024.0%2012.0Q19.4%2012.5%2020.9%2016.8Q16.3%2016.3%2016.8%2020.9Q12.5%2019.4%2012.0%2024.0Q8.1%2021.6%206.6%2026.0Q3.3%2022.9%200.9%2026.8%22/%3E%3Cpath%20d%3D%22M56.7%202.0Q48.3%206.9%2055.0%2014.0Q45.7%2017.0%2050.8%2025.4Q41.1%2026.4%2044.2%2035.6Q34.5%2034.5%2035.6%2044.2Q26.4%2041.1%2025.4%2050.8Q17.0%2045.7%2014.0%2055.0Q6.9%2048.3%202.0%2056.7%22/%3E%3Cpath%20d%3D%22M87.9%203.1Q74.9%2010.7%2085.2%2021.7Q70.9%2026.4%2078.7%2039.3Q63.6%2040.9%2068.5%2055.2Q53.5%2053.5%2055.2%2068.5Q40.9%2063.6%2039.3%2078.7Q26.4%2070.9%2021.7%2085.2Q10.7%2074.9%203.1%2087.9%22/%3E%3Cpath%20d%3D%22M119.9%204.2Q102.2%2014.6%20116.3%2029.6Q96.7%2036.0%20107.3%2053.7Q86.8%2055.8%2093.4%2075.3Q73.0%2073.0%2075.3%2093.4Q55.8%2086.8%2053.7%20107.3Q36.0%2096.7%2029.6%20116.3Q14.6%20102.2%204.2%20119.9%22/%3E%3Cpath%20d%3D%22M152.6%205.3Q130.0%2018.6%20148.0%2037.7Q123.1%2045.8%20136.6%2068.3Q110.5%2071.0%20118.9%2095.8Q92.9%2092.9%2095.8%20118.9Q71.0%20110.5%2068.3%20136.6Q45.8%20123.1%2037.7%20148.0Q18.6%20130.0%205.3%20152.6%22/%3E%3Cpath%20d%3D%22M185.8%206.5Q158.3%2022.6%20180.2%2045.9Q149.8%2055.8%20166.3%2083.2Q134.5%2086.4%20144.8%20116.6Q113.1%20113.1%20116.6%20144.8Q86.4%20134.5%2083.2%20166.3Q55.8%20149.8%2045.9%20180.2Q22.6%20158.3%206.5%20185.8%22/%3E%3Cpath%20d%3D%22M219.5%207.7Q187.0%2026.8%20212.8%2054.2Q177.0%2065.9%20196.4%2098.2Q158.9%20102.1%20171.0%20137.8Q133.5%20133.5%20137.8%20171.0Q102.1%20158.9%2098.2%20196.4Q65.9%20177.0%2054.2%20212.8Q26.8%20187.0%207.7%20219.5%22/%3E%3Cpath%20d%3D%22M148.8%2043.2q18%2030%206%2058%22%20opacity%3D%220.6%22/%3E%3C/svg%3E") no-repeat; background-size:contain; opacity:0.55; }
+.spk-web-tl{ top:0; left:0; width:170px; height:170px; opacity:0.38; }
+.spk-web-tr{ top:0; right:0; transform:scaleX(-1); width:200px; height:200px; opacity:0.65; }
+.spk-spider{ position:absolute; top:0; right:30%; width:48px; display:flex; flex-direction:column; align-items:center; transform-origin:top center; animation:spk-drop 2.6s cubic-bezier(.3,1.4,.5,1) .6s both, spk-sway 6s ease-in-out 3.2s infinite; }
+.spk-thread{ width:1px; height:150px; background:linear-gradient(rgba(226,228,236,0.15), rgba(226,228,236,0.6)); }
+.spk-spider-body{ width:48px; height:48px; margin-top:-8px; filter:drop-shadow(0 3px 6px rgba(0,0,0,0.6)); }
+@keyframes spk-drop{ 0%{ transform:translateY(-190px); } 100%{ transform:translateY(0); } }
+@keyframes spk-sway{ 0%,100%{ transform:rotate(-3deg); } 50%{ transform:rotate(3deg) translateY(6px); } }
+.spk-bat{ position:absolute; left:-80px; width:44px; opacity:0; animation:spk-fly 19s linear infinite; }
+.spk-bat svg{ width:100%; height:auto; display:block; filter:drop-shadow(0 0 2px rgba(243,237,226,0.25)); }
+.spk-bat .spk-wing{ transform-origin:32px 12px; animation:spk-flap .28s ease-in-out infinite alternate; }
+.spk-bat.b1{ top:5%; animation-delay:2s; }
+.spk-bat.b2{ top:9%; width:30px; animation-delay:4.5s; animation-duration:23s; }
+.spk-bat.b3{ top:3%; width:24px; animation-delay:11s; animation-duration:21s; }
+@keyframes spk-fly{ 0%{ transform:translate(0,0); opacity:0; } 4%{ opacity:.9; } 25%{ transform:translate(30vw,-18px); } 50%{ transform:translate(60vw,14px); } 75%{ transform:translate(90vw,-10px); opacity:.9; } 80%{ opacity:0; } 100%{ transform:translate(115vw,0); opacity:0; } }
+@keyframes spk-flap{ from{ transform:scaleY(1); } to{ transform:scaleY(.35); } }
+.spk-fog{ position:absolute; left:-20%; right:-20%; bottom:-30px; height:150px; background:
+  radial-gradient(ellipse 30% 55% at 20% 70%, rgba(200,205,220,0.16), transparent 70%),
+  radial-gradient(ellipse 35% 60% at 55% 80%, rgba(200,205,220,0.13), transparent 70%),
+  radial-gradient(ellipse 28% 50% at 85% 70%, rgba(200,205,220,0.15), transparent 70%);
+  filter:blur(6px); animation:spk-fog 38s ease-in-out infinite alternate; }
+.spk-fog.f2{ bottom:-50px; opacity:.8; animation-duration:52s; animation-direction:alternate-reverse; }
+@keyframes spk-fog{ from{ transform:translateX(-6%); } to{ transform:translateX(6%); } }
+.spooky-card{ position:relative; }
+.spooky-card::after{ content:''; position:absolute; top:0; right:0; width:92px; height:92px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C228%2C236%2C0.9%29%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L119.9%204.2%22/%3E%3Cpath%20d%3D%22M0%200L113.3%2039.5%22/%3E%3Cpath%20d%3D%22M0%200L96.6%2071.2%22/%3E%3Cpath%20d%3D%22M0%200L71.2%2096.6%22/%3E%3Cpath%20d%3D%22M0%200L39.5%20113.3%22/%3E%3Cpath%20d%3D%22M0%200L4.2%20119.9%22/%3E%3Cpath%20d%3D%22M18.7%200.7Q15.8%203.0%2017.6%206.1Q14.2%207.5%2015.0%2011.1Q11.4%2011.4%2011.1%2015.0Q7.5%2014.2%206.1%2017.6Q3.0%2015.8%200.7%2018.7%22/%3E%3Cpath%20d%3D%22M39.4%201.4Q33.4%206.2%2037.3%2013.0Q30.0%2015.8%2031.8%2023.4Q24.0%2024.0%2023.4%2031.8Q15.8%2030.0%2013.0%2037.3Q6.2%2033.4%201.4%2039.4%22/%3E%3Cpath%20d%3D%22M61.1%202.1Q51.7%209.7%2057.8%2020.1Q46.5%2024.5%2049.2%2036.3Q37.2%2037.2%2036.3%2049.2Q24.5%2046.5%2020.1%2057.8Q9.7%2051.7%202.1%2061.1%22/%3E%3Cpath%20d%3D%22M83.4%202.9Q70.5%2013.2%2078.8%2027.4Q63.5%2033.5%2067.2%2049.5Q50.7%2050.7%2049.5%2067.2Q33.5%2063.5%2027.4%2078.8Q13.2%2070.5%202.9%2083.4%22/%3E%3Cpath%20d%3D%22M106.1%203.7Q89.8%2016.8%20100.3%2034.9Q80.8%2042.6%2085.5%2063.0Q64.6%2064.6%2063.0%2085.5Q42.6%2080.8%2034.9%20100.3Q16.8%2089.8%203.7%20106.1%22/%3E%3Cpath%20d%3D%22M74.4%2021.6q18%2030%206%2058%22%20opacity%3D%220.6%22/%3E%3C/svg%3E") no-repeat; background-size:contain; transform:scaleX(-1); opacity:0.22; pointer-events:none; border-top-right-radius:12px; }
+@media (max-width:700px){
+  .spk-web{ width:150px; height:150px; } .spk-web-tl{ width:110px; height:110px; } .spk-web-tr{ width:120px; height:120px; }
+  .spk-spider{ right:3%; width:34px; } .spk-spider-body{ width:34px; height:34px; } .spk-thread{ height:40px; }
+  .spooky-card::after{ width:64px; height:64px; }
+}
+@media (prefers-reduced-motion: reduce){
+  .spk-spider, .spk-fog, .spk-bat .spk-wing{ animation:none !important; }
+  .spk-bat{ display:none; }
+}
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -384,7 +422,22 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<div style="position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+<div class="spooky-hero" style="position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <div class="spk-layer" aria-hidden="true">
+    <div class="spk-fog"></div><div class="spk-fog f2"></div>
+    <div class="spk-web spk-web-tl"></div><div class="spk-web spk-web-tr"></div>
+    <div class="spk-bat b1"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div><div class="spk-bat b2"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div><div class="spk-bat b3"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div>
+    <div class="spk-spider"><div class="spk-thread"></div><svg class="spk-spider-body" viewBox="0 0 60 60" aria-hidden="true"><g stroke="#0c1018" stroke-width="2.4" stroke-linecap="round" fill="none">
+<path d="M26 28 Q14 18 8 22"/><path d="M26 31 Q12 28 5 34"/><path d="M26 34 Q13 38 8 47"/><path d="M27 36 Q19 45 17 55"/>
+<path d="M34 28 Q46 18 52 22"/><path d="M34 31 Q48 28 55 34"/><path d="M34 34 Q47 38 52 47"/><path d="M33 36 Q41 45 43 55"/></g>
+<g stroke="rgba(243,237,226,0.35)" stroke-width="0.8" stroke-linecap="round" fill="none">
+<path d="M26 28 Q14 18 8 22"/><path d="M26 31 Q12 28 5 34"/><path d="M26 34 Q13 38 8 47"/><path d="M27 36 Q19 45 17 55"/>
+<path d="M34 28 Q46 18 52 22"/><path d="M34 31 Q48 28 55 34"/><path d="M34 34 Q47 38 52 47"/><path d="M33 36 Q41 45 43 55"/></g>
+<ellipse cx="30" cy="37" rx="7.5" ry="9" fill="#0c1018" stroke="rgba(243,237,226,0.4)" stroke-width="0.8"/>
+<circle cx="30" cy="26" r="4.8" fill="#0c1018" stroke="rgba(243,237,226,0.4)" stroke-width="0.8"/>
+<circle cx="28.3" cy="25.4" r="0.9" fill="#c9a96e"/><circle cx="31.7" cy="25.4" r="0.9" fill="#c9a96e"/></svg></div>
+  </div>
+
   <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window with old books on the sill" style="position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.95);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 38%,rgba(26,35,50,0.78) 58%,rgba(26,35,50,0.15) 100%);"></div>
   <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:640px;">
@@ -416,7 +469,7 @@ document.addEventListener('click', function(e){
     <p>Few writers have shaped the British antiquarian ghost story more profoundly than one Cambridge medievalist with an unusual Christmastime habit.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-title">Montague Rhodes James (1862&ndash;1936)</div>
     <div class="story-meta">Medieval scholar &middot; Provost of King's College, Cambridge (1905&ndash;1918) &middot; later Provost of Eton (1918&ndash;1936)</div>
     <p class="story-desc">By day, M.R. James was one of the great medievalists of his era, an expert in old manuscripts and cathedral libraries. In his spare time, he wrote ghost stories &mdash; and read them aloud to undergraduates and friends at Christmastime in his rooms at King's College. His tales follow a familiar shape: a bookish, rational man &mdash; a scholar, an antiquarian, a collector &mdash; disturbs something old and half-forgotten, and it disturbs him back. No blood, no monsters in the usual sense; just dread that builds, quietly and precisely, until it doesn't. Few writers have shaped the British antiquarian ghost story more profoundly, and generations of writers, including the ones behind this BBC tradition, have been adapting his method ever since.</p>
@@ -434,7 +487,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">A fussy, rationalist professor finds an old whistle on a Suffolk beach and blows it, with consequences he refuses to believe are supernatural until it's too late. Broadcast three years before the official strand began, it's usually cited as the film that proved James could work brilliantly on screen.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">1971</div>
     <div class="story-title">The Stalls of Barchester</div>
     <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
@@ -448,7 +501,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">An amateur archaeologist digs up one of three buried Anglo-Saxon crowns said to protect England from invasion &mdash; and finds out why the other two are still in the ground. Widely regarded as one of the strongest entries in the entire run.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">1973</div>
     <div class="story-title">Lost Hearts</div>
     <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
@@ -462,7 +515,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">A clergyman follows a coded trail of stained-glass clues left by a medieval abbot, convinced he's about to find buried gold rather than whatever the abbot actually left behind to guard it.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">1975</div>
     <div class="story-title">The Ash-tree</div>
     <div class="story-meta">Director: Lawrence Gordon Clark &middot; Based on the M.R. James story of the same name</div>
@@ -476,7 +529,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">A break from James: a railway signalman is haunted by a spectral warning before each disaster on his stretch of line, and can't convince anyone &mdash; least of all himself &mdash; what it means.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">1977</div>
     <div class="story-title">Stigma</div>
     <div class="story-meta">Director: Lawrence Gordon Clark &middot; Writer: Clive Exton &middot; Original story</div>
@@ -495,7 +548,7 @@ document.addEventListener('click', function(e){
     <p>Decades later, the co-creator of Sherlock and Dracula brought the strand back &mdash; and has been quietly keeping it alive ever since.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">2005 &amp; 2006</div>
     <div class="story-title">A View from a Hill &middot; Number 13</div>
     <div class="story-meta">The BBC's first attempts to revive the strand, three decades after it ended</div>
@@ -509,7 +562,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">A looser, more emotionally raw take on the 1968 classic, built around John Hurt's performance as a man unraveling after his wife's decline into dementia &mdash; with something else in the house besides.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">2013</div>
     <div class="story-title">The Tractate Middoth</div>
     <div class="story-meta">Written and directed by Mark Gatiss &middot; Based on the M.R. James story of the same name</div>
@@ -523,7 +576,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">Gatiss's first original screenplay for the strand: a veteran radio horror host records one more Christmas Eve broadcast in a studio with a genuinely unsettling history.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">2019</div>
     <div class="story-title">Martin's Close</div>
     <div class="story-meta">Written and directed by Mark Gatiss &middot; Starring Peter Capaldi &middot; Based on the M.R. James story of the same name</div>
@@ -537,7 +590,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">A museum curator acquires an unremarkable engraving of a country house &mdash; except the picture keeps changing, one figure at a time, getting closer.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">2022</div>
     <div class="story-title">Count Magnus</div>
     <div class="story-meta">Adapted by Mark Gatiss &middot; Based on the M.R. James story of the same name</div>
@@ -551,7 +604,7 @@ document.addEventListener('click', function(e){
     <p class="story-desc">Gatiss turns to Arthur Conan Doyle for this wonderfully macabre Oxford tale of Egyptology, rivalry, and a reanimated mummy.</p>
   </div>
 
-  <div class="story-card">
+  <div class="story-card spooky-card">
     <div class="story-year">2024</div>
     <div class="story-title">Woman of Stone</div>
     <div class="story-meta">Written and directed by Mark Gatiss &middot; Based on the E. Nesbit story "Man-Size in Marble"</div>
