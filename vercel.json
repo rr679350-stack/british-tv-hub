@@ -55,6 +55,16 @@
       "source": "/start-here",
       "destination": "/start-here.html",
       "permanent": true
+    },
+    {
+      "source": "/gift-hub-batch1/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/gift-hub-batch2/:path*",
+      "destination": "/:path*",
+      "permanent": true
     }
   ],
   "rewrites": [
