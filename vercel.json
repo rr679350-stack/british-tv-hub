@@ -52,6 +52,11 @@
       "permanent": true
     },
     {
+      "source": "/books.html",
+      "destination": "/books",
+      "permanent": true
+    },
+    {
       "source": "/start-here",
       "destination": "/start-here.html",
       "permanent": true

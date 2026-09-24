@@ -3,7 +3,7 @@
   <!-- Homepage (highest priority) -->
   <url>
     <loc>https://britishtvhub.com/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://britishtvhub.com/shows.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://britishtvhub.com/books</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -421,7 +421,19 @@
   </url>
   <url>
     <loc>https://britishtvhub.com/cozy-autumn-mysteries.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/dark-october-night-mysteries.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/ghost-story-for-halloween.html</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -540,12 +552,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://britishtvhub.com/books.html</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://britishtvhub.com/collections.html</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -571,7 +577,7 @@
   </url>
   <url>
     <loc>https://britishtvhub.com/seasonal-collections.html</loc>
-    <lastmod>2026-08-03</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -921,7 +927,7 @@
   </url>
   <url>
     <loc>https://britishtvhub.com/shows/death-valley.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1066,6 +1072,12 @@
   <url>
     <loc>https://britishtvhub.com/shows/trespasses.html</loc>
     <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://britishtvhub.com/shows/cooper-and-fry.html</loc>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
