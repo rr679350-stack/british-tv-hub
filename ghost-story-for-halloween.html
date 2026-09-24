@@ -301,6 +301,15 @@ gtag('config', 'G-P1L8CVNKS6');
     ml('account', '2630840');
 </script>
 <!-- End MailerLite Universal -->
+<style>
+/* === CANDLE GLOW === */
+.cg-glow{ position:absolute; inset:0; z-index:1; pointer-events:none; mix-blend-mode:screen;
+  background:radial-gradient(ellipse 16% 30% at 93% 50%, rgba(255,190,110,0.30), rgba(255,160,80,0.10) 55%, transparent 75%);
+  animation:cg-flicker 3.2s steps(1,end) infinite; }
+@keyframes cg-flicker{ 0%{opacity:.85} 7%{opacity:1} 12%{opacity:.7} 19%{opacity:.95} 26%{opacity:.8} 33%{opacity:1} 41%{opacity:.75} 48%{opacity:.9} 57%{opacity:.68} 63%{opacity:1} 71%{opacity:.82} 79%{opacity:.95} 86%{opacity:.72} 93%{opacity:.9} 100%{opacity:.85} }
+@media (max-width:700px){ .cg-glow{ background:radial-gradient(ellipse 30% 22% at 90% 22%, rgba(255,190,110,0.28), transparent 70%); } }
+@media (prefers-reduced-motion: reduce){ .cg-glow{ animation:none; } }
+</style>
 </head>
 <body>
 
@@ -423,6 +432,7 @@ document.addEventListener('click', function(e){
 </div>
 
 <div class="spooky-hero" style="position:relative;overflow:hidden;min-height:420px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <div class="cg-glow" aria-hidden="true"></div>
   <div class="spk-layer" aria-hidden="true">
     <div class="spk-fog"></div><div class="spk-fog f2"></div>
     <div class="spk-web spk-web-tl"></div><div class="spk-web spk-web-tr"></div>
@@ -438,7 +448,7 @@ document.addEventListener('click', function(e){
 <circle cx="28.3" cy="25.4" r="0.9" fill="#c9a96e"/><circle cx="31.7" cy="25.4" r="0.9" fill="#c9a96e"/></svg></div>
   </div>
 
-  <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window with old books on the sill" style="position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.95);">
+  <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window with old books on the sill" style="position:absolute;right:0;top:0;width:60%;height:100%;object-fit:cover;object-position:right center;filter:brightness(0.95);">
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 38%,rgba(26,35,50,0.78) 58%,rgba(26,35,50,0.15) 100%);"></div>
   <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:640px;">
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-light);margin-bottom:14px;">A British TV Hub Feature</div>
@@ -781,7 +791,7 @@ document.addEventListener('click', function(e){
   <style>.breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'Raleway',sans-serif;font-size:14px !important;letter-spacing:0.6px;}.breadcrumb-item{display:flex;align-items:center;gap:8px;}.breadcrumb-item a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb-item a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb-item.active{color:#f3ede2 !important;font-weight:600;}.breadcrumb-separator{color:rgba(201,168,76,0.7) !important;}.breadcrumb > a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb > a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb > span:not([class]){color:rgba(201,168,76,0.7) !important;}@media (max-width:768px){.breadcrumb{font-size:13px !important;}}@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
   <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
     <div>
-      <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
+      <style>.tm-wrap{position:relative;display:inline-block;margin:20px 0 8px;}.tm-steam{position:absolute;left:11px;top:-20px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
       <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
       <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
