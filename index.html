@@ -1617,27 +1617,37 @@ document.addEventListener('click', function(e){
   </div>
 </a>
 
-<a href="/dark-october-night-mysteries.html" style="position:relative;overflow:hidden;border-bottom:1px solid #3d4a60;min-height:200px;display:flex;align-items:center;text-decoration:none;">
-  <img src="/dark-october-night-hero.webp" alt="A cosy British sitting room on a rainy autumn night, fireplace lit" style="position:absolute;right:0;top:0;width:38%;height:100%;object-fit:cover;object-position:center center;">
-  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 55%,rgba(26,33,53,0.7) 72%,rgba(26,33,53,0.1) 100%);"></div>
-  <div style="position:relative;z-index:2;padding:28px 40px;max-width:640px;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Seasonal Guide &middot; October</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8dfc8;margin:0 0 8px;line-height:1.2;">13 British Mysteries for a Dark October Night</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;line-height:1.6;margin:0 0 14px;">Thirteen picks, from cosy Grantchester to Poirot&rsquo;s &ldquo;Hallowe&rsquo;en Party&rdquo;, ranked from comfort viewing to lights-on territory.</p>
-    <span style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 20px;border-radius:2px;">See the Picks &rarr;</span>
+<style>
+.oct-tile:hover{transform:translateY(-4px);border-color:#c9a96e;}
+@media (max-width:600px){
+  .oct-section{padding:36px 16px !important;}
+  .oct-tile{min-height:300px !important;}
+  .oct-tile h3{font-size:20px !important;}
+}
+</style>
+<div class="oct-section" style="padding:48px 40px;border-bottom:1px solid #3d4a60;">
+  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;text-align:center;margin-bottom:24px;">Seasonal Guides &middot; October</div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+    <a href="/dark-october-night-mysteries.html" class="oct-tile" style="position:relative;display:block;min-height:340px;border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,0.2);text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/dark-october-night-hero.webp" alt="A cosy British sitting room on a rainy autumn night, fireplace lit" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(26,33,53,0.97) 0%, rgba(26,33,53,0.85) 35%, rgba(26,33,53,0.2) 70%, rgba(26,33,53,0) 100%);"></div>
+      <div style="position:absolute;left:0;right:0;bottom:0;padding:28px 28px 30px;z-index:2;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;line-height:1.25;margin:0 0 8px;">13 British Mysteries for a Dark October Night</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;line-height:1.55;margin:0 0 16px;">Ranked from cosy comfort viewing to lights-on territory.</p>
+        <span style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 20px;border-radius:2px;">See the Picks &rarr;</span>
+      </div>
+    </a>
+    <a href="/ghost-story-for-halloween.html" class="oct-tile" style="position:relative;display:block;min-height:340px;border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,0.2);text-decoration:none;transition:transform .2s ease,border-color .2s ease;">
+      <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(26,33,53,0.97) 0%, rgba(26,33,53,0.85) 35%, rgba(26,33,53,0.2) 70%, rgba(26,33,53,0) 100%);"></div>
+      <div style="position:absolute;left:0;right:0;bottom:0;padding:28px 28px 30px;z-index:2;">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;line-height:1.25;margin:0 0 8px;">A Ghost Story for Halloween</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;line-height:1.55;margin:0 0 16px;">The BBC&rsquo;s Christmas ghost story tradition, borrowed for October.</p>
+        <span style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 20px;border-radius:2px;">Read the Guide &rarr;</span>
+      </div>
+    </a>
   </div>
-</a>
-
-<a href="/ghost-story-for-halloween.html" style="position:relative;overflow:hidden;border-bottom:1px solid #3d4a60;min-height:200px;display:flex;align-items:center;text-decoration:none;">
-  <img src="/ghost-story-for-halloween-hero.webp" alt="A moonlit gothic manor house at night, seen through a candlelit window" style="position:absolute;right:0;top:0;width:38%;height:100%;object-fit:cover;object-position:center center;">
-  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 55%,rgba(26,33,53,0.7) 72%,rgba(26,33,53,0.1) 100%);"></div>
-  <div style="position:relative;z-index:2;padding:28px 40px;max-width:640px;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Seasonal Guide &middot; October</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8dfc8;margin:0 0 8px;line-height:1.2;">A Ghost Story for Halloween</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8c0a8;line-height:1.6;margin:0 0 14px;">The BBC&rsquo;s &ldquo;A Ghost Story for Christmas&rdquo; tradition, borrowed for October, with where to watch in the US.</p>
-    <span style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 20px;border-radius:2px;">Read the Guide &rarr;</span>
-  </div>
-</a>
+</div>
 
 <div style="padding:56px 40px;border-bottom:1px solid #3d4a60;">
   <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">Popular Guides</div>
