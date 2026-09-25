@@ -3108,14 +3108,14 @@
     "genre": "Crime Drama",
     "us": [
       {
-        "name": "BritBox",
+        "name": "PBS Masterpiece",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       },
       {
-        "name": "BritBox via Amazon",
+        "name": "PBS Masterpiece via Amazon",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -3126,8 +3126,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-09-25",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/professor-t-2021"
+    ]
   },
   {
     "title": "Unforgotten",
