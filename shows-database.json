@@ -387,7 +387,7 @@
   },
   {
     "title": "Grantchester",
-    "years": "2014–present",
+    "years": "2014–2026",
     "genre": "Cozy Mystery",
     "us": [
       {
@@ -1034,9 +1034,9 @@
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       },
       {
-        "name": "BritBox",
+        "name": "Acorn TV via Amazon",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [],
@@ -1047,8 +1047,9 @@
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
-    "verified": "2026-08-01",
+    "verified": "2026-09-25",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/inspector-george-gently",
       "https://www.justwatch.com/uk/tv-series/inspector-george-gently",
       "https://grokipedia.com/page/List_of_Inspector_George_Gently_episodes",
       "https://acorn.tv/georgegently/"
@@ -2156,14 +2157,14 @@
     "genre": "Crime Drama",
     "us": [
       {
-        "name": "Acorn TV",
+        "name": "BritBox",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
-        "name": "Acorn TV via Amazon",
+        "name": "BritBox via Amazon",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -2174,8 +2175,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-09-25",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/dci-banks"
+    ]
   },
   {
     "title": "The Bill",
@@ -2985,14 +2988,14 @@
     "genre": "Crime Drama",
     "us": [
       {
-        "name": "Acorn TV",
+        "name": "BritBox",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       },
       {
-        "name": "Acorn TV via Amazon",
+        "name": "BritBox via Amazon",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -3003,8 +3006,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-09-25",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/scott-and-bailey"
+    ]
   },
   {
     "title": "A Touch of Frost",
