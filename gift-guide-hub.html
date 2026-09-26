@@ -473,6 +473,167 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
+<div id="gift-finder" class="gf">
+  <style>
+  .gf{max-width:1000px;margin:36px auto 12px;padding:0 5%;box-sizing:border-box;}
+  .gf-box{background:#232b40;border:1px solid rgba(201,168,76,0.35);border-top:3px solid var(--gold,#c9a96e);border-radius:12px;padding:28px 28px 22px;}
+  .gf-eyebrow{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold,#c9a96e);margin:0 0 6px;}
+  .gf h2{font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#f0e8d4;margin:0 0 6px;line-height:1.25;}
+  .gf-sub{font-family:'Crimson Text',serif;color:#c8c4b8;margin:0 0 16px;font-size:18px;line-height:1.5;}
+  .gf-q{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#d8d4c8;margin:16px 0 8px;}
+  .gf-opts{display:flex;flex-wrap:wrap;gap:8px;}
+  .gf-opt{font-family:'Crimson Text',serif;font-size:17px;color:#f0e8d4;background:#2d3650;border:1px solid rgba(201,168,76,0.3);border-radius:999px;padding:8px 16px;cursor:pointer;transition:background .15s,border-color .15s;}
+  .gf-opt:hover{border-color:var(--gold,#c9a96e);}
+  .gf-opt[aria-pressed="true"]{background:var(--gold,#c9a96e);color:#1a2135;border-color:var(--gold,#c9a96e);}
+  .gf-opt:focus-visible{outline:2px solid #f0e8d4;outline-offset:2px;}
+  .gf-showrow{display:none;} .gf-showrow.on{display:block;}
+  .gf-results{margin-top:22px;display:none;} .gf-results.show{display:block;}
+  .gf-rtitle{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold,#c9a96e);margin:0 0 10px;}
+  .gf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px;}
+  .gf-card{background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;}
+  .gf-name{font-family:'Playfair Display',serif;font-size:18px;color:#f0e8d4;margin:0 0 4px;line-height:1.3;}
+  .gf-price{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;color:var(--gold-light,#dab870);margin:0 0 6px;}
+  .gf-why{font-family:'Crimson Text',serif;color:#c8c4b8;font-size:16px;line-height:1.5;margin:0 0 12px;flex:1;}
+  .gf-buy{align-self:flex-start;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:9px 14px;border-radius:2px;text-decoration:none;}
+  .gf-from{font-family:'Raleway',sans-serif;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:#9aa3b8;margin-top:10px;}
+  .gf-from a{color:var(--gold-light,#dab870);text-decoration:none;}
+  .gf-reset{margin-top:14px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#9aa3b8;background:none;border:0;cursor:pointer;padding:4px 0;}
+  </style>
+  <div class="gf-box">
+    <p class="gf-eyebrow">Gift Finder</p>
+    <h2>Find the Perfect Gift for a British TV Fan</h2>
+    <p class="gf-sub">Answer three quick questions and get four picks from the British TV Hub gift guides.</p>
+    <div class="gf-q" id="gfq1">Who are you shopping for?</div>
+    <div class="gf-opts" role="group" aria-labelledby="gfq1" data-q="who">
+      <button type="button" class="gf-opt" data-v="reader" aria-pressed="false">A mystery reader</button>
+      <button type="button" class="gf-opt" data-v="binger" aria-pressed="false">A box-set binger</button>
+      <button type="button" class="gf-opt" data-v="cozy" aria-pressed="false">A cozy-night-in type</button>
+      <button type="button" class="gf-opt" data-v="show" aria-pressed="false">A fan of one show</button>
+    </div>
+    <div class="gf-showrow">
+      <div class="gf-q" id="gfq1b">Which show?</div>
+      <div class="gf-opts" role="group" aria-labelledby="gfq1b" data-q="show">
+        <button type="button" class="gf-opt" data-v="vera" aria-pressed="false">Vera</button>
+        <button type="button" class="gf-opt" data-v="shetland" aria-pressed="false">Shetland</button>
+        <button type="button" class="gf-opt" data-v="midsomer" aria-pressed="false">Midsomer Murders</button>
+        <button type="button" class="gf-opt" data-v="morse" aria-pressed="false">Inspector Morse</button>
+        <button type="button" class="gf-opt" data-v="dip" aria-pressed="false">Death in Paradise</button>
+        <button type="button" class="gf-opt" data-v="lod" aria-pressed="false">Line of Duty</button>
+        <button type="button" class="gf-opt" data-v="grantchester" aria-pressed="false">Grantchester</button>
+        <button type="button" class="gf-opt" data-v="fatherbrown" aria-pressed="false">Father Brown</button>
+        <button type="button" class="gf-opt" data-v="christie" aria-pressed="false">Agatha Christie</button>
+      </div>
+    </div>
+    <div class="gf-q" id="gfq2">What kind of gift?</div>
+    <div class="gf-opts" role="group" aria-labelledby="gfq2" data-q="size">
+      <button type="button" class="gf-opt" data-v="little" aria-pressed="false">A small, thoughtful gift</button>
+      <button type="button" class="gf-opt" data-v="special" aria-pressed="false">Something bigger to unwrap</button>
+    </div>
+    <div class="gf-q" id="gfq3">When are you giving it?</div>
+    <div class="gf-opts" role="group" aria-labelledby="gfq3" data-q="season">
+      <button type="button" class="gf-opt" data-v="autumn" aria-pressed="false">This autumn</button>
+      <button type="button" class="gf-opt" data-v="holiday" aria-pressed="false">For the holidays</button>
+    </div>
+    <div class="gf-results" aria-live="polite">
+      <p class="gf-rtitle">Gift ideas for you</p>
+      <div class="gf-grid"></div>
+      <button type="button" class="gf-reset">Start over</button>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var A='/autumn-gift-guide.html', H='/holiday-gift-guide.html';
+    // [name, price, why, url, guide, who[], size, show[], holidayOnly]
+    var G=[
+      ['The Thursday Murder Club','', 'Richard Osman’s retirees solve cold cases over tea and biscuits.','https://www.amazon.com/dp/1984880969?tag=britishtvhub-gift-20',A,['reader'],'little',[]],
+      ['Agatha Raisin and the Quiche of Death','', 'M.C. Beaton’s first Agatha Raisin: villagey, funny and a little prickly.','https://amzn.to/4x9KvsH',A,['reader'],'little',[]],
+      ['The No. 1 Ladies’ Detective Agency','', 'Alexander McCall Smith’s gentle, warm-hearted mysteries set in Botswana.','https://amzn.to/4x30n06',A,['reader'],'little',[]],
+      ['The Marlow Murder Club (novel)','', 'Robert Thorogood’s novel behind the TV series, set along the Thames.','https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20',A,['reader'],'little',[]],
+      ['Miss Marple: The Complete Short Stories','', 'Bite-sized Agatha Christie mysteries, one a night by the fire.','https://amzn.to/4wZ1jCy',A,['reader'],'little',['christie']],
+      ['Magpie Murders','', 'Anthony Horowitz’s book-within-a-book mystery.','https://amzn.to/4ga3Xhw',A,['reader'],'little',[]],
+      ['The Crow Trap','', 'The Ann Cleeves novel that introduced Vera Stanhope.','https://www.amazon.com/dp/1250122740?tag=britishtvhub-gift-20',A,['reader'],'little',['vera']],
+      ['Raven Black','', 'The first Jimmy Perez mystery, by Ann Cleeves.','https://www.amazon.com/dp/0312359675?tag=britishtvhub-gift-20',A,['reader'],'little',['shetland']],
+      ['The Killings at Badger’s Drift','', 'Caroline Graham’s novel behind the very first Midsomer Murders episode.','https://www.amazon.com/dp/1631943294?tag=britishtvhub-gift-20',A,['reader'],'little',['midsomer']],
+      ['Last Bus to Woodstock','', 'Colin Dexter’s first Inspector Morse novel.','https://www.amazon.com/dp/1509875514?tag=britishtvhub-gift-20',A,['reader'],'little',['morse']],
+      ['Sidney Chambers and the Shadow of Death','', 'James Runcie’s first Grantchester Mysteries book.','https://amzn.to/4xAshAh',A,['reader'],'little',['grantchester']],
+      ['The Innocence of Father Brown','', 'G.K. Chesterton’s original Father Brown stories.','https://www.amazon.com/dp/1603749667?tag=britishtvhub-gift-20',A,['reader'],'little',['fatherbrown']],
+      ['Gritin LED Rechargeable Book Light','', 'Small enough to tuck into any book bag, for one more chapter before bed.','https://amzn.to/4fhL3oE',H,['reader'],'little',[]],
+      ['London Magnetic Bookmark Set','', '48 London-themed bookmarks, enough to share.','https://amzn.to/4gLuB2w',H,['reader'],'little',[]],
+      ['Brain Games: Sherlock Holmes Puzzles','', 'Over 100 puzzles inspired by Sherlock Holmes.','https://amzn.to/4pwfYlS',H,['reader','binger'],'little',[]],
+      ['British TV Hub Tote Bag','$44.99','For library trips, bookshop browsing and the mystery you didn’t mean to buy.','https://cozytvcompanion.etsy.com/listing/4552239525',A,['reader'],'special',[]],
+      ['British TV Notes Hardcover Journal','$24.99','For jotting down favourite mysteries and characters.','https://cozytvcompanion.etsy.com/listing/4552950826',A,['reader','binger'],'little',[]],
+      ['British TV Watchlist Notebook','$24.99','For the inevitable “what are we watching next?”','https://cozytvcompanion.etsy.com/listing/4552217499',A,['binger'],'little',[]],
+      ['Midsomer Murders: The Early Cases Collection','', 'Ten discs of village whodunits.','https://amzn.to/3R6rYxP',H,['binger'],'special',['midsomer']],
+      ['Inspector Morse: The Complete Series','', 'Every case in one 17-disc set.','https://amzn.to/4w73jZ2',H,['binger'],'special',['morse']],
+      ['Death in Paradise: Series 1–5','', 'All 40 episodes of sun, sand and impossible murders.','https://amzn.to/3RmDlBC',H,['binger'],'special',['dip']],
+      ['Line of Duty: Series 1–5 Collection','', 'The anti-corruption thriller on DVD.','https://amzn.to/4ymeVca',H,['binger'],'special',['lod']],
+      ['DCI Banks: Seasons 1–3 & Aftermath','', 'Four seasons of Yorkshire crime drama in one set.','https://amzn.to/3RKxfLF',H,['binger'],'special',[]],
+      ['McDonald & Dodds: Series 1–4','', 'The complete Bath-set detective series on DVD.','https://amzn.to/4wcnqVX',H,['binger'],'special',[]],
+      ['The Agatha Christie Hour: Complete Series','', 'All ten episodes of the classic anthology series.','https://amzn.to/4fpgugT',H,['binger'],'special',['christie']],
+      ['Forsyte Saga: The Complete Series','', 'The period drama complete in one DVD set.','https://amzn.to/4fJMjlP',H,['binger'],'special',[]],
+      ['Inspector Ellis: Series 1','', 'Sharon D. Clarke stars in this Channel 5 procedural.','https://amzn.to/4puLVeb',H,['binger'],'little',[]],
+      ['Twinings Tea Selection','', 'A proper British staple for when the nights draw in.','https://amzn.to/4fdyXgj',A,['cozy'],'little',[]],
+      ['British Royal Tea Set','', 'Six cups that make an ordinary evening a little more special.','https://amzn.to/4bPGUat',A,['cozy'],'special',[]],
+      ['Berkshire Faux Fur Throw','', 'Reversible and generously sized, for evenings in front of the TV.','https://amzn.to/4vA38Ew',A,['cozy'],'special',[]],
+      ['Chunky Knit Throw','', 'For the long Vera-and-a-blanket evenings ahead.','https://amzn.to/44n66RN',A,['cozy'],'special',['vera']],
+      ['“One More Episode” Soy Candle','$22.99','Made for marathon nights. Light it and let the next episode start itself.','https://cozytvcompanion.etsy.com/listing/4565791612',A,['cozy','binger'],'little',[]],
+      ['A Cozy Cup for British TV Nights','$19.99','Tea, coffee or cocoa in the British TV Hub navy-and-gold design.','https://cozytvcompanion.etsy.com/listing/4552182691',A,['cozy','binger'],'little',[]],
+      ['British TV Hub Enamel Mug','$30.00','For tea in the garden, on a walk or wherever the reading happens.','https://cozytvcompanion.etsy.com/listing/4552012228',A,['cozy'],'little',[]],
+      ['British TV Hub Pillow','$39.99','A soft landing spot for the next long binge.','https://cozytvcompanion.etsy.com/listing/4552961525',A,['cozy','binger'],'special',[]],
+      ['2027 British TV Inspired Wall Calendar','$28.99','Twelve months of evocative British objects, a British TV Hub original.','https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar',H,['cozy','binger','reader'],'special',[]],
+      ['Downton Abbey Afternoon Tea Cookbook','', 'Scones, savouries and sweets from the official cookery series.','https://amzn.to/4pzTP6o',H,['cozy'],'little',[]],
+      ['The British Baking Book','', 'A celebration of the history of British baking.','https://amzn.to/4vx4a45',H,['cozy'],'little',[]],
+      ['Happy Holidays to a Fellow British TV Fan (card)','$8.99','A vintage telly, Big Ben and a wink of gold.','https://cozytvcompanion.etsy.com/listing/4563401755',H,['cozy','reader','binger','show'],'little',[],1],
+      ['All Is Cozy & Bright (card)','$8.99','A snowy cobblestone street and warm gold lettering.','https://cozytvcompanion.etsy.com/listing/4556506783',H,['cozy'],'little',[],1]
+    ];
+    var root=document.getElementById('gift-finder'); if(!root) return;
+    var pick={who:null,show:null,size:null,season:null};
+    var res=root.querySelector('.gf-results'), grid=root.querySelector('.gf-grid'), showrow=root.querySelector('.gf-showrow');
+    function ready(){return pick.who&&pick.size&&pick.season&&(pick.who!=='show'||pick.show);}
+    function render(){
+      if(!ready()){res.classList.remove('show');return;}
+      var pool=G.filter(function(g){return !(g[8]&&pick.season!=='holiday');});
+      var sc=pool.map(function(g,i){
+        var s=0;
+        if(pick.who==='show'){ if(g[7].indexOf(pick.show)>-1) s+=6; else if(g[5].indexOf('reader')>-1||g[5].indexOf('binger')>-1) s+=1; }
+        else if(g[5].indexOf(pick.who)>-1) s+=4;
+        if(g[6]===pick.size) s+=2;
+        if(pick.season==='holiday'&&g[4]===H) s+=1;
+        if(pick.season==='autumn'&&g[4]===A) s+=1;
+        return {g:g,s:s,i:i};
+      }).sort(function(a,b){return b.s-a.s||a.i-b.i;}).slice(0,4);
+      grid.innerHTML='';
+      sc.forEach(function(o){
+        var g=o.g, d=document.createElement('div'); d.className='gf-card';
+        var n=document.createElement('div'); n.className='gf-name'; n.textContent=g[0]; d.appendChild(n);
+        if(g[1]){var p=document.createElement('div'); p.className='gf-price'; p.textContent=g[1]; d.appendChild(p);}
+        var w=document.createElement('p'); w.className='gf-why'; w.textContent=g[2]; d.appendChild(w);
+        var b=document.createElement('a'); b.className='gf-buy'; b.href=g[3]; b.target='_blank'; b.rel='nofollow sponsored noopener'; b.textContent='See Details →'; d.appendChild(b);
+        var f=document.createElement('div'); f.className='gf-from'; f.appendChild(document.createTextNode('From the '));
+        var l=document.createElement('a'); l.href=g[4]; l.textContent=(g[4]===A?'Autumn':'Holiday')+' Gift Guide'; f.appendChild(l); d.appendChild(f);
+        grid.appendChild(d);
+      });
+      res.classList.add('show');
+    }
+    root.querySelectorAll('.gf-opts').forEach(function(grp){
+      grp.addEventListener('click',function(e){
+        var b=e.target.closest('.gf-opt'); if(!b) return;
+        grp.querySelectorAll('.gf-opt').forEach(function(x){x.setAttribute('aria-pressed','false');});
+        b.setAttribute('aria-pressed','true');
+        var q=grp.getAttribute('data-q'); pick[q]=b.getAttribute('data-v');
+        if(q==='who'){ showrow.classList.toggle('on',pick.who==='show'); if(pick.who!=='show'){pick.show=null; showrow.querySelectorAll('.gf-opt').forEach(function(x){x.setAttribute('aria-pressed','false');});} }
+        render();
+      });
+    });
+    root.querySelector('.gf-reset').addEventListener('click',function(){
+      pick={who:null,show:null,size:null,season:null};
+      root.querySelectorAll('.gf-opt').forEach(function(x){x.setAttribute('aria-pressed','false');});
+      showrow.classList.remove('on'); res.classList.remove('show');
+    });
+  })();
+  </script>
+</div>
+
 <div class="hgg-editor-band">
   <div class="hgg-editor-grid">
     <div class="hgg-editor-card">
