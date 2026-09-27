@@ -353,6 +353,22 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   .spk-bat{ display:none; }
 }
 
+
+/* Hero: box matches the photo's 16:9 shape so nothing is cropped */
+.hb-hero{position:relative;overflow:hidden;padding:0 !important;background:#1a2135;text-align:left}
+.hb-hero-media{position:relative;width:100%;aspect-ratio:500/281;max-height:none}
+.hb-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;filter:brightness(0.78) saturate(0.95)}
+.hb-hero-shade{position:absolute;inset:0;background:linear-gradient(to right,rgba(26,33,53,0.9) 0%,rgba(26,33,53,0.6) 36%,rgba(26,33,53,0) 62%)}
+.hb-hero-text{position:absolute;z-index:2;left:0;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;max-width:560px;padding:0 48px}
+.hb-hero-text .quiz-hero-sub{margin:0;max-width:460px}
+.hb-kicker{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.hb-badge{position:absolute;top:20px;right:20px;width:76px;height:76px;z-index:4}
+@media (max-width:820px){
+  .hb-hero-shade{background:linear-gradient(to bottom,rgba(26,33,53,0) 55%,#1a2135 100%)}
+  .hb-hero-text{position:relative;max-width:none;padding:8px 22px 40px;text-align:center}
+  .hb-hero-text .quiz-hero-sub{margin:0 auto}
+  .hb-badge{width:56px;height:56px;top:12px;right:12px}
+}
 /* === HALLOWEEN BUILDER EXTRAS === */
 .result-episode{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#e8dfc8;margin:-2px 0 8px;line-height:1.35}
 .result-mood{font-family:'Crimson Text',serif;font-size:16px;color:#a0aec8;margin:0 0 18px}
@@ -1559,10 +1575,12 @@ document.addEventListener('click', function(e){
 </script>
 
 <!-- HERO -->
-<div id="hb-hero" class="quiz-hero spooky-hero" style="position:relative;overflow:hidden;padding:0;min-height:420px;display:flex;align-items:center;">
-  <img src="/original-badge.png" alt="A British TV Hub Original" title="A British TV Hub Original" class="original-badge" style="position:absolute;top:20px;right:20px;width:76px;height:76px;z-index:4;">
-  <img src="/quiz-hero.webp" alt="Moody London detective scene at night" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right top;filter:brightness(0.42) saturate(0.85);">
-  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 35%,rgba(26,33,53,0.72) 60%,rgba(26,33,53,0.15) 100%);"></div>
+<div id="hb-hero" class="quiz-hero spooky-hero hb-hero">
+  <img src="/original-badge.png" alt="A British TV Hub Original" title="A British TV Hub Original" class="original-badge hb-badge">
+  <div class="hb-hero-media">
+    <img src="/quiz-hero.webp" alt="Moody London detective scene at night" class="hb-hero-img">
+    <div class="hb-hero-shade"></div>
+  </div>
   <div class="spk-layer" aria-hidden="true">
     <div class="spk-fog"></div><div class="spk-fog f2"></div>
     <div class="spk-web spk-web-tl"></div><div class="spk-web spk-web-tr"></div>
@@ -1577,8 +1595,8 @@ document.addEventListener('click', function(e){
 <circle cx="30" cy="26" r="4.8" fill="#0c1018" stroke="rgba(243,237,226,0.4)" stroke-width="0.8"/>
 <circle cx="28.3" cy="25.4" r="0.9" fill="#c9a96e"/><circle cx="31.7" cy="25.4" r="0.9" fill="#c9a96e"/></svg></div>
   </div>
-  <div style="position:relative;z-index:2;width:100%;text-align:center;padding:64px 40px 56px;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;text-shadow:0 1px 6px rgba(0,0,0,.8);">&#127875; Halloween Edition</div>
+  <div class="hb-hero-text">
+    <div class="hb-kicker">&#127875; Halloween Edition</div>
     <h1 class="quiz-hero-title">Build Your Perfect British Halloween Mystery</h1>
     <p class="quiz-hero-sub">Choose a setting, a detective, a clue, and just how spooky the evening should get. Your answers point to a real British mystery episode for Halloween night.</p>
   </div>
@@ -1640,7 +1658,7 @@ document.addEventListener('click', function(e){
       <p class="cr-sub">More October viewing from British TV Hub.</p>
       <div class="cr-grid">
         <a class="cr-card" href="/dark-october-night-mysteries.html">
-      <img src="/dark-october-night-hero.webp" alt="13 British Mysteries for a Dark October Night" loading="lazy" style="width:100%;height:150px;object-fit:cover;object-position:center;display:block;">
+      <img src="/dark-october-night-hero.webp" alt="13 British Mysteries for a Dark October Night" loading="lazy" style="width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;display:block;">
           <div class="cr-body">
             <div class="cr-title">13 British Mysteries for a Dark October Night</div>
             <p class="cr-desc">A countdown from cosy cases to proper lights-on viewing, built for long autumn evenings.</p>
@@ -1648,7 +1666,7 @@ document.addEventListener('click', function(e){
           </div>
         </a>
         <a class="cr-card" href="/ghost-story-for-halloween.html">
-      <img src="/ghost-story-for-halloween-hero.webp" alt="A Ghost Story for Halloween" loading="lazy" style="width:100%;height:150px;object-fit:cover;object-position:center;display:block;">
+      <img src="/ghost-story-for-halloween-hero.webp" alt="A Ghost Story for Halloween" loading="lazy" style="width:100%;height:auto;aspect-ratio:1731/909;object-fit:cover;display:block;">
           <div class="cr-body">
             <div class="cr-title">A Ghost Story for Halloween</div>
             <p class="cr-desc">The real history of the BBC's Christmas ghost story tradition, borrowed for October.</p>
@@ -1656,7 +1674,7 @@ document.addEventListener('click', function(e){
           </div>
         </a>
         <a class="cr-card" href="/quizzes-and-games.html">
-      <img src="/quizzes-and-games-hero.webp" alt="Quizzes and Games" loading="lazy" style="width:100%;height:150px;object-fit:cover;object-position:center top;display:block;">
+      <img src="/quizzes-and-games-hero.webp" alt="Quizzes and Games" loading="lazy" style="width:100%;height:auto;aspect-ratio:1774/887;object-fit:cover;display:block;">
           <div class="cr-body">
             <div class="cr-title">Quizzes &amp; Games</div>
             <p class="cr-desc">Every British TV Hub builder, quiz, and ranker in one place, including the year-round mystery builder.</p>
