@@ -406,6 +406,19 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   .result-hero{padding:34px 20px 26px}.result-body{padding:24px 20px 28px}
   .result-hero .result-episode{font-size:21px}
 }
+
+/* Source guide cards (under hero) */
+.hb-sources{max-width:980px;margin:0 auto;padding:36px 20px 8px}
+.hb-sources .hb-intro{padding:0 0 22px !important;max-width:640px}
+.hb-source-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.hb-source-card{display:flex;flex-direction:column;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;padding:0 !important;transition:transform .2s ease,border-color .2s ease}
+.hb-source-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,0.5)}
+.hb-source-card img{width:100%;height:auto;object-fit:cover;display:block}
+.hb-source-body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.hb-source-kicker{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold,#c9a96e);margin:0 0 8px}
+.hb-source-title{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream,#e8dfc8);line-height:1.3;margin:0 0 8px}
+.hb-source-desc{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px !important;padding:0 !important}
+.hb-source-cta{display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px}
 /* === HALLOWEEN BUILDER EXTRAS === */
 .result-episode{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#e8dfc8;margin:-2px 0 8px;line-height:1.35}
 .result-mood{font-family:'Crimson Text',serif;font-size:16px;color:#a0aec8;margin:0 0 18px}
@@ -1639,7 +1652,29 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<div style="padding:0 20px;"><p class="hb-intro">Every result is an episode or special already featured in <a href="/dark-october-night-mysteries.html">13 British Mysteries for a Dark October Night</a> or <a href="/ghost-story-for-halloween.html">A Ghost Story for Halloween</a>, so there's a full write-up waiting once the mystery is solved.</p></div>
+<div class="hb-sources">
+  <p class="hb-intro">Every result is an episode or special already featured in one of these two guides, so there's a full write-up waiting once the mystery is solved.</p>
+  <div class="hb-source-grid">
+    <a class="hb-source-card spooky-card" href="/dark-october-night-mysteries.html">
+      <img src="/dark-october-night-hero.webp" alt="13 British Mysteries for a Dark October Night" loading="lazy" style="aspect-ratio:1672/941;">
+      <div class="hb-source-body">
+        <div class="hb-source-kicker">12 of the 14 results</div>
+        <div class="hb-source-title">13 British Mysteries for a Dark October Night</div>
+        <p class="hb-source-desc">A countdown from cosy cases to proper lights-on viewing, built for long autumn evenings.</p>
+        <span class="hb-source-cta">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a class="hb-source-card spooky-card" href="/ghost-story-for-halloween.html">
+      <img src="/ghost-story-for-halloween-hero.webp" alt="A Ghost Story for Halloween" loading="lazy" style="aspect-ratio:1731/909;">
+      <div class="hb-source-body">
+        <div class="hb-source-kicker">2 of the 14 results</div>
+        <div class="hb-source-title">A Ghost Story for Halloween</div>
+        <p class="hb-source-desc">The real history of the BBC's Christmas ghost story tradition, borrowed for October.</p>
+        <span class="hb-source-cta">Read Guide &rarr;</span>
+      </div>
+    </a>
+  </div>
+</div>
 
 <!-- QUIZ -->
 
@@ -1710,19 +1745,19 @@ document.addEventListener('click', function(e){
       <h2 class="cr-heading">Explore More</h2>
       <p class="cr-sub">More October viewing from British TV Hub.</p>
       <div class="cr-grid">
-        <a class="cr-card" href="/dark-october-night-mysteries.html">
-      <img src="/dark-october-night-hero.webp" alt="13 British Mysteries for a Dark October Night" loading="lazy" style="width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;display:block;">
+        <a class="cr-card" href="/cozy-autumn-mysteries.html">
+      <img src="/cozy-autumn-hero.webp" alt="Cozy Autumn Mysteries" loading="lazy" style="width:100%;height:auto;aspect-ratio:500/333;object-fit:cover;display:block;">
           <div class="cr-body">
-            <div class="cr-title">13 British Mysteries for a Dark October Night</div>
-            <p class="cr-desc">A countdown from cosy cases to proper lights-on viewing, built for long autumn evenings.</p>
+            <div class="cr-title">Cozy Autumn Mysteries</div>
+            <p class="cr-desc">Full series for the season, not just single episodes.</p>
             <span class="cr-link">Read Guide &rarr;</span>
           </div>
         </a>
-        <a class="cr-card" href="/ghost-story-for-halloween.html">
-      <img src="/ghost-story-for-halloween-hero.webp" alt="A Ghost Story for Halloween" loading="lazy" style="width:100%;height:auto;aspect-ratio:1731/909;object-fit:cover;display:block;">
+        <a class="cr-card" href="/seasonal-collections.html">
+      <img src="/seasonal-collections-hero.webp" alt="Seasonal Collections" loading="lazy" style="width:100%;height:auto;aspect-ratio:1400/933;object-fit:cover;display:block;">
           <div class="cr-body">
-            <div class="cr-title">A Ghost Story for Halloween</div>
-            <p class="cr-desc">The real history of the BBC's Christmas ghost story tradition, borrowed for October.</p>
+            <div class="cr-title">Seasonal Collections</div>
+            <p class="cr-desc">Every seasonal guide on the site, in one place.</p>
             <span class="cr-link">Read Guide &rarr;</span>
           </div>
         </a>
