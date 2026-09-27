@@ -23,6 +23,8 @@ window.SITE_SEARCH_INDEX = [
   {"title":"Meet Tilly","url":"/meet-tilly.html"},
   {"title":"Partner With Us","url":"/partner.html"},
   {"title":"Match Me a Mystery Quiz","url":"/quiz.html"},
+  {"title":"Agatha Christie's Spookiest Mysteries","url":"/agatha-christie-spooky-mysteries.html"},
+  {"title":"Murder at the Manor: British Country-House Mysteries","url":"/country-house-mysteries.html"},
   {"title":"Build Your Perfect British Halloween Mystery","url":"/halloween-mystery-builder.html"},
   {"title":"Richard Osman Books in Order","url":"/richard-osman.html"},
   {"title":"CozyTVCompanion Shop","url":"/shop.html"},
