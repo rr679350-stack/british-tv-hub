@@ -1,9 +1,9 @@
 {
     "month": "September 2026",
-    "updated": "2026-08-30",
+    "updated": "2026-09-27",
     "highlight": {
         "title": "Agatha Christie's Tommy & Tuppence",
-        "badge": "BritBox Original \u00b7 North America Premiere",
+        "badge": "BritBox Original · North America Premiere",
         "description": "Antonia Thomas and Josh Dylan star as Christie's amateur sleuthing duo in this contemporary reimagining, with Imelda Staunton as Tommy's formidable Aunt Ada. Two episodes premiere September 15 on Christie's own birthday, with one new episode weekly after that.",
         "tags": [
             "Mystery",
@@ -16,7 +16,7 @@
             "title": "Cooper and Fry",
             "season": "Season 1",
             "available": "September 10",
-            "badge": "New to BritBox \u00b7 North America Premiere",
+            "badge": "New to BritBox · North America Premiere",
             "description": "Robert James-Collier and Mandip Gill star as DC Ben Cooper and DC Diane Fry, a Peak District detective pairing of local roots and city reserve, tackling murders across the fictional town of Edendale.",
             "tags": [
                 "Crime drama",
@@ -40,10 +40,10 @@
         },
         {
             "title": "Monarch of the Glen",
-            "season": "Seasons 1\u20133",
+            "season": "Seasons 1–3",
             "available": "September 9",
-            "badge": "Classic Returns \u00b7 North America Premiere",
-            "description": "Alastair Mackenzie stars as Archie MacDonald, who returns home to the Scottish Highlands and finds himself responsible for his family's financially troubled estate. A beloved classic, back for the first time in years.",
+            "badge": "Classic Returns · North America Premiere",
+            "description": "Alastair Mackenzie stars as Archie MacDonald, who returns home to the Scottish Highlands and finds himself responsible for his family's financially troubled estate. All three seasons arrive at once.",
             "tags": [
                 "Period drama",
                 "Scotland"
@@ -65,7 +65,7 @@
         },
         {
             "title": "Trigger Point",
-            "seasons": "Seasons 1\u20133",
+            "seasons": "Seasons 1–3",
             "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
             "tags": [
                 "Thriller",
@@ -75,7 +75,7 @@
         },
         {
             "title": "Beyond Paradise",
-            "seasons": "Seasons 1\u20134",
+            "seasons": "Seasons 1–4",
             "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
             "tags": [
                 "Cozy mystery",
@@ -85,7 +85,7 @@
         },
         {
             "title": "The Other Bennet Sister",
-            "seasons": "Series 1 \u2014 complete",
+            "seasons": "Series 1 — complete",
             "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
             "tags": [
                 "Regency drama",
