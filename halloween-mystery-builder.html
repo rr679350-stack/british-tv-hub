@@ -36,7 +36,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Build Your Perfect British Halloween Mystery | British TV Hub</title>
+<title>British Halloween Mystery Quiz: Build Your Perfect Mystery | British TV Hub</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -48,7 +48,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/halloween-mystery-builder.html">
-<meta property="og:title" content="Build Your Perfect British Halloween Mystery | British TV Hub">
+<meta property="og:title" content="British Halloween Mystery Quiz: Build Your Perfect Mystery | British TV Hub">
 <meta property="og:description" content="Choose a setting, a detective, a clue, and how spooky you want it — and get matched to a real British mystery episode for Halloween night.">
 <meta property="og:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
 <meta property="og:image:width" content="1774">
@@ -57,7 +57,7 @@
 <meta property="og:site_name" content="British TV Hub">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Build Your Perfect British Halloween Mystery | British TV Hub">
+<meta name="twitter:title" content="British Halloween Mystery Quiz: Build Your Perfect Mystery | British TV Hub">
 <meta name="twitter:description" content="Four choices, one spooky British mystery episode for Halloween night.">
 <meta name="twitter:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
 
@@ -65,7 +65,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Build Your Perfect British Halloween Mystery",
+  "name": "British Halloween Mystery Quiz: Build Your Perfect Mystery",
   "description": "Choose a setting, a detective, a clue, and how spooky you want it — and get matched to a real British mystery episode for Halloween night.",
   "url": "https://britishtvhub.com/halloween-mystery-builder.html",
   "dateModified": "2026-09-26",
@@ -368,6 +368,43 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
   .hb-hero-text{position:relative;max-width:none;padding:8px 22px 40px;text-align:center}
   .hb-hero-text .quiz-hero-sub{margin:0 auto}
   .hb-badge{width:56px;height:56px;top:12px;right:12px}
+}
+
+/* === RESULT EXPERIENCE (v2) === */
+.journey{list-style:none;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px 10px;margin:0;padding:14px 20px 0}
+.journey li{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:#6f7a93;transition:color .3s;white-space:nowrap}
+.journey li + li::before{content:'\2192';display:inline-block;margin-right:10px;font-size:12px;letter-spacing:0;color:#6f7a93}
+.journey li.done{color:#c9a96e}
+.journey li.active{color:#e8d0a0;font-weight:600}
+.result-wrap{padding:0 !important}
+.result-hero{position:relative;padding:44px 36px 32px;text-align:center;background:radial-gradient(ellipse 70% 90% at 50% 0%,rgba(201,169,110,0.16),transparent 70%),linear-gradient(#232b3f,#1e2433);border-bottom:1px solid rgba(201,169,110,0.25)}
+.result-hero .result-label{font-size:12px;margin-bottom:16px}
+.result-hero .result-show{font-size:clamp(34px,5vw,48px);color:#e8d0a0;margin-bottom:8px}
+.result-hero .result-episode{font-size:24px;margin:0 0 10px}
+.result-hero .result-meta{margin-bottom:0}
+.result-why{font-family:'Crimson Text',serif;font-style:italic;font-size:19px;line-height:1.55;color:#c8d0e0;max-width:520px;margin:20px auto 0}
+.result-body{padding:30px 36px 36px}
+.result-where{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;padding:14px 16px;background:#2c3345;border:1px solid #3d4a60;border-radius:8px}
+.result-where-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8}
+.result-where-val{font-family:'Raleway',sans-serif;font-size:12px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#f5e8d0;background:#8b1a2e;padding:5px 12px;border-radius:2px}
+.result-body .guide-btn{width:100%;cursor:pointer}
+.read-btn{font-size:12px !important;padding:15px 24px !important;text-decoration:none}
+.read-btn:hover{background:#d8bc85 !important}
+.result-rank{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:#a0aec8;text-align:center;margin:2px 0 14px}
+.result-rank:empty{display:none}
+.share-box{margin:26px 0 18px;padding:20px;border:1px dashed rgba(201,169,110,0.45);border-radius:10px;background:rgba(201,169,110,0.05)}
+.share-box-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px}
+.share-preview{font-family:'Crimson Text',serif;font-size:17px;line-height:1.55;color:#e8dfc8;margin:0 0 14px}
+.share-main{flex:2 !important}
+.share-alt{background:transparent !important;border:1.5px solid var(--gold,#c9a96e) !important;color:var(--gold,#c9a96e) !important}
+.share-note{font-family:'Crimson Text',serif;font-size:15px;color:#a0aec8;margin-top:10px;min-height:1px}
+.retry-quiet{background:transparent !important;color:#a0aec8 !important;border:1px solid #3d4a60 !important}
+.retry-quiet:hover{color:#e8d0a0 !important;border-color:#c9a96e !important}
+.more-label{color:#c9a96e !important;font-size:12px !important}
+@media (max-width:600px){
+  .journey{padding:12px 10px 0;gap:4px 6px}.journey li{font-size:9px;letter-spacing:.8px}.journey li + li::before{margin-right:6px}
+  .result-hero{padding:34px 20px 26px}.result-body{padding:24px 20px 28px}
+  .result-hero .result-episode{font-size:21px}
 }
 /* === HALLOWEEN BUILDER EXTRAS === */
 .result-episode{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#e8dfc8;margin:-2px 0 8px;line-height:1.35}
@@ -1616,6 +1653,12 @@ document.addEventListener('click', function(e){
       <div class="progress-step" id="step-2"></div>
       <div class="progress-step" id="step-3"></div>
     </div>
+    <ol class="journey" id="journey" aria-label="Quiz steps">
+      <li id="jr-0" class="active">Setting</li>
+      <li id="jr-1">Detective</li>
+      <li id="jr-2">Clue</li>
+      <li id="jr-3">Spookiness</li>
+    </ol>
 
     <!-- QUESTION PANEL -->
     <div class="question-wrap" id="question-wrap">
@@ -1626,26 +1669,36 @@ document.addEventListener('click', function(e){
 
     <!-- RESULT PANEL -->
     <div class="result-wrap" id="result-wrap">
-      <div class="result-label">Your Halloween mystery is...</div>
-      <div class="result-show" id="r-show"></div>
-      <div class="result-episode" id="r-episode"></div>
-      <div class="result-meta" id="r-meta"></div>
-      <div class="result-platform-badge" id="r-platform"></div>
-      <div class="result-divider"></div>
-      <div class="result-desc" id="r-desc"></div>
-      <div class="result-mood" id="r-mood"></div>
-      <button class="watch-btn" id="r-watch-btn"></button>
-      <a class="guide-btn" id="r-guide-btn" href="/dark-october-night-mysteries.html"></a>
-      <button class="retry-btn" id="retry-btn">Try again &rarr;</button>
-      <div class="share-row">
-        <button class="share-btn" id="fb-share">Share on Facebook</button>
-        <button class="share-btn" id="copy-share">Copy link</button>
+      <div class="result-hero">
+        <div class="result-label">&#127875; Your Halloween Mystery Is...</div>
+        <div class="result-show" id="r-show"></div>
+        <div class="result-episode" id="r-episode"></div>
+        <div class="result-meta" id="r-meta"></div>
+        <p class="result-why" id="r-why"></p>
+      </div>
+      <div class="result-body">
+        <div class="result-desc" id="r-desc"></div>
+        <div class="result-mood" id="r-mood"></div>
+        <div class="result-where"><span class="result-where-label">Where to watch</span><span class="result-where-val" id="r-platform"></span></div>
+        <a class="watch-btn read-btn" id="r-guide-btn" href="/dark-october-night-mysteries.html">Read About Your Mystery &rarr;</a>
+        <div class="result-rank" id="r-rank"></div>
+        <button class="guide-btn" id="r-watch-btn"></button>
+        <div class="share-box">
+          <div class="share-box-label">Share your result</div>
+          <p class="share-preview" id="r-share-text"></p>
+          <div class="share-row">
+            <button class="share-btn share-main" id="share-result">Share My Result</button>
+            <button class="share-btn share-alt" id="copy-share">Copy Result</button>
+          </div>
+          <div class="share-note" id="share-note" role="status" aria-live="polite"></div>
+        </div>
+        <button class="retry-btn retry-quiet" id="retry-btn">Try Again &rarr;</button>
       </div>
     </div>
 
     <!-- MORE SHOWS (shown after result) -->
     <div class="more-shows" id="more-shows" style="display:none">
-      <div class="more-label">Also on the October watchlist</div>
+      <div class="more-label">Keep the Mystery Going</div>
       <div class="more-grid" id="more-grid"></div>
     </div>
 
@@ -1870,45 +1923,46 @@ const QUESTIONS = [
   {
     text: "Choose your setting.",
     opts: [
-      {label:"🏰 A grand country manor", w:{poirot:2,ghostsxmas:3,mezzotint:3,woods:2,grantchester:1,divas:1}},
-      {label:"🌫️ A foggy English village", w:{bump:3,straw:3,darkautumn:3,woods:2,grantchester:2,poirot:2,divas:2}},
-      {label:"🌊 A lonely stretch of coast", w:{tower:4,holyorders:3}},
-      {label:"🎩 Gaslit Victorian London", w:{memento:4,vanishing:4}},
-      {label:"🕯️ A dusty old library or chapel", w:{tractate:4,holyorders:3,mezzotint:1}}
+      {label:"🏰 A grand country manor", p:"a grand country manor", w:{poirot:2,ghostsxmas:3,mezzotint:3,woods:2,grantchester:1,divas:1}},
+      {label:"🌫️ A foggy English village", p:"a foggy English village", w:{bump:3,straw:3,darkautumn:3,woods:2,grantchester:2,poirot:2,divas:2}},
+      {label:"🌊 A lonely stretch of coast", p:"a lonely stretch of coast", w:{tower:4,holyorders:3}},
+      {label:"🎩 Gaslit Victorian London", p:"gaslit Victorian London", w:{memento:4,vanishing:4}},
+      {label:"🕯️ A dusty old library or chapel", p:"a dusty old library", w:{tractate:4,holyorders:3,mezzotint:1}}
     ]
   },
   {
     text: "Choose your detective.",
     opts: [
-      {label:"An eccentric outsider with little grey cells", w:{poirot:5,vanishing:1}},
-      {label:"A weary DCI who's seen every village secret", w:{bump:3,straw:3,woods:3,darkautumn:3,divas:3,ghostsxmas:3}},
-      {label:"A quiet, poetic Scotland Yard commander", w:{tower:4,holyorders:4}},
-      {label:"A kindly vicar who can't leave a death alone", w:{grantchester:5,holyorders:1}},
-      {label:"A formidable woman who won't be told no", w:{memento:4,vanishing:4,poirot:1}},
-      {label:"A bookish scholar who meddles with old things", w:{tractate:4,mezzotint:4}}
+      {label:"An eccentric outsider with little grey cells", p:"an eccentric outsider", w:{poirot:5,vanishing:1}},
+      {label:"A weary DCI who's seen every village secret", p:"a weary DCI", w:{bump:3,straw:3,woods:3,darkautumn:3,divas:3,ghostsxmas:3}},
+      {label:"A quiet, poetic Scotland Yard commander", p:"a poetic Scotland Yard commander", w:{tower:4,holyorders:4}},
+      {label:"A kindly vicar who can't leave a death alone", p:"a kindly vicar", w:{grantchester:5,holyorders:1}},
+      {label:"A formidable woman who won't be told no", p:"a formidable woman who won't be told no", w:{memento:4,vanishing:4,poirot:1}},
+      {label:"A bookish scholar who meddles with old things", p:"a scholar who meddles with old things", w:{tractate:4,mezzotint:4}}
     ]
   },
   {
     text: "Choose your clue.",
     opts: [
-      {label:"📷 An old photograph", w:{memento:4,mezzotint:3,ghostsxmas:1}},
-      {label:"📜 A missing will", w:{tractate:4,grantchester:3,ghostsxmas:2}},
-      {label:"✉️ A mysterious letter", w:{tower:2,holyorders:2,poirot:2,vanishing:1,woods:1}},
-      {label:"☕ A broken teacup", w:{divas:2,darkautumn:2,bump:1,straw:1,grantchester:1,woods:1}}
+      {label:"📷 An old photograph", p:"an old photograph", w:{memento:4,mezzotint:3,ghostsxmas:1}},
+      {label:"📜 A missing will", p:"a missing will", w:{tractate:4,grantchester:3,ghostsxmas:2}},
+      {label:"✉️ A mysterious letter", p:"a mysterious letter", w:{tower:2,holyorders:2,poirot:2,vanishing:1,woods:1}},
+      {label:"☕ A broken teacup", p:"a broken teacup", w:{divas:2,darkautumn:2,bump:1,straw:1,grantchester:1,woods:1}}
     ]
   },
   {
     text: "Choose your atmosphere.",
     opts: [
-      {label:"🫖 Cosy, with a hint of autumn chill", w:{grantchester:3,divas:3,ghostsxmas:3,darkautumn:2}},
-      {label:"🍂 Atmospheric and slow-burning", w:{tower:3,holyorders:3,vanishing:2,darkautumn:3}},
-      {label:"🕯️ Properly eerie", w:{straw:5,woods:4,memento:2,mezzotint:3,tractate:2}},
-      {label:"💡 Lights on, please", w:{poirot:4,bump:4,tractate:2,mezzotint:2}}
+      {label:"🫖 Cosy, with a hint of autumn chill", p:"a cosy hint of autumn chill", w:{grantchester:3,divas:3,ghostsxmas:3,darkautumn:2}},
+      {label:"🍂 Atmospheric and slow-burning", p:"plenty of slow-burning atmosphere", w:{tower:3,holyorders:3,vanishing:2,darkautumn:3}},
+      {label:"🕯️ Properly eerie", p:"proper eerie dread", w:{straw:5,woods:4,memento:2,mezzotint:3,tractate:2}},
+      {label:"💡 Lights on, please", p:"just enough spookiness to keep the lights on", w:{poirot:4,bump:4,tractate:2,mezzotint:2}}
     ]
   }
 ];
 
 let answers = [];
+let phrases = [];
 let current = 0;
 
 function renderQuestion(){
@@ -1921,19 +1975,22 @@ function renderQuestion(){
     const btn = document.createElement('button');
     btn.className = 'opt-btn';
     btn.textContent = o.label;
-    btn.onclick = () => pick(o.w, btn);
+    btn.onclick = () => pick(o.w, o.p, btn);
     grid.appendChild(btn);
   });
   for(let i=0;i<QUESTIONS.length;i++){
     const s = document.getElementById('step-'+i);
     s.className = 'progress-step' + (i < current ? ' done' : i === current ? ' active' : '');
+    const j = document.getElementById('jr-'+i);
+    if(j) j.className = i < current ? 'done' : i === current ? 'active' : '';
   }
 }
 
-function pick(weights, btn){
+function pick(weights, phrase, btn){
   document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
   answers.push(weights);
+  phrases.push(phrase);
   setTimeout(()=>{
     current++;
     if(current < QUESTIONS.length){
@@ -1963,7 +2020,7 @@ function showResult(){
   const winnerId = computeWinner();
   const r = SHOWS[winnerId];
 
-  for(let i=0;i<QUESTIONS.length;i++) document.getElementById('step-'+i).className = 'progress-step done';
+  for(let i=0;i<QUESTIONS.length;i++){ document.getElementById('step-'+i).className = 'progress-step done'; const j=document.getElementById('jr-'+i); if(j) j.className='done'; }
 
   document.getElementById('question-wrap').style.display = 'none';
   document.getElementById('result-wrap').style.display = 'block';
@@ -1975,25 +2032,43 @@ function showResult(){
   document.getElementById('r-desc').textContent = r.desc;
   document.getElementById('r-mood').textContent = r.mood;
 
+  const [ps, pd, pc, pa] = phrases;
+  const title = r.show + ': ' + r.ep.replace(/[\u201c\u201d]/g,'');
+  document.getElementById('r-why').textContent =
+    ps.charAt(0).toUpperCase() + ps.slice(1) + ', ' + pd + ', ' + pc + ' and ' + pa + '? Every clue points the same way.';
+  const shareText = 'My perfect British Halloween mystery involves ' + ps + ', ' + pd + ', ' + pc + ' and ' + pa + '. My match: ' + title + '. Build yours:';
+  document.getElementById('r-share-text').textContent = shareText;
+  document.getElementById('r-rank').textContent = r.guide.indexOf('ghost-story') > -1 ? 'Featured in A Ghost Story for Halloween' : r.guideLabel.replace(/\s*\u2192\s*$/,'');
+
   const wb = document.getElementById('r-watch-btn');
   wb.textContent = r.watchLabel || ('Watch on ' + r.platform + ' →');
   wb.onclick = () => window.open(r.url, '_blank', 'noopener');
 
-  const gb = document.getElementById('r-guide-btn');
-  gb.href = r.guide;
-  gb.textContent = r.guideLabel;
+  document.getElementById('r-guide-btn').href = r.guide;
 
   document.getElementById('retry-btn').onclick = reset;
 
   const pageUrl = 'https://britishtvhub.com/halloween-mystery-builder.html';
-  document.getElementById('fb-share').onclick = () => {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl),'_blank');
+  const note = document.getElementById('share-note');
+  note.textContent = '';
+  const full = shareText + ' ' + pageUrl;
+  const copy = () => navigator.clipboard ? navigator.clipboard.writeText(full) : Promise.reject();
+  document.getElementById('share-result').onclick = () => {
+    if(navigator.share){
+      navigator.share({title:'My British Halloween Mystery', text:shareText, url:pageUrl}).catch(()=>{});
+      return;
+    }
+    copy().then(()=>{
+      note.textContent = 'Your result is copied. Paste it into your Facebook post.';
+    }).catch(()=>{ note.textContent = 'Copy the text above to share it with your post.'; });
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl),'_blank','noopener,width=600,height=500');
   };
   document.getElementById('copy-share').onclick = () => {
-    navigator.clipboard.writeText(pageUrl).then(()=>{
-      document.getElementById('copy-share').textContent = 'Copied!';
-      setTimeout(()=>{ document.getElementById('copy-share').textContent = 'Copy link'; },2000);
-    });
+    copy().then(()=>{
+      const btn = document.getElementById('copy-share');
+      btn.textContent = 'Copied!';
+      setTimeout(()=>{ btn.textContent = 'Copy Result'; },2000);
+    }).catch(()=>{ note.textContent = 'Copy the text above to share it.'; });
   };
 
   /* Runners-up: the next-highest scorers, excluding the winner */
@@ -2024,6 +2099,7 @@ function showResult(){
 
 function reset(){
   answers = [];
+  phrases = [];
   current = 0;
   document.getElementById('question-wrap').style.display = 'block';
   document.getElementById('result-wrap').style.display = 'none';
