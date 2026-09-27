@@ -23,6 +23,7 @@ window.SITE_SEARCH_INDEX = [
   {"title":"Meet Tilly","url":"/meet-tilly.html"},
   {"title":"Partner With Us","url":"/partner.html"},
   {"title":"Match Me a Mystery Quiz","url":"/quiz.html"},
+  {"title":"Build Your Perfect British Halloween Mystery","url":"/halloween-mystery-builder.html"},
   {"title":"Richard Osman Books in Order","url":"/richard-osman.html"},
   {"title":"CozyTVCompanion Shop","url":"/shop.html"},
   {"title":"Browse British TV Shows: Complete Index","url":"/shows-index.html"},
