@@ -5531,16 +5531,16 @@
     "genre": "Mystery",
     "us": [
       {
-        "name": "BritBox",
+        "name": "Acorn TV",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-09-27",
     "sources": [
-      "https://tv.apple.com/us/show/ordeal-by-innocence/umc.cmc.29fn623mtwfhjeqmbku9slsao"
+      "https://www.justwatch.com/us/tv-show/and-then-there-were-none"
     ]
   },
   {
@@ -5567,16 +5567,17 @@
     "genre": "Mystery",
     "us": [
       {
-        "name": "BritBox",
+        "name": "Prime Video",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/s?k=The+Pale+Horse+2020+Rufus+Sewell&i=instant-video&tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-09-27",
     "sources": [
-      "https://rissiwrites.com/2026/05/best-things-to-stream-right-now-britbox.html"
+      "https://reelgood.com/show/the-pale-horse-2020",
+      "https://www.agathachristie.com/en/film-and-tv/the-pale-horse"
     ]
   },
   {
