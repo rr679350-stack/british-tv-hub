@@ -640,30 +640,34 @@ document.addEventListener('click', function(e){
 
 
 
-<div class="gift-promo" style="max-width:1100px;margin:28px auto 36px;padding:0 40px;box-sizing:border-box;">
+<div class="gift-banner" style="max-width:1100px;margin:28px auto 36px;padding:0;box-sizing:border-box;">
   <style>
-  .gift-promo-box{display:flex;gap:24px;align-items:center;background:#232b40;border:1px solid rgba(201,168,76,0.35);border-top:3px solid var(--gold,#c9a96e);border-radius:12px;padding:22px 24px;}
-  .gift-promo-box img{width:210px;height:150px;object-fit:cover;border-radius:8px;flex:0 0 auto;display:block;}
-  .gift-promo-eyebrow{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold,#c9a96e);margin:0 0 6px;}
-  .gift-promo-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.25;}
-  .gift-promo-text{font-family:'Crimson Text',serif;font-size:17px;color:#d8d4c8;line-height:1.55;margin:0 0 14px;}
-  .gift-promo-btns{display:flex;flex-wrap:wrap;gap:10px;}
-  .gift-promo-btn{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;padding:10px 16px;border-radius:2px;text-decoration:none;}
-  .gift-promo-btn.primary{background:var(--gold,#c9a96e);color:#1a2135;}
-  .gift-promo-btn.secondary{border:1px solid rgba(201,168,76,0.6);color:var(--gold-light,#dab870);}
-  @media (max-width:700px){.gift-promo{padding:0 16px!important;} .gift-promo-box{flex-direction:column;align-items:stretch;} .gift-promo-box img{width:100%;height:auto;aspect-ratio:16/9;}}
-  </style>
-  <div class="gift-promo-box">
-    <img src="/autumn-gift-pairings.webp" alt="Book, tea and candle in front of a TV showing a cozy village scene" loading="lazy">
-    <div>
-      <p class="gift-promo-eyebrow">Gifts for Vera fans</p>
-      <h3 class="gift-promo-title">Know a Vera fan?</h3>
-      <p class="gift-promo-text">The Autumn Gift Guide pairs Vera with <em>The Crow Trap</em>, the Ann Cleeves novel that introduced her, alongside tea, throws and candles for evenings in.</p>
-      <div class="gift-promo-btns">
-        <a class="gift-promo-btn primary" href="/autumn-gift-guide.html#pairings">See the Pairing &rarr;</a>
-        <a class="gift-promo-btn secondary" href="/gift-guide-hub.html#gift-finder">Find a Gift in 3 Questions &rarr;</a>
+.gb{display:grid;grid-template-columns:58% 42%;align-items:center;background:#1a2135;border:1px solid #3d4a60;border-radius:12px;overflow:hidden}
+.gb .gb-text{padding:36px 40px}
+.gb .gb-kicker{font-family:'Raleway',sans-serif;font-size:11px !important;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px !important;padding:0 !important}
+.gb .gb-title{font-family:'Playfair Display',serif;font-size:28px !important;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;padding:0 !important}
+.gb .gb-desc{font-family:'Crimson Text',serif;font-size:17px !important;color:#d8d4c8;line-height:1.6 !important;margin:0 0 18px;max-width:560px;padding:0 !important}
+.gb .gb-btns{display:flex;flex-wrap:wrap;gap:10px}
+.gb .gb-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 20px;border-radius:2px;text-decoration:none}
+.gb .gb-btn.primary{color:#1a2135;background:#c9a96e}
+.gb .gb-btn.secondary{color:#dab870;border:1px solid rgba(201,169,110,0.6)}
+.gb .gb-media{position:relative;align-self:stretch;display:flex;align-items:center}
+.gb .gb-media img{width:100%;height:auto;display:block}
+.gb .gb-media::before{content:'';position:absolute;top:0;bottom:0;left:0;width:80px;background:linear-gradient(to right,#1a2135,rgba(26,33,53,0));z-index:1}
+.gb.gb-stack{grid-template-columns:1fr}.gb.gb-stack .gb-media{order:-1}.gb.gb-stack .gb-media::before{display:none}
+@media (max-width:900px){.gift-banner{padding:0 16px !important}.gb{grid-template-columns:1fr}.gb .gb-media{order:-1}.gb .gb-media::before{display:none}.gb .gb-text{padding:24px 20px 28px}.gb .gb-title{font-size:24px !important}}
+</style>
+  <div class="gb">
+    <div class="gb-text">
+      <div class="gb-kicker">Gifts for Vera fans</div>
+      <h3 class="gb-title">Know a Vera fan?</h3>
+      <p class="gb-desc">The Autumn Gift Guide pairs Vera with <em>The Crow Trap</em>, the Ann Cleeves novel that introduced her, alongside tea, throws and candles for evenings in.</p>
+      <div class="gb-btns">
+        <a class="gb-btn primary" href="/autumn-gift-guide.html#pairings">See the Pairing &rarr;</a>
+        <a class="gb-btn secondary" href="/gift-guide-hub.html#gift-finder">Find a Gift in 3 Questions &rarr;</a>
       </div>
     </div>
+    <div class="gb-media"><img src="/autumn-gift-pairings.webp" alt="Book, tea and candle in front of a TV showing a cozy village scene" loading="lazy" style="aspect-ratio:1200/800;"></div>
   </div>
 </div>
 
