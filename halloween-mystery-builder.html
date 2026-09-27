@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Perfect British Halloween Mystery | British TV Hub</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Choose a setting, a detective, a clue, and how spooky you want it — and get matched to a real British mystery episode for Halloween night.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://britishtvhub.com/halloween-mystery-builder.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/halloween-mystery-builder.html">
+<meta property="og:title" content="Build Your Perfect British Halloween Mystery | British TV Hub">
+<meta property="og:description" content="Choose a setting, a detective, a clue, and how spooky you want it — and get matched to a real British mystery episode for Halloween night.">
+<meta property="og:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
+<meta property="og:image:width" content="1774">
+<meta property="og:image:height" content="887">
+<meta property="og:image:alt" content="A cozy living room with a TV showing a village scene, Big Ben visible through the rainy window">
+<meta property="og:site_name" content="British TV Hub">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build Your Perfect British Halloween Mystery | British TV Hub">
+<meta name="twitter:description" content="Four choices, one spooky British mystery episode for Halloween night.">
+<meta name="twitter:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Build Your Perfect British Halloween Mystery",
+  "description": "Choose a setting, a detective, a clue, and how spooky you want it — and get matched to a real British mystery episode for Halloween night.",
+  "url": "https://britishtvhub.com/halloween-mystery-builder.html",
+  "dateModified": "2026-09-26",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "British TV Hub",
+    "url": "https://britishtvhub.com/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://britishtvhub.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Build Your Perfect British Halloween Mystery",
+      "item": "https://britishtvhub.com/halloween-mystery-builder.html"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital@0;1&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
+  --gold:#c9a96e;--gold2:#dab870;
+  --red:#8b1a2e;--red2:#a01f36;
+  --text:#e8dfc8;--muted:#9090a8;
+  --border:#3d4a60;--border2:#4d5a70;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;min-height:100vh;overflow-x:hidden}
+
+/* NAV */
+nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
+.nav-brand{padding:16px 0;text-decoration:none;display:block}
+.nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
+.nav-sub{font-family:'Raleway',sans-serif;font-size:11px;color:#9090a8;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic}
+.nav-links{display:flex;align-items:center}
+.nlink{padding: 20px 11px;font-family:'Raleway',sans-serif;font-size: 11px;letter-spacing: 1.5px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
+.nlink:hover{color:#ffffff}
+.nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
+.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 8px;padding:11px 20px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
+.nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
+.nav-quiz-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 16px !important;font-size:12px !important;letter-spacing:1.5px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
+.nav-quiz-btn:hover,.nav-quiz-btn.on{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
+
+/* HERO */
+.quiz-hero{background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px 48px;text-align:center}
+.quiz-eyebrow{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px}
+.quiz-hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;color:#e8d0a0;line-height:1.2;margin-bottom:12px;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+.quiz-hero-sub{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#c8d0e0;max-width:500px;margin:0 auto;line-height:1.6;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+
+/* QUIZ CARD */
+.quiz-container{max-width:660px;margin:48px auto;padding:0 24px 64px}
+.quiz-card{ background: #1e2433; border: 1px solid #3d4a60; box-shadow: 0 4px 24px rgba(0,0,0,0.35); border-radius: 12px; }
+
+/* PROGRESS */
+.progress-bar{display:flex;gap:0;border-bottom:1px solid #3d4a60}
+.progress-step{flex:1;height:3px;background:#2c3345;transition:background 0.4s}
+.progress-step.done{background:#c9a96e}
+.progress-step.active{background:#8b1a2e}
+
+/* QUESTION */
+.question-wrap{padding:36px 36px 28px}
+.q-counter{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px}
+.q-text{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#c9a96e;line-height:1.4;margin-bottom:28px;font-style:italic}
+.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt-btn{background:#2c3345;border:1px solid #3d4a60;color:#c8c0a8;padding:16px 18px;font-family:'Crimson Text',serif;font-size:17px;cursor:pointer;text-align:left;transition:all 0.15s;line-height:1.4;position:relative}
+.opt-btn:hover{border-color:#c9a96e;color:#e8d0a0;background:#242d40}
+.opt-btn.selected{border-color:#c9a96e;background:#242d40;color:#e8d0a0}
+.opt-btn.selected::after{content:'✓';position:absolute;top:10px;right:14px;color:#c9a96e;font-family:sans-serif;font-size:14px}
+
+/* RESULT */
+.result-wrap{padding:36px;display:none}
+.result-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px}
+.result-show{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#c9a96e;margin-bottom:6px;font-style:italic;line-height:1.2}
+.result-meta{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#a0aec8;margin-bottom:16px}
+.result-platform-badge{display:inline-block;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;margin-bottom:20px}
+.result-divider{width:40px;height:1px;background:#3d4a60;margin:0 0 20px}
+.result-desc{font-family:'Crimson Text',serif;font-size:18px;color:#c8c0a8;line-height:1.7;margin-bottom:28px}
+.watch-btn{ display: block; text-align: center; background: var(--gold); color: #1a2135; padding: 12px 24px; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; margin-bottom: 10px; transition: background 0.2s; cursor: pointer; border: none; width: 100%; border-radius: 2px; }
+.watch-btn:hover{background:#a01f36}
+.retry-btn{display:block;text-align:center;background:var(--gold);border:none;color:#1a2135;padding: 12px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size: 11px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;cursor:pointer;width:100%;transition:all 0.2s;margin-bottom:10px}
+.retry-btn:hover{opacity:0.88}
+.share-row{display:flex;gap:10px;margin-top:4px}
+.share-btn{flex:1;text-align:center;background:var(--gold);border:none;color:#1a2135;padding: 12px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size: 11px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;cursor:pointer;transition:all 0.2s}
+.share-btn:hover{opacity:0.88}
+
+/* MORE SHOWS */
+.more-shows{padding:0 36px 36px}
+.more-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px;border-top:1px solid #3d4a60;padding-top:24px}
+.more-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.more-chip{background:#2c3345;border:1px solid #3d4a60;padding:10px 14px;cursor:pointer;transition:border-color 0.2s;text-decoration:none;display:block}
+.more-chip:hover{border-color:#c9a96e}
+.more-chip-name{font-family:'Playfair Display',serif;font-size:15px;color:#dab870;margin-bottom:2px}
+.more-chip-platform{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#a0aec8}
+
+/* NEWSLETTER STRIP */
+.nl-strip{background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:40px;text-align:center;margin-top:0}
+.nl-strip-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#e8dfc8;margin-bottom:8px}
+.nl-strip-sub{font-family:'Crimson Text',serif;font-size:18px;font-style:italic;color:#a0aec8;margin-bottom:24px}
+.nl-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.nl-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:13px 18px;font-family:'Crimson Text',serif;font-size:16px;width:240px;outline:none}
+.nl-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:13px 24px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer}
+.nl-btn:hover{background:#a01f36}
+.nl-note{font-family:'Raleway',sans-serif;font-size:11px;color:#88898b;margin-top:10px;letter-spacing:1px}
+
+@media(max-width:700px){
+  nav{padding:0 12px;flex-wrap:wrap}
+  .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
+  .nlink{padding:14px 10px;font-size:11px}
+  .nav-guide-btn,.nav-quiz-btn{font-size:11px !important;padding:8px 12px !important}
+  .quiz-hero{padding:40px 24px 36px}
+  .quiz-container{padding:0 16px 48px}
+  .question-wrap{padding:24px 20px 20px}
+  .options-grid{grid-template-columns:1fr}
+  .result-wrap{padding:24px 20px}
+  .more-shows{padding:0 20px 24px}
+  .more-grid{grid-template-columns:1fr}
+  .share-row{flex-direction:column}
+  .nl-strip{padding:32px 24px}
+}
+
+    /* === STANDARD NAV (canonical) === */
+    nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
+    nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
+    nav.site-nav-std .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: #f0e8d4; white-space: nowrap; }
+    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #9090b8; white-space: nowrap; }
+    nav.site-nav-std .nav-links { display: flex; align-items: center; flex-wrap: nowrap; }
+    nav.site-nav-std .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c9a96e; cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nlink:hover { color: #ffffff; }
+    nav.site-nav-std .nlink.on { color: #ffffff; border-bottom: 2px solid #c9a96e; }
+    nav.site-nav-std .nav-guide-btn { background: #8b1a2e; color: #f5e8d0; border: none; border-bottom: none; margin: 10px 0 10px 6px; padding: 11px 14px; font-size: 11px; letter-spacing: 1px; font-family: 'Raleway', sans-serif; text-transform: uppercase; white-space: nowrap; cursor: pointer; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nav-guide-btn:hover { background: #a01f36; color: #fff; }
+    nav.site-nav-std .nav-nl-btn { border: 1px solid #c9a96e; color: #c9a96e; background: #1a2135; margin: 10px 0 10px 4px; padding: 11px 12px; font-size: 11px; letter-spacing: 1px; font-family: 'Raleway', sans-serif; text-transform: uppercase; white-space: nowrap; text-decoration: none; display: inline-block; }
+    nav.site-nav-std .nav-nl-btn:hover { border-color: #ffffff; color: #ffffff; background: #2c3a50; }
+    @media (max-width: 900px) {
+      nav.site-nav-std { padding: 0 12px; flex-wrap: wrap; }
+      nav.site-nav-std .nav-links { overflow-x: auto; width: 100%; padding-bottom: 2px; }
+      nav.site-nav-std .nlink { padding: 14px 9px; font-size: 10px; }
+      nav.site-nav-std .nav-guide-btn, nav.site-nav-std .nav-nl-btn { font-size: 10px; padding: 9px 12px; }
+    }
+
+  
+/* === FIXED CTA BLOCK === */
+.cta-block-fixed{margin:48px auto 0;width:min(1180px,calc(100vw - 80px));display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start;background:#16203a;border:1px solid #4a5570;border-left:4px solid #8b1a2e;padding:40px;}
+.cta-block-fixed>div{min-width:0;}
+.ctaf-row{display:flex;gap:0;}
+.ctaf-email{background:#2a3450;border:1px solid #4a5570;color:#f0e8d4;padding:13px 16px;font-family:'Crimson Text',serif;font-size:16px;flex:1;min-width:0;outline:none;}
+.ctaf-submit{background:#9b2030;border:none;color:#f5e8d0;padding:13px 22px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;white-space:nowrap;}
+.ctaf-card{border:1px solid #4a5570;background:#243050;padding:28px;display:flex;flex-direction:column;gap:16px;justify-content:space-between;}
+@media(max-width:860px){
+  .cta-block-fixed{grid-template-columns:1fr;gap:32px;width:calc(100vw - 40px);padding:28px 20px;}
+  .ctaf-row{flex-wrap:wrap;gap:10px;}
+  .ctaf-email{flex:1 1 100%;}
+  .ctaf-submit{width:100%;}
+}
+/* === END FIXED CTA BLOCK === */
+
+
+/* AGGRESSIVE Mobile optimization - SMALLER sizes */
+@media (max-width: 480px) {
+  /* Make logo TINY on mobile */
+  .nav-brand,
+  .nav-brand img {
+    height: 40px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  
+/* Reduce nav padding and gaps */
+  .site-nav-std {
+    padding: 6px 12px !important;
+    gap: 4px !important;
+  }
+  
+  .nav-links {
+    gap: 4px !important;
+  }
+  
+  /* Smaller nav text */
+  .nlink {
+    font-size: 11px !important;
+    padding: 12px 6px !important;
+  }
+}
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+
+  .continue-reading{margin:64px auto 56px;max-width:1100px;}
+  .cr-heading{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--text);margin:0 0 10px;}
+  .cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--muted);margin:0 0 36px;}
+  .cr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
+  @media (max-width:860px){.cr-grid{grid-template-columns:1fr;}}
+  .cr-card{display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+  .cr-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+  .cr-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;}
+  .cr-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text);margin:0 0 10px;line-height:1.3;}
+  .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--muted);line-height:1.55;margin:0 0 16px;}
+  .cr-link{ display: inline-block; align-self:flex-start; margin-top:auto; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 12px 24px; border-radius: 2px; text-decoration: none; }
+  .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+.site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
+
+@media (max-width: 480px) {
+  .original-badge { width: 48px !important; height: 48px !important; top: 12px !important; right: 12px !important; }
+}
+
+/* === SPOOKY SEASON TOUCHES === */
+.spooky-hero{ isolation:isolate; }
+.spk-layer{ position:absolute; inset:0; pointer-events:none; z-index:3; overflow:hidden; }
+.spk-web{ position:absolute; width:240px; height:240px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20240%20240%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C228%2C236%2C0.55%29%22%20stroke-width%3D%221.1%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L239.9%208.4%22/%3E%3Cpath%20d%3D%22M0%200L232.6%2059.2%22/%3E%3Cpath%20d%3D%22M0%200L214.7%20107.4%22/%3E%3Cpath%20d%3D%22M0%200L186.9%20150.6%22/%3E%3Cpath%20d%3D%22M0%200L150.6%20186.9%22/%3E%3Cpath%20d%3D%22M0%200L107.4%20214.7%22/%3E%3Cpath%20d%3D%22M0%200L59.2%20232.6%22/%3E%3Cpath%20d%3D%22M0%200L8.4%20239.9%22/%3E%3Cpath%20d%3D%22M26.8%200.9Q22.9%203.3%2026.0%206.6Q21.6%208.1%2024.0%2012.0Q19.4%2012.5%2020.9%2016.8Q16.3%2016.3%2016.8%2020.9Q12.5%2019.4%2012.0%2024.0Q8.1%2021.6%206.6%2026.0Q3.3%2022.9%200.9%2026.8%22/%3E%3Cpath%20d%3D%22M56.7%202.0Q48.3%206.9%2055.0%2014.0Q45.7%2017.0%2050.8%2025.4Q41.1%2026.4%2044.2%2035.6Q34.5%2034.5%2035.6%2044.2Q26.4%2041.1%2025.4%2050.8Q17.0%2045.7%2014.0%2055.0Q6.9%2048.3%202.0%2056.7%22/%3E%3Cpath%20d%3D%22M87.9%203.1Q74.9%2010.7%2085.2%2021.7Q70.9%2026.4%2078.7%2039.3Q63.6%2040.9%2068.5%2055.2Q53.5%2053.5%2055.2%2068.5Q40.9%2063.6%2039.3%2078.7Q26.4%2070.9%2021.7%2085.2Q10.7%2074.9%203.1%2087.9%22/%3E%3Cpath%20d%3D%22M119.9%204.2Q102.2%2014.6%20116.3%2029.6Q96.7%2036.0%20107.3%2053.7Q86.8%2055.8%2093.4%2075.3Q73.0%2073.0%2075.3%2093.4Q55.8%2086.8%2053.7%20107.3Q36.0%2096.7%2029.6%20116.3Q14.6%20102.2%204.2%20119.9%22/%3E%3Cpath%20d%3D%22M152.6%205.3Q130.0%2018.6%20148.0%2037.7Q123.1%2045.8%20136.6%2068.3Q110.5%2071.0%20118.9%2095.8Q92.9%2092.9%2095.8%20118.9Q71.0%20110.5%2068.3%20136.6Q45.8%20123.1%2037.7%20148.0Q18.6%20130.0%205.3%20152.6%22/%3E%3Cpath%20d%3D%22M185.8%206.5Q158.3%2022.6%20180.2%2045.9Q149.8%2055.8%20166.3%2083.2Q134.5%2086.4%20144.8%20116.6Q113.1%20113.1%20116.6%20144.8Q86.4%20134.5%2083.2%20166.3Q55.8%20149.8%2045.9%20180.2Q22.6%20158.3%206.5%20185.8%22/%3E%3Cpath%20d%3D%22M219.5%207.7Q187.0%2026.8%20212.8%2054.2Q177.0%2065.9%20196.4%2098.2Q158.9%20102.1%20171.0%20137.8Q133.5%20133.5%20137.8%20171.0Q102.1%20158.9%2098.2%20196.4Q65.9%20177.0%2054.2%20212.8Q26.8%20187.0%207.7%20219.5%22/%3E%3Cpath%20d%3D%22M148.8%2043.2q18%2030%206%2058%22%20opacity%3D%220.6%22/%3E%3C/svg%3E") no-repeat; background-size:contain; opacity:0.55; }
+.spk-web-tl{ top:0; left:0; width:170px; height:170px; opacity:0.38; }
+.spk-web-tr{ top:0; right:0; transform:scaleX(-1); width:200px; height:200px; opacity:0.65; }
+.spk-spider{ position:absolute; top:0; right:30%; width:48px; display:flex; flex-direction:column; align-items:center; transform-origin:top center; animation:spk-drop 2.6s cubic-bezier(.3,1.4,.5,1) .6s both, spk-sway 6s ease-in-out 3.2s infinite; }
+.spk-thread{ width:1px; height:150px; background:linear-gradient(rgba(226,228,236,0.15), rgba(226,228,236,0.6)); }
+.spk-spider-body{ width:48px; height:48px; margin-top:-8px; filter:drop-shadow(0 3px 6px rgba(0,0,0,0.6)); }
+@keyframes spk-drop{ 0%{ transform:translateY(-190px); } 100%{ transform:translateY(0); } }
+@keyframes spk-sway{ 0%,100%{ transform:rotate(-3deg); } 50%{ transform:rotate(3deg) translateY(6px); } }
+.spk-bat{ position:absolute; left:-80px; width:44px; opacity:0; animation:spk-fly 19s linear infinite; }
+.spk-bat svg{ width:100%; height:auto; display:block; filter:drop-shadow(0 0 2px rgba(243,237,226,0.25)); }
+.spk-bat .spk-wing{ transform-origin:32px 12px; animation:spk-flap .28s ease-in-out infinite alternate; }
+.spk-bat.b1{ top:5%; animation-delay:2s; }
+.spk-bat.b2{ top:9%; width:30px; animation-delay:4.5s; animation-duration:23s; }
+.spk-bat.b3{ top:3%; width:24px; animation-delay:11s; animation-duration:21s; }
+@keyframes spk-fly{ 0%{ transform:translate(0,0); opacity:0; } 4%{ opacity:.9; } 25%{ transform:translate(30vw,-18px); } 50%{ transform:translate(60vw,14px); } 75%{ transform:translate(90vw,-10px); opacity:.9; } 80%{ opacity:0; } 100%{ transform:translate(115vw,0); opacity:0; } }
+@keyframes spk-flap{ from{ transform:scaleY(1); } to{ transform:scaleY(.35); } }
+.spk-fog{ position:absolute; left:-20%; right:-20%; bottom:-30px; height:150px; background:
+  radial-gradient(ellipse 30% 55% at 20% 70%, rgba(200,205,220,0.16), transparent 70%),
+  radial-gradient(ellipse 35% 60% at 55% 80%, rgba(200,205,220,0.13), transparent 70%),
+  radial-gradient(ellipse 28% 50% at 85% 70%, rgba(200,205,220,0.15), transparent 70%);
+  filter:blur(6px); animation:spk-fog 38s ease-in-out infinite alternate; }
+.spk-fog.f2{ bottom:-50px; opacity:.8; animation-duration:52s; animation-direction:alternate-reverse; }
+@keyframes spk-fog{ from{ transform:translateX(-6%); } to{ transform:translateX(6%); } }
+.spooky-card{ position:relative; }
+.spooky-card::after{ content:''; position:absolute; top:0; right:0; width:92px; height:92px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%20fill%3D%22none%22%20stroke%3D%22rgba%28226%2C228%2C236%2C0.9%29%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L119.9%204.2%22/%3E%3Cpath%20d%3D%22M0%200L113.3%2039.5%22/%3E%3Cpath%20d%3D%22M0%200L96.6%2071.2%22/%3E%3Cpath%20d%3D%22M0%200L71.2%2096.6%22/%3E%3Cpath%20d%3D%22M0%200L39.5%20113.3%22/%3E%3Cpath%20d%3D%22M0%200L4.2%20119.9%22/%3E%3Cpath%20d%3D%22M18.7%200.7Q15.8%203.0%2017.6%206.1Q14.2%207.5%2015.0%2011.1Q11.4%2011.4%2011.1%2015.0Q7.5%2014.2%206.1%2017.6Q3.0%2015.8%200.7%2018.7%22/%3E%3Cpath%20d%3D%22M39.4%201.4Q33.4%206.2%2037.3%2013.0Q30.0%2015.8%2031.8%2023.4Q24.0%2024.0%2023.4%2031.8Q15.8%2030.0%2013.0%2037.3Q6.2%2033.4%201.4%2039.4%22/%3E%3Cpath%20d%3D%22M61.1%202.1Q51.7%209.7%2057.8%2020.1Q46.5%2024.5%2049.2%2036.3Q37.2%2037.2%2036.3%2049.2Q24.5%2046.5%2020.1%2057.8Q9.7%2051.7%202.1%2061.1%22/%3E%3Cpath%20d%3D%22M83.4%202.9Q70.5%2013.2%2078.8%2027.4Q63.5%2033.5%2067.2%2049.5Q50.7%2050.7%2049.5%2067.2Q33.5%2063.5%2027.4%2078.8Q13.2%2070.5%202.9%2083.4%22/%3E%3Cpath%20d%3D%22M106.1%203.7Q89.8%2016.8%20100.3%2034.9Q80.8%2042.6%2085.5%2063.0Q64.6%2064.6%2063.0%2085.5Q42.6%2080.8%2034.9%20100.3Q16.8%2089.8%203.7%20106.1%22/%3E%3Cpath%20d%3D%22M74.4%2021.6q18%2030%206%2058%22%20opacity%3D%220.6%22/%3E%3C/svg%3E") no-repeat; background-size:contain; transform:scaleX(-1); opacity:0.22; pointer-events:none; border-top-right-radius:12px; }
+@media (max-width:700px){
+  .spk-web{ width:150px; height:150px; } .spk-web-tl{ width:110px; height:110px; } .spk-web-tr{ width:120px; height:120px; }
+  .spk-spider{ right:3%; width:34px; } .spk-spider-body{ width:34px; height:34px; } .spk-thread{ height:40px; }
+  .spooky-card::after{ width:64px; height:64px; }
+}
+@media (prefers-reduced-motion: reduce){
+  .spk-spider, .spk-fog, .spk-bat .spk-wing{ animation:none !important; }
+  .spk-bat{ display:none; }
+}
+
+/* === HALLOWEEN BUILDER EXTRAS === */
+.result-episode{font-family:'Crimson Text',serif;font-size:20px;font-style:italic;color:#e8dfc8;margin:-2px 0 8px;line-height:1.35}
+.result-mood{font-family:'Crimson Text',serif;font-size:16px;color:#a0aec8;margin:0 0 18px}
+.guide-btn{display:block;text-align:center;background:transparent;border:1.5px solid var(--gold,#c9a96e);color:var(--gold,#c9a96e);padding:11px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;text-decoration:none;margin-bottom:10px;transition:background .2s,color .2s}
+.guide-btn:hover{background:var(--gold,#c9a96e);color:#1a2135}
+.hb-intro{max-width:720px;margin:0 auto !important;padding:36px 0 0 !important;text-align:center;font-family:'Crimson Text',serif;font-size:18px;line-height:1.65;color:#c8d0e0}
+.hb-intro a{color:#c9a96e}
+.options-grid .opt-btn:last-child:nth-child(odd){grid-column:1/-1}
+#hb-hero .spk-spider{right:8%}
+@media (max-width:600px){.options-grid{grid-template-columns:1fr}.more-grid{grid-template-columns:1fr}}
+</style>
+<style>
+/* Smooth transitions for all interactive elements */
+a, button, [role="button"] {
+  transition: all 0.3s ease;
+}
+
+/* Navigation links hover */
+nav a, footer a {
+  position: relative;
+}
+
+nav a:hover, footer a:hover {
+  color: #f0e8d4 !important;
+  text-shadow: 0 0 8px rgba(201, 168, 76, 0.3);
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* CTA Button hover (Etsy, See All Shows, etc) */
+a[style*="background:#c9a96e"]:hover,
+a[style*="background: #c9a96e"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(201, 168, 76, 0.2);
+  filter: brightness(1.1);
+}
+
+/* Outlined button hover (Ask Tilly) */
+a[style*="border:1px solid #c9a96e"]:hover,
+a[style*="border: 1px solid #c9a96e"]:hover {
+  background-color: rgba(201, 168, 76, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(201, 168, 76, 0.15);
+}
+
+/* Share buttons hover */
+button[style*="background:#c9a96e"]:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 6px 12px rgba(201, 168, 76, 0.25);
+}
+
+/* Card hover effects */
+div[style*="border:1px solid #3d4a60"]:hover {
+  border-color: #c9a96e;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(201, 168, 76, 0.15);
+  transition: all 0.4s ease;
+}
+
+/* Image brightness on hover */
+img:hover {
+  filter: brightness(1.08);
+  transition: filter 0.3s ease;
+}
+
+/* Text selection styling */
+::selection {
+  background-color: #c9a96e;
+  color: #1a2135;
+}
+
+/* Smooth page transitions */
+body {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Link focus states (accessibility) */
+a:focus, button:focus {
+  outline: 2px solid #c9a96e;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Smooth color transitions on interactive elements */
+a[style*="color:#c9a96e"] {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+</style>
+<style>
+/* Page load fade-in animation */
+@keyframes pageLoadFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Page exit fade-out animation */
+@keyframes pageExitFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Apply fade-in to entire page on load */
+html {
+  animation: pageLoadFadeIn 0.4s ease-in;
+}
+
+/* Smooth fade-in for main content */
+body {
+  animation: pageLoadFadeIn 0.5s ease-in 0.05s both;
+}
+
+/* Fade-in for header/nav */
+header, nav {
+  animation: pageLoadFadeIn 0.4s ease-in 0.1s both;
+}
+
+/* Stagger fade-in for main content sections */
+main {
+  animation: pageLoadFadeIn 0.5s ease-in 0.15s both;
+}
+
+/* Fade-in for footer */
+footer {
+  animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
+}
+
+
+}
+
+/* Ensure images load smoothly */
+img {
+  animation: pageLoadFadeIn 0.4s ease-in;
+}
+
+/* Hero sections slide-fade effect */
+[style*="hero"], [style*="Hero"] {
+  animation: pageLoadFadeIn 0.6s ease-in 0.1s both;
+}
+
+/* Show cards staggered fade-in */
+div[style*="border:1px solid #3d4a60"] {
+  animation: pageLoadFadeIn 0.5s ease-in;
+}
+
+/* Preserve user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+</style>
+
+<style>
+/* Scroll reveal animation styles */
+@keyframes revealFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: revealFadeUp 0.6s ease forwards;
+}
+
+/* Stagger effect for multiple elements */
+.scroll-reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.scroll-reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.scroll-reveal:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.scroll-reveal:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.scroll-reveal:nth-child(n+6) {
+  transition-delay: 0.5s;
+}
+
+/* Mobile optimization */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+</style>
+
+<style>
+/* Breadcrumb Navigation */
+.breadcrumb-container {
+  background: transparent;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  animation: pageLoadFadeIn 0.5s ease-in 0.2s both;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-item a {
+  color: #c9a96e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.breadcrumb-item a:hover {
+  color: #d4b47a;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #f0e8d4;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: rgba(201, 168, 76, 0.4);
+  margin: 0 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 11px;
+  }
+  
+  .breadcrumb-item {
+    gap: 6px;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 2px;
+  }
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+</style>
+<style>
+/* ===== MOBILE RESPONSIVE OVERHAUL ===== */
+
+/* MOBILE: Everything under 768px */
+@media (max-width: 768px) {
+  /* Root variables */
+  :root {
+    --nav-height: 60px;
+  }
+
+  /* Body spacing */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navigation fixes */
+  nav, nav.site-nav-std {
+    padding: 8px 12px !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  nav.site-nav-std .nav-brand,
+  .nav-brand {
+    width: 100% !important;
+    padding: 8px 0 !important;
+    margin-bottom: 8px !important;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+  }
+
+  nav.site-nav-std .nav-links,
+  .nav-links {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    gap: 4px !important;
+    overflow-x: visible !important;
+  }
+
+  nav.site-nav-std .nlink,
+  .nlink {
+    padding: 10px 10px !important;
+    font-size: 11px !important;
+    white-space: normal !important;
+    flex: 0 1 calc(50% - 4px) !important;
+    text-align: center !important;
+  }
+
+  nav.site-nav-std .nav-guide-btn,
+  nav.site-nav-std .nav-nl-btn,
+  .nav-guide-btn,
+  .nav-nl-btn {
+    font-size: 11px !important;
+    padding: 10px 10px !important;
+    flex: 0 1 calc(50% - 4px) !important;
+    text-align: center !important;
+  }
+
+  /* Ask Tilly button */
+  a[style*="background:#c9a96e"][style*="Raleway"] {
+    font-size: 10px !important;
+    padding: 10px 12px !important;
+    width: auto !important;
+  }
+
+  /* Main content */
+  main {
+    padding: 16px 12px !important;
+  }
+
+  /* Hero section */
+  #hero, [style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+    gap: 0 !important;
+  }
+
+  #hero > div:first-child {
+    min-height: 300px !important;
+  }
+
+  #hero > div:first-child img {
+    object-fit: cover !important;
+    object-position: center !important;
+    height: 100% !important;
+  }
+
+  #hero > div:last-child {
+    border-left: none !important;
+    border-top: 1px solid #3d4a60 !important;
+    padding: 24px 16px !important;
+  }
+
+  /* Typography mobile */
+  h1 {
+    font-size: 28px !important;
+    padding: 0 8px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+    padding: 0 8px !important;
+  }
+
+  h3 {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    padding: 0 8px !important;
+  }
+
+  /* Buttons mobile */
+  button, [role="button"], a[style*="background:"],
+  .btn, a[style*="padding:"][style*="background:"] {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    padding: 12px 16px !important;
+    font-size: 13px !important;
+  }
+
+  /* Back-to-top button mobile */
+  #backToTop {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 20px !important;
+  }
+
+  /* Forms */
+  input, textarea, select {
+    font-size: 16px !important;
+    padding: 12px !important;
+    min-height: 44px !important;
+  }
+
+  /* Grid layouts */
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Cards */
+  div[style*="border:1px"] {
+    margin: 8px 0 !important;
+    padding: 12px !important;
+  }
+
+  /* Spacing */
+  section, article, .section, .article {
+    padding: 16px 12px !important;
+    margin: 8px 0 !important;
+  }
+
+  /* Remove hover effects on touch devices */
+  @media (hover: none) {
+    button:hover,
+    a:hover,
+    [role="button"]:hover {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  /* Scroll reveal animations - keep but tone down */
+  .scroll-reveal {
+    transform: translateY(10px) !important;
+  }
+
+  .scroll-reveal.visible {
+    transform: translateY(0) !important;
+  }
+
+  /* Footer */
+  footer {
+    padding: 16px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Links in footer */
+  footer a {
+    padding: 4px !important;
+    display: inline-block !important;
+  }
+}
+
+/* SMALL MOBILE: Under 480px */
+@media (max-width: 480px) {
+  nav.site-nav-std .nlink,
+  .nlink {
+    flex: 0 1 calc(50% - 3px) !important;
+  }
+
+  h1 {
+    font-size: 22px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 13px !important;
+  }
+
+  main {
+    padding: 12px 10px !important;
+  }
+
+  button, [role="button"] {
+    font-size: 12px !important;
+  }
+
+  #backToTop {
+    bottom: 15px !important;
+    right: 15px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+/* TABLET: 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    padding: 12px 16px !important;
+  }
+
+  nav.site-nav-std .nlink {
+    padding: 12px 10px !important;
+    font-size: 11px !important;
+  }
+
+  main {
+    padding: 24px 16px !important;
+  }
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+</style>
+<style>
+/* MOBILE OVERFLOW FIX - Override fixed widths on mobile */
+
+@media (max-width: 768px) {
+  /* Override all fixed widths that are >300px */
+  [style*="width: 860px"],
+  [style*="width: 680px"],
+  [style*="width: 580px"],
+  [style*="width: 700px"],
+  [style*="width:1100px"],
+  [style*="width: 560px"],
+  [style*="width: 640px"],
+  [style*="width: 800px"],
+  [style*="width: 720px"],
+  [style*="width:500px"],
+  [style*="width: 1180px"],
+  [style*="width: 620px"],
+  [style*="width: 760px"],
+  [style*="width:560px"],
+  [style*="width: 400px"],
+  .error-container,
+  .social-proof-container,
+  .poll-wrap,
+  .watch-actions {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Ensure containers don't overflow */
+  div[style*="max-width"] {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* Hero and main content areas */
+  [style*="padding: 48px"],
+  [style*="padding:48px"],
+  [style*="padding: 40px"],
+  [style*="padding:40px"] {
+    padding: 24px 16px !important;
+  }
+
+  /* Section containers */
+  section, article, main {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Forms and inputs */
+  form {
+    width: 100% !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure no horizontal overflow */
+  * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  body, html {
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small phones - even more aggressive */
+  div[style*="width"] {
+    width: 100% !important;
+  }
+
+  div[style*="max-width"] {
+    max-width: 100% !important;
+  }
+
+  /* Ensure text doesn't overflow */
+  h1, h2, h3, h4, h5, h6, p {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Images must scale */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  /* Make logo smaller on mobile */
+  .nav-brand img {
+    height: 50px !important;
+  }
+  
+/* Reduce nav padding */
+  .site-nav-std {
+    padding: 8px 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablet: medium logo */
+  .nav-brand img {
+    height: 60px !important;
+  }
+  
+}
+
+
+/* Hide eyebrows on mobile */
+@media (max-width: 768px) {
+  .hero-eyebrow,
+  .page-hero-eyebrow,
+  [class*="eyebrow"] {
+    display: none !important;
+  }
+}
+
+
+/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
+   of Chatbase's native size was tried and regressed — if their native size
+   is large, scaling it by a percentage can still render large). Excludes
+   #backToTop, which happens to share the same position:fixed;bottom;right
+   inline-style pattern. */
+[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+iframe[id*="chatbase-bubble-button"],
+#chatbase-bubble-button {
+  width: 60px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+  overflow: hidden !important;
+}
+@media (max-width: 480px) {
+  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
+  iframe[id*="chatbase-bubble-button"],
+  #chatbase-bubble-button {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    overflow: hidden !important;
+  }
+}
+</style>
+<style>
+
+</style>
+<style>
+/* Fix: allow header nav to wrap instead of clipping items when it overflows (narrow screens only) */
+@media (max-width: 1300px) {
+  nav.site-nav-std .nav-links, .nav-links { flex-wrap: wrap !important; row-gap: 4px; justify-content: center !important; }
+}
+</style>
+<style>
+/* Two-row nav: primary links + brand on top, action buttons below */
+nav.site-nav-std { flex-direction: column !important; align-items: stretch !important; }
+.nav-top-row { display: grid !important; grid-template-columns: auto 1fr auto; align-items: center !important; width: 100%; gap: 16px; }
+.nav-top-row .nav-links { display: flex !important; justify-content: center !important; }
+.nav-actions-row { display: flex !important; align-items: center !important; justify-content: center !important; gap: 8px; flex-wrap: wrap; width: 100%; padding: 8px 0 10px; border-top: 1px solid rgba(201,168,76,0.15); margin-top: 4px; }
+@media (max-width: 1300px) {
+  .nav-top-row { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+}
+@media (max-width: 480px) {
+  .nav-actions-row { gap: 6px; }
+  .nav-actions-row a { font-size: 11px !important; padding: 8px 10px !important; }
+}
+</style>
+<style>
+/* Nav search */
+.nav-search { position: relative; justify-self: end; }
+.nav-search-toggle { background: transparent; border: 1px solid #c9a96e; color: #c9a96e; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; cursor: pointer; padding: 10px 16px; line-height: 1; white-space: nowrap; }
+.nav-search-toggle:hover { background: #c9a96e; color: #1a2135; }
+.nav-search-box { position: absolute; top: 100%; right: 0; background: #1e2433; border: 1px solid #3d4a60; padding: 10px; width: 280px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+.nav-search-box input { width: 100%; padding: 10px 12px; background: #2c3345; border: 1px solid #3d4a60; color: #e8dfc8; font-family: 'Crimson Text', serif; font-size: 15px; box-sizing: border-box; outline: none; }
+.nav-search-box input:focus { border-color: #c9a96e; }
+.nav-search-results { margin-top: 8px; max-height: 320px; overflow-y: auto; }
+.nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
+.nav-search-results a:hover { background: #2c3345; color: #ffffff; }
+.nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+.nav-actions{display:flex;align-items:center;gap:18px;justify-self:end;}
+.nav-tea{position:relative;display:inline-flex;align-items:center;}
+.nav-tea-link{font-size:25px;text-decoration:none;line-height:1;padding:6px 0;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
+.nav-tea-link:hover,.nav-tea-link:focus{transform:scale(1.15);filter:grayscale(0);outline:none;}
+.nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:11px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
+.nav-tea-tooltip strong{display:block;color:#c9a96e;font-family:'Playfair Display',serif;font-size:13px;font-weight:400;font-style:normal;margin-bottom:2px;}
+.nav-tea:hover .nav-tea-tooltip,.nav-tea-link:focus + .nav-tea-tooltip{opacity:1;visibility:visible;transform:translateY(0);}
+/* Discover dropdown */
+.nav-dropdown{ position:relative; display:inline-block; }
+.nav-dropdown-toggle{ font-family:'Raleway',sans-serif; font-size:13px; padding:22px 14px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; background:transparent; border:none; cursor:pointer; }
+.nav-dropdown-toggle:hover{ color:#ffffff; }
+.nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; max-height:calc(100vh - 90px); overflow-y:auto; -webkit-overflow-scrolling:touch; flex-direction:column; }
+@media (min-width:641px){
+  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:800px; padding:18px 6px; max-height:82vh; }
+  .nav-dropdown-col{ flex:1 1 0; min-width:175px; padding:0 18px; border-right:1px solid #3d4a60; }
+  .nav-dropdown-col:last-child{ border-right:none; }
+}
+.nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
+.nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
+.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
+.nav-dropdown-label:first-child{ border-top:none; margin-top:0; padding-top:6px; }
+@media (max-width: 1300px) {
+  .nav-search-box { right: auto; left: 0; }
+}
+</style>
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+<style>
+/* Bigger nav tabs on the top row */
+nav.site-nav-std .nlink, .nlink { font-size: 13px !important; padding: 22px 14px !important; letter-spacing: 1px !important; }
+@media (max-width: 1300px) {
+  nav.site-nav-std .nlink, .nlink { font-size: 12px !important; padding: 12px 10px !important; }
+}
+</style>
+<style>
+/* Nav stays pinned at a constant size while scrolling */
+nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 !important; }
+</style>
+<style>
+/* Larger text sitewide for readability (senior-friendly pass) */
+.section-label { font-size: 13px !important; }
+.show-eyebrow { font-size: 13px !important; }
+.show-card-meta { font-size: 14px !important; }
+.platform-tagline { font-size: 13px !important; }
+.tag, .vpn-badge { font-size: 13px !important; }
+.nav-actions-row a { font-size: 12px !important; }
+.page-hero-meta { font-size: 13px !important; }
+</style>
+<style>
+/* Mobile nav fix */
+@media (max-width:640px){
+  nav.site-nav-std{ position:static !important; padding:8px 12px !important; }
+  .nav-top-row{ grid-template-columns:1fr !important; row-gap:4px; }
+  .nav-brand{ justify-self:center !important; padding:6px 0 !important; }
+  .nav-brand img{ height:38px !important; }
+  .nav-links{ flex-wrap:wrap !important; justify-content:center !important; row-gap:0 !important; column-gap:0 !important; }
+  nav.site-nav-std .nlink, .nlink{ font-size:10.5px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
+  .nav-dropdown-toggle{ padding:7px 6px !important; }
+  .nav-search{ justify-self:center !important; margin-top:2px; }
+  .nav-search-toggle{ padding:7px 12px !important; font-size:10px !important; }
+  .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
+}
+</style>
+
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+</style>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2630840');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+<body>
+    
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here.html">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <a class="nlink" href="/season-preview.html">Season Preview</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/books">Literary Adaptations</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Collections</div>
+            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
+            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
+            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/the-cozy-collection.html">The Cozy Collection</a>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/collections.html">Browse All</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Browse All</a>
+            <a href="/this-week.html">This Week in British TV</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
+            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Play &amp; Connect</div>
+            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
+            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
+            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
+            <a href="/gift-ideas.html">Gift Ideas</a>
+            <a href="/gift-guide-hub.html">All Gift Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+
+<!-- HERO -->
+<div id="hb-hero" class="quiz-hero spooky-hero" style="position:relative;overflow:hidden;padding:0;min-height:420px;display:flex;align-items:center;">
+  <img src="/original-badge.png" alt="A British TV Hub Original" title="A British TV Hub Original" class="original-badge" style="position:absolute;top:20px;right:20px;width:76px;height:76px;z-index:4;">
+  <img src="/quiz-hero.webp" alt="Moody London detective scene at night" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right top;filter:brightness(0.42) saturate(0.85);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 35%,rgba(26,33,53,0.72) 60%,rgba(26,33,53,0.15) 100%);"></div>
+  <div class="spk-layer" aria-hidden="true">
+    <div class="spk-fog"></div><div class="spk-fog f2"></div>
+    <div class="spk-web spk-web-tl"></div><div class="spk-web spk-web-tr"></div>
+    <div class="spk-bat b1"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div><div class="spk-bat b2"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div><div class="spk-bat b3"><svg viewBox="0 0 64 28" aria-hidden="true"><path class="spk-wing" d="M32 12c-3-4-7-6-12-6 2 2 2 5 0 7-3-2-7-2-9 0 0-3-3-6-8-6 5 4 8 11 13 16 2-3 6-4 9-2 1-3 4-5 7-5z" fill="#0c1018"/><path class="spk-wing" d="M32 12c3-4 7-6 12-6-2 2-2 5 0 7 3-2 7-2 9 0 0-3 3-6 8-6-5 4-8 11-13 16-2-3-6-4-9-2-1-3-4-5-7-5z" fill="#0c1018"/><ellipse cx="32" cy="14" rx="3" ry="4.5" fill="#0c1018"/></svg></div>
+    <div class="spk-spider"><div class="spk-thread"></div><svg class="spk-spider-body" viewBox="0 0 60 60" aria-hidden="true"><g stroke="#0c1018" stroke-width="2.4" stroke-linecap="round" fill="none">
+<path d="M26 28 Q14 18 8 22"/><path d="M26 31 Q12 28 5 34"/><path d="M26 34 Q13 38 8 47"/><path d="M27 36 Q19 45 17 55"/>
+<path d="M34 28 Q46 18 52 22"/><path d="M34 31 Q48 28 55 34"/><path d="M34 34 Q47 38 52 47"/><path d="M33 36 Q41 45 43 55"/></g>
+<g stroke="rgba(243,237,226,0.35)" stroke-width="0.8" stroke-linecap="round" fill="none">
+<path d="M26 28 Q14 18 8 22"/><path d="M26 31 Q12 28 5 34"/><path d="M26 34 Q13 38 8 47"/><path d="M27 36 Q19 45 17 55"/>
+<path d="M34 28 Q46 18 52 22"/><path d="M34 31 Q48 28 55 34"/><path d="M34 34 Q47 38 52 47"/><path d="M33 36 Q41 45 43 55"/></g>
+<ellipse cx="30" cy="37" rx="7.5" ry="9" fill="#0c1018" stroke="rgba(243,237,226,0.4)" stroke-width="0.8"/>
+<circle cx="30" cy="26" r="4.8" fill="#0c1018" stroke="rgba(243,237,226,0.4)" stroke-width="0.8"/>
+<circle cx="28.3" cy="25.4" r="0.9" fill="#c9a96e"/><circle cx="31.7" cy="25.4" r="0.9" fill="#c9a96e"/></svg></div>
+  </div>
+  <div style="position:relative;z-index:2;width:100%;text-align:center;padding:64px 40px 56px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;text-shadow:0 1px 6px rgba(0,0,0,.8);">&#127875; Halloween Edition</div>
+    <h1 class="quiz-hero-title">Build Your Perfect British Halloween Mystery</h1>
+    <p class="quiz-hero-sub">Choose a setting, a detective, a clue, and just how spooky the evening should get. Your answers point to a real British mystery episode for Halloween night.</p>
+  </div>
+</div>
+
+<div style="padding:0 20px;"><p class="hb-intro">Every result is an episode or special already featured in <a href="/dark-october-night-mysteries.html">13 British Mysteries for a Dark October Night</a> or <a href="/ghost-story-for-halloween.html">A Ghost Story for Halloween</a>, so there's a full write-up waiting once the mystery is solved.</p></div>
+
+<!-- QUIZ -->
+
+<div class="quiz-container">
+  <div class="quiz-card">
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress-step active" id="step-0"></div>
+      <div class="progress-step" id="step-1"></div>
+      <div class="progress-step" id="step-2"></div>
+      <div class="progress-step" id="step-3"></div>
+    </div>
+
+    <!-- QUESTION PANEL -->
+    <div class="question-wrap" id="question-wrap">
+      <div class="q-counter" id="q-counter">Question 1 of 4</div>
+      <div class="q-text" id="q-text"></div>
+      <div class="options-grid" id="options-grid"></div>
+    </div>
+
+    <!-- RESULT PANEL -->
+    <div class="result-wrap" id="result-wrap">
+      <div class="result-label">Your Halloween mystery is...</div>
+      <div class="result-show" id="r-show"></div>
+      <div class="result-episode" id="r-episode"></div>
+      <div class="result-meta" id="r-meta"></div>
+      <div class="result-platform-badge" id="r-platform"></div>
+      <div class="result-divider"></div>
+      <div class="result-desc" id="r-desc"></div>
+      <div class="result-mood" id="r-mood"></div>
+      <button class="watch-btn" id="r-watch-btn"></button>
+      <a class="guide-btn" id="r-guide-btn" href="/dark-october-night-mysteries.html"></a>
+      <button class="retry-btn" id="retry-btn">Try again &rarr;</button>
+      <div class="share-row">
+        <button class="share-btn" id="fb-share">Share on Facebook</button>
+        <button class="share-btn" id="copy-share">Copy link</button>
+      </div>
+    </div>
+
+    <!-- MORE SHOWS (shown after result) -->
+    <div class="more-shows" id="more-shows" style="display:none">
+      <div class="more-label">Also on the October watchlist</div>
+      <div class="more-grid" id="more-grid"></div>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER — standard layout -->
+
+<div class="continue-reading">
+      <h2 class="cr-heading">Explore More</h2>
+      <p class="cr-sub">More October viewing from British TV Hub.</p>
+      <div class="cr-grid">
+        <a class="cr-card" href="/dark-october-night-mysteries.html">
+      <img src="/dark-october-night-hero.webp" alt="13 British Mysteries for a Dark October Night" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;">
+          <div class="cr-body">
+            <div class="cr-title">13 British Mysteries for a Dark October Night</div>
+            <p class="cr-desc">A countdown from cosy cases to proper lights-on viewing, built for long autumn evenings.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/ghost-story-for-halloween.html">
+      <img src="/ghost-story-for-halloween-hero.webp" alt="A Ghost Story for Halloween" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;">
+          <div class="cr-body">
+            <div class="cr-title">A Ghost Story for Halloween</div>
+            <p class="cr-desc">The real history of the BBC's Christmas ghost story tradition, borrowed for October.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+        <a class="cr-card" href="/quizzes-and-games.html">
+      <img src="/quizzes-and-games-hero.webp" alt="Quizzes and Games" loading="lazy" style="width:100%;height:150px;object-fit:cover;display:block;">
+          <div class="cr-body">
+            <div class="cr-title">Quizzes &amp; Games</div>
+            <p class="cr-desc">Every British TV Hub builder, quiz, and ranker in one place, including the year-round mystery builder.</p>
+            <span class="cr-link">Read Guide &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div><style>
+.bookmark-toggle summary{list-style:none;}
+.bookmark-toggle summary::-webkit-details-marker{display:none;}
+.bookmark-toggle summary::marker{content:"";}
+@media (max-width:600px){
+  .stay-connected-cols{flex-direction:column;}
+  .stay-connected-cols .stay-connected-divider{width:auto !important;height:1px;background:#3d4a60;margin:28px 24px;}
+  .stay-connected-cols > div:not(.stay-connected-divider){padding:0 12px !important;}
+}
+</style>
+<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;">
+  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Join The Conversation</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Join the British TV Hub Community</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:560px;margin-left:auto;margin-right:auto;">Thousands of British TV fans trading recommendations, debating favourite episodes, and spotting new premieres together.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:900px;margin:0 auto;text-align:left;">
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Dramas and Mysteries</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Classics & New Favourites &mdash; the main page. Thousands of followers.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Ultimate British Bookshelf</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">The novels behind your favourite British dramas, plus hidden gems and new releases.</p>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #c9a96e;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Kettle Club &#9749;</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">British TV Hub&rsquo;s subscriber community for recommendations, friendly chat and premiere news. Just $2.99 a month — less than a cup of tea.</p>
+      <a href="https://www.facebook.com/groups/1069967119146283" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Join the Kettle Club &rarr;</a>
+      <p style="margin:10px 0 0;font-family:'Raleway',sans-serif;font-size:14px;color:#c8c0a8;">Hosted on Facebook. Tap above to join in seconds.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
+  <div style="max-width:720px;margin:0 auto;">
+    <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
+
+    <div style="border-top:1px solid #3d4a60;"></div>
+
+    <!-- Two-column row: Install as App | Bookmark -->
+    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
+        <details class="bookmark-toggle">
+          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut →</summary>
+          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
+            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
+            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu → star icon</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
+
+      <div style="flex:1;text-align:center;padding:0 24px;">
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
+        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <style>@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
+  <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Best British Police Procedurals</a>
+      <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Cozy British Mysteries</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What to Watch Next</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+<script>
+/* Halloween Edition — same weighted-scoring engine as quiz.html.
+   Every result is an episode already featured (and fact-checked) on
+   dark-october-night-mysteries.html or ghost-story-for-halloween.html. */
+const BRITBOX = "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20";
+const ACORN   = "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20";
+const PBS     = "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20";
+const DARK    = "/dark-october-night-mysteries.html";
+const GHOST   = "/ghost-story-for-halloween.html";
+
+const SHOWS = {
+  poirot:     {show:"Agatha Christie's Poirot", ep:"“Hallowe'en Party”", meta:"Series 12 · 2010", platform:"BritBox", url:BRITBOX, mood:"🎃🎃🎃🎃🎃 A proper Christie Halloween", guide:DARK+"#no2", guideLabel:"No. 1 on the Dark October Countdown →",
+    desc:"An actual Halloween party turns sinister, and Poirot finds himself investigating secrets, old crimes, and a particularly unsettling celebration. If you watch only one Poirot episode in October, make it this one."},
+  bump:       {show:"Midsomer Murders", ep:"“Things That Go Bump in the Night”", meta:"Series 8, Episode 1", platform:"Acorn TV", url:ACORN, mood:"👻🕯️🕯️ A haunted house, or so they say", guide:DARK+"#no2", guideLabel:"No. 2 on the Dark October Countdown →",
+    desc:"A séance, a supposedly haunted house, and a village full of people who may or may not believe in things that go bump in the night. Supernatural atmosphere, with all the eccentric characters and village secrets Midsomer fans expect."},
+  straw:      {show:"Midsomer Murders", ep:"“The Straw Woman”", meta:"Series 7, Episode 6", platform:"Acorn TV", url:ACORN, mood:"🔥🎃🎃 Village tradition gone very wrong", guide:DARK+"#no5", guideLabel:"No. 3 on the Dark October Countdown →",
+    desc:"An old local ritual in a picturesque village, and the unmistakable sense that everything is about to go terribly wrong. Folklore and murder meet in one of Midsomer's most atmospheric stories."},
+  memento:    {show:"Miss Scarlet & The Duke", ep:"“Memento Mori”", meta:"Series 1, Episode 4", platform:"PBS Masterpiece", url:PBS, mood:"📷👻 A ghost story with a human culprit", guide:DARK+"#no5", guideLabel:"No. 4 on the Dark October Countdown →",
+    desc:"A death photographer starts receiving manipulated photographs that appear to carry messages from beyond the grave. It looks like a haunting, until Eliza traces it back to a very human act of revenge."},
+  woods:      {show:"Midsomer Murders", ep:"“The House in the Woods”", meta:"Series 9, Episode 1", platform:"Acorn TV", url:ACORN, mood:"🌲🌲🌲 Do not go into the woods", guide:DARK+"#no5", guideLabel:"No. 5 on the Dark October Countdown →",
+    desc:"An isolated house, a dark wood, and Midsomer. Few episodes set a late-October mood quite so simply."},
+  tower:      {show:"Dalgliesh", ep:"“The Black Tower”", meta:"Series 1 · 2021", platform:"Acorn TV", url:ACORN, mood:"🌊🏚️ Isolated and quietly gothic", guide:DARK+"#no9", guideLabel:"No. 6 on the Dark October Countdown →",
+    desc:"Dalgliesh travels to a clifftop home in Dorset after an old friend dies suddenly, and finds a second, more suspicious death waiting for him. Isolated, quietly gothic, and full of secrets that don't stay buried."},
+  darkautumn: {show:"Midsomer Murders", ep:"“Dark Autumn”", meta:"Series 4, Episode 5", platform:"Acorn TV", url:ACORN, mood:"🍂🍂🍂 Peak Midsomer autumn", guide:DARK+"#no9", guideLabel:"No. 7 on the Dark October Countdown →",
+    desc:"Country lanes, isolated villages, and that peculiar feeling that something unpleasant is hiding behind the hedgerow. Even the title belongs on an October watchlist."},
+  vanishing:  {show:"Miss Scarlet & The Duke", ep:"“The Vanishing”", meta:"Series 3, Episode 1", platform:"PBS Masterpiece", url:PBS, mood:"🎩👻 A theatre curse, or so they claim", guide:DARK+"#no9", guideLabel:"No. 8 on the Dark October Countdown →",
+    desc:"A magician vanishes mid-trick during his farewell performance, and the theatre's owner blames a resident phantom. Eliza doesn't believe in ghosts, but she does believe someone's hiding something."},
+  holyorders: {show:"Dalgliesh", ep:"“Death in Holy Orders”", meta:"Series 3", platform:"Acorn TV", url:ACORN, mood:"🕯️🕯️ Sombre and slow-burning", guide:DARK+"#no13", guideLabel:"No. 10 on the Dark October Countdown →",
+    desc:"A remote theological college, an unresolved scandal, and an archdeacon found dead in the chapel. One of Dalgliesh's most atmospheric, cloistered mysteries."},
+  divas:      {show:"Midsomer Murders", ep:"“Death and the Divas”", meta:"Series 15, Episode 4", platform:"Acorn TV", url:ACORN, mood:"🎬👻👻 Old-school spooky fun", guide:DARK+"#no13", guideLabel:"No. 11 on the Dark October Countdown →",
+    desc:"Classic horror films meet Midsomer, complete with vintage horror imagery and theatrical scares. Old-school spooky fun wrapped around exactly the eccentric village mystery fans expect."},
+  ghostsxmas: {show:"Midsomer Murders", ep:"“Ghosts of Christmas Past”", meta:"Series 7, Episode 7", platform:"Acorn TV", url:ACORN, mood:"🍂👻 A family haunted by its own past", guide:DARK+"#no13", guideLabel:"No. 12 on the Dark October Countdown →",
+    desc:"A family reunion turns into a reckoning with old secrets and a death nine years in the making. A household haunted by its own past, no literal ghosts required."},
+  grantchester:{show:"Grantchester", ep:"Series 1, Episode 3", meta:"2014", platform:"PBS Masterpiece", url:PBS, mood:"🍂🍂 Quiet village, unsettling confession", guide:DARK+"#no13", guideLabel:"No. 13 on the Dark October Countdown →",
+    desc:"An elderly parishioner tells Sidney that someone is trying to kill her, and dies not long after. A quiet village death unravels into old grudges, inheritance, and secrets the family would rather keep buried."},
+  tractate:   {show:"A Ghost Story for Christmas", ep:"“The Tractate Middoth”", meta:"BBC · 2013 · Written and directed by Mark Gatiss", platform:"Selected titles on BritBox", url:BRITBOX, watchLabel:"Check BritBox →", mood:"📚🕯️ A library you shouldn't linger in", guide:GHOST, guideLabel:"Read A Ghost Story for Halloween →",
+    desc:"A librarian, a vindictive will, and a very particular book that a dead man does not want found. Mark Gatiss's first outing as writer-director for the BBC's classic ghost story strand."},
+  mezzotint:  {show:"A Ghost Story for Christmas", ep:"“The Mezzotint”", meta:"BBC · 2021 · Adapted by Mark Gatiss", platform:"Selected titles on BritBox", url:BRITBOX, watchLabel:"Check BritBox →", mood:"🖼️👻👻 A picture that won't stay still", guide:GHOST, guideLabel:"Read A Ghost Story for Halloween →",
+    desc:"A museum curator acquires an unremarkable engraving of a country house, except the picture keeps changing, one figure at a time. Quiet, precise dread from the BBC's ghost story tradition."}
+};
+
+const QUESTIONS = [
+  {
+    text: "Choose your setting.",
+    opts: [
+      {label:"🏰 A grand country manor", w:{poirot:2,ghostsxmas:3,mezzotint:3,woods:2,grantchester:1,divas:1}},
+      {label:"🌫️ A foggy English village", w:{bump:3,straw:3,darkautumn:3,woods:2,grantchester:2,poirot:2,divas:2}},
+      {label:"🌊 A lonely stretch of coast", w:{tower:4,holyorders:3}},
+      {label:"🎩 Gaslit Victorian London", w:{memento:4,vanishing:4}},
+      {label:"🕯️ A dusty old library or chapel", w:{tractate:4,holyorders:3,mezzotint:1}}
+    ]
+  },
+  {
+    text: "Choose your detective.",
+    opts: [
+      {label:"An eccentric outsider with little grey cells", w:{poirot:5,vanishing:1}},
+      {label:"A weary DCI who's seen every village secret", w:{bump:3,straw:3,woods:3,darkautumn:3,divas:3,ghostsxmas:3}},
+      {label:"A quiet, poetic Scotland Yard commander", w:{tower:4,holyorders:4}},
+      {label:"A kindly vicar who can't leave a death alone", w:{grantchester:5,holyorders:1}},
+      {label:"A formidable woman who won't be told no", w:{memento:4,vanishing:4,poirot:1}},
+      {label:"A bookish scholar who meddles with old things", w:{tractate:4,mezzotint:4}}
+    ]
+  },
+  {
+    text: "Choose your clue.",
+    opts: [
+      {label:"📷 An old photograph", w:{memento:4,mezzotint:3,ghostsxmas:1}},
+      {label:"📜 A missing will", w:{tractate:4,grantchester:3,ghostsxmas:2}},
+      {label:"✉️ A mysterious letter", w:{tower:2,holyorders:2,poirot:2,vanishing:1,woods:1}},
+      {label:"☕ A broken teacup", w:{divas:2,darkautumn:2,bump:1,straw:1,grantchester:1,woods:1}}
+    ]
+  },
+  {
+    text: "Choose your atmosphere.",
+    opts: [
+      {label:"🫖 Cosy, with a hint of autumn chill", w:{grantchester:3,divas:3,ghostsxmas:3,darkautumn:2}},
+      {label:"🍂 Atmospheric and slow-burning", w:{tower:3,holyorders:3,vanishing:2,darkautumn:3}},
+      {label:"🕯️ Properly eerie", w:{straw:5,woods:4,memento:2,mezzotint:3,tractate:2}},
+      {label:"💡 Lights on, please", w:{poirot:4,bump:4,tractate:2,mezzotint:2}}
+    ]
+  }
+];
+
+let answers = [];
+let current = 0;
+
+function renderQuestion(){
+  const q = QUESTIONS[current];
+  document.getElementById('q-counter').textContent = 'Question ' + (current+1) + ' of ' + QUESTIONS.length;
+  document.getElementById('q-text').textContent = q.text;
+  const grid = document.getElementById('options-grid');
+  grid.innerHTML = '';
+  q.opts.forEach(o => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+    btn.textContent = o.label;
+    btn.onclick = () => pick(o.w, btn);
+    grid.appendChild(btn);
+  });
+  for(let i=0;i<QUESTIONS.length;i++){
+    const s = document.getElementById('step-'+i);
+    s.className = 'progress-step' + (i < current ? ' done' : i === current ? ' active' : '');
+  }
+}
+
+function pick(weights, btn){
+  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  answers.push(weights);
+  setTimeout(()=>{
+    current++;
+    if(current < QUESTIONS.length){
+      renderQuestion();
+    } else {
+      showResult();
+    }
+  }, 320);
+}
+
+/* Ties go to the pick from the final (atmosphere) answer, then the earlier answers in reverse order,
+   so the mood someone asked for always wins a close call. */
+function computeWinner(){
+  const totals = {};
+  Object.keys(SHOWS).forEach(id => totals[id] = 0);
+  answers.forEach(w => { Object.keys(w).forEach(id => { totals[id] += w[id]; }); });
+  const best = Math.max(...Object.values(totals));
+  let tied = Object.keys(totals).filter(id => totals[id] === best);
+  for(let a = answers.length - 1; a >= 0 && tied.length > 1; a--){
+    const top = Math.max(...tied.map(id => answers[a][id] || 0));
+    tied = tied.filter(id => (answers[a][id] || 0) === top);
+  }
+  return tied[0];
+}
+
+function showResult(){
+  const winnerId = computeWinner();
+  const r = SHOWS[winnerId];
+
+  for(let i=0;i<QUESTIONS.length;i++) document.getElementById('step-'+i).className = 'progress-step done';
+
+  document.getElementById('question-wrap').style.display = 'none';
+  document.getElementById('result-wrap').style.display = 'block';
+
+  document.getElementById('r-show').textContent = r.show;
+  document.getElementById('r-episode').textContent = r.ep;
+  document.getElementById('r-meta').textContent = r.meta;
+  document.getElementById('r-platform').textContent = r.platform;
+  document.getElementById('r-desc').textContent = r.desc;
+  document.getElementById('r-mood').textContent = r.mood;
+
+  const wb = document.getElementById('r-watch-btn');
+  wb.textContent = r.watchLabel || ('Watch on ' + r.platform + ' →');
+  wb.onclick = () => window.open(r.url, '_blank', 'noopener');
+
+  const gb = document.getElementById('r-guide-btn');
+  gb.href = r.guide;
+  gb.textContent = r.guideLabel;
+
+  document.getElementById('retry-btn').onclick = reset;
+
+  const pageUrl = 'https://britishtvhub.com/halloween-mystery-builder.html';
+  document.getElementById('fb-share').onclick = () => {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl),'_blank');
+  };
+  document.getElementById('copy-share').onclick = () => {
+    navigator.clipboard.writeText(pageUrl).then(()=>{
+      document.getElementById('copy-share').textContent = 'Copied!';
+      setTimeout(()=>{ document.getElementById('copy-share').textContent = 'Copy link'; },2000);
+    });
+  };
+
+  /* Runners-up: the next-highest scorers, excluding the winner */
+  const totals = {};
+  Object.keys(SHOWS).forEach(id => totals[id] = 0);
+  answers.forEach(w => { Object.keys(w).forEach(id => { totals[id] += w[id]; }); });
+  const runners = Object.keys(totals).filter(id => id !== winnerId && totals[id] > 0)
+    .sort((a,b) => totals[b] - totals[a]).slice(0,4);
+
+  const moreShows = document.getElementById('more-shows');
+  const moreGrid = document.getElementById('more-grid');
+  moreShows.style.display = runners.length ? 'block' : 'none';
+  moreGrid.innerHTML = '';
+  runners.forEach(id => {
+    const m = SHOWS[id];
+    const chip = document.createElement('a');
+    chip.className = 'more-chip';
+    chip.href = m.guide;
+    const n = document.createElement('div'); n.className = 'more-chip-name'; n.textContent = m.show + ': ' + m.ep.replace(/[“”]/g,'');
+    const p = document.createElement('div'); p.className = 'more-chip-platform'; p.textContent = m.platform;
+    chip.appendChild(n); chip.appendChild(p);
+    moreGrid.appendChild(chip);
+  });
+
+  const card = document.querySelector('.quiz-card');
+  window.scrollTo({top: card.getBoundingClientRect().top + window.scrollY - 130, behavior:'smooth'});
+}
+
+function reset(){
+  answers = [];
+  current = 0;
+  document.getElementById('question-wrap').style.display = 'block';
+  document.getElementById('result-wrap').style.display = 'none';
+  document.getElementById('more-shows').style.display = 'none';
+  renderQuestion();
+}
+
+renderQuestion();
+</script>
+
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html>
+
