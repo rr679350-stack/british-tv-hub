@@ -56,23 +56,35 @@ function addVillageMurderFeature(){
   var feature = document.createElement('section');
   feature.id = 'village-murder-feature';
   feature.setAttribute('aria-labelledby','village-murder-title');
-  feature.style.cssText = 'max-width:900px;margin:24px auto 32px;background:linear-gradient(145deg,#202a3d,#2e3950);border:1px solid rgba(201,168,76,.4);border-radius:12px;padding:24px 28px;box-shadow:0 10px 28px rgba(0,0,0,.12);box-sizing:border-box;';
+  feature.style.cssText = 'max-width:820px;margin:10px auto 28px;background:linear-gradient(145deg,#202a3d,#2e3950);border:1px solid rgba(201,168,76,.4);border-radius:12px;padding:20px 24px;box-shadow:0 10px 28px rgba(0,0,0,.12);box-sizing:border-box;';
   feature.innerHTML = ''+
-    '<div style="font-family:Raleway,sans-serif;font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:#c9a96e;margin-bottom:7px;">Featured Mystery Game</div>'+
-    '<h2 id="village-murder-title" style="font-family:Playfair Display,serif;font-size:clamp(1.7rem,3vw,2.25rem);line-height:1.15;color:#f0e8d4;margin:0 0 7px;">Murder at the <em style="color:#d9bd86;">Village Fête</em></h2>'+
-    '<p style="font-family:Crimson Text,serif;font-size:18px;line-height:1.45;color:#e7dec9;margin:0 0 14px;">You’ve watched enough British mysteries — now it’s your turn to solve one.</p>'+
-    '<p style="font-size:15px;line-height:1.65;color:#c9c2b4;margin:0 0 14px;">A village fête in Bellweather-on-Wye turns deadly when chairman Arthur Bell is found behind the prize marquee. Four suspects had reasons to want him silenced. One of them is lying.</p>'+
-    '<p style="font-size:15px;line-height:1.65;color:#c9c2b4;margin:0 0 17px;"><strong style="color:#f0e8d4;">The Village Murder Case File</strong> is a 10-page printable whodunit with suspects, witness statements, clues, a village map, timeline, detective notes, final accusation page, and complete solution.</p>'+
-    '<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px;">'+
-      '<span style="font-family:Raleway,sans-serif;font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:6px 9px;border-radius:999px;">10-page printable</span>'+
-      '<span style="font-family:Raleway,sans-serif;font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:6px 9px;border-radius:999px;">Solo or group play</span>'+
-      '<span style="font-family:Raleway,sans-serif;font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:6px 9px;border-radius:999px;">Instant download</span>'+
+    '<div style="font-family:Raleway,sans-serif;font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">Featured Mystery Game</div>'+
+    '<h2 id="village-murder-title" style="font-family:Playfair Display,serif;font-size:clamp(1.55rem,2.6vw,2rem);line-height:1.15;color:#f0e8d4;margin:0 0 6px;">Murder at the <em style="color:#d9bd86;">Village Fête</em></h2>'+
+    '<p style="font-family:Crimson Text,serif;font-size:17px;line-height:1.4;color:#e7dec9;margin:0 0 12px;">You’ve watched enough British mysteries — now it’s your turn to solve one.</p>'+
+    '<p style="font-size:14px;line-height:1.6;color:#c9c2b4;margin:0 0 12px;">A village fête in Bellweather-on-Wye turns deadly when chairman Arthur Bell is found behind the prize marquee. Four suspects had reasons to want him silenced. One of them is lying.</p>'+
+    '<p style="font-size:14px;line-height:1.6;color:#c9c2b4;margin:0 0 14px;"><strong style="color:#f0e8d4;">The Village Murder Case File</strong> is a 10-page printable whodunit with suspects, witness statements, clues, a village map, timeline, detective notes, final accusation page, and complete solution.</p>'+
+    '<div style="display:flex;gap:7px;flex-wrap:wrap;margin:0 0 14px;">'+
+      '<span style="font-family:Raleway,sans-serif;font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:5px 8px;border-radius:999px;">10-page printable</span>'+
+      '<span style="font-family:Raleway,sans-serif;font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:5px 8px;border-radius:999px;">Solo or group play</span>'+
+      '<span style="font-family:Raleway,sans-serif;font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:#e7dec9;border:1px solid rgba(201,168,76,.35);padding:5px 8px;border-radius:999px;">Instant download</span>'+
     '</div>'+
-    '<a href="https://cozytvcompanion.etsy.com/listing/4584482709" target="_blank" rel="noopener" style="display:inline-block;background:#c9a96e;color:#1a2135;text-decoration:none;font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:11px 18px;border-radius:3px;">Solve the Mystery →</a>'+
-    '<div style="font-family:Crimson Text,serif;font-size:14px;color:#aaa394;margin-top:11px;">Perfect for a cosy evening at home, solo sleuthing, game night, or sharing with another armchair detective.</div>';
+    '<a href="https://cozytvcompanion.etsy.com/listing/4584482709" target="_blank" rel="noopener" style="display:inline-block;background:#c9a96e;color:#1a2135;text-decoration:none;font-family:Raleway,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;padding:10px 16px;border-radius:3px;">Solve the Mystery →</a>'+
+    '<div style="font-family:Crimson Text,serif;font-size:13.5px;color:#aaa394;margin-top:9px;">Perfect for a cosy evening at home, solo sleuthing, game night, or sharing with another armchair detective.</div>';
 
-  var first = pageBody.firstElementChild;
-  pageBody.insertBefore(feature, first || null);
+  var playHeading = null;
+  var headings = pageBody.querySelectorAll('h2');
+  for(var i=0;i<headings.length;i++){
+    if(headings[i].textContent.replace(/\s+/g,' ').trim() === 'Play Along'){
+      playHeading = headings[i];
+      break;
+    }
+  }
+  if(playHeading && playHeading.parentElement && playHeading.parentElement.parentNode === pageBody){
+    var playWrap = playHeading.parentElement;
+    pageBody.insertBefore(feature, playWrap.nextElementSibling);
+  } else {
+    pageBody.insertBefore(feature, pageBody.firstElementChild || null);
+  }
 }
 
 if(document.readyState === 'loading'){
