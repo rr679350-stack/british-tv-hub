@@ -44,13 +44,10 @@ document.addEventListener('click', function(e){
 
 function addVillageMurderFeature(){
   if(location.pathname !== '/quizzes-and-games.html' && location.pathname !== '/quizzes-and-games') return;
-
   var old = document.getElementById('village-murder-feature');
   if(old) old.remove();
-
   var pageBody = document.querySelector('.page-body');
   if(!pageBody) return;
-
   var playHeading = null;
   var headings = pageBody.querySelectorAll('h2');
   for(var i=0;i<headings.length;i++){
@@ -60,20 +57,19 @@ function addVillageMurderFeature(){
     }
   }
   if(!playHeading || !playHeading.parentElement) return;
-
   var feature = document.createElement('a');
   feature.id = 'village-murder-feature';
   feature.href = 'https://cozytvcompanion.etsy.com/listing/4584482709';
   feature.target = '_blank';
   feature.rel = 'noopener';
   feature.setAttribute('aria-label','Murder at the Village Fête printable mystery game on Etsy');
-  feature.style.cssText = 'display:block;max-width:360px;margin:10px 0 26px;text-decoration:none;';
-  feature.innerHTML = '<img src="/village-murder-fete-cover.jpg?v=2" alt="Murder at the Village Fête printable mystery game" style="display:block;width:100%;height:auto;border-radius:10px;border:1px solid rgba(201,168,76,.35);box-shadow:0 8px 22px rgba(0,0,0,.18);">' +
-    '<div style="font-family:Raleway,sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin-top:9px;">Featured Mystery Game · Solve the Mystery →</div>';
-
+  feature.style.cssText = 'display:block;max-width:300px;margin:8px 0 24px;text-decoration:none;';
+  feature.innerHTML = '<img src="/village-murder-fete-cover.jpg?v=3" alt="Murder at the Village Fête printable mystery game" style="display:block;width:100%;height:auto;border-radius:10px;border:1px solid rgba(201,168,76,.35);box-shadow:0 8px 22px rgba(0,0,0,.18);">' +
+    '<div style="font-family:Raleway,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;margin-top:8px;">Featured Mystery Game · Solve the Mystery →</div>';
   var playWrap = playHeading.parentElement;
-  if(playWrap.nextSibling){
-    pageBody.insertBefore(feature, playWrap.nextSibling);
+  var grid = playWrap.nextElementSibling;
+  if(grid){
+    pageBody.insertBefore(feature, grid);
   } else {
     pageBody.appendChild(feature);
   }
