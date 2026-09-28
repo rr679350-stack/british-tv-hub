@@ -1,10 +1,11 @@
 name: Fact Check
 
-# Runs automatically on the 1st and 15th of each month, and can also be
-# triggered manually from the Actions tab (Run workflow button).
+# Scheduled fact-check plus temporary page patch job.
 on:
+  push:
+    branches: [main]
   schedule:
-    - cron: '0 13 1,15 * *'   # 9am Eastern (13:00 UTC), twice a month
+    - cron: '0 13 1,15 * *'
   workflow_dispatch: {}
 
 permissions:
@@ -12,7 +13,44 @@ permissions:
   issues: write
 
 jobs:
+  add-village-feature:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Insert Village Fete feature directly under Play Along
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('quizzes-and-games.html')
+          s = p.read_text()
+          marker = '''<div style="max-width:900px;margin:32px auto 8px;">\n  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--cream);margin:0 0 8px;">Play <em style="font-style:italic;color:var(--gold-light);">Along</em></h2>\n</div>'''
+          if 'id="village-murder-feature"' not in s:
+              feature = '''\n<div id="village-murder-feature" style="max-width:900px;margin:12px auto 24px;display:flex;gap:22px;align-items:center;background:#273249;border:1px solid rgba(201,168,76,.35);border-radius:10px;padding:16px 18px;box-sizing:border-box;">\n  <a href="https://cozytvcompanion.etsy.com/listing/4584482709" target="_blank" rel="noopener" style="display:block;flex:0 0 190px;">\n    <img src="/village-murder-fete-cover.jpg" alt="Murder at the Village Fête printable mystery game" style="width:190px;max-width:100%;height:auto;display:block;border-radius:7px;border:1px solid rgba(201,168,76,.35);">\n  </a>\n  <div style="min-width:0;">\n    <div style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">New Printable Mystery</div>\n    <div style="font-family:'Playfair Display',serif;font-size:26px;line-height:1.15;color:#f0e8d4;margin-bottom:7px;">Murder at the <em style="color:#d9bd86;">Village Fête</em></div>\n    <p style="font-size:14.5px;line-height:1.55;color:#c9c2b4;margin:0 0 12px;">Four suspects. Witness statements. Clues, a village map and timeline. Can you solve the case before the final page?</p>\n    <a href="https://cozytvcompanion.etsy.com/listing/4584482709" target="_blank" rel="noopener" style="display:inline-block;background:#c9a96e;color:#1a2135;text-decoration:none;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;padding:9px 15px;border-radius:2px;">Solve the Mystery →</a>\n  </div>\n</div>\n<style>@media(max-width:650px){#village-murder-feature{flex-direction:column!important;align-items:flex-start!important}#village-murder-feature>a{flex-basis:auto!important}#village-murder-feature img{width:150px!important}}</style>'''
+              if marker not in s:
+                  raise SystemExit('Play Along marker not found')
+              s = s.replace(marker, marker + feature, 1)
+              s = s.replace('<script src="/site-search.js" defer></script>', '<script src="/site-search.js?v=20260928d" defer></script>', 1)
+              p.write_text(s)
+          PY
+
+      - name: Commit page update
+        run: |
+          if git diff --quiet; then
+            echo "No page change needed"
+            exit 0
+          fi
+          git config user.name "British TV Hub Automation"
+          git config user.email "actions@github.com"
+          git add quizzes-and-games.html
+          git commit -m "Add Village Fete feature directly to games page"
+          git pull --rebase origin main
+          git push
+
   fact-check:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
