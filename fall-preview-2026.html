@@ -466,8 +466,21 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
+<style>
+/* Ludwig hero: text and photo never overlap */
+.fp-hero{background:#0e1424;}
+.fp-hero .fp-hero-img{left:auto;right:0;width:52%;object-position:right 12%;filter:none;}
+.fp-hero .fp-hero-overlay{left:auto;right:0;width:52%;background:linear-gradient(90deg,#0e1424 0%,rgba(14,20,36,0.35) 30%,rgba(14,20,36,0) 60%);}
+.fp-hero .fp-hero-inner{max-width:48%;}
+@media(max-width:900px){
+  .fp-hero{display:block;min-height:0;}
+  .fp-hero .fp-hero-img{position:relative;display:block;width:100%;height:300px;object-position:center 15%;}
+  .fp-hero .fp-hero-overlay{top:0;bottom:auto;width:100%;height:300px;background:linear-gradient(180deg,rgba(14,20,36,0) 55%,#0e1424 100%);}
+  .fp-hero .fp-hero-inner{max-width:100%;text-align:left;padding:24px 24px 36px;}
+}
+</style>
 <div class="fp-hero">
-  <img class="fp-hero-img" src="/fall-preview-ludwig-s2-hero.webp" alt="David Mitchell as John Taylor in Ludwig Season 2" style="object-position:right 12%;">
+  <img class="fp-hero-img" src="/fall-preview-ludwig-s2-hero.webp" alt="David Mitchell as John Taylor in Ludwig Season 2">
   <div class="fp-hero-overlay"></div>
   <div class="fp-hero-inner">
     <div class="hero-eyebrow">Autumn Preview &middot; 2026</div>
