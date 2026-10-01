@@ -548,22 +548,29 @@ document.addEventListener('click', function(e){
 </div>
 
 <div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
-  <div style="max-width:720px;margin:0 auto;">
+  <div style="max-width:860px;margin:0 auto;">
     <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
 
     <!-- Sunday Picks signup (Mailchimp) -->
-    <div id="nl-anchor" style="text-align:center;padding-bottom:32px;">
-      <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 18px;">Every Sunday you&rsquo;ll get five carefully chosen British TV recommendations, plus the latest BritBox and Acorn TV arrivals, delivered straight to your inbox.</p>
-      <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname});}">
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:16px;background:#2c3345;border-width:1px;border-style:solid;border-color:#4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;border-radius:0;">
-              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
-            </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:12px;letter-spacing:0.3px;line-height:1.5;">By signing up, you agree to get the Sunday Picks email each week. No spam. Unsubscribe anytime with one click.</div>
-          </form>
-      <p style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin:16px 0 0;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a> and get Sunday Picks a full day early, every Saturday.</p>
+    <div id="nl-anchor" style="padding-bottom:32px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
     </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
+  </div>
+</div>
 
 
     <div style="border-top:1px solid #3d4a60;"></div>
