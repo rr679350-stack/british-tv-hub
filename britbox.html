@@ -1801,7 +1801,7 @@ document.addEventListener('click', function(e){
         <a id="hl-link" class="watch-link" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" style="margin-top:14px; display:inline-block; align-self:flex-start;">Watch via BritBox on Prime Video →</a>
       </div>
       <div style="padding:0 28px 28px;">
-        <a id="hl-cta" class="cta-btn" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20">View Options →</a>
+        <a id="hl-cta" class="cta-btn" href="/shows/ludwig.html">Read the Full Guide →</a>
       </div>
     </div>
   </section>
@@ -2138,7 +2138,7 @@ document.addEventListener('click', function(e){
       document.getElementById('hl-title').textContent = h.title;
       document.getElementById('hl-desc').textContent = h.description;
       document.getElementById('hl-link').href = h.affiliate_url;
-      document.getElementById('hl-cta').href = h.affiliate_url;
+      const cta=document.getElementById('hl-cta'); if (h.guide_url) { cta.href = h.guide_url; cta.textContent = 'Read the Full Guide →'; } else { cta.href = h.affiliate_url; cta.textContent = 'View Options →'; }
 
       const tagsEl = document.getElementById('hl-tags');
       tagsEl.innerHTML = '';
