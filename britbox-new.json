@@ -1,97 +1,84 @@
 {
-    "month": "September 2026",
-    "updated": "2026-09-27",
-    "highlight": {
-        "title": "Agatha Christie's Tommy & Tuppence",
-        "badge": "BritBox Original · North America Premiere",
-        "description": "Antonia Thomas and Josh Dylan star as Christie's amateur sleuthing duo in this contemporary reimagining, with Imelda Staunton as Tommy's formidable Aunt Ada. Two episodes premiere September 15 on Christie's own birthday, with one new episode weekly after that.",
-        "tags": [
-            "Mystery",
-            "New series"
-        ],
-        "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-    },
-    "new_arrivals": [
-        {
-            "title": "Cooper and Fry",
-            "season": "Season 1",
-            "available": "September 10",
-            "badge": "New to BritBox · North America Premiere",
-            "description": "Robert James-Collier and Mandip Gill star as DC Ben Cooper and DC Diane Fry, a Peak District detective pairing of local roots and city reserve, tackling murders across the fictional town of Edendale.",
-            "tags": [
-                "Crime drama",
-                "New series"
-            ],
-            "editors_pick": true,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "Showtrial",
-            "season": "Season 1",
-            "available": "September 3",
-            "badge": "New to BritBox",
-            "description": "A courtroom drama following high-profile criminal cases from arrest through trial, with each season built around a new case and cast. Season 1 centres on Talitha Campbell, accused of conspiring to murder a fellow student.",
-            "tags": [
-                "Legal drama",
-                "Crime"
-            ],
-            "editors_pick": false,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "Monarch of the Glen",
-            "season": "Seasons 1–3",
-            "available": "September 9",
-            "badge": "Classic Returns · North America Premiere",
-            "description": "Alastair Mackenzie stars as Archie MacDonald, who returns home to the Scottish Highlands and finds himself responsible for his family's financially troubled estate. All three seasons arrive at once.",
-            "tags": [
-                "Period drama",
-                "Scotland"
-            ],
-            "editors_pick": false,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        }
+  "month": "October 2026",
+  "updated": "2026-09-30",
+  "highlight": {
+    "title": "Ludwig — Season 2",
+    "badge": "BBC Mystery · North America Premiere · October 13",
+    "description": "David Mitchell returns as puzzle-setter John Taylor, now working openly as a police consultant on impossible crimes while still searching for his missing twin brother. New episodes stream weekly on Tuesdays.",
+    "tags": [
+      "Mystery",
+      "Comedy"
     ],
-    "originals": [
-        {
-            "title": "Happy Valley",
-            "seasons": "3 series",
-            "description": "Sarah Lancashire won a BAFTA for her portrayal of West Yorkshire police sergeant Catherine Cawood, among other honours. Intense, perfectly written, and utterly unmissable.",
-            "tags": [
-                "Crime drama",
-                "Yorkshire"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "Trigger Point",
-            "seasons": "Seasons 1–3",
-            "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
-            "tags": [
-                "Thriller",
-                "Vicky McClure"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "Beyond Paradise",
-            "seasons": "Seasons 1–4",
-            "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
-            "tags": [
-                "Cozy mystery",
-                "Devon & Cornwall"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        },
-        {
-            "title": "The Other Bennet Sister",
-            "seasons": "Series 1 — complete",
-            "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
-            "tags": [
-                "Regency drama",
-                "Jane Austen"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-        }
-    ]
+    "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+  },
+  "new_arrivals": [
+    {
+      "title": "Time",
+      "season": "Season 3",
+      "available": "October 22",
+      "badge": "North America Premiere",
+      "description": "David Tennant joins Siobhan Finneran for the third season of Jimmy McGovern's prison drama, set inside a Young Offenders Institution. New episodes weekly into early November.",
+      "tags": [
+        "Drama",
+        "David Tennant"
+      ],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "Agatha Christie's Tommy & Tuppence",
+      "season": "Season 1",
+      "available": "New episodes weekly into October",
+      "badge": "BritBox Original · Continuing",
+      "description": "Antonia Thomas and Josh Dylan's contemporary take on Christie's amateur sleuths continues weekly, with Imelda Staunton as Tommy's formidable Aunt Ada.",
+      "tags": [
+        "Mystery",
+        "Agatha Christie"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    }
+  ],
+  "originals": [
+    {
+      "title": "Happy Valley",
+      "seasons": "3 series",
+      "description": "Sarah Lancashire won a BAFTA for her portrayal of West Yorkshire police sergeant Catherine Cawood, among other honours. Intense, perfectly written, and utterly unmissable.",
+      "tags": [
+        "Crime drama",
+        "Yorkshire"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "Trigger Point",
+      "seasons": "Seasons 1–3",
+      "description": "Vicky McClure is magnetic as explosives officer Lana Washington. Each series is a taut, gripping thriller with real stakes and superb performances.",
+      "tags": [
+        "Thriller",
+        "Vicky McClure"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "Beyond Paradise",
+      "seasons": "Seasons 1–4",
+      "description": "A warm, character-driven spin-off of Death in Paradise, following Kris Marshall's Humphrey Goodman as he settles into life in Devon and Cornwall.",
+      "tags": [
+        "Cozy mystery",
+        "Devon & Cornwall"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "The Other Bennet Sister",
+      "seasons": "Series 1 — complete",
+      "description": "A new drama inspired by the world of Jane Austen, focusing on Mary Bennet, the overlooked middle sister of Pride and Prejudice, as she forges her own path.",
+      "tags": [
+        "Regency drama",
+        "Jane Austen"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    }
+  ]
 }

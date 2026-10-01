@@ -1,85 +1,98 @@
 {
-    "month": "September 2026",
-    "updated": "2026-09-27",
-    "highlight": {
-        "title": "The Sommerdahl Murders",
-        "badge": "Acorn TV · Season 7 Binge Premiere · September 7",
-        "description": "In a picturesque Danish seaside town, police chief Dan Sommerdahl works murder cases alongside his close friend Flemming Torp and forensic specialist Marianne, even as tensions in their personal lives spill into the investigation. Season 7 streams as a full binge premiere.",
-        "tags": [
-            "Crime drama",
-            "Danish"
-        ],
-        "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-    },
-    "new_arrivals": [
-        {
-            "title": "Blue Murder Motel",
-            "season": "Season 1",
-            "available": "New episodes Mondays through October 12",
-            "badge": "Acorn TV Original · Continuing",
-            "description": "Retired detectives Vinny and Cole, now running a New Zealand coastal motel, keep getting pulled back into investigative work as fresh murder cases turn up in their new community.",
-            "tags": [
-                "Cozy mystery",
-                "New Zealand"
-            ],
-            "editors_pick": true,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
-            "guide_url": "/shows/blue-murder-motel.html"
-        },
-        {
-            "title": "The Assassin",
-            "season": "Season 1",
-            "available": "New episodes Mondays (U.S. only)",
-            "badge": "Acorn TV Exclusive · Continuing",
-            "description": "Keeley Hawes stars as a retired contract killer whose quiet life unravels when her estranged son comes looking for answers, forcing the pair on the run together.",
-            "tags": [
-                "Thriller",
-                "Keeley Hawes"
-            ],
-            "editors_pick": false,
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-        }
+  "month": "October 2026",
+  "updated": "2026-09-30",
+  "highlight": {
+    "title": "Signora Volpe — Season 3",
+    "badge": "Acorn TV Original · Season 3 · Premieres October 5",
+    "description": "Emilia Fox returns as former MI6 officer Sylvia Fox for three new feature-length mysteries in the Umbrian countryside, with new episodes weekly through the end of October.",
+    "tags": [
+      "Mystery",
+      "Italy"
     ],
-    "originals": [
-        {
-            "title": "The Chelsea Detective",
-            "seasons": "4 series",
-            "description": "Adrian Scarborough stars as a rumpled, sharp-eyed detective solving murders in one of London's wealthiest neighborhoods — a genuine Acorn TV Original with real bite beneath its polished setting.",
-            "tags": [
-                "Crime drama",
-                "Acorn TV Original"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-        },
-        {
-            "title": "Signora Volpe",
-            "seasons": "2 series · Season 3 arrives October 5",
-            "description": "Emilia Fox stars as a disillusioned former MI6 operative who settles into a quiet new life in the Umbrian countryside, only to keep stumbling into local mysteries — an Acorn TV Original produced by Route 24.",
-            "tags": [
-                "Crime mystery",
-                "Acorn TV Original"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-        },
-        {
-            "title": "Art Detectives",
-            "seasons": "Series 1",
-            "description": "DI Mick Palmer (Stephen Moyer) and DC Shazia Malik solve murders connected to the world of art and antiques, from Old Master paintings to Banksy street art.",
-            "tags": [
-                "British mystery",
-                "Stephen Moyer"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-        },
-        {
-            "title": "Dalgliesh",
-            "seasons": "3 series",
-            "description": "Bertie Carvel stars as P.D. James's enigmatic poet-detective in this atmospheric Acorn TV Original, based on the bestselling Adam Dalgliesh mystery novels.",
-            "tags": [
-                "Crime drama",
-                "Acorn TV Original"
-            ],
-            "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-        }
-    ]
+    "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+  },
+  "new_arrivals": [
+    {
+      "title": "The Red King",
+      "season": "Season 1",
+      "available": "October 19",
+      "badge": "New to Acorn TV",
+      "description": "Anjli Mohindra stars as DS Grace Narayan, posted to a remote Welsh island where a missing boy's case leads to a pagan cult the locals insist no longer exists. A police procedural with a folk-horror chill, streaming weekly.",
+      "tags": [
+        "Crime drama",
+        "Folk horror"
+      ],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Wolf",
+      "season": "Season 1",
+      "available": "October 26",
+      "badge": "New to Acorn TV · All Episodes",
+      "description": "Ukweli Roach plays DI Jack Caffery in this adaptation of Mo Hayder's novels, as a wealthy family is terrorised in their isolated Monmouthshire home. All six episodes arrive at once.",
+      "tags": [
+        "Thriller",
+        "BBC drama"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Blue Murder Motel",
+      "season": "Season 1",
+      "available": "Final episodes Mondays through October 12",
+      "badge": "Acorn TV Original · Finale in October",
+      "description": "Retired detectives Vinny and Cole, now running a New Zealand coastal motel, keep getting pulled back into investigative work as fresh murder cases turn up in their new community.",
+      "tags": [
+        "Cozy mystery",
+        "New Zealand"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+      "guide_url": "/shows/blue-murder-motel.html"
+    }
+  ],
+  "originals": [
+    {
+      "title": "The Chelsea Detective",
+      "seasons": "4 series",
+      "description": "Adrian Scarborough stars as a rumpled, sharp-eyed detective solving murders in one of London's wealthiest neighborhoods — a genuine Acorn TV Original with real bite beneath its polished setting.",
+      "tags": [
+        "Crime drama",
+        "Acorn TV Original"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Signora Volpe",
+      "seasons": "2 series · Season 3 arrives October 5",
+      "description": "Emilia Fox stars as a disillusioned former MI6 operative who settles into a quiet new life in the Umbrian countryside, only to keep stumbling into local mysteries — an Acorn TV Original produced by Route 24.",
+      "tags": [
+        "Crime mystery",
+        "Acorn TV Original"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Art Detectives",
+      "seasons": "Series 1",
+      "description": "DI Mick Palmer (Stephen Moyer) and DC Shazia Malik solve murders connected to the world of art and antiques, from Old Master paintings to Banksy street art.",
+      "tags": [
+        "British mystery",
+        "Stephen Moyer"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Dalgliesh",
+      "seasons": "3 series",
+      "description": "Bertie Carvel stars as P.D. James's enigmatic poet-detective in this atmospheric Acorn TV Original, based on the bestselling Adam Dalgliesh mystery novels.",
+      "tags": [
+        "Crime drama",
+        "Acorn TV Original"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    }
+  ]
 }
