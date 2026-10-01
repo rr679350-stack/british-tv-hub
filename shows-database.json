@@ -9317,5 +9317,150 @@
       "https://www.pbs.org/wgbh/masterpiece/specialfeatures/maigret-starring-benjamin-wainwright-renewed-for-season-2-on-masterpiece/",
       "https://en.wikipedia.org/wiki/Maigret_(2025_TV_series)"
     ]
+  },
+  {
+    "title": "Cooper and Fry",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cooper-and-fry",
+      "https://www.tvinsider.com/1284736/whats-new-on-britbox-september-2026/"
+    ]
+  },
+  {
+    "title": "Showtrial",
+    "years": "2021–present",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/showtrial"
+    ]
+  },
+  {
+    "title": "Trespasses",
+    "years": "2025",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/trespasses"
+    ]
+  },
+  {
+    "title": "The Madame Blanc Mysteries",
+    "years": "2021–present",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-madame-blanc-mysteries"
+    ]
+  },
+  {
+    "title": "Nightsleeper",
+    "years": "2024",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/nightsleeper"
+    ]
+  },
+  {
+    "title": "The Sixth Commandment",
+    "years": "2023",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-sixth-commandment"
+    ]
+  },
+  {
+    "title": "Malpractice",
+    "years": "2023–present",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/malpractice"
+    ]
+  },
+  {
+    "title": "This City Is Ours",
+    "years": "2025–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-09-30",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/this-city-is-ours"
+    ]
   }
 ]
