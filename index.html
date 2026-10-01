@@ -1531,17 +1531,20 @@ document.addEventListener('click', function(e){
 
 <style>
 .oct-link:hover{background:#c9a96e;color:#1a2135 !important;}
-@media (max-width:700px){
-  #october-guide img{position:relative !important;width:100% !important;height:200px !important;}
-  #october-guide .og-fade{display:none;}
-  #october-guide{flex-direction:column-reverse !important;}
-  #october-guide .og-body{padding:28px 20px !important;}
+#october-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
+#october-guide .og-media{position:relative;min-height:340px;}
+#october-guide .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
+#october-guide .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+@media (max-width:900px){
+  #october-guide{grid-template-columns:1fr;}
+  #october-guide .og-media{order:-1;min-height:260px;}
+  #october-guide .og-media img{object-position:center 30%;}
+  #october-guide .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
+  #october-guide .og-body{padding:28px 20px 32px !important;}
 }
 </style>
-<div id="october-guide" style="position:relative;overflow:hidden;border-bottom:1px solid #3d4a60;min-height:300px;display:flex;align-items:center;">
-  <img src="/october-guide-hero.webp" alt="A candlelit library on an autumn night, fire in the hearth and a moonlit manor house through the window" style="position:absolute;right:0;top:0;width:52%;height:100%;object-fit:cover;object-position:40% center;">
-  <div class="og-fade" style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 46%,rgba(26,33,53,0.75) 58%,rgba(26,33,53,0.15) 78%,rgba(26,33,53,0) 100%);"></div>
-  <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;max-width:720px;">
+<div id="october-guide">
+  <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
     <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; October</div>
     <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub October Guide: <em style="color:#d9bd86;">Dark Nights &amp; Ghost Stories</em></h2>
     <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Spooky season, British style. Shadowy mysteries, Agatha Christie&rsquo;s eeriest cases, a ghost story tradition and a Halloween mystery to build yourself, all in one place.</p>
@@ -1553,6 +1556,7 @@ document.addEventListener('click', function(e){
     </div>
     <a href="/dark-october-night-mysteries.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Start with the Picks &rarr;</a>
   </div>
+  <div class="og-media"><img src="/october-guide-hero.webp" alt="A candlelit library on an autumn night, fire in the hearth and a moonlit manor house through the window"></div>
 </div>
 
 <div style="padding:56px 40px;border-bottom:1px solid #3d4a60;">
