@@ -169,6 +169,7 @@ gtag('config', 'G-P1L8CVNKS6');
     .skeleton-line { height: 14px; background: var(--border); border-radius: 2px; margin-bottom: 8px; }
     .skeleton-line.short { width: 40%; }
     .arrival-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+    .arrival-img { width: calc(100% + 40px); margin: -20px -20px 4px; height: 200px; object-fit: cover; object-position: center 25%; border-radius: 12px 12px 0 0; display: block; }
     .arrival-trailer { position: relative; width: 100%; padding-top: 56.25%; border-radius: 10px; overflow: hidden; border: 1px solid #3d4a60; margin: 4px 0 2px; background: #1a2135; }
     .arrival-trailer iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
   
@@ -1511,6 +1512,7 @@ document.addEventListener('click', function(e){
         <a class="watch-link" href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20">Watch via Acorn TV on Prime Video →</a>
       </div>
       <div class="arrival-card">
+        <img class="arrival-img" src="/blue-murder-motel-acorn.webp" alt="Two of the lead characters from Blue Murder Motel outside the seaside motel" loading="lazy">
         <div class="arrival-card-top"><span class="arrival-badge">Acorn TV Original · Finale in October</span></div>
         <h3><a href="/shows/blue-murder-motel.html" style="color:inherit;text-decoration:none;">Blue Murder Motel</a></h3>
         <div class="arrival-season">Season 1</div>
@@ -1894,6 +1896,7 @@ document.addEventListener('click', function(e){
         card.className = 'arrival-card' + (show.editors_pick ? ' editors-pick' : '');
         const tags = show.tags.slice(0, 2).map(t => `<span class="tag">${t}</span>`).join('');
         card.innerHTML = `
+          ${show.image ? `<img class="arrival-img" src="${show.image}" alt="${show.image_alt || show.title}" loading="lazy">` : ''}
           <div class="arrival-card-top">
             <span class="arrival-badge">${show.badge}</span>
             ${show.editors_pick ? '<span class="arrival-pick-star">★ Pick</span>' : ''}
