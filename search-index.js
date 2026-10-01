@@ -1,5 +1,7 @@
 window.SITE_SEARCH_INDEX = [
-  {"title":"About British TV Hub | Our Story","url":"/about.html"},
+  {"title":"About British TV Hub | The Story","url":"/about.html"},
+  {"title":"Agatha Raisin: Where to Watch in the US","url":"/shows/agatha-raisin.html"},
+  {"title":"Foyle's War: Where to Watch in the US","url":"/shows/foyles-war.html"},
   {"title":"What's New on Acorn TV","url":"/acorn.html"},
   {"title":"Agatha Christie TV Adaptations Guide","url":"/agatha-christie.html"},
   {"title":"Ann Cleeves Books in Order","url":"/ann-cleeves.html"},
