@@ -1,6 +1,6 @@
 {
   "month": "October 2026",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "highlight": {
     "title": "Signora Volpe — Season 3",
     "badge": "Acorn TV Original · Season 3 · Premieres October 5",
@@ -13,6 +13,20 @@
   },
   "new_arrivals": [
     {
+      "title": "This Is Not a Murder Mystery",
+      "season": "Season 1",
+      "available": "October 12",
+      "badge": "Acorn TV Original · Premiere",
+      "description": "A young Salvador Dalí and René Magritte are among the Surrealist artists reunited at a lavish English country estate in the 1930s, only to find themselves trapped there with a serial killer on the loose. A playful art-world spin on the country-house mystery, with new episodes on Mondays.",
+      "tags": [
+        "Period mystery",
+        "1930s"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+      "trailer_id": "t6p_D38wHu4"
+    },
+    {
       "title": "The Red King",
       "season": "Season 1",
       "available": "October 19",
@@ -23,7 +37,8 @@
         "Folk horror"
       ],
       "editors_pick": true,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+      "trailer_id": "JMiL_qHDn3s"
     },
     {
       "title": "Wolf",
@@ -36,7 +51,8 @@
         "BBC drama"
       ],
       "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+      "trailer_id": "R6qQJiBm0eI"
     },
     {
       "title": "Blue Murder Motel",
