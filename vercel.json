@@ -130,6 +130,16 @@
       "source": "/the-way-british-tv-talks.html",
       "destination": "/why-british-tv-feels-cozy.html",
       "permanent": true
+    },
+    {
+      "source": "/holiday-guide-watch.html",
+      "destination": "/winter-preview-2026-2027.html#christmas",
+      "permanent": true
+    },
+    {
+      "source": "/holiday-guide-watch",
+      "destination": "/winter-preview-2026-2027.html#christmas",
+      "permanent": true
     }
   ],
   "rewrites": [
