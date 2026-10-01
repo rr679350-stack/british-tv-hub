@@ -70,6 +70,66 @@
       "source": "/gift-hub-batch2/:path*",
       "destination": "/:path*",
       "permanent": true
+    },
+    {
+      "source": "/broadchurch.html",
+      "destination": "/shows/broadchurch.html",
+      "permanent": true
+    },
+    {
+      "source": "/father-brown.html",
+      "destination": "/shows/father-brown.html",
+      "permanent": true
+    },
+    {
+      "source": "/inspector-morse.html",
+      "destination": "/shows/inspector-morse.html",
+      "permanent": true
+    },
+    {
+      "source": "/midsomer-murders.html",
+      "destination": "/shows/midsomer-murders.html",
+      "permanent": true
+    },
+    {
+      "source": "/poirot.html",
+      "destination": "/shows/poirot.html",
+      "permanent": true
+    },
+    {
+      "source": "/shetland.html",
+      "destination": "/shows/shetland.html",
+      "permanent": true
+    },
+    {
+      "source": "/the-gold.html",
+      "destination": "/shows/the-gold.html",
+      "permanent": true
+    },
+    {
+      "source": "/essentials-stream.html",
+      "destination": "/essentials-watch.html",
+      "permanent": true
+    },
+    {
+      "source": "/streaming-quiz.html",
+      "destination": "/streaming.html",
+      "permanent": true
+    },
+    {
+      "source": "/hidden-gems-fixed.html",
+      "destination": "/hidden-gems.html",
+      "permanent": true
+    },
+    {
+      "source": "/nightly-pick.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/the-way-british-tv-talks.html",
+      "destination": "/why-british-tv-feels-cozy.html",
+      "permanent": true
     }
   ],
   "rewrites": [
