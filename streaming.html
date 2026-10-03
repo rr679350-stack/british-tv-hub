@@ -1566,6 +1566,31 @@ document.addEventListener('click', function(e){
     <a href="/which-subscription.html" style="flex-shrink:0;display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:12px 22px;border-radius:2px;text-decoration:none;">Find Your Answer &rarr;</a>
   </div>
 
+  <style>
+  #quick-answer{background:#363f58;border:1px solid rgba(201,168,76,0.35);border-radius:12px;padding:36px 36px 28px;margin:0 0 36px;}
+  #quick-answer .quick-table{margin-bottom:0;}
+  #streaming-faq{background:#363f58;border:1px solid rgba(201,168,76,0.35);border-radius:12px;padding:36px 36px 14px;margin:0 0 36px;}
+  #streaming-faq > div:last-child{border-top-color:rgba(255,255,255,0.1) !important;}
+  #streaming-faq > div:last-child > div{border-bottom-color:rgba(255,255,255,0.1) !important;}
+  @media (max-width:640px){
+    #quick-answer{padding:24px 18px 20px;}
+    #streaming-faq{padding:24px 18px 6px;}
+    #streaming-faq .section-label,#streaming-faq .section-title{padding-left:0 !important;padding-right:0 !important;}
+    #quick-answer .section-label,#quick-answer .section-title,#quick-answer p{padding-left:0 !important;padding-right:0 !important;}
+    #quick-answer .quick-table thead{display:none;}
+    #quick-answer .quick-table,#quick-answer .quick-table tbody,#quick-answer .quick-table tr,#quick-answer .quick-table td{display:block;width:100%;}
+    #quick-answer .quick-table tr{padding:14px 0;border-bottom:1px solid var(--border);}
+    #quick-answer .quick-table tr:hover td{background:none;}
+    #quick-answer .quick-table td{border:0;padding:3px 0;font-size:15px;}
+    #quick-answer .quick-table td:not(:first-child){display:grid;grid-template-columns:92px 1fr;gap:8px;align-items:baseline;}
+    #quick-answer .quick-table td:first-child{font-family:'Playfair Display',serif;font-size:19px;padding-bottom:6px;}
+    #quick-answer .quick-table td:not(:first-child)::before{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);}
+    #quick-answer .quick-table td:nth-child(2)::before{content:"Best for";}
+    #quick-answer .quick-table td:nth-child(3)::before{content:"Cost";}
+    #quick-answer .quick-table td:nth-child(4)::before{content:"Free trial";}
+    #quick-answer .quick-table td:nth-child(5)::before{content:"Standout";}
+  }
+  </style>
   <div id="quick-answer">
     <div class="section-label">Quick Answer</div>
     <h2 class="section-title">The Best Way to Watch British TV in the US</h2>
@@ -1659,7 +1684,7 @@ document.addEventListener('click', function(e){
 
   <hr class="section-divider">
 
-    <div id="streaming-faq" style="max-width:760px;">
+    <div id="streaming-faq">
     <div class="section-label">Frequently Asked Questions</div>
     <h2 class="section-title">What Readers Ask Most</h2>
     <div style="border-top:1px solid #3d4a60;margin-top:24px;">
