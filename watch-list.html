@@ -91,12 +91,27 @@ gtag('config', 'G-P1L8CVNKS6');
   .wl-col-title { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--gold-light); margin-bottom: 18px; }
   .wl-columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 48px; max-width: 700px; margin-left: auto; margin-right: auto; }
   .wl-col { background: var(--bg-card); border: 1px solid var(--border); padding: 24px; min-height: 140px; }
-  .wl-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .wl-item { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--border); }
   .wl-item:last-child { border-bottom: none; }
   .wl-item-title { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text); }
   .wl-item-title a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--gold); }
   .wl-item-remove { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-faint); background: none; border: 1px solid var(--border); padding: 5px 9px; cursor: pointer; white-space: nowrap; }
   .wl-item-remove:hover { color: var(--text); border-color: var(--gold); }
+  .wl-item-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+  .wl-item-meta { display: block; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: .5px; color: var(--text-faint); margin-top: 3px; }
+  .wl-item-move { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); background: none; border: 1px solid rgba(201,168,76,.45); padding: 5px 9px; cursor: pointer; white-space: nowrap; }
+  .wl-item-move:hover { background: rgba(201,168,76,.12); }
+  .wl-add { max-width: 1100px; margin: 0 auto 36px; padding: 0 40px; box-sizing: border-box; }
+  .wl-add-card { background: #363f58; border: 1px solid rgba(201,168,76,.3); border-radius: 12px; padding: 24px 28px; }
+  .wl-add-row { position: relative; display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .wl-add-row input { flex: 1 1 260px; min-width: 0; padding: 13px 15px; font-family: 'Crimson Text', serif; font-size: 18px; background: #232c42; color: var(--text); border: 1px solid #4a5570; border-radius: 8px; }
+  .wl-add-row input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .wl-add-sug { position: absolute; left: 0; right: 0; top: 100%; margin-top: 6px; background: #222b42; border: 1px solid #3d4a60; border-radius: 8px; list-style: none; padding: 0; max-height: 300px; overflow-y: auto; z-index: 20; }
+  .wl-add-sug li { padding: 11px 16px; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,.06); display: flex; justify-content: space-between; gap: 12px; font-family: 'Crimson Text', serif; font-size: 16px; color: var(--text); }
+  .wl-add-sug li span { font-family: 'Raleway', sans-serif; font-size: 11px; color: var(--text-faint); white-space: nowrap; }
+  .wl-add-sug li.active, .wl-add-sug li:hover { background: #2c3550; }
+  .wl-add-msg { font-family: 'Raleway', sans-serif; font-size: 12px; color: var(--gold-light); margin-top: 10px; min-height: 16px; }
+  @media (max-width: 640px) { .wl-add { padding: 0 16px; } .wl-item { flex-wrap: wrap; } }
   .wl-empty { font-family: 'Crimson Text', serif; font-size: 15px; font-style: italic; color: var(--text-faint); }
   .wl-cta { text-align: center; margin-top: 8px; }
   .wl-cta a { font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); border-radius: 2px; padding: 10px 18px; text-decoration: none; display: inline-block; }
@@ -440,13 +455,26 @@ document.addEventListener('click', function(e){
   <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:560px;">
     <div class="page-hero-eyebrow">Track Your Progress</div>
     <h1>Your Watch List</h1>
-    <p class="page-hero-lead">Every British TV Hub show card has three buttons &mdash; Want to Watch, Watching, and Finished. Click one on any show, and it shows up right here.</p>
+    <p class="page-hero-lead">Mark Want to Watch, Watching or Finished on any show guide, or search below to track any of more than 500 British mysteries and dramas.</p>
     <p class="page-hero-note">No account needed &mdash; your list is saved in this browser, on this device. Clearing your cookies or switching devices will clear it too.</p>
     <div class="wl-progress" id="wl-progress-line">Nothing tracked yet.</div>
   </div>
 </div>
 
 <main>
+  <div class="wl-add">
+    <div class="wl-add-card">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;">Track Any Show</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8dfc8;margin:6px 0 0;">Add a show to your list</h2>
+      <div class="wl-add-row">
+        <label for="wl-add-input" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Search for a show</label>
+        <input type="text" id="wl-add-input" placeholder="Search more than 500 shows, e.g. Shetland" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="wl-add-sug" aria-autocomplete="list">
+        <ul class="wl-add-sug" id="wl-add-sug" role="listbox" hidden></ul>
+      </div>
+      <div class="wl-add-msg" id="wl-add-msg" aria-live="polite"></div>
+    </div>
+  </div>
+
   <div id="wl-continue" style="display:none;max-width:1100px;margin:0 auto 40px;padding:0 40px;">
     <div style="background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:28px 32px;">
       <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;">&#128065; Continue Watching</div>
@@ -629,6 +657,7 @@ document.addEventListener('click', function(e){
 })();
 </script>
 
+<script src="/watchlist-guides.js"></script>
 <script src="/watchlist.js"></script>
 <script>
 (function(){
@@ -747,14 +776,34 @@ document.addEventListener('click', function(e){
     }
 };
 
+  // Every show in the database can be tracked. A show with a guide page uses that page's slug,
+  // so a show marked on its guide and a show added here share one entry.
+  var GUIDES = window.BTVH_GUIDES || {};
+  var DBREG = {}, DBLIST = [];
+  function slugify(t){ return t.toLowerCase().replace(/\(\d{4}\)/g,'').replace(/&/g,'and').replace(/['’]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
+  function keyFor(title){
+    if(GUIDES[title]) return GUIDES[title];
+    var k = slugify(title), y = (title.match(/\((\d{4})\)/) || [])[1];
+    return y ? k + '-' + y : k;
+  }
+  function esc(t){ return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function svcName(n){ return n.replace(/ via Amazon$/,''); }
+  function lookup(slug){
+    var db = DBREG[slug], reg = REGISTRY[slug];
+    if(db) return db;
+    if(reg) return { title: reg.title, url: reg.url, external: false, where: '' };
+    return null;
+  }
+
   function render(){
     var all = window.BTVHWatchlist ? window.BTVHWatchlist.getAll() : {};
     var groups = { want: [], watching: [], finished: [] };
     Object.keys(all).forEach(function(slug){
       var status = all[slug];
-      if(groups[status] && REGISTRY[slug]){
-        groups[status].push(slug);
-      }
+      if(groups[status] && lookup(slug)){ groups[status].push(slug); }
+    });
+    ['want','watching','finished'].forEach(function(k){
+      groups[k].sort(function(a,b){ return lookup(a).title.localeCompare(lookup(b).title); });
     });
 
     var continueWrap = document.getElementById('wl-continue');
@@ -765,8 +814,12 @@ document.addEventListener('click', function(e){
       } else {
         continueWrap.style.display = 'block';
         continueList.innerHTML = groups.watching.map(function(slug){
-          var show = REGISTRY[slug];
-          return '<a href="' + show.url + '" style="display:block;background:#1e2433;border:1px solid #3d4a60;border-radius:8px;padding:16px 18px;text-decoration:none;transition:transform .15s ease,border-color .15s ease;"><div style="font-family:\'Playfair Display\',serif;font-size:17px;color:#e8dfc8;margin-bottom:4px;">' + show.title + '</div><div style="font-family:\'Raleway\',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;">Resume &rarr;</div></a>';
+          var show = lookup(slug);
+          var ext = show.external ? ' target="_blank" rel="noopener"' : '';
+          return '<div style="background:#1e2433;border:1px solid #3d4a60;border-radius:8px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;">' +
+            '<a href="' + esc(show.url) + '"' + ext + ' style="text-decoration:none;"><div style="font-family:\'Playfair Display\',serif;font-size:17px;color:#e8dfc8;margin-bottom:4px;">' + esc(show.title) + '</div>' +
+            '<div style="font-family:\'Raleway\',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#c9a96e;">' + (show.external ? 'Resume on ' + esc(show.where) : 'Resume') + ' &rarr;</div></a>' +
+            '<div class="wl-item-actions" style="justify-content:flex-start;"><button type="button" class="wl-item-move" data-slug="' + esc(slug) + '" data-to="finished">Finished</button><button type="button" class="wl-item-remove" data-slug="' + esc(slug) + '">Remove</button></div></div>';
         }).join('');
       }
     }
@@ -776,7 +829,7 @@ document.addEventListener('click', function(e){
     if(progressEl){
       progressEl.textContent = total === 0
         ? 'Nothing tracked yet.'
-        : groups.finished.length + ' finished \u00b7 ' + groups.watching.length + ' watching \u00b7 ' + groups.want.length + ' on your list';
+        : groups.finished.length + ' finished · ' + groups.watching.length + ' watching · ' + groups.want.length + ' on your list';
     }
 
     var emptyText = {
@@ -792,29 +845,94 @@ document.addEventListener('click', function(e){
         return;
       }
       el.innerHTML = groups[status].map(function(slug){
-        var show = REGISTRY[slug];
-        return '<div class="wl-item"><div class="wl-item-title"><a href="' + show.url + '">' + show.title + '</a></div><button type="button" class="wl-item-remove" data-slug="' + slug + '">Remove</button></div>';
+        var show = lookup(slug);
+        var ext = show.external ? ' target="_blank" rel="noopener"' : '';
+        var actions = status === 'want'
+          ? '<button type="button" class="wl-item-move" data-slug="' + esc(slug) + '" data-to="watching">Watching</button><button type="button" class="wl-item-move" data-slug="' + esc(slug) + '" data-to="finished">Finished</button>'
+          : '<button type="button" class="wl-item-move" data-slug="' + esc(slug) + '" data-to="watching">Rewatch</button>';
+        return '<div class="wl-item"><div class="wl-item-title"><a href="' + esc(show.url) + '"' + ext + '>' + esc(show.title) + '</a>' +
+          (show.where ? '<span class="wl-item-meta">' + esc(show.where) + '</span>' : '') + '</div>' +
+          '<div class="wl-item-actions">' + actions + '<button type="button" class="wl-item-remove" data-slug="' + esc(slug) + '">Remove</button></div></div>';
       }).join('');
     });
-
-    el_bindRemoveButtons();
   }
 
-  function el_bindRemoveButtons(){
-    document.querySelectorAll('.wl-item-remove').forEach(function(btn){
-      btn.addEventListener('click', function(){
-        var slug = this.getAttribute('data-slug');
-        window.BTVHWatchlist.setStatus(slug, null);
-        render();
-      });
+  document.addEventListener('click', function(e){
+    var mv = e.target.closest('.wl-item-move');
+    if(mv){ window.BTVHWatchlist.setStatus(mv.getAttribute('data-slug'), mv.getAttribute('data-to')); render(); return; }
+    var rm = e.target.closest('.wl-item-remove');
+    if(rm){ window.BTVHWatchlist.setStatus(rm.getAttribute('data-slug'), null); render(); }
+  });
+
+  // Track-any-show search
+  var input, sug, matches = [], active = -1;
+  function norm(t){ return t.toLowerCase().replace(/&/g,' and ').replace(/['’]/g,'').replace(/^agatha christies\s+/,'').replace(/^the\s+/,'').replace(/\s+/g,' ').trim(); }
+  function closeSug(){ if(!sug) return; sug.hidden = true; input.setAttribute('aria-expanded','false'); active = -1; }
+  function openSug(q){
+    q = norm(q.trim());
+    if(!q){ closeSug(); return; }
+    var all = window.BTVHWatchlist ? window.BTVHWatchlist.getAll() : {};
+    matches = DBLIST.filter(function(s){ return norm(s.title).indexOf(q) > -1; })
+      .sort(function(a,b){ return (norm(a.title).indexOf(q) !== 0) - (norm(b.title).indexOf(q) !== 0) || a.title.localeCompare(b.title); })
+      .slice(0,8);
+    sug.innerHTML = matches.length ? matches.map(function(s,i){
+      var st = all[s.key];
+      return '<li role="option" id="wl-opt-' + i + '" data-i="' + i + '">' + esc(s.title) + '<span>' + (st ? 'Already tracked' : esc(s.where || '')) + '</span></li>';
+    }).join('') : '<li aria-disabled="true">No match yet<span></span></li>';
+    sug.hidden = false; input.setAttribute('aria-expanded','true'); active = -1;
+  }
+  function choose(i){
+    var s = matches[i]; if(!s) return;
+    var msg = document.getElementById('wl-add-msg');
+    var all = window.BTVHWatchlist.getAll();
+    if(all[s.key]){ msg.textContent = s.title + ' is already on your list.'; }
+    else { window.BTVHWatchlist.setStatus(s.key, 'want'); msg.textContent = 'Added ' + s.title + ' to Want to Watch.'; render(); }
+    input.value = ''; closeSug(); input.focus();
+  }
+
+  function initSearch(){
+    input = document.getElementById('wl-add-input'); sug = document.getElementById('wl-add-sug');
+    if(!input) return;
+    input.addEventListener('input', function(){ openSug(input.value); });
+    input.addEventListener('keydown', function(e){
+      var items = sug.querySelectorAll('li[role=option]');
+      if(e.key === 'ArrowDown' && items.length){ e.preventDefault(); active = (active + 1) % items.length; }
+      else if(e.key === 'ArrowUp' && items.length){ e.preventDefault(); active = (active - 1 + items.length) % items.length; }
+      else if(e.key === 'Enter'){ e.preventDefault(); choose(active > -1 ? active : 0); return; }
+      else if(e.key === 'Escape'){ closeSug(); return; }
+      else return;
+      for(var i=0;i<items.length;i++){ items[i].classList.toggle('active', i === active); }
+      input.setAttribute('aria-activedescendant', active > -1 ? 'wl-opt-' + active : '');
     });
+    sug.addEventListener('mousedown', function(e){ var li = e.target.closest('li[data-i]'); if(li){ e.preventDefault(); choose(+li.getAttribute('data-i')); } });
+    input.addEventListener('blur', function(){ setTimeout(closeSug, 120); });
+  }
+
+  function loadDB(){
+    fetch('/shows-database.json').then(function(r){ return r.json(); }).then(function(data){
+      var today = new Date().toISOString().slice(0,10);
+      data.forEach(function(x){
+        if(!x || !x.title) return;
+        var key = keyFor(x.title);
+        var subs = (x.us || []).filter(function(p){ return p.tag !== 'buy' && !(p.from && p.from > today); });
+        var first = subs[0];
+        var guide = GUIDES[x.title];
+        var where = subs.map(function(p){ return svcName(p.name); }).filter(function(v,i,a){ return a.indexOf(v) === i; }).slice(0,2).join(' · ');
+        var rec = { key: key, title: x.title, where: where,
+          url: guide ? '/shows/' + guide + '.html' : (first ? first.url : '/which-subscription.html'),
+          external: !guide && !!first };
+        if(!DBREG[key]) { DBREG[key] = rec; DBLIST.push(rec); }
+      });
+      render();
+    }).catch(function(){});
   }
 
   document.addEventListener('btvh:watchlist-change', render);
+  function boot(){ render(); initSearch(); loadDB(); }
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', render);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    render();
+    boot();
   }
 })();
 </script>

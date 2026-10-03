@@ -382,8 +382,14 @@ document.addEventListener('click', function(e){
 .sf-extra h3{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
 .sf-extra p,.sf-extra li{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.5}
 .sf-extra ul{margin:0;padding-left:1.1em}
+.sf-svc li{break-inside:avoid;margin-bottom:4px}
+.sf-wl{margin-left:8px;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(201,168,76,.45);border-radius:2px;padding:2px 7px;cursor:pointer;vertical-align:middle}
+.sf-wl:hover{background:rgba(201,168,76,.12)}
+.sf-wl.on{color:#1a2135;background:var(--gold);border-color:var(--gold)}
+.sf-wl:focus-visible{outline:2px solid var(--gold-light);outline-offset:2px}
 </style>
 
+<script src="/watchlist-guides.js"></script>
 <div class="sf-wrap" id="sf-tool">
 
   <div class="sf-card">
@@ -405,6 +411,7 @@ document.addEventListener('click', function(e){
 
     <div class="sf-row" style="margin-top:18px;">
       <button type="button" class="sf-btn" id="sf-import">Add My Watch List</button>
+      <button type="button" class="sf-btn" id="sf-saveall">Save All to Watch List</button>
       <button type="button" class="sf-btn" id="sf-clear">Clear All</button>
     </div>
     <div class="sf-msg" id="sf-msg" aria-live="polite"></div>
@@ -435,6 +442,19 @@ document.addEventListener('click', function(e){
   var QUICK = ['Vera','Midsomer Murders','Shetland','Father Brown','Call the Midwife','All Creatures Great and Small','Death in Paradise','Inspector Morse','Grantchester','Happy Valley',"Agatha Christie's Poirot",'Endeavour'];
   var SLUG_ALIAS = { 'poirot':"agatha-christies-poirot" };
   var STORE = 'btvh_subfinder_v1';
+  var WL_KEY = 'btvh_watchlist_v1';
+  var GUIDES = window.BTVH_GUIDES || {};
+  function wlGet(){ try{ return JSON.parse(localStorage.getItem(WL_KEY) || '{}') || {}; }catch(e){ return {}; } }
+  function wlSet(all){ try{ localStorage.setItem(WL_KEY, JSON.stringify(all)); return true; }catch(e){ return false; } }
+  function wlKey(title){
+    if(GUIDES[title]) return GUIDES[title];
+    var k = slug(title), y = (title.match(/\((\d{4})\)/) || [])[1];
+    return y ? k + '-' + y : k;
+  }
+  function wlButton(title){
+    var on = !!wlGet()[wlKey(title)];
+    return '<button type="button" class="sf-wl' + (on ? ' on' : '') + '" data-wl="' + esc(title) + '" aria-pressed="' + on + '">' + (on ? '&#10003; Tracked' : '+ Track') + '</button>';
+  }
   var DB = [], BY_TITLE = {}, selected = [];
 
   var $ = function(id){ return document.getElementById(id); };
@@ -513,7 +533,7 @@ document.addEventListener('click', function(e){
     return { combo:best, coverable:coverable };
   }
 
-  function showLink(t){ return esc(t); }
+  function showLink(t){ return esc(t) + wlButton(t); }
 
   function renderAnswer(){
     var body = $('sf-answer-body');
@@ -574,7 +594,7 @@ document.addEventListener('click', function(e){
       }
       if(notStreaming.length){
         html += '<h3 style="margin-top:14px;">Not on a US subscription service right now</h3><ul>' + notStreaming.map(function(s){
-          return '<li>' + esc(s.title) + (s.p.buy.length ? ' (available to buy)' : '') + (s.p.soon.length ? ' (see coming soon)' : '') + '</li>';
+          return '<li>' + esc(s.title) + (s.p.buy.length ? ' (available to buy)' : '') + (s.p.soon.length ? ' (see coming soon)' : '') + wlButton(s.title) + '</li>';
         }).join('') + '</ul><p style="margin-top:6px;">British TV Hub rechecks availability regularly, so check back.</p>';
       }
       html += '</div>';
@@ -648,13 +668,28 @@ document.addEventListener('click', function(e){
     $('sf-chips').addEventListener('click', function(e){
       var b = e.target.closest('[data-remove]'); if(b) remove(b.getAttribute('data-remove'));
     });
+    document.addEventListener('click', function(e){
+      var b = e.target.closest('.sf-wl'); if(!b) return;
+      var t = b.getAttribute('data-wl'), all = wlGet(), k = wlKey(t);
+      if(all[k]) delete all[k]; else all[k] = 'want';
+      if(!wlSet(all)){ $('sf-msg').textContent = 'Your browser blocked saving to the Watch List.'; return; }
+      renderAnswer();
+    });
+    $('sf-saveall').addEventListener('click', function(){
+      if(!selected.length){ $('sf-msg').textContent = 'Add some shows first.'; return; }
+      var all = wlGet(), n = 0;
+      selected.forEach(function(t){ var k = wlKey(t); if(!all[k]){ all[k] = 'want'; n++; } });
+      if(!wlSet(all)){ $('sf-msg').textContent = 'Your browser blocked saving to the Watch List.'; return; }
+      $('sf-msg').innerHTML = (n ? 'Saved ' + n + ' show' + (n === 1 ? '' : 's') + ' to Want to Watch.' : 'Every show here is already on your Watch List.') + ' <a href="/watch-list.html" style="color:var(--gold);">Open the Watch List</a>';
+      renderAnswer();
+    });
     $('sf-clear').addEventListener('click', function(){ selected = []; save(); render(); $('sf-msg').textContent = ''; });
     $('sf-import').addEventListener('click', function(){
       var wl = {};
       try{ wl = JSON.parse(localStorage.getItem('btvh_watchlist_v1') || '{}') || {}; }catch(e){}
       var slugs = Object.keys(wl).filter(function(k){ return wl[k] === 'want' || wl[k] === 'watching'; });
       if(!slugs.length){ $('sf-msg').innerHTML = 'Your Watch List has no shows marked Want to Watch or Watching yet. <a href="/watch-list.html" style="color:var(--gold);">Open the Watch List</a>'; return; }
-      var bySlug = {}; DB.forEach(function(s){ bySlug[slug(s.title)] = s.title; bySlug[slug(s.title).replace(/^the-/,'')] = bySlug[slug(s.title).replace(/^the-/,'')] || s.title; });
+      var bySlug = {}; DB.forEach(function(s){ var k = slug(s.title); bySlug[k] = bySlug[k] || s.title; var k2 = k.replace(/^the-/,''); bySlug[k2] = bySlug[k2] || s.title; }); Object.keys(GUIDES).forEach(function(t){ if(BY_TITLE[t]) bySlug[GUIDES[t]] = t; });
       var added = 0;
       slugs.forEach(function(k){ var t = bySlug[SLUG_ALIAS[k] || k]; if(t && add(t)) added++; });
       $('sf-msg').textContent = added ? 'Added ' + added + ' show' + (added === 1 ? '' : 's') + ' from your Watch List.' : 'Everything on your Watch List is already here.';
