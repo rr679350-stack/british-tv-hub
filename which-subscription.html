@@ -389,13 +389,16 @@ document.addEventListener('click', function(e){
   <div class="sf-card">
     <p class="sf-step">Step 1</p>
     <h2 class="sf-h2">Add the shows <em>you want to watch</em></h2>
-    <p class="sf-note">Search more than 400 British mysteries and dramas, tap a popular pick, or bring in the shows saved on your Watch List.</p>
+    <p class="sf-note">Search nearly 500 British mysteries and dramas, tap a popular pick, or bring in the shows saved on your Watch List.</p>
 
     <div class="sf-search">
       <label for="sf-input" class="sf-label" style="display:block;margin:0 0 8px;">Search for a show</label>
       <input type="text" id="sf-input" placeholder="Start typing, e.g. Vera or Shetland" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sf-suggest" aria-autocomplete="list">
       <ul class="sf-suggest" id="sf-suggest" role="listbox" hidden></ul>
     </div>
+
+    <p class="sf-label">New this season</p>
+    <div class="sf-row" id="sf-new"></div>
 
     <p class="sf-label">Popular picks</p>
     <div class="sf-row" id="sf-quick"></div>
@@ -428,6 +431,7 @@ document.addEventListener('click', function(e){
     'PBS Passport':     { label:'PBS Passport', cta:'About PBS Passport', url:'https://www.pbs.org/passport', rank:4, note:'Comes with a donation to a local PBS station.' }
   };
   var ALIAS = { 'BritBox via Amazon':'BritBox', 'Acorn TV via Amazon':'Acorn TV', 'PBS Masterpiece via Amazon':'PBS Masterpiece' };
+  var NEW = ['Gone',"Agatha Christie's Tommy & Tuppence",'Ludwig','Time','Lynley','The Hardacres','Riot Women','The Other Bennet Sister','Code of Silence','Cooper & Fry','Signora Volpe','The Red King','This Is Not a Murder Mystery','Wolf','Blue Murder Motel','Maigret (2025)','Marble Hall Murders','The Gold'];
   var QUICK = ['Vera','Midsomer Murders','Shetland','Father Brown','Call the Midwife','All Creatures Great and Small','Death in Paradise','Inspector Morse','Grantchester','Happy Valley',"Agatha Christie's Poirot",'Endeavour'];
   var SLUG_ALIAS = { 'poirot':"agatha-christies-poirot" };
   var STORE = 'btvh_subfinder_v1';
@@ -436,20 +440,23 @@ document.addEventListener('click', function(e){
   var $ = function(id){ return document.getElementById(id); };
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function slug(s){ return s.toLowerCase().replace(/\(\d{4}\)/g,'').replace(/&/g,'and').replace(/['’]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
-  function norm(s){ return s.toLowerCase().replace(/['’]/g,'').replace(/^the\s+/,''); }
+  function norm(s){ return s.toLowerCase().replace(/&/g,' and ').replace(/['’]/g,'').replace(/^agatha christies\s+/,'').replace(/^the\s+/,'').replace(/\s+/g,' ').trim(); }
+  var TODAY = new Date().toISOString().slice(0,10);
+  function fmtDate(iso){ var d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-US', { month:'long', day:'numeric' }); }
   function save(){ try{ localStorage.setItem(STORE, JSON.stringify(selected)); }catch(e){} }
   function load(){ try{ var v = JSON.parse(localStorage.getItem(STORE) || '[]'); return Array.isArray(v) ? v : []; }catch(e){ return []; } }
 
   function profile(show){
-    var subs = {}, free = [], buy = [], other = {};
+    var subs = {}, free = [], buy = [], other = {}, soon = [];
     (show.us || []).forEach(function(p){
       var name = ALIAS[p.name] || p.name;
+      if(p.from && p.from > TODAY){ soon.push({ name:name, from:p.from }); return; }
       if(p.tag === 'free'){ free.push({ name:p.name, url:p.url }); }
       else if(p.tag === 'buy'){ buy.push(p.name); }
       else if(SERVICES[name]){ subs[name] = true; }
       else { other[name] = p.url; subs[name] = true; }
     });
-    return { subs:Object.keys(subs), free:free, buy:buy, other:other };
+    return { subs:Object.keys(subs), free:free, buy:buy, other:other, soon:soon };
   }
   function svcInfo(name, url){
     return SERVICES[name] || { label:name, cta:'Visit ' + name, url:url || '#', rank:9 };
@@ -470,7 +477,7 @@ document.addEventListener('click', function(e){
         return '<span class="sf-chip">' + esc(t) + '<button type="button" aria-label="Remove ' + esc(t) + '" data-remove="' + esc(t) + '">&times;</button></span>';
       }).join('');
     }
-    var q = $('sf-quick').querySelectorAll('.sf-quick');
+    var q = document.querySelectorAll('.sf-quick');
     for(var i=0;i<q.length;i++){ q[i].disabled = selected.indexOf(q[i].getAttribute('data-title')) > -1; }
   }
 
@@ -552,16 +559,22 @@ document.addEventListener('click', function(e){
     });
 
     var freeShows = shows.filter(function(s){ return s.p.free.length; });
-    if(freeShows.length || notStreaming.length){
+    var soonShows = shows.filter(function(s){ return s.p.soon.length; });
+    if(freeShows.length || notStreaming.length || soonShows.length){
       html += '<div class="sf-extra">';
       if(freeShows.length){
         html += '<h3>Also free with ads</h3><ul>' + freeShows.map(function(s){
           return '<li>' + esc(s.title) + ': ' + s.p.free.map(function(f){ return esc(f.name); }).join(', ') + '</li>';
         }).join('') + '</ul>';
       }
+      if(soonShows.length){
+        html += '<h3' + (freeShows.length ? ' style="margin-top:14px;"' : '') + '>Coming soon</h3><ul>' + soonShows.map(function(s){
+          return '<li>' + esc(s.title) + ': ' + s.p.soon.map(function(o){ return esc(svcInfo(o.name).label) + ' from ' + fmtDate(o.from); }).join(', ') + '</li>';
+        }).join('') + '</ul>';
+      }
       if(notStreaming.length){
         html += '<h3 style="margin-top:14px;">Not on a US subscription service right now</h3><ul>' + notStreaming.map(function(s){
-          return '<li>' + esc(s.title) + (s.p.buy.length ? ' (available to buy)' : '') + '</li>';
+          return '<li>' + esc(s.title) + (s.p.buy.length ? ' (available to buy)' : '') + (s.p.soon.length ? ' (see coming soon)' : '') + '</li>';
         }).join('') + '</ul><p style="margin-top:6px;">British TV Hub rechecks availability regularly, so check back.</p>';
       }
       html += '</div>';
@@ -584,7 +597,7 @@ document.addEventListener('click', function(e){
     if(!matches.length){ sug.innerHTML = '<li aria-disabled="true">No match in the database yet<span></span></li>'; }
     else {
       sug.innerHTML = matches.map(function(s,i){
-        var p = profile(s), where = p.subs.length ? p.subs.map(function(n){ return svcInfo(n).label; }).join(' / ') : (p.free.length ? 'Free with ads' : 'Not streaming');
+        var p = profile(s), where = p.subs.length ? p.subs.map(function(n){ return svcInfo(n).label; }).join(' / ') : (p.soon.length ? svcInfo(p.soon[0].name).label + ' from ' + fmtDate(p.soon[0].from) : (p.free.length ? 'Free with ads' : 'Not streaming'));
         return '<li role="option" id="sf-opt-' + i + '" data-i="' + i + '">' + esc(s.title) + '<span>' + esc(where) + '</span></li>';
       }).join('');
     }
@@ -603,9 +616,11 @@ document.addEventListener('click', function(e){
       var d = new Date(latest + 'T12:00:00');
       $('sf-checked').textContent = d.toLocaleDateString('en-US', { month:'long', year:'numeric' });
     }
-    $('sf-quick').innerHTML = QUICK.filter(function(t){ return BY_TITLE[t]; }).map(function(t){
-      return '<button type="button" class="sf-quick" data-title="' + esc(t) + '">+ ' + esc(t.replace("Agatha Christie's ", '')) + '</button>';
-    }).join('');
+    function chips(list){ return list.filter(function(t){ return BY_TITLE[t]; }).map(function(t){
+      return '<button type="button" class="sf-quick" data-title="' + esc(t) + '">+ ' + esc(t.replace("Agatha Christie's ", '').replace(/ \(\d{4}\)$/, '')) + '</button>';
+    }).join(''); }
+    $('sf-new').innerHTML = chips(NEW);
+    $('sf-quick').innerHTML = chips(QUICK);
     selected = load().filter(function(t){ return BY_TITLE[t]; });
     render();
   }
@@ -627,9 +642,9 @@ document.addEventListener('click', function(e){
       var li = e.target.closest('li[data-i]'); if(li){ e.preventDefault(); choose(+li.getAttribute('data-i')); }
     });
     input.addEventListener('blur', function(){ setTimeout(closeSug, 120); });
-    $('sf-quick').addEventListener('click', function(e){
+    ['sf-quick','sf-new'].forEach(function(id){ $(id).addEventListener('click', function(e){
       var b = e.target.closest('.sf-quick'); if(b && !b.disabled) add(b.getAttribute('data-title'));
-    });
+    }); });
     $('sf-chips').addEventListener('click', function(e){
       var b = e.target.closest('[data-remove]'); if(b) remove(b.getAttribute('data-remove'));
     });

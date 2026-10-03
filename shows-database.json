@@ -11525,5 +11525,49 @@
     "sources": [
       "https://www.justwatch.com/us/tv-show/pride-and-prejudice-1980"
     ]
+  },
+  {
+    "title": "This Is Not a Murder Mystery",
+    "years": "2026",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+        "from": "2026-10-12"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "British TV Hub Acorn TV October 2026 listings (acorn-new.json)"
+    ]
+  },
+  {
+    "title": "Wolf",
+    "years": "2023",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
+        "from": "2026-10-26"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wolf-2023",
+      "British TV Hub Acorn TV October 2026 listings (acorn-new.json)"
+    ]
   }
 ]
