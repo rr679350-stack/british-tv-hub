@@ -496,6 +496,16 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
       }
     ],
     "uk": [
@@ -512,7 +522,7 @@
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/agatha-christies-poirot",
       "https://www.cyberghostvpn.com/privacyhub/how-to-watch-poirot/",
@@ -775,6 +785,21 @@
         "name": "Peacock",
         "tag": "stream",
         "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -791,8 +816,9 @@
         "url": "https://www.binge.com.au"
       }
     ],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/downton-abbey",
       "https://www.techradar.com/streaming/entertainment/how-to-watch-downton-abbey-stream-every-episode",
       "https://cybernews.com/stream-online/how-to-watch-downton-abbey/",
       "https://www.justwatch.com/au/tv-show/downton-abbey",
@@ -1598,6 +1624,11 @@
         "name": "BritBox via Amazon",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -1608,8 +1639,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-forsyte-saga"
+    ]
   },
   {
     "title": "Brideshead Revisited",
@@ -3070,7 +3103,10 @@
     ],
     "au": [],
     "verified": "2026-07-26",
-    "sources": []
+    "sources": [
+      "https://www.pbs.org/show/miss-scarlet-duke/",
+      "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-miss-scarlet-and-the-duke"
+    ]
   },
   {
     "title": "Trigger Point",
@@ -5087,11 +5123,21 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/pie-in-the-sky",
       "https://www.britishtv.com/british-mysteries-crime-dramas-on-britbox/"
@@ -5161,11 +5207,16 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/bergerac"
     ]
@@ -5290,12 +5341,18 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/the-ruth-rendell-mysteries",
       "https://en.wikipedia.org/wiki/The_Ruth_Rendell_Mysteries",
       "https://reelgood.com/show/the-ruth-rendell-mysteries-1987"
     ]
@@ -6380,6 +6437,11 @@
         "name": "Hulu",
         "tag": "stream",
         "url": "https://www.hulu.com"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -6720,12 +6782,23 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/darkness-those-who-kill",
       "British TV Hub internal audit: Triple-Checked A-L Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
     ]
   },
@@ -8220,30 +8293,6 @@
     "sources": [
       "https://www.pbssocal.org/shows/hotel-portofino",
       "https://www.pbs.org/about/about-pbs/blogs/news/travel-back-to-hotel-portofino-for-season-2-premiering-october-15-on-pbs"
-    ]
-  },
-  {
-    "title": "Miss Scarlet",
-    "years": "2020–present",
-    "genre": "Period Crime Mystery",
-    "us": [
-      {
-        "name": "PBS Masterpiece",
-        "tag": "stream",
-        "url": "https://www.pbs.org/wgbh/masterpiece/"
-      },
-      {
-        "name": "PBS Passport",
-        "tag": "stream",
-        "url": "https://www.pbs.org/passport/"
-      }
-    ],
-    "uk": [],
-    "au": [],
-    "verified": "2026-08-02",
-    "sources": [
-      "https://www.pbs.org/show/miss-scarlet-duke/",
-      "https://www.pbs.org/wgbh/masterpiece/specialfeatures/how-to-watch-miss-scarlet-and-the-duke"
     ]
   },
   {
@@ -12167,6 +12216,301 @@
     "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/the-gone"
+    ]
+  },
+  {
+    "title": "Death Comes to Pemberley",
+    "years": "2013",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/death-comes-to-pemberley"
+    ]
+  },
+  {
+    "title": "Little Bird",
+    "years": "2023",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/little-bird"
+    ]
+  },
+  {
+    "title": "Murder Most Puzzling",
+    "years": "2025",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/murder-most-puzzling"
+    ]
+  },
+  {
+    "title": "The Escape Artist",
+    "years": "2013",
+    "genre": "Legal Thriller",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-escape-artist"
+    ]
+  },
+  {
+    "title": "Prime Suspect 1973",
+    "years": "2017",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/prime-suspect-1973"
+    ]
+  },
+  {
+    "title": "I Fought the Law",
+    "years": "2025",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/i-fought-the-law"
+    ]
+  },
+  {
+    "title": "The Tunnel",
+    "years": "2013–2018",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-tunnel"
+    ]
+  },
+  {
+    "title": "Halifax: Retribution",
+    "years": "2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/halifax-retribution"
+    ]
+  },
+  {
+    "title": "Guilt",
+    "years": "2019–2023",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/guilt-2019"
+    ]
+  },
+  {
+    "title": "Frankie Drake Mysteries",
+    "years": "2017–2020",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/frankie-drake-mysteries"
+    ]
+  },
+  {
+    "title": "Before We Die",
+    "years": "2021–2022",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/before-we-die-2021"
+    ]
+  },
+  {
+    "title": "Howards End",
+    "years": "2017",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/howards-end"
+    ]
+  },
+  {
+    "title": "Man in an Orange Shirt",
+    "years": "2017",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/man-in-an-orange-shirt"
+    ]
+  },
+  {
+    "title": "Arthur & George",
+    "years": "2015",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/arthur-and-george"
+    ]
+  },
+  {
+    "title": "Zen",
+    "years": "2011",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/zen"
     ]
   }
 ]
