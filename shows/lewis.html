@@ -259,10 +259,11 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-dropdown-toggle:hover{ color:#ffffff; }
 .nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; max-height:calc(100vh - 90px); overflow-y:auto; -webkit-overflow-scrolling:touch; flex-direction:column; }
 @media (min-width:641px){
-  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:800px; padding:18px 6px; max-height:82vh; }
-  .nav-dropdown-col{ flex:1 1 0; min-width:175px; padding:0 18px; border-right:1px solid #3d4a60; }
+  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:0; width:max-content; max-width:calc(100vw - 32px); padding:18px 6px; max-height:82vh; }
+  .nav-dropdown-col{ flex:0 1 auto; min-width:150px; padding:0 10px; border-right:1px solid #3d4a60; }
   .nav-dropdown-col:last-child{ border-right:none; }
 }
+@media (min-width:641px) and (max-width:1200px){ .nav-dropdown-menu{ flex-wrap:wrap; width:min(560px, calc(100vw - 32px)); row-gap:14px; } .nav-dropdown-col{ flex:1 1 45%; border-right:none; } }
 .nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
 .nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
 .nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
@@ -583,45 +584,29 @@ iframe[id*="chatbase-bubble-button"],
             <div class="nav-dropdown-label">Browse</div>
             <a href="/genres.html">By Genre</a>
             <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
             <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/country-house-mysteries.html">Murder at the Manor</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
             <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
+            <a href="/shows-like.html">Find Similar Shows</a>
             <a href="/this-week.html">This Week in British TV</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
             <a href="/meet-tilly.html">Ask Tilly</a>
             <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
           </div>
           <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/gift-guide-hub.html">All Gift Guides</a>
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
           </div>
         </div>
       </div>
@@ -632,7 +617,7 @@ iframe[id*="chatbase-bubble-button"],
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
         <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>

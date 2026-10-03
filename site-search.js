@@ -17,13 +17,25 @@ function filterSiteSearch(q){
   q = q.trim().toLowerCase();
   if(!q){ results.innerHTML=''; return; }
   var index = window.SITE_SEARCH_INDEX || [];
-  var matches = index.filter(function(p){ return p.title.toLowerCase().indexOf(q) !== -1; }).slice(0,8);
+  var words = q.replace(/[‘’']/g,'').split(/\s+/).filter(Boolean);
+  var scored = [];
+  index.forEach(function(p){
+    var title = p.title.toLowerCase().replace(/[‘’']/g,'');
+    var hay = title + ' ' + p.url.toLowerCase().replace(/[\/\-\.#]/g,' ');
+    for(var i=0;i<words.length;i++){ if(hay.indexOf(words[i]) === -1) return; }
+    var score = title.indexOf(q) === 0 ? 0 : (title.indexOf(q) !== -1 ? 1 : 2);
+    if(p.url.indexOf('/shows/') === 0) score -= 0.5;
+    scored.push({p:p, s:score});
+  });
+  scored.sort(function(a,b){ return a.s - b.s; });
+  var matches = scored.slice(0,10).map(function(x){ return x.p; });
   if(matches.length===0){
     results.innerHTML = '<div class="nav-search-empty">No matches found</div>';
     return;
   }
   results.innerHTML = matches.map(function(p){
-    return '<a href="'+p.url+'">'+p.title+'</a>';
+    var t = p.title.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return '<a href="'+p.url+'">'+t+'</a>';
   }).join('');
 }
 function handleSiteSearchKey(e){
