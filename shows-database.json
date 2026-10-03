@@ -292,6 +292,21 @@
         "name": "Hulu",
         "tag": "stream",
         "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -308,7 +323,7 @@
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
       "https://en.wikipedia.org/wiki/Line_of_Duty",
       "https://www.justwatch.com/us/tv-show/line-of-duty",
@@ -2005,6 +2020,21 @@
         "name": "BritBox via Amazon",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
       }
     ],
     "uk": [
@@ -2015,8 +2045,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/luther"
+    ]
   },
   {
     "title": "Prime Suspect",
@@ -2118,6 +2150,16 @@
         "name": "BritBox via Amazon",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -2128,8 +2170,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wire-in-the-blood"
+    ]
   },
   {
     "title": "DCI Banks",
@@ -2649,33 +2693,6 @@
         "name": "U&Alibi",
         "tag": "free",
         "url": "https://u.co.uk"
-      }
-    ],
-    "au": [],
-    "verified": "2026-07-26",
-    "sources": []
-  },
-  {
-    "title": "Madame Blanc Mysteries",
-    "years": "2021–present",
-    "genre": "Cozy Mystery",
-    "us": [
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      },
-      {
-        "name": "Acorn TV via Amazon",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      }
-    ],
-    "uk": [
-      {
-        "name": "Channel 5",
-        "tag": "free",
-        "url": "https://www.channel5.com"
       }
     ],
     "au": [],
@@ -5596,12 +5613,18 @@
         "name": "BritBox",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://acorn.tv/browse/all/",
       "https://deadline.com/2023/02/bbc-agatha-christie-bbc-post-sarah-phelps-era-murder-is-easy-1235266091/"
     ]
   },
@@ -5832,15 +5855,21 @@
     "genre": "Drama",
     "us": [
       {
-        "name": "BritBox",
+        "name": "Acorn TV",
         "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/quiz",
       "https://www.smartmove.us/streaming/services/britbox"
     ]
   },
@@ -9405,9 +9434,20 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
-    "uk": [],
+    "uk": [
+      {
+        "name": "Channel 5",
+        "tag": "free",
+        "url": "https://www.channel5.com"
+      }
+    ],
     "au": [],
     "verified": "2026-09-30",
     "sources": [
@@ -11568,6 +11608,565 @@
     "sources": [
       "https://www.justwatch.com/us/tv-show/wolf-2023",
       "British TV Hub Acorn TV October 2026 listings (acorn-new.json)"
+    ]
+  },
+  {
+    "title": "The Gulf",
+    "years": "2019–2021",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-gulf"
+    ]
+  },
+  {
+    "title": "The Ipcress File",
+    "years": "2022",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-ipcress-file"
+    ]
+  },
+  {
+    "title": "The Claremont Murders",
+    "years": "2023",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-claremont-murders"
+    ]
+  },
+  {
+    "title": "Cleddau",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cleddau"
+    ]
+  },
+  {
+    "title": "19-2",
+    "years": "2014–2017",
+    "genre": "Police Procedural",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/19-2"
+    ]
+  },
+  {
+    "title": "SeaChange",
+    "years": "1998–2019",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/seachange"
+    ]
+  },
+  {
+    "title": "Kiri",
+    "years": "2018",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/kiri"
+    ]
+  },
+  {
+    "title": "800 Words",
+    "years": "2015–2018",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/800-words"
+    ]
+  },
+  {
+    "title": "The Dry",
+    "years": "2022–2024",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://acorn.tv/thedry/"
+    ]
+  },
+  {
+    "title": "Wired",
+    "years": "2008",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://acorn.tv/wired/"
+    ]
+  },
+  {
+    "title": "Straight Forward",
+    "years": "2019",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://acorn.tv/straightforward/"
+    ]
+  },
+  {
+    "title": "Significant Others",
+    "years": "2022",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/significant-others"
+    ]
+  },
+  {
+    "title": "The Accident",
+    "years": "2019",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-accident"
+    ]
+  },
+  {
+    "title": "Love, Lies & Records",
+    "years": "2017",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/love-lies-and-records"
+    ]
+  },
+  {
+    "title": "Dear Murderer",
+    "years": "2017",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/dear-murderer"
+    ]
+  },
+  {
+    "title": "The Catch",
+    "years": "2023",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-catch-2023"
+    ]
+  },
+  {
+    "title": "The Atwood Stories",
+    "years": "2003",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-atwood-stories"
+    ]
+  },
+  {
+    "title": "The Murders",
+    "years": "2019",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-murders"
+    ]
+  },
+  {
+    "title": "The Camomile Lawn",
+    "years": "1992",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-camomile-lawn"
+    ]
+  },
+  {
+    "title": "Playing for Keeps",
+    "years": "2018–2019",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/playing-for-keeps"
+    ]
+  },
+  {
+    "title": "The Brief",
+    "years": "2004–2005",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-brief"
+    ]
+  },
+  {
+    "title": "The Cry",
+    "years": "2018",
+    "genre": "Psychological Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-cry"
+    ]
+  },
+  {
+    "title": "White Lies",
+    "years": "2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/white-lies"
+    ]
+  },
+  {
+    "title": "The Heart Guy",
+    "years": "2016–2021",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/doctor-doctor"
+    ]
+  },
+  {
+    "title": "The Grand",
+    "years": "1997–1998",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-grand"
+    ]
+  },
+  {
+    "title": "Heat",
+    "years": "2023",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/heat"
+    ]
+  },
+  {
+    "title": "The Island",
+    "years": "2025",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-island-2025"
+    ]
+  },
+  {
+    "title": "The Gone",
+    "years": "2023",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-gone"
     ]
   }
 ]
