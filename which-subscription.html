@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Which Streaming Subscription Do I Need? | British TV Hub</title>
+<meta name="description" content="Add the British mysteries and dramas on your list and see which US streaming service covers the most, and the smallest combination of BritBox, Acorn TV and PBS that covers them all.">
+<link rel="canonical" href="https://britishtvhub.com/which-subscription.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/which-subscription.html">
+<meta property="og:title" content="Which Streaming Subscription Do I Need? | British TV Hub">
+<meta property="og:description" content="Add the British mysteries and dramas on your list and see which US streaming service covers the most, and the smallest combination of BritBox, Acorn TV and PBS that covers them all.">
+<meta property="og:image" content="https://britishtvhub.com/streaming-hero.webp">
+<meta property="og:image:alt" content="A cozy lamp-lit living room with a British mystery playing on the TV">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Which Streaming Subscription Do I Need? | British TV Hub">
+<meta name="twitter:description" content="Add the British mysteries and dramas on your list and see which US streaming service covers the most, and the smallest combination of BritBox, Acorn TV and PBS that covers them all.">
+<meta name="twitter:image" content="https://britishtvhub.com/streaming-hero.webp">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Which Streaming Subscription Do I Need? | British TV Hub",
+  "description": "Add the British mysteries and dramas on your list and see which US streaming service covers the most, and the smallest combination of BritBox, Acorn TV and PBS that covers them all.",
+  "url": "https://britishtvhub.com/which-subscription.html",
+  "dateModified": "2026-10-02"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js?v=20260928d" defer></script>
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+  /* Play Along card hover */
+  .page-body a[style*="background:#363f58"]:hover {
+    transform: translateY(-3px);
+    border-color: rgba(201,168,76,0.55) !important;
+  }
+
+</style>
+</head>
+<body>
+
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here.html">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <a class="nlink" href="/season-preview.html">Season Preview</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Find Similar Shows</a>
+            <a href="/this-week.html">This Week in British TV</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Play &amp; Connect</div>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="/streaming.html">Where to Watch</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Which Subscription Do I Need?</span>
+  </div>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://britishtvhub.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Where to Watch", "item": "https://britishtvhub.com/streaming.html"},
+    {"@type": "ListItem", "position": 3, "name": "Which Subscription Do I Need?", "item": "https://britishtvhub.com/which-subscription.html"}
+  ]
+}
+</script>
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/streaming-hero.webp" alt="A cozy lamp-lit living room with a British mystery playing on the TV" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.1);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 42%,rgba(26,35,50,0.75) 62%,rgba(26,35,50,0.05) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:640px;">
+    <div class="hero-eyebrow">Where to Watch &middot; Tool</div>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">Which Subscription <em style="font-style:italic;color:var(--gold-light);">Do I Need?</em></h1>
+    <p class="hero-intro">Add the British shows on your list and see which streaming service covers the most of them, and the smallest combination that covers them all, for viewers in the US.</p>
+    <a href="#sf-tool" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:12px 24px;border-radius:2px;text-decoration:none;">Build Your List &rarr;</a>
+  </div>
+</div>
+
+<style>
+.sf-wrap{max-width:960px;margin:0 auto;padding:40px 20px 24px;display:grid;gap:28px}
+.sf-card{background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;padding:26px 28px}
+.sf-step{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.sf-h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--cream);margin:0 0 6px;line-height:1.2}
+.sf-h2 em{font-style:italic;color:var(--gold-light)}
+.sf-note{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.55;margin:0}
+.sf-search{position:relative;margin-top:18px}
+.sf-search input{width:100%;box-sizing:border-box;padding:14px 16px;font-family:'Crimson Text',serif;font-size:18px;background:#232c42;color:var(--cream);border:1px solid #4a5570;border-radius:8px}
+.sf-search input:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.sf-suggest{position:absolute;left:0;right:0;top:100%;margin-top:6px;background:#222b42;border:1px solid #3d4a60;border-radius:8px;list-style:none;padding:0;max-height:300px;overflow-y:auto;z-index:20}
+.sf-suggest li{padding:11px 16px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;gap:12px;font-family:'Crimson Text',serif;font-size:16px;color:var(--cream)}
+.sf-suggest li span{font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-muted);white-space:nowrap}
+.sf-suggest li.active,.sf-suggest li:hover{background:#2c3550}
+.sf-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sf-btn{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;padding:10px 16px;cursor:pointer;border:1px solid var(--gold);background:transparent;color:var(--gold)}
+.sf-btn:hover{background:rgba(201,168,76,0.12)}
+.sf-btn:focus-visible,.sf-chip button:focus-visible,.sf-quick:focus-visible{outline:2px solid var(--gold-light);outline-offset:2px}
+.sf-btn.solid{background:var(--gold);color:#1a2135}
+.sf-quick{font-family:'Raleway',sans-serif;font-size:12px;color:var(--text-light);background:#2a3350;border:1px solid #4a5570;border-radius:999px;padding:7px 13px;cursor:pointer}
+.sf-quick:hover{border-color:var(--gold);color:var(--cream)}
+.sf-quick[disabled]{opacity:.4;cursor:default}
+.sf-label{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);margin:18px 0 0}
+.sf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;min-height:38px}
+.sf-chip{display:inline-flex;align-items:center;gap:8px;background:#1f2840;border:1px solid rgba(201,168,76,0.35);border-radius:999px;padding:6px 8px 6px 14px;font-family:'Crimson Text',serif;font-size:16px;color:var(--cream)}
+.sf-chip button{background:none;border:none;color:var(--text-muted);font-size:18px;line-height:1;cursor:pointer;padding:0 4px}
+.sf-chip button:hover{color:var(--cream)}
+.sf-empty{font-family:'Crimson Text',serif;font-style:italic;color:var(--text-muted);font-size:16px}
+.sf-msg{font-family:'Raleway',sans-serif;font-size:12px;color:var(--gold-light);margin-top:10px;min-height:16px}
+.sf-answer{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.3;color:var(--cream);margin:0 0 6px}
+.sf-answer b{color:var(--gold-light);font-weight:600}
+.sf-svc{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:start;background:#2c3550;border:1px solid #4a5570;border-radius:12px;padding:20px 22px;margin-top:16px}
+.sf-svc.primary{border-color:var(--gold)}
+@media (max-width:640px){.sf-svc{grid-template-columns:1fr}}
+.sf-svc-tag{font-family:'Raleway',sans-serif;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+.sf-svc-name{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--cream);margin:0 0 4px}
+.sf-svc-count{font-family:'Raleway',sans-serif;font-size:12px;color:var(--text-light);margin:0 0 10px}
+.sf-svc ul{margin:0;padding-left:1.1em;columns:2;column-gap:28px;font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.5}
+@media (max-width:640px){.sf-svc ul{columns:1}}
+.sf-svc ul a{color:var(--cream);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.35)}
+.sf-cta{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:12px 18px;border-radius:2px;text-decoration:none;white-space:nowrap}
+.sf-cta:hover{background:var(--gold-light)}
+.sf-cta.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.sf-side{display:grid;gap:10px;justify-items:end}
+@media (max-width:640px){.sf-side{justify-items:start}}
+.sf-small{font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-muted);line-height:1.5;margin:14px 0 0}
+.sf-extra{margin-top:22px;padding-top:18px;border-top:1px solid #4a5570}
+.sf-extra h3{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.sf-extra p,.sf-extra li{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-light);line-height:1.5}
+.sf-extra ul{margin:0;padding-left:1.1em}
+</style>
+
+<div class="sf-wrap" id="sf-tool">
+
+  <div class="sf-card">
+    <p class="sf-step">Step 1</p>
+    <h2 class="sf-h2">Add the shows <em>you want to watch</em></h2>
+    <p class="sf-note">Search more than 400 British mysteries and dramas, tap a popular pick, or bring in the shows saved on your Watch List.</p>
+
+    <div class="sf-search">
+      <label for="sf-input" class="sf-label" style="display:block;margin:0 0 8px;">Search for a show</label>
+      <input type="text" id="sf-input" placeholder="Start typing, e.g. Vera or Shetland" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sf-suggest" aria-autocomplete="list">
+      <ul class="sf-suggest" id="sf-suggest" role="listbox" hidden></ul>
+    </div>
+
+    <p class="sf-label">Popular picks</p>
+    <div class="sf-row" id="sf-quick"></div>
+
+    <div class="sf-row" style="margin-top:18px;">
+      <button type="button" class="sf-btn" id="sf-import">Add My Watch List</button>
+      <button type="button" class="sf-btn" id="sf-clear">Clear All</button>
+    </div>
+    <div class="sf-msg" id="sf-msg" aria-live="polite"></div>
+
+    <p class="sf-label">Your list <span id="sf-count"></span></p>
+    <div class="sf-chips" id="sf-chips"><span class="sf-empty">No shows added yet.</span></div>
+  </div>
+
+  <div class="sf-card" id="sf-results" aria-live="polite">
+    <p class="sf-step">Step 2</p>
+    <h2 class="sf-h2">Your <em>streaming answer</em></h2>
+    <div id="sf-answer-body"><p class="sf-note">Add at least one show to see which subscription covers it. Try a few favourites from the popular picks above.</p></div>
+  </div>
+
+  <p class="sf-small" style="text-align:center;margin:0;">US streaming only. Availability comes from British TV Hub's show database, last checked <span id="sf-checked">recently</span>, and services change their catalogues often, so confirm on the service before subscribing. Some links are affiliate links; they never change which service the tool recommends.</p>
+</div>
+
+<script>
+(function(){
+  var SERVICES = {
+    'BritBox':          { label:'BritBox', cta:'View BritBox Options', url:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20', guide:'/britbox.html', rank:1 },
+    'Acorn TV':         { label:'Acorn TV', cta:'View Acorn TV Options', url:'https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20', guide:'/acorn.html', rank:2 },
+    'PBS Masterpiece':  { label:'PBS Masterpiece', cta:'View PBS Masterpiece Options', url:'https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20', guide:'/masterpiece2026.html', rank:3 },
+    'PBS Passport':     { label:'PBS Passport', cta:'About PBS Passport', url:'https://www.pbs.org/passport', rank:4, note:'Comes with a donation to a local PBS station.' }
+  };
+  var ALIAS = { 'BritBox via Amazon':'BritBox', 'Acorn TV via Amazon':'Acorn TV', 'PBS Masterpiece via Amazon':'PBS Masterpiece' };
+  var QUICK = ['Vera','Midsomer Murders','Shetland','Father Brown','Call the Midwife','All Creatures Great and Small','Death in Paradise','Inspector Morse','Grantchester','Happy Valley',"Agatha Christie's Poirot",'Endeavour'];
+  var SLUG_ALIAS = { 'poirot':"agatha-christies-poirot" };
+  var STORE = 'btvh_subfinder_v1';
+  var DB = [], BY_TITLE = {}, selected = [];
+
+  var $ = function(id){ return document.getElementById(id); };
+  function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function slug(s){ return s.toLowerCase().replace(/\(\d{4}\)/g,'').replace(/&/g,'and').replace(/['’]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
+  function norm(s){ return s.toLowerCase().replace(/['’]/g,'').replace(/^the\s+/,''); }
+  function save(){ try{ localStorage.setItem(STORE, JSON.stringify(selected)); }catch(e){} }
+  function load(){ try{ var v = JSON.parse(localStorage.getItem(STORE) || '[]'); return Array.isArray(v) ? v : []; }catch(e){ return []; } }
+
+  function profile(show){
+    var subs = {}, free = [], buy = [], other = {};
+    (show.us || []).forEach(function(p){
+      var name = ALIAS[p.name] || p.name;
+      if(p.tag === 'free'){ free.push({ name:p.name, url:p.url }); }
+      else if(p.tag === 'buy'){ buy.push(p.name); }
+      else if(SERVICES[name]){ subs[name] = true; }
+      else { other[name] = p.url; subs[name] = true; }
+    });
+    return { subs:Object.keys(subs), free:free, buy:buy, other:other };
+  }
+  function svcInfo(name, url){
+    return SERVICES[name] || { label:name, cta:'Visit ' + name, url:url || '#', rank:9 };
+  }
+
+  function add(title){
+    if(!BY_TITLE[title] || selected.indexOf(title) > -1) return false;
+    selected.push(title); save(); render(); return true;
+  }
+  function remove(title){ selected = selected.filter(function(t){ return t !== title; }); save(); render(); }
+
+  function renderChips(){
+    var box = $('sf-chips');
+    $('sf-count').textContent = selected.length ? '(' + selected.length + ')' : '';
+    if(!selected.length){ box.innerHTML = '<span class="sf-empty">No shows added yet.</span>'; }
+    else {
+      box.innerHTML = selected.map(function(t){
+        return '<span class="sf-chip">' + esc(t) + '<button type="button" aria-label="Remove ' + esc(t) + '" data-remove="' + esc(t) + '">&times;</button></span>';
+      }).join('');
+    }
+    var q = $('sf-quick').querySelectorAll('.sf-quick');
+    for(var i=0;i<q.length;i++){ q[i].disabled = selected.indexOf(q[i].getAttribute('data-title')) > -1; }
+  }
+
+  // Exact set cover over the subscription services involved (small n), fewest services first, then
+  // most shows covered, then the services readers know best (BritBox, Acorn TV, PBS) on a tie.
+  function bestCombo(shows){
+    var names = {};
+    shows.forEach(function(s){ s.p.subs.forEach(function(n){ names[n] = true; }); });
+    names = Object.keys(names).sort(function(a,b){ return svcInfo(a).rank - svcInfo(b).rank || a.localeCompare(b); });
+    var coverable = shows.filter(function(s){ return s.p.subs.length; });
+    var best = null;
+    function covers(combo){ return coverable.filter(function(s){ return s.p.subs.some(function(n){ return combo.indexOf(n) > -1; }); }).length; }
+    function rankSum(combo){ return combo.reduce(function(a,n){ return a + svcInfo(n).rank; }, 0); }
+    var maxK = Math.min(names.length, 5);
+    for(var k=1; k<=maxK && !best; k++){
+      (function pick(start, combo){
+        if(combo.length === k){
+          if(covers(combo) === coverable.length){
+            if(!best || rankSum(combo) < rankSum(best)) best = combo.slice();
+          }
+          return;
+        }
+        for(var i=start;i<names.length;i++){ combo.push(names[i]); pick(i+1, combo); combo.pop(); }
+      })(0, []);
+    }
+    if(!best){ best = names.slice(0, maxK); }
+    // order by how many shows each covers on its own
+    best.sort(function(a,b){
+      var ca = coverable.filter(function(s){ return s.p.subs.indexOf(a) > -1; }).length;
+      var cb = coverable.filter(function(s){ return s.p.subs.indexOf(b) > -1; }).length;
+      return cb - ca || svcInfo(a).rank - svcInfo(b).rank;
+    });
+    return { combo:best, coverable:coverable };
+  }
+
+  function showLink(t){ return esc(t); }
+
+  function renderAnswer(){
+    var body = $('sf-answer-body');
+    if(!selected.length){ body.innerHTML = '<p class="sf-note">Add at least one show to see which subscription covers it. Try a few favourites from the popular picks above.</p>'; return; }
+    var shows = selected.map(function(t){ return { title:t, p:profile(BY_TITLE[t]) }; });
+    var r = bestCombo(shows);
+    var combo = r.combo, cov = r.coverable, total = shows.length;
+    var notStreaming = shows.filter(function(s){ return !s.p.subs.length; });
+    var assigned = {}, html = '';
+
+    // Assign each show to the first service in the combo that carries it
+    combo.forEach(function(n){ assigned[n] = []; });
+    cov.forEach(function(s){
+      for(var i=0;i<combo.length;i++){ if(s.p.subs.indexOf(combo[i]) > -1){ assigned[combo[i]].push(s); break; } }
+    });
+    var lead = combo[0], leadAll = cov.filter(function(s){ return s.p.subs.indexOf(lead) > -1; }).length;
+
+    if(!cov.length){
+      html += '<p class="sf-answer">None of these shows is on a US subscription service right now.</p>';
+    } else if(combo.length === 1){
+      html += '<p class="sf-answer"><b>' + esc(svcInfo(lead).label) + '</b> covers ' + (leadAll === total ? (total === 1 ? 'it' : 'all ' + total + ' of your shows') : leadAll + ' of your ' + total + ' shows') + '.</p>';
+    } else {
+      var rest = combo.slice(1).map(function(n){ return '<b>' + esc(svcInfo(n).label) + '</b>'; });
+      var restCount = cov.length - assigned[lead].length;
+      html += '<p class="sf-answer"><b>' + esc(svcInfo(lead).label) + '</b> covers ' + leadAll + ' of your ' + total + ' shows. Add ' + (rest.length > 1 ? rest.slice(0,-1).join(', ') + ' and ' + rest[rest.length-1] : rest[0]) + ' for the other ' + restCount + (notStreaming.length ? ' that stream in the US' : '') + '.</p>';
+    }
+    if(cov.length){
+      html += '<p class="sf-note">' + (combo.length === 1 ? 'One subscription is all you need.' : 'That is the smallest combination of ' + combo.length + ' services that covers every show you can stream.') + '</p>';
+    }
+
+    combo.forEach(function(n, i){
+      var info = svcInfo(n, (cov.filter(function(s){ return s.p.other[n]; })[0] || {p:{other:{}}}).p.other[n]);
+      var list = assigned[n];
+      var alsoHere = cov.filter(function(s){ return s.p.subs.indexOf(n) > -1 && list.indexOf(s) === -1; }).length;
+      html += '<div class="sf-svc' + (i === 0 ? ' primary' : '') + '">' +
+        '<div><p class="sf-svc-tag">' + (i === 0 ? 'Start here' : 'Then add') + '</p>' +
+        '<p class="sf-svc-name">' + esc(info.label) + '</p>' +
+        '<p class="sf-svc-count">' + list.length + ' show' + (list.length === 1 ? '' : 's') + (i === 0 ? '' : ' not on ' + esc(svcInfo(combo[0]).label)) + (alsoHere ? ' &middot; also carries ' + alsoHere + ' already counted' : '') + '</p>' +
+        '<ul>' + list.map(function(s){ return '<li>' + showLink(s.title) + '</li>'; }).join('') + '</ul>' +
+        (info.note ? '<p class="sf-small" style="margin-top:10px;">' + esc(info.note) + '</p>' : '') +
+        '</div><div class="sf-side"><a class="sf-cta" href="' + esc(info.url) + '" target="_blank" rel="noopener">' + esc(info.cta) + ' &rarr;</a>' +
+        (info.guide ? '<a class="sf-cta ghost" href="' + info.guide + '">What&rsquo;s New on ' + esc(info.label) + '</a>' : '') + '</div></div>';
+    });
+
+    var freeShows = shows.filter(function(s){ return s.p.free.length; });
+    if(freeShows.length || notStreaming.length){
+      html += '<div class="sf-extra">';
+      if(freeShows.length){
+        html += '<h3>Also free with ads</h3><ul>' + freeShows.map(function(s){
+          return '<li>' + esc(s.title) + ': ' + s.p.free.map(function(f){ return esc(f.name); }).join(', ') + '</li>';
+        }).join('') + '</ul>';
+      }
+      if(notStreaming.length){
+        html += '<h3 style="margin-top:14px;">Not on a US subscription service right now</h3><ul>' + notStreaming.map(function(s){
+          return '<li>' + esc(s.title) + (s.p.buy.length ? ' (available to buy)' : '') + '</li>';
+        }).join('') + '</ul><p style="margin-top:6px;">British TV Hub rechecks availability regularly, so check back.</p>';
+      }
+      html += '</div>';
+    }
+    html += '<p class="sf-small">Check current prices and free-trial terms when you sign up.</p>';
+    body.innerHTML = html;
+  }
+
+  function render(){ renderChips(); renderAnswer(); }
+
+  // search
+  var input, sug, activeIdx = -1, matches = [];
+  function closeSug(){ sug.hidden = true; input.setAttribute('aria-expanded','false'); activeIdx = -1; }
+  function openSug(q){
+    q = norm(q.trim());
+    if(!q){ closeSug(); return; }
+    matches = DB.filter(function(s){ return norm(s.title).indexOf(q) > -1 && selected.indexOf(s.title) === -1; })
+      .sort(function(a,b){ return (norm(a.title).indexOf(q) !== 0) - (norm(b.title).indexOf(q) !== 0) || a.title.localeCompare(b.title); })
+      .slice(0,8);
+    if(!matches.length){ sug.innerHTML = '<li aria-disabled="true">No match in the database yet<span></span></li>'; }
+    else {
+      sug.innerHTML = matches.map(function(s,i){
+        var p = profile(s), where = p.subs.length ? p.subs.map(function(n){ return svcInfo(n).label; }).join(' / ') : (p.free.length ? 'Free with ads' : 'Not streaming');
+        return '<li role="option" id="sf-opt-' + i + '" data-i="' + i + '">' + esc(s.title) + '<span>' + esc(where) + '</span></li>';
+      }).join('');
+    }
+    sug.hidden = false; input.setAttribute('aria-expanded','true'); activeIdx = -1;
+  }
+  function choose(i){
+    if(!matches[i]) return;
+    add(matches[i].title); input.value = ''; closeSug(); input.focus();
+  }
+
+  function init(data){
+    DB = data.filter(function(s){ return s && s.title; });
+    DB.forEach(function(s){ BY_TITLE[s.title] = s; });
+    var latest = DB.reduce(function(m,s){ return s.verified && s.verified > m ? s.verified : m; }, '');
+    if(latest){
+      var d = new Date(latest + 'T12:00:00');
+      $('sf-checked').textContent = d.toLocaleDateString('en-US', { month:'long', year:'numeric' });
+    }
+    $('sf-quick').innerHTML = QUICK.filter(function(t){ return BY_TITLE[t]; }).map(function(t){
+      return '<button type="button" class="sf-quick" data-title="' + esc(t) + '">+ ' + esc(t.replace("Agatha Christie's ", '')) + '</button>';
+    }).join('');
+    selected = load().filter(function(t){ return BY_TITLE[t]; });
+    render();
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    input = $('sf-input'); sug = $('sf-suggest');
+    input.addEventListener('input', function(){ openSug(input.value); });
+    input.addEventListener('keydown', function(e){
+      var items = sug.querySelectorAll('li[role=option]');
+      if(e.key === 'ArrowDown' && items.length){ e.preventDefault(); activeIdx = (activeIdx + 1) % items.length; }
+      else if(e.key === 'ArrowUp' && items.length){ e.preventDefault(); activeIdx = (activeIdx - 1 + items.length) % items.length; }
+      else if(e.key === 'Enter'){ e.preventDefault(); choose(activeIdx > -1 ? activeIdx : 0); return; }
+      else if(e.key === 'Escape'){ closeSug(); return; }
+      else return;
+      for(var i=0;i<items.length;i++){ items[i].classList.toggle('active', i === activeIdx); }
+      input.setAttribute('aria-activedescendant', activeIdx > -1 ? 'sf-opt-' + activeIdx : '');
+    });
+    sug.addEventListener('mousedown', function(e){
+      var li = e.target.closest('li[data-i]'); if(li){ e.preventDefault(); choose(+li.getAttribute('data-i')); }
+    });
+    input.addEventListener('blur', function(){ setTimeout(closeSug, 120); });
+    $('sf-quick').addEventListener('click', function(e){
+      var b = e.target.closest('.sf-quick'); if(b && !b.disabled) add(b.getAttribute('data-title'));
+    });
+    $('sf-chips').addEventListener('click', function(e){
+      var b = e.target.closest('[data-remove]'); if(b) remove(b.getAttribute('data-remove'));
+    });
+    $('sf-clear').addEventListener('click', function(){ selected = []; save(); render(); $('sf-msg').textContent = ''; });
+    $('sf-import').addEventListener('click', function(){
+      var wl = {};
+      try{ wl = JSON.parse(localStorage.getItem('btvh_watchlist_v1') || '{}') || {}; }catch(e){}
+      var slugs = Object.keys(wl).filter(function(k){ return wl[k] === 'want' || wl[k] === 'watching'; });
+      if(!slugs.length){ $('sf-msg').innerHTML = 'Your Watch List has no shows marked Want to Watch or Watching yet. <a href="/watch-list.html" style="color:var(--gold);">Open the Watch List</a>'; return; }
+      var bySlug = {}; DB.forEach(function(s){ bySlug[slug(s.title)] = s.title; bySlug[slug(s.title).replace(/^the-/,'')] = bySlug[slug(s.title).replace(/^the-/,'')] || s.title; });
+      var added = 0;
+      slugs.forEach(function(k){ var t = bySlug[SLUG_ALIAS[k] || k]; if(t && add(t)) added++; });
+      $('sf-msg').textContent = added ? 'Added ' + added + ' show' + (added === 1 ? '' : 's') + ' from your Watch List.' : 'Everything on your Watch List is already here.';
+    });
+    fetch('/shows-database.json').then(function(r){ return r.json(); }).then(init).catch(function(){
+      $('sf-answer-body').innerHTML = '<p class="sf-note">The show database could not load. Refresh the page to try again.</p>';
+    });
+  });
+})();
+</script>
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
+
+    <!-- Sunday Picks signup (Mailchimp) -->
+    <div id="nl-anchor" style="padding-bottom:32px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
+    </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <style>.breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'Raleway',sans-serif;font-size:14px !important;letter-spacing:0.6px;}.breadcrumb-item{display:flex;align-items:center;gap:8px;}.breadcrumb-item a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb-item a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb-item.active{color:#f3ede2 !important;font-weight:600;}.breadcrumb-separator{color:rgba(201,168,76,0.7) !important;}.breadcrumb > a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb > a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb > span:not([class]){color:rgba(201,168,76,0.7) !important;}@media (max-width:768px){.breadcrumb{font-size:13px !important;}}@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
+  <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Best British Police Procedurals</a>
+      <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Cozy British Mysteries</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What to Watch Next</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html>

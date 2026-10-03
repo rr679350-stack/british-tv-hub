@@ -192,5 +192,6 @@ window.SITE_SEARCH_INDEX = [
   {"title": "Who Outranks Who? British Detective Ranks", "url": "/who-outranks-who.html"},
   {"title": "Why British TV Feels Cozy", "url": "/why-british-tv-feels-cozy.html"},
   {"title": "Search Every Show British TV Hub Tracks", "url": "/shows-index.html#full-database-search"},
+  {"title": "Which Streaming Subscription Do I Need?", "url": "/which-subscription.html"},
   {"title": "British TV Hub Home", "url": "/"}
 ];
