@@ -1,0 +1,7 @@
+/* Sitewide rule: reading content sits in a card. Added by the card wrapper (Oct 2026). */
+.hub-card{background:#363f58;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:30px 34px;margin:0 0 32px;box-sizing:border-box;}
+.hub-card > :first-child{margin-top:0 !important;}
+.hub-card > :last-child{margin-bottom:0 !important;}
+.hub-card img{max-width:100%;}
+hr.divider:has(+ .hub-card), .hub-card + hr.divider, hr.section-divider:has(+ .hub-card), .hub-card + hr.section-divider{display:none;}
+@media (max-width:640px){.hub-card{padding:22px 18px;margin-bottom:24px;}}
