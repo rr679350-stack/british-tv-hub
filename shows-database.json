@@ -505,38 +505,6 @@
     ]
   },
   {
-    "title": "Miss Marple",
-    "years": "2004–2013",
-    "genre": "Cozy Mystery",
-    "us": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
-    "uk": [
-      {
-        "name": "ITVX",
-        "tag": "free",
-        "url": "https://www.itv.com/watch"
-      }
-    ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
-    "verified": "2026-08-01",
-    "sources": [
-      "https://www.justwatch.com/us/tv-show/agatha-christies-miss-marple",
-      "https://britbrief.co.uk/entertainment/television/netflix-adds-itvs-marpleall-episodes-available.html",
-      "https://www.hellomagazine.com/film/877355/iconic-detective-drama-agatha-christie-marple-coming-to-netflix/"
-    ]
-  },
-  {
     "title": "Call the Midwife",
     "years": "2012–present",
     "genre": "Period Drama",
@@ -1971,6 +1939,16 @@
         "name": "Acorn TV via Amazon",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [
@@ -1981,8 +1959,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/rumpole-of-the-bailey"
+    ]
   },
   {
     "title": "Jonathan Creek",
@@ -3300,8 +3280,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-08-01",
+    "sources": [
+      "https://www.tvinsider.com/show/towards-zero/"
+    ]
   },
   {
     "title": "Dalziel and Pascoe",
@@ -4479,11 +4461,13 @@
         "url": "https://iview.abc.net.au"
       }
     ],
-    "verified": "2026-08-01",
+    "verified": "2026-09-30",
     "sources": [
       "https://en.wikipedia.org/wiki/Cooper_and_Fry_(TV_series)",
       "https://deadline.com/2026/07/uk-crime-drama-cooper-fry-lands-us-home-at-britbox-1236983876/",
-      "https://blog.reelgood.com/en-au/how-to-watch-cooper-fry-in-australia"
+      "https://blog.reelgood.com/en-au/how-to-watch-cooper-fry-in-australia",
+      "https://www.justwatch.com/us/tv-show/cooper-and-fry",
+      "https://www.tvinsider.com/1284736/whats-new-on-britbox-september-2026/"
     ]
   },
   {
@@ -4666,7 +4650,23 @@
     "title": "Prey",
     "years": "2014–2015",
     "genre": "Crime Thriller",
-    "us": [],
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
     "uk": [
       {
         "name": "ITVX",
@@ -4675,8 +4675,9 @@
       }
     ],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/prey",
       "https://www.hellomagazine.com/film/893155/john-simm-gripping-crime-thriller-prey-coming-to-netflix/",
       "https://en.wikipedia.org/wiki/Prey_(British_TV_series)"
     ]
@@ -5570,12 +5571,18 @@
         "name": "Prime Video",
         "tag": "stream",
         "url": "https://www.amazon.com/s?k=The+Pale+Horse+2020+Rufus+Sewell&i=instant-video&tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-09-27",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/the-pale-horse",
       "https://reelgood.com/show/the-pale-horse-2020",
       "https://www.agathachristie.com/en/film-and-tv/the-pale-horse"
     ]
@@ -6092,24 +6099,6 @@
     ]
   },
   {
-    "title": "Towards Zero",
-    "years": "2025",
-    "genre": "Mystery",
-    "us": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
-    "uk": [],
-    "au": [],
-    "verified": "2026-08-01",
-    "sources": [
-      "https://www.tvinsider.com/show/towards-zero/"
-    ]
-  },
-  {
     "title": "Until I Kill You",
     "years": "2023",
     "genre": "Crime Drama",
@@ -6352,13 +6341,39 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
       }
     ],
-    "uk": [],
-    "au": [],
-    "verified": "2026-08-01",
+    "uk": [
+      {
+        "name": "ITVX",
+        "tag": "free",
+        "url": "https://www.itv.com/watch"
+      }
+    ],
+    "au": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "verified": "2026-10-02",
     "sources": [
-      "British TV Hub internal audit: Triple-Checked A-L Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
+      "https://www.justwatch.com/us/tv-show/agatha-christies-marple",
+      "British TV Hub internal audit: Triple-Checked A-L Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026",
+      "https://www.justwatch.com/us/tv-show/agatha-christies-miss-marple",
+      "https://britbrief.co.uk/entertainment/television/netflix-adds-itvs-marpleall-episodes-available.html",
+      "https://www.hellomagazine.com/film/877355/iconic-detective-drama-agatha-christie-marple-coming-to-netflix/"
     ]
   },
   {
@@ -7954,12 +7969,23 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/suspects",
       "British TV Hub internal audit: Triple-Checked A-Z Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
     ]
   },
@@ -8562,12 +8588,28 @@
         "name": "PBS Masterpiece",
         "tag": "stream",
         "url": "https://www.pbs.org/wgbh/masterpiece/"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-04",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/the-paradise",
       "https://www.pbs.org/wgbh/masterpiece/shows/the-paradise/",
       "https://www.spiritualityandpractice.com/films/reviews/view/27981/the-paradise"
     ]
@@ -9319,25 +9361,6 @@
     ]
   },
   {
-    "title": "Cooper and Fry",
-    "years": "2025–present",
-    "genre": "Crime Drama",
-    "us": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
-    "uk": [],
-    "au": [],
-    "verified": "2026-09-30",
-    "sources": [
-      "https://www.justwatch.com/us/tv-show/cooper-and-fry",
-      "https://www.tvinsider.com/1284736/whats-new-on-britbox-september-2026/"
-    ]
-  },
-  {
     "title": "Showtrial",
     "years": "2021–present",
     "genre": "Legal Drama",
@@ -9461,6 +9484,2046 @@
     "verified": "2026-09-30",
     "sources": [
       "https://www.justwatch.com/us/tv-show/this-city-is-ours"
+    ]
+  },
+  {
+    "title": "A Mother's Son",
+    "years": "2012",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/a-mothers-son"
+    ]
+  },
+  {
+    "title": "Reilly: Ace of Spies",
+    "years": "1983",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/reilly-ace-of-spies"
+    ]
+  },
+  {
+    "title": "Des",
+    "years": "2020",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/des-2020"
+    ]
+  },
+  {
+    "title": "Save Me",
+    "years": "2018–2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/save-me-2018"
+    ]
+  },
+  {
+    "title": "Passenger",
+    "years": "2024",
+    "genre": "Mystery Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/passenger-2024"
+    ]
+  },
+  {
+    "title": "Dublin Murders",
+    "years": "2019",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/dublin-murders"
+    ]
+  },
+  {
+    "title": "Deadwater Fell",
+    "years": "2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/deadwater-fell"
+    ]
+  },
+  {
+    "title": "Wild Bill",
+    "years": "2019",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wild-bill"
+    ]
+  },
+  {
+    "title": "Unforgiven",
+    "years": "2009",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/unforgiven"
+    ]
+  },
+  {
+    "title": "Mrs Biggs",
+    "years": "2012",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/mrs-biggs"
+    ]
+  },
+  {
+    "title": "Stonehouse",
+    "years": "2023",
+    "genre": "Political Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/stonehouse"
+    ]
+  },
+  {
+    "title": "Kavanagh QC",
+    "years": "1995–2001",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/kavanagh-qc"
+    ]
+  },
+  {
+    "title": "Silk",
+    "years": "2011–2014",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/silk"
+    ]
+  },
+  {
+    "title": "Black Work",
+    "years": "2015",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/black-work"
+    ]
+  },
+  {
+    "title": "Blue Murder",
+    "years": "2003–2009",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/blue-murder"
+    ]
+  },
+  {
+    "title": "Boon",
+    "years": "1986–1992",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/boon"
+    ]
+  },
+  {
+    "title": "Bramwell",
+    "years": "1995–1998",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/bramwell"
+    ]
+  },
+  {
+    "title": "Callan",
+    "years": "1967–1972",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/callan"
+    ]
+  },
+  {
+    "title": "Capital",
+    "years": "2015",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/capital"
+    ]
+  },
+  {
+    "title": "Catch Me a Killer",
+    "years": "2024",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/catch-me-a-killer"
+    ]
+  },
+  {
+    "title": "The City & the City",
+    "years": "2018",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-city-and-the-city"
+    ]
+  },
+  {
+    "title": "Cold Blood",
+    "years": "2005–2008",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cold-blood"
+    ]
+  },
+  {
+    "title": "The Commander",
+    "years": "2003–2008",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-commander"
+    ]
+  },
+  {
+    "title": "The Confessions of Frannie Langton",
+    "years": "2022",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-confessions-of-frannie-langton"
+    ]
+  },
+  {
+    "title": "The Control Room",
+    "years": "2022",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-control-room"
+    ]
+  },
+  {
+    "title": "Crossfire",
+    "years": "2022",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/crossfire"
+    ]
+  },
+  {
+    "title": "Daniel Deronda",
+    "years": "2002",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/daniel-deronda"
+    ]
+  },
+  {
+    "title": "David Copperfield (1999)",
+    "years": "1999",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/david-copperfield"
+    ]
+  },
+  {
+    "title": "Deceit",
+    "years": "2021",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/deceit"
+    ]
+  },
+  {
+    "title": "Dickensian",
+    "years": "2015–2016",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/dickensian"
+    ]
+  },
+  {
+    "title": "The Doctor Blake Mysteries",
+    "years": "2013–2018",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-doctor-blake-mysteries"
+    ]
+  },
+  {
+    "title": "From Darkness",
+    "years": "2015",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/from-darkness"
+    ]
+  },
+  {
+    "title": "Good Cop",
+    "years": "2012",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/good-cop"
+    ]
+  },
+  {
+    "title": "The Governor",
+    "years": "1995–1996",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-governor"
+    ]
+  },
+  {
+    "title": "The Great Train Robbery",
+    "years": "2013",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-great-train-robbery"
+    ]
+  },
+  {
+    "title": "Heartbeat",
+    "years": "1992–2010",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/heartbeat-1992"
+    ]
+  },
+  {
+    "title": "Homefront",
+    "years": "2012",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/homefront"
+    ]
+  },
+  {
+    "title": "The House Across the Street",
+    "years": "2022",
+    "genre": "Psychological Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-house-across-the-street"
+    ]
+  },
+  {
+    "title": "The House of Eliott",
+    "years": "1991–1994",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-house-of-eliott"
+    ]
+  },
+  {
+    "title": "The Hunt for Raoul Moat",
+    "years": "2023",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-hunt-for-raoul-moat"
+    ]
+  },
+  {
+    "title": "The Ice House",
+    "years": "1997",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-ice-house"
+    ]
+  },
+  {
+    "title": "In Plain Sight",
+    "years": "2016",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/in-plain-sight-2016"
+    ]
+  },
+  {
+    "title": "Informer",
+    "years": "2018",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/informer"
+    ]
+  },
+  {
+    "title": "The Inheritance",
+    "years": "2023",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-inheritance"
+    ]
+  },
+  {
+    "title": "Intruder",
+    "years": "2021",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/intruder"
+    ]
+  },
+  {
+    "title": "Jamaica Inn",
+    "years": "2014",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/jamaica-inn"
+    ]
+  },
+  {
+    "title": "Lark Rise to Candleford",
+    "years": "2008–2011",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/lark-rise-to-candleford"
+    ]
+  },
+  {
+    "title": "Life in Squares",
+    "years": "2015",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/life-in-squares"
+    ]
+  },
+  {
+    "title": "Life of Crime",
+    "years": "2013",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/life-of-crime"
+    ]
+  },
+  {
+    "title": "Lost Boys & Fairies",
+    "years": "2024",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/lost-boys-and-fairies"
+    ]
+  },
+  {
+    "title": "Love/Hate",
+    "years": "2010–2014",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/love-hate"
+    ]
+  },
+  {
+    "title": "Lucan",
+    "years": "2013",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/lucan"
+    ]
+  },
+  {
+    "title": "Mansfield Park (1983)",
+    "years": "1983",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/mansfield-park"
+    ]
+  },
+  {
+    "title": "Maxine",
+    "years": "2022",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/maxine"
+    ]
+  },
+  {
+    "title": "Midwinter of the Spirit",
+    "years": "2015",
+    "genre": "Mystery Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/midwinter-of-the-spirit"
+    ]
+  },
+  {
+    "title": "The Moorside",
+    "years": "2017",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-moorside"
+    ]
+  },
+  {
+    "title": "Mr Loverman",
+    "years": "2024",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/mr-loverman"
+    ]
+  },
+  {
+    "title": "The Mrs Bradley Mysteries",
+    "years": "1998–2000",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-mrs-bradley-mysteries"
+    ]
+  },
+  {
+    "title": "Murderland",
+    "years": "2009",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/murderland"
+    ]
+  },
+  {
+    "title": "Quirke",
+    "years": "2014",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/quirke"
+    ]
+  },
+  {
+    "title": "Redemption",
+    "years": "2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/redemption-2022"
+    ]
+  },
+  {
+    "title": "The Royal",
+    "years": "2003–2011",
+    "genre": "Medical Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-royal"
+    ]
+  },
+  {
+    "title": "The Sally Lockhart Mysteries",
+    "years": "2006–2007",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-sally-lockhart-mysteries"
+    ]
+  },
+  {
+    "title": "The Sandbaggers",
+    "years": "1978–1980",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-sandbaggers"
+    ]
+  },
+  {
+    "title": "Servants",
+    "years": "2003",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/servants"
+    ]
+  },
+  {
+    "title": "Sharpe",
+    "years": "1993–2008",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/sharpe"
+    ]
+  },
+  {
+    "title": "The Six Wives of Henry VIII",
+    "years": "1970",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-six-wives-of-henry-viii"
+    ]
+  },
+  {
+    "title": "Stonemouth",
+    "years": "2015",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/stonemouth"
+    ]
+  },
+  {
+    "title": "The Street",
+    "years": "2006–2009",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-street"
+    ]
+  },
+  {
+    "title": "The Syndicate",
+    "years": "2012–2021",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-syndicate"
+    ]
+  },
+  {
+    "title": "The Thief, His Wife and the Canoe",
+    "years": "2022",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-thief-his-wife-and-the-canoe"
+    ]
+  },
+  {
+    "title": "This England",
+    "years": "2022",
+    "genre": "Political Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/this-england"
+    ]
+  },
+  {
+    "title": "Tipping the Velvet",
+    "years": "2002",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/tipping-the-velvet"
+    ]
+  },
+  {
+    "title": "Traces",
+    "years": "2019–2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/traces"
+    ]
+  },
+  {
+    "title": "Undercover",
+    "years": "2016",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/undercover"
+    ]
+  },
+  {
+    "title": "The Victim",
+    "years": "2019",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-victim"
+    ]
+  },
+  {
+    "title": "Wallander",
+    "years": "2008–2016",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wallander"
+    ]
+  },
+  {
+    "title": "What Remains",
+    "years": "2013",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/what-remains"
+    ]
+  },
+  {
+    "title": "White Heat",
+    "years": "2012",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/white-heat"
+    ]
+  },
+  {
+    "title": "Without Motive",
+    "years": "2000–2001",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/without-motive"
+    ]
+  },
+  {
+    "title": "Wycliffe",
+    "years": "1994–1998",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wycliffe"
+    ]
+  },
+  {
+    "title": "Upstairs Downstairs (2010)",
+    "years": "2010–2012",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/upstairs-downstairs"
+    ]
+  },
+  {
+    "title": "Rebus (2000)",
+    "years": "2000–2007",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/rebus"
+    ]
+  },
+  {
+    "title": "Supply and Demand",
+    "years": "1998",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/supply-and-demand"
+    ]
+  },
+  {
+    "title": "Last Tango in Halifax",
+    "years": "2012–2020",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/last-tango-in-halifax"
+    ]
+  },
+  {
+    "title": "The Moonstone",
+    "years": "2016",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-moonstone"
+    ]
+  },
+  {
+    "title": "Crime",
+    "years": "2021–2023",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/crime"
+    ]
+  },
+  {
+    "title": "Our Friends in the North",
+    "years": "1996",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/our-friends-in-the-north"
+    ]
+  },
+  {
+    "title": "Oliver Twist (2007)",
+    "years": "2007",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/oliver-twist"
+    ]
+  },
+  {
+    "title": "Great Expectations (2011)",
+    "years": "2011",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/great-expectations"
+    ]
+  },
+  {
+    "title": "Jane Eyre (2006)",
+    "years": "2006",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/jane-eyre"
+    ]
+  },
+  {
+    "title": "Wuthering Heights (2009)",
+    "years": "2009",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wuthering-heights"
+    ]
+  },
+  {
+    "title": "Sense and Sensibility (2008)",
+    "years": "2008",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/sense-and-sensibility"
+    ]
+  },
+  {
+    "title": "Emma (2009)",
+    "years": "2009",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/emma"
+    ]
+  },
+  {
+    "title": "Pride and Prejudice (1980)",
+    "years": "1980",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-02",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/pride-and-prejudice-1980"
     ]
   }
 ]
