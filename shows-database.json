@@ -9396,6 +9396,11 @@
     "genre": "Mystery",
     "us": [
       {
+        "name": "PBS Masterpiece",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      },
+      {
         "name": "PBS",
         "tag": "free",
         "url": "https://www.pbs.org/show/marble-hall-murders/"
@@ -9408,8 +9413,9 @@
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-09-02",
+    "verified": "2026-10-02",
     "sources": [
+      "https://www.justwatch.com/us/tv-show/marble-hall-murders",
       "https://www.pbs.org/wgbh/masterpiece/shows/marble-hall-murders/",
       "https://www.tellyvisions.org/marble-hall-murders-release-date-cast-images-synopsis-more/"
     ]
