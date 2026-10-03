@@ -7423,13 +7423,19 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-03",
     "sources": [
-      "British TV Hub internal audit: Triple-Checked A-L Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
+      "British TV Hub internal audit: Triple-Checked A-L Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026",
+      "https://www.justwatch.com/us/tv-show/a-woman-of-substance"
     ]
   },
   {
@@ -7549,13 +7555,24 @@
         "name": "Acorn TV",
         "tag": "stream",
         "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
       }
     ],
     "uk": [],
     "au": [],
-    "verified": "2026-08-01",
+    "verified": "2026-10-03",
     "sources": [
-      "British TV Hub internal audit: Triple-Checked A-Z Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026"
+      "British TV Hub internal audit: Triple-Checked A-Z Catalog, verified against official Acorn TV/BritBox U.S. catalogs, August 1, 2026",
+      "https://www.justwatch.com/us/tv-show/miss-fishers-murder-mysteries"
     ]
   },
   {
@@ -12982,6 +12999,2122 @@
     "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/women-at-war"
+    ]
+  },
+  {
+    "title": "Miss Marple",
+    "years": "1984–1992",
+    "genre": "Cozy Mystery",
+    "us": [
+      {
+        "name": "BritBox via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/agatha-christies-miss-marple"
+    ]
+  },
+  {
+    "title": "Partners in Crime (2015)",
+    "years": "2015",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/partners-in-crime-2015"
+    ]
+  },
+  {
+    "title": "Travels with Agatha Christie & Sir David Suchet",
+    "years": "2025",
+    "genre": "Documentary",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/travels-with-agatha-with-sir-david-suchet"
+    ]
+  },
+  {
+    "title": "Agatha Christie: Lucy Worsley on the Mystery Queen",
+    "years": "2022",
+    "genre": "Documentary",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/agatha-christie-lucy-worsley-on-the-mystery-queen"
+    ]
+  },
+  {
+    "title": "Agatha Christie's England",
+    "years": "2021",
+    "genre": "Documentary",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.broadwayworld.com/bwwtv/article/TOMMY-TUPPENCE-Series-to-Premiere-Anchor-BritBoxs-Eras-of-Agatha-Christie-20260820"
+    ]
+  },
+  {
+    "title": "Inside the Mind of Agatha Christie",
+    "years": "2020",
+    "genre": "Documentary",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.broadwayworld.com/bwwtv/article/TOMMY-TUPPENCE-Series-to-Premiere-Anchor-BritBoxs-Eras-of-Agatha-Christie-20260820"
+    ]
+  },
+  {
+    "title": "Suspect",
+    "years": "2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/suspect-2022"
+    ]
+  },
+  {
+    "title": "Vardy v Rooney: A Courtroom Drama",
+    "years": "2022",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/vardy-v-rooney-a-courtroom-drama"
+    ]
+  },
+  {
+    "title": "Screw",
+    "years": "2022–2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/screw"
+    ]
+  },
+  {
+    "title": "Four Lives",
+    "years": "2022",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/four-lives"
+    ]
+  },
+  {
+    "title": "Reyka",
+    "years": "2021–2025",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/reyka"
+    ]
+  },
+  {
+    "title": "Hatton Garden",
+    "years": "2019",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/hatton-garden"
+    ]
+  },
+  {
+    "title": "The Trial of Christine Keeler",
+    "years": "2019",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-trial-of-christine-keeler"
+    ]
+  },
+  {
+    "title": "Apple Tree Yard",
+    "years": "2017",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Hulu",
+        "tag": "stream",
+        "url": "https://www.hulu.com"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/apple-tree-yard"
+    ]
+  },
+  {
+    "title": "The Rivals of Sherlock Holmes",
+    "years": "1971–1973",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-rivals-of-sherlock-holmes"
+    ]
+  },
+  {
+    "title": "WPC 56",
+    "years": "2013–2015",
+    "genre": "Period Mystery",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/wpc-56"
+    ]
+  },
+  {
+    "title": "Archie",
+    "years": "2023",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/archie"
+    ]
+  },
+  {
+    "title": "Broken",
+    "years": "2017",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/broken"
+    ]
+  },
+  {
+    "title": "Moving On",
+    "years": "2009–present",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/moving-on"
+    ]
+  },
+  {
+    "title": "Murder in Suburbia",
+    "years": "2004–2005",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/murder-in-suburbia"
+    ]
+  },
+  {
+    "title": "Ten Pound Poms",
+    "years": "2023–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/ten-pound-poms"
+    ]
+  },
+  {
+    "title": "The Outcast",
+    "years": "2015",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-outcast"
+    ]
+  },
+  {
+    "title": "Trauma",
+    "years": "2018",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/trauma-2018"
+    ]
+  },
+  {
+    "title": "Dandelion Dead",
+    "years": "1994",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/dandelion-dead"
+    ]
+  },
+  {
+    "title": "Monarch of the Glen",
+    "years": "2000–2005",
+    "genre": "Comedy Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.broadwayworld.com/bwwtv/article/TOMMY-TUPPENCE-Series-to-Premiere-Anchor-BritBoxs-Eras-of-Agatha-Christie-20260820",
+      "https://www.justwatch.com/us/tv-show/monarch-of-the-glen"
+    ]
+  },
+  {
+    "title": "War and Peace",
+    "years": "2016",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      },
+      {
+        "name": "Peacock",
+        "tag": "stream",
+        "url": "https://www.peacocktv.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/war-and-peace-2016"
+    ]
+  },
+  {
+    "title": "Vanity Fair (2018)",
+    "years": "2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/vanity-fair-2018"
+    ]
+  },
+  {
+    "title": "Law & Order: UK",
+    "years": "2009–2014",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "AMC+",
+        "tag": "stream",
+        "url": "https://www.amcplus.com"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/law-and-order-uk"
+    ]
+  },
+  {
+    "title": "Second Sight",
+    "years": "2000–2001",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/second-sight"
+    ]
+  },
+  {
+    "title": "Thorne",
+    "years": "2010",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/thorne"
+    ]
+  },
+  {
+    "title": "Mudtown (Ar y Ffin)",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "BritBox",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.vitalthrills.com/britbox-march-2026/",
+      "https://api.tvmaze.com/search/shows?q=mudtown"
+    ]
+  },
+  {
+    "title": "The Truth",
+    "years": "2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/thetruth/",
+      "https://api.tvmaze.com/search/shows?q=the%20truth"
+    ]
+  },
+  {
+    "title": "The Eclipse",
+    "years": "2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/theeclipse/",
+      "https://api.tvmaze.com/shows/79102"
+    ]
+  },
+  {
+    "title": "Detective #24",
+    "years": "2023",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/detective24/",
+      "https://nordiskfilmogtvfond.com/news/stories/aron-levander-zaida-bergroth-on-svts-genre-bending-crime-detective-24"
+    ]
+  },
+  {
+    "title": "Inside",
+    "years": "2024–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/inside/",
+      "https://www.tellyvisions.org/insidebariau-how-watch-stream-us/"
+    ]
+  },
+  {
+    "title": "Above and Beyond",
+    "years": "2006",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/aboveandbeyond/",
+      "https://api.tvmaze.com/search/shows?q=above%20and%20beyond"
+    ]
+  },
+  {
+    "title": "Justice: Those Who Kill",
+    "years": "2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/justicethosewhokill/",
+      "https://crimefictionlover.com/2024/11/justice-those-who-kill-on-iplayer-and-prime/"
+    ]
+  },
+  {
+    "title": "For Life",
+    "years": "2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/forlife/",
+      "https://api.tvmaze.com/search/shows?q=livstid"
+    ]
+  },
+  {
+    "title": "DNA",
+    "years": "2004–2006",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/dna/",
+      "https://en.wikipedia.org/wiki/DNA_(British_TV_series)"
+    ]
+  },
+  {
+    "title": "The Cruise Doctor",
+    "years": "2022",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/cruisedoctor/",
+      "https://www.ufa.de/en?p=24239"
+    ]
+  },
+  {
+    "title": "Inspector Rojas",
+    "years": "2018–2024",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/inspectorrojas/",
+      "https://api.tvmaze.com/search/shows?q=inspector%20rojas"
+    ]
+  },
+  {
+    "title": "The Night Caller",
+    "years": "2024",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://acorn.tv/nightcaller/",
+      "https://api.tvmaze.com/search/shows?q=the%20night%20caller"
+    ]
+  },
+  {
+    "title": "The Agatha Christie Hour",
+    "years": "1982",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "Prime Video",
+        "tag": "stream",
+        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-agatha-christie-hour"
+    ]
+  },
+  {
+    "title": "Paradise (Il Paradiso delle Signore)",
+    "years": "2015–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/paradise-walter-presents/",
+      "https://api.tvmaze.com/search/shows?q=paradiso%20delle%20signore"
+    ]
+  },
+  {
+    "title": "Until the Last Heartbeat (Fino all'ultimo battito)",
+    "years": "2021",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/until-the-last-heartbeat/",
+      "https://api.tvmaze.com/search/shows?q=fino%20all%27ultimo%20battito"
+    ]
+  },
+  {
+    "title": "Madam President (Vigdís)",
+    "years": "2025",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/madam-president/",
+      "https://api.tvmaze.com/search/shows?q=vigdis"
+    ]
+  },
+  {
+    "title": "The Wagner Method (César Wagner)",
+    "years": "2020–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/wagner-method/",
+      "https://api.tvmaze.com/search/shows?q=cesar%20wagner"
+    ]
+  },
+  {
+    "title": "Lolita Lobosco (Le indagini di Lolita Lobosco)",
+    "years": "2021–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/lolita-lobosco/",
+      "https://api.tvmaze.com/search/shows?q=lolita%20lobosco"
+    ]
+  },
+  {
+    "title": "One Step From Heaven (Un passo dal cielo)",
+    "years": "2011–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/one-step-heaven/",
+      "https://api.tvmaze.com/search/shows?q=un%20passo%20dal%20cielo"
+    ]
+  },
+  {
+    "title": "The Intern (La Stagiaire)",
+    "years": "2016–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/the-intern/",
+      "https://api.tvmaze.com/search/shows?q=la%20stagiaire"
+    ]
+  },
+  {
+    "title": "The Lawyers (Las abogadas)",
+    "years": "2024",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/the-lawyers/",
+      "https://api.tvmaze.com/search/shows?q=las%20abogadas"
+    ]
+  },
+  {
+    "title": "Sisi: Austrian Empress (Sisi)",
+    "years": "2021–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/sisi-austrian-empress/",
+      "https://api.tvmaze.com/search/shows?q=sisi"
+    ]
+  },
+  {
+    "title": "Velvet Collection (Velvet Colección)",
+    "years": "2017–2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/velvet-collection/",
+      "https://api.tvmaze.com/search/shows?q=velvet%20coleccion"
+    ]
+  },
+  {
+    "title": "La Favorita 1922",
+    "years": "2025–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/la-favorita-1922/",
+      "https://api.tvmaze.com/search/shows?q=la%20favorita%201922"
+    ]
+  },
+  {
+    "title": "The Crimson Rivers (Les Rivières pourpres)",
+    "years": "2018–2022",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/provider/pbs/tv-shows?genres=crm&sort_by=alphabetical",
+      "https://api.tvmaze.com/search/shows?q=les%20rivieres%20pourpres"
+    ]
+  },
+  {
+    "title": "Davos 1917",
+    "years": "2023",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/davos-1917/",
+      "https://api.tvmaze.com/search/shows?q=davos%201917"
+    ]
+  },
+  {
+    "title": "Bardot",
+    "years": "2023",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/bardot/",
+      "https://api.tvmaze.com/search/shows?q=bardot"
+    ]
+  },
+  {
+    "title": "Seaside Hotel (Badehotellet)",
+    "years": "2013–2024",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/seaside-hotel/",
+      "https://api.tvmaze.com/search/shows?q=badehotellet"
+    ]
+  },
+  {
+    "title": "Our Miracle Years (Unsere wunderbaren Jahre)",
+    "years": "2020–2023",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/our-miracle-years/",
+      "https://api.tvmaze.com/search/shows?q=unsere%20wunderbaren%20jahre"
+    ]
+  },
+  {
+    "title": "Miss Friman's War (Fröken Frimans krig)",
+    "years": "2013–2017",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/miss-frimans-war/",
+      "https://api.tvmaze.com/search/shows?q=froken%20frimans%20krig"
+    ]
+  },
+  {
+    "title": "Private Detective Dengler (Dengler)",
+    "years": "2015–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/private-detective-dengler/",
+      "https://api.tvmaze.com/search/shows?q=dengler"
+    ]
+  },
+  {
+    "title": "Bonfire of Destiny (Le Bazar de la Charité)",
+    "years": "2019",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/bonfire-of-destiny/",
+      "https://api.tvmaze.com/search/shows?q=bazar%20de%20la%20charite"
+    ]
+  },
+  {
+    "title": "Carmen Curlers",
+    "years": "2022–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/carmen-curlers/",
+      "https://api.tvmaze.com/search/shows?q=carmen%20curlers"
+    ]
+  },
+  {
+    "title": "Ena: Queen Victoria Eugenia (Ena. La reina Victoria Eugenia)",
+    "years": "2024",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/ena-queen-victoria-eugenia/",
+      "https://api.tvmaze.com/search/shows?q=ena"
+    ]
+  },
+  {
+    "title": "Partners in Crime: Potsdam Homicide (SOKO Potsdam)",
+    "years": "2018–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/partners-in-crime-potsdam-homicide/",
+      "https://api.tvmaze.com/search/shows?q=soko%20potsdam"
+    ]
+  },
+  {
+    "title": "Panda",
+    "years": "2023–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/panda/",
+      "https://api.tvmaze.com/search/shows?q=panda"
+    ]
+  },
+  {
+    "title": "Snow (Schnee)",
+    "years": "2023",
+    "genre": "Mystery Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/snow/",
+      "https://api.tvmaze.com/search/shows?q=schnee"
+    ]
+  },
+  {
+    "title": "House of Glass (Haus aus Glas)",
+    "years": "2023",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/house-of-glass/",
+      "https://api.tvmaze.com/search/shows?q=haus%20aus%20glas"
+    ]
+  },
+  {
+    "title": "Classified (Classé secret)",
+    "years": "2022–present",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/classified/",
+      "https://api.tvmaze.com/search/shows?q=classe%20secret"
+    ]
+  },
+  {
+    "title": "All Heart (Cuori)",
+    "years": "2021–2023",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/all-heart/",
+      "https://api.tvmaze.com/search/shows?q=cuori"
+    ]
+  },
+  {
+    "title": "When the Dust Settles (Når støvet har lagt sig)",
+    "years": "2020",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/when-the-dust-settles/",
+      "https://api.tvmaze.com/search/shows?q=n%C3%A5r%20st%C3%B8vet%20har%20lagt%20sig"
+    ]
+  },
+  {
+    "title": "Golden Swan (Zlatá labuť)",
+    "years": "2023–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/golden-swan/",
+      "https://api.tvmaze.com/search/shows?q=zlata%20labut"
+    ]
+  },
+  {
+    "title": "Ammo",
+    "years": "2022",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/ammo/",
+      "https://api.tvmaze.com/search/shows?q=ammo"
+    ]
+  },
+  {
+    "title": "Prison Island",
+    "years": "2023",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/prison-island/",
+      "https://www.primevideo.com/detail/0HLG2BDVE2NMLOJ8GJNQLNNU0M"
+    ]
+  },
+  {
+    "title": "A Dangerous Friendship",
+    "years": "2024",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/a-dangerous-friendship/",
+      "https://www.primevideo.com/detail/0MM0JAU62QKKKMORB07TMHBJMG"
+    ]
+  },
+  {
+    "title": "The King's Favorite (Diane de Poitiers)",
+    "years": "2022",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/the-kings-favorite/",
+      "https://unsub.tv/title/kYraOLIT/the-king-s-favorite"
+    ]
+  },
+  {
+    "title": "Everybody Lies (Tout le monde ment)",
+    "years": "2022–2025",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/everybody-lies/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-september-2026/"
+    ]
+  },
+  {
+    "title": "Incognito",
+    "years": "2023",
+    "genre": "Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/incognito/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-september-2026/"
+    ]
+  },
+  {
+    "title": "Second Death (La segunda muerte)",
+    "years": "2024",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/second-death/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-september-2026/"
+    ]
+  },
+  {
+    "title": "Kraken (Kraken. El libro negro de las horas)",
+    "years": "2026",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/kraken/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-october-2026/",
+      "https://api.tvmaze.com/search/shows?q=kraken%20libro%20negro"
+    ]
+  },
+  {
+    "title": "Call Me Levi (Levi Strauss und der Stoff der Träume)",
+    "years": "2025",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/call-me-levi/",
+      "https://api.tvmaze.com/search/shows?q=levi%20strauss"
+    ]
+  },
+  {
+    "title": "The Negotiator (Le Négociateur)",
+    "years": "2023–present",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/the-negotiator/",
+      "https://api.tvmaze.com/search/shows?q=le%20negociateur"
+    ]
+  },
+  {
+    "title": "Coastal Unit (À priori)",
+    "years": "2025–2026",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/coastal-unit/",
+      "https://api.tvmaze.com/search/shows?q=a%20priori"
+    ]
+  },
+  {
+    "title": "Belcanto",
+    "years": "2025–present",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-october-2026/",
+      "https://api.tvmaze.com/search/shows?q=belcanto"
+    ]
+  },
+  {
+    "title": "New Kid on the Beat (La Recrue)",
+    "years": "2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/new-kid-on-the-beat/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-june-2026/"
+    ]
+  },
+  {
+    "title": "Carpe Diem",
+    "years": "2024",
+    "genre": "Legal Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/carpe-diem/",
+      "https://www.tellyvisions.org/everything-british-coming-to-pbs-passport-may-2026/"
+    ]
+  },
+  {
+    "title": "RFDS: Royal Flying Doctor Service",
+    "years": "2021",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/rfds"
+    ]
+  },
+  {
+    "title": "Atlantic Crossing",
+    "years": "2020",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/atlantic-crossing"
+    ]
+  },
+  {
+    "title": "Land Girls",
+    "years": "2009–2011",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/land-girls"
+    ]
+  },
+  {
+    "title": "Injustice",
+    "years": "2011",
+    "genre": "Legal Thriller",
+    "us": [
+      {
+        "name": "Acorn TV",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+      },
+      {
+        "name": "PBS",
+        "tag": "free",
+        "url": "https://www.pbs.org/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/injustice"
+    ]
+  },
+  {
+    "title": "Kidnap and Ransom",
+    "years": "2011–2012",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/kidnap-and-ransom"
+    ]
+  },
+  {
+    "title": "The Widower",
+    "years": "2014",
+    "genre": "True Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-widower"
+    ]
+  },
+  {
+    "title": "Collision",
+    "years": "2009",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/collision"
+    ]
+  },
+  {
+    "title": "Brian and Maggie",
+    "years": "2025",
+    "genre": "Drama",
+    "us": [
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/brian-and-maggie"
+    ]
+  },
+  {
+    "title": "The Wall (La faille)",
+    "years": "2019–2022",
+    "genre": "Crime Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/the-wall-2019",
+      "https://api.tvmaze.com/search/shows?q=la%20faille"
+    ]
+  },
+  {
+    "title": "COBRA",
+    "years": "2020–2023",
+    "genre": "Political Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/tv-show/cobra-2020"
+    ]
+  },
+  {
+    "title": "Detective Surprenant: Murder on the Island (Détective Surprenant)",
+    "years": "2023–present",
+    "genre": "Mystery",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/detective-suprenant-murder-on-the-island/",
+      "https://api.tvmaze.com/search/shows?q=la%20faille"
+    ]
+  },
+  {
+    "title": "The Shadow (Der Schatten)",
+    "years": "2023",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/the-shadow/",
+      "https://api.tvmaze.com/search/shows?q=der%20schatten"
+    ]
+  },
+  {
+    "title": "The Good Apprentice (L'allieva)",
+    "years": "2016–2020",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/good-apprentice/",
+      "https://api.tvmaze.com/search/shows?q=l%27allieva"
+    ]
+  },
+  {
+    "title": "Cuba Libre",
+    "years": "2022",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/cuba-libre/",
+      "https://api.tvmaze.com/search/shows?q=cuba%20libre"
+    ]
+  },
+  {
+    "title": "Madame K",
+    "years": "2018",
+    "genre": "Period Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/madame-k/",
+      "https://api.tvmaze.com/search/shows?q=madame%20k"
+    ]
+  },
+  {
+    "title": "I Killed My Husband (J'ai tué mon mari)",
+    "years": "2021",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/i-killed-my-husband/",
+      "https://api.tvmaze.com/search/shows?q=j%27ai%20tu%C3%A9%20mon%20mari"
+    ]
+  },
+  {
+    "title": "The English Neighborhood",
+    "years": "2024",
+    "genre": "Spy Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/english-neighborhood/",
+      "https://www.primevideo.com/detail/0J52JZWDM2EC4WHBT4POMCCMLF"
+    ]
+  },
+  {
+    "title": "For Better or Worse",
+    "years": "2023",
+    "genre": "Mystery Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      },
+      {
+        "name": "PBS Masterpiece via Amazon",
+        "tag": "stream",
+        "url": "https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/for-better-or-worse/",
+      "https://www.primevideo.com/detail/0R352N8GAMI4H23P56GGSRA881"
+    ]
+  },
+  {
+    "title": "Next to You (Contre toi)",
+    "years": "2024–present",
+    "genre": "Psychological Thriller",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.pbs.org/show/next-to-you/",
+      "https://api.tvmaze.com/search/shows?q=contre%20toi"
+    ]
+  },
+  {
+    "title": "The Sketch Artist (Portrait-Robot)",
+    "years": "2021–2024",
+    "genre": "Crime Drama",
+    "us": [
+      {
+        "name": "PBS Passport",
+        "tag": "stream",
+        "url": "https://www.pbs.org/passport/"
+      }
+    ],
+    "uk": [],
+    "au": [],
+    "verified": "2026-10-03",
+    "sources": [
+      "https://www.justwatch.com/us/provider/pbs/tv-shows?genres=crm&sort_by=alphabetical",
+      "https://en.wikipedia.org/wiki/Portrait-Robot"
     ]
   }
 ]

@@ -30,6 +30,7 @@ window.BTVH_GUIDES = {
   "Maigret (2025)": "maigret",
   "Marble Hall Murders": "marble-hall-murders",
   "The Marlow Murder Club": "marlow-murder-club",
+  "Miss Marple": "miss-marple",
   "Midsomer Murders": "midsomer-murders",
   "Agatha Christie's Poirot": "poirot",
   "Poldark": "poldark",
