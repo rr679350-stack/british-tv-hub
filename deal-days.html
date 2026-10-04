@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1L8CVNKS6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P1L8CVNKS6');
+</script>
+<script>
+(function(){
+  function findLink(el){
+    while(el && el !== document){
+      if(el.tagName === 'A' && el.href) return el;
+      el = el.parentNode;
+    }
+    return null;
+  }
+  document.addEventListener('click', function(e){
+    var a = findLink(e.target);
+    if(!a) return;
+    var href = a.href || '';
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('britbox.com') > -1){
+      gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('acorn.tv') > -1){
+      gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    }
+  }, true);
+})();
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deal Days Picks for British TV Fans | British TV Hub</title>
+<meta name="description" content="British TV box sets, BritBox, Acorn TV and PBS Masterpiece channels, and cozy-evening favourites recommended by British TV Hub, gathered for Prime Big Deal Days.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://britishtvhub.com/deal-days.html">
+<meta property="og:title" content="Deal Days Picks for British TV Fans | British TV Hub">
+<meta property="og:description" content="British TV box sets, BritBox, Acorn TV and PBS Masterpiece channels, and cozy-evening favourites recommended by British TV Hub, gathered for Prime Big Deal Days.">
+<meta property="og:image" content="https://britishtvhub.com/snug-nav-watch.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deal Days Picks for British TV Fans | British TV Hub">
+<meta name="twitter:description" content="British TV box sets, BritBox, Acorn TV and PBS Masterpiece channels, and cozy-evening favourites recommended by British TV Hub, gathered for Prime Big Deal Days.">
+<meta name="twitter:image" content="https://britishtvhub.com/snug-nav-watch.webp">
+<meta property="og:site_name" content="British TV Hub">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://britishtvhub.com/deal-days.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://britishtvhub.com/"},{"@type":"ListItem","position":2,"name":"Gift Guides","item":"https://britishtvhub.com/gift-guide-hub.html"},{"@type":"ListItem","position":3,"name":"Deal Days Picks","item":"https://britishtvhub.com/deal-days.html"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/search-index.js" defer></script>
+<script src="/site-search.js" defer></script>
+
+
+
+
+
+<link rel="stylesheet" href="/listing-shared.css">
+
+<style>
+/* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
+.nav-hamburger { display: none; }
+
+@media (max-width: 900px) {
+  nav.site-nav-std .nav-top-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std .nav-brand {
+    width: auto !important;
+    padding: 6px 0 !important;
+    flex-shrink: 0 !important;
+  }
+  nav.site-nav-std .nav-brand img {
+    height: 42px !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .nav-hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #c9a96e;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Nav links + actions hidden by default on mobile, shown only when menu is open */
+  nav.site-nav-std .nav-links,
+  nav.site-nav-std .nav-actions {
+    display: none !important;
+  }
+  nav.site-nav-std.mobile-menu-open {
+    flex-wrap: wrap !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-links {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    order: 3;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(201,168,76,0.2);
+  }
+  nav.site-nav-std.mobile-menu-open .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 8px;
+    order: 4;
+    margin-top: 8px;
+    padding-bottom: 12px;
+  }
+  nav.site-nav-std.mobile-menu-open .nlink {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 14px 4px !important;
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid rgba(201,168,76,0.12) !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown {
+    width: 100%;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-toggle {
+    width: 100% !important;
+    text-align: left !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-menu {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col {
+    border: none !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-dropdown-col a {
+    display: block !important;
+    padding: 10px 4px !important;
+    font-size: 13px !important;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-search-box {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 8px;
+  }
+  nav.site-nav-std.mobile-menu-open .nav-tea {
+    align-self: flex-start;
+  }
+}
+</style>
+<link rel="stylesheet" href="/hub-cards.css">
+</head>
+<body>
+    
+    
+
+<nav class="site-nav-std" aria-label="Main navigation">
+  <div class="nav-top-row">
+    <div class="nav-brand">
+    <a href="/" style="display:inline-block;text-decoration:none;">
+      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+    </a>
+  </div>
+    <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links-panel">
+      <a class="nlink" href="/">Home</a>
+      <a class="nlink" href="/start-here.html">Start Here</a>
+      <a class="nlink" href="/shows-index.html">Shows</a>
+      <a class="nlink" href="/books">Books</a>
+      <a class="nlink" href="/streaming.html">Where to Watch</a>
+      <a class="nlink" href="/essentials.html">The Snug</a>
+      <a class="nlink" href="/season-preview.html">Season Preview</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nlink nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false" onclick="toggleDiscoverMenu()">Discover &#9662;</button>
+        <div class="nav-dropdown-menu" id="nav-discover-menu" style="display:none;">
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Browse</div>
+            <a href="/genres.html">By Genre</a>
+            <a href="/top10.html">Police Procedurals</a>
+            <a href="/cozy.html">Cozy Mysteries</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
+            <a href="/masterpiece2026.html">PBS Masterpiece</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
+            <a href="/shows-like.html">Find Similar Shows</a>
+            <a href="/this-week.html">This Week in British TV</a>
+            <a href="/hidden-gems.html">Hidden Gems</a>
+            <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">Play &amp; Connect</div>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
+            <a href="/meet-tilly.html">Ask Tilly</a>
+            <a href="/what-are-you-watching.html">What Are You Watching?</a>
+          </div>
+          <div class="nav-dropdown-col">
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="nav-actions">
+<div class="nav-tea">
+      <a href="/support.html" class="nav-tea-link" aria-label="Support British TV Hub" title="Support British TV Hub — Help keep the kettle on.">&#9749;</a>
+      <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
+    </div>
+<div class="nav-search">
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
+      <div class="nav-search-box" id="nav-search-box" style="display:none;">
+        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <div id="nav-search-results" class="nav-search-results"></div>
+      </div>
+    </div>
+</div>
+    </div>
+</nav>
+<script>
+function toggleMobileNav(){
+  var nav = document.querySelector('nav.site-nav-std');
+  var btn = document.getElementById('nav-hamburger-btn');
+  if(!nav || !btn) return;
+  var isOpen = nav.classList.toggle('mobile-menu-open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+</script>
+<script>
+function toggleDiscoverMenu(){
+  var m = document.getElementById('nav-discover-menu');
+  if(!m) return;
+  m.style.display = (m.style.display === 'none' || !m.style.display) ? 'flex' : 'none';
+}
+document.addEventListener('click', function(e){
+  var menu = document.getElementById('nav-discover-menu');
+  var toggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && toggle && !menu.contains(e.target) && !toggle.contains(e.target)){
+    menu.style.display = 'none';
+  }
+});
+</script>
+
+<div class="breadcrumb-container">
+  <div class="breadcrumb page-body">
+    <span class="breadcrumb-item"><a href="/">Home</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item"><a href="/gift-guide-hub.html">Gift Guides</a></span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item active">Deal Days Picks</span>
+  </div>
+</div>
+
+<div style="position:relative;overflow:hidden;min-height:400px;display:flex;align-items:center;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/snug-nav-watch.webp" alt="A cozy living room with a British countryside scene on the television, a knit blanket and a mug of tea" style="position:absolute;right:0;top:0;width:50%;height:100%;object-fit:cover;object-position:center;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2332 42%,rgba(26,35,50,0.75) 62%,rgba(26,35,50,0.05) 100%);"></div>
+  <div style="position:relative;z-index:2;padding:64px 40px 48px;max-width:620px;">
+    <p id="dd-kicker" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 14px;">Prime Big Deal Days &middot; October 6&ndash;7</p>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.5rem;">Deal Days Picks for <em style="font-style:italic;color:var(--gold-light);">British TV Fans</em></h1>
+    <p class="hero-intro">Box sets, streaming channels and cozy-evening favourites already recommended across British TV Hub, gathered in one place for the October sale. Prices change throughout the event, so check each item before buying.</p>
+    <a href="#collections" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:12px 24px;border-radius:2px;text-decoration:none;">Explore the Picks &rarr;</a>
+  </div>
+</div>
+
+<div class="jump-nav">
+  <div class="jump-nav-inner">
+    <span class="jump-label">Jump to</span>
+    <a href="#collections">Complete Collections</a>
+    <a href="#channels">Your Channels</a>
+    <a href="#cozy">Cozy Night In</a>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <div class="hub-card" style="margin-top:28px;"><div style="max-width:760px;margin:0;">
+    <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--cream);margin:0 0 0.75rem;">How These <em style="font-style:italic;color:var(--gold-light);">Picks Work</em></h2>
+    <p id="dd-note" style="font-size:1.05rem;color:var(--text-light);line-height:1.75;margin:0;">Prime Big Deal Days runs October 6 and 7 for Prime members. Every item below has been featured on British TV Hub before, but not every item will be discounted, so the buttons show today&rsquo;s price rather than a promised deal.</p>
+  </div></div>
+
+  <div class="section-header" id="collections">
+    <h2>Complete <em>Collections</em></h2>
+    <p>Full-series box sets of the detectives and dramas British TV Hub readers return to most, worth a look during the sale.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Classic Detective</div>
+        <h3 class="show-title"><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Inspector Morse: The Complete Series</a></h3>
+        <div class="show-meta">1987&ndash;2000 <span>&middot;</span> ITV <span>&middot;</span> DVD</div>
+        <p class="show-desc">Every case of John Thaw&rsquo;s Oxford detective, all 33 episodes in one 17-disc set. A natural first box set for anyone who loves a slow, thoughtful mystery.</p>
+        <div class="show-tags"><span class="tag">Oxford</span><span class="tag">33 episodes</span><span class="tag">17 discs</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD box set</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Every series</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Classic detective fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Endeavour</span></div>
+        <a href="https://amzn.to/4w73jZ2" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/inspector-morse.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Prequel</div>
+        <h3 class="show-title"><a href="/shows/endeavour.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Endeavour: Series 1&ndash;9</a></h3>
+        <div class="show-meta">2012&ndash;2023 <span>&middot;</span> ITV <span>&middot;</span> DVD</div>
+        <p class="show-desc">Shaun Evans plays the young Morse in 1960s and 70s Oxford, before the famous inspector found his footing. All nine series make it an easy follow-on from the original.</p>
+        <div class="show-tags"><span class="tag">Oxford</span><span class="tag">9 series</span><span class="tag">Period setting</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD box set</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Series 1&ndash;9</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Morse fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Inspector Morse</span></div>
+        <a href="https://www.amazon.com/Endeavour-Series-1-9-DVD/dp/B0BVZJ99RQ?tag=britishtvhub-gift-20" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/endeavour.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-female">Northern Favourite</div>
+        <h3 class="show-title"><a href="/shows/vera.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Vera: Sets 1&ndash;7 Collection</a></h3>
+        <div class="show-meta">2011&ndash;2025 <span>&middot;</span> ITV <span>&middot;</span> DVD</div>
+        <p class="show-desc">Brenda Blethyn&rsquo;s DCI Vera Stanhope works cases across Northumberland&rsquo;s coast and moors. A generous run of the early sets for a long autumn binge.</p>
+        <div class="show-tags"><span class="tag">Northumberland</span><span class="tag">Ann Cleeves</span><span class="tag">Feature-length</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD collection</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Sets 1&ndash;7</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">A step up from cozy</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Shetland</span></div>
+        <a href="https://amzn.to/4ynKK3H" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/vera.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Village Mystery</div>
+        <h3 class="show-title"><a href="/shows/midsomer-murders.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Midsomer Murders: The Early Cases Collection</a></h3>
+        <div class="show-meta">From 1997 <span>&middot;</span> ITV <span>&middot;</span> DVD</div>
+        <p class="show-desc">Ten discs of village whodunits from the show&rsquo;s early years with John Nettles as DCI Tom Barnaby. Ideal for fans who want to go back to where it all began.</p>
+        <div class="show-tags"><span class="tag">Village</span><span class="tag">John Nettles</span><span class="tag">10 discs</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD collection</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Early cases</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Cozy village fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Father Brown</span></div>
+        <a href="https://amzn.to/3R6rYxP" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/midsomer-murders.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Sunshine Mystery</div>
+        <h3 class="show-title"><a href="/shows/death-in-paradise.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Death in Paradise: Series 1&ndash;5</a></h3>
+        <div class="show-meta">BBC <span>&middot;</span> DVD</div>
+        <p class="show-desc">All 40 episodes of sun, sand and locked-room puzzles on the Caribbean island of Saint Marie. A bright change of pace for grey October evenings.</p>
+        <div class="show-tags"><span class="tag">Caribbean</span><span class="tag">40 episodes</span><span class="tag">Puzzle mysteries</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD box set</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Series 1&ndash;5</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Light, clever mysteries</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Beyond Paradise</span></div>
+        <a href="https://amzn.to/3RmDlBC" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/death-in-paradise.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Modern Crime</div>
+        <h3 class="show-title"><a href="/shows/line-of-duty.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Line of Duty: Series 1&ndash;5 Collection</a></h3>
+        <div class="show-meta">BBC <span>&middot;</span> DVD</div>
+        <p class="show-desc">AC-12&rsquo;s anti-corruption investigations, full of interview-room standoffs and twists. A strong pick for viewers who like their crime drama tense.</p>
+        <div class="show-tags"><span class="tag">Thriller</span><span class="tag">AC-12</span><span class="tag">Series 1&ndash;5</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD collection</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Series 1&ndash;5</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Tense, twisty drama</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Happy Valley</span></div>
+        <a href="https://amzn.to/4ymeVca" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/line-of-duty.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Period Drama</div>
+        <h3 class="show-title">Downton Abbey: The Complete Series</h3>
+        <div class="show-meta">2010&ndash;2015 <span>&middot;</span> ITV <span>&middot;</span> DVD</div>
+        <p class="show-desc">The Crawley family and their household staff, from the Titanic years through the 1920s. Every series in one set for a proper weekend of upstairs-downstairs drama.</p>
+        <div class="show-tags"><span class="tag">Yorkshire estate</span><span class="tag">Complete series</span><span class="tag">Period drama</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD box set</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Every series</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Period drama fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Call the Midwife</span></div>
+        <a href="https://www.amazon.com/Downton-Abbey-Complete-Hugh-Bonneville/dp/B08HBJR4N1?tag=britishtvhub-gift-20" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-female">Comfort Drama</div>
+        <h3 class="show-title"><a href="/shows/call-the-midwife.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Call the Midwife: Seasons 1&ndash;13</a></h3>
+        <div class="show-meta">BBC <span>&middot;</span> PBS <span>&middot;</span> DVD</div>
+        <p class="show-desc">Nurse-midwives and nuns caring for families in London&rsquo;s East End, based on Jennifer Worth&rsquo;s memoirs. Thirteen seasons of warm, big-hearted storytelling in one collection.</p>
+        <div class="show-tags"><span class="tag">East End</span><span class="tag">Based on memoirs</span><span class="tag">13 seasons</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">DVD collection</span></div>
+        <div class="aside-row"><span class="aside-key">Covers</span><span class="aside-val">Seasons 1&ndash;13</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Heartfelt drama</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Downton Abbey</span></div>
+        <a href="https://www.amazon.com/Call-Midwife-Season-1-13-DVD/dp/B0D2521QL3?tag=britishtvhub-gift-20" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+        <a href="/shows/call-the-midwife.html" class="aside-link-secondary">Read the Show Guide &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header" id="channels">
+    <h2>Your British Channels, <em>All in One Place</em></h2>
+    <p>BritBox, Acorn TV and PBS Masterpiece can each be added to Prime Video, so every series sits on one watchlist. Each channel is a separate add-on with its own price.</p>
+  </div>
+
+  <div class="hub-card" style="margin:0 0 1.5rem;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;">
+    <p style="font-size:1.05rem;color:var(--text-light);line-height:1.7;margin:0;flex:1 1 320px;">Channel add-ons start with a Prime membership, which is also what unlocks the Prime Big Deal Days sale prices.</p>
+    <a href="https://link.amazon/B0eRSrI9y" target="_blank" rel="noopener sponsored" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none;white-space:nowrap;">Start Prime &rarr;</a>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Prime Video Channel</div>
+        <h3 class="show-title">BritBox</h3>
+        <div class="show-meta">Add-on channel <span>&middot;</span> Prime Video</div>
+        <p class="show-desc">British drama and mystery from the BBC and ITV, added straight to a Prime Video account. Home to many of the series featured across British TV Hub.</p>
+        <div class="show-tags"><span class="tag">BBC</span><span class="tag">ITV</span><span class="tag">Mysteries</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Channel add-on</span></div>
+        <div class="aside-row"><span class="aside-key">Billing</span><span class="aside-val">Separate monthly price</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Vera, Shetland, Happy Valley</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener sponsored">View BritBox Options &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Prime Video Channel</div>
+        <h3 class="show-title">Acorn TV</h3>
+        <div class="show-meta">Add-on channel <span>&middot;</span> Prime Video</div>
+        <p class="show-desc">British and international mysteries and dramas, from Midsomer Murders to new Acorn originals. Adds to the same Prime Video watchlist as everything else.</p>
+        <div class="show-tags"><span class="tag">Mysteries</span><span class="tag">Acorn originals</span><span class="tag">Dramas</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Channel add-on</span></div>
+        <div class="aside-row"><span class="aside-key">Billing</span><span class="aside-val">Separate monthly price</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Midsomer Murders, cozy mysteries</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener sponsored">View Acorn TV Options &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-essential">Prime Video Channel</div>
+        <h3 class="show-title">PBS Masterpiece</h3>
+        <div class="show-meta">Add-on channel <span>&middot;</span> Prime Video</div>
+        <p class="show-desc">Masterpiece dramas and mysteries in one channel, a handy option for PBS-only series. Sits alongside BritBox and Acorn TV in a single app.</p>
+        <div class="show-tags"><span class="tag">Masterpiece</span><span class="tag">Period drama</span><span class="tag">Mysteries</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Channel add-on</span></div>
+        <div class="aside-row"><span class="aside-key">Billing</span><span class="aside-val">Separate monthly price</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">PBS Masterpiece series</span></div>
+        <a href="https://www.amazon.com/gp/video/channel/cf297d60-2200-420a-b036-5b78d653da5a?tag=britishtvhub-20" class="aside-link" target="_blank" rel="noopener sponsored">View PBS Masterpiece Options &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header" id="cozy">
+    <h2>A Cozy <em>Night In</em></h2>
+    <p>Tea, blankets and a few books to round out an evening of British telly, and a head start on holiday gifts.</p>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Tea</div>
+        <h3 class="show-title">Twinings Tea Selection</h3>
+        <div class="show-meta">Pantry staple</div>
+        <p class="show-desc">A proper British cupboard staple for when the nights start drawing in. An easy stocking filler to tuck away for the holidays.</p>
+        <div class="show-tags"><span class="tag">Tea</span><span class="tag">Stocking filler</span><span class="tag">Gift idea</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Tea</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Every mystery night</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">A tea set</span></div>
+        <a href="https://amzn.to/4fdyXgj" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Tea</div>
+        <h3 class="show-title">British Royal Tea Set</h3>
+        <div class="show-meta">Six-cup set</div>
+        <p class="show-desc">A six-cup tea set that turns an ordinary evening in front of the telly into something a little more special. Lovely as an early holiday gift.</p>
+        <div class="show-tags"><span class="tag">Teatime</span><span class="tag">Gift idea</span><span class="tag">Six cups</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Tea set</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Hosting or gifting</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Twinings tea</span></div>
+        <a href="https://amzn.to/4bPGUat" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Blanket</div>
+        <h3 class="show-title">Berkshire Faux Fur Throw</h3>
+        <div class="show-meta">Reversible throw</div>
+        <p class="show-desc">Reversible and generously sized, made for settling in with a long mystery. A cozy staple that doubles as a dependable gift.</p>
+        <div class="show-tags"><span class="tag">Blanket</span><span class="tag">Reversible</span><span class="tag">Gift idea</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Throw blanket</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Marathon evenings</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">A complete box set</span></div>
+        <a href="https://amzn.to/4vA38Ew" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Blanket</div>
+        <h3 class="show-title">Chunky Knit Throw</h3>
+        <div class="show-meta">Knit throw</div>
+        <p class="show-desc">A heavier knit throw for the long Vera-and-a-blanket evenings. Looks just as good folded over the sofa as it feels on a cold night.</p>
+        <div class="show-tags"><span class="tag">Blanket</span><span class="tag">Knit</span><span class="tag">Autumn</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Throw blanket</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Cold autumn nights</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Vera on DVD</span></div>
+        <a href="https://amzn.to/44n66RN" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-female">For Readers</div>
+        <h3 class="show-title">Gritin LED Rechargeable Book Light</h3>
+        <div class="show-meta">Clip-on light</div>
+        <p class="show-desc">Small enough to tuck into any book bag, for one more chapter before bed. A handy little gift for the mystery reader in the family.</p>
+        <div class="show-tags"><span class="tag">Reading</span><span class="tag">Rechargeable</span><span class="tag">Gift idea</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Book light</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Bedtime readers</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">A Christie collection</span></div>
+        <a href="https://amzn.to/4fhL3oE" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-female">For Readers</div>
+        <h3 class="show-title">The Complete Hercule Poirot</h3>
+        <div class="show-meta">Book box set</div>
+        <p class="show-desc">All 39 Poirot novels in one collection, the natural companion to David Suchet&rsquo;s long-running adaptation. Endlessly re-readable on dark evenings.</p>
+        <div class="show-tags"><span class="tag">Agatha Christie</span><span class="tag">39 novels</span><span class="tag">Box set</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">Book box set</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Poirot fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Agatha Christie&rsquo;s Poirot</span></div>
+        <a href="https://amzn.to/4xjK5j0" class="aside-link" target="_blank" rel="noopener sponsored">Get the Books &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-female">For Readers</div>
+        <h3 class="show-title">The Complete Miss Marple</h3>
+        <div class="show-meta">Book box set</div>
+        <p class="show-desc">All 12 Miss Marple novels in one collection. A lovely match for fans of the Joan Hickson BBC adaptations and a rainy afternoon.</p>
+        <div class="show-tags"><span class="tag">Agatha Christie</span><span class="tag">12 novels</span><span class="tag">Box set</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">Book box set</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Marple fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Miss Marple (1984)</span></div>
+        <a href="https://amzn.to/4yX9zo9" class="aside-link" target="_blank" rel="noopener sponsored">Get the Books &rarr;</a>
+      </div>
+    </div>
+  </div>
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Teatime</div>
+        <h3 class="show-title">Downton Abbey Afternoon Tea Cookbook</h3>
+        <div class="show-meta">Cookbook</div>
+        <p class="show-desc">Teatime drinks, scones, savouries and sweets from the official Downton Abbey cookery series. A sweet companion to the complete series box set.</p>
+        <div class="show-tags"><span class="tag">Baking</span><span class="tag">Downton Abbey</span><span class="tag">Gift idea</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a glance</div>
+        <div class="aside-row"><span class="aside-key">Type</span><span class="aside-val">Cookbook</span></div>
+        <div class="aside-row"><span class="aside-key">Best For</span><span class="aside-val">Bakers and Downton fans</span></div>
+        <div class="aside-row"><span class="aside-key">Pairs With</span><span class="aside-val">Downton Abbey box set</span></div>
+        <a href="https://amzn.to/4pzTP6o" class="aside-link" target="_blank" rel="noopener sponsored">See Today&rsquo;s Price &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header" id="explore-more">
+    <h2>Explore <em>More</em></h2>
+    <p>More gift ideas and cozy picks from British TV Hub.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:0 0 2rem;">
+    <a href="/holiday-gift-guide.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;">
+      <img src="/shop-hero-giftbox.webp" alt="A navy gift box with a gold bow under a Christmas tree" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">Holiday Guide: Gift Edition</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Budget-tiered gift ideas for every British TV fan on the list.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/autumn-gift-guide.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;">
+      <img src="/autumn-gift-hero.webp" alt="Autumn Gift Guide" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">The Autumn Gift Guide</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Tea, throws and book pairings for the darkening evenings.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+    <a href="/essentials.html" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;">
+      <img src="/snug-card.webp" alt="The Snug" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;">The Snug</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">British TV Hub&rsquo;s hub for watching, reading and cozy essentials.</div>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
+      </div>
+    </a>
+  </div>
+
+  <p style="font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.08em;color:var(--text-muted,#9090a8);text-align:center;padding:2rem 0 1rem;line-height:1.7;">
+    Affiliate disclosure: British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases and sign-ups made through links on this page, at no extra cost to you. Prices and availability change often; check the current price before buying.
+  </p>
+
+</div>
+
+<script>
+(function(){try{
+  if(Date.now()>Date.parse('2026-10-08T07:00:00Z')){
+    var k=document.getElementById('dd-kicker'); if(k) k.textContent='British TV Hub Picks for the Gifting Season';
+    var n=document.getElementById('dd-note'); if(n) n.textContent='Prime Big Deal Days has ended for this year. These picks stay here as a quick shortlist of British TV Hub favourites, and every button shows the current price.';
+  }
+}catch(x){}})();
+</script>
+
+<div style="background:#1e2433;border-bottom:1px solid #3d4a60;padding:56px 40px;text-align:center;">
+  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Join The Conversation</div>
+  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Join the British TV Hub Community</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:560px;margin-left:auto;margin-right:auto;">Thousands of British TV fans trading recommendations, debating favourite episodes, and spotting new premieres together.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:900px;margin:0 auto;text-align:left;">
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">British TV Dramas and Mysteries</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Classics & New Favourites &mdash; the main page. Thousands of followers.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Ultimate British Bookshelf</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">The novels behind your favourite British dramas, plus hidden gems and new releases.</p>
+      <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
+    </div>
+    <div class="site-card" style="background:#363f58;border:1px solid #c9a96e;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Kettle Club &#9749;</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">British TV Hub&rsquo;s subscriber community for recommendations, friendly chat and premiere news. Just $2.99 a month — less than a cup of tea.</p>
+      <a href="https://www.facebook.com/groups/1069967119146283" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Join the Kettle Club &rarr;</a>
+      <p style="margin:10px 0 0;font-family:'Raleway',sans-serif;font-size:14px;color:#c8c0a8;">Hosted on Facebook. Tap above to join in seconds.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
+  <div style="max-width:860px;margin:0 auto;">
+    <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
+
+    <!-- Sunday Picks signup (Mailchimp) -->
+    <div id="nl-anchor" style="padding-bottom:32px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
+    </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+<footer style="background:#0d1830;border-top:1px solid #3d4a60;">
+  <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
+    British Mysteries. Dramas. Cozy Viewing.
+    <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
+  </div>
+
+  <style>.breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'Raleway',sans-serif;font-size:14px !important;letter-spacing:0.6px;}.breadcrumb-item{display:flex;align-items:center;gap:8px;}.breadcrumb-item a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb-item a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb-item.active{color:#f3ede2 !important;font-weight:600;}.breadcrumb-separator{color:rgba(201,168,76,0.7) !important;}.breadcrumb > a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb > a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb > span:not([class]){color:rgba(201,168,76,0.7) !important;}@media (max-width:768px){.breadcrumb{font-size:13px !important;}}@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
+  <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+    <div>
+      <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
+      <a href="/shows-index.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Shows</a>
+      <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Books</a>
+      <a href="/streaming.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Where to Watch</a>
+      <a href="/essentials.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">The Snug</a>
+      <a href="/watch-list.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Watch List</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Popular Guides</div>
+      <a href="/top10.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Best British Police Procedurals</a>
+      <a href="/cozy.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Cozy British Mysteries</a>
+      <a href="/britbox.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What's New</a>
+      <a href="/gift-ideas.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Gift Ideas</a>
+      <a href="/shows-like.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What to Watch Next</a>
+    </div>
+    <div>
+      <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
+      <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
+      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
+      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <div style="display:flex;gap:10px;">
+        <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
+        <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function shareOnFacebook(){const e={title:document.title,url:window.location.href};window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(e.url)}`,"facebook-share","width=600,height=400")}function shareOnTwitter(){const e={title:document.title,url:window.location.href};window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(e.title)}&url=${encodeURIComponent(e.url)}&via=BritishTVHub`,"twitter-share","width=600,height=400")}function shareOnPinterest(){const e={title:document.title,url:window.location.href},t=document.querySelector('img[src*="hero"]')?.src||"https://britishtvhub.com/og-image.png";window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(e.url)}&description=${encodeURIComponent(e.title)}&media=${encodeURIComponent(t)}`,"pinterest-share","width=600,height=400")}function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert("Link copied!")}).catch(e=>{console.error("Failed to copy:",e)})}
+  </script>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+      © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
+      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+    </div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+  </div>
+</footer>
+
+
+<script>
+(function() {
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
+})();
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+
+<script>
+// Show/hide back-to-top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.style.display = 'block';
+    backToTop.style.opacity = '1';
+  } else {
+    backToTop.style.display = 'none';
+    backToTop.style.opacity = '0';
+  }
+});
+
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>
+
+
+<script>
+// Scroll reveal animations using Intersection Observer
+document.addEventListener('DOMContentLoaded', function() {
+  // Create Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Find all elements to reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  
+  // If no explicit scroll-reveal elements, auto-add to show cards
+  if (revealElements.length === 0) {
+    const showCards = document.querySelectorAll('[style*="border:1px solid #3d4a60"]');
+    const textSections = document.querySelectorAll('section, article, .show-grid, .content-section');
+    
+    showCards.forEach(card => {
+      card.classList.add('scroll-reveal');
+      observer.observe(card);
+    });
+    
+    textSections.forEach(section => {
+      section.classList.add('scroll-reveal');
+      observer.observe(section);
+    });
+  } else {
+    revealElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});
+</script>
+</body>
+</html>
