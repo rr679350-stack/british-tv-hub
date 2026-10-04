@@ -535,6 +535,60 @@ document.addEventListener('click', function(e){
 <script>(function(){try{if(Date.now()>Date.parse('2026-10-08T05:00:00Z')){var e=document.getElementById('pbdd');if(e)e.remove();}}catch(x){}})();</script>
 <script>(function(){try{var n=Date.now(),s=document.getElementById('pbdd-status');if(!s)return;if(n>=Date.parse('2026-10-07T07:00:00Z'))s.textContent='On Now \u00b7 Final Day Today';else if(n>=Date.parse('2026-10-06T07:00:00Z'))s.textContent='On Now \u00b7 Through Wednesday';}catch(x){}})();</script>
 <!-- PRIME BIG DEAL DAYS BLOCK END -->
+<!-- CYBER SPECIALS BLOCK START (Etsy sale: shows Nov 23, auto-hides after Dec 1, 2026) -->
+<style>
+#cyber26{display:none;}
+#cyber26.cy-on{display:block;}
+#cyber26{max-width:900px;margin:40px auto !important;padding:0 20px !important;box-sizing:border-box;}
+#cyber26 *{box-sizing:border-box;}
+#cyber26 .cy-card{background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:32px 32px 26px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;text-align:left;}
+#cyber26 .cy-kicker{font-family:'Raleway',sans-serif !important;font-size:11px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
+#cyber26 h2{text-wrap:balance;font-family:'Playfair Display',serif !important;font-size:clamp(1.5rem,3.2vw,1.9rem) !important;font-weight:400 !important;color:#e8dfc8 !important;line-height:1.25 !important;margin:0 0 14px !important;padding:0 !important;text-align:left !important;}
+#cyber26 p.cy-text{font-family:'Crimson Text',serif !important;font-size:17px !important;line-height:1.6 !important;color:#d6d0bf !important;margin:0 0 20px !important;padding:0 !important;text-align:left !important;}
+#cyber26 .cy-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
+#cyber26 .cy-btn:hover{background:#dab870;}
+#cyber26 .cy-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
+#cyber26 .cy-btn2:hover{background:rgba(201,169,110,0.12);}
+@media(max-width:600px){#cyber26 .cy-btn2{margin-left:0;}}
+#cyber26 .cy-aside{background:rgba(10,21,32,0.45);border:1px solid rgba(201,168,76,0.18);border-radius:10px;padding:18px 20px;align-self:start;}
+#cyber26 .cy-aside-h{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
+#cyber26 .cy-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:'Crimson Text',serif;font-size:16px;color:#d6d0bf;}
+#cyber26 .cy-row:last-child{border-bottom:0;}
+#cyber26 .cy-row a{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
+#cyber26 .cy-note{font-size:14px;color:#a8a494;}
+#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+@media (max-width:700px){#cyber26 .cy-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
+#cyber26 .cy-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
+#cyber26 .cy-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
+#cyber26 .cy-banner-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:700;color:#1a2135;line-height:1.1;}
+#cyber26 .cy-banner-pill{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#e8dfc8;background:#1a2135;padding:9px 16px;border-radius:999px;white-space:nowrap;}
+@media (max-width:700px){#cyber26 .cy-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#cyber26 .cy-banner-pill{white-space:normal;font-size:11px;}}
+</style>
+<section id="cyber26" aria-label="Cyber Specials sale">
+  <div class="cy-card">
+    <div class="cy-banner">
+      <span class="cy-banner-title">Cyber Specials</span>
+      <span class="cy-banner-pill" id="cy-status">25% Off &middot; Through Dec 1</span>
+    </div>
+    <div>
+      <p class="cy-kicker">The CozyTVCompanion Shop</p>
+      <h2>Cozy Gifts for British TV Fans</h2>
+      <p class="cy-text">Mugs, notebooks, journals and cozy keepsakes for anyone who loves a good British mystery. Selected items are 25% off through December 1, just in time for holiday gifting.</p>
+      <a class="cy-btn" href="https://cozytvcompanion.etsy.com" rel="noopener" target="_blank">Shop the Sale &rarr;</a>
+      <a class="cy-btn2" href="/holiday-gift-guide.html">Holiday Gift Guide &rarr;</a>
+    </div>
+    <div class="cy-aside">
+      <div class="cy-aside-h">Sale at a Glance</div>
+      <div class="cy-row"><span>Discount</span><span>25% off</span></div>
+      <div class="cy-row"><span>Dates</span><span>Nov 23 &ndash; Dec 1</span></div>
+      <div class="cy-row"><span>Browse</span><a href="/shop.html">All Gifts &rarr;</a></div>
+      <div class="cy-row cy-note"><span>Applies to selected items, discount shown at checkout</span></div>
+    </div>
+    <p class="cy-disc">CozyTVCompanion is British TV Hub&rsquo;s own shop on Etsy. Sale runs 12:00am ET November 23 to 11:59pm ET December 1, 2026.</p>
+  </div>
+</section>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('cyber26');if(!e)return;var p=/[?&]cyberpreview/.test(location.search);if(!p&&(n<Date.parse('2026-11-23T05:00:00Z')||n>=Date.parse('2026-12-02T05:00:00Z'))){e.remove();return;}e.classList.add('cy-on');var s=document.getElementById('cy-status');if(n>=Date.parse('2026-12-01T05:00:00Z'))s.textContent='Final Day \u00b7 25% Off';else if(n>=Date.parse('2026-11-30T05:00:00Z'))s.textContent='Ends Tomorrow \u00b7 25% Off';}catch(x){}})();</script>
+<!-- CYBER SPECIALS BLOCK END -->
 
 <section class="att-section" id="all-time-top-10" aria-labelledby="att-heading">
     <div class="section-header">
