@@ -593,11 +593,19 @@ document.addEventListener('click', function(e){
 #pbdd .pbdd-note{font-size:14px;color:#a8a494;}
 #pbdd p.pbdd-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
 @media (max-width:700px){#pbdd .pbdd-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
+#pbdd .pbdd-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
+#pbdd .pbdd-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
+#pbdd .pbdd-banner-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:700;color:#1a2135;line-height:1.1;}
+#pbdd .pbdd-banner-pill{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#e8dfc8;background:#1a2135;padding:9px 16px;border-radius:999px;white-space:nowrap;}
+@media (max-width:700px){#pbdd .pbdd-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#pbdd .pbdd-banner-pill{white-space:normal;font-size:11px;}}
 </style>
 <section id="pbdd" aria-label="Prime Big Deal Days">
   <div class="pbdd-card">
+    <div class="pbdd-banner">
+      <span class="pbdd-banner-title">Prime Big Deal Days</span>
+      <span class="pbdd-banner-pill" id="pbdd-status">Tue &amp; Wed &middot; Oct 6&ndash;7</span>
+    </div>
     <div>
-      <p class="pbdd-kicker">Prime Big Deal Days &middot; October 6&ndash;7</p>
       <h2>Your British Channels, All in One Place</h2>
       <p class="pbdd-text">BritBox, Acorn TV and PBS Masterpiece can all be added as Prime Video channels, so every series sits on one watchlist. A Prime membership is the starting point, and members also get the Prime Big Deal Days sale on October 6 and 7.</p>
       <a class="pbdd-btn" href="https://link.amazon/B0eRSrI9y" rel="sponsored noopener" target="_blank">Start Prime &rarr;</a>
@@ -614,6 +622,7 @@ document.addEventListener('click', function(e){
   </div>
 </section>
 <script>(function(){try{if(Date.now()>Date.parse('2026-10-08T05:00:00Z')){var e=document.getElementById('pbdd');if(e)e.remove();}}catch(x){}})();</script>
+<script>(function(){try{var n=Date.now(),s=document.getElementById('pbdd-status');if(!s)return;if(n>=Date.parse('2026-10-07T07:00:00Z'))s.textContent='On Now \u00b7 Final Day Today';else if(n>=Date.parse('2026-10-06T07:00:00Z'))s.textContent='On Now \u00b7 Through Wednesday';}catch(x){}})();</script>
 <!-- PRIME BIG DEAL DAYS BLOCK END -->
 
 
