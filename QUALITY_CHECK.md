@@ -706,7 +706,17 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: September 13, 2026 (extensive accuracy audit covering
+Last full sitewide run: October 4, 2026 (technical SEO sweep of all 202 pages —
+titles, descriptions, H1s, canonicals, JSON-LD validity, internal links/images,
+alt text, sitemap coverage, GA ID, affiliate tags; quotation and superlative
+sweeps; BritBox-UK database check; time-sensitive status sweep with ~20 claims
+verified against current sources — corrected stale "currently filming/airing"
+status for Sherwood, Shetland, Beyond Paradise, Silent Witness, Lynley,
+Unforgotten, Midsomer Murders and Return to Paradise, softened Sherwood's
+manhunt claim to the sourced Nottinghamshire wording, added deal-days.html to
+the sitemap).
+
+Previous full sitewide run: September 13, 2026 (extensive accuracy audit covering
 quotation-rule compliance, banned-superlative sweep, broken internal link/image
 check, nav/footer/GA-ID integrity, monthly freshness, BritBox-UK false-listing
 check, and spot-verification of masterpiece2026.html, fall-preview-2026.html,
@@ -714,7 +724,7 @@ and Bookish Season 2 claims against current sources — fixed an unattributed
 "largest" superlative on streaming.html and corrected this file's stale
 footer-check filename, footer-brand.webp → footer-teacup-mark.png).
 
-Previous full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
+Earlier full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
 compliance, banned-superlative sweep, link/nav/footer/GA-ID integrity, monthly
 freshness, BritBox-UK false-listing check, fact-check-log reconciliation, and
 spot-verification of BritBox/Acorn "What's New" claims for August 2026 — see
