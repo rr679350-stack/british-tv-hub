@@ -27,7 +27,7 @@ jobs:
         run: pip install beautifulsoup4
       - name: Verify every page
         env:
-          ANTHROPIC_API_KEY: \${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/full_site_fact_audit.py
       - name: Save full fact audit
         if: always()
