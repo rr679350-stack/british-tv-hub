@@ -3,6 +3,9 @@ function toggleSiteSearch(){
   if(!box) return;
   var showing = box.style.display !== 'none';
   box.style.display = showing ? 'none' : 'block';
+  var toggle = document.querySelector('.nav-search-toggle');
+  if(toggle){ toggle.setAttribute('aria-expanded', showing ? 'false' : 'true'); }
+  if(showing && box.contains(document.activeElement) && toggle){ toggle.focus(); }
   if(!showing){
     var input = document.getElementById('nav-search-input');
     if(input){ input.value=''; }
@@ -51,6 +54,8 @@ document.addEventListener('click', function(e){
   if(!box || box.style.display==='none') return;
   if(!box.contains(e.target) && e.target!==toggle){
     box.style.display='none';
+    if(toggle){ toggle.setAttribute('aria-expanded','false'); }
+    if(box.contains(document.activeElement) && toggle){ toggle.focus(); }
   }
 });
 
@@ -93,3 +98,65 @@ if(document.readyState === 'loading'){
   addVillageMurderFeature();
 }
 
+
+/* Shared accessibility support for the standard navigation and search fields. */
+function initializeHubAccessibility(){
+  var labels = {
+    'nav-search-input': 'Search shows, books and guides',
+    'show-search-input': 'Find a series',
+    'fdsSearchInput': 'Search for a show'
+  };
+  Object.keys(labels).forEach(function(id){
+    var input = document.getElementById(id);
+    if(input){ input.setAttribute('aria-label', labels[id]); }
+  });
+  var style = document.createElement('style');
+  style.textContent = 'input:focus-visible, textarea:focus-visible, select:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #c9a96e !important; outline-offset: 3px !important; }';
+  document.head.appendChild(style);
+  var searchToggle = document.querySelector('.nav-search-toggle');
+  var searchBox = document.getElementById('nav-search-box');
+  var searchResults = document.getElementById('nav-search-results');
+  if(searchToggle && searchBox){
+    searchToggle.setAttribute('aria-controls', 'nav-search-box');
+    searchToggle.setAttribute('aria-expanded', searchBox.style.display === 'none' ? 'false' : 'true');
+  }
+  // Announce only brief search status messages, not every result link.
+  if(searchResults){
+    var status = document.createElement('div');
+    status.setAttribute('role', 'status');
+    status.style.cssText = 'position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);';
+    searchResults.parentNode.appendChild(status);
+    new MutationObserver(function(){
+      var empty = searchResults.querySelector('.nav-search-empty');
+      status.textContent = empty ? empty.textContent : '';
+    }).observe(searchResults, {childList:true, subtree:true});
+  }
+  var filterEmpty = document.getElementById('show-search-empty');
+  if(filterEmpty){ filterEmpty.setAttribute('role', 'status'); }
+  var menu = document.getElementById('nav-discover-menu');
+  var menuToggle = document.querySelector('.nav-dropdown-toggle');
+  if(menu && menuToggle){
+    menuToggle.setAttribute('aria-controls', 'nav-discover-menu');
+    // This is a disclosure containing ordinary links, not an ARIA menu.
+    menuToggle.removeAttribute('aria-haspopup');
+    function syncDiscoverState(){
+      menuToggle.setAttribute('aria-expanded', menu.style.display === 'none' ? 'false' : 'true');
+    }
+    syncDiscoverState();
+    new MutationObserver(syncDiscoverState).observe(menu, {attributes:true, attributeFilter:['style']});
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && menu.style.display !== 'none' &&
+          (menu.contains(document.activeElement) || document.activeElement === menuToggle)){
+        menu.style.display = 'none';
+        syncDiscoverState();
+        menuToggle.focus();
+        e.preventDefault();
+      }
+    });
+  }
+}
+if(document.readyState === 'loading'){
+  document.addEventListener('DOMContentLoaded', initializeHubAccessibility);
+} else {
+  initializeHubAccessibility();
+}
