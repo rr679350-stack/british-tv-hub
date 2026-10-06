@@ -1,6 +1,9 @@
 name: Sitewide Accessibility
 
 on:
+  # Sundays at 14:00 UTC (9 a.m. Chicago daylight time / 8 a.m. standard time).
+  schedule:
+    - cron: '0 14 * * 0'
   push:
     branches: [main]
     paths: ['**/*.html', '**/*.css', '**/*.js', '**/*.json', 'tools/accessibility/**', '.github/workflows/accessibility.yml']
@@ -36,7 +39,7 @@ jobs:
           npm install --prefix tools/accessibility --no-audit --no-fund
           tools/accessibility/node_modules/.bin/playwright install --with-deps chromium
       - name: Wait for the matching live deployment
-        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.target == 'live')
+        if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.target == 'live')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -59,5 +62,5 @@ jobs:
         with:
           name: sitewide-accessibility-report
           path: accessibility-report/
-          retention-days: 30
+          retention-days: 90
           if-no-files-found: warn
