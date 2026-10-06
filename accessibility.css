@@ -40,3 +40,8 @@ footer p, footer .footer-nav a, .footer-brand, .footer-legal,
 /* Override breadcrumb separator rules emitted later in page-body styles. */
 html body .breadcrumb > span:not([class]),
 html body .breadcrumb .breadcrumb-separator { color: #e3c890 !important; }
+
+/* Rendered-audit readability and keyboard target fixes. */
+html body .tag, html body .show-badge, html body .genre-tag, html body .cta-block-sub { opacity: 1 !important; }
+html body .nav-search-toggle { opacity: 1 !important; color: #f0e8d4 !important; background: #1e2433 !important; }
+html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-area-inset-bottom)) !important; min-width: 44px; min-height: 44px; z-index: 1000 !important; }
