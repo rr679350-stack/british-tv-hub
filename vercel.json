@@ -147,5 +147,16 @@
       "source": "/api/chat/Y2An0mtqMjwOslw4I2Lrm/:path*",
       "destination": "https://chatbase.co/api/chat/Y2An0mtqMjwOslw4I2Lrm/:path*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/perf/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }
