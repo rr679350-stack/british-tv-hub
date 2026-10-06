@@ -150,7 +150,7 @@ gtag('config', 'G-P1L8CVNKS6');
     --bg: #2c3345; --bg-dark: #1a2135; --bg-card: #363f58;
     --border: #3d4a60; --gold: #c9a96e; --gold-light: #dab870;
     --red: #8b1a2e; --red-light: #d06070;
-    --text: #e8dfc8; --text-muted: #c8c0a8; --text-dim: #a0aec8; --text-faint: #8898b8;
+    --text: #e8dfc8; --text-muted: #c8c0a8; --text-dim: #a0aec8; --text-faint: #c1cadd;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; }
@@ -453,8 +453,11 @@ gtag('config', 'G-P1L8CVNKS6');
 }
 </style>
 <link rel="stylesheet" href="/hub-cards.css">
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
@@ -516,7 +519,7 @@ gtag('config', 'G-P1L8CVNKS6');
 <div class="nav-search">
       <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <input aria-label="Search shows, books and guides" type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
@@ -553,7 +556,7 @@ document.addEventListener('click', function(e){
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 40%,rgba(26,33,53,0.7) 65%,rgba(26,33,53,0.1) 100%);"></div>
   <div style="position:relative;z-index:2;padding:52px 40px 38px;max-width:560px;">
     
-    <h1>The Best British Mystery &amp; Drama Shows to Watch Right Now</h1>
+    <h1 id="hub-content-start" tabindex="-1">The Best British Mystery &amp; Drama Shows to Watch Right Now</h1>
     <p class="page-hero-lead">From Oxford detectives to Yorkshire crime scenes &mdash; your guide to standout British television, organized by genre, streaming service, and title.</p>
     <div class="page-hero-meta">Curated by British TV fans &nbsp;&middot;&nbsp; Updated weekly &nbsp;&middot;&nbsp; Popular with British mystery and drama fans</div>
     <a href="#top-shows" style="display:inline-block;margin-top:22px;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:12px 24px;text-decoration:none;">Explore All Recommendations &rarr;</a>
@@ -562,7 +565,7 @@ document.addEventListener('click', function(e){
 
 <div style="background:#1a2135;border-top:1px solid #3d4a60;border-bottom:1px solid #3d4a60;padding:16px 40px;">
   <div style="max-width:1100px;margin:0 auto;display:flex;gap:0.5rem 1.5rem;flex-wrap:wrap;align-items:center;">
-    <span style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#9090a8;margin-right:0.5rem;">Jump to</span>
+    <span style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-right:0.5rem;">Jump to</span>
     <a href="#top-shows" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#1a2332;background:#c9a96e;text-decoration:none;padding:12px 24px;border:1px solid #c9a96e;border-radius:2px;">Top Picks</a>
     <a href="#hidden-gems" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#1a2332;background:#c9a96e;text-decoration:none;padding:12px 24px;border:1px solid #c9a96e;border-radius:2px;">Hidden Gems</a>
     <a href="/quiz.html" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#1a2332;background:#c9a96e;text-decoration:none;padding:12px 24px;border:1px solid #c9a96e;border-radius:2px;">Find My Next Show</a>
@@ -591,7 +594,7 @@ document.addEventListener('click', function(e){
 #pbdd .pbdd-row:last-child{border-bottom:0;}
 #pbdd .pbdd-row a{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
 #pbdd .pbdd-note{font-size:14px;color:#a8a494;}
-#pbdd p.pbdd-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+#pbdd p.pbdd-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#c1cadd !important;margin:0 !important;padding:0 !important;text-align:left !important;}
 @media (max-width:700px){#pbdd .pbdd-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
 #pbdd .pbdd-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
 #pbdd .pbdd-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
@@ -645,7 +648,7 @@ document.addEventListener('click', function(e){
 #cyber26 .cy-row:last-child{border-bottom:0;}
 #cyber26 .cy-row a{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
 #cyber26 .cy-note{font-size:14px;color:#a8a494;}
-#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#c1cadd !important;margin:0 !important;padding:0 !important;text-align:left !important;}
 @media (max-width:700px){#cyber26 .cy-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
 #cyber26 .cy-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
 #cyber26 .cy-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
@@ -704,11 +707,11 @@ document.addEventListener('click', function(e){
           </div>
           <div style="margin-top:12px;"><a href="/shows/inspector-morse.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Endeavour</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Lewis</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Foyle's War</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Endeavour</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Lewis</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Foyle's War</span>
             <a href="/shows/grantchester.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Grantchester</a>
             </div>
           </div>
@@ -732,11 +735,11 @@ document.addEventListener('click', function(e){
           </div>
           <div style="margin-top:12px;"><a href="/shows/vera.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
             <a href="/shows/shetland.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Shetland</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Dalgliesh</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Whitstable Pearl</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Dalgliesh</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Whitstable Pearl</span>
             <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
             </div>
           </div>
@@ -759,12 +762,12 @@ document.addEventListener('click', function(e){
             </div>
           </div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
             <a href="/shows/happy-valley.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Happy Valley</a>
             <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
             <a href="/shows/line-of-duty.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Line of Duty</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">The Fall</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">The Fall</span>
             </div>
           </div>
         </div>
@@ -786,12 +789,12 @@ document.addEventListener('click', function(e){
             </div>
           </div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Bloodlands</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Bloodlands</span>
             <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
             <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Marcella</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Marcella</span>
             </div>
           </div>
         </div>
@@ -814,12 +817,12 @@ document.addEventListener('click', function(e){
           </div>
           <div style="margin-top:12px;"><a href="/shows/miss-marple.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
             <a href="/agatha-christie.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Poirot</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Father Brown</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Father Brown</span>
             <a href="/shows/midsomer-murders.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Midsomer Murders</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Sister Boniface Mysteries</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Sister Boniface Mysteries</span>
             </div>
           </div>
         </div>
@@ -842,9 +845,9 @@ document.addEventListener('click', function(e){
           </div>
           <div style="margin-top:12px;"><a href="/shows/happy-valley.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
           <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b95b8;margin-bottom:8px;">Because You Loved This</div>
+            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
             <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#8b95b8;">Broadchurch</span>
+            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Broadchurch</span>
             <a href="/shows/line-of-duty.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Line of Duty</a>
             <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
             <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
@@ -860,7 +863,7 @@ document.addEventListener('click', function(e){
 
   <div class="hub-card"><div style="max-width:640px;margin:0 auto 40px;padding:0 40px;text-align:center;">
     <p style="font-family:'Playfair Display',serif;font-size:22px;color:#e8dfc8;margin:0 0 10px;">Still looking for your next series?</p>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#9090a8;line-height:1.7;margin:0;">These six classics are where many British TV fans begin. But once you've watched the essentials, it's time to explore some of television's most overlooked treasures.</p>
+    <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#c1cadd;line-height:1.7;margin:0;">These six classics are where many British TV fans begin. But once you've watched the essentials, it's time to explore some of television's most overlooked treasures.</p>
   </div></div>
 
   <div id="hidden-gems">
@@ -894,7 +897,7 @@ document.addEventListener('click', function(e){
       <p style="font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:6px;">Never Run Out of British Mysteries Again</p>
       <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);font-style:italic;margin-bottom:24px;">The free guide features 25 overlooked detective dramas and hidden gems you'll wonder how you ever missed &mdash; including 22 more beyond what's shown above. Free PDF, no signup required.</p>
       <a href="/25_Hidden_Gem_British_TV_Shows.pdf" download style="display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--bg-dark);font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:12px 24px;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
         Download Free Guide
       </a>
       <div style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-faint);margin-top:12px;letter-spacing:0.5px;">No spam &nbsp;&middot;&nbsp; Instant PDF &nbsp;&middot;&nbsp; Free</div>
@@ -1013,11 +1016,11 @@ document.addEventListener('click', function(e){
     <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
-        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input aria-label="Leave this anti-spam field blank" type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
         <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
       </div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
-      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#c1cadd;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
     </form>
   </div>
 </div>
@@ -1039,7 +1042,7 @@ document.addEventListener('click', function(e){
     <div>
       <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
       <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
@@ -1063,11 +1066,11 @@ document.addEventListener('click', function(e){
       <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
       <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
       <div style="display:flex;gap:10px;">
         <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
         <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
       </div>
     </div>
   </div>
@@ -1077,15 +1080,15 @@ document.addEventListener('click', function(e){
   </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#c1cadd;letter-spacing:0.5px;margin-bottom:10px;">
       © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
-      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
-      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
-      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
-      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
-      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+      <a href="/about.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">FAQ</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c1cadd;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 

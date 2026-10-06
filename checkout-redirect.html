@@ -47,11 +47,13 @@
     to { transform: rotate(360deg); }
   }
 </style>
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
-  <div class="card">
+  <div class="card" role="main">
     <div class="spinner"></div>
-    <h1>Taking you to checkout…</h1>
+    <h1 id="hub-content-start" tabindex="-1">Taking you to checkout…</h1>
     <p id="message">Redirecting you to complete your purchase on Etsy.</p>
     <p id="fallback" style="display:none;">
       If you are not redirected automatically,

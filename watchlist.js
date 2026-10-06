@@ -44,13 +44,19 @@
     var items = el.querySelectorAll('.wl-dd-item');
     for(var i = 0; i < items.length; i++){
       items[i].classList.toggle('active', items[i].getAttribute('data-status') === current);
+      items[i].setAttribute('aria-pressed', items[i].getAttribute('data-status') === current ? 'true' : 'false');
     }
   }
 
   function closeAllMenus(except){
     var open = document.querySelectorAll('.wl-dropdown.open');
     for(var i = 0; i < open.length; i++){
-      if(open[i] !== except){ open[i].classList.remove('open'); }
+      if(open[i] !== except){
+        var toggle = open[i].querySelector('.wl-dd-toggle');
+        if(open[i].contains(document.activeElement) && toggle) toggle.focus();
+        open[i].classList.remove('open');
+        if(toggle) toggle.setAttribute('aria-expanded', 'false');
+      }
     }
   }
 
@@ -61,11 +67,14 @@
         paint(el);
         var toggle = el.querySelector('.wl-dd-toggle');
         if(toggle){
+          toggle.setAttribute('aria-expanded', 'false');
+          var menu = el.querySelector('.wl-dd-menu');
+          if(menu){ menu.id = menu.id || 'wl-status-menu-' + g; toggle.setAttribute('aria-controls', menu.id); }
           toggle.addEventListener('click', function(e){
             e.stopPropagation();
             var wasOpen = el.classList.contains('open');
             closeAllMenus();
-            if(!wasOpen){ el.classList.add('open'); }
+            if(!wasOpen){ el.classList.add('open'); toggle.setAttribute('aria-expanded', 'true'); }
           });
         }
         var items = el.querySelectorAll('.wl-dd-item');
@@ -78,6 +87,7 @@
             setStatus(slug, current === val ? null : val);
             paint(el);
             el.classList.remove('open');
+            if(toggle){ toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
           });
         }
       })(groups[g]);

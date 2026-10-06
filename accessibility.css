@@ -1,0 +1,34 @@
+/* Shared keyboard access and readability support. */
+.hub-main-landmark { display: contents; }
+.hub-skip-link {
+  position: fixed; top: 8px; left: 8px; z-index: 2147483647;
+  padding: 12px 18px; background: #f0e8d4; color: #1a2135;
+  font: 700 16px/1.4 Arial, sans-serif; border: 2px solid #1a2135;
+  border-radius: 4px; transform: translateY(-160%);
+}
+.hub-skip-link:focus { transform: translateY(0); }
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #c9a96e !important; outline-offset: 3px !important;
+  box-shadow: 0 0 0 5px #1a2135 !important;
+}
+[id] { scroll-margin-top: 110px; }
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+nav.site-nav-std .nav-sub { opacity: 1 !important; color: #c1cadd !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+footer p, footer .footer-nav a, .footer-brand, .footer-legal,
+.newsletter-note, .nl-note, .aside-label, .aside-key, .aside-link-note,
+.show-meta, .tag, .show-badge, .hero-meta, .hero-eyebrow,
+.section-header-eyebrow, .jump-label, .nav-search-empty,
+.fds-service-tag, .fds-service-group-label, .fds-verdict {
+  font-size: 14px !important;
+}
+.breadcrumb-separator, .breadcrumb > span:not([class]) { color: #e3c890 !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
