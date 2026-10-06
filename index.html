@@ -1305,13 +1305,78 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   }
 }
 </style>
-<link rel="stylesheet" href="/hub-cards.css">
+<style data-home-critical="hub-cards.css">
+/* Sitewide rule: reading content sits in a card. Added by the card wrapper (Oct 2026). */
+.hub-card{background:#363f58;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:30px 34px;margin:0 0 32px;box-sizing:border-box;}
+.hub-card > :first-child{margin-top:0 !important;}
+.hub-card > :last-child{margin-bottom:0 !important;}
+.hub-card img{max-width:100%;}
+hr.divider:has(+ .hub-card), .hub-card + hr.divider, hr.section-divider:has(+ .hub-card), .hub-card + hr.section-divider{display:none;}
+@media (max-width:640px){.hub-card{padding:22px 18px;margin-bottom:24px;}}
+
+</style>
+<link rel="stylesheet" href="/hub-cards.css" media="print" onload="this.media='all'">
 <style id="accessibility-readability">
 /* Keep content readable without waiting for scroll animations. */
 .scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
 footer a[aria-label] { color: #e8dfc8 !important; }
 </style>
-<link rel="stylesheet" href="/accessibility.css?v=1">
+<style data-home-critical="accessibility.css">
+/* Shared keyboard access and readability support. */
+.hub-main-landmark { display: contents; }
+.hub-skip-link {
+  position: fixed; top: 8px; left: 8px; z-index: 2147483647;
+  padding: 12px 18px; background: #f0e8d4; color: #1a2135;
+  font: 700 16px/1.4 Arial, sans-serif; border: 2px solid #1a2135;
+  border-radius: 4px; transform: translateY(-160%);
+}
+.hub-skip-link:focus { transform: translateY(0); }
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #c9a96e !important; outline-offset: 3px !important;
+  box-shadow: 0 0 0 5px #1a2135 !important;
+}
+[id] { scroll-margin-top: 110px; }
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+nav.site-nav-std .nav-sub { opacity: 1 !important; color: #c1cadd !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+footer p, footer .footer-nav a, .footer-brand, .footer-legal,
+.newsletter-note, .nl-note, .aside-label, .aside-key, .aside-link-note,
+.show-meta, .tag, .show-badge, .hero-meta, .hero-eyebrow,
+.section-header-eyebrow, .jump-label, .nav-search-empty,
+.fds-service-tag, .fds-service-group-label, .fds-verdict {
+  font-size: 14px !important;
+}
+.breadcrumb-separator, .breadcrumb > span:not([class]) { color: #e3c890 !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
+
+/* Breadcrumb styles are also emitted in some page bodies. Use higher specificity. */
+.breadcrumb .breadcrumb-separator, .breadcrumb > span.breadcrumb-separator,
+.breadcrumb > span:not([class]), .show-meta > span { color: #e3c890 !important; }
+
+/* Override breadcrumb separator rules emitted later in page-body styles. */
+html body .breadcrumb > span:not([class]),
+html body .breadcrumb .breadcrumb-separator { color: #e3c890 !important; }
+
+/* Rendered-audit readability and keyboard target fixes. */
+html body .tag, html body .show-badge, html body .genre-tag, html body .cta-block-sub { opacity: 1 !important; }
+html body .nav-search-toggle { opacity: 1 !important; color: #f0e8d4 !important; background: #1e2433 !important; }
+html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-area-inset-bottom)) !important; min-width: 44px; min-height: 44px; z-index: 1000 !important; }
+
+/* Direct video links remain outside the player's aspect-ratio container. */
+html body .hub-video-caption { margin: 8px 0 18px; text-align: center; font: 14px/1.6 Arial, sans-serif; }
+html body .hub-video-caption a { display: inline-block; padding: 6px 8px; color: #f0e8d4 !important; text-decoration: underline !important; text-underline-offset: 3px; }
+html body .hub-video-new-tab { font-size: 12px; }
+
+</style>
+<link rel="stylesheet" href="/accessibility.css?v=1" media="print" onload="this.media='all'">
 <script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
@@ -1872,8 +1937,38 @@ document.addEventListener('click', function(e){
   <div style="display:flex;justify-content:center;">
     <div style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:16px;max-width:520px;width:100%;overflow:hidden;">
       <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v19.0"></script>
-      <div class="fb-page"
+      <script>
+(function () {
+  function prepareFacebook() {
+    var target = document.querySelector('.fb-page');
+    if (!target) return;
+    var loaded = false;
+    function loadFacebook() {
+      if (loaded) return;
+      loaded = true;
+      var script = document.createElement('script');
+      script.async = true;
+      script.crossOrigin = 'anonymous';
+      script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0';
+      document.body.appendChild(script);
+    }
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        if (entries.some(function (entry) { return entry.isIntersecting; })) {
+          observer.disconnect();
+          loadFacebook();
+        }
+      }, { rootMargin: '400px 0px' });
+      observer.observe(target);
+    } else {
+      loadFacebook();
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', prepareFacebook, { once: true });
+  else prepareFacebook();
+})();
+</script>
+      <div class="fb-page" style="min-height:600px"
            data-href="https://www.facebook.com/britishtelevisionhub"
            data-tabs="timeline"
            data-width="488"
