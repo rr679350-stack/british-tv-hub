@@ -136,3 +136,18 @@ html body textarea {
     overflow-wrap: anywhere !important;
   }
 }
+
+/* Strong keyboard focus for embedded video and its external alternative. */
+html body iframe[src*="youtube.com/embed/"]:focus-visible,
+html body iframe[src*="youtube-nocookie.com/embed/"]:focus-visible {
+  outline: 4px solid #f0e8d4 !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 7px #1a2135 !important;
+  border-radius: 3px;
+}
+html body .hub-video-caption a:focus-visible,
+html body a.hub-youtube-button:focus-visible {
+  outline: 4px solid #f0e8d4 !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 7px #1a2135 !important;
+}
