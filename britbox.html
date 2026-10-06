@@ -1860,7 +1860,7 @@ document.addEventListener('click', function(e){
         <div class="arrival-date">New episodes weekly into October</div>
         <p>Antonia Thomas and Josh Dylan's contemporary take on Christie's amateur sleuths continues weekly, with Imelda Staunton as Tommy's formidable Aunt Ada.</p>
         <div class="arrival-trailer"><iframe src="https://www.youtube.com/embed/ZQz4aN4RivI?disablekb=0&amp;controls=1" title="Agatha Christie's Tommy &amp; Tuppence: Official Trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-<p class="hub-video-caption"><a href="https://www.youtube.com/watch?v=ZQz4aN4RivI" target="_blank" rel="noopener noreferrer" aria-label="Watch Agatha Christie&#x27;s Tommy &amp; Tuppence: Official Trailer on YouTube">Watch on YouTube <span class="hub-video-new-tab">(opens in a new tab)</span></a></p>
+<p class="hub-video-caption"><a href="https://www.youtube.com/watch?v=ZQz4aN4RivI" target="_blank" rel="noopener noreferrer" aria-label="Watch Agatha Christie&#x27;s Tommy &amp; Tuppence: Official Trailer on YouTube">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
         <div class="tags"><span class="tag">Mystery</span><span class="tag">Agatha Christie</span></div>
         <a class="watch-link" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20">Watch via BritBox on Prime Video →</a>
       </div>
@@ -2266,7 +2266,7 @@ document.addEventListener('click', function(e){
           <div class="arrival-date">${/^[A-Z][a-z]+ \d/.test(show.available) ? 'Available ' + show.available : show.available}</div>
           <p>${show.description}</p>
           ${show.trailer_id ? `<div class="arrival-trailer"><iframe src="https://www.youtube.com/embed/${show.trailer_id}?disablekb=0&amp;controls=1" title="${show.title}: Official Trailer" loading="lazy" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div>
-<p class="hub-video-caption"><a href="https://www.youtube.com/watch?v=${show.trailer_id}" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">Watch on YouTube <span class="hub-video-new-tab">(opens in a new tab)</span></a></p>` : ''}
+<p class="hub-video-caption"><a href="https://www.youtube.com/watch?v=${show.trailer_id}" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>` : ''}
           <div class="tags">${tags}</div>
           <a class="watch-link" href="${show.affiliate_url}">Watch via BritBox on Prime Video →</a>
         `;

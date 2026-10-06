@@ -50,3 +50,15 @@ html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-are
 html body .hub-video-caption { margin: 8px 0 18px; text-align: center; font: 14px/1.6 Arial, sans-serif; }
 html body .hub-video-caption a { display: inline-block; padding: 6px 8px; color: #f0e8d4 !important; text-decoration: underline !important; text-underline-offset: 3px; }
 html body .hub-video-new-tab { font-size: 12px; }
+
+/* Visible, keyboard-accessible direct YouTube buttons. */
+html body a.hub-youtube-button, html body .hub-video-caption a {
+  display: inline-block !important; box-sizing: border-box;
+  background: #c9a96e !important; color: #1a2135 !important;
+  padding: 12px 20px !important; min-height: 44px; border: 2px solid #c9a96e;
+  border-radius: 4px; font: 700 16px/1.5 Arial, sans-serif !important;
+  text-decoration: none !important; letter-spacing: normal !important;
+  text-transform: none !important;
+}
+html body a.hub-youtube-button:hover, html body .hub-video-caption a:hover { background: #e3c890 !important; border-color: #e3c890; }
+html body .hub-video-new-tab { display: block; font-size: 14px; font-weight: 400; }
