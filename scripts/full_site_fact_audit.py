@@ -136,5 +136,12 @@ def run():
     with open(os.path.join(OUT,"report.md"),"w",encoding="utf-8") as f: f.write("\n".join(lines)+"\n")
     print(json.dumps(summary),flush=True)
 
+    # A green workflow must mean the audit actually completed. Any failed batch
+    # makes the run fail after the report is written/uploaded, so API/auth
+    # problems cannot masquerade as a successful sitewide fact check.
+    if errors:
+        print(f"Full sitewide fact audit incomplete: {len(errors)} batch(es) failed.", file=sys.stderr)
+        sys.exit(1)
+
 if __name__=="__main__":
     run()
