@@ -32,3 +32,7 @@ footer p, footer .footer-nav a, .footer-brand, .footer-legal,
     transition-duration: 0.01ms !important; scroll-behavior: auto !important;
   }
 }
+
+/* Breadcrumb styles are also emitted in some page bodies. Use higher specificity. */
+.breadcrumb .breadcrumb-separator, .breadcrumb > span.breadcrumb-separator,
+.breadcrumb > span:not([class]), .show-meta > span { color: #e3c890 !important; }

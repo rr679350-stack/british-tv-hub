@@ -60,7 +60,7 @@
   .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
   .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
   .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.8rem; }
-  .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+  .show-meta span { color: #e3c890; margin: 0 0.4rem; }
   .show-desc { font-size: 1.15rem; color: var(--text-light); line-height: 1.7; margin-bottom: 1rem; }
   .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
