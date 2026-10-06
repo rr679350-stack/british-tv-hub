@@ -62,3 +62,16 @@ html body a.hub-youtube-button, html body .hub-video-caption a {
 }
 html body a.hub-youtube-button:hover, html body .hub-video-caption a:hover { background: #e3c890 !important; border-color: #e3c890; }
 html body .hub-video-new-tab { display: block; font-size: 14px; font-weight: 400; }
+
+/* High-readability informational callouts. */
+html body .streaming-country-note {
+  margin: 0 0 28px !important;
+  padding: 14px 16px !important;
+  background: #f0e8d4 !important;
+  color: #1a2135 !important;
+  border-left: 4px solid #c9a96e;
+  border-radius: 4px;
+  font: 500 16px/1.6 Arial, sans-serif !important;
+  font-style: normal !important;
+}
+html body .streaming-country-note strong { font-weight: 700; }
