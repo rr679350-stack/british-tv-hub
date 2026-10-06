@@ -67,12 +67,45 @@
         var nearbyHeading = frame.closest('section, article, div') && frame.closest('section, article, div').querySelector('h1, h2, h3');
         frame.setAttribute('title', nearbyHeading ? nearbyHeading.textContent.trim() + ' video' : 'British TV Hub video');
       }
+
+      // Explicitly prevent autoplay, even if an old embed URL contains autoplay=1.
+      if (!frame.dataset.hubAutoplayChecked) {
+        try {
+          var embedUrl = new URL(frame.src, window.location.href);
+          if (embedUrl.searchParams.get('autoplay') !== '0') {
+            embedUrl.searchParams.set('autoplay', '0');
+            frame.src = embedUrl.toString();
+          }
+        } catch (e) {}
+        frame.dataset.hubAutoplayChecked = 'true';
+      }
+
       var wrapper = frame.parentElement;
-      var caption = wrapper && wrapper.nextElementSibling;
-      if (!caption || !caption.classList.contains('hub-video-caption')) return;
+      if (!wrapper) return;
+      var caption = wrapper.nextElementSibling;
+
+      // Guarantee a visible Watch on YouTube button immediately below every embed.
+      if (!caption || !caption.classList.contains('hub-video-caption')) {
+        caption = document.createElement('p');
+        caption.className = 'hub-video-caption';
+        wrapper.insertAdjacentElement('afterend', caption);
+      }
+
       var link = caption.querySelector('a');
-      var label = 'Watch ' + frame.title + ' on YouTube (opens in a new tab)';
-      if (link && link.getAttribute('aria-label') !== label) link.setAttribute('aria-label', label);
+      if (!link) {
+        link = document.createElement('a');
+        link.className = 'hub-youtube-button';
+        link.target = '_blank';
+        link.rel = 'noopener';
+        caption.appendChild(link);
+      }
+
+      var videoTitle = frame.title.replace(/\s+video$/i, '').trim() || 'British TV Hub video';
+      var embedMatch = frame.src.match(/\/embed\/([^?&/]+)/);
+      var watchUrl = embedMatch ? 'https://www.youtube.com/watch?v=' + encodeURIComponent(embedMatch[1]) : 'https://www.youtube.com/';
+      link.href = watchUrl;
+      link.textContent = 'Watch ' + videoTitle + ' on YouTube';
+      link.setAttribute('aria-label', 'Watch ' + videoTitle + ' on YouTube (opens in a new tab)');
     });
   }
   labelVideoLinks();
