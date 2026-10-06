@@ -1,0 +1,63 @@
+name: Sitewide Accessibility
+
+on:
+  push:
+    branches: [main]
+    paths: ['**/*.html', '**/*.css', '**/*.js', '**/*.json', 'tools/accessibility/**', '.github/workflows/accessibility.yml']
+  pull_request:
+    paths: ['**/*.html', '**/*.css', '**/*.js', '**/*.json', 'tools/accessibility/**', '.github/workflows/accessibility.yml']
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Scan the live site or the checked-out source'
+        type: choice
+        options: [live, local]
+        default: live
+
+permissions:
+  contents: read
+  statuses: read
+
+concurrency:
+  group: accessibility-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install scanner and browser
+        run: |
+          npm install --prefix tools/accessibility --no-audit --no-fund
+          tools/accessibility/node_modules/.bin/playwright install --with-deps chromium
+      - name: Wait for the matching live deployment
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.target == 'live')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in $(seq 1 60); do
+            state=$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/status" --jq '[.statuses[] | select(.context | test("vercel"; "i"))][0].state // "pending"')
+            if [ "$state" = "success" ]; then exit 0; fi
+            if [ "$state" = "failure" ] || [ "$state" = "error" ]; then echo "Live deployment failed"; exit 1; fi
+            sleep 10
+          done
+          echo "Matching Vercel deployment was not ready within ten minutes"
+          exit 1
+      - name: Scan all pages on desktop and mobile
+        env:
+          AUDIT_TARGET: ${{ github.event_name == 'pull_request' && 'local' || inputs.target || 'live' }}
+          AUDIT_SHA: ${{ github.sha }}
+        run: node tools/accessibility/audit.mjs
+      - name: Save consolidated report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitewide-accessibility-report
+          path: accessibility-report/
+          retention-days: 30
+          if-no-files-found: warn
