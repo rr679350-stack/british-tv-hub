@@ -45,3 +45,8 @@ html body .breadcrumb .breadcrumb-separator { color: #e3c890 !important; }
 html body .tag, html body .show-badge, html body .genre-tag, html body .cta-block-sub { opacity: 1 !important; }
 html body .nav-search-toggle { opacity: 1 !important; color: #f0e8d4 !important; background: #1e2433 !important; }
 html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-area-inset-bottom)) !important; min-width: 44px; min-height: 44px; z-index: 1000 !important; }
+
+/* Direct video links remain outside the player's aspect-ratio container. */
+html body .hub-video-caption { margin: 8px 0 18px; text-align: center; font: 14px/1.6 Arial, sans-serif; }
+html body .hub-video-caption a { display: inline-block; padding: 6px 8px; color: #f0e8d4 !important; text-decoration: underline !important; text-underline-offset: 3px; }
+html body .hub-video-new-tab { font-size: 12px; }

@@ -21,6 +21,18 @@
   }
   labelSupportWidget();
   new MutationObserver(labelSupportWidget).observe(document.body, { childList: true, subtree: true });
+  function labelVideoLinks() {
+    document.querySelectorAll('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]').forEach(function (frame) {
+      var wrapper = frame.parentElement;
+      var caption = wrapper && wrapper.nextElementSibling;
+      if (!caption || !caption.classList.contains('hub-video-caption')) return;
+      var link = caption.querySelector('a');
+      var label = 'Watch ' + (frame.title || 'British TV Hub video') + ' on YouTube (opens in a new tab)';
+      if (link && link.getAttribute('aria-label') !== label) link.setAttribute('aria-label', label);
+    });
+  }
+  labelVideoLinks();
+  new MutationObserver(labelVideoLinks).observe(document.body, { childList: true, subtree: true });
   hideChatSpinner();
   new MutationObserver(hideChatSpinner).observe(document.body, { childList: true, subtree: true });
   document.querySelectorAll('.hub-skip-link').forEach(function (link) {
