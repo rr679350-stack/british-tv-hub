@@ -75,3 +75,19 @@ html body .streaming-country-note {
   font-style: normal !important;
 }
 html body .streaming-country-note strong { font-weight: 700; }
+
+/* Reflow and zoom resilience for media and long content. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html body img, html body video, html body iframe, html body canvas, html body svg {
+  max-width: 100%;
+}
+html body pre, html body code {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+html body pre { overflow-x: auto; }
+html body input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+html body select,
+html body textarea {
+  min-height: 44px;
+}
