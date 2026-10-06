@@ -171,7 +171,7 @@
   --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
   --gold:#c9a96e;--gold2:#dab870;--gold3:#e8d0a0;
   --red:#8b1a2e;--red2:#a01f36;
-  --text:#e8dfc8;--muted:#9090a8;--muted2:#7070888;
+  --text:#e8dfc8;--muted:#c1cadd;--muted2:#7070888;
   --border:#3d4a60;--border2:#4d5a70;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -180,14 +180,14 @@ body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;m
 nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
 .nav-brand{padding:16px 0}
 .nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
-.nav-sub{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic;color:#9090b8}
+.nav-sub{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic;color:#9090b8}
 .nav-links{display:flex;align-items:center}
-.nlink{padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
+.nlink{padding:20px 11px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
 .nlink:hover{color:#ffffff}
 .nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
-.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 6px;padding:11px 14px !important;font-size:11px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
+.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 6px;padding:11px 14px !important;font-size:14px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
 .nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
-.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 12px !important;font-size:11px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
+.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 12px !important;font-size:14px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
 .nav-nl-btn:hover{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
 #hero{position:relative;overflow:hidden;width:100vw !important;max-width:100vw !important;margin-left:calc(-50vw + 50%) !important;margin-right:calc(-50vw + 50%) !important;}
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,58px);font-weight:400;color:#eee8d0;line-height:1.15;margin-bottom:16px;text-align:left}
@@ -196,28 +196,28 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .hero-p{font-family:'Raleway',sans-serif;font-size:14px;color:#c8c4b4;max-width:400px;line-height:1.8;margin-bottom:10px;letter-spacing:0.3px;text-align:left}
 .hero-join{font-family:'Crimson Text',serif;font-size:16px;color:#c9a96e;font-style:italic;margin-bottom:32px;text-align:left}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-red{background:var(--red);border:none;color:#f5e8d0;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
+.btn-red{background:var(--red);border:none;color:#f5e8d0;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
 .btn-red:hover{background:var(--red2)}
 .btn-ghost{ background: var(--gold); border: 1px solid var(--gold); color: #1a2135; padding: 12px 24px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; display: inline-block; transition: all 0.2s; font-weight: 600; border-radius: 2px; text-decoration: none; }
 .btn-ghost:hover{background:var(--gold);color:var(--bg)}
-.btn-gold{background:#c9a96e;border:none;color:#1e2433;padding: 12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s;text-decoration:none;font-weight:600}
+.btn-gold{background:#c9a96e;border:none;color:#1e2433;padding: 12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s;text-decoration:none;font-weight:600}
 .btn-gold:hover{background:#dab870;color:#100806}
 .page{display:none;max-width:980px;margin:0 auto;padding:48px 24px;background:#2c3345}
 .page.on{display:block}
 .page-head{margin-bottom:32px;border-bottom:1px solid #4d5a70;padding-bottom:24px}
 .page-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#c9a96e;margin-bottom:6px}
 .page-sub{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#b0bcd0;font-style:italic}
-.page-date{font-family:'Raleway',sans-serif;font-size:11px;color:#9090b8;letter-spacing:1px;margin-top:6px}
+.page-date{font-family:'Raleway',sans-serif;font-size:14px;color:#9090b8;letter-spacing:1px;margin-top:6px}
 .trend-item{display:flex;gap:20px;align-items:flex-start;padding:20px;background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 8px rgba(0,0,0,0.25);margin-bottom:10px;transition:border-color 0.2s}
 .trend-item:hover{border-color:var(--border2)}
 .trend-num{font-family:'Playfair Display',serif;font-size:28px;color:#6070a0;min-width:36px;line-height:1}
 .trend-content{flex:1}
 .trend-title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:5px}
 .trend-name{font-family:'Playfair Display',serif;font-size:19px;color:#dab870}
-.trend-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px}
+.trend-genre{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px}
 .trend-desc{font-family:'Crimson Text',serif;font-size:16px;color:#d4cdb8;line-height:1.6}
-.trend-source{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px;letter-spacing:1px}
-.badge{display:inline-block;padding:3px 10px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
+.trend-source{font-family:'Raleway',sans-serif;font-size:14px;color:#8898b8;margin-top:8px;letter-spacing:1px}
+.badge{display:inline-block;padding:3px 10px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
 .badge:hover{opacity:0.8}
 .b-britbox{background:#3a0a18;color:#e080a0;border:1px solid #6a1a30}
 .b-acorn{background:#0a2808;color:#70c050;border:1px solid #1a4010}
@@ -237,39 +237,39 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 @media (max-width:720px){.lobby-grid{grid-template-columns:repeat(2,1fr) !important;max-width:420px !important;}.lobby-h1{font-size:32px !important;}}
 .card-num{font-family:'Playfair Display',serif;font-size:12px;color:#8898b8;letter-spacing:2px;margin-bottom:10px}
 .card-name{font-family:'Playfair Display',serif;font-size:17px;color:#dab870;margin-bottom:5px;line-height:1.3}
-.card-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
+.card-genre{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
 .card-desc{font-family:'Crimson Text',serif;font-size:15px;color:#d4cdb8;line-height:1.6;margin-bottom:14px}
-.card-watch-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:6px}
+.card-watch-label{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:6px}
 @media(max-width:700px){.top5-grid{grid-template-columns:1fr}}
 .poll-wrap{max-width:640px}
 .poll-box{background:#1e2433;border:1px solid #3d4a60;padding:28px;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .poll-q{font-family:'Playfair Display',serif;font-size:22px;color:#c9a96e;margin-bottom:6px;line-height:1.4}
-.poll-meta{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:24px}
+.poll-meta{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:24px}
 .poll-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;cursor:pointer}
 .poll-row input{accent-color:var(--red);width:16px;height:16px;cursor:pointer;flex-shrink:0}
 .poll-name{font-family:'Crimson Text',serif;font-size:18px;color:#e0d8c0;min-width:150px}
 .poll-track{flex:1;background:#1e2433;height:4px}
 .poll-fill{height:4px;background:var(--red);width:0%;transition:width 0.5s ease}
 .poll-pct{font-family:'Raleway',sans-serif;font-size:13px;color:#b0c0d8;min-width:40px;text-align:right}
-.poll-submit{margin-top:20px;background:var(--red);border:none;color:#f5e8d0;padding:12px 28px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
+.poll-submit{margin-top:20px;background:var(--red);border:none;color:#f5e8d0;padding:12px 28px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
 .poll-submit:hover{background:var(--red2)}
 .poll-submit:disabled{opacity:0.45;cursor:not-allowed}
 .poll-fb{margin-top:16px;font-family:'Crimson Text',serif;font-size:15px;color:#b0b8cc}
 .poll-fb a{color:#c9a96e;text-decoration:none}
 .poll-fb a:hover{text-decoration:underline}
-.nlp-eyebrow{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:10px}
+.nlp-eyebrow{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:10px}
 .nlp-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8d0a0;margin-bottom:8px}
 .nlp-sub{font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;font-style:italic;margin-bottom:16px;line-height:1.55}
 .nlp-row{display:flex;gap:8px}
 .nlp-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:11px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;outline:none}
-.nlp-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
-.nlp-note{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px}
-.nlp-skip{display:block;margin-top:14px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#5060a0;text-align:center;cursor:pointer;background:none;border:none;width:100%}
+.nlp-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.nlp-note{font-family:'Raleway',sans-serif;font-size:14px;color:#8898b8;margin-top:8px}
+.nlp-skip{display:block;margin-top:14px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:#5060a0;text-align:center;cursor:pointer;background:none;border:none;width:100%}
 @media(max-width:700px){
   nav{padding:0 12px;flex-wrap:wrap}
   .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
-  .nlink{padding:14px 10px;font-size:11px}
-  .nav-guide-btn,.nav-nl-btn{font-size:11px !important;padding:8px 12px !important}
+  .nlink{padding:14px 10px;font-size:14px}
+  .nav-guide-btn,.nav-nl-btn{font-size:14px !important;padding:8px 12px !important}
   .hero-h1{font-size:32px}
   .page{padding:32px 16px}
   .watch-actions{width:100%}
@@ -1117,7 +1117,7 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-tea{position:relative;display:inline-flex;align-items:center;}
 .nav-tea-link{font-size:25px;text-decoration:none;line-height:1;padding:6px 0;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
 .nav-tea-link:hover,.nav-tea-link:focus{transform:scale(1.15);filter:grayscale(0);outline:none;}
-.nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:11px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
+.nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:14px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
 .nav-tea-tooltip strong{display:block;color:#c9a96e;font-family:'Playfair Display',serif;font-size:13px;font-weight:400;font-style:normal;margin-bottom:2px;}
 .nav-tea:hover .nav-tea-tooltip,.nav-tea-link:focus + .nav-tea-tooltip{opacity:1;visibility:visible;transform:translateY(0);}
 /* Discover dropdown */
@@ -1133,7 +1133,7 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 @media (min-width:641px) and (max-width:1200px){ .nav-dropdown-menu{ flex-wrap:wrap; width:min(560px, calc(100vw - 32px)); row-gap:14px; } .nav-dropdown-col{ flex:1 1 45%; border-right:none; } }
 .nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
 .nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
-.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
+.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:14px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
 .nav-dropdown-label:first-child{ border-top:none; margin-top:0; padding-top:6px; }
 @media (max-width: 1300px) {
   .nav-search-box { right: auto; left: 0; }
@@ -1170,10 +1170,10 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   .nav-brand{ justify-self:center !important; padding:6px 0 !important; }
   .nav-brand img{ height:38px !important; }
   .nav-links{ flex-wrap:wrap !important; justify-content:center !important; row-gap:0 !important; column-gap:0 !important; }
-  nav.site-nav-std .nlink, .nlink{ font-size:10.5px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
+  nav.site-nav-std .nlink, .nlink{ font-size:14px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
   .nav-dropdown-toggle{ padding:7px 6px !important; }
   .nav-search{ justify-self:center !important; margin-top:2px; }
-  .nav-search-toggle{ padding:7px 12px !important; font-size:10px !important; }
+  .nav-search-toggle{ padding:7px 12px !important; font-size:14px !important; }
   .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
 }
 </style>
@@ -1306,6 +1306,11 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 }
 </style>
 <link rel="stylesheet" href="/hub-cards.css">
+<style id="accessibility-readability">
+/* Keep content readable without waiting for scroll animations. */
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+</style>
 </head>
 <body>
 
@@ -1403,8 +1408,8 @@ document.addEventListener('click', function(e){
 
 <div id="install-banner" style="display:none;background:#1a2135;border-bottom:1px solid #3d4a60;padding:18px 24px;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center;">
   <p style="margin:0;font-family:'Raleway',sans-serif;font-size:15px;color:#c8c0a8;">&#128241; Add British TV Hub to your phone for quick, one-tap access.</p>
-  <button type="button" id="install-banner-btn" style="background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;cursor:pointer;white-space:nowrap;border-radius:2px;">Add to Your Phone</button>
-  <button type="button" id="install-banner-dismiss" aria-label="Dismiss" style="background:transparent;border:none;color:#8a93a8;font-size:22px;cursor:pointer;padding:0 4px;line-height:1;">&times;</button>
+  <button type="button" id="install-banner-btn" style="background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-weight:700;cursor:pointer;white-space:nowrap;border-radius:2px;">Add to Your Phone</button>
+  <button type="button" id="install-banner-dismiss" aria-label="Dismiss" style="background:transparent;border:none;color:#c1cadd;font-size:22px;cursor:pointer;padding:0 4px;line-height:1;">&times;</button>
   <div id="install-ios-steps" style="display:none;width:100%;max-width:320px;margin:6px auto 0;padding:12px 16px;background:#2c3345;border:1px solid #3d4a60;font-family:'Raleway',sans-serif;font-size:12px;color:#c9c2b0;line-height:1.7;text-align:left;">
     Tap the <strong style="color:#f0e8d4;">Share</strong> icon in Safari, then choose <strong style="color:#f0e8d4;">&ldquo;Add to Home Screen.&rdquo;</strong>
   </div>
@@ -1461,7 +1466,7 @@ document.addEventListener('click', function(e){
 <main>
 <div id="homepage-lobby" style="position:relative;background:linear-gradient(to bottom,rgba(10,14,24,0.05),rgba(10,14,24,0.3)),url('/hero.webp') center/cover no-repeat;min-height:490px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px 44px;border-bottom:1px solid #3d4a60;">
   <div class="lobby-header" style="position:relative;width:100%;display:flex;flex-direction:column;align-items:center;">
-  <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Watch &middot; Read &middot; Discover</p>
+  <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:4px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Watch &middot; Read &middot; Discover</p>
   <div class="steam-animation" style="position:absolute;left:calc(16% - 12px);top:56%;width:75px;height:145px;transform:translate(-50%,-100%);opacity:0.22;filter:blur(3px);pointer-events:none;z-index:3;transform-origin:bottom center;">
     <svg viewBox="0 0 75 145" style="width:100%;height:100%;" aria-hidden="true">
       <path d="M37,143 C33,124 41,112 36,94 C32,78 40,67 35,50 C31,36 39,28 34,10" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round"/>
@@ -1472,10 +1477,10 @@ document.addEventListener('click', function(e){
   <h1 class="lobby-h1" style="font-family:'Playfair Display',serif;font-weight:400;font-size:46px;line-height:1.15;color:#f6f1e6;margin:0 0 16px;max-width:700px;text-shadow:0 3px 14px rgba(0,0,0,0.9);">The Home for British <em style="color:#e6c778;font-style:normal;">Mysteries &amp; Dramas</em> — Classics and New Favourites</h1>
   <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#c9a96e;max-width:460px;margin:0 0 30px;letter-spacing:0.3px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Expert guides, streaming updates, and book recommendations to help you discover your next favourite British mystery.</p>
 
-  <a href="/start-here.html" class="start-here-cta" style="display:inline-block;background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;margin-bottom:36px;">New to British TV? Start Here &rarr;</a>
+  <a href="/start-here.html" class="start-here-cta" style="display:inline-block;background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;margin-bottom:36px;">New to British TV? Start Here &rarr;</a>
   </div>
 
-  <div class="lobby-divider-label" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a93a8;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
+  <div class="lobby-divider-label" style="font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c1cadd;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
     <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
     <span style="white-space:nowrap;">What are you looking for today?</span>
     <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
@@ -1485,22 +1490,22 @@ document.addEventListener('click', function(e){
     <a href="/shows-index.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><rect x="4" y="7" width="24" height="16" rx="1.5" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M11 27h10M16 23v4" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round"/><path d="M11 4l5 3 5-3" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Find a Show</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Explore hundreds of British mysteries, dramas and hidden gems.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Explore hundreds of British mysteries, dramas and hidden gems.</p>
     </a>
     <a href="/books" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><path d="M16 8c-2.5-1.8-6-2.4-10-2v18c4 -.4 7.5.2 10 2 2.5-1.8 6-2.4 10-2V6c-4-.4-7.5.2-10 2Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 8v18" fill="none" stroke="#c9a96e" stroke-width="1.4"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Find a Book</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Discover novels behind your favourite television series.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Discover novels behind your favourite television series.</p>
     </a>
     <a href="/streaming.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M13 11l8 5-8 5V11Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">See What's Streaming</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Find what's new on BritBox, Acorn TV and more.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Find what's new on BritBox, Acorn TV and more.</p>
     </a>
     <a href="/weekend-binge-guide.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><rect x="5" y="6" width="22" height="16" rx="1.5" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M13 26h6M16 22v4" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round"/><path d="M13 10l7 4-7 4v-8Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Weekend Binge</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Six shows you can finish in a single weekend, six episodes or fewer.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Six shows you can finish in a single weekend, six episodes or fewer.</p>
     </a>
   </div>
 
@@ -1526,16 +1531,16 @@ document.addEventListener('click', function(e){
 </style>
 <div id="october-guide">
   <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; October</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; October</div>
     <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub October Guide: <em style="color:#d9bd86;">Dark Nights &amp; Ghost Stories</em></h2>
     <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Spooky season, British style. Shadowy mysteries, Agatha Christie&rsquo;s eeriest cases, a ghost story tradition and a Halloween mystery to build yourself, all in one place.</p></div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;">
-      <a href="/dark-october-night-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">13 Mysteries for a Dark October Night</a>
-      <a href="/agatha-christie-spooky-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Agatha Christie&rsquo;s Spookiest Mysteries</a>
-      <a href="/ghost-story-for-halloween.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">A Ghost Story for Halloween</a>
-      <a href="/halloween-mystery-builder.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Build Your Halloween Mystery</a>
+      <a href="/dark-october-night-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">13 Mysteries for a Dark October Night</a>
+      <a href="/agatha-christie-spooky-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Agatha Christie&rsquo;s Spookiest Mysteries</a>
+      <a href="/ghost-story-for-halloween.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">A Ghost Story for Halloween</a>
+      <a href="/halloween-mystery-builder.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Build Your Halloween Mystery</a>
     </div>
-    <a href="/dark-october-night-mysteries.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Start with the Picks &rarr;</a>
+    <a href="/dark-october-night-mysteries.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Start with the Picks &rarr;</a>
   </div>
   <div class="og-media"><img src="/october-guide-hero.webp" alt="A candlelit library on an autumn night, fire in the hearth and a moonlit manor house through the window"></div>
 </div>
@@ -1544,27 +1549,27 @@ document.addEventListener('click', function(e){
 #pbdd{max-width:900px;margin:40px auto !important;padding:0 20px !important;box-sizing:border-box;}
 #pbdd *{box-sizing:border-box;}
 #pbdd .pbdd-card{background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:32px 32px 26px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;text-align:left;}
-#pbdd .pbdd-kicker{font-family:'Raleway',sans-serif !important;font-size:11px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
+#pbdd .pbdd-kicker{font-family:'Raleway',sans-serif !important;font-size:14px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
 #pbdd h2{text-wrap:balance;font-family:'Playfair Display',serif !important;font-size:clamp(1.5rem,3.2vw,1.9rem) !important;font-weight:400 !important;color:#e8dfc8 !important;line-height:1.25 !important;margin:0 0 14px !important;padding:0 !important;text-align:left !important;}
 #pbdd p.pbdd-text{font-family:'Crimson Text',serif !important;font-size:17px !important;line-height:1.6 !important;color:#d6d0bf !important;margin:0 0 20px !important;padding:0 !important;text-align:left !important;}
-#pbdd .pbdd-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
+#pbdd .pbdd-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
 #pbdd .pbdd-btn:hover{background:#dab870;}
-#pbdd .pbdd-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
+#pbdd .pbdd-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
 #pbdd .pbdd-btn2:hover{background:rgba(201,169,110,0.12);}
 @media(max-width:600px){#pbdd .pbdd-btn2{margin-left:0;}}
 #pbdd .pbdd-aside{background:rgba(10,21,32,0.45);border:1px solid rgba(201,168,76,0.18);border-radius:10px;padding:18px 20px;align-self:start;}
-#pbdd .pbdd-aside-h{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
+#pbdd .pbdd-aside-h{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
 #pbdd .pbdd-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:'Crimson Text',serif;font-size:16px;color:#d6d0bf;}
 #pbdd .pbdd-row:last-child{border-bottom:0;}
-#pbdd .pbdd-row a{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
+#pbdd .pbdd-row a{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
 #pbdd .pbdd-note{font-size:14px;color:#a8a494;}
-#pbdd p.pbdd-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+#pbdd p.pbdd-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#c1cadd !important;margin:0 !important;padding:0 !important;text-align:left !important;}
 @media (max-width:700px){#pbdd .pbdd-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
 #pbdd .pbdd-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
 #pbdd .pbdd-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
 #pbdd .pbdd-banner-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:700;color:#1a2135;line-height:1.1;}
 #pbdd .pbdd-banner-pill{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#e8dfc8;background:#1a2135;padding:9px 16px;border-radius:999px;white-space:nowrap;}
-@media (max-width:700px){#pbdd .pbdd-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#pbdd .pbdd-banner-pill{white-space:normal;font-size:11px;}}
+@media (max-width:700px){#pbdd .pbdd-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#pbdd .pbdd-banner-pill{white-space:normal;font-size:14px;}}
 </style>
 <section id="pbdd" aria-label="Prime Big Deal Days">
   <div class="pbdd-card">
@@ -1598,27 +1603,27 @@ document.addEventListener('click', function(e){
 #cyber26{max-width:900px;margin:40px auto !important;padding:0 20px !important;box-sizing:border-box;}
 #cyber26 *{box-sizing:border-box;}
 #cyber26 .cy-card{background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:32px 32px 26px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;text-align:left;}
-#cyber26 .cy-kicker{font-family:'Raleway',sans-serif !important;font-size:11px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
+#cyber26 .cy-kicker{font-family:'Raleway',sans-serif !important;font-size:14px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
 #cyber26 h2{text-wrap:balance;font-family:'Playfair Display',serif !important;font-size:clamp(1.5rem,3.2vw,1.9rem) !important;font-weight:400 !important;color:#e8dfc8 !important;line-height:1.25 !important;margin:0 0 14px !important;padding:0 !important;text-align:left !important;}
 #cyber26 p.cy-text{font-family:'Crimson Text',serif !important;font-size:17px !important;line-height:1.6 !important;color:#d6d0bf !important;margin:0 0 20px !important;padding:0 !important;text-align:left !important;}
-#cyber26 .cy-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
+#cyber26 .cy-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
 #cyber26 .cy-btn:hover{background:#dab870;}
-#cyber26 .cy-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
+#cyber26 .cy-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
 #cyber26 .cy-btn2:hover{background:rgba(201,169,110,0.12);}
 @media(max-width:600px){#cyber26 .cy-btn2{margin-left:0;}}
 #cyber26 .cy-aside{background:rgba(10,21,32,0.45);border:1px solid rgba(201,168,76,0.18);border-radius:10px;padding:18px 20px;align-self:start;}
-#cyber26 .cy-aside-h{font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
+#cyber26 .cy-aside-h{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
 #cyber26 .cy-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:'Crimson Text',serif;font-size:16px;color:#d6d0bf;}
 #cyber26 .cy-row:last-child{border-bottom:0;}
-#cyber26 .cy-row a{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
+#cyber26 .cy-row a{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
 #cyber26 .cy-note{font-size:14px;color:#a8a494;}
-#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#9090a8 !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#c1cadd !important;margin:0 !important;padding:0 !important;text-align:left !important;}
 @media (max-width:700px){#cyber26 .cy-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
 #cyber26 .cy-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
 #cyber26 .cy-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
 #cyber26 .cy-banner-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:700;color:#1a2135;line-height:1.1;}
 #cyber26 .cy-banner-pill{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#e8dfc8;background:#1a2135;padding:9px 16px;border-radius:999px;white-space:nowrap;}
-@media (max-width:700px){#cyber26 .cy-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#cyber26 .cy-banner-pill{white-space:normal;font-size:11px;}}
+@media (max-width:700px){#cyber26 .cy-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#cyber26 .cy-banner-pill{white-space:normal;font-size:14px;}}
 </style>
 <section id="cyber26" aria-label="Cyber Specials sale">
   <div class="cy-card">
@@ -1648,7 +1653,7 @@ document.addEventListener('click', function(e){
 
 
 <div style="padding:56px 40px;border-bottom:1px solid #3d4a60;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">Popular Guides</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">Popular Guides</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 40px;text-align:center;">The Guides Readers Turn to Most</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
     <a href="/fall-preview-2026.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
@@ -1656,7 +1661,7 @@ document.addEventListener('click', function(e){
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Autumn 2026 British TV Preview</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">The major new British mystery and drama premieres landing on BritBox, Acorn TV and PBS this autumn.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Preview &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Preview &rarr;</span>
       </div>
     </a>
     <a href="/shows-index.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
@@ -1664,7 +1669,7 @@ document.addEventListener('click', function(e){
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Browse the Full Shows Index</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Every British mystery and drama on the site, sorted by genre, streaming service, and title.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Browse Shows &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Browse Shows &rarr;</span>
       </div>
     </a>
     <a href="/streaming.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
@@ -1672,7 +1677,7 @@ document.addEventListener('click', function(e){
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Where to Watch — BritBox vs. Acorn TV</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">A full breakdown of BritBox, Acorn TV, and PBS Passport, plus a head-to-head comparison to help you choose.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Guide &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Guide &rarr;</span>
       </div>
     </a>
     <a href="/midsomer-murders-beginners-guide.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
@@ -1680,118 +1685,118 @@ document.addEventListener('click', function(e){
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">New to Midsomer Murders?</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Tom Barnaby vs. John Barnaby, whether to watch in order, and exactly where to start.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Read the Guide &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Read the Guide &rarr;</span>
       </div>
     </a>
   </div>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;text-align:center;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">YOUR PERSONAL TRACKER</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">YOUR PERSONAL TRACKER</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">Track Every Show You're Watching</h2>
   <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 28px;max-width:600px;margin-left:auto;margin-right:auto;">Save your Want to Watch, Watching, and Finished lists. No account required.</p>
-  <a href="/watch-list.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Start Your Watch List &rarr;</a>
+  <a href="/watch-list.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Start Your Watch List &rarr;</a>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">THIS MONTH</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">THIS MONTH</div>
   <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">New on BritBox, Acorn TV &amp; PBS Masterpiece</h2>
   <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 28px;">New seasons and premieres arriving this month, all in one place.</p>
-  <p style="font-family:'Crimson Text',serif;font-size:15.5px;font-style:italic;color:#8a94ab;margin:-16px 0 28px;">Streaming details here are for US viewers. Watching from the UK, Canada, Australia or New Zealand? Services and catalogues differ from country to country, so a show may live on a different platform where you are.</p></div>
+  <p style="font-family:'Crimson Text',serif;font-size:15.5px;font-style:italic;color:#c1cadd;margin:-16px 0 28px;">Streaming details here are for US viewers. Watching from the UK, Canada, Australia or New Zealand? Services and catalogues differ from country to country, so a show may live on a different platform where you are.</p></div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="signora-volpe-s3.webp" alt="Emilia Fox in Signora Volpe Season 3 on Acorn TV" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 5</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 5</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Signora Volpe &mdash; Season 3</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Emilia Fox returns as former MI6 officer Sylvia Fox for three new feature-length mysteries in the Umbrian countryside.</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/signora-volpe.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
+          <a href="/shows/signora-volpe.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 13</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 13</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Ludwig &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Mitchell returns as puzzle-setter John Taylor, now an official police consultant tackling impossible crimes.</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/ludwig.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+          <a href="/shows/ludwig.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="maigret-s2-wainwright.webp" alt="Benjamin Wainwright as Maigret in Maigret Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:55% 10%;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 18</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Maigret &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Benjamin Wainwright returns as Simenon&rsquo;s Parisian detective for three new cases, with turmoil brewing at La Brigade Criminelle.</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/maigret.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
+          <a href="/shows/maigret.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="the-gold-s2-boyce.webp" alt="Hugh Bonneville in The Gold Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 18</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">The Gold &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">The second and final season follows the hunt for the missing half of the Brink&rsquo;s-Mat gold, with Hugh Bonneville, Jack Lowden and Tom Cullen.</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/the-gold.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
+          <a href="/shows/the-gold.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="britbox-time-s3.webp" alt="Time Season 3 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 22</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 22</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Time &mdash; Season 3</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Tennant and Siobhan Finneran lead Jimmy McGovern&rsquo;s BAFTA-winning anthology drama&rsquo;s move to a Young Offenders Institution.</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/time.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+          <a href="/shows/time.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 22 on BritBox</p>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 22 on BritBox</p>
       </div>
     </div>
   </div>
   <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 24px 22px;margin-top:20px;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:6px;">Also Arriving This Month</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:6px;">Also Arriving This Month</div>
     <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 14px;line-height:1.25;">New to Acorn TV in Late October</h3>
       <div style="padding:16px 0;border-top:1px solid #3d4a60;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">New to Acorn TV &middot; October 19</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">New to Acorn TV &middot; October 19</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 6px;line-height:1.25;">The Red King</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0;padding:0;">Anjli Mohindra plays a police sergeant sent to a remote island, where a missing teenager&rsquo;s case leads into a secretive religious past. Six episodes, weekly through November.</p>
       </div>
       <div style="padding:16px 0;border-top:1px solid #3d4a60;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">New to Acorn TV &middot; October 26</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:6px;">New to Acorn TV &middot; October 26</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 6px;line-height:1.25;">Wolf</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0;padding:0;">Ukweli Roach is DI Jack Caffery in this adaptation of Mo Hayder&rsquo;s novels, with Juliet Stevenson and Sacha Dhawan. All six episodes arrive at once.</p>
       </div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;">
-      <a href="/fall-preview-2026.html#acorn" style="display:inline-block;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">See the Autumn Preview &rarr;</a>
-      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:inline-block;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
+      <a href="/fall-preview-2026.html#acorn" style="display:inline-block;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">See the Autumn Preview &rarr;</a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:inline-block;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
     </div>
   </div>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
   <div style="max-width:1100px;margin:0 auto;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">NOW ON YOUTUBE</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">NOW ON YOUTUBE</div>
     <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">British Mystery &amp; Drama Trailers on YouTube</h2>
     <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:640px;margin-left:auto;margin-right:auto;text-align:center;">Curated British mystery and drama trailers from BritBox, Acorn TV, and PBS &mdash; all in one feed.</p>
     <div style="max-width:720px;margin:0 auto;">
@@ -1804,7 +1809,7 @@ document.addEventListener('click', function(e){
       <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;color:#b0bcd4;margin:14px 0 0;text-align:center;">Ludwig Season 2 &mdash; Official Trailer</p>
     </div>
     <div style="margin-top:24px;text-align:center;">
-      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Explore More Trailers &rarr;</a>
+      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Explore More Trailers &rarr;</a>
     </div>
   </div>
 </div>
@@ -1813,17 +1818,17 @@ document.addEventListener('click', function(e){
   <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
 <div class="nl-card">
     <div style="flex:1 1 300px;min-width:0;">
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
       <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
       <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
     </div>
     <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
-        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" aria-label="Leave this anti-spam field blank" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
       </div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
       <div style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
     </form>
   </div>
@@ -1832,7 +1837,7 @@ document.addEventListener('click', function(e){
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1a2135;">
   <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;max-width:1100px;margin:0 auto;">
     <div style="flex:1;min-width:320px;">
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">From Screen to Page</div>
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">From Screen to Page</div>
       <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 24px;">This Month's British TV Hub Book Pick</h2>
       <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-20" target="_blank" rel="nofollow sponsored" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:28px 32px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
         <div style="flex:1;min-width:220px;">
@@ -1840,10 +1845,10 @@ document.addEventListener('click', function(e){
           <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.3;">The Crow Trap</h3>
           <p style="font-family:'Crimson Text',serif;font-size:15.5px;color:#c8c0a8;line-height:1.6;margin:0;">The novel that introduced Vera Stanhope.</p>
         </div>
-        <span style="display:inline-block;flex-shrink:0;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:12px 22px;border-radius:2px;">Start Reading &rarr;</span>
+        <span style="display:inline-block;flex-shrink:0;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:12px 22px;border-radius:2px;">Start Reading &rarr;</span>
       </a>
       <div style="margin-top:20px;">
-        <a href="/books" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;text-decoration:none;background:transparent;border:1px solid #c9a96e;padding:11px 22px;display:inline-block;">Explore Books Behind the Shows &rarr;</a>
+        <a href="/books" style="font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;text-decoration:none;background:transparent;border:1px solid #c9a96e;padding:11px 22px;display:inline-block;">Explore Books Behind the Shows &rarr;</a>
       </div>
     </div>
     <div style="flex:1;min-width:320px;max-width:480px;">
@@ -1855,11 +1860,11 @@ document.addEventListener('click', function(e){
 
 
 <div style="padding:56px 40px;border-bottom:1px solid #3d4a60;background:#1a2135;text-align:center;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Real Fans, Real Conversations</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Real Fans, Real Conversations</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 12px;">What British TV Fans Are Talking About Right Now</h2>
   <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 auto 24px;max-width:560px;">Live from British TV Hub's Facebook page — the latest posts and the conversation happening around them, right now.</p>
   <div style="margin-bottom:28px;">
-    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:13px 26px;display:inline-block;border-radius:2px;text-decoration:none;">Join the Conversation &rarr;</a>
+    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:13px 26px;display:inline-block;border-radius:2px;text-decoration:none;">Join the Conversation &rarr;</a>
   </div>
   <div style="display:flex;justify-content:center;">
     <div style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:16px;max-width:520px;width:100%;overflow:hidden;">
@@ -1922,7 +1927,7 @@ document.addEventListener('click', function(e){
       <div style="flex:1;text-align:center;padding:0 24px;">
         <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Share British TV Hub with a Friend</h3>
         <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
-        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
         <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
       </div>
     </div>
@@ -1943,7 +1948,7 @@ document.addEventListener('click', function(e){
       <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
       <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
-      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
@@ -1988,7 +1993,7 @@ document.addEventListener('click', function(e){
       <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
       <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 
