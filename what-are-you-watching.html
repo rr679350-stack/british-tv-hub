@@ -388,7 +388,7 @@ document.addEventListener('click', function(e){
       </div>
 
       <button class="wyw-submit-btn" type="submit">Share What I'm Watching &rarr;</button>
-      <p class="wyw-form-status" id="wyw-form-status">Thank you — your submission has been sent.</p>
+      <p class="wyw-form-status" id="wyw-form-status" role="status" aria-live="polite" aria-atomic="true" style="display:block;"></p>
     </form>
     <p class="wyw-form-note">Please don't include private information. Submissions may be reviewed before appearing publicly.</p>
   </div>
@@ -470,6 +470,7 @@ document.addEventListener('DOMContentLoaded', function(){
       headers: { 'Accept': 'application/json' }
     }).then(function(res){
       if(res.ok){
+        status.textContent = 'Thank you — your submission has been sent.';
         status.style.display = 'block';
         form.reset();
         document.getElementById('wyw-char-count').textContent = '0 / 150';
