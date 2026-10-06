@@ -8,6 +8,18 @@
       }
     });
   }
+  function labelFloatingChatLandmark() {
+    document.querySelectorAll('body > div[style*="position: fixed"], body > div[style*="position:fixed"]').forEach(function (box) {
+      if (box.id === 'backToTop' || box.hasAttribute('role')) return;
+      if (box.querySelector('iframe[id*="chatbase"], [id*="chatbase"], iframe[src*="chatbase"]')) {
+        box.setAttribute('role', 'region');
+        box.setAttribute('aria-label', 'Chat support');
+      }
+    });
+  }
+  labelFloatingChatLandmark();
+  new MutationObserver(labelFloatingChatLandmark).observe(document.body, { childList: true, subtree: true });
+
   function labelSupportWidget() {
     var button = document.getElementById('bmc-wbtn');
     if (button && !button.hasAttribute('role')) {
