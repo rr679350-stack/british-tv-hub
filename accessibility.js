@@ -72,10 +72,21 @@
       if (!frame.dataset.hubAutoplayChecked) {
         try {
           var embedUrl = new URL(frame.src, window.location.href);
+          var changed = false;
           if (embedUrl.searchParams.get('autoplay') !== '0') {
             embedUrl.searchParams.set('autoplay', '0');
-            frame.src = embedUrl.toString();
+            changed = true;
           }
+          // Ask YouTube to display captions by default when captions exist.
+          if (embedUrl.searchParams.get('cc_load_policy') !== '1') {
+            embedUrl.searchParams.set('cc_load_policy', '1');
+            changed = true;
+          }
+          if (!embedUrl.searchParams.get('cc_lang_pref')) {
+            embedUrl.searchParams.set('cc_lang_pref', 'en');
+            changed = true;
+          }
+          if (changed) frame.src = embedUrl.toString();
         } catch (e) {}
         frame.dataset.hubAutoplayChecked = 'true';
       }
