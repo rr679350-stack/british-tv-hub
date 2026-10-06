@@ -8,6 +8,19 @@
       }
     });
   }
+  function labelSupportWidget() {
+    var button = document.getElementById('bmc-wbtn');
+    if (button && !button.hasAttribute('role')) {
+      button.setAttribute('role', 'region');
+      button.setAttribute('aria-label', 'Support British TV Hub');
+    }
+    if (button && button.parentElement && button.parentElement.tagName === 'DIV' && !button.parentElement.hasAttribute('role')) {
+      button.parentElement.setAttribute('role', 'region');
+      button.parentElement.setAttribute('aria-label', 'Support options');
+    }
+  }
+  labelSupportWidget();
+  new MutationObserver(labelSupportWidget).observe(document.body, { childList: true, subtree: true });
   hideChatSpinner();
   new MutationObserver(hideChatSpinner).observe(document.body, { childList: true, subtree: true });
   document.querySelectorAll('.hub-skip-link').forEach(function (link) {
