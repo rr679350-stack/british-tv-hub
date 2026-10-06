@@ -23,11 +23,15 @@
   new MutationObserver(labelSupportWidget).observe(document.body, { childList: true, subtree: true });
   function labelVideoLinks() {
     document.querySelectorAll('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]').forEach(function (frame) {
+      if (!frame.getAttribute('title')) {
+        var nearbyHeading = frame.closest('section, article, div') && frame.closest('section, article, div').querySelector('h1, h2, h3');
+        frame.setAttribute('title', nearbyHeading ? nearbyHeading.textContent.trim() + ' video' : 'British TV Hub video');
+      }
       var wrapper = frame.parentElement;
       var caption = wrapper && wrapper.nextElementSibling;
       if (!caption || !caption.classList.contains('hub-video-caption')) return;
       var link = caption.querySelector('a');
-      var label = 'Watch ' + (frame.title || 'British TV Hub video') + ' on YouTube (opens in a new tab)';
+      var label = 'Watch ' + frame.title + ' on YouTube (opens in a new tab)';
       if (link && link.getAttribute('aria-label') !== label) link.setAttribute('aria-label', label);
     });
   }
@@ -41,6 +45,34 @@
       if (target) target.focus();
     });
   });
+  // Let keyboard users dismiss open navigation/search controls with Escape.
+  document.addEventListener('keydown', function (event) {
+    if (event.key !== 'Escape') return;
+
+    var discover = document.getElementById('nav-discover-menu');
+    var discoverToggle = document.querySelector('.nav-dropdown-toggle');
+    if (discover && discover.style.display !== 'none') {
+      discover.style.display = 'none';
+      if (discoverToggle) {
+        discoverToggle.setAttribute('aria-expanded', 'false');
+        discoverToggle.focus();
+      }
+      event.preventDefault();
+      return;
+    }
+
+    var searchBox = document.getElementById('nav-search-box');
+    var searchToggle = document.querySelector('.nav-search-toggle');
+    if (searchBox && searchBox.style.display !== 'none') {
+      searchBox.style.display = 'none';
+      if (searchToggle) {
+        searchToggle.setAttribute('aria-expanded', 'false');
+        searchToggle.focus();
+      }
+      event.preventDefault();
+    }
+  });
+
   var mobileToggle = document.getElementById('nav-hamburger-btn');
   var navigation = document.querySelector('nav.site-nav-std');
   if (mobileToggle && navigation) {
