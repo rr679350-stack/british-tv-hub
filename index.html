@@ -401,6 +401,9 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 }
 .home-card { border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .home-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: #c9a96e; }
+.home-card-ctas{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
+.home-card-ctas a{min-height:64px;display:flex!important;align-items:center;justify-content:center;box-sizing:border-box;}
+.home-card-status{min-height:44px;display:flex;align-items:flex-start;justify-content:center;}
 
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
 .site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
@@ -1790,11 +1793,11 @@ document.addEventListener('click', function(e){
         <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 5</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Signora Volpe &mdash; Season 3</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Emilia Fox returns as former MI6 officer Sylvia Fox for three new feature-length mysteries in the Umbrian countryside.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="home-card-ctas">
           <a href="/shows/signora-volpe.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
           <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
       </div>
     </div>
 
@@ -1804,11 +1807,11 @@ document.addEventListener('click', function(e){
         <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 13</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Ludwig &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Mitchell returns as puzzle-setter John Taylor, now an official police consultant tackling impossible crimes.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="home-card-ctas">
           <a href="/shows/ludwig.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
           <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
       </div>
     </div>
 
@@ -1818,11 +1821,11 @@ document.addEventListener('click', function(e){
         <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Maigret &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Benjamin Wainwright returns as Simenon&rsquo;s Parisian detective for three new cases, with turmoil brewing at La Brigade Criminelle.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="home-card-ctas">
           <a href="/shows/maigret.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
           <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
       </div>
     </div>
 
@@ -1832,11 +1835,11 @@ document.addEventListener('click', function(e){
         <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">The Gold &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">The second and final season follows the hunt for the missing half of the Brink&rsquo;s-Mat gold, with Hugh Bonneville, Jack Lowden and Tom Cullen.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="home-card-ctas">
           <a href="/shows/the-gold.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
           <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
       </div>
     </div>
 
@@ -1846,11 +1849,11 @@ document.addEventListener('click', function(e){
         <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Coming Soon</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Time &mdash; Season 3</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Tennant and Siobhan Finneran lead the third season of Jimmy McGovern&rsquo;s BAFTA-winning prison drama, set in a Young Offenders Institution.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
+        <div class="home-card-ctas">
           <a href="/shows/time.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
           <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Coming soon to BritBox &middot; U.S. premiere date not yet announced</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Coming soon to BritBox &middot; U.S. premiere date not yet announced</p>
       </div>
     </div>
   </div>
