@@ -9,7 +9,7 @@ const output = path.join(root, 'accessibility-report');
 const live = process.env.AUDIT_TARGET !== 'local';
 const sha = process.env.AUDIT_SHA || 'manual';
 const tags = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'];
-const report = { generated: new Date().toISOString(), commit: sha, target: live ? 'live' : 'local', tags, pages: [], results: [], errors: [], skipped: [] };
+const report = { generated: new Date().toISOString(), commit: sha, target: live ? 'live' : 'local', tags, pages: [], results: [], errors: [], skipped: [], reflowIssues: [] };
 await fs.mkdir(output, { recursive: true });
 
 async function inventory(dir = root) {
@@ -57,6 +57,37 @@ async function settle(page) {
   });
   await page.waitForTimeout(1200);
 }
+async function checkReflow(page, file) {
+  const issue = await page.evaluate(() => {
+    const root = document.documentElement;
+    if (root.scrollWidth <= root.clientWidth + 2) return null;
+    const viewportWidth = root.clientWidth;
+    const offenders = [];
+    const selectorFor = (el) => {
+      if (el.id) return '#' + CSS.escape(el.id);
+      const cls = [...el.classList].slice(0, 2).map(x => '.' + CSS.escape(x)).join('');
+      return (el.tagName || '').toLowerCase() + cls;
+    };
+    for (const el of document.body.querySelectorAll('*')) {
+      const rect = el.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) continue;
+      const style = getComputedStyle(el);
+      if (style.position === 'fixed') continue;
+      let scrollParent = el.parentElement, safelyScrollable = false;
+      while (scrollParent && scrollParent !== document.body) {
+        const s = getComputedStyle(scrollParent);
+        if (/(auto|scroll)/.test(s.overflowX) && scrollParent.scrollWidth > scrollParent.clientWidth) { safelyScrollable = true; break; }
+        scrollParent = scrollParent.parentElement;
+      }
+      if (!safelyScrollable && (rect.right > viewportWidth + 2 || rect.left < -2 || rect.width > viewportWidth + 2)) {
+        offenders.push({ selector: selectorFor(el), left: Math.round(rect.left), right: Math.round(rect.right), width: Math.round(rect.width) });
+        if (offenders.length >= 8) break;
+      }
+    }
+    return { viewportWidth, scrollWidth: root.scrollWidth, offenders };
+  });
+  if (issue) report.reflowIssues.push({ file, ...issue });
+}
 async function interactive(page, file, viewport) {
   if (file === 'index.html') {
     if (viewport === 'mobile') await page.locator('#nav-hamburger-btn').click();
@@ -89,7 +120,7 @@ async function interactive(page, file, viewport) {
 }
 
 try {
-  for (const [viewport, dimensions] of Object.entries({ desktop: { width: 1440, height: 1000 }, mobile: { width: 390, height: 844 } })) {
+  for (const [viewport, dimensions] of Object.entries({ desktop: { width: 1440, height: 1000 }, mobile: { width: 390, height: 844 }, reflow: { width: 320, height: 900 } })) {
     const context = await browser.newContext({ viewport: dimensions, serviceWorkers: 'block' });
     // Avoid external checkout redirects; do not block fonts, images, chat or frames.
     await context.route('**/*', async route => {
@@ -111,8 +142,12 @@ try {
         if (!response || (response.status() >= 400 && file !== '404.html')) throw new Error(`HTTP ${response?.status()}`);
         if (new URL(page.url()).origin !== origin) throw new Error('Unexpected external redirect');
         await settle(page);
-        await scan(page, file, viewport, 'initial');
-        await interactive(page, file, viewport);
+        if (viewport === 'reflow') {
+          await checkReflow(page, file);
+        } else {
+          await scan(page, file, viewport, 'initial');
+          await interactive(page, file, viewport);
+        }
         console.log(`${viewport} ${file}: scanned`);
       } catch (e) { report.errors.push({ file, viewport, message: e.message }); console.error(`${viewport} ${file}: ${e.message}`); }
       finally { await page.close(); }
@@ -141,14 +176,14 @@ for (const r of report.results) {
     }
   }
 }
-report.summary = { inventory: report.pages.length, scannedPages: new Set(report.results.map(r => r.file)).size, scanStates: report.results.length, ruleGroups: groups.size, violationInstances: instances, siteBlockingInstances, manualReviewInstances: reviews, scanErrors: report.errors.length, skippedPages: report.skipped.length };
+report.summary = { inventory: report.pages.length, scannedPages: new Set(report.results.map(r => r.file)).size, scanStates: report.results.length, ruleGroups: groups.size, violationInstances: instances, siteBlockingInstances, manualReviewInstances: reviews, reflowIssuePages: report.reflowIssues.length, scanErrors: report.errors.length, skippedPages: report.skipped.length };
 report.groups = [...groups.values()].map(g => ({ ...g, pages: [...g.pages] })).sort((a, b) => b.pages.length - a.pages.length);
 await fs.writeFile(path.join(output, 'report.json'), JSON.stringify(report, null, 2));
 const summary = `# Sitewide accessibility report\n\nCommit: ${sha}\nTarget: ${report.target}\n\n${JSON.stringify(report.summary, null, 2)}\n\nAutomated findings require review; this report does not establish full accessibility. Counts include repeated viewport and interaction states. Embedded third-party findings remain included and are labeled by ownership in the full report. Cross-origin chat, captions, keyboard behavior and screen-reader use still need manual verification.\n\n| Rule | Impact | Pages | Instances |\n| --- | --- | ---: | ---: |\n${report.groups.map(g => `| ${g.id} | ${g.impact} | ${g.pages.length} | ${g.findings.length} |`).join('\n')}\n\nScan errors: ${report.errors.length}. Skipped pages: ${report.skipped.length}. Full details are in report.json and report.html.\n`;
 await fs.writeFile(path.join(output, 'summary.md'), summary);
 if (process.env.GITHUB_STEP_SUMMARY) await fs.appendFile(process.env.GITHUB_STEP_SUMMARY, summary);
 const details = report.groups.map(g => `<details><summary>${escape(g.id)} — ${g.pages.length} pages, ${g.findings.length} instances (${escape(g.impact)})</summary><p><a href="${escape(g.helpUrl)}">${escape(g.help)}</a></p>${g.findings.map(n => `<article><h3>${escape(n.file)} · ${escape(n.viewport)} · ${escape(n.state)} · ${escape(n.ownership)}</h3><pre>${escape(JSON.stringify(n.selector))}\n${escape(n.html)}\n${escape(n.explanation)}</pre></article>`).join('')}</details>`).join('');
-await fs.writeFile(path.join(output, 'report.html'), `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>British TV Hub accessibility report</title><style>body{font:16px/1.6 Arial,sans-serif;max-width:1100px;margin:auto;padding:24px;color:#172033;background:#fff}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f2f6;padding:16px}details{border:1px solid #687080;padding:16px;margin:16px 0}summary{cursor:pointer;font-weight:bold}a{color:#164e9f}article{border-top:1px solid #687080}</style><h1>Sitewide accessibility report</h1><pre>${escape(summary)}</pre><h2>Grouped findings</h2>${details}<h2>Scan errors</h2><pre>${escape(JSON.stringify(report.errors, null, 2))}</pre><h2>Skipped pages</h2><pre>${escape(JSON.stringify(report.skipped, null, 2))}</pre></html>`);
+await fs.writeFile(path.join(output, 'report.html'), `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>British TV Hub accessibility report</title><style>body{font:16px/1.6 Arial,sans-serif;max-width:1100px;margin:auto;padding:24px;color:#172033;background:#fff}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f2f6;padding:16px}details{border:1px solid #687080;padding:16px;margin:16px 0}summary{cursor:pointer;font-weight:bold}a{color:#164e9f}article{border-top:1px solid #687080}</style><h1>Sitewide accessibility report</h1><pre>${escape(summary)}</pre><h2>Grouped findings</h2>${details}<h2>Reflow review (320px / 400% equivalent)</h2><pre>${escape(JSON.stringify(report.reflowIssues, null, 2))}</pre><h2>Scan errors</h2><pre>${escape(JSON.stringify(report.errors, null, 2))}</pre><h2>Skipped pages</h2><pre>${escape(JSON.stringify(report.skipped, null, 2))}</pre></html>`);
 console.log(JSON.stringify(report.summary));
 // Third-party embed findings and first-party moderate/minor findings remain visible in
 // the artifact, but only scan errors or serious/critical British TV Hub findings fail CI.
