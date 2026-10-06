@@ -114,9 +114,14 @@
       var videoTitle = frame.title.replace(/\s+video$/i, '').trim() || 'British TV Hub video';
       var embedMatch = frame.src.match(/\/embed\/([^?&/]+)/);
       var watchUrl = embedMatch ? 'https://www.youtube.com/watch?v=' + encodeURIComponent(embedMatch[1]) : 'https://www.youtube.com/';
-      link.href = watchUrl;
-      link.textContent = 'Watch ' + videoTitle + ' on YouTube';
-      link.setAttribute('aria-label', 'Watch ' + videoTitle + ' on YouTube (opens in a new tab)');
+      var linkText = 'Watch ' + videoTitle + ' on YouTube';
+      var ariaLabel = linkText + ' (opens in a new tab)';
+      if (link.href !== watchUrl) link.href = watchUrl;
+      // Avoid replacing the text node on every MutationObserver pass.
+      // Rewriting textContent here retriggers the childList observer and can
+      // create an infinite callback loop on pages with YouTube embeds.
+      if (link.textContent !== linkText) link.textContent = linkText;
+      if (link.getAttribute('aria-label') !== ariaLabel) link.setAttribute('aria-label', ariaLabel);
     });
   }
   labelVideoLinks();
