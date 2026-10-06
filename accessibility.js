@@ -21,6 +21,34 @@
   }
   labelSupportWidget();
   new MutationObserver(labelSupportWidget).observe(document.body, { childList: true, subtree: true });
+  function improveFormAccessibility(root) {
+    var scope = root && root.querySelectorAll ? root : document;
+    scope.querySelectorAll('input:not([type="hidden"]), select, textarea').forEach(function (control) {
+      var hasLabel = (control.labels && control.labels.length) ||
+        control.hasAttribute('aria-label') || control.hasAttribute('aria-labelledby') ||
+        control.hasAttribute('title');
+      if (!hasLabel) {
+        var fallback = control.getAttribute('placeholder') || control.getAttribute('name') || control.id || '';
+        fallback = fallback.replace(/[-_]+/g, ' ').replace(/\b\w/g, function (m) { return m.toUpperCase(); }).trim();
+        if (fallback) control.setAttribute('aria-label', fallback);
+      }
+    });
+    ['nav-search-results', 'result-wrap'].forEach(function (id) {
+      var region = document.getElementById(id);
+      if (region && !region.hasAttribute('aria-live')) {
+        region.setAttribute('aria-live', 'polite');
+        region.setAttribute('aria-atomic', 'false');
+      }
+    });
+  }
+  improveFormAccessibility(document);
+  new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      mutation.addedNodes.forEach(function (node) {
+        if (node.nodeType === 1) improveFormAccessibility(node);
+      });
+    });
+  }).observe(document.body, { childList: true, subtree: true });
   function labelVideoLinks() {
     document.querySelectorAll('iframe[src*="youtube.com/embed/"], iframe[src*="youtube-nocookie.com/embed/"]').forEach(function (frame) {
       if (!frame.getAttribute('title')) {
