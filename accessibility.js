@@ -14,6 +14,13 @@
       if (box.querySelector('iframe[id*="chatbase"], [id*="chatbase"], iframe[src*="chatbase"]')) {
         box.setAttribute('role', 'region');
         box.setAttribute('aria-label', 'Chat support');
+      } else if (box.querySelector('#bmc-wbtn, [id*="bmc-"]')) {
+        // Buy Me a Coffee nests its button inside its own wrapper divs, so the
+        // top-level fixed container (the one axe's region/landmark rules
+        // actually flag) is deeper than labelSupportWidget's immediate-parent
+        // check below can reach. Label the true outer container here too.
+        box.setAttribute('role', 'region');
+        box.setAttribute('aria-label', 'Support options');
       }
     });
   }
