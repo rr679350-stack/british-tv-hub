@@ -559,6 +559,10 @@ function ttmShuffle(arr){
 function ttmToggleFlip(card){
   const flipped = card.classList.toggle('is-flipped');
   card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+  const front = card.querySelector('.ttm-flip-front');
+  const back = card.querySelector('.ttm-flip-back');
+  if (front) front.setAttribute('aria-hidden', flipped ? 'true' : 'false');
+  if (back) back.setAttribute('aria-hidden', flipped ? 'false' : 'true');
 }
 
 function ttmRender(){
@@ -567,7 +571,7 @@ function ttmRender(){
   const icons = ttmShuffle(TTM_ICONS);
   const grid = document.getElementById('ttm-grid');
   grid.innerHTML = picks.map((text, i) => `
-    <div class="ttm-flip" tabindex="0" role="button" aria-pressed="false" aria-label="Reveal this one" style="animation-delay:${i * 55}ms;">
+    <div class="ttm-flip" tabindex="0" role="button" aria-pressed="false" aria-label="Tap to reveal this one" style="animation-delay:${i * 55}ms;">
       <div class="ttm-flip-inner">
         <div class="ttm-flip-front">
           <img class="ttm-flip-photo" src="${icons[i % icons.length]}" alt="" loading="lazy">
@@ -576,7 +580,7 @@ function ttmRender(){
             <div class="ttm-flip-flourish"><span></span><i>&#9670;</i><span></span></div>
           </div>
         </div>
-        <div class="ttm-flip-back"><p>${text}</p></div>
+        <div class="ttm-flip-back" aria-hidden="true"><p>${text}</p></div>
       </div>
     </div>
   `).join('');
