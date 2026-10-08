@@ -706,7 +706,18 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: October 4, 2026 (technical SEO sweep of all 202 pages —
+Last full sitewide run: October 7, 2026 (post-accessibility-rollout integrity
+check of all 202 pages, triggered by a large stretch of automated/ChatGPT-assisted
+edits — internal link audit against the filesystem and vercel.json rewrites/redirects,
+insecure-link check, affiliate-tag audit for Amazon/BritBox/Acorn, JSON/JSON-LD
+validity, duplicate H1/ID check, quotation and superlative sweeps, placeholder/
+merge-artifact scan on the 11 most-touched pages, and a 12-page keyboard-navigation
+test — found one pre-existing broken link (partner.html's /media-kit.pdf 404,
+not caused by the recent work) and one minor non-affiliate BritBox link on the
+Sunday Picks newsletter template; everything else came back clean, confirming
+the accessibility fixes and other automated work introduced no regressions).
+
+Previous full sitewide run: October 4, 2026 (technical SEO sweep of all 202 pages —
 titles, descriptions, H1s, canonicals, JSON-LD validity, internal links/images,
 alt text, sitemap coverage, GA ID, affiliate tags; quotation and superlative
 sweeps; BritBox-UK database check; time-sensitive status sweep with ~20 claims
