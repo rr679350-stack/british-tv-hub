@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Sunday Picks — Ghost Stories by the Fire</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1520;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #e8e4d8;
+  }
+  .email-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #10192b;
+  }
+  .header {
+    background-color: #0a1520;
+    padding: 40px 30px 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(201,169,110,0.25);
+  }
+  .header .eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 10px;
+  }
+  .header h1 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #c9a96e;
+    font-size: 34px;
+    margin: 0;
+  }
+  .theme-block {
+    margin: 30px 30px 10px;
+    padding: 18px 22px;
+    border-left: 3px solid #c9a96e;
+    background-color: rgba(201,169,110,0.06);
+  }
+  .theme-block h2 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 21px;
+    color: #f2efe4;
+    margin: 0 0 8px;
+  }
+  .theme-block p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0;
+  }
+  .pick {
+    margin: 30px 30px 0;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pick:last-of-type {
+    border-bottom: none;
+  }
+  .pick-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 6px;
+  }
+  .pick h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .pick p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #8b1a2e;
+    color: #f2efe4 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 2px;
+  }
+  .hidden-gem {
+    margin: 30px 30px 0;
+    padding: 22px 24px;
+    background-color: rgba(201,169,110,0.08);
+    border: 1px dashed rgba(201,169,110,0.4);
+  }
+  .hidden-gem .pick-eyebrow { color: #c9a96e; }
+  .hidden-gem h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 20px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .hidden-gem p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .storefront-cta {
+    margin: 36px 30px 0;
+    padding: 22px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 6px;
+  }
+  .storefront-cta p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 14px;
+  }
+  .merch-section {
+    margin: 40px 30px 0;
+    background-color: #0a1520;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 26px;
+  }
+  .merch-section img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .merch-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 22px 0 8px;
+  }
+  .merch-section h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+    padding: 0 20px;
+  }
+  .merch-section p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 20px;
+    padding: 0 30px;
+  }
+  .merch-buttons a {
+    display: inline-block;
+    margin: 0 6px 10px;
+    background-color: #c9a96e;
+    color: #1a2135 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 11px 18px;
+    border-radius: 2px;
+  }
+  .member-section {
+    margin: 40px 30px 0;
+    padding: 26px 24px;
+    text-align: center;
+    background-color: rgba(201,169,110,0.08);
+    border: 1px dashed rgba(201,169,110,0.4);
+    border-radius: 6px;
+  }
+  .member-section img {
+    width: 72px;
+    height: auto;
+    margin: 0 auto 14px;
+    display: block;
+    border-radius: 6px;
+  }
+  .member-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 8px;
+  }
+  .member-section h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .member-section p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0 0 18px;
+  }
+  .btn-gold {
+    display: inline-block;
+    background-color: #c9a96e;
+    color: #1a2135 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 2px;
+  }
+  .footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer a {
+    color: #c9a96e;
+    text-decoration: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+  }
+  .footer p {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    color: #7a7a8c;
+    margin: 14px 0 0;
+  }
+  .disclosure { font-family:'Raleway',Arial,sans-serif; font-size:11px; color:#7a7a8c; line-height:1.6; margin:14px 0 0; }
+  .footer .legal a { font-size:11px; color:#9a8a6a; }
+</style>
+</head>
+<body>
+<div style="display:none;max-height:0;overflow:hidden;">Gentle ghost stories for Halloween week, plus one hidden gem.</div>
+<div class="email-wrapper">
+
+  <div class="header">
+    <p class="eyebrow">British TV Hub</p>
+    <h1>Sunday Picks</h1>
+  </div>
+
+  <div class="theme-block">
+    <h2>Ghost Stories by the Fire</h2>
+    <p>Halloween week calls for the kind of ghost story the British do best: candlelit, atmospheric and more charming than chilling. Five picks to curl up with, plus one hidden gem. If you love this mood, our guide to the BBC&rsquo;s <a href="https://britishtvhub.com/ghost-story-for-halloween.html" style="color:#c9a96e;">A Ghost Story for Christmas</a> tradition is the perfect companion.</p>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 01</p>
+    <h3>Ghosts</h3>
+    <p>Alison and Mike inherit a grand but crumbling country house, only to discover it is already full of residents: the ghosts of everyone who has ever passed away there, from a Stone Age caveman to a Georgian lady. Funny, warm and surprisingly touching, it is the friendliest haunted house you will ever visit.</p>
+    <a href="https://www.paramountplus.com" class="btn">Watch on Paramount+ &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 02</p>
+    <h3>Agatha Christie&rsquo;s Poirot: Hallowe&rsquo;en Party</h3>
+    <p>If you watch only one Poirot this month, make it this one. A village Halloween party takes a mysterious turn, and Poirot teams up with his friend, the crime novelist Ariadne Oliver, to get to the bottom of it. Bobbing apples, glowing lanterns and a proper Christie puzzle.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 03</p>
+    <h3>Midsomer Murders: Things That Go Bump in the Night</h3>
+    <p>A s&eacute;ance, a house said to be haunted and a village full of people who may or may not believe in ghosts. Barnaby gets to the truth as always, but this episode leans beautifully into its spooky atmosphere.</p>
+    <a href="https://acorn.tv" class="btn">Watch on Acorn TV &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 04</p>
+    <h3>Miss Scarlet &amp; The Duke: The Vanishing</h3>
+    <p>A magician disappears in the middle of his farewell performance at a London theatre, and the owner insists a resident phantom is to blame. Eliza does not believe in ghosts for a moment, and watching her prove it is pure Victorian fun.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/" class="btn">Watch on PBS Masterpiece &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 05</p>
+    <h3>The Living and the Dead</h3>
+    <p>Colin Morgan plays Nathan Appleby, a Victorian psychologist who returns with his wife to his family&rsquo;s farm in the Somerset countryside, where the villagers begin reporting strange goings on. Atmospheric and beautifully filmed, it is a real slow burn for a misty October evening.</p>
+    <a href="https://www.amazon.com/primevideo?tag=britishtvhub-20" class="btn">Watch on Prime Video &rarr;</a>
+  </div>
+  <div class="hidden-gem">
+    <p class="pick-eyebrow">Hidden Gem</p>
+    <h3>Remember Me</h3>
+    <p>Michael Palin plays Tom Parfitt, an elderly Yorkshireman who moves into a care home, and Jodie Comer is the young carer who becomes caught up in the mystery that seems to follow him. A three part ghost story that slipped under many radars, it is quietly haunting and wonderfully acted.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/" class="btn">Watch on PBS Masterpiece &rarr;</a>
+  </div>
+
+  <div class="merch-section">
+    <img src="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/newsletter-images/british-tv-comfort-calendar.jpg" alt="">
+    <h3 style="margin-top:22px;">Gifts for a Fellow British TV Fan</h3>
+    <p>Holiday shopping starts early around here. The 2027 British TV Comfort calendar, a ceramic Christmas ornament for tea and TV lovers and our British TV fan holiday card are all waiting at Cozy TV Companion, our little shop of cozy gifts for British TV and mystery lovers.</p>
+    <div class="merch-buttons">
+      <a href="https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar">See the 2027 Calendar &rarr;</a>
+      <a href="https://www.etsy.com/shop/CozyTVCompanion">Visit the Shop &rarr;</a>
+    </div>
+  </div>
+
+  <div class="member-section">
+    <img src="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/newsletter-images/envelope-seal.jpg" alt="">
+    <p class="member-eyebrow">Want More?</p>
+    <h3>Get Sunday Picks a Day Early</h3>
+    <p>Join Early Bird for $3 a month and get each issue in your inbox on Saturday morning, a full day before everyone else.</p>
+    <a href="https://buymeacoffee.com/britishtvhub/membership" class="btn-gold">Join Early Bird &rarr;</a>
+  </div>
+
+  <div class="footer">
+    <a href="https://britishtvhub.com/support.html">Support British TV Hub</a>
+    <p class="disclosure">Streaming availability checked October 2026 and may change. Some links in Sunday Picks may be affiliate links, which means British TV Hub may earn a small commission at no extra cost to you.</p>
+    <p>You're receiving this because you signed up for Sunday Picks at britishtvhub.com.</p>
+    <p class="legal"><a href="/newsletter-archive.html">More Sunday Picks issues</a></p>
+    <p>*|HTML:LIST_ADDRESS_HTML|*</p>
+    <p>&copy; 2026 British TV Hub &middot; britishtvhub.com</p>
+  </div>
+
+</div>
+</body>
+</html>
