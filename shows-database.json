@@ -24,11 +24,6 @@
     ],
     "au": [
       {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
         "name": "Foxtel / Binge",
         "tag": "stream",
         "url": "https://www.binge.com.au"
@@ -65,18 +60,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      },
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/midsomer-murders",
@@ -104,11 +88,6 @@
       }
     ],
     "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
       {
         "name": "Stan",
         "tag": "stream",
@@ -142,13 +121,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/inspector-morse",
@@ -180,13 +153,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/endeavour",
@@ -219,13 +186,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/lewis",
@@ -249,19 +210,8 @@
         "url": "https://www.pbs.org/wgbh/masterpiece/"
       }
     ],
-    "uk": [
-      {
-        "name": "Buy on Amazon / Apple",
-        "tag": "buy",
-        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
-      }
-    ],
+    "uk": [],
     "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
       {
         "name": "10 play",
         "tag": "free",
@@ -316,13 +266,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-10-02",
     "sources": [
       "https://en.wikipedia.org/wiki/Line_of_Duty",
@@ -351,13 +295,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/shetland",
@@ -384,13 +322,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/death-in-paradise",
@@ -426,16 +358,6 @@
     ],
     "au": [
       {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      },
-      {
         "name": "ABC iview",
         "tag": "free",
         "note": "selected",
@@ -468,13 +390,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/father-brown",
@@ -515,13 +431,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/agatha-christies-poirot",
@@ -548,11 +458,6 @@
       }
     ],
     "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
       {
         "name": "Stan",
         "tag": "stream",
@@ -592,11 +497,6 @@
     ],
     "au": [
       {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
         "name": "ABC iview",
         "tag": "free",
         "url": "https://iview.abc.net.au"
@@ -634,11 +534,6 @@
     ],
     "au": [
       {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
-      {
         "name": "ABC iview",
         "tag": "free",
         "url": "https://iview.abc.net.au"
@@ -669,13 +564,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "Prime Video",
-        "tag": "stream",
-        "url": "https://www.amazon.com/primevideo?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/uk/tv-series/detectorists",
@@ -706,13 +595,7 @@
         "url": "https://u.co.uk"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/last-of-the-summer-wine/season-4",
@@ -739,11 +622,6 @@
       }
     ],
     "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
       {
         "name": "Stan",
         "tag": "stream",
@@ -843,13 +721,7 @@
         "url": "https://uktvplay.co.uk"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/cranford",
@@ -872,20 +744,9 @@
         "name": "ITVX",
         "tag": "free",
         "url": "https://www.itv.com/watch"
-      },
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
       }
     ],
-    "au": [
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-07-15",
     "sources": [
       "https://www.justwatch.com/uk/tv-series/foyles-war",
@@ -911,13 +772,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/hamish-macbeth",
@@ -943,13 +798,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-07-15",
     "sources": [
       "https://reelgood.com/show/rosemary-thyme-2003",
@@ -975,11 +824,6 @@
       }
     ],
     "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      },
       {
         "name": "Stan",
         "tag": "stream",
@@ -1018,13 +862,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://en.wikipedia.org/wiki/McDonald_%26_Dodds",
@@ -1049,13 +887,7 @@
       }
     ],
     "uk": [],
-    "au": [
-      {
-        "name": "Acorn TV",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-09-25",
     "sources": [
       "https://www.justwatch.com/us/tv-show/inspector-george-gently",
@@ -1082,13 +914,7 @@
         "url": "https://www.bbc.co.uk/iplayer"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.justwatch.com/us/tv-show/hetty-wainthropp-investigates",
@@ -4567,13 +4393,7 @@
         "url": "https://www.my5.tv"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://www.theviewersguide.com/tvau/news/the-hardacres-abc-premiere",
@@ -4943,13 +4763,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-01",
     "sources": [
       "https://variety.com/2022/tv/news/adrian-dunbar-ridley-pbs-1235237696/",
@@ -6451,13 +6265,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-10-02",
     "sources": [
       "https://www.justwatch.com/us/tv-show/agatha-christies-marple",
@@ -8858,13 +8666,7 @@
         "url": "https://www.itv.com/watch"
       }
     ],
-    "au": [
-      {
-        "name": "BritBox",
-        "tag": "stream",
-        "url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
-      }
-    ],
+    "au": [],
     "verified": "2026-08-17",
     "sources": [
       "https://www.whathifi.com/advice/how-to-watch-a-spy-among-friends-spy-thriller-with-damian-lewis-and-guy-pearce",
