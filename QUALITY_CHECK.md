@@ -630,6 +630,53 @@ British TV Hub Editorial Certification
 - Overall site health score:
 - Date completed:
 
+## PART 36 — Spoiler Policy
+
+A spoiler is anything that reveals how a mystery, plot thread, or season
+resolves — not that one exists. The line: setup and premise are always
+fair game; resolution is not, unless it's clearly labeled.
+
+**Never spoiler, anywhere on the site, with no exception:**
+- Meta descriptions, OG/Twitter descriptions, and schema.org
+  `description` fields (these feed search snippets and AI Overview
+  extraction, so a spoiler here reaches someone who hasn't even
+  clicked through)
+- Hero copy, intro paragraphs, and "Short Answer" hub summaries
+- Card blurbs on index/hub pages (Shows Index, Hidden Gems, Shows Like
+  X, cozy.html, etc.)
+- FAQ answers, unless the question itself explicitly asks about an
+  ending or reveal (e.g. "Who is the killer in Series 1?") — and even
+  then, a spoiler-free answer that points to a labeled spoiler section
+  is preferred over answering it directly in the FAQ
+- Episode-ranker entries (`show-desc` text on ranked-episode cards):
+  describe what's compelling about the setup, tone, or craft of an
+  episode, never how its case resolves
+
+**What's always safe to state (not a spoiler):**
+- That a mystery/death/disappearance happens (the premise)
+- Setting, time period, tone, genre
+- Returning vs. new characters, casting
+- That a season ends on a cliffhanger (without saying what it is)
+- Real-world facts: awards, air dates, episode counts, source novel
+  info
+
+**Where deeper discussion is allowed:**
+A dedicated, clearly headed section (e.g. "Episode Guide," "Season
+Recap," "What Happens in the Finale") may discuss plot resolution in
+depth, but only when:
+- It sits behind a heading that names it as such, not buried mid-page
+- It's preceded by a visible spoiler warning (standard wording: "Spoilers
+  ahead — the rest of this section discusses how the series ends.")
+- It's never the first thing a reader encounters on the page (intro
+  copy above it must stay spoiler-free per the rules above)
+
+**Series finales and whodunit reveals are the highest-risk content.**
+When writing or reviewing a finale recap or an episode-ranker entry for
+a season's last episode, check specifically: does this sentence reveal
+who did it, who died, or how the central mystery resolves? If yes, it
+belongs only inside a labeled spoiler section, never in the surrounding
+page copy.
+
 ## Guiding principle
 
 Accuracy is more important than speed. Original writing is more
