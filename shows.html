@@ -682,226 +682,201 @@ document.addEventListener('click', function(e){
 <!-- CYBER SPECIALS BLOCK END -->
 
 
-<div id="top-shows">
-    <div class="hub-card"><div class="section-label">Top Picks</div>
-    <h2 class="section-title">The 6 Best British Mystery Shows Streaming Now</h2>
-    <p class="section-intro">These are the shows that define the genre &mdash; intelligent, atmospheric, and endlessly rewatchable. Whether you're new to British television or a longtime devotee, every one of these belongs on your list.</p></div>
+<style>
+  .rail-section{margin-bottom:8px;}
+  .rail-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 40px;flex-wrap:wrap;}
+  .rail-head .head-text{max-width:720px;}
+  .rail-arrows{display:flex;gap:8px;flex-shrink:0;margin-bottom:4px;}
+  .rail-arrow{cursor:pointer;border:1px solid var(--border);color:var(--text);border-radius:50%;height:34px;width:34px;background:var(--bg-dark);font-size:18px;line-height:1;}
+  .rail-arrow:hover{border-color:var(--gold);color:var(--gold-light);}
+  .rail{display:flex;gap:18px;align-items:flex-start;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;padding:20px 40px 10px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;}
+  .rail-tile{scroll-snap-align:start;flex:0 0 240px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
+  .rail-tile:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
+  .rail-tile-link{display:block;text-decoration:none;color:inherit;}
+  .rail-tile-link:focus-visible{outline:2px solid var(--gold);}
+  .rail-art{height:140px;position:relative;display:flex;align-items:flex-end;padding:13px;background:linear-gradient(155deg,#6f7b78,#203447 65%,#101924);}
+  .rail-art:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 38%,rgba(10,21,32,0.82));}
+  .rail-art strong{position:relative;z-index:1;font-family:'Playfair Display',serif;font-size:21px;line-height:1.1;color:var(--text);text-shadow:0 2px 8px rgba(0,0,0,0.5);}
+  .rail-rank{position:absolute;top:11px;right:11px;z-index:1;font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:.5px;color:var(--gold-light);background:rgba(10,21,32,0.7);padding:3px 8px;border-radius:2px;}
+  .rail-info{padding:14px 16px 16px;}
+  .rail-info .show-badge{margin-bottom:6px;}
+  .rail-info h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--gold-light);margin:0 0 7px;line-height:1.25;}
+  .rail-info p{font-family:'Crimson Text',serif;font-size:13.5px;color:var(--text-muted);line-height:1.5;margin:0 0 11px;min-height:56px;}
+  .rail-info .show-tags{margin-bottom:12px;}
+  .rail-cta{display:inline-block;background:var(--gold);color:var(--bg-dark);font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:8px 14px;border-radius:2px;}
+  .loved-toggle{width:100%;background:transparent;border:none;border-top:1px solid var(--border);color:var(--text-faint);font-family:'Raleway',sans-serif;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:9px 16px;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;}
+  .loved-toggle:hover{color:var(--gold-light);}
+  .loved-toggle .chev{transition:transform .2s;}
+  .loved-toggle[aria-expanded="true"] .chev{transform:rotate(180deg);}
+  .loved-row{max-height:0;overflow:hidden;transition:max-height .25s ease;}
+  .loved-row.open{max-height:170px;}
+  .loved-row-inner{padding:2px 16px 14px;display:flex;flex-wrap:wrap;gap:6px;}
+  .loved-pill{font-family:'Raleway',sans-serif;font-size:10.5px;letter-spacing:.2px;color:var(--text);background:rgba(201,169,110,0.1);border:1px solid rgba(201,169,110,0.3);border-radius:12px;padding:5px 10px;text-decoration:none;}
+  .loved-pill:hover{background:rgba(201,169,110,0.22);}
+  .loved-pill.static{color:var(--text-faint);cursor:default;}
+  @media(max-width:700px){
+    .rail-head{padding:0 20px;}
+    .rail{padding:16px 20px 8px;}
+    .rail-tile{flex-basis:205px;}
+  }
+</style>
 
-    <div class="shows-grid">
-
-      <div class="show-card top">
-        <div><div class="show-rank">No. 01</div><div class="show-number">01</div></div>
-        <div>
-          <div class="show-badge">All-Time Classic</div>
-          <h3 class="show-title"><a href="/shows/inspector-morse.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Inspector Morse</a></h3>
-          <p class="show-desc">Widely regarded as the gold standard of British detective drama, John Thaw's Morse is prized for its literary intelligence and melancholic depth.</p>
-          <div class="show-tags"><span class="tag">Oxford</span><span class="tag">Detective</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-dropdown" data-slug="inspector-morse">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div style="margin-top:12px;"><a href="/shows/inspector-morse.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Endeavour</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Lewis</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Foyle's War</span>
-            <a href="/shows/grantchester.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Grantchester</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="show-card">
-        <div><div class="show-rank">No. 02</div><div class="show-number">02</div></div>
-        <div>
-          <div class="show-badge">Modern Classic</div>
-          <h3 class="show-title"><a href="/shows/vera.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Vera</a></h3>
-          <p class="show-desc">Brenda Blethyn's Vera Stanhope is one of television's great detectives &mdash; unconventional, brilliant, and deeply human &mdash; across fourteen series set against the wild Northumberland coast.</p>
-          <div class="show-tags"><span class="tag">Northumberland</span><span class="tag">Crime</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-dropdown" data-slug="vera">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div style="margin-top:12px;"><a href="/shows/vera.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <a href="/shows/shetland.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Shetland</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Dalgliesh</span>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Whitstable Pearl</span>
-            <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="show-card">
-        <div><div class="show-rank">No. 03</div><div class="show-number">03</div></div>
-        <div>
-          <div class="show-badge">Essential Viewing</div>
-          <h3 class="show-title"><a href="/shows/broadchurch.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #dab870;">Broadchurch</a></h3>
-          <p class="show-desc">One of the defining British crime dramas of the 2010s, with Olivia Colman and David Tennant at their absolute best as a small coastal town is torn apart by a devastating crime.</p>
-          <div class="show-tags"><span class="tag">Coastal</span><span class="tag">Thriller</span><span class="tag platform">Free on Tubi</span></div>
-          <div class="wl-dropdown" data-slug="broadchurch">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <a href="/shows/happy-valley.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Happy Valley</a>
-            <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
-            <a href="/shows/line-of-duty.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Line of Duty</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">The Fall</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="show-card">
-        <div><div class="show-rank">No. 04</div><div class="show-number">04</div></div>
-        <div>
-          <div class="show-badge">Hidden Gem</div>
-          <h3 class="show-title">Hinterland</h3>
-          <p class="show-desc">Filmed twice, once in Welsh and once in English, this brooding, criminally underrated detective series is set in rural Wales.</p>
-          <div class="show-tags"><span class="tag">Wales</span><span class="tag">Atmospheric</span><a class="tag platform acorn" href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener">Acorn TV</a></div>
-          <div class="wl-dropdown" data-slug="hinterland">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Bloodlands</span>
-            <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
-            <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Marcella</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="show-card">
-        <div><div class="show-rank">No. 05</div><div class="show-number">05</div></div>
-        <div>
-          <div class="show-badge">Agatha Christie Fans</div>
-          <h3 class="show-title"><a href="/shows/miss-marple.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Miss Marple (1984)</a></h3>
-          <p class="show-desc">Joan Hickson's definitive portrayal of Miss Marple remains the benchmark, impeccably cast and deeply satisfying to watch over and over again.</p>
-          <div class="show-tags"><span class="tag">Cozy Mystery</span><span class="tag">Classic</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-dropdown" data-slug="miss-marple">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div style="margin-top:12px;"><a href="/shows/miss-marple.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <a href="/agatha-christie.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Poirot</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Father Brown</span>
-            <a href="/shows/midsomer-murders.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Midsomer Murders</a>
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Sister Boniface Mysteries</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="show-card">
-        <div><div class="show-rank">No. 06</div><div class="show-number">06</div></div>
-        <div>
-          <div class="show-badge">Modern Essential</div>
-          <h3 class="show-title"><a href="/shows/happy-valley.html" style="color:inherit;text-decoration:none;border-bottom:1px solid #c9a96e;">Happy Valley</a></h3>
-          <p class="show-desc">Sarah Lancashire is extraordinary as a Yorkshire police sergeant across three series, each darker and more powerful than the last.</p>
-          <div class="show-tags"><span class="tag">Yorkshire</span><span class="tag">Crime Drama</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-          <div class="wl-dropdown" data-slug="happy-valley">
-            <button type="button" class="wl-dd-toggle"><span class="wl-dd-label">Add to Watch List</span> <span class="wl-dd-caret">&#9662;</span></button>
-            <div class="wl-dd-menu">
-              <button type="button" class="wl-dd-item" data-status="want">Want to Watch</button>
-              <button type="button" class="wl-dd-item" data-status="watching">Watching</button>
-              <button type="button" class="wl-dd-item" data-status="finished">Finished</button>
-            </div>
-          </div>
-          <div style="margin-top:12px;"><a href="/shows/happy-valley.html" style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">Read the Full Guide &rarr;</a></div>
-          <div class="because-you-loved" style="margin-top:14px;padding-top:14px;border-top:1px solid #3d4a60;">
-            <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd;margin-bottom:8px;">Because You Loved This</div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 14px;">
-            <span style="font-family:'Playfair Display',serif;font-size:13px;color:#c1cadd;">Broadchurch</span>
-            <a href="/shows/line-of-duty.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Line of Duty</a>
-            <a href="/shows/unforgotten.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Unforgotten</a>
-            <a href="/shows/blue-lights.html" style="font-family:'Playfair Display',serif;font-size:13px;color:#c9a96e;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4);padding-bottom:1px;">Blue Lights</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+<div id="top-shows" class="rail-section">
+  <div class="hub-card rail-head">
+    <div class="head-text">
+      <div class="section-label">Top Picks</div>
+      <h2 class="section-title">The 6 Best British Mystery Shows Streaming Now</h2>
+      <p class="section-intro">These are the shows that define the genre &mdash; intelligent, atmospheric, and endlessly rewatchable. Whether you're new to British television or a longtime devotee, every one of these belongs on your list.</p>
+    </div>
+    <div class="rail-arrows">
+      <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
+      <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
     </div>
   </div>
+  <div class="rail" id="top-rail"></div>
+</div>
 
-  <hr class="section-divider">
+<div class="hub-card"><div style="max-width:640px;margin:8px auto 40px;padding:0 40px;text-align:center;">
+  <p style="font-family:'Playfair Display',serif;font-size:22px;color:#e8dfc8;margin:0 0 10px;">Still looking for your next series?</p>
+  <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#c1cadd;line-height:1.7;margin:0;">These six classics are where many British TV fans begin. But once you've watched the essentials, it's time to explore some of television's most overlooked treasures.</p>
+</div></div>
 
-  <div class="hub-card"><div style="max-width:640px;margin:0 auto 40px;padding:0 40px;text-align:center;">
-    <p style="font-family:'Playfair Display',serif;font-size:22px;color:#e8dfc8;margin:0 0 10px;">Still looking for your next series?</p>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#c1cadd;line-height:1.7;margin:0;">These six classics are where many British TV fans begin. But once you've watched the essentials, it's time to explore some of television's most overlooked treasures.</p>
-  </div></div>
-
-  <div id="hidden-gems">
-    <div class="section-label">Hidden Gems</div>
-    <h2 class="section-title">Underrated British Shows You Haven't Seen Yet</h2>
-    <p class="section-intro">Beyond the household names lies some genuinely excellent television. These shows deserve far bigger audiences than they have.</p>
-
-    <div class="gems-grid">
-      <div class="gem-card">
-        <div class="gem-label">Hidden Gem</div>
-        <h3 class="gem-title">The Detectorists</h3>
-        <p class="gem-desc">Mackenzie Crook's gentle comedy-drama about metal detectorists in rural Essex is one of the most quietly beautiful British shows around. Two series of pure television treasure.</p>
-        <div class="show-tags"><span class="tag">Comedy Drama</span><a class="tag platform acorn" href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener">Acorn TV</a></div>
-      </div>
-      <div class="gem-card">
-        <div class="gem-label">Hidden Gem</div>
-        <h3 class="gem-title">Hope Street</h3>
-        <p class="gem-desc">A London detective relocated to a quirky Northern Irish coastal town. Fresh, funny, and full of charm &mdash; everything you want from a feel-good crime series.</p>
-        <div class="show-tags"><span class="tag">Northern Ireland</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-      </div>
-      <div class="gem-card">
-        <div class="gem-label">Hidden Gem</div>
-        <h3 class="gem-title">The Bletchley Circle</h3>
-        <p class="gem-desc">Former WWII codebreakers use their unique skills to solve post-war murders. A brilliant, underappreciated gem that deserves far more recognition than it receives.</p>
-        <div class="show-tags"><span class="tag">Period</span><span class="tag">Mystery</span><a class="tag platform" href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener">BritBox</a></div>
-      </div>
+<div id="hidden-gems" class="rail-section">
+  <div class="hub-card rail-head">
+    <div class="head-text">
+      <div class="section-label">Hidden Gems</div>
+      <h2 class="section-title">Underrated British Shows You Haven't Seen Yet</h2>
+      <p class="section-intro">Beyond the household names lies some genuinely excellent television. These shows deserve far bigger audiences than they have.</p>
     </div>
-
-    <div id="hidden-gems-guide" style="text-align:center;margin-top:32px;padding:32px;background:var(--bg-dark);border:1px solid var(--border);border-left:4px solid var(--gold);">
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Free Download</div>
-      <p style="font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:6px;">Never Run Out of British Mysteries Again</p>
-      <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);font-style:italic;margin-bottom:24px;">The free guide features 25 overlooked detective dramas and hidden gems you'll wonder how you ever missed &mdash; including 22 more beyond what's shown above. Free PDF, no signup required.</p>
-      <a href="/25_Hidden_Gem_British_TV_Shows.pdf" download style="display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--bg-dark);font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:12px 24px;">
-        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-        Download Free Guide
-      </a>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-faint);margin-top:12px;letter-spacing:0.5px;">No spam &nbsp;&middot;&nbsp; Instant PDF &nbsp;&middot;&nbsp; Free</div>
+    <div class="rail-arrows">
+      <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
+      <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
     </div>
   </div>
+  <div class="rail" id="gems-rail"></div>
+
+  <div id="hidden-gems-guide" style="text-align:center;margin-top:24px;padding:32px;background:var(--bg-dark);border:1px solid var(--border);border-left:4px solid var(--gold);">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Free Download</div>
+    <p style="font-family:'Playfair Display',serif;font-size:22px;color:var(--text);margin-bottom:6px;">Never Run Out of British Mysteries Again</p>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);font-style:italic;margin-bottom:24px;">The free guide features 25 overlooked detective dramas and hidden gems you'll wonder how you ever missed &mdash; including 22 more beyond what's shown above. Free PDF, no signup required.</p>
+    <a href="/25_Hidden_Gem_British_TV_Shows.pdf" download style="display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--bg-dark);font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:12px 24px;">
+      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Download Free Guide
+    </a>
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-faint);margin-top:12px;letter-spacing:0.5px;">No spam &nbsp;&middot;&nbsp; Instant PDF &nbsp;&middot;&nbsp; Free</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var topPicks=[
+    {rank:'No. 01',badge:'All-Time Classic',name:'Inspector Morse',href:'/shows/inspector-morse.html',
+     desc:"Widely regarded as the gold standard of British detective drama, John Thaw's Morse is prized for its literary intelligence and melancholic depth.",
+     tags:['Oxford','Detective'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#5b6b7a',
+     loved:[['Endeavour',null],['Lewis',null],["Foyle's War",null],['Grantchester','/shows/grantchester.html']]},
+    {rank:'No. 02',badge:'Modern Classic',name:'Vera',href:'/shows/vera.html',
+     desc:"Brenda Blethyn's Vera Stanhope is one of television's great detectives — unconventional, brilliant, and deeply human — across fourteen series set against the wild Northumberland coast.",
+     tags:['Northumberland','Crime'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#466b7c',
+     loved:[['Shetland','/shows/shetland.html'],['Dalgliesh',null],['Whitstable Pearl',null],['Blue Lights','/shows/blue-lights.html']]},
+    {rank:'No. 03',badge:'Essential Viewing',name:'Broadchurch',href:'/shows/broadchurch.html',
+     desc:"One of the defining British crime dramas of the 2010s, with Olivia Colman and David Tennant at their absolute best as a small coastal town is torn apart by a devastating crime.",
+     tags:['Coastal','Thriller'],platform:{label:'Free on Tubi',href:null,cls:''},
+     color:'#697e75',
+     loved:[['Happy Valley','/shows/happy-valley.html'],['Unforgotten','/shows/unforgotten.html'],['Line of Duty','/shows/line-of-duty.html'],['The Fall',null]]},
+    {rank:'No. 04',badge:'Hidden Gem',name:'Hinterland',href:null,
+     desc:"Filmed twice, once in Welsh and once in English, this brooding, criminally underrated detective series is set in rural Wales.",
+     tags:['Wales','Atmospheric'],platform:{label:'Acorn TV',href:'https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20',cls:'acorn'},
+     color:'#7a6572',
+     loved:[['Bloodlands',null],['Unforgotten','/shows/unforgotten.html'],['Blue Lights','/shows/blue-lights.html'],['Marcella',null]]},
+    {rank:'No. 05',badge:'Agatha Christie Fans',name:'Miss Marple (1984)',href:'/shows/miss-marple.html',
+     desc:"Joan Hickson's definitive portrayal of Miss Marple remains the benchmark, impeccably cast and deeply satisfying to watch over and over again.",
+     tags:['Cozy Mystery','Classic'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#957a56',
+     loved:[['Poirot','/agatha-christie.html'],['Father Brown',null],['Midsomer Murders','/shows/midsomer-murders.html'],['Sister Boniface Mysteries',null]]},
+    {rank:'No. 06',badge:'Modern Essential',name:'Happy Valley',href:'/shows/happy-valley.html',
+     desc:"Sarah Lancashire is extraordinary as a Yorkshire police sergeant across three series, each darker and more powerful than the last.",
+     tags:['Yorkshire','Crime Drama'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#777e56',
+     loved:[['Broadchurch','/shows/broadchurch.html'],['Line of Duty','/shows/line-of-duty.html'],['Unforgotten','/shows/unforgotten.html'],['Blue Lights','/shows/blue-lights.html']]}
+  ];
+  var hiddenGems=[
+    {badge:'Hidden Gem',name:'The Detectorists',href:null,
+     desc:"Mackenzie Crook's gentle comedy-drama about metal detectorists in rural Essex is one of the most quietly beautiful British shows around. Two series of pure television treasure.",
+     tags:['Comedy Drama'],platform:{label:'Acorn TV',href:'https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20',cls:'acorn'},
+     color:'#6b687d'},
+    {badge:'Hidden Gem',name:'Hope Street',href:null,
+     desc:"A London detective relocated to a quirky Northern Irish coastal town. Fresh, funny, and full of charm — everything you want from a feel-good crime series.",
+     tags:['Northern Ireland'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#527c83'},
+    {badge:'Hidden Gem',name:'The Bletchley Circle',href:null,
+     desc:"Former WWII codebreakers use their unique skills to solve post-war murders. A brilliant, underappreciated gem that deserves far more recognition than it receives.",
+     tags:['Period','Mystery'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
+     color:'#b18762'}
+  ];
+
+  var uid=0;
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+
+  function tileHTML(item,withRank){
+    var tagHTML='<div class="show-tags">';
+    item.tags.forEach(function(t){tagHTML+='<span class="tag">'+esc(t)+'</span>';});
+    if(item.platform){
+      if(item.platform.href){
+        tagHTML+='<a class="tag platform'+(item.platform.cls?' '+item.platform.cls:'')+'" href="'+item.platform.href+'" target="_blank" rel="noopener">'+esc(item.platform.label)+'</a>';
+      }else{
+        tagHTML+='<span class="tag platform">'+esc(item.platform.label)+'</span>';
+      }
+    }
+    tagHTML+='</div>';
+
+    var art='<div class="rail-art" style="background:linear-gradient(145deg,'+item.color+',#1a2135 74%)">'+(withRank?'<span class="rail-rank">'+item.rank+'</span>':'')+'<strong>'+esc(item.name)+'</strong></div>';
+    var cta=item.href?'<span class="rail-cta">Read the Guide &rarr;</span>':'';
+    var info='<div class="rail-info"><div class="show-badge">'+esc(item.badge)+'</div><h3>'+esc(item.name)+'</h3><p>'+item.desc+'</p>'+tagHTML+cta+'</div>';
+
+    var body=item.href
+      ? '<a class="rail-tile-link" href="'+item.href+'">'+art+info+'</a>'
+      : '<div class="rail-tile-link" style="cursor:default;">'+art+info+'</div>';
+
+    var lovedHTML='';
+    if(item.loved){
+      var id='loved-'+(uid++);
+      var pills=item.loved.map(function(pair){
+        var label=pair[0],href=pair[1];
+        return href?'<a class="loved-pill" href="'+href+'">'+esc(label)+'</a>':'<span class="loved-pill static">'+esc(label)+'</span>';
+      }).join('');
+      lovedHTML='<button type="button" class="loved-toggle" aria-expanded="false" aria-controls="'+id+'">Because You Loved This <span class="chev">&#9662;</span></button>'+
+                 '<div class="loved-row" id="'+id+'"><div class="loved-row-inner">'+pills+'</div></div>';
+    }
+
+    return '<div class="rail-tile">'+body+lovedHTML+'</div>';
+  }
+
+  function build(railId,items,withRank){
+    var rail=document.getElementById(railId);
+    if(!rail)return;
+    rail.innerHTML=items.map(function(it){return tileHTML(it,withRank);}).join('');
+  }
+
+  build('top-rail',topPicks,true);
+  build('gems-rail',hiddenGems,false);
+
+  document.querySelectorAll('.rail-arrow').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var rail=document.getElementById(btn.getAttribute('data-rail'));
+      if(rail)rail.scrollBy({left:Number(btn.getAttribute('data-dir'))*480,behavior:'smooth'});
+    });
+  });
+  document.querySelectorAll('.loved-toggle').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var row=document.getElementById(btn.getAttribute('aria-controls'));
+      var open=row.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+  });
+})();
+</script>
 
   <hr class="section-divider">
 
