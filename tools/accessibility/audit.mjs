@@ -107,7 +107,9 @@ async function interactive(page, file, viewport) {
   }
   if (['quiz.html', 'village-quiz.html', 'british-tv-personality-quiz.html', 'halloween-mystery-builder.html'].includes(file)) {
     for (let i = 0; i < 12 && await page.locator('#question-wrap').isVisible(); i++) {
-      await page.locator('.opt-btn').first().click();
+      const ynYes = page.locator('#yn-yes');
+      if (await ynYes.isVisible().catch(() => false)) await ynYes.click();
+      else await page.locator('.opt-btn').first().click();
       await page.waitForTimeout(400);
     }
     await page.locator('#result-wrap').waitFor({ state: 'visible' });
