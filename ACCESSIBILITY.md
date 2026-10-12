@@ -20,15 +20,22 @@ Reviewed source for all 202 HTML files and seven existing shared CSS/JavaScript 
 - JavaScript syntax checks and simulated DOM tests for all four quizzes, the show finder and watch-list disclosures.
 - Muted text #c1cadd against card background #363f58: 6.35:1.
 
-## Remaining verification
-A browser executable could not be installed because its download was blocked. Therefore this is a source review and logic-test pass, not a rendered sitewide WCAG conformance finding.
+## Live rendered pass — 11 October 2026
+A headless Chromium could be installed this session, so the pages below were rendered and scanned with axe-core (WCAG 2.0/2.1 A & AA rules) against the exact commit live at the time (`594776c`), served locally since this sandbox can't reach the public internet. `meet-tilly.html` was dropped from the original list — the page no longer exists (Tilly was retired in favor of quiz.html, see /areas/tilly-chatbot notes).
 
-Run live WAVE checks on the following distinct layouts, then inspect all flagged elements:
-- /shows/vera.html and /shows/ludwig.html
-- /shows-index.html, /watch-list.html and /which-subscription.html
-- /streaming.html, /books.html and /gift-guide-hub.html
-- /quiz.html, /village-quiz.html, /british-tv-personality-quiz.html and /halloween-mystery-builder.html
-- /community-snug.html, /what-are-you-watching.html and /meet-tilly.html
-- /dark-october-night-mysteries.html and a newsletter archive
+**Result: 0 confirmed violations** on all 16 pages checked:
+/shows/vera.html, /shows/ludwig.html, /shows-index.html, /watch-list.html, /which-subscription.html, /streaming.html, /books.html, /gift-guide-hub.html, /quiz.html, /village-quiz.html, /british-tv-personality-quiz.html, /halloween-mystery-builder.html, /community-snug.html, /what-are-you-watching.html, /dark-october-night-mysteries.html, /newsletters/sunday-picks-ludwig-returns.html.
 
-Also verify keyboard-only operation, screen-reader announcements, mobile/zoom reflow, video captions and the cross-origin chat contents. Third-party chat/payment contents are outside the repository's source review.
+(An initial pass before the page had finished painting returned false contrast failures — near-white-on-near-white — caused by reading computed styles mid-render in headless Chromium, not a real defect. Resolved by waiting for the page to settle before scanning; confirmed against a screenshot.)
+
+Two items axe flags as "incomplete" (can't auto-resolve, not failures) on every page and are fine as-is:
+- `color-contrast` on text sitting over a CSS gradient card background — axe can't compute contrast against a gradient automatically; spot-checked visually and the text always lands on the gradient's dark end.
+- `label-content-name-mismatch` on icon-only links (☕ support link, Facebook/Pinterest/Email icons) — visible content is an emoji/icon, not text, so axe can't auto-compare it to the aria-label; this is standard, compliant practice for icon buttons.
+
+Also checked: mobile reflow at 375px width on all 16 pages — no horizontal overflow on any of them.
+
+## Still outstanding
+- Keyboard-only operation and screen-reader announcement testing (needs a human with real AT, not just DOM/axe checks).
+- Video captions on embedded trailers.
+- The third-party Chatbase widget and any payment flow — out of scope for this repo's source/render review (cross-origin content).
+- The remaining ~186 pages not in the sample above haven't had a live render pass, only the Oct 6 source review.
