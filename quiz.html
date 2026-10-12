@@ -42,14 +42,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="description" content="Pick your setting, detective, sidekick, murder location, prime suspect, and darkness level — get matched to the British mystery built for you.">
+<meta name="description" content="Answer ten quick yes-or-no questions about mood, setting and tone — get matched to your next British mystery from nearly 30 real shows.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://britishtvhub.com/quiz.html">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/quiz.html">
 <meta property="og:title" content="Build Your Perfect British Mystery | British TV Hub">
-<meta property="og:description" content="Pick six ingredients — setting, detective, sidekick, murder location, suspect, and darkness level — get matched to your perfect British mystery.">
+<meta property="og:description" content="Ten quick yes-or-no questions. No typing, no overthinking — just tap Yes or No and get matched to your next British mystery.">
 <meta property="og:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
 <meta property="og:image:width" content="1774">
 <meta property="og:image:height" content="887">
@@ -58,7 +58,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Build Your Perfect British Mystery | British TV Hub">
-<meta name="twitter:description" content="Pick six ingredients and get matched to your perfect British mystery.">
+<meta name="twitter:description" content="Ten quick yes-or-no questions — get matched to your next British mystery.">
 <meta name="twitter:image" content="https://britishtvhub.com/quizzes-and-games-hero.webp">
 
 <script type="application/ld+json">
@@ -66,7 +66,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Build Your Perfect British Mystery",
-  "description": "Pick your setting, detective, sidekick, murder location, prime suspect, and darkness level — get matched to the British mystery built for you.",
+  "description": "Answer ten quick yes-or-no questions about mood, setting and tone — get matched to your next British mystery from nearly 30 real shows.",
   "url": "https://britishtvhub.com/quiz.html",
   "dateModified": "2026-07-03",
   "isPartOf": {
@@ -145,12 +145,32 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 /* QUESTION */
 .question-wrap{padding:36px 36px 28px}
 .q-counter{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a0aec8;margin-bottom:14px}
-.q-text{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#c9a96e;line-height:1.4;margin-bottom:28px;font-style:italic}
+.q-text{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#c9a96e;line-height:1.4;margin-bottom:10px;font-style:italic}
+.q-sub{font-family:'Crimson Text',serif;font-size:16px;color:#a0aec8;line-height:1.5;margin-bottom:28px}
 .options-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .opt-btn{background:#2c3345;border:1px solid #3d4a60;color:#c8c0a8;padding:16px 18px;font-family:'Crimson Text',serif;font-size:17px;cursor:pointer;text-align:left;transition:all 0.15s;line-height:1.4;position:relative}
 .opt-btn:hover{border-color:#c9a96e;color:#e8d0a0;background:#242d40}
 .opt-btn.selected{border-color:#c9a96e;background:#242d40;color:#e8d0a0}
 .opt-btn.selected::after{content:'✓';position:absolute;top:10px;right:14px;color:#c9a96e;font-family:sans-serif;font-size:14px}
+
+/* YES/NO BUTTONS */
+.yn-row{display:flex;gap:16px;justify-content:center;margin-bottom:18px}
+.yn-btn{flex:1;max-width:220px;min-height:64px;border-radius:6px;font-family:'Raleway',sans-serif;font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s}
+.yn-btn.no{background:#2c3345;border:2px solid #4d5a70;color:#c8c0a8}
+.yn-btn.no:hover{border-color:#a0aec8;color:#e8dfc8}
+.yn-btn.yes{background:#c9a96e;border:2px solid #c9a96e;color:#1a2135}
+.yn-btn.yes:hover{background:#dab870;border-color:#dab870}
+.yn-under{text-align:center}
+.yn-back{background:none;border:none;color:#a0aec8;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;text-decoration:underline;cursor:pointer;padding:8px}
+.yn-back:hover{color:#c9a96e}
+.yn-back:disabled{opacity:0.3;cursor:default;text-decoration:none}
+@media(max-width:480px){
+  .yn-row{gap:10px}
+  .yn-btn{font-size:14px;min-height:58px}
+}
+.watchlist-btn{display:block;text-align:center;background:transparent;border:1px solid var(--gold);color:var(--gold);padding:12px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;cursor:pointer;width:100%;transition:all 0.2s;margin-bottom:10px}
+.watchlist-btn:hover{background:rgba(201,168,76,0.1)}
+.watchlist-btn.saved{border-color:#5a8a6e;color:#8fc9a5}
 
 /* RESULT */
 .result-wrap{padding:36px;display:none}
@@ -1462,7 +1482,7 @@ document.addEventListener('click', function(e){
   <div style="position:absolute;inset:0;background:linear-gradient(to right,#1a2135 35%,rgba(26,33,53,0.7) 60%,rgba(26,33,53,0.1) 100%);"></div>
   <div style="position:relative;z-index:2;width:100%;text-align:center;padding:56px 40px 48px;">
     <h1 class="quiz-hero-title" id="hub-content-start" tabindex="-1">Build Your Perfect British Mystery</h1>
-    <p class="quiz-hero-sub">Pick six ingredients — setting, detective, sidekick, murder location, suspect, and darkness level — and get matched to the show built for you.</p>
+    <p class="quiz-hero-sub">Ten quick yes-or-no questions. No typing, nothing to overthink — just tap Yes or No and find your next favourite.</p>
   </div>
 </div>
 
@@ -1472,31 +1492,32 @@ document.addEventListener('click', function(e){
   <div class="quiz-card">
 
     <!-- PROGRESS BAR -->
-    <div class="progress-bar" id="progress-bar">
-      <div class="progress-step active" id="step-0"></div>
-      <div class="progress-step" id="step-1"></div>
-      <div class="progress-step" id="step-2"></div>
-      <div class="progress-step" id="step-3"></div>
-      <div class="progress-step" id="step-4"></div>
-      <div class="progress-step" id="step-5"></div>
-    </div>
+    <div class="progress-bar" id="progress-bar"></div>
 
     <!-- QUESTION PANEL -->
     <div class="question-wrap" id="question-wrap">
-      <div class="q-counter" id="q-counter">Question 1 of 6</div>
+      <div class="q-counter" id="q-counter">Question 1 of 10</div>
       <div class="q-text" id="q-text" role="heading" aria-level="2" tabindex="-1"></div>
-      <div class="options-grid" id="options-grid"></div>
+      <div class="q-sub" id="q-sub"></div>
+      <div class="yn-row">
+        <button class="yn-btn no" id="yn-no" aria-label="No">&#10005; No</button>
+        <button class="yn-btn yes" id="yn-yes" aria-label="Yes">&#9829; Yes</button>
+      </div>
+      <div class="yn-under">
+        <button class="yn-back" id="yn-back" disabled>&larr; Previous question</button>
+      </div>
     </div>
 
     <!-- RESULT PANEL -->
     <div class="result-wrap" id="result-wrap">
-      <div class="result-label">The mystery is solved...</div>
+      <div class="result-label">Your match is in...</div>
       <div class="result-show" id="r-show" role="heading" aria-level="2" tabindex="-1"></div>
       <div class="result-meta" id="r-meta"></div>
       <div class="result-platform-badge" id="r-platform"></div>
       <div class="result-divider"></div>
       <div class="result-desc" id="r-desc"></div>
       <button class="watch-btn" id="r-watch-btn">View your recommendation</button>
+      <button class="watchlist-btn" id="r-watchlist-btn">+ Add to Watch List</button>
       <button class="retry-btn" id="retry-btn">Try again &rarr;</button>
       <div class="share-row">
         <button class="share-btn" id="fb-share">Share on Facebook</button>
@@ -1671,152 +1692,135 @@ document.addEventListener('click', function(e){
 </footer>
 <!-- END FOOTER -->
 
+<script src="/watchlist.js"></script>
 <script>
+const BRITBOX = "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20";
+const ACORN = "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20";
+
 const SHOWS = {
-  shetland:    {show:"Shetland",meta:"BritBox · 10 series · 2013–present",platform:"BritBox",desc:"Remote island atmosphere, a detective carrying old wounds, and a farmhouse-on-the-clifftop kind of dread. Stunning scenery, tight plotting, one of British TV's most compelling detective duos.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  vera:        {show:"Vera",meta:"BritBox · 14 series · 2011–2025",platform:"BritBox",desc:"Brenda Blethyn's Vera Stanhope is one of television's great detectives — unconventional, instinctive, and deeply human. Set against the wild Northumberland coast.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  midsomer:    {show:"Midsomer Murders",meta:"Acorn TV · 25 series · 1997–present",platform:"Acorn TV",desc:"Some of England's most picturesque villages with an implausible murder rate, an endless supply of suspicious neighbors, and a warm, witty detective pairing. The ultimate comfort watch.",url:"https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"},
-  marple:      {show:"Miss Marple (1984)",meta:"BritBox · 12 films · 1984–1992",platform:"BritBox",desc:"Joan Hickson's definitive Miss Marple is the gold standard of cozy mysteries — a brilliant elderly amateur who sees exactly what everyone else misses. Agatha Christie at her finest.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  fatherbrown: {show:"Father Brown",meta:"BritBox · 2013–present",platform:"BritBox",desc:"A gentle, unassuming Cotswolds priest unmasks murderers with quiet intuition rather than force. Golden-age charm, low stakes, endlessly cozy.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  broadchurch: {show:"Broadchurch",meta:"Free on Tubi · 3 series · 2013–2017",platform:"Tubi",desc:"A small coastal town torn apart after a murder. Olivia Colman and David Tennant lead one of the defining British crime dramas of the 2010s — completely absorbing, genuinely dark.",url:"https://tubitv.com"},
-  happyvalley: {show:"Happy Valley",meta:"BritBox · 3 series · 2014–2023",platform:"BritBox",desc:"Sarah Lancashire's Yorkshire sergeant holds a fractured community together by force of will. Dark, powerful, and one of the most acclaimed performances in British drama.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  hinterland:  {show:"Hinterland",meta:"Acorn TV · 4 series · 2013–2016",platform:"Acorn TV",desc:"Brooding and atmospheric, shot in the wild landscapes of rural Wales. A haunted detective, a case that always seems to circle back to his own past — a hidden gem.",url:"https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"},
-  morse:       {show:"Inspector Morse",meta:"BritBox · 1987–2000",platform:"BritBox",desc:"The gold standard of British detective drama. Oxford, opera, a brilliant and eccentric mind, and a loyal sergeant doing the legwork. Start here, then follow with Endeavour and Lewis.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  endeavour:   {show:"Endeavour",meta:"PBS Masterpiece · 2012–2023",platform:"PBS Masterpiece",desc:"The young Morse's earliest cases in 1960s Oxford — a rising talent still finding his feet, mentored by the steady DI Fred Thursday. Moodier and more melancholic than the original.",url:"https://www.pbs.org/show/endeavour/"},
-  grantchester:{show:"Grantchester",meta:"PBS Masterpiece · 2014–2026",platform:"PBS Masterpiece",desc:"A vicar and his police-detective best friend investigate murders together in a warm, unlikely partnership. Period charm with real emotional weight underneath.",url:"https://www.pbs.org/show/grantchester/"},
-  deathinparadise: {show:"Death in Paradise",meta:"BritBox · 2011–present",platform:"BritBox",desc:"A fish-out-of-water British detective solves locked-room murders on a sun-drenched Caribbean island, aided by a plucky, can't-stay-out-of-it local team. Light, funny, irresistibly comforting.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  lineofduty:  {show:"Line of Duty",meta:"BritBox · 2012–2021",platform:"BritBox",desc:"Police investigating police — tense, twisty, and morally murky. If your prime suspect is always the colleague nobody wants to look at too closely, this is your show.",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  unforgotten: {show:"Unforgotten",meta:"PBS Masterpiece · 2015–present",platform:"PBS Masterpiece",desc:"A cold-case unit reopens decades-old murders, as interested in grief and buried secrets as in whodunit. Moody, but compassionate — hope generally wins out.",url:"https://www.pbs.org/show/unforgotten/"}
+  shetland:    {show:"Shetland",meta:"BritBox · 10 series · 2013–present",platform:"BritBox",desc:"Remote island atmosphere, a detective carrying old wounds, and a farmhouse-on-the-clifftop kind of dread. Stunning scenery, tight plotting, one of British TV's most compelling detective duos.",url:BRITBOX,slug:"shetland",tags:["dark","coastal","serial","thriller"]},
+  vera:        {show:"Vera",meta:"BritBox · 14 series · 2011–2025",platform:"BritBox",desc:"Brenda Blethyn's Vera Stanhope is one of television's great detectives — unconventional, instinctive, and deeply human. Set against the wild Northumberland coast.",url:BRITBOX,slug:"vera",tags:["dark","coastal","puzzle","episodic"]},
+  midsomer:    {show:"Midsomer Murders",meta:"Acorn TV · 25 series · 1997–present",platform:"Acorn TV",desc:"Some of England's most picturesque villages with an implausible murder rate, an endless supply of suspicious neighbors, and a warm, witty detective pairing. The ultimate comfort watch.",url:ACORN,slug:"midsomer-murders",tags:["village","episodic","warm","puzzle"]},
+  marple:      {show:"Miss Marple (1984)",meta:"BritBox · 12 films · 1984–1992",platform:"BritBox",desc:"Joan Hickson's definitive Miss Marple is the gold standard of cozy mysteries — a brilliant elderly amateur who sees exactly what everyone else misses. Agatha Christie at her finest.",url:BRITBOX,slug:"miss-marple",tags:["village","period","puzzle","episodic"]},
+  fatherbrown: {show:"Father Brown",meta:"BritBox · 2013–present",platform:"BritBox",desc:"A gentle, unassuming Cotswolds priest unmasks murderers with quiet intuition rather than force. Golden-age charm, low stakes, endlessly cozy.",url:BRITBOX,slug:"father-brown",tags:["village","period","warm","episodic"]},
+  broadchurch: {show:"Broadchurch",meta:"Free on Tubi · 3 series · 2013–2017",platform:"Tubi",desc:"A small coastal town torn apart after a murder. Olivia Colman and David Tennant lead one of the defining British crime dramas of the 2010s — completely absorbing, genuinely dark.",url:"https://tubitv.com",slug:"broadchurch",tags:["dark","coastal","serial","thriller"]},
+  happyvalley: {show:"Happy Valley",meta:"BritBox · 3 series · 2014–2023",platform:"BritBox",desc:"Sarah Lancashire's Yorkshire sergeant holds a fractured community together by force of will. Dark, powerful, and one of the most acclaimed performances in British drama.",url:BRITBOX,slug:"happy-valley",tags:["dark","serial","thriller"]},
+  hinterland:  {show:"Hinterland",meta:"Acorn TV · 4 series · 2013–2016",platform:"Acorn TV",desc:"Brooding and atmospheric, shot in the wild landscapes of rural Wales. A haunted detective, a case that always seems to circle back to his own past — a hidden gem.",url:ACORN,slug:"hinterland",tags:["dark","coastal","serial","thriller"]},
+  morse:       {show:"Inspector Morse",meta:"BritBox · 1987–2000",platform:"BritBox",desc:"The gold standard of British detective drama. Oxford, opera, a brilliant and eccentric mind, and a loyal sergeant doing the legwork. Start here, then follow with Endeavour and Lewis.",url:BRITBOX,slug:"inspector-morse",tags:["puzzle","episodic","dark","period"]},
+  endeavour:   {show:"Endeavour",meta:"PBS Masterpiece · 2012–2023",platform:"PBS Masterpiece",desc:"The young Morse's earliest cases in 1960s Oxford — a rising talent still finding his feet, mentored by the steady DI Fred Thursday. Moodier and more melancholic than the original.",url:"https://www.pbs.org/show/endeavour/",slug:"endeavour",tags:["period","puzzle","dark","episodic"]},
+  grantchester:{show:"Grantchester",meta:"PBS Masterpiece · 2014–2026",platform:"PBS Masterpiece",desc:"A vicar and his police-detective best friend investigate murders together in a warm, unlikely partnership. Period charm with real emotional weight underneath.",url:"https://www.pbs.org/show/grantchester/",slug:"grantchester",tags:["village","period","warm","episodic"]},
+  deathinparadise: {show:"Death in Paradise",meta:"BritBox · 2011–present",platform:"BritBox",desc:"A fish-out-of-water British detective solves locked-room murders on a sun-drenched Caribbean island, aided by a plucky, can't-stay-out-of-it local team. Light, funny, irresistibly comforting.",url:BRITBOX,slug:"death-in-paradise",tags:["funny","puzzle","episodic","warm"]},
+  lineofduty:  {show:"Line of Duty",meta:"BritBox · 2012–2021",platform:"BritBox",desc:"Police investigating police — tense, twisty, and morally murky. If your prime suspect is always the colleague nobody wants to look at too closely, this is your show.",url:BRITBOX,slug:"line-of-duty",tags:["dark","serial","puzzle","thriller"]},
+  unforgotten: {show:"Unforgotten",meta:"PBS Masterpiece · 2015–present",platform:"PBS Masterpiece",desc:"A cold-case unit reopens decades-old murders, as interested in grief and buried secrets as in whodunit. Moody, but compassionate — hope generally wins out.",url:"https://www.pbs.org/show/unforgotten/",slug:"unforgotten",tags:["dark","serial","puzzle","thriller"]},
+  marlow:      {show:"The Marlow Murder Club",meta:"PBS Masterpiece · 2024–present",platform:"PBS Masterpiece",desc:"A resourceful group of amateur sleuths tackles mysteries in their Thames-side town — clever plotting with real warmth between its three leads.",url:"https://www.pbs.org/show/marlow-murder-club/",slug:"marlow-murder-club",tags:["village","funny","warm","puzzle"]},
+  beyondparadise: {show:"Beyond Paradise",meta:"BritBox · 2023–present",platform:"BritBox",desc:"An unconventional detective tackles cases amid the rhythms of a picturesque coastal community, in this warm Death in Paradise spin-off.",url:BRITBOX,slug:"beyond-paradise",tags:["coastal","funny","warm","episodic"]},
+  poirot:      {show:"Agatha Christie's Poirot",meta:"BritBox · 1989–2013",platform:"BritBox",desc:"David Suchet's definitive Poirot uses extraordinary powers of deduction to unravel baffling cases across more than two decades of golden-age mysteries.",url:BRITBOX,slug:"poirot",tags:["period","puzzle","episodic","warm"]},
+  chelsea:     {show:"The Chelsea Detective",meta:"Acorn TV · 2022–present",platform:"Acorn TV",desc:"An observant, unhurried London investigator explores crimes and contradictions across Chelsea — measured, character-driven mysteries.",url:ACORN,slug:"the-chelsea-detective",tags:["episodic","puzzle","warm"]},
+  karenpirie:  {show:"Karen Pirie",meta:"BritBox · 2022–present",platform:"BritBox",desc:"A young Scottish detective re-examines cold cases whose consequences reach across decades — sharp, contemporary, and quietly tense.",url:BRITBOX,slug:"karen-pirie",tags:["dark","serial","puzzle","thriller"]},
+  slowhorses:  {show:"Slow Horses",meta:"Apple TV+ · 2022–present",platform:"Apple TV+",desc:"A sidelined team of intelligence operatives becomes entangled in perilous conspiracies — wry, cynical, and genuinely gripping espionage.",url:"https://tv.apple.com",slug:"slow-horses",tags:["funny","dark","serial","thriller"]},
+  dalgliesh:   {show:"Dalgliesh",meta:"Acorn TV · 2021–present",platform:"Acorn TV",desc:"An introspective poet-detective investigates unsettling crimes in atmospheric period settings, adapted from P.D. James's novels.",url:ACORN,slug:"dalgliesh",tags:["period","dark","puzzle","episodic"]},
+  magpie:      {show:"Magpie Murders",meta:"PBS Masterpiece · 2022",platform:"PBS Masterpiece",desc:"A literary mystery folds clues and secrets into two intertwined story worlds — a puzzle within a puzzle from Anthony Horowitz.",url:"https://www.pbs.org/show/magpie-murders/",slug:"magpie-murders",tags:["period","puzzle","serial","funny"]},
+  mcdonalddodds: {show:"McDonald & Dodds",meta:"BritBox · 2020–2024",platform:"BritBox",desc:"An unlikely pair of detectives solve unusual cases amid the historic streets of Bath — a charming, low-key detective duo.",url:BRITBOX,slug:"mcdonald-and-dodds",tags:["funny","puzzle","episodic","warm"]},
+  queensofmystery: {show:"Queens of Mystery",meta:"Acorn TV · 2019–present",platform:"Acorn TV",desc:"A young detective and her three crime-writing aunts navigate unusual murders and family puzzles in a whimsical English village.",url:ACORN,slug:"queens-of-mystery",tags:["village","funny","warm","puzzle"]},
+  annika:      {show:"Annika",meta:"PBS Masterpiece · 2021–2023",platform:"PBS Masterpiece",desc:"A witty marine homicide detective leads investigations across Scotland's waterways, narrating straight to camera between cases.",url:"https://www.amazon.com/s?k=Annika+TV+series+Nicola+Walker&tag=britishtvhub-20",slug:"annika",tags:["coastal","funny","dark","episodic"]},
+  thebay:      {show:"The Bay",meta:"BritBox · 2019–present",platform:"BritBox",desc:"A family liaison officer navigates difficult cases in a tight-knit Lancashire coastal community — grounded, emotionally honest police drama.",url:BRITBOX,slug:"the-bay",tags:["dark","coastal","serial","thriller"]},
+  rosemarythyme: {show:"Rosemary & Thyme",meta:"BritBox · 2003–2007",platform:"BritBox",desc:"Two gardening enthusiasts encounter puzzling deaths while working in beautiful settings — gentle, low-stakes comfort mysteries.",url:BRITBOX,slug:"rosemary-and-thyme",tags:["village","warm","episodic","puzzle"]},
+  grace:       {show:"Grace",meta:"BritBox · 2021–present",platform:"BritBox",desc:"A dedicated Brighton detective investigates haunting crimes and complicated human motives along the south coast.",url:BRITBOX,slug:"grace",tags:["dark","coastal","episodic","thriller"]}
 };
 
 const QUESTIONS = [
-  {
-    text: "Where does your ideal mystery unfold?",
-    opts: [
-      {label:"A remote island or wild coastline", w:{shetland:3,vera:2,hinterland:2}},
-      {label:"A picture-perfect English village", w:{midsomer:3,marple:3,fatherbrown:2,grantchester:2}},
-      {label:"An elegant university city, period England", w:{morse:3,endeavour:3,grantchester:1}},
-      {label:"A gritty Northern town or housing estate", w:{happyvalley:3,lineofduty:3,broadchurch:1}},
-      {label:"A sun-drenched island paradise", w:{deathinparadise:4}}
-    ]
-  },
-  {
-    text: "What kind of detective do you want leading the case?",
-    opts: [
-      {label:"A brilliant, eccentric mind", w:{morse:3,endeavour:2,marple:2}},
-      {label:"A formidable woman who trusts her instincts", w:{vera:3,happyvalley:2,shetland:1}},
-      {label:"A warm, community-rooted local", w:{midsomer:2,grantchester:3,fatherbrown:3,deathinparadise:1}},
-      {label:"A brooding loner carrying old wounds", w:{hinterland:3,broadchurch:2,shetland:2}},
-      {label:"A rising talent still finding their feet", w:{endeavour:3,lineofduty:2}}
-    ]
-  },
-  {
-    text: "Who do you want by their side?",
-    opts: [
-      {label:"A sharp junior partner learning the ropes", w:{morse:2,endeavour:2,vera:2}},
-      {label:"A blunt, no-nonsense pathologist or forensics expert", w:{vera:2,lineofduty:2,broadchurch:1}},
-      {label:"A loyal deputy who quietly worries about them", w:{grantchester:3,fatherbrown:3,midsomer:2}},
-      {label:"A plucky local who won't stay out of the investigation", w:{deathinparadise:2,midsomer:2,marple:2}},
-      {label:"A world-weary superior who's seen it all before", w:{happyvalley:2,lineofduty:3,shetland:1}}
-    ]
-  },
-  {
-    text: "Where would you least like to find a body?",
-    opts: [
-      {label:"The vicarage garden, mid-summer fête", w:{midsomer:3,fatherbrown:2,grantchester:2,marple:2}},
-      {label:"The library of a grand manor house", w:{marple:3,morse:2,midsomer:2}},
-      {label:"A remote farmhouse or windswept clifftop", w:{shetland:3,vera:2,hinterland:3}},
-      {label:"Down by the harbor, or on a boat", w:{deathinparadise:3,broadchurch:2,shetland:1}},
-      {label:"A run-down estate or industrial unit", w:{happyvalley:3,lineofduty:3,broadchurch:1}}
-    ]
-  },
-  {
-    text: "Who do you suspect first?",
-    opts: [
-      {label:"The vicar, obviously", w:{midsomer:2,fatherbrown:2,grantchester:2}},
-      {label:"The lady of the manor, with a secret", w:{marple:3,midsomer:2,morse:1}},
-      {label:"The newcomer nobody trusts yet", w:{broadchurch:2,hinterland:2,unforgotten:3}},
-      {label:"The detective's own colleague", w:{lineofduty:3,happyvalley:2}},
-      {label:"The charming local who's a little too helpful", w:{deathinparadise:3,grantchester:1}}
-    ]
-  },
-  {
-    text: "How dark do you want it?",
-    opts: [
-      {label:"Strictly cozy — nobody I like should die", w:{midsomer:3,marple:3,fatherbrown:3,deathinparadise:3}},
-      {label:"Moody, but hope wins out in the end", w:{grantchester:2,vera:2,unforgotten:4,endeavour:2}},
-      {label:"Give me real darkness", w:{happyvalley:3,broadchurch:3,hinterland:2,lineofduty:2}},
-      {label:"Slow-burn tension I can't look away from", w:{shetland:3,lineofduty:3,broadchurch:2,unforgotten:2}}
-    ]
-  }
-];
-
-const MORE = [
-  {name:"Inspector Morse",platform:"BritBox",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  {name:"Vera",platform:"BritBox",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  {name:"Hinterland",platform:"Acorn TV",url:"https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"},
-  {name:"Midsomer Murders",platform:"Acorn TV",url:"https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"},
-  {name:"Happy Valley",platform:"BritBox",url:"https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"},
-  {name:"Broadchurch",platform:"Tubi (free)",url:"https://tubitv.com"}
+  {cat:"Setting",text:"A picturesque village hiding a surprising number of secrets?",sub:"Quaint streets, curious neighbours, and suspicious goings-on.",tag:"village"},
+  {cat:"Tone",text:"A mystery that makes you smile?",sub:"Witty dialogue, oddball characters, and clever humour.",tag:"funny"},
+  {cat:"Mood",text:"Dark, tense crime stories with real emotional weight?",sub:"For nights when you want a gripping, serious watch.",tag:"dark"},
+  {cat:"Setting",text:"Wild landscapes, windswept shores, and atmospheric investigations?",sub:"The location almost becomes another character.",tag:"coastal"},
+  {cat:"Era",text:"Secrets, investigations, and intrigue in a bygone era?",sub:"Costumes, period details, and beautifully drawn worlds.",tag:"period"},
+  {cat:"Detectives",text:"A brilliant detective who solves the impossible?",sub:"Follow the clues, test the theories, enjoy the reveal.",tag:"puzzle"},
+  {cat:"Story",text:"A continuing storyline across several episodes?",sub:"A slow-burn mystery that rewards a proper binge.",tag:"serial"},
+  {cat:"Style",text:"A self-contained case you can finish in one sitting?",sub:"A fresh puzzle in each instalment.",tag:"episodic"},
+  {cat:"Characters",text:"A warm ensemble you'd happily revisit?",sub:"Familiar faces and a strong sense of community.",tag:"warm"},
+  {cat:"Pace",text:"Twists, suspense, and a race to uncover the truth?",sub:"Keeps you guessing until the credits roll.",tag:"thriller"}
 ];
 
 let answers = [];
 let current = 0;
+const showIds = Object.keys(SHOWS);
+
+function buildProgressBar(){
+  const bar = document.getElementById('progress-bar');
+  bar.innerHTML = '';
+  QUESTIONS.forEach((_, i) => {
+    const step = document.createElement('div');
+    step.className = 'progress-step' + (i === 0 ? ' active' : '');
+    step.id = 'step-' + i;
+    bar.appendChild(step);
+  });
+}
 
 function renderQuestion(){
   const q = QUESTIONS[current];
   document.getElementById('q-counter').textContent = 'Question ' + (current+1) + ' of ' + QUESTIONS.length;
   document.getElementById('q-text').textContent = q.text;
-  const grid = document.getElementById('options-grid');
-  grid.innerHTML = '';
-  q.opts.forEach(o => {
-    const btn = document.createElement('button');
-    btn.className = 'opt-btn';
-    btn.textContent = o.label;
-    btn.onclick = () => pick(o.w, btn);
-    grid.appendChild(btn);
-  });
+  document.getElementById('q-sub').textContent = q.sub;
   for(let i=0;i<QUESTIONS.length;i++){
     const s = document.getElementById('step-'+i);
-    s.className = 'progress-step' + (i < current ? ' done' : i === current ? ' active' : '');
+    if(s) s.className = 'progress-step' + (i < current ? ' done' : i === current ? ' active' : '');
+  }
+  const backBtn = document.getElementById('yn-back');
+  backBtn.disabled = current === 0;
+}
+
+function answer(val){
+  answers[current] = val;
+  current++;
+  if(current < QUESTIONS.length){
+    renderQuestion();
+    document.getElementById('q-text').focus();
+  } else {
+    showResult();
+    document.getElementById('r-show').focus();
   }
 }
 
-function pick(weights, btn){
-  if(btn.disabled) return;
-  document.querySelectorAll('.opt-btn').forEach(b => { b.classList.remove('selected'); b.disabled = true; });
-  btn.classList.add('selected');
-  answers.push(weights);
-  setTimeout(()=>{
-    current++;
-    if(current < QUESTIONS.length){
-      renderQuestion();
-      document.getElementById("q-text").focus();
-    } else {
-      showResult();
-      document.getElementById("r-show").focus();
-    }
-  }, 320);
+document.getElementById('yn-no').onclick = () => answer(false);
+document.getElementById('yn-yes').onclick = () => answer(true);
+document.getElementById('yn-back').onclick = () => {
+  if(current > 0){
+    current--;
+    renderQuestion();
+  }
+};
+document.addEventListener('keydown', e => {
+  if(document.getElementById('question-wrap').style.display === 'none') return;
+  if(e.altKey || e.ctrlKey || e.metaKey) return;
+  if(e.key === 'ArrowLeft') answer(false);
+  if(e.key === 'ArrowRight') answer(true);
+});
+
+function ranked(){
+  const yesTags = QUESTIONS.filter((_, i) => answers[i] === true).map(q => q.tag);
+  const noTags = QUESTIONS.filter((_, i) => answers[i] === false).map(q => q.tag);
+  return showIds.map((id, i) => {
+    const s = SHOWS[id];
+    const match = s.tags.filter(t => yesTags.includes(t)).length;
+    const clash = s.tags.filter(t => noTags.includes(t)).length;
+    const score = match * 5 - clash * 2;
+    return { id, s, score, match, i };
+  }).sort((a,b) => b.score - a.score || b.match - a.match || a.i - b.i);
 }
 
-function computeWinner(){
-  const totals = {};
-  Object.keys(SHOWS).forEach(id => totals[id] = 0);
-  answers.forEach(w => {
-    Object.keys(w).forEach(id => { totals[id] = (totals[id]||0) + w[id]; });
-  });
-  let bestId = null, bestScore = -1;
-  Object.keys(SHOWS).forEach(id => {
-    if(totals[id] > bestScore){ bestScore = totals[id]; bestId = id; }
-  });
-  return bestId;
+function paintWatchlistBtn(slug){
+  const btn = document.getElementById('r-watchlist-btn');
+  const isSaved = window.BTVHWatchlist && window.BTVHWatchlist.getStatus(slug);
+  btn.textContent = isSaved ? '✓ On Your Watch List' : '+ Add to Watch List';
+  btn.classList.toggle('saved', !!isSaved);
 }
 
 function showResult(){
-  const winnerId = computeWinner();
-  const result = SHOWS[winnerId];
+  const results = ranked();
+  const top = results[0];
+  const result = top.s;
 
-  for(let i=0;i<QUESTIONS.length;i++) document.getElementById('step-'+i).className = 'progress-step done';
+  for(let i=0;i<QUESTIONS.length;i++){ const s = document.getElementById('step-'+i); if(s) s.className = 'progress-step done'; }
 
   document.getElementById('question-wrap').style.display = 'none';
   const rw = document.getElementById('result-wrap');
@@ -1828,8 +1832,17 @@ function showResult(){
   document.getElementById('r-desc').textContent = result.desc;
 
   const wb = document.getElementById('r-watch-btn');
-  wb.textContent = 'Watch on ' + result.platform + ' \u2192';
+  wb.textContent = 'Watch on ' + result.platform + ' →';
   wb.onclick = () => window.open(result.url, '_blank');
+
+  paintWatchlistBtn(result.slug);
+  document.getElementById('r-watchlist-btn').onclick = () => {
+    if(window.BTVHWatchlist){
+      const current = window.BTVHWatchlist.getStatus(result.slug);
+      window.BTVHWatchlist.setStatus(result.slug, current ? null : 'want');
+      paintWatchlistBtn(result.slug);
+    }
+  };
 
   document.getElementById('retry-btn').onclick = reset;
 
@@ -1847,13 +1860,13 @@ function showResult(){
   const moreGrid = document.getElementById('more-grid');
   moreShows.style.display = 'block';
   moreGrid.innerHTML = '';
-  MORE.filter(m => m.name !== result.show).slice(0,4).forEach(m => {
+  results.slice(1,5).forEach(r => {
     const chip = document.createElement('a');
     chip.className = 'more-chip';
-    chip.href = m.url;
+    chip.href = r.s.url;
     chip.target = '_blank';
     chip.rel = 'noopener';
-    chip.innerHTML = '<div class="more-chip-name">' + m.name + '</div><div class="more-chip-platform">' + m.platform + '</div>';
+    chip.innerHTML = '<div class="more-chip-name">' + r.s.show + '</div><div class="more-chip-platform">' + r.s.platform + '</div>';
     moreGrid.appendChild(chip);
   });
 }
@@ -1864,10 +1877,12 @@ function reset(){
   document.getElementById('question-wrap').style.display = 'block';
   document.getElementById('result-wrap').style.display = 'none';
   document.getElementById('more-shows').style.display = 'none';
+  buildProgressBar();
   renderQuestion();
-  document.getElementById("q-text").focus();
+  document.getElementById('q-text').focus();
 }
 
+buildProgressBar();
 renderQuestion();
 </script>
 
