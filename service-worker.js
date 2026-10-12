@@ -9,8 +9,7 @@ const CORE_ASSETS = [
   '/index.html',
   '/shows.html',
   '/streaming.html',
-  '/cozy.html',
-  '/meet-tilly.html'
+  '/cozy.html'
 ];
 
 // Install: pre-cache core pages

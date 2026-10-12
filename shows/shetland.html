@@ -336,37 +336,6 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 }
 </style>
 
-<style>
-/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
-   of Chatbase's native size was tried and regressed — if their native size
-   is large, scaling it by a percentage can still render large). Excludes
-   #backToTop, which happens to share the same position:fixed;bottom;right
-   inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-iframe[id*="chatbase-bubble-button"],
-#chatbase-bubble-button {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
-  overflow: hidden !important;
-}
-@media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  iframe[id*="chatbase-bubble-button"],
-  #chatbase-bubble-button {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    bottom: 16px !important;
-    right: 16px !important;
-    overflow: hidden !important;
-  }
-}
-</style>
 
 <style>
 /* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
@@ -540,7 +509,6 @@ iframe[id*="chatbase-bubble-button"],
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
             <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
             <a href="/what-are-you-watching.html">What Are You Watching?</a>
           </div>
           <div class="nav-dropdown-col">
@@ -904,9 +872,6 @@ document.addEventListener('click', function(e){
   </div>
 </footer>
 
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 <script src="/watchlist.js"></script>
 </body>
 </html>

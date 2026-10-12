@@ -375,7 +375,7 @@ a[style*="background: #c9a96e"]:hover {
   filter: brightness(1.1);
 }
 
-/* Outlined button hover (Ask Tilly) */
+/* Outlined button hover */
 a[style*="border:1px solid #c9a96e"]:hover,
 a[style*="border: 1px solid #c9a96e"]:hover {
   background-color: rgba(201, 168, 76, 0.1);
@@ -721,7 +721,7 @@ div[style*="border:1px solid #3d4a60"] {
     text-align: center !important;
   }
 
-  /* Ask Tilly button */
+  /* Compact gold button */
   a[style*="background:#c9a96e"][style*="Raleway"] {
     font-size: 10px !important;
     padding: 10px 12px !important;
@@ -1059,40 +1059,6 @@ div[style*="border:1px solid #3d4a60"] {
     display: none !important;
   }
 }
-
-
-/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
-   of Chatbase's native size was tried and regressed — if their native size
-   is large, scaling it by a percentage can still render large). Excludes
-   #backToTop, which happens to share the same position:fixed;bottom;right
-   inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-iframe[id*="chatbase-bubble-button"],
-#chatbase-bubble-button {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
-  overflow: hidden !important;
-}
-@media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  iframe[id*="chatbase-bubble-button"],
-  #chatbase-bubble-button {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    bottom: 16px !important;
-    right: 16px !important;
-    overflow: hidden !important;
-  }
-}
-</style>
-<style>
-
 </style>
 <style>
 /* === STANDARD NAV (added for consistency with rest of site) === */
@@ -1391,7 +1357,6 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
             <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
             <a href="/what-are-you-watching.html">What Are You Watching?</a>
           </div>
           <div class="nav-dropdown-col">
@@ -1471,7 +1436,6 @@ document.addEventListener('click', function(e){
       <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
         <li><a href="/quiz.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Match Me Quiz</a><br><span style="font-size: 12px; color: var(--text);">Find shows based on your taste</span></li>
         <li><a href="/agatha-christie.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Agatha Christie Guide</a><br><span style="font-size: 12px; color: var(--text);">All adaptations of her classics</span></li>
-        <li><a href="/meet-tilly.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ Ask Tilly (AI)</a><br><span style="font-size: 12px; color: var(--text);">Chat with the AI show expert</span></li>
         <li><a href="/essentials.html" style="color: var(--gold-light); text-decoration: none; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.color='var(--gold)'; this.style.textDecoration='underline';" onmouseout="this.style.color='var(--gold-light)'; this.style.textDecoration='none';">→ The Snug</a><br><span style="font-size: 12px; color: var(--text);">DVDs, books, and streaming picks in one place</span></li>
       </ul>
     </div>

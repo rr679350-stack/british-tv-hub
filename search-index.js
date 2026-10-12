@@ -62,7 +62,6 @@ window.SITE_SEARCH_INDEX = [
   {"title": "Line of Duty: Under Investigation", "url": "/line-of-duty-guest-stars.html"},
   {"title": "Best Line of Duty Seasons, Ranked (Series 1–6)", "url": "/line-of-duty-series-ranked.html"},
   {"title": "What's on PBS Masterpiece", "url": "/masterpiece2026.html"},
-  {"title": "Meet Tilly", "url": "/meet-tilly.html"},
   {"title": "The British TV Hub Collection | Mugs, Journals & More", "url": "/merch.html"},
   {"title": "New to Midsomer Murders? A Beginner's Guide", "url": "/midsomer-murders-beginners-guide.html"},
   {"title": "Rank Midsomer Murders Episodes", "url": "/midsomer-murders-episode-ranker.html"},
