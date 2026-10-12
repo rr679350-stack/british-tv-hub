@@ -688,7 +688,8 @@ document.addEventListener('click', function(e){
   .rail-head .head-text{max-width:720px;}
   .rail-arrows{display:flex;gap:8px;flex-shrink:0;margin-bottom:4px;}
   .rail-arrow{cursor:pointer;border:1px solid var(--border);color:var(--text);border-radius:50%;height:34px;width:34px;background:var(--bg-dark);font-size:18px;line-height:1;}
-  .rail-arrow:hover{border-color:var(--gold);color:var(--gold-light);}
+  .rail-arrow:hover:not(:disabled){border-color:var(--gold);color:var(--gold-light);}
+  .rail-arrow:disabled{opacity:.35;cursor:not-allowed;}
   .rail{display:flex;gap:18px;align-items:flex-start;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;padding:20px 40px 10px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent;}
   .rail-tile{scroll-snap-align:start;flex:0 0 240px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
   .rail-tile:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
@@ -803,7 +804,7 @@ document.addEventListener('click', function(e){
   ];
   var hiddenGems=[
     {badge:'Hidden Gem',name:'The Detectorists',href:null,
-     desc:"Mackenzie Crook's gentle comedy-drama about metal detectorists in rural Essex is one of the most quietly beautiful British shows around. Two series of pure television treasure.",
+     desc:"Mackenzie Crook's gentle comedy-drama about metal detectorists in rural Essex is one of the most quietly beautiful British shows around. Three series of gentle, beautifully observed television.",
      tags:['Comedy Drama'],platform:{label:'Acorn TV',href:'https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20',cls:'acorn'},
      color:'#6b687d'},
     {badge:'Hidden Gem',name:'Hope Street',href:null,
@@ -813,7 +814,28 @@ document.addEventListener('click', function(e){
     {badge:'Hidden Gem',name:'The Bletchley Circle',href:null,
      desc:"Former WWII codebreakers use their unique skills to solve post-war murders. A brilliant, underappreciated gem that deserves far more recognition than it receives.",
      tags:['Period','Mystery'],platform:{label:'BritBox',href:'https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20',cls:''},
-     color:'#b18762'}
+     color:'#b18762'},
+    {badge:'Hidden Gem',name:"The Last Detective",href:null,
+     desc:"An understated detective series following the thoughtful, frequently underestimated DC Dangerous Davies as he pursues cases with persistence and empathy.",
+     tags:["Detective","Character Drama"],color:'#677e84'},
+    {badge:'Hidden Gem',name:"WPC 56",href:null,
+     desc:"A young policewoman navigates the challenges of 1950s policing in this engaging period crime drama.",
+     tags:["Period","Police Drama"],color:'#8f7680'},
+    {badge:'Hidden Gem',name:"The Coroner",href:null,
+     desc:"A former solicitor returns to a Devon seaside town as coroner, uncovering secrets behind unexpected deaths.",
+     tags:["Coastal","Mystery"],color:'#687c75'},
+    {badge:'Hidden Gem',name:"Shakespeare & Hathaway",href:null,
+     desc:"A mismatched detective duo tackles offbeat mysteries around Stratford-upon-Avon, mixing comedy and crime.",
+     tags:["Lighthearted","Mystery"],color:'#817453'},
+    {badge:'Hidden Gem',name:"Queens of Mystery",href:null,
+     desc:"A young detective and her three crime-writing aunts investigate murders in a picturesque village.",
+     tags:["Cosy Mystery","Village"],color:'#736b89'},
+    {badge:'Hidden Gem',name:"Agatha Raisin",href:null,
+     desc:"A former PR executive swaps London life for a Cotswolds village and finds herself solving murders.",
+     tags:["Cotswolds","Comedy Mystery"],color:'#777f60'},
+    {badge:'Hidden Gem',name:"Foyle's War",href:null,
+     desc:"A principled detective investigates crimes on the British home front during the Second World War and its aftermath.",
+     tags:["Period","Detective"],color:'#7b7170'}
   ];
 
   var uid=0;
@@ -862,11 +884,30 @@ document.addEventListener('click', function(e){
   build('top-rail',topPicks,true);
   build('gems-rail',hiddenGems,false);
 
+  function refreshRailButtons(rail){
+    var maxScroll=Math.max(0,rail.scrollWidth-rail.clientWidth);
+    document.querySelectorAll('.rail-arrow[data-rail="'+rail.id+'"]').forEach(function(btn){
+      var dir=Number(btn.getAttribute('data-dir'));
+      var atEdge=dir<0?rail.scrollLeft<=2:rail.scrollLeft>=maxScroll-2;
+      btn.disabled=atEdge;
+      btn.setAttribute('aria-disabled',atEdge?'true':'false');
+    });
+  }
   document.querySelectorAll('.rail-arrow').forEach(function(btn){
     btn.addEventListener('click',function(){
       var rail=document.getElementById(btn.getAttribute('data-rail'));
-      if(rail)rail.scrollBy({left:Number(btn.getAttribute('data-dir'))*480,behavior:'smooth'});
+      if(!rail)return;
+      var tile=rail.querySelector('.rail-tile');
+      var step=tile?tile.getBoundingClientRect().width+18:258;
+      rail.scrollBy({left:Number(btn.getAttribute('data-dir'))*step*2,behavior:'smooth'});
     });
+  });
+  document.querySelectorAll('.rail').forEach(function(rail){
+    rail.addEventListener('scroll',function(){refreshRailButtons(rail);},{passive:true});
+    refreshRailButtons(rail);
+  });
+  window.addEventListener('resize',function(){
+    document.querySelectorAll('.rail').forEach(refreshRailButtons);
   });
   document.querySelectorAll('.loved-toggle').forEach(function(btn){
     btn.addEventListener('click',function(){
