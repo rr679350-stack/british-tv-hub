@@ -86,11 +86,15 @@ html body pre, html body code {
   overflow-wrap: anywhere;
 }
 html body pre { overflow-x: auto; }
-html body input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+html body input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not(.lcw-input),
 html body select,
 html body textarea {
   min-height: 44px;
 }
+/* .lcw-input (Ludwig crossword letter cells) is excluded above: these are small
+   square cells sized by their own grid track, not free-standing text fields, and
+   the 44px floor was stretching them into non-square boxes. Their own CSS
+   (shows/ludwig.html) keeps them at a 24px minimum instead. */
 
 /* 400% zoom / 320px reflow fixes found by the sitewide audit. */
 @media (max-width: 360px) {

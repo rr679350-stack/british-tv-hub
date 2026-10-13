@@ -14,13 +14,22 @@
       if (box.querySelector('iframe[id*="chatbase"], [id*="chatbase"], iframe[src*="chatbase"]')) {
         box.setAttribute('role', 'region');
         box.setAttribute('aria-label', 'Chat support');
-      } else if (box.querySelector('#bmc-wbtn, [id*="bmc-"]')) {
+      } else if (box.querySelector('#bmc-wbtn, [id*="bmc-"], [class*="bmc-"], iframe[src*="buymeacoffee"]')) {
         // Buy Me a Coffee nests its button inside its own wrapper divs, so the
         // top-level fixed container (the one axe's region/landmark rules
         // actually flag) is deeper than labelSupportWidget's immediate-parent
         // check below can reach. Label the true outer container here too.
         box.setAttribute('role', 'region');
         box.setAttribute('aria-label', 'Support options');
+      } else {
+        // Catch-all: the Buy Me a Coffee widget renders more than one top-level
+        // fixed-position container (button, popup message bubble, etc.) and its
+        // internal markup can change without notice, so a specific-content match
+        // above can miss one. Any other unlabeled fixed overlay still needs to
+        // sit inside a landmark, so label it generically rather than leaving it
+        // unclaimed.
+        box.setAttribute('role', 'region');
+        box.setAttribute('aria-label', 'Page widget');
       }
     });
   }
