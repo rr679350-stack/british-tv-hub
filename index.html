@@ -1696,6 +1696,17 @@ document.addEventListener('click', function(e){
   <a href="/watch-list.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Start Your Watch List &rarr;</a>
 </div>
 
+<div id="cyj-wrap" style="display:none;padding:40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
+  <div style="max-width:1100px;margin:0 auto;background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:28px 32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:240px;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Continue Your Journey</div>
+      <h2 id="cyj-title" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">Because You're Watching &hellip;</h2>
+      <p id="cyj-sub" style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:0;"></p>
+    </div>
+    <a id="cyj-cta" href="/watch-list.html" style="flex-shrink:0;display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 22px;border-radius:2px;">Continue Watching &rarr;</a>
+  </div>
+</div>
+
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
   <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">THIS MONTH</div>
   <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">New on BritBox, Acorn TV &amp; PBS Masterpiece</h2>
@@ -2103,5 +2114,48 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+<script src="/watchlist-guides.js" defer></script>
+<script src="/watchlist.js" defer></script>
+<script defer>
+(function(){
+  function init(){
+    if(!window.BTVHWatchlist) return;
+    var all = window.BTVHWatchlist.getAll();
+    var watchingSlugs = Object.keys(all).filter(function(slug){ return all[slug] === 'watching'; });
+    if(watchingSlugs.length === 0) return;
+
+    // Build a slug -> title lookup from the guide map (shows with a dedicated /shows/ page).
+    // A show tracked from the wider 650+ database that has no guide page yet is skipped here
+    // rather than shown without a working link; the full Watch List page handles every show.
+    var guides = window.BTVH_GUIDES || {};
+    var bySlug = {};
+    Object.keys(guides).forEach(function(title){ bySlug[guides[title]] = title; });
+
+    var slug = watchingSlugs.find(function(s){ return bySlug[s]; });
+    if(!slug) return;
+
+    var title = bySlug[slug];
+    var wrap = document.getElementById('cyj-wrap');
+    var titleEl = document.getElementById('cyj-title');
+    var subEl = document.getElementById('cyj-sub');
+    var cta = document.getElementById('cyj-cta');
+    if(!wrap || !titleEl || !cta) return;
+
+    titleEl.textContent = 'Because You’re Watching ' + title;
+    if(subEl){
+      subEl.textContent = watchingSlugs.length > 1
+        ? 'Pick up where you left off, or see everything else on your list.'
+        : 'Pick up where you left off, or explore the full guide.';
+    }
+    cta.href = '/shows/' + slug + '.html';
+    wrap.style.display = 'block';
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 </body>
 </html>
