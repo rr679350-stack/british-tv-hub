@@ -17,6 +17,11 @@
       "permanent": true
     },
     {
+      "source": "/what-are-you-watching.html",
+      "destination": "/essentials.html",
+      "permanent": true
+    },
+    {
       "source": "/essentials-gifts.html",
       "destination": "/gift-guide-hub.html",
       "permanent": true

@@ -24,7 +24,7 @@ Reviewed source for all 202 HTML files and seven existing shared CSS/JavaScript 
 A headless Chromium could be installed this session, so the pages below were rendered and scanned with axe-core (WCAG 2.0/2.1 A & AA rules) against the exact commit live at the time (`594776c`), served locally since this sandbox can't reach the public internet. `meet-tilly.html` was dropped from the original list — the page no longer exists (Tilly was retired in favor of quiz.html, see /areas/tilly-chatbot notes).
 
 **Result: 0 confirmed violations** on all 16 pages checked:
-/shows/vera.html, /shows/ludwig.html, /shows-index.html, /watch-list.html, /which-subscription.html, /streaming.html, /books.html, /gift-guide-hub.html, /quiz.html, /village-quiz.html, /british-tv-personality-quiz.html, /halloween-mystery-builder.html, /community-snug.html, /what-are-you-watching.html, /dark-october-night-mysteries.html, /newsletters/sunday-picks-ludwig-returns.html.
+/shows/vera.html, /shows/ludwig.html, /shows-index.html, /watch-list.html, /which-subscription.html, /streaming.html, /books.html, /gift-guide-hub.html, /quiz.html, /village-quiz.html, /british-tv-personality-quiz.html, /halloween-mystery-builder.html, /community-snug.html, /dark-october-night-mysteries.html, /newsletters/sunday-picks-ludwig-returns.html.
 
 (An initial pass before the page had finished painting returned false contrast failures — near-white-on-near-white — caused by reading computed styles mid-render in headless Chromium, not a real defect. Resolved by waiting for the page to settle before scanning; confirmed against a screenshot.)
 

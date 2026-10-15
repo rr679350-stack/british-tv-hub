@@ -187,7 +187,6 @@ window.SITE_SEARCH_INDEX = [
   {"title": "Which Cozy English Village Are You?", "url": "/village-quiz.html"},
   {"title": "Your Watch List", "url": "/watch-list.html"},
   {"title": "Weekend Binge Guide: Short British Series", "url": "/weekend-binge-guide.html"},
-  {"title": "What Are You Watching?", "url": "/what-are-you-watching.html"},
   {"title": "Who Outranks Who? British Detective Ranks", "url": "/who-outranks-who.html"},
   {"title": "Why British TV Feels Cozy", "url": "/why-british-tv-feels-cozy.html"},
   {"title": "Search Every Show British TV Hub Tracks", "url": "/shows-index.html#full-database-search"},
