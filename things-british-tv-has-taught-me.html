@@ -106,8 +106,10 @@ gtag('config', 'G-P1L8CVNKS6');
   .ttm-flip-hint{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);}
   .ttm-flip-flourish{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:6px;}
   .ttm-flip-flourish span{width:16px;height:1px;background:rgba(201,168,76,0.45);}
-  .ttm-flip-flourish i{font-size:7px;color:var(--gold);font-style:normal;transform:rotate(45deg);display:inline-block;}
-  .ttm-flip-back{background:#363f58;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;transform:rotateY(180deg);}
+  .ttm-flip-flourish i{font-size:7px;color:var(--gold);font-style:normal;transform:rotate(45deg);display:inline-block;width:7px;height:7px;}
+  .ttm-flip-flourish i::before{content:"\25C6";}
+  .ttm-flip-back{background:#363f58;display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;transform:rotateY(180deg);visibility:hidden;}
+  .ttm-flip.is-flipped .ttm-flip-back{visibility:visible;}
   .ttm-flip-back p{font-family:'Crimson Text',serif;font-size:16px;line-height:1.55;color:var(--cream);margin:0;}
   .ttm-flip:focus-visible .ttm-flip-front,.ttm-flip:focus-visible .ttm-flip-back{outline:2px solid var(--gold);outline-offset:2px;}
   @media (prefers-reduced-motion: reduce){
@@ -569,13 +571,13 @@ function ttmRender(){
   const icons = ttmShuffle(TTM_ICONS);
   const grid = document.getElementById('ttm-grid');
   grid.innerHTML = picks.map((text, i) => `
-    <div class="ttm-flip" tabindex="0" role="button" aria-pressed="false" aria-label="Tap to reveal this one" style="animation-delay:${i * 55}ms;">
+    <div class="ttm-flip" tabindex="0" role="button" aria-pressed="false" aria-label="Tap to Reveal" style="animation-delay:${i * 55}ms;">
       <div class="ttm-flip-inner">
         <div class="ttm-flip-front">
           <img class="ttm-flip-photo" src="${icons[i % icons.length]}" alt="" loading="lazy">
           <div class="ttm-flip-caption">
             <span class="ttm-flip-hint">Tap to Reveal</span>
-            <div class="ttm-flip-flourish"><span></span><i>&#9670;</i><span></span></div>
+            <div class="ttm-flip-flourish" aria-hidden="true"><span></span><i></i><span></span></div>
           </div>
         </div>
         <div class="ttm-flip-back" aria-hidden="true"><p>${text}</p></div>

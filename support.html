@@ -1664,6 +1664,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="britishtvhub" data-description="Support me on Buy me a tea!" data-message="Enjoying British TV Hub? Help keep the kettle on. ☕" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+// The Buy Me a Coffee widget labels its floating region "Page widget" by
+// default, which an accessibility scan flags as a non-unique landmark name.
+// Give the widget a distinct, descriptive label once it renders.
+(function () {
+  function labelBmcWidget() {
+    var widget = document.getElementById('bmc-wbtn');
+    if (widget && widget.getAttribute('aria-label') !== 'Buy Me a Coffee support widget') {
+      widget.setAttribute('aria-label', 'Buy Me a Coffee support widget');
+      return true;
+    }
+    return false;
+  }
+  if (labelBmcWidget()) return;
+  var observer = new MutationObserver(function () {
+    if (labelBmcWidget()) observer.disconnect();
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
 </body>
 </html>
 
