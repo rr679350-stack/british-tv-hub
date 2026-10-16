@@ -195,7 +195,7 @@ gtag('config', 'G-P1L8CVNKS6');
 
     .stats-bar {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 1px;
       background: var(--border);
       border: 1px solid var(--border);
@@ -336,6 +336,9 @@ gtag('config', 'G-P1L8CVNKS6');
       letter-spacing: 1px;
     }
 
+    @media (max-width: 860px) {
+      .stats-bar { grid-template-columns: repeat(3, 1fr); }
+    }
     @media (max-width: 600px) {
       nav { padding: 0 1rem; }
       .nav-links { display: none; }
@@ -1592,6 +1595,16 @@ document.addEventListener('click', function(e){
       <div class="stat-number">Weekly</div>
       <div class="stat-label">Sunday Newsletter</div>
       <div class="stat-note">Hand-picked show recommendations</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">3.2M+</div>
+      <div class="stat-label">28-Day Views</div>
+      <div class="stat-note">Up 54% over the previous period</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">322K+</div>
+      <div class="stat-label">28-Day Engagement</div>
+      <div class="stat-note">Up 80% over the previous period</div>
     </div>
   </div>
 
