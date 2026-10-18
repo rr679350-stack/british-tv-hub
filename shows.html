@@ -671,7 +671,9 @@ document.addEventListener('click', function(e){
 
 <style>
   .rail-section{margin-bottom:8px;}
-  .rail-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 40px;flex-wrap:wrap;}
+  .rail-head{padding:0 40px;}
+  .rail-banner{width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:20px;display:block;}
+  .rail-head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;}
   .rail-head .head-text{max-width:720px;}
   .rail-arrows{display:flex;gap:8px;flex-shrink:0;margin-bottom:4px;}
   .rail-arrow{cursor:pointer;border:1px solid var(--border);color:var(--text);border-radius:50%;height:34px;width:34px;background:var(--bg-dark);font-size:18px;line-height:1;}
@@ -706,39 +708,41 @@ document.addEventListener('click', function(e){
     .rail-head{padding:0 20px;}
     .rail{padding:16px 20px 8px;}
     .rail-tile{flex-basis:205px;}
+    .rail-banner{height:140px;}
   }
 </style>
 
 <div id="top-shows" class="rail-section">
   <div class="hub-card rail-head">
-    <div class="head-text">
-      <div class="section-label">Top Picks</div>
-      <h2 class="section-title">The 6 Best British Mystery Shows Streaming Now</h2>
-      <p class="section-intro">These are the shows that define the genre &mdash; intelligent, atmospheric, and endlessly rewatchable. Whether you're new to British television or a longtime devotee, every one of these belongs on your list.</p>
-    </div>
-    <div class="rail-arrows">
-      <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
-      <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
+    <img class="rail-banner" src="/best-british-mystery-shows-2026-hero.webp" alt="A cozy living room with British mystery shows on screen" loading="lazy">
+    <div class="rail-head-row">
+      <div class="head-text">
+        <div class="section-label">Top Picks</div>
+        <h2 class="section-title">The 6 Best British Mystery Shows Streaming Now</h2>
+        <p class="section-intro">These are the shows that define the genre &mdash; intelligent, atmospheric, and endlessly rewatchable. Whether you're new to British television or a longtime devotee, every one of these belongs on your list.</p>
+      </div>
+      <div class="rail-arrows">
+        <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
+        <button type="button" class="rail-arrow" data-rail="top-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
+      </div>
     </div>
   </div>
   <div class="rail" id="top-rail"></div>
 </div>
 
-<div class="hub-card"><div style="max-width:640px;margin:8px auto 40px;padding:0 40px;text-align:center;">
-  <p style="font-family:'Playfair Display',serif;font-size:22px;color:#e8dfc8;margin:0 0 10px;">Still looking for your next series?</p>
-  <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#c1cadd;line-height:1.7;margin:0;">These six classics are where many British TV fans begin. But once you've watched the essentials, it's time to explore some of television's most overlooked treasures.</p>
-</div></div>
-
 <div id="hidden-gems" class="rail-section">
   <div class="hub-card rail-head">
-    <div class="head-text">
-      <div class="section-label">Hidden Gems</div>
-      <h2 class="section-title">Underrated British Shows You Haven't Seen Yet</h2>
-      <p class="section-intro">Beyond the household names lies some genuinely excellent television. These shows deserve far bigger audiences than they have.</p>
-    </div>
-    <div class="rail-arrows">
-      <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
-      <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
+    <img class="rail-banner" src="/hidden-gems-hero.webp" alt="A rain-streaked window overlooking a British street, with a tartan blanket and a vintage file box labeled Hidden Gems, Worth Discovering" loading="lazy">
+    <div class="rail-head-row">
+      <div class="head-text">
+        <div class="section-label">Hidden Gems</div>
+        <h2 class="section-title">Underrated British Shows You Haven't Seen Yet</h2>
+        <p class="section-intro">Beyond the household names lies some genuinely excellent television. These shows deserve far bigger audiences than they have.</p>
+      </div>
+      <div class="rail-arrows">
+        <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="-1" aria-label="Scroll left">&#8249;</button>
+        <button type="button" class="rail-arrow" data-rail="gems-rail" data-dir="1" aria-label="Scroll right">&#8250;</button>
+      </div>
     </div>
   </div>
   <div class="rail" id="gems-rail"></div>
