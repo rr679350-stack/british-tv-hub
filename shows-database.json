@@ -2474,7 +2474,7 @@
   },
   {
     "title": "Gone",
-    "years": "2026–present",
+    "years": "2026",
     "genre": "Crime Thriller",
     "us": [
       {
@@ -2496,8 +2496,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://www.tellyvisions.org/gone-britbox-series-premiere-date/"
+    ]
   },
   {
     "title": "A Woman of Substance",
@@ -3198,7 +3200,7 @@
   },
   {
     "title": "Hercule",
-    "years": "2026 (upcoming)",
+    "years": "2027 (upcoming)",
     "genre": "Mystery",
     "us": [
       {
@@ -3220,8 +3222,9 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
+    "verified": "2026-10-18",
     "sources": [
+      "https://www.tellyvisions.org/britbox-bbc-hot-young-hercule-series-all-star-cast/",
       "https://variety.com/2026/tv/global/edward-bluemel-hercule-poirot-bbc-britbox-series-1236769294/"
     ]
   },
@@ -3313,7 +3316,7 @@
   },
   {
     "title": "The Cadburys",
-    "years": "2026 (upcoming)",
+    "years": "2027 (upcoming)",
     "genre": "Period Drama",
     "us": [
       {
@@ -3335,8 +3338,11 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://www.broadwayworld.com/article/THE-CADBURYS-to-Launch-on-BritBox-in-2027-20261007",
+      "https://www.theweek.in/news/entertainment/2026/10/08/cadbury-family-tv-series-period-drama.amp.html"
+    ]
   },
   {
     "title": "The Lady",
