@@ -188,6 +188,14 @@ Acorn TV: link resolves
 Audible: link resolves (if any Audible links exist on the site)
 Kindle: link resolves (if any Kindle-specific links exist)
 
+CozyTVCompanion (Etsy shop) product sections — "From the CozyTVCompanion
+Shop" cards on top10.html, best-british-mystery-shows-2026.html, cozy.html,
+and fall-preview-2026.html:
+- Etsy listing link resolves (not deactivated/sold out)
+- Product photo loads
+- "Treat Yourself →" CTA text and shop-tag label unchanged
+- Price/listing details not stale if referenced in copy (none currently are)
+
 ## PART 9 — Editorial accuracy: banned/superlative language
 
 Remove or replace unsupported superlatives. Only flag when a superlative
