@@ -3262,7 +3262,7 @@
   },
   {
     "title": "Outrageous",
-    "years": "2025–present",
+    "years": "2025",
     "genre": "Period Drama",
     "us": [
       {
@@ -3284,8 +3284,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Outrageous_(TV_series)"
+    ]
   },
   {
     "title": "Riot Women",
@@ -3395,8 +3397,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Other_Bennet_Sister_(TV_series)"
+    ]
   },
   {
     "title": "Harry Wild",
@@ -3638,8 +3642,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://www.tellyvisions.org/irish-blood-renewed-season-2-acorn-tv/"
+    ]
   },
   {
     "title": "Jack Irish",
@@ -3672,7 +3678,7 @@
   },
   {
     "title": "Mrs Sidhu Investigates",
-    "years": "2024–present",
+    "years": "2023",
     "genre": "Cozy Mystery",
     "us": [
       {
@@ -3694,8 +3700,11 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://tellyvisions.org/article/acorn-tvs-mrs-sidhu-investigates-trailer-cast-premiere-date",
+      "https://www.tellyvisions.org/mrs-sidhu-investigates-series-creator-suk-pannu-interview/"
+    ]
   },
   {
     "title": "Ms. Fisher's Modern Murder Mysteries",
@@ -3728,7 +3737,7 @@
   },
   {
     "title": "Murder Before Evensong",
-    "years": "2025–present",
+    "years": "2025",
     "genre": "Cozy Mystery",
     "us": [
       {
@@ -3750,8 +3759,10 @@
       }
     ],
     "au": [],
-    "verified": "2026-07-26",
-    "sources": []
+    "verified": "2026-10-18",
+    "sources": [
+      "https://cultbox.co.uk/features/murder-before-evensong-season-2-will-it-happen"
+    ]
   },
   {
     "title": "Murdoch Mysteries",
