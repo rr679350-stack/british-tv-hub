@@ -106,6 +106,27 @@ gtag('config', 'G-P1L8CVNKS6');
     .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
     .section-header h2 em { font-style: italic; color: var(--gold-light); }
     .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
+    .bts-section{background:#141a2a;padding:0 24px 60px;margin-top:4rem;border-top:3px solid var(--gold);position:relative;}
+    .bts-section::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:3px;background:var(--gold-light);}
+    .bts-badge-wrap{display:flex;justify-content:center;margin-top:-1px;}
+    .bts-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#1a2135;font-family:'Raleway',sans-serif;font-size: 11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding: 12px 24px;border-radius:0 0 8px 8px;}
+    .bts-inner{max-width:1000px;margin:0 auto;padding-top:44px;}
+    .bts-header{text-align:center;max-width:700px;margin:0 auto 1rem;}
+    .bts-eyebrow{font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+    .bts-header h2{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--text);margin:0 0 0.75rem;}
+    .bts-header p{font-family:'Crimson Text',serif;font-size:17px;color:var(--text-muted);line-height:1.6;margin:0;}
+    .bts-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-bottom:3rem;}
+    @media (max-width:800px){.bts-grid{grid-template-columns:1fr;}}
+    .bts-grid img{width:100%;border-radius:12px;display:block;}
+    .bts-block h3{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);margin:0 0 0.75rem;}
+    .bts-block p{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.7;margin:0 0 1rem;}
+    .bts-book-card{background:#232c47;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:28px 30px;margin-top:2rem;}
+    .bts-book-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--text);margin:0 0 8px;}
+    .bts-book-card p{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-muted);line-height:1.65;margin:0 0 16px;}
+    .bts-book-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size: 11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding: 12px 24px;border-radius:2px;text-decoration:none;}
+    .bts-photo-break{margin:3rem 0;}
+    .bts-photo-break img{width:100%;max-height:480px;object-fit:cover;border-radius:12px;display:block;}
+    .bts-photo-caption{font-family:'Crimson Text',serif;font-style:italic;font-size:16px;color:var(--text-muted);text-align:center;margin-top:10px;}
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -1232,6 +1253,44 @@ document.addEventListener('click', function(e){
         <div class="aside-label">At a Glance</div>
         <div class="aside-row"><span class="aside-key">City</span><span class="aside-val">Cambridge</span></div>
         <div class="aside-row"><span class="aside-key">Also Filmed</span><span class="aside-val">Hertfordshire, Surrey, near Heathrow</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="bts-section" style="margin-top:0;border-radius:12px;">
+    <div class="bts-badge-wrap">
+      <span class="bts-badge">&#9670; A British TV Hub Feature &#9670;</span>
+    </div>
+    <div class="bts-inner">
+      <div class="bts-grid">
+        <img loading="lazy" src="/fall-preview-ludwig-s2.webp" alt="David Mitchell as John Taylor in Ludwig Season 2">
+        <div class="bts-block">
+          <h3>John Goes Official</h3>
+          <p>Season 2 picks up straight after the finale. John no longer has to pass himself off as his twin, because Cambridge police have taken him on properly as a Crime Scene Consultant, working the cases that don't add up alongside DCI Russell Carter. The catch is that the job comes with rules, including a ban on using police resources to keep hunting for James. That doesn't stop him, and it certainly doesn't stop Lucy.</p>
+        </div>
+      </div>
+
+      <div class="bts-photo-break">
+        <img loading="lazy" src="/ludwig-s2-lucy-investigates.webp" alt="Anna Maxwell Martin as Lucy studying a case board in Ludwig Season 2">
+        <p class="bts-photo-caption">Lucy takes her own approach to finding James.</p>
+      </div>
+
+      <div class="bts-book-card">
+        <h3>An Emmy-Winning Puzzle</h3>
+        <p>Mark Brotherhood, whose writing credits include Death in Paradise, created and wrote Ludwig, casting David Mitchell in the dual role of John and his missing twin. The first season went on to win Best Comedy at the 2025 International Emmy Awards.</p>
+      </div>
+
+      <div class="bts-photo-break">
+        <img loading="lazy" src="/ludwig-christmas-special.webp" alt="David Mitchell and Sir David Suchet on the set of the Ludwig Christmas special">
+        <p class="bts-photo-caption">David Mitchell with Sir David Suchet, a suspect in the Christmas special.</p>
+      </div>
+
+      <div class="bts-book-card">
+        <h3>Coming at Christmas: A Yorkshire Locked Room</h3>
+        <p>The season isn't the end of it. A Christmas special sends John to a remote Christmas-themed hotel in Yorkshire, where a blackout and a blizzard trap the guests with a murder to solve. Sir David Suchet, television's long-serving Poirot, plays one of the suspects. The special is due on BritBox in December, and a third season is already in production.</p>
+        <a href="/shows-like-ludwig-tv.html" class="bts-book-btn">Shows Like Ludwig &rarr;</a>
       </div>
     </div>
   </div>
