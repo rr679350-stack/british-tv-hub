@@ -1,44 +1,56 @@
 {
-  "month": "October 2026",
-  "updated": "2026-10-01",
+  "month": "November 2026",
+  "updated": "2026-10-19",
   "highlight": {
-    "title": "Ludwig — Season 2",
-    "badge": "BBC Mystery · North America Premiere · October 13",
-    "description": "David Mitchell returns as puzzle-setter John Taylor, now working openly as a police consultant on impossible crimes while still searching for his missing twin brother. New episodes stream weekly on Tuesdays.",
+    "title": "Blue Lights — Season 4",
+    "badge": "BritBox Original · North America Premiere · November 12",
+    "description": "The Belfast cop drama returns for a fourth season, following probationary officers turned seasoned cops Grace, Annie and Tommy as they navigate the city's paramilitary-linked crime. New episodes stream weekly.",
     "tags": [
-      "Mystery",
-      "Comedy"
+      "Crime drama",
+      "Belfast"
     ],
-    "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20",
-    "guide_url": "/shows/ludwig.html"
+    "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
   },
   "new_arrivals": [
     {
-      "title": "Time",
-      "season": "Season 3",
-      "available": "October 22",
+      "title": "Blue Lights",
+      "season": "Season 4",
+      "available": "November 12",
       "badge": "North America Premiere",
-      "description": "David Tennant joins Siobhan Finneran for the third season of Jimmy McGovern's prison drama, set inside a Young Offenders Institution. New episodes weekly into early November.",
+      "description": "Grace, Annie and Tommy are back on the beat in Belfast for a tense new season balancing community policing with the city's paramilitary underworld.",
       "tags": [
-        "Drama",
-        "David Tennant"
+        "Crime drama",
+        "Belfast"
       ],
       "editors_pick": true,
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
     },
     {
-      "title": "Agatha Christie's Tommy & Tuppence",
-      "season": "Season 1",
-      "available": "New episodes weekly into October",
-      "badge": "BritBox Original · Continuing",
-      "description": "Antonia Thomas and Josh Dylan's contemporary take on Christie's amateur sleuths continues weekly, with Imelda Staunton as Tommy's formidable Aunt Ada.",
+      "title": "Death Valley",
+      "season": "Season 2",
+      "available": "November 17",
+      "badge": "North America Premiere",
+      "description": "Timothy Spall returns as semi-retired TV detective John Chadwick, roped back into real police work alongside DS Janie Mallowan for a new season of Welsh valley mysteries.",
+      "tags": [
+        "Cozy mystery",
+        "Wales"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20"
+    },
+    {
+      "title": "Ludwig",
+      "season": "Season 2",
+      "available": "Finale on November 17",
+      "badge": "Continuing · Season Finale",
+      "description": "David Mitchell's puzzle-setter John Taylor closes out the season still working undercover as his missing twin brother, with the mystery of John's disappearance finally coming to a head.",
       "tags": [
         "Mystery",
-        "Agatha Christie"
+        "Comedy"
       ],
       "editors_pick": false,
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20",
-      "trailer_id": "ZQz4aN4RivI"
+      "guide_url": "/shows/ludwig.html"
     }
   ],
   "originals": [
