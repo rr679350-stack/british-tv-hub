@@ -27,7 +27,7 @@ gtag('config', 'G-P1L8CVNKS6');
   "name": "Time — Season 3: Where to Watch in the US | British TV Hub",
   "description": "Where to watch Time Season 3 in the US. David Tennant and Siobhan Finneran star in Jimmy McGovern's BAFTA-winning drama, set in a Young Offenders Institution.",
   "url": "https://britishtvhub.com/shows/time.html",
-  "dateModified": "2026-10-06",
+  "dateModified": "2026-10-22",
   "isPartOf": {
     "@type": "WebSite",
     "name": "British TV Hub",
@@ -40,16 +40,16 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:url" content="https://britishtvhub.com/shows/time.html">
 <meta property="og:title" content="Time — Season 3: Where to Watch in the US | British TV Hub">
 <meta property="og:description" content="Where to watch Time Season 3 in the US. David Tennant and Siobhan Finneran star in Jimmy McGovern's BAFTA-winning drama, set in a Young Offenders Institution.">
-<meta property="og:image" content="https://britishtvhub.com/time-s3-marie-louise.webp">
-<meta property="og:image:width" content="1400">
-<meta property="og:image:height" content="933">
-<meta property="og:image:alt" content="British TV Hub — best British TV dramas and mysteries guide">
+<meta property="og:image" content="https://britishtvhub.com/time-s3-keyart.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="Time Season 3 key art — David Tennant and Siobhan Finneran, a BritBox Original">
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Time — Season 3: Where to Watch in the US | British TV Hub">
 <meta name="twitter:description" content="Where to watch Time Season 3 in the US. David Tennant and Siobhan Finneran star in Jimmy McGovern's BAFTA-winning drama, set in a Young Offenders Institution.">
-<meta name="twitter:image" content="https://britishtvhub.com/time-s3-marie-louise.webp">
+<meta name="twitter:image" content="https://britishtvhub.com/time-s3-keyart.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
@@ -65,7 +65,45 @@ gtag('config', 'G-P1L8CVNKS6');
       --text: #f0e8d4;
       --text-muted: #d4c4a4;
       --text-dim: #b0bcd4;
+      --gold-muted: #b89860;
+      --red-accent: #c0392b;
+      --text-light: #d4c4a4;
+      --navy-light: #2a3450;
+      --white: #ffffff;
     }
+    .show-card { display: grid; grid-template-columns: 1fr; background: #363f58; border: 1px solid #3d4a60; border-left: 4px solid #3d4a60; padding: 1.5rem; margin-bottom: 1.25rem; border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .show-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: var(--gold); border-left-color: var(--gold); }
+    .show-card:last-of-type { margin-bottom: 0; }
+    .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
+    .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
+    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #b8d8f5; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #f3b0a5; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-gem { background: rgba(80,180,160,0.12); color: #a0e0d3; border: 1px solid rgba(80,180,160,0.3); }
+    .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
+    .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
+    .show-card .show-meta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 0.8rem; }
+    .show-card .show-meta span { color: rgba(201,168,76,0.5); margin: 0 0.4rem; }
+    .show-card .show-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem; }
+    .show-card .show-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .show-card .tag { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); border: 1px solid rgba(255,255,255,0.1); padding: 0.25rem 0.6rem; border-radius: 2px; }
+    .tag-stream { background: var(--red-accent); color: var(--white); border-color: var(--red-accent); font-weight: 600; }
+    .tag-stream.britbox { background: #c0392b; }
+    .tag-stream.acorn { background: #2e7d32; }
+    .show-aside { background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15); border-radius: 3px; padding: 1.1rem; }
+    .show-aside .aside-label { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light, #e8c97a); margin-bottom: 0.7rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201,168,76,0.15); }
+    .show-aside .aside-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); gap: 0.75rem; }
+    .show-aside .aside-row:last-of-type { border-bottom: none; }
+    .show-aside .aside-key { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); flex-shrink: 0; }
+    .show-aside .aside-val { font-size: 0.85rem; color: var(--text-muted); text-align: right; }
+    .show-aside .aside-link { display: block; margin-top: 0.9rem; text-align: center; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #1a2135; background: var(--gold); padding: 8px 14px; border-radius: 2px; text-decoration: none; transition: background 0.2s; }
+    .show-aside .aside-link:hover { background: var(--gold-light); }
+    @media (max-width: 640px) { .show-card-inner { grid-template-columns: 1fr; } }
+    .section-header { position: relative; padding-top: 1.5rem; margin-bottom: 1.5rem; }
+    .section-header::before { content: ""; display: block; width: 48px; height: 3px; background: var(--gold); margin-bottom: 1.25rem; }
+    .section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.75rem; }
+    .section-header h2 em { font-style: italic; color: var(--gold-light); }
+    .section-header p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; line-height: 1.7; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: var(--bg); color: var(--text); font-family: 'Crimson Text', serif; font-size: 18px; line-height: 1.7; }
     a { color: var(--gold); text-decoration: none; }
@@ -551,10 +589,22 @@ document.addEventListener('click', function(e){
 }
 </script>
 
+<div class="time-hero" style="position:relative;overflow:hidden;min-height:460px;display:flex;align-items:flex-end;border-bottom:1px solid rgba(201,168,76,0.15);">
+  <img src="/time-s3-keyart.webp" alt="Time Season 3 key art — David Tennant and Siobhan Finneran, a BritBox Original" style="position:absolute;right:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:brightness(1.05);">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 18%,rgba(26,35,50,0.85) 32%,rgba(26,35,50,0.25) 48%,rgba(26,35,50,0) 62%);"></div>
+  <div style="position:relative;z-index:2;padding:22px 40px 28px;max-width:660px;background:linear-gradient(to top,rgba(19,25,38,0.92) 0%,rgba(19,25,38,0.92) 70%,rgba(19,25,38,0) 100%);">
+    <p class="show-eyebrow" style="margin-bottom:10px;">Drama · BritBox · 2021–present</p>
+    <h1 class="show-title" style="margin-bottom:0;" id="hub-content-start" tabindex="-1">Time — Season 3</h1>
+  </div>
+</div>
+<style>
+  @media (max-width: 640px) {
+    .time-hero { min-height:320px !important; }
+  }
+</style>
+
 <div class="page-wrap">
 
-  <p class="show-eyebrow">Drama · BritBox · 2021–present</p>
-  <h1 class="show-title" id="hub-content-start" tabindex="-1">Time — Season 3</h1>
   <div class="show-tags">
     <span class="tag">3 Episodes</span>
     <span class="tag">Stars David Tennant &amp; Siobhan Finneran</span>
@@ -587,16 +637,17 @@ document.addEventListener('click', function(e){
   <hr class="divider">
 
   <div class="hub-card"><p class="section-label">When does it premiere?</p>
-  <p class="show-description" style="font-size:16px;">Season 3 is coming soon to BritBox in North America. BritBox has not yet announced a U.S. premiere date. The season runs three episodes, the same length as the first two seasons.</p></div>
+  <p class="show-description" style="font-size:16px;">Season 3 premiered on BBC One and BBC iPlayer in the UK on October 11, 2026, and is now streaming in the US on BritBox as of October 22, 2026. The season runs three episodes, the same length as the first two seasons.</p></div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
     <p class="watch-service">BritBox</p>
-    <p class="watch-detail">3 episodes &middot; Coming soon &middot; U.S. premiere date TBA</p>
+    <p class="watch-detail">3 episodes &middot; Streaming now &middot; Premiered October 22, 2026</p>
     <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="watch-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video →</a>
     <div class="watch-free"><strong>Catch up:</strong> Seasons 1 and 2 are streaming now on BritBox</div>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim, #b0bcd4);margin:10px 0 0;font-style:italic;">Streaming availability in the US can change. Checked October 2026.</p>
   </div>
   <div style="background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:20px 24px;margin:0 0 32px;">
     <p style="font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 10px;">Already Have Prime?</p>
@@ -629,6 +680,261 @@ document.addEventListener('click', function(e){
     </a>
     <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:var(--gold);padding:12px 24px;border-radius:2px;">Watch on YouTube &rarr;</a>
   </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>New Viewer's <em>Guide</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-new">Where to Start</div>
+        <h3 class="show-title">Each Season Stands Alone</h3>
+        <p class="show-desc">Time is an anthology: every season moves to a new prison setting with a largely new cast and story, so Season 3 can be watched without seeing Seasons 1 or 2. Siobhan Finneran is the only actor to appear across all three, though she plays a different character each time — a connective thread of tone rather than plot.</p>
+        <div class="show-tags"><span class="tag">Anthology</span><span class="tag">No Prior Viewing Needed</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Watch Order</span><span class="aside-val">Not required</span></div>
+        <div class="aside-row"><span class="aside-key">Episode Length</span><span class="aside-val">~60 min</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Main Characters <em>and Cast</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Lead</div>
+        <h3 class="show-title">David Tennant as Bobby Bailey</h3>
+        <p class="show-desc">Tennant plays Bobby Bailey, a veteran Custodial Manager at the Young Offenders Institution carrying his own personal crisis beneath the job's daily pressures.</p>
+        <div class="show-tags"><span class="tag">New to Time</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Custodial Manager</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Lead</div>
+        <h3 class="show-title">Siobhan Finneran as Marie-Louise O'Dell</h3>
+        <p class="show-desc">Finneran returns as a prison chaplain for a third season, this time arriving at the YOI already having lost her faith — the one role connecting all three seasons of the anthology.</p>
+        <div class="show-tags"><span class="tag">Returning</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Prison Chaplain</span></div>
+        <div class="aside-row"><span class="aside-key">Seasons</span><span class="aside-val">1, 2 &amp; 3</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Supporting</div>
+        <h3 class="show-title">Daniel Ryan as Freddie Jennings</h3>
+        <p class="show-desc">Ryan plays Freddie Jennings, a fellow Custodial Manager working alongside Bailey inside the institution.</p>
+        <div class="show-tags"><span class="tag">New to Time</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Role</span><span class="aside-val">Custodial Manager</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Supporting</div>
+        <h3 class="show-title">Jo Joyner as Nicola &amp; Vinette Robinson as Erica</h3>
+        <p class="show-desc">Jo Joyner and Vinette Robinson round out the staff and family storylines this season, joined by Louis McCartney, Ollie McNulty, Chukwubuikem Molokwu and Ethaniel Davy as young offenders at the center of the season.</p>
+        <div class="show-tags"><span class="tag">New to Time</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Setting</span><span class="aside-val">Young Offenders Institution</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>What Makes the Series <em>Special</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Format</div>
+        <h3 class="show-title">A New Story Every Season</h3>
+        <p class="show-desc">Rather than following one cast, Time rebuilds itself each season around a different part of the justice system — a men's prison, then a women's prison, now a Young Offenders Institution — giving writer Jimmy McGovern a fresh set of characters and stakes each time.</p>
+        <div class="show-tags"><span class="tag">Anthology Drama</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Format</span><span class="aside-val">3-part anthology</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Themes</div>
+        <h3 class="show-title">The People Inside the System</h3>
+        <p class="show-desc">Season 3 turns its focus to the impact of locking up teenagers — on the young offenders themselves and on the staff responsible for looking after them — continuing McGovern's track record of grounding Time in the realities of the British prison system.</p>
+        <div class="show-tags"><span class="tag">Jimmy McGovern</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Writers</span><span class="aside-val">McGovern &amp; Bailey</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Through-Line</div>
+        <h3 class="show-title">One Face Across Three Seasons</h3>
+        <p class="show-desc">Siobhan Finneran is the only actor to appear in all three seasons of Time, giving longtime viewers a familiar presence even as the cast, setting and story change completely around her.</p>
+        <div class="show-tags"><span class="tag">Siobhan Finneran</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Returning Actor</span><span class="aside-val">Siobhan Finneran</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Setting and <em>Filming Locations</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Setting &amp; Filming</div>
+        <h3 class="show-title">Northern Ireland</h3>
+        <p class="show-desc">Season 3 was filmed in Northern Ireland, with production taking place on location around Belfast and Downpatrick, standing in for the Young Offenders Institution at the center of the season.</p>
+        <div class="show-tags"><span class="tag">Belfast</span><span class="tag">Downpatrick</span></div>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">At a Glance</div>
+        <div class="aside-row"><span class="aside-key">Region</span><span class="aside-val">Northern Ireland</span></div>
+        <div class="aside-row"><span class="aside-key">Support</span><span class="aside-val">Northern Ireland Screen</span></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-header">
+    <h2>Frequently Asked <em>Questions</em></h2>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Release</div>
+        <h3 class="show-title">When does Time Season 3 premiere in the US?</h3>
+        <p class="show-desc">Time Season 3 began streaming on BritBox in the US on October 22, 2026, after premiering in the UK on BBC One and BBC iPlayer on October 11, 2026.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">US (BritBox)</span><span class="aside-val">October 22</span></div>
+        <div class="aside-row"><span class="aside-key">UK (BBC)</span><span class="aside-val">October 11</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Episode Count</div>
+        <h3 class="show-title">How many episodes are in Time Season 3?</h3>
+        <p class="show-desc">Season 3 consists of three episodes, each roughly an hour long — the same length as the first two seasons.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Episodes</span><span class="aside-val">3</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Viewing Order</div>
+        <h3 class="show-title">Do I need to watch Seasons 1 and 2 first?</h3>
+        <p class="show-desc">No. Time is an anthology series — each season is a self-contained story with a new setting and mostly new cast. Siobhan Finneran is the only actor who appears across all three seasons, but as a different character each time.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Required?</span><span class="aside-val">No</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Streaming</div>
+        <h3 class="show-title">Where can I watch Time Season 3 in the US?</h3>
+        <p class="show-desc">Time Season 3 streams on BritBox, including as a channel add-on through Prime Video. Seasons 1 and 2 are also available on BritBox for anyone wanting to catch up.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Home</span><span class="aside-val">BritBox</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Filming Location</div>
+        <h3 class="show-title">Where was Time Season 3 filmed?</h3>
+        <p class="show-desc">Season 3 was filmed on location in Northern Ireland, around Belfast and Downpatrick, with support from Northern Ireland Screen.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-row"><span class="aside-key">Region</span><span class="aside-val">Northern Ireland</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="show-card">
+    <div class="show-card-inner">
+      <div>
+        <div class="show-badge badge-classic">Original Format</div>
+        <h3 class="show-title">Is Time based on a book or true events?</h3>
+        <p class="show-desc">No. Time is an original anthology drama created by Jimmy McGovern, not a book adaptation or a dramatization of a specific true story.</p>
+      </div>
+      <div class="show-aside">
+        <div class="aside-label">Quick Answer</div>
+        <div class="aside-val" style="text-align:left;">Original drama</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-family:'Raleway',sans-serif;font-size:11px;color:var(--text-dim, #b0bcd4);margin:8px 0 2rem;font-style:italic;">Fact-checked and streaming availability checked October 2026. Spot an error or an outdated streaming link? Send a correction via the contact page.</p>
 
   <hr class="divider">
 
