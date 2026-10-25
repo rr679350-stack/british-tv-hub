@@ -627,9 +627,12 @@ document.addEventListener('click', function(e){
   .etsy-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;flex:1;min-width:280px;max-width:420px;}
   .etsy-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;border:1px solid rgba(201,168,76,0.2);}
   .etsy-gallery img:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:1/1;}
-  .community-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);border-radius:12px;padding:20px 26px;max-width:1100px;margin:0 auto 60px;}
-  .community-strip h4{font-family:'Playfair Display',serif;margin:0 0 4px;font-size:1.05rem;}
-  .community-strip p{margin:0;color:var(--text-muted);font-size:0.92rem;}
+  .popular-pick-strip{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:linear-gradient(135deg, rgba(201,168,76,0.12), rgba(201,168,76,0.03));border:1px solid var(--gold);border-radius:12px;padding:20px 26px;max-width:1100px;margin:0 auto 60px;}
+  .popular-pick-strip img{width:64px;height:64px;object-fit:cover;border-radius:8px;flex-shrink:0;border:1px solid rgba(201,168,76,0.3);}
+  .popular-pick-strip .ppt-text{flex:1;min-width:220px;}
+  .popular-pick-strip .ppt-tag{font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px;}
+  .popular-pick-strip h4{font-family:'Playfair Display',serif;margin:0 0 4px;font-size:1.1rem;color:var(--cream);}
+  .popular-pick-strip p{margin:0;color:var(--text-muted);font-size:0.92rem;}
   .faq-item{max-width:900px;margin:0 auto;padding:22px 5%;border-bottom:1px solid rgba(201,168,76,0.15);}
   .faq-item h4{font-family:'Playfair Display',serif;font-size:1.1rem;margin:0 0 8px;color:var(--cream);}
   .faq-item p{margin:0;color:var(--text-muted);font-size:1rem;line-height:1.7;}
@@ -914,13 +917,15 @@ document.addEventListener('click', function(e){
 </div>
 
 
-<!-- Community, demoted -->
-<div class="community-strip">
-  <div>
-    <h4>Share a Gift Idea</h4>
-    <p>Recommend the tea, blanket, candle or book that makes cozy evenings better.</p>
+<!-- Popular pick nudge -->
+<div class="popular-pick-strip">
+  <img src="/shop-notepad.webp" alt="British TV Lover Notepad" loading="lazy">
+  <div class="ppt-text">
+    <span class="ppt-tag">Popular Pick on Etsy</span>
+    <h4>Still deciding? This is the one people keep buying.</h4>
+    <p>British TV Lover Notepad &mdash; $16.99, a watercolor English village scene, made to order.</p>
   </div>
-  <a class="agg-cta-pill" href="/community-snug.html">Share Yours &rarr;</a>
+  <a class="agg-cta-pill" href="https://cozytvcompanion.etsy.com/listing/4599171477" target="_blank" rel="noopener">I Want It &rarr;</a>
 </div>
 
 <div class="hub-card"><div style="max-width:900px;margin:0 auto 20px;padding:0 5%;">
