@@ -136,6 +136,9 @@ gtag('config', 'G-P1L8CVNKS6');
     100%{ transform:translate(0, 500px); }
   }
   @media (prefers-reduced-motion: reduce){ .hgg-snow{ animation:none; display:none; } }
+  .hgg-fade-in{ opacity:0; animation:hgg-fade-up 0.7s ease forwards; }
+  @keyframes hgg-fade-up{ 0%{ opacity:0; transform:translateY(14px); } 100%{ opacity:1; transform:translateY(0); } }
+  @media (prefers-reduced-motion: reduce){ .hgg-fade-in{ animation:none; opacity:1; transform:none; } }
   .agg-eyebrow{ font-family:'Raleway', sans-serif; font-size:0.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
   .agg-hero h1{ font-family:'Playfair Display', serif; font-weight:700; font-size:clamp(2.1rem, 4.5vw, 3.4rem); margin:0 0 20px; color:var(--cream); line-height:1.15; }
   .agg-hero-sub{ font-family:'Crimson Text', serif; font-style:italic; font-size:1.25rem; color:var(--text-muted); max-width:600px; margin:0 auto; }
@@ -439,10 +442,32 @@ document.addEventListener('click', function(e){
 }
 </script>
 <div class="agg-hero" style="background-image:linear-gradient(180deg, rgba(10,21,32,0.15) 0%, rgba(10,21,32,0.55) 55%, rgba(10,21,32,0.92) 100%), url('/snug-nav-gifts.webp'); min-height:420px;">
+  <div class="hgg-snow-field" aria-hidden="true">
+    <span class="hgg-snow" style="left:62.7%; width:3px; height:3px; animation-duration:14.2s; animation-delay:2.4s; --drift:22px;"></span>
+    <span class="hgg-snow" style="left:66.3%; width:7px; height:7px; animation-duration:9.6s; animation-delay:4.2s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:22.8%; width:7px; height:7px; animation-duration:13.2s; animation-delay:5.6s; --drift:-34px;"></span>
+    <span class="hgg-snow" style="left:22.9%; width:7px; height:7px; animation-duration:10.9s; animation-delay:8.7s; --drift:-22px;"></span>
+    <span class="hgg-snow" style="left:34.3%; width:4px; height:4px; animation-duration:10.5s; animation-delay:7.6s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:38.1%; width:5px; height:5px; animation-duration:14.9s; animation-delay:6.0s; --drift:-18px;"></span>
+    <span class="hgg-snow" style="left:52.9%; width:6px; height:6px; animation-duration:9.6s; animation-delay:2.9s; --drift:-34px;"></span>
+    <span class="hgg-snow" style="left:56.8%; width:3px; height:3px; animation-duration:9.3s; animation-delay:2.3s; --drift:26px;"></span>
+    <span class="hgg-snow" style="left:83.3%; width:3px; height:3px; animation-duration:11.7s; animation-delay:4.5s; --drift:26px;"></span>
+    <span class="hgg-snow" style="left:37.2%; width:4px; height:4px; animation-duration:13.7s; animation-delay:7.0s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:52.7%; width:4px; height:4px; animation-duration:10.1s; animation-delay:3.8s; --drift:34px;"></span>
+    <span class="hgg-snow" style="left:67.0%; width:3px; height:3px; animation-duration:10.6s; animation-delay:0.3s; --drift:-26px;"></span>
+    <span class="hgg-snow" style="left:27.4%; width:4px; height:4px; animation-duration:15.4s; animation-delay:5.7s; --drift:26px;"></span>
+    <span class="hgg-snow" style="left:64.3%; width:6px; height:6px; animation-duration:15.2s; animation-delay:6.4s; --drift:-22px;"></span>
+    <span class="hgg-snow" style="left:15.3%; width:7px; height:7px; animation-duration:12.8s; animation-delay:7.5s; --drift:-30px;"></span>
+    <span class="hgg-snow" style="left:36.4%; width:4px; height:4px; animation-duration:12.6s; animation-delay:0.9s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:16.5%; width:4px; height:4px; animation-duration:14.5s; animation-delay:4.2s; --drift:-18px;"></span>
+    <span class="hgg-snow" style="left:38.3%; width:6px; height:6px; animation-duration:12.7s; animation-delay:9.7s; --drift:18px;"></span>
+    <span class="hgg-snow" style="left:66.8%; width:7px; height:7px; animation-duration:14.3s; animation-delay:7.7s; --drift:26px;"></span>
+    <span class="hgg-snow" style="left:29.9%; width:4px; height:4px; animation-duration:12.2s; animation-delay:9.5s; --drift:26px;"></span>
+  </div>
   <div class="agg-hero-content">
-    <div class="agg-eyebrow">The Snug</div>
-    <h1 id="hub-content-start" tabindex="-1">Gifts for <em style="font-style:italic;">British TV Fans</em></h1>
-    <p class="agg-hero-sub">Shopping for someone (or treating yourself)? Here's where to start &mdash; every British TV Hub gift guide, sorted by what you're looking for.</p>
+    <div class="agg-eyebrow hgg-fade-in" style="animation-delay:0s;">The Snug</div>
+    <h1 id="hub-content-start" tabindex="-1" class="hgg-fade-in" style="animation-delay:0.12s;">Gifts for <em style="font-style:italic;">British TV Fans</em></h1>
+    <p class="agg-hero-sub hgg-fade-in" style="animation-delay:0.24s;">Shopping for someone (or treating yourself)? Here's where to start &mdash; every British TV Hub gift guide, sorted by what you're looking for.</p>
   </div>
 </div>
 
@@ -640,8 +665,11 @@ document.addEventListener('click', function(e){
   .section-tag{text-align:center;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
   .section-title{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--cream);margin:0 0 14px;}
   .section-sub{text-align:center;max-width:560px;margin:0 auto 34px;color:var(--text-muted);font-size:0.98rem;}
-  .quick-buy-slide{flex:0 0 200px;background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.25);border-radius:10px;padding:18px 18px 16px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;text-decoration:none;color:var(--cream);transition:transform .15s ease;min-height:120px;}
-  .quick-buy-slide:hover{transform:translateY(-3px);border-color:var(--gold);}
+  .quick-buy-slide{flex:0 0 200px;background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.25);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--cream);transition:transform .15s ease,box-shadow .15s ease;min-height:120px;}
+  .quick-buy-slide:hover{transform:translateY(-3px);border-color:var(--gold);box-shadow:0 10px 22px rgba(0,0,0,0.3);}
+  .quick-buy-slide .qb-img{width:100%;height:118px;object-fit:cover;display:block;transition:transform .35s ease;}
+  .quick-buy-slide:hover .qb-img{transform:scale(1.07);}
+  .quick-buy-slide .qb-body{padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;flex:1;}
   .quick-buy-slide h4{font-family:'Playfair Display',serif;font-size:0.96rem;margin:0;color:var(--cream);line-height:1.35;}
   .quick-buy-slide .qb-cta{font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
 </style>
@@ -667,44 +695,71 @@ document.addEventListener('click', function(e){
       <button class="slider-btn prev" aria-label="Previous" onclick="document.getElementById('under25Slider').scrollBy({left:-220,behavior:'smooth'})">&lsaquo;</button>
       <div class="slider-track" id="under25Slider">
         <a class="quick-buy-slide" href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener">
-          <h4>Happy Holidays to a Fellow British TV Fan Card &mdash; $8.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card" loading="lazy">
+          <div class="qb-body">
+            <h4>Happy Holidays to a Fellow British TV Fan Card &mdash; $8.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.etsy.com/listing/4516745976/british-tv-bingo-game-printable-cozy" target="_blank" rel="noopener">
-          <h4>British TV Bingo Game &mdash; $6.99</h4>
-          <span class="qb-cta">Get the Download &rarr;</span>
+          <div class="qb-body">
+            <h4>British TV Bingo Game &mdash; $6.99</h4>
+            <span class="qb-cta">Get the Download &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.etsy.com/listing/4515914484/cozy-mystery-casebook-journal-detective" target="_blank" rel="noopener">
-          <h4>Cozy Mystery Casebook Journal &mdash; $7.99</h4>
-          <span class="qb-cta">Get the Download &rarr;</span>
+          <div class="qb-body">
+            <h4>Cozy Mystery Casebook Journal &mdash; $7.99</h4>
+            <span class="qb-cta">Get the Download &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.etsy.com/listing/4589259284/tea-tv-sticker-cozy-tv-lover-gift-3x3" target="_blank" rel="noopener">
-          <h4>Tea &amp; TV Sticker &mdash; $9.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-tea-and-tv-sticker.webp" alt="Tea and TV sticker" loading="lazy">
+          <div class="qb-body">
+            <h4>Tea &amp; TV Sticker &mdash; $9.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.etsy.com/listing/4588126055/one-more-episode-coaster-british-tv" target="_blank" rel="noopener">
-          <h4>One More Episode Coaster &mdash; $14.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-one-more-episode-coaster.webp" alt="One More Episode coaster" loading="lazy">
+          <div class="qb-body">
+            <h4>One More Episode Coaster &mdash; $14.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://cozytvcompanion.etsy.com/listing/4599171477" target="_blank" rel="noopener">
-          <h4>British TV Lover Notepad &mdash; $16.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-notepad.webp" alt="British TV Lover notepad" loading="lazy">
+          <div class="qb-body">
+            <h4>British TV Lover Notepad &mdash; $16.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://cozytvcompanion.etsy.com/listing/4565791612" target="_blank" rel="noopener">
-          <h4>One More Episode Candle &mdash; $22.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-candle-one-more-episode.webp" alt="One More Episode candle" loading="lazy">
+          <div class="qb-body">
+            <h4>One More Episode Candle &mdash; $22.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.etsy.com/listing/4540864923/british-mystery-starter-collection" target="_blank" rel="noopener">
-          <h4>British Mystery Starter Collection &mdash; $22.99</h4>
-          <span class="qb-cta">Get the Download &rarr;</span>
+          <div class="qb-body">
+            <h4>British Mystery Starter Collection &mdash; $22.99</h4>
+            <span class="qb-cta">Get the Download &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://cozytvcompanion.etsy.com/listing/4587249295" target="_blank" rel="noopener">
-          <h4>Tea Lover Mug &mdash; $24.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-mug-tea-lover.webp" alt="Tea Lover mug" loading="lazy">
+          <div class="qb-body">
+            <h4>Tea Lover Mug &mdash; $24.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://cozytvcompanion.etsy.com/listing/4600588131" target="_blank" rel="noopener">
-          <h4>British Christmas Village Mug &mdash; $24.99</h4>
-          <span class="qb-cta">I Want It &rarr;</span>
+          <img class="qb-img" src="/shop-christmas-village-mug.webp" alt="British Christmas Village mug" loading="lazy">
+          <div class="qb-body">
+            <h4>British Christmas Village Mug &mdash; $24.99</h4>
+            <span class="qb-cta">I Want It &rarr;</span>
+          </div>
         </a>
       </div>
       <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('under25Slider').scrollBy({left:220,behavior:'smooth'})">&rsaquo;</button>
@@ -726,44 +781,67 @@ document.addEventListener('click', function(e){
       <button class="slider-btn prev" aria-label="Previous" onclick="document.getElementById('booksSlider').scrollBy({left:-220,behavior:'smooth'})">&lsaquo;</button>
       <div class="slider-track" id="booksSlider">
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/1984880969?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Thursday Murder Club by Richard Osman</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>The Thursday Murder Club by Richard Osman</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Marlow Murder Club by Robert Thorogood</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <img class="qb-img" src="https://covers.openlibrary.org/b/isbn/0008435901-L.jpg" alt="The Marlow Murder Club book cover" loading="lazy">
+          <div class="qb-body">
+            <h4>The Marlow Murder Club by Robert Thorogood</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4ga3Xhw" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Magpie Murders by Anthony Horowitz</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>Magpie Murders by Anthony Horowitz</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4wZ1jCy" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Miss Marple: The Complete Short Stories</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>Miss Marple: The Complete Short Stories</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Crow Trap by Ann Cleeves</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <img class="qb-img" src="https://covers.openlibrary.org/b/isbn/1250122740-L.jpg" alt="The Crow Trap book cover" loading="lazy">
+          <div class="qb-body">
+            <h4>The Crow Trap by Ann Cleeves</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/0312359675?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Raven Black by Ann Cleeves</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>Raven Black by Ann Cleeves</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/1631943294?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Killings at Badger&rsquo;s Drift by Caroline Graham</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>The Killings at Badger&rsquo;s Drift by Caroline Graham</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://www.amazon.com/dp/1509875514?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Last Bus to Woodstock by Colin Dexter</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>Last Bus to Woodstock by Colin Dexter</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4xAshAh" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Sidney Chambers and the Shadow of Death by James Runcie</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <div class="qb-body">
+            <h4>Sidney Chambers and the Shadow of Death by James Runcie</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4wMntbm" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Murder of Roger Ackroyd by Agatha Christie</h4>
-          <span class="qb-cta">Get the Book &rarr;</span>
+          <img class="qb-img" src="https://covers.openlibrary.org/b/isbn/0062073567-L.jpg" alt="The Murder of Roger Ackroyd book cover" loading="lazy">
+          <div class="qb-body">
+            <h4>The Murder of Roger Ackroyd by Agatha Christie</h4>
+            <span class="qb-cta">Get the Book &rarr;</span>
+          </div>
         </a>
       </div>
       <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('booksSlider').scrollBy({left:220,behavior:'smooth'})">&rsaquo;</button>
@@ -785,44 +863,70 @@ document.addEventListener('click', function(e){
       <button class="slider-btn prev" aria-label="Previous" onclick="document.getElementById('dvdsSlider').scrollBy({left:-220,behavior:'smooth'})">&lsaquo;</button>
       <div class="slider-track" id="dvdsSlider">
         <a class="quick-buy-slide" href="https://amzn.to/4yTapC7" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Prime Suspect: The Complete Series</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <div class="qb-body">
+            <h4>Prime Suspect: The Complete Series</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4ynKK3H" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Vera: Sets 1&ndash;7 Collection</h4>
-          <span class="qb-cta">See Today&rsquo;s Price &rarr;</span>
+          <img class="qb-img" src="/vera-beginners-guide-hero.webp" alt="Vera" loading="lazy">
+          <div class="qb-body">
+            <h4>Vera: Sets 1&ndash;7 Collection</h4>
+            <span class="qb-cta">See Today&rsquo;s Price &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4ymeVca" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Line of Duty: Series 1&ndash;5 Collection</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <img class="qb-img" src="/shows-like-line-of-duty-hero.webp" alt="Line of Duty" loading="lazy">
+          <div class="qb-body">
+            <h4>Line of Duty: Series 1&ndash;5 Collection</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/3R6rYxP" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Midsomer Murders: The Early Cases Collection</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <img class="qb-img" src="/shows-like-midsomer-murders-hero.webp" alt="Midsomer Murders" loading="lazy">
+          <div class="qb-body">
+            <h4>Midsomer Murders: The Early Cases Collection</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4w73jZ2" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Inspector Morse: The Complete Series</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <img class="qb-img" src="/inspector-morse-hero.webp" alt="Inspector Morse" loading="lazy">
+          <div class="qb-body">
+            <h4>Inspector Morse: The Complete Series</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/3RmDlBC" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Death in Paradise: Series 1&ndash;5</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <img class="qb-img" src="/shows-like-death-in-paradise-hero.webp" alt="Death in Paradise" loading="lazy">
+          <div class="qb-body">
+            <h4>Death in Paradise: Series 1&ndash;5</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/3RKxfLF" target="_blank" rel="nofollow sponsored noopener">
-          <h4>DCI Banks: Seasons 1&ndash;3 &amp; Aftermath</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <div class="qb-body">
+            <h4>DCI Banks: Seasons 1&ndash;3 &amp; Aftermath</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4wcnqVX" target="_blank" rel="nofollow sponsored noopener">
-          <h4>McDonald &amp; Dodds: Series 1&ndash;4</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <div class="qb-body">
+            <h4>McDonald &amp; Dodds: Series 1&ndash;4</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4fpgugT" target="_blank" rel="nofollow sponsored noopener">
-          <h4>The Agatha Christie Hour: Complete Series</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <img class="qb-img" src="/agatha-christie-hero.webp" alt="Agatha Christie" loading="lazy">
+          <div class="qb-body">
+            <h4>The Agatha Christie Hour: Complete Series</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
         <a class="quick-buy-slide" href="https://amzn.to/4fJMjlP" target="_blank" rel="nofollow sponsored noopener">
-          <h4>Forsyte Saga: The Complete Series</h4>
-          <span class="qb-cta">Buy the Series &rarr;</span>
+          <div class="qb-body">
+            <h4>Forsyte Saga: The Complete Series</h4>
+            <span class="qb-cta">Buy the Series &rarr;</span>
+          </div>
         </a>
       </div>
       <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('dvdsSlider').scrollBy({left:220,behavior:'smooth'})">&rsaquo;</button>
