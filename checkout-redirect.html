@@ -63,13 +63,10 @@
 
 <script>
   // Maps Facebook/Instagram Commerce Manager content_id -> Etsy listing URL
-  var PRODUCT_MAP = {
-    "vl2kevaxu":   "https://cozytvcompanion.etsy.com/listing/4552961525", // British TV Hub Pillow
-    "8zlcqlyogg":  "https://cozytvcompanion.etsy.com/listing/4556611410", // Warm Wishes Holiday Card
-    "hdtamrrxfd":  "https://cozytvcompanion.etsy.com/listing/4552182691", // A Cozy Cup for British TV Nights (mug)
-    "19ncw3yg0f":  "https://cozytvcompanion.etsy.com/listing/4552217499", // British TV Watchlist Notebook (spiral)
-    "t6ewv38cmn":  "https://cozytvcompanion.etsy.com/listing/4552950826"  // British TV Notes Hardcover Journal
-  };
+  // All products previously mapped here (British TV Hub Collection merch,
+  // the Warm Wishes holiday card) have been discontinued, so every id now
+  // falls through to the shop fallback below.
+  var PRODUCT_MAP = {};
 
   var SHOP_FALLBACK = "https://cozytvcompanion.etsy.com";
 

@@ -547,9 +547,6 @@ document.addEventListener('click', function(e){
       ['Gritin LED Rechargeable Book Light','', 'Small enough to tuck into any book bag, for one more chapter before bed.','https://amzn.to/4fhL3oE',H,['reader'],'little',[]],
       ['London Magnetic Bookmark Set','', '48 London-themed bookmarks, enough to share.','https://amzn.to/4gLuB2w',H,['reader'],'little',[]],
       ['Brain Games: Sherlock Holmes Puzzles','', 'Over 100 puzzles inspired by Sherlock Holmes.','https://amzn.to/4pwfYlS',H,['reader','binger'],'little',[]],
-      ['British TV Hub Tote Bag','$44.99','For library trips, bookshop browsing and the mystery you didn’t mean to buy.','https://cozytvcompanion.etsy.com/listing/4552239525',A,['reader'],'special',[]],
-      ['British TV Notes Hardcover Journal','$24.99','For jotting down favourite mysteries and characters.','https://cozytvcompanion.etsy.com/listing/4552950826',A,['reader','binger'],'little',[]],
-      ['British TV Watchlist Notebook','$24.99','For the inevitable “what to watch next?”','https://cozytvcompanion.etsy.com/listing/4552217499',A,['binger'],'little',[]],
       ['Midsomer Murders: The Early Cases Collection','', 'Ten discs of village whodunits.','https://amzn.to/3R6rYxP',H,['binger'],'special',['midsomer']],
       ['Inspector Morse: The Complete Series','', 'Every case in one 17-disc set.','https://amzn.to/4w73jZ2',H,['binger'],'special',['morse']],
       ['Death in Paradise: Series 1–5','', 'All 40 episodes of sun, sand and impossible murders.','https://amzn.to/3RmDlBC',H,['binger'],'special',['dip']],
@@ -564,14 +561,11 @@ document.addEventListener('click', function(e){
       ['Berkshire Faux Fur Throw','', 'Reversible and generously sized, for evenings in front of the TV.','https://amzn.to/4vA38Ew',A,['cozy'],'special',[]],
       ['Chunky Knit Throw','', 'For the long Vera-and-a-blanket evenings ahead.','https://amzn.to/44n66RN',A,['cozy'],'special',['vera']],
       ['“One More Episode” Soy Candle','$22.99','Made for marathon nights. Light it and let the next episode start itself.','https://cozytvcompanion.etsy.com/listing/4565791612',A,['cozy','binger'],'little',[]],
-      ['A Cozy Cup for British TV Nights','$19.99','Tea, coffee or cocoa in the British TV Hub navy-and-gold design.','https://cozytvcompanion.etsy.com/listing/4552182691',A,['cozy','binger'],'little',[]],
-      ['British TV Hub Enamel Mug','$30.00','For tea in the garden, on a walk or wherever the reading happens.','https://cozytvcompanion.etsy.com/listing/4552012228',A,['cozy'],'little',[]],
-      ['British TV Hub Pillow','$39.99','A soft landing spot for the next long binge.','https://cozytvcompanion.etsy.com/listing/4552961525',A,['cozy','binger'],'special',[]],
-      ['2027 British TV Inspired Wall Calendar','$28.99','Twelve months of evocative British objects, a British TV Hub original.','https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar',H,['cozy','binger','reader'],'special',[]],
+      ['British TV Tea Lover Mug','$24.99','“The Episode Can Wait. Tea Cannot.” — 11 oz, for tea, coffee or cocoa.','https://cozytvcompanion.etsy.com/listing/4587249295',A,['cozy','binger'],'little',[]],
+      ['2027 British TV Inspired Wall Calendar','$28.99','Twelve months of evocative British objects, each page its own small original.','https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar',H,['cozy','binger','reader'],'special',[]],
       ['Downton Abbey Afternoon Tea Cookbook','', 'Scones, savouries and sweets from the official cookery series.','https://amzn.to/4pzTP6o',H,['cozy'],'little',[]],
       ['The British Baking Book','', 'A celebration of the history of British baking.','https://amzn.to/4vx4a45',H,['cozy'],'little',[]],
-      ['Happy Holidays to a Fellow British TV Fan (card)','$8.99','A vintage telly, Big Ben and a wink of gold.','https://cozytvcompanion.etsy.com/listing/4563401755',H,['cozy','reader','binger','show'],'little',[],1],
-      ['All Is Cozy & Bright (card)','$8.99','A snowy cobblestone street and warm gold lettering.','https://cozytvcompanion.etsy.com/listing/4556506783',H,['cozy'],'little',[],1]
+      ['Happy Holidays to a Fellow British TV Fan (card)','$8.99','A vintage telly, Big Ben and a wink of gold.','https://cozytvcompanion.etsy.com/listing/4563401755',H,['cozy','reader','binger','show'],'little',[],1]
     ];
     var root=document.getElementById('gift-finder'); if(!root) return;
     var pick={who:null,show:null,size:null,season:null};
@@ -621,106 +615,182 @@ document.addEventListener('click', function(e){
   </script>
 </div>
 
-<div class="hgg-editor-band">
-  <div class="hgg-editor-grid">
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Shop by Budget</span>
-        <img src="/merch-christmas-card.webp" alt="Holiday Gift Guide">
+<style>
+  .retailer-band{max-width:1100px;margin:0 auto 60px;padding:0 5%;}
+  .new-flag{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Raleway',sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;padding:3px 8px;border-radius:2px;margin-left:8px;vertical-align:middle;}
+  .amz-feature{background:linear-gradient(135deg,#1f2940 0%,#273249 100%);border:1px solid var(--gold);border-radius:14px;padding:36px 36px 28px;margin-bottom:28px;}
+  .amz-feature-top{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;justify-content:space-between;margin-bottom:26px;}
+  .amz-feature-badge{font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block;}
+  .amz-feature h3{font-family:'Playfair Display',serif;font-size:1.6rem;margin:0 0 10px;color:var(--cream);}
+  .amz-feature p{font-size:1rem;color:var(--text-muted);max-width:560px;margin:0;line-height:1.6;}
+  .amz-feature-cta{align-self:center;}
+  .slider-wrap{position:relative;}
+  .slider-track{display:flex;gap:16px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:4px;}
+  .slider-track::-webkit-scrollbar{display:none;}
+  .slide-card{flex:0 0 190px;background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.25);border-radius:10px;overflow:hidden;text-decoration:none;color:var(--cream);transition:transform .15s ease;}
+  .slide-card:hover{transform:translateY(-3px);border-color:var(--gold);}
+  .slide-card img{width:100%;height:120px;object-fit:cover;display:block;}
+  .slide-card span{display:block;padding:10px 12px;font-family:'Raleway',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:0.3px;}
+  .slider-btn{position:absolute;top:40%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;background:var(--gold);color:var(--navy);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;font-weight:700;box-shadow:0 4px 10px rgba(0,0,0,0.35);}
+  .slider-btn.prev{left:-14px;} .slider-btn.next{right:-14px;}
+  @media(max-width:600px){.slider-btn{display:none;}}
+  .etsy-feature{background:var(--card);border:1px solid var(--card-border);border-radius:14px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;}
+  .etsy-feature-text{flex:1;min-width:240px;}
+  .etsy-feature-text h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin:0 0 10px;color:var(--cream);}
+  .etsy-feature-text p{font-size:0.98rem;color:var(--text-muted);margin:0 0 20px;line-height:1.6;max-width:460px;}
+  .etsy-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;flex:1;min-width:280px;max-width:420px;}
+  .etsy-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;border:1px solid rgba(201,168,76,0.2);}
+  .etsy-gallery img:nth-child(1){grid-column:span 2;grid-row:span 2;aspect-ratio:1/1;}
+  .community-strip{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.15);border-radius:12px;padding:20px 26px;max-width:1100px;margin:0 auto 60px;}
+  .community-strip h4{font-family:'Playfair Display',serif;margin:0 0 4px;font-size:1.05rem;}
+  .community-strip p{margin:0;color:var(--text-muted);font-size:0.92rem;}
+  .faq-item{max-width:900px;margin:0 auto;padding:22px 5%;border-bottom:1px solid rgba(201,168,76,0.15);}
+  .faq-item h4{font-family:'Playfair Display',serif;font-size:1.1rem;margin:0 0 8px;color:var(--cream);}
+  .faq-item p{margin:0;color:var(--text-muted);font-size:1rem;line-height:1.7;}
+  .faq-item a{color:var(--gold);}
+  .section-tag{text-align:center;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
+  .section-title{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--cream);margin:0 0 14px;}
+  .section-sub{text-align:center;max-width:560px;margin:0 auto 34px;color:var(--text-muted);font-size:0.98rem;}
+</style>
+
+<!-- ===================== SHOP BY RETAILER (leads) ===================== -->
+<div class="retailer-band">
+  <div class="section-tag">Shop Directly</div>
+  <div class="section-title">Shop by Retailer</div>
+  <div class="section-sub">Prefer to browse by store? Start with the full marketplace, or the hand-made Etsy shop.</div>
+
+  <div class="amz-feature">
+    <div class="amz-feature-top">
+      <div>
+        <span class="amz-feature-badge">The Full Marketplace</span>
+        <h3>Shop the Amazon Marketplace</h3>
+        <p>Books, streaming accessories, cozy home d&eacute;cor, kitchen finds, and puzzles &mdash; every hand-picked British TV Hub recommendation, organized by mood so the right gift is a click or two away.</p>
       </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">The Holiday Gift Guide</h3>
-        <p class="hgg-editor-desc">Gifts sorted by price, from a $12 stocking stuffer to the complete Line of Duty collection. The place to start if a budget is the first thing on your mind.</p>
-        <a href="/holiday-gift-guide.html" class="agg-cta-pill">Shop by Budget &rarr;</a>
-      </div>
-    </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Shop the Season</span>
-        <img loading="lazy" src="/autumn-gift-hero.webp" alt="Autumn Gift Guide">
-      </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">The Autumn Gift Guide</h3>
-        <p class="hgg-editor-desc">Cozy-evening essentials for the run-up to the holidays &mdash; tea, throws, candles, and books for reading with the lamps on.</p>
-        <a href="/autumn-gift-guide.html" class="agg-cta-pill">Shop the Season &rarr;</a>
-      </div>
-    </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Shop by Show</span>
-        <img loading="lazy" src="/snug-nav-collections.webp" alt="Show Collections">
-      </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">Show &amp; Theme Collections</h3>
-        <p class="hgg-editor-desc">Curated picks for the fan of one particular show &mdash; Vera Essentials, the Inspector Morse Collection, British Period Drama, and more.</p>
-        <a href="/essentials-collections.html" class="agg-cta-pill">Shop by Show &rarr;</a>
-      </div>
-    </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Shop British TV Hub</span>
-        <img loading="lazy" src="/merch-hub-collection-hero.webp" alt="British TV Hub Collection merch">
-      </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">The British TV Hub Collection</h3>
-        <p class="hgg-editor-desc">The site's own line &mdash; mugs, journals, a tote, a candle, and the 2027 wall calendar, all in the signature navy-and-gold design.</p>
-        <a href="/merch.html" class="agg-cta-pill">Shop the Collection &rarr;</a>
-      </div>
-    </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Browse Everything</span>
-        <img loading="lazy" src="/books-hero.webp" alt="British TV Hub Marketplace">
-      </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">The Full Marketplace</h3>
-        <p class="hgg-editor-desc">Books, streaming accessories, cozy home d&eacute;cor, kitchen finds, and puzzles &mdash; every hand-picked recommendation in one storefront.</p>
+      <div class="amz-feature-cta">
         <a href="/gift-ideas.html" class="agg-cta-pill">Browse Everything &rarr;</a>
       </div>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Handmade Keepsakes</span>
-        <img loading="lazy" src="/shop-hero-giftbox.webp" alt="A gift box of British TV Hub keepsakes">
+    <div class="slider-wrap">
+      <button class="slider-btn prev" aria-label="Previous" onclick="document.getElementById('amzSlider').scrollBy({left:-220,behavior:'smooth'})">&lsaquo;</button>
+      <div class="slider-track" id="amzSlider">
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5/photo/amzn1.shoppablemedia.v1.52bf6acb-42b0-4dbf-a051-73e3adee51df?ref_=aip_sf_photo_spv_ons_mixed_d" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/books-hero.webp" alt="Books and Adaptations" loading="lazy"><span>Books &amp; Adaptations</span></a>
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5/photo/amzn1.shoppablemedia.v1.3178fafb-a207-440a-bd74-841cd3c31345?ref_=aip_sf_photo_spv_ons_mixed_d" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/snug-nav-cozy.webp" alt="Cozy Watch" loading="lazy"><span>Cozy Watch</span></a>
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5?ccs_id=190fd8a7-32bb-4c32-8134-4454db668675&isPublicView=true" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/streaming-hero.webp" alt="Streaming Essentials" loading="lazy"><span>Streaming Essentials</span></a>
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5/photo/amzn1.shoppablemedia.v1.3da9ba93-7fdc-4a83-9e63-e447e77df5a4?ref_=aip_sf_photo_spv_ons_mixed_d" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/snug-nav-watch.webp" alt="Comfort Viewing" loading="lazy"><span>Comfort Viewing</span></a>
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5/photo/amzn1.shoppablemedia.v1.066763a7-9583-448e-9f33-86ad41977564?ref_=aip_sf_photo_spv_ons_mixed_d" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/case-file-hero.webp" alt="Crime and Mystery" loading="lazy"><span>Crime &amp; Mystery</span></a>
+        <a class="slide-card" href="https://www.amazon.com/shop/influencer-cffc6cc5/photo/amzn1.shoppablemedia.v1.13253675-ea03-4f05-b78b-d5b0d1094edc?ref_=aip_sf_photo_spv_ons_mixed_d" target="_blank" rel="sponsored nofollow noopener">
+        <img src="/snug-nav-gifts.webp" alt="Perfect Gifts" loading="lazy"><span>Perfect Gifts</span></a>
       </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">The CozyTVCompanion Shop</h3>
-        <p class="hgg-editor-desc">Mugs, journals, a pillow, a tote and holiday cards in the navy-and-gold British TV Hub design, sold on Etsy.</p>
-        <a href="/shop.html" class="agg-cta-pill">Visit the Shop &rarr;</a>
-      </div>
+      <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('amzSlider').scrollBy({left:220,behavior:'smooth'})">&rsaquo;</button>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <span class="hgg-editor-badge">Community</span>
-        <img loading="lazy" src="/snug-nav-share.webp" alt="A mug of tea, a candle, and a sign reading Cozy Is My Happy Place">
-      </div>
-      <div class="hgg-editor-body">
-        <h3 class="hgg-editor-name">Share a Gift Idea</h3>
-        <p class="hgg-editor-desc">Recommend the tea, blanket, candle or book that makes your cozy evenings, and help inspire other British TV fans.</p>
-        <a href="/community-snug.html" class="agg-cta-pill">Share Yours &rarr;</a>
-      </div>
+  </div>
+
+  <div class="etsy-feature">
+    <div class="etsy-feature-text">
+      <span class="amz-feature-badge">On Etsy</span>
+      <h3>The CozyTVCompanion Shop</h3>
+      <p>Mugs, a candle, a calendar, and small keepsakes in the navy-and-gold British TV Hub design &mdash; hand-finished and made to order.</p>
+      <a href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener" class="agg-cta-pill">Visit the Shop &rarr;</a>
+    </div>
+    <div class="etsy-gallery">
+      <img src="/shop-mug-tea-lover.webp" alt="British TV Tea Lover Mug" loading="lazy">
+      <img src="/shop-candle.webp" alt="One More Episode soy candle" loading="lazy">
+      <img src="/shop-one-more-episode-coaster.webp" alt="One More Episode coaster" loading="lazy">
+      <img src="/shop-tea-and-tv-sticker.webp" alt="Tea and TV vinyl sticker" loading="lazy">
+      <img src="/shop-notepad.webp" alt="British TV Lover notepad" loading="lazy">
+      <img src="/calendar-cover.webp" alt="2027 British TV Inspired Wall Calendar" loading="lazy">
     </div>
   </div>
 </div>
 
-<div class="hub-card"><div style="max-width:900px;margin:20px auto 20px;padding:0 5%;">
+<!-- ===================== PRACTICAL CATEGORY ROW ===================== -->
+<div class="hgg-editor-band">
+  <div class="section-tag">Find the Right Guide</div>
+  <div class="section-title">Shop by What You Need</div>
+  <div class="section-sub">Five practical starting points &mdash; pick the one that matches what's actually on your list.</div>
+  <div class="hgg-editor-grid">
+
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb"><span class="hgg-editor-badge">Under $25</span></div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Gifts Under $25</h3>
+        <p class="hgg-editor-desc">Small, thoughtful finds that don't stretch the budget &mdash; stocking-stuffer territory and beyond.</p>
+        <a href="/gifts-under-25.html" class="agg-cta-pill">Shop Under $25 &rarr;</a>
+      </div>
+    </div>
+
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb"><span class="hgg-editor-badge">For Readers</span></div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Mystery Books</h3>
+        <p class="hgg-editor-desc">The novels behind the shows, and the cozy mysteries that started it all &mdash; a gift for the reader on the list.</p>
+        <a href="/mystery-books-gifts.html" class="agg-cta-pill">Shop Mystery Books &rarr;</a>
+      </div>
+    </div>
+
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb"><span class="hgg-editor-badge">For Bingers</span></div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Mystery &amp; Drama DVDs</h3>
+        <p class="hgg-editor-desc">Complete-series box sets for the fan who wants to own their favourite detective, start to finish.</p>
+        <a href="/mystery-drama-dvds-gifts.html" class="agg-cta-pill">Shop DVDs &rarr;</a>
+      </div>
+    </div>
+
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb"><span class="hgg-editor-badge">By Budget</span></div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">The Holiday Gift Guide</h3>
+        <p class="hgg-editor-desc">Gifts sorted by price, from a stocking stuffer to the complete Line of Duty collection.</p>
+        <a href="/holiday-gift-guide.html" class="agg-cta-pill">Shop by Budget &rarr;</a>
+      </div>
+    </div>
+
+    <div class="hgg-editor-card">
+      <div class="hgg-editor-thumb"><span class="hgg-editor-badge">Shop by Theme</span></div>
+      <div class="hgg-editor-body">
+        <h3 class="hgg-editor-name">Show &amp; Theme Collections</h3>
+        <p class="hgg-editor-desc">Curated picks for the fan of one particular show &mdash; Vera Essentials, the Inspector Morse Collection, British Period Drama, and more.</p>
+        <a href="/essentials-collections.html" class="agg-cta-pill">Shop by Theme &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Community, demoted -->
+<div class="community-strip">
+  <div>
+    <h4>Share a Gift Idea</h4>
+    <p>Recommend the tea, blanket, candle or book that makes cozy evenings better.</p>
+  </div>
+  <a class="agg-cta-pill" href="/community-snug.html">Share Yours &rarr;</a>
+</div>
+
+<div class="hub-card"><div style="max-width:900px;margin:0 auto 20px;padding:0 5%;">
   <div style="position:relative;padding-top:1.5rem;margin-bottom:1.5rem;">
     <div style="width:48px;height:3px;background:var(--gold);margin-bottom:1.25rem;"></div>
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700;color:var(--cream);line-height:1.2;">What Readers <em style="font-style:italic;color:var(--gold);">Ask Most</em></h2>
   </div>
   <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
     <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Which gift guide should I actually use?</h3>
-    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">If a budget is the main thing on your mind, start with the <a href="/holiday-gift-guide.html" style="color:var(--gold);">Holiday Gift Guide</a>. If it's more about the feeling of the season, try the <a href="/autumn-gift-guide.html" style="color:var(--gold);">Autumn Gift Guide</a>. Shopping for one specific show's biggest fan? Head to the <a href="/essentials-collections.html" style="color:var(--gold);">Show Collections</a>.</p>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">Shopping to a budget? Start with <a href="/gifts-under-25.html" style="color:var(--gold);">Gifts Under $25</a> or the <a href="/holiday-gift-guide.html" style="color:var(--gold);">Holiday Gift Guide</a>. Shopping for a reader or a binger? Try <a href="/mystery-books-gifts.html" style="color:var(--gold);">Mystery Books</a> or <a href="/mystery-drama-dvds-gifts.html" style="color:var(--gold);">Mystery &amp; Drama DVDs</a>. Shopping for one specific show's biggest fan? Head to the <a href="/essentials-collections.html" style="color:var(--gold);">Show Collections</a>.</p>
   </div>
   <div style="padding:22px 0;border-bottom:1px solid rgba(201,168,76,0.15);">
-    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Is there anything from British TV Hub itself I can gift?</h3>
-    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">Yes &mdash; the <a href="/merch.html" style="color:var(--gold);">British TV Hub Collection</a> features the site's own line: mugs, journals, a tote, a candle, and the 2027 wall calendar, all made to order through the British TV Hub Etsy shop.</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Is there anything handmade I can gift?</h3>
+    <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">Yes &mdash; the <a href="https://cozytvcompanion.etsy.com" target="_blank" rel="noopener" style="color:var(--gold);">CozyTVCompanion Etsy shop</a> carries a mug, a candle, and a wall calendar in the signature navy-and-gold design, made to order.</p>
   </div>
   <div style="padding:22px 0;">
     <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:var(--cream);margin:0 0 8px;">Where can I find everything in one place?</h3>
     <p style="font-size:16px;color:var(--text-muted);line-height:1.7;margin:0;">The <a href="/gift-ideas.html" style="color:var(--gold);">full marketplace</a> gathers every recommendation &mdash; books, streaming accessories, cozy home items, and more &mdash; in one storefront.</p>
   </div>
 </div></div>
+
 
 <p class="agg-disclosure">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. Some links on this page are affiliate links to Amazon and Etsy; this never affects the recommendations &mdash; these are genuine editorial picks.</p>
 
