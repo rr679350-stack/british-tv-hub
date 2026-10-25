@@ -665,13 +665,28 @@ document.addEventListener('click', function(e){
   .qp-scene-band{
     position:relative;
     background-image:
-      linear-gradient(90deg, rgba(10,21,32,0.97) 0%, rgba(10,21,32,0.80) 18%, rgba(10,21,32,0.80) 82%, rgba(10,21,32,0.97) 100%),
+      linear-gradient(rgba(10,21,32,0.35), rgba(10,21,32,0.55)),
       url('/cotswolds-christmas-village.webp');
     background-size:cover;
-    background-position:center;
+    background-position:center 30%;
     padding:64px 0 1px;
   }
   .qp-scene-band .retailer-band{ position:relative; z-index:2; }
+  .qp-scene-band .section-tag,
+  .qp-scene-band .section-title,
+  .qp-scene-band .section-sub{
+    position:relative;
+    z-index:2;
+  }
+  .qp-heading-panel{
+    max-width:720px;
+    margin:0 auto 34px;
+    background:rgba(10,21,32,0.72);
+    border:1px solid rgba(201,168,76,0.3);
+    border-radius:14px;
+    padding:28px 32px 24px;
+  }
+  .qp-heading-panel .section-sub{ margin-bottom:0; }
   .section-tag{text-align:center;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
   .section-title{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--cream);margin:0 0 14px;}
   .section-sub{text-align:center;max-width:560px;margin:0 auto 34px;color:var(--text-muted);font-size:0.98rem;}
@@ -687,9 +702,11 @@ document.addEventListener('click', function(e){
 <!-- ===================== QUICK PURCHASES: BOOKS & DVDs ===================== -->
 <div class="qp-scene-band">
 <div class="retailer-band">
-  <div class="section-tag">Quick Purchases</div>
-  <div class="section-title">10 Gifts Under $25, 10 Mystery Books &amp; 10 Mystery/Drama DVDs</div>
-  <div class="section-sub">Ready to buy right now &mdash; no browsing required.</div>
+  <div class="qp-heading-panel">
+    <div class="section-tag">Quick Purchases</div>
+    <div class="section-title">10 Gifts Under $25, 10 Mystery Books &amp; 10 Mystery/Drama DVDs</div>
+    <div class="section-sub">Ready to buy right now &mdash; no browsing required.</div>
+  </div>
 
   <div class="amz-feature">
     <div class="amz-feature-top">
