@@ -1685,11 +1685,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     return false;
   }
-  if (labelBmcWidget()) return;
+  labelBmcWidget();
+  // Keep watching (not just for the widget's initial insertion, but for any
+  // later attribute change too) — the widget library has been seen to set
+  // its own aria-label after the node is first inserted, which a one-shot
+  // childList-only observer would miss.
   var observer = new MutationObserver(function () {
-    if (labelBmcWidget()) observer.disconnect();
+    labelBmcWidget();
   });
-  observer.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['aria-label']
+  });
 })();
 </script>
 </body>
