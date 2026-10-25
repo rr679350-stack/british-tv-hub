@@ -27,6 +27,11 @@
       "permanent": true
     },
     {
+      "source": "/merch.html",
+      "destination": "/gift-ideas.html",
+      "permanent": true
+    },
+    {
       "source": "/mysteries.html",
       "destination": "/shows-index.html",
       "permanent": true
