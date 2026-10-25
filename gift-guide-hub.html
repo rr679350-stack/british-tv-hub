@@ -651,6 +651,10 @@ document.addEventListener('click', function(e){
   .section-tag{text-align:center;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
   .section-title{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--cream);margin:0 0 14px;}
   .section-sub{text-align:center;max-width:560px;margin:0 auto 34px;color:var(--text-muted);font-size:0.98rem;}
+  .hgg-slider-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:4px 4px 10px;}
+  .hgg-slider-track::-webkit-scrollbar{display:none;}
+  .hgg-slider-track .hgg-editor-card{flex:0 0 270px;}
+  @media(max-width:600px){ .hgg-slider-track .hgg-editor-card{flex:0 0 240px;} }
 </style>
 
 <!-- ===================== SHOP BY RETAILER (leads) ===================== -->
@@ -733,7 +737,9 @@ document.addEventListener('click', function(e){
   <div class="section-tag">Find the Right Guide</div>
   <div class="section-title">Shop by What You Need</div>
   <div class="section-sub">Four practical starting points &mdash; pick the one that matches what's actually on your list.</div>
-  <div class="hgg-editor-grid">
+  <div class="slider-wrap">
+    <button class="slider-btn prev" aria-label="Previous" onclick="document.getElementById('hggSlider').scrollBy({left:-290,behavior:'smooth'})">&lsaquo;</button>
+    <div class="hgg-slider-track" id="hggSlider">
 
     <div class="hgg-editor-card">
       <div class="hgg-editor-thumb"><img src="/snug-nav-gifts.webp" alt="Gifts Under $25" loading="lazy"><span class="hgg-editor-badge">Under $25</span></div>
@@ -771,6 +777,8 @@ document.addEventListener('click', function(e){
       </div>
     </div>
 
+    </div>
+    <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('hggSlider').scrollBy({left:290,behavior:'smooth'})">&rsaquo;</button>
   </div>
 </div>
 
