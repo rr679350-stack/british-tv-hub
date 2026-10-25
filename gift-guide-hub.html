@@ -662,6 +662,16 @@ document.addEventListener('click', function(e){
   .faq-item h4{font-family:'Playfair Display',serif;font-size:1.1rem;margin:0 0 8px;color:var(--cream);}
   .faq-item p{margin:0;color:var(--text-muted);font-size:1rem;line-height:1.7;}
   .faq-item a{color:var(--gold);}
+  .qp-scene-band{
+    position:relative;
+    background-image:
+      linear-gradient(90deg, rgba(10,21,32,0.97) 0%, rgba(10,21,32,0.80) 18%, rgba(10,21,32,0.80) 82%, rgba(10,21,32,0.97) 100%),
+      url('/cotswolds-christmas-village.webp');
+    background-size:cover;
+    background-position:center;
+    padding:64px 0 1px;
+  }
+  .qp-scene-band .retailer-band{ position:relative; z-index:2; }
   .section-tag{text-align:center;font-family:'Raleway',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin:0 0 10px;}
   .section-title{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(1.7rem,3.5vw,2.4rem);color:var(--cream);margin:0 0 14px;}
   .section-sub{text-align:center;max-width:560px;margin:0 auto 34px;color:var(--text-muted);font-size:0.98rem;}
@@ -675,6 +685,7 @@ document.addEventListener('click', function(e){
 </style>
 
 <!-- ===================== QUICK PURCHASES: BOOKS & DVDs ===================== -->
+<div class="qp-scene-band">
 <div class="retailer-band">
   <div class="section-tag">Quick Purchases</div>
   <div class="section-title">10 Gifts Under $25, 10 Mystery Books &amp; 10 Mystery/Drama DVDs</div>
@@ -932,6 +943,7 @@ document.addEventListener('click', function(e){
       <button class="slider-btn next" aria-label="Next" onclick="document.getElementById('dvdsSlider').scrollBy({left:220,behavior:'smooth'})">&rsaquo;</button>
     </div>
   </div>
+</div>
 </div>
 
 <!-- ===================== SHOP BY RETAILER ===================== -->
