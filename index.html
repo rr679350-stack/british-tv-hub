@@ -1620,6 +1620,14 @@ document.addEventListener('click', function(e){
   <div class="og-media"><img src="/gift-guides-hero.webp" alt="Wrapped gift boxes and a cozy cup of tea beside a British TV Hub notebook" width="1400" height="933" loading="lazy" decoding="async"></div>
 </div>
 <script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
+<script>(function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
+var img=document.getElementById('autumn-preview-card-img');
+if(img){img.src='/fall-preview-blue-lights-s4-keyart.webp';img.removeAttribute('srcset');img.removeAttribute('sizes');img.style.objectFit='contain';img.style.background='#1a2135';img.alt='Blue Lights Season 4 key art — a BritBox Original';}
+var moEl=document.getElementById('this-month-oct'),mnEl=document.getElementById('this-month-nov');
+if(moEl&&mnEl){moEl.style.display='none';mnEl.style.display='grid';}
+var yoEl=document.getElementById('now-youtube-oct'),ynEl=document.getElementById('now-youtube-nov');
+if(yoEl&&ynEl){yoEl.style.display='none';ynEl.style.display='block';}
+}catch(x){}})();</script>
 
 <!-- GIFT SEASON NUDGE (hides itself once the 25%-off Cyber Specials sale goes live Nov 23) -->
 <div id="gift-season-nudge" style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:26px 40px;text-align:center;">
@@ -1694,7 +1702,7 @@ document.addEventListener('click', function(e){
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 40px;text-align:center;">The Guides Readers Turn to Most</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
     <a href="/fall-preview-2026.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
-      <img src="/assets/perf/fall-preview-ludwig-s2-960-2073889766.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 20%;display:block;" width="1400" height="933" srcset="/assets/perf/fall-preview-ludwig-s2-320-a573ee5d51.webp 320w, /assets/perf/fall-preview-ludwig-s2-640-e966e1e230.webp 640w, /assets/perf/fall-preview-ludwig-s2-960-2073889766.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
+      <img id="autumn-preview-card-img" src="/assets/perf/fall-preview-ludwig-s2-960-2073889766.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 20%;display:block;" width="1400" height="933" srcset="/assets/perf/fall-preview-ludwig-s2-320-a573ee5d51.webp 320w, /assets/perf/fall-preview-ludwig-s2-640-e966e1e230.webp 640w, /assets/perf/fall-preview-ludwig-s2-960-2073889766.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Autumn 2026 British TV Preview</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">The major new British mystery and drama premieres landing on BritBox, Acorn TV and PBS this autumn.</p>
@@ -1751,7 +1759,7 @@ document.addEventListener('click', function(e){
   <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">New on BritBox, Acorn TV &amp; PBS Masterpiece</h2>
   <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 28px;">New seasons and premieres arriving this month, all in one place.</p>
   <p role="note" class="streaming-country-note"><strong>US viewers:</strong> Streaming details on this page are for the United States. Availability may differ in the UK, Canada, Australia and New Zealand.</p></div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
+  <div id="this-month-oct" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
       <img loading="lazy" src="/assets/perf/signora-volpe-s3-960-24bcbdabe8.webp" alt="Emilia Fox in Signora Volpe Season 3 on Acorn TV" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;" width="1200" height="800" srcset="/assets/perf/signora-volpe-s3-319-e6b99a1c9d.webp 319w, /assets/perf/signora-volpe-s3-640-1835c2162d.webp 640w, /assets/perf/signora-volpe-s3-960-24bcbdabe8.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
@@ -1823,6 +1831,64 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
+  <div id="this-month-nov" style="display:none;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights Season 4 key art — Siân Brooke, Katherine Devlin, Nathan Braniff and cast, a BritBox Original" style="width:100%;height:190px;object-fit:contain;background:#1a2135;display:block;">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 12</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Blue Lights &mdash; Season 4</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Grace, Tommy and Annie are three years into the job as Richard Dormer returns to reopen Gerry Cliff's murder trial, uncovering long-buried secrets across Belfast's police and criminal worlds.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/blue-lights.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 12 on BritBox</p>
+      </div>
+    </div>
+
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/fall-preview-madame-blanc-s5-keyart.webp" alt="The Madame Blanc Mysteries Season 5 key art — Sally Lindsay and Steve Edge, an Acorn TV Original" style="width:100%;height:190px;object-fit:contain;background:#1a2135;display:block;">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 9</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">The Madame Blanc Mysteries &mdash; Season 5</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Sally Lindsay returns as Jean White for a seven-part season built around Jean and Dom's wedding plans, ending with a Christmas special finale.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/madame-blanc-mysteries.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 9 on Acorn TV</p>
+      </div>
+    </div>
+
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/fall-preview-death-valley-s2.webp" alt="Timothy Spall in Death Valley Season 2" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 17</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Death Valley &mdash; Season 2</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Timothy Spall and Gwyneth Keyworth return for more unconventional sleuthing in the Welsh countryside.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/death-valley.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 17 on BritBox</p>
+      </div>
+    </div>
+
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/assets/perf/britbox-time-s3-820-2c2c4f7b5c.webp" alt="Time Season 3 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;" width="820" height="547" srcset="/assets/perf/britbox-time-s3-319-c545a80c5f.webp 319w, /assets/perf/britbox-time-s3-640-4f8542e78a.webp 640w, /assets/perf/britbox-time-s3-820-2c2c4f7b5c.webp 820w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Coming Soon</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Time &mdash; Season 3</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Tennant and Siobhan Finneran lead the third season of Jimmy McGovern&rsquo;s BAFTA-winning prison drama, set in a Young Offenders Institution.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/time.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Coming soon to BritBox &middot; U.S. premiere date not yet announced</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
@@ -1830,7 +1896,7 @@ document.addEventListener('click', function(e){
     <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">NOW ON YOUTUBE</div>
     <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">British Mystery &amp; Drama Trailers on YouTube</h2>
     <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:640px;margin-left:auto;margin-right:auto;text-align:center;">Curated British mystery and drama trailers from BritBox, Acorn TV, and PBS &mdash; all in one feed.</p>
-    <div style="max-width:720px;margin:0 auto;">
+    <div id="now-youtube-oct" style="max-width:720px;margin:0 auto;">
       <div style="display:block;position:relative;width:100%;padding:0 !important;padding-bottom:56.25% !important;min-height:0 !important;min-width:0 !important;background:#000;border:1px solid #3d4a60;border-radius:8px;overflow:hidden;">
         <img src="https://img.youtube.com/vi/GydS_60QoIQ/maxresdefault.jpg" alt="Ludwig Season 2 trailer thumbnail" loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
         <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:rgba(20,26,42,0.75);border:2px solid #c9a96e;border-radius:50%;display:flex;align-items:center;justify-content:center;">
@@ -1839,6 +1905,16 @@ document.addEventListener('click', function(e){
       </div>
       <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;color:#b0bcd4;margin:14px 0 0;text-align:center;">Ludwig Season 2 &mdash; Official Trailer</p>
       <p class="hub-video-caption" style="text-align:center;margin-top:10px;"><a href="https://www.youtube.com/watch?v=GydS_60QoIQ&amp;list=PLBQ3AdK8zgZM" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Ludwig Season 2 official trailer (opens in a new tab)" style="color:#1a2135!important;text-decoration:underline;display:inline-block;padding:8px 12px;">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
+    </div>
+    <div id="now-youtube-nov" style="display:none;max-width:720px;margin:0 auto;">
+      <div style="display:block;position:relative;width:100%;padding:0 !important;padding-bottom:56.25% !important;min-height:0 !important;min-width:0 !important;background:#000;border:1px solid #3d4a60;border-radius:8px;overflow:hidden;">
+        <img src="https://img.youtube.com/vi/C_hGRQxpa_Y/maxresdefault.jpg" alt="Blue Lights Season 4 trailer thumbnail" loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:rgba(20,26,42,0.75);border:2px solid #c9a96e;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+          <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="#c9a96e" style="margin-left:3px;"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </div>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;color:#b0bcd4;margin:14px 0 0;text-align:center;">Blue Lights Season 4 &mdash; Official Trailer</p>
+      <p class="hub-video-caption" style="text-align:center;margin-top:10px;"><a href="https://www.youtube.com/watch?v=C_hGRQxpa_Y" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Blue Lights Season 4 official trailer (opens in a new tab)" style="color:#1a2135!important;text-decoration:underline;display:inline-block;padding:8px 12px;">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
     </div>
     <div style="margin-top:24px;text-align:center;">
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Explore More Trailers &rarr;</a>
