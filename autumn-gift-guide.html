@@ -183,6 +183,20 @@ gtag('config', 'G-P1L8CVNKS6');
   .agg-callout-text h3{ font-family:'Playfair Display', serif; font-size:1.4rem; color:var(--cream); margin:0 0 8px; }
   .agg-callout-text p{ color:var(--text-muted); margin:0; font-size:0.98rem; }
   .agg-disclosure{ text-align:center; padding:0 5% 40px; font-family:'Raleway',sans-serif; font-size:11px; color:var(--text-muted); max-width:700px; margin:0 auto; }
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .product-card{background:var(--card);border:1px solid var(--card-border);padding:28px;transition:all 0.25s;position:relative;display:flex;flex-direction:column;border-radius:12px}
+  .product-card:hover{border-color:#c9a96e;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+  .product-badge{position:absolute;top:16px;right:16px;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px}
+  .product-badge.gold{background:#c9a96e;color:#1a2135}
+  .product-card img{width:100%;height:auto;display:block;margin-bottom:16px}
+  .product-name{font-family:'Playfair Display',serif;font-size:19px;color:#eee8d0;margin-bottom:8px;line-height:1.2}
+  .product-desc{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.65;margin-bottom:16px;flex-grow:1}
+  .product-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .product-price{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:#c9a96e;letter-spacing:0.5px}
+  .product-format{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd}
+  .btn-shop-now{background:var(--gold,#c9a96e);color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;transition:all 0.2s;align-self:center;text-align:center;border-radius:2px}
+  .btn-shop-now:hover{background:#dab870}
+  @media (max-width:600px){ .products-grid{grid-template-columns:minmax(0,1fr)} }
 </style>
 
 <style>
@@ -465,20 +479,16 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">Every good autumn evening starts here. A proper cuppa and something worth drinking it from.</p>
   <img class="agg-section-photo" src="/autumn-gift-tea.webp" alt="Tea service by an autumn window" loading="lazy">
-  <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Twinings Tea Selection</h3>
-        <p class="agg-product-desc">A proper British staple — the tea that's always in the cupboard when the nights start drawing in.</p>
-        <a href="https://amzn.to/4fdyXgj" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <h3 class="product-name">Twinings Tea Selection</h3>
+      <p class="product-desc">A proper British staple — the tea that's always in the cupboard when the nights start drawing in.</p>
+      <a href="https://amzn.to/4fdyXgj" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">British Royal Tea Set</h3>
-        <p class="agg-product-desc">Six cups of quiet ceremony — the kind of set that turns an ordinary evening into something a little more special.</p>
-        <a href="https://amzn.to/4bPGUat" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">British Royal Tea Set</h3>
+      <p class="product-desc">Six cups of quiet ceremony — the kind of set that turns an ordinary evening into something a little more special.</p>
+      <a href="https://amzn.to/4bPGUat" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
   </div>
 </section>
@@ -491,20 +501,16 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">For the moment you finally sit down and don't plan on moving again for a while.</p>
   <img class="agg-section-photo" src="/autumn-gift-blankets.webp" alt="Knit throw draped over a couch in a cozy living room" loading="lazy">
-  <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Berkshire Faux Fur Throw</h3>
-        <p class="agg-product-desc">Reversible, generously sized, and about as far from "watching TV cold" as it gets.</p>
-        <a href="https://amzn.to/4vA38Ew" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <h3 class="product-name">Berkshire Faux Fur Throw</h3>
+      <p class="product-desc">Reversible, generously sized, and about as far from "watching TV cold" as it gets.</p>
+      <a href="https://amzn.to/4vA38Ew" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Chunky Knit Throw</h3>
-        <p class="agg-product-desc">Heavier and slower to make, which is rather the point on a proper autumn night.</p>
-        <a href="https://amzn.to/44n66RN" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Chunky Knit Throw</h3>
+      <p class="product-desc">Heavier and slower to make, which is rather the point on a proper autumn night.</p>
+      <a href="https://amzn.to/44n66RN" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
   </div>
 </section>
@@ -537,48 +543,36 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">Something to read once the tea's gone cold and the telly's off for the night.</p>
   <img class="agg-section-photo" src="/autumn-gift-books.webp" alt="Stack of books with tea by a fireplace" loading="lazy">
-  <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">The Thursday Murder Club</h3>
-        <p class="agg-product-desc">By Richard Osman. Four retirees in a retirement village solve cold cases over tea and biscuits — the quintessential cozy modern mystery.</p>
-        <a href="https://www.amazon.com/dp/1984880969?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <h3 class="product-name">The Thursday Murder Club</h3>
+      <p class="product-desc">By Richard Osman. Four retirees in a retirement village solve cold cases over tea and biscuits — the quintessential cozy modern mystery.</p>
+      <a href="https://www.amazon.com/dp/1984880969?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Agatha Raisin and the Quiche of Death</h3>
-        <p class="agg-product-desc">By M.C. Beaton. Villagey, funny, and a little prickly — the book that kicked off the whole cozy-village mystery wave.</p>
-        <a href="https://amzn.to/4x9KvsH" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Agatha Raisin and the Quiche of Death</h3>
+      <p class="product-desc">By M.C. Beaton. Villagey, funny, and a little prickly — the book that kicked off the whole cozy-village mystery wave.</p>
+      <a href="https://amzn.to/4x9KvsH" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">The No. 1 Ladies' Detective Agency</h3>
-        <p class="agg-product-desc">By Alexander McCall Smith. Gentle, warm-hearted mysteries set in Botswana — a beloved cozy staple, autumn evening or not.</p>
-        <a href="https://amzn.to/4x30n06" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">The No. 1 Ladies' Detective Agency</h3>
+      <p class="product-desc">By Alexander McCall Smith. Gentle, warm-hearted mysteries set in Botswana — a beloved cozy staple, autumn evening or not.</p>
+      <a href="https://amzn.to/4x30n06" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">The Marlow Murder Club</h3>
-        <p class="agg-product-desc">By Robert Thorogood. Three unlikely women solving murders along the Thames — perfect for anyone who tore through Thursday Murder Club.</p>
-        <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">The Marlow Murder Club</h3>
+      <p class="product-desc">By Robert Thorogood. Three unlikely women solving murders along the Thames — perfect for anyone who tore through Thursday Murder Club.</p>
+      <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Miss Marple: The Complete Short Stories</h3>
-        <p class="agg-product-desc">By Agatha Christie. Bite-sized mysteries, perfect for reading one a night by the fire.</p>
-        <a href="https://amzn.to/4wZ1jCy" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Miss Marple: The Complete Short Stories</h3>
+      <p class="product-desc">By Agatha Christie. Bite-sized mysteries, perfect for reading one a night by the fire.</p>
+      <a href="https://amzn.to/4wZ1jCy" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Magpie Murders</h3>
-        <p class="agg-product-desc">By Anthony Horowitz. A book-within-a-book mystery — a modern cozy classic with a clever twisty structure.</p>
-        <a href="https://amzn.to/4ga3Xhw" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Magpie Murders</h3>
+      <p class="product-desc">By Anthony Horowitz. A book-within-a-book mystery — a modern cozy classic with a clever twisty structure.</p>
+      <a href="https://amzn.to/4ga3Xhw" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
   </div>
 </section>
@@ -591,63 +585,47 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">A show and its shelf-mate, for when you want to watch it and then keep living in it a little longer.</p>
   <img class="agg-section-photo" src="/autumn-gift-pairings.webp" alt="Book, tea, and candle in front of a TV showing a cozy village scene" loading="lazy">
-  <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Vera &rarr; The Crow Trap</h3>
-        <p class="agg-product-desc">By Ann Cleeves. The novel that started it all — moody Northumberland atmosphere in book form.</p>
-        <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <h3 class="product-name">Vera &rarr; The Crow Trap</h3>
+      <p class="product-desc">By Ann Cleeves. The novel that started it all — moody Northumberland atmosphere in book form.</p>
+      <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Shetland &rarr; Raven Black</h3>
-        <p class="agg-product-desc">By Ann Cleeves. Same author, wilder setting — the first Jimmy Perez mystery.</p>
-        <a href="https://www.amazon.com/dp/0312359675?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Shetland &rarr; Raven Black</h3>
+      <p class="product-desc">By Ann Cleeves. Same author, wilder setting — the first Jimmy Perez mystery.</p>
+      <a href="https://www.amazon.com/dp/0312359675?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Midsomer Murders &rarr; The Killings at Badger's Drift</h3>
-        <p class="agg-product-desc">By Caroline Graham. The source novel behind the very first episode.</p>
-        <a href="https://www.amazon.com/dp/1631943294?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Midsomer Murders &rarr; The Killings at Badger's Drift</h3>
+      <p class="product-desc">By Caroline Graham. The source novel behind the very first episode.</p>
+      <a href="https://www.amazon.com/dp/1631943294?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Inspector Morse &rarr; Last Bus to Woodstock</h3>
-        <p class="agg-product-desc">By Colin Dexter. Where it all began for Morse, Lewis, and Oxford's dreaming spires.</p>
-        <a href="https://www.amazon.com/dp/1509875514?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Inspector Morse &rarr; Last Bus to Woodstock</h3>
+      <p class="product-desc">By Colin Dexter. Where it all began for Morse, Lewis, and Oxford's dreaming spires.</p>
+      <a href="https://www.amazon.com/dp/1509875514?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Grantchester &rarr; Sidney Chambers and the Shadow of Death</h3>
-        <p class="agg-product-desc">By James Runcie. The first Grantchester Mysteries book — same vicar-detective partnership.</p>
-        <a href="https://amzn.to/4xAshAh" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Grantchester &rarr; Sidney Chambers and the Shadow of Death</h3>
+      <p class="product-desc">By James Runcie. The first Grantchester Mysteries book — same vicar-detective partnership.</p>
+      <a href="https://amzn.to/4xAshAh" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Father Brown &rarr; The Innocence of Father Brown</h3>
-        <p class="agg-product-desc">By G.K. Chesterton. The original short story collection that introduced the priest-detective.</p>
-        <a href="https://www.amazon.com/dp/1603749667?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name">Father Brown &rarr; The Innocence of Father Brown</h3>
+      <p class="product-desc">By G.K. Chesterton. The original short story collection that introduced the priest-detective.</p>
+      <a href="https://www.amazon.com/dp/1603749667?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name"><a href="/shows/cooper-and-fry.html" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5);">Cooper and Fry</a> &rarr; Black Dog</h3>
-        <p class="agg-product-desc">By Stephen Booth. Book 1 of the Cooper &amp; Fry Mysteries &mdash; the debut novel that introduced the Peak District detective duo.</p>
-        <a href="https://link.amazon/B05cE3dvz" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <h3 class="product-name"><a href="/shows/cooper-and-fry.html" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5);">Cooper and Fry</a> &rarr; Black Dog</h3>
+      <p class="product-desc">By Stephen Booth. Book 1 of the Cooper &amp; Fry Mysteries &mdash; the debut novel that introduced the Peak District detective duo.</p>
+      <a href="https://link.amazon/B05cE3dvz" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/signora-volpe-s3-photo3.webp" alt="Emilia Fox as Sylvia Fox walking through golden Umbrian countryside in Signora Volpe Season 3" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name"><a href="/shows/signora-volpe.html" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5);">Signora Volpe</a> &rarr; Death at La Fenice</h3>
-        <p class="agg-product-desc">By Donna Leon. Not the source material, just a fellow slow-burn Italian mystery &mdash; the first Commissario Brunetti novel, set among Venice's canals.</p>
-        <a href="https://www.amazon.com/dp/B01DHESXWC?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Details &rarr;</a>
-      </div>
+    <div class="product-card">
+      <img loading="lazy" src="/signora-volpe-s3-photo3.webp" alt="Emilia Fox as Sylvia Fox walking through golden Umbrian countryside in Signora Volpe Season 3">
+      <h3 class="product-name"><a href="/shows/signora-volpe.html" style="color:inherit;text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5);">Signora Volpe</a> &rarr; Death at La Fenice</h3>
+      <p class="product-desc">By Donna Leon. Not the source material, just a fellow slow-burn Italian mystery &mdash; the first Commissario Brunetti novel, set among Venice's canals.</p>
+      <a href="https://www.amazon.com/dp/B01DHESXWC?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Details &rarr;</a>
     </div>
   </div>
 </section>
@@ -660,55 +638,49 @@ document.addEventListener('click', function(e){
   </div>
   <div class="hub-card"><p class="agg-part-intro">Not essential. Just genuinely lovely, if you're in the mood to treat yourself &mdash; or someone else &mdash; including a few favourites from the British TV Hub Shop.</p></div>
   <img class="agg-section-photo" src="/autumn-gift-splurges.webp" alt="Cozy evening scene with British TV Hub mug, books, and lantern" loading="lazy">
-  <div class="agg-grid">
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-mug-tea-lover.webp" alt="British TV Tea Lover Mug, Cozy Mystery Fan Gift" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">British TV Tea Lover Mug &mdash; $24.99</h3>
-        <p class="agg-product-desc">&ldquo;The Episode Can Wait. Tea Cannot.&rdquo; Tea, coffee, or whatever keeps you company through one more episode.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4587249295" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <img loading="lazy" src="/shop-mug-tea-lover.webp" alt="British TV Tea Lover Mug, Cozy Mystery Fan Gift">
+      <h3 class="product-name">British TV Tea Lover Mug</h3>
+      <p class="product-desc">&ldquo;The Episode Can Wait. Tea Cannot.&rdquo; Tea, coffee, or whatever keeps you company through one more episode.</p>
+      <div class="product-meta"><span class="product-price">$24.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4587249295" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-candle.webp" alt="One More Episode soy candle" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">&ldquo;One More Episode&rdquo; Soy Candle &mdash; $22.99</h3>
-        <p class="agg-product-desc">Made for marathon nights. Light it, settle in, and let the next episode start itself.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4565791612" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <img loading="lazy" src="/shop-candle.webp" alt="One More Episode soy candle">
+      <h3 class="product-name">&ldquo;One More Episode&rdquo; Soy Candle</h3>
+      <p class="product-desc">Made for marathon nights. Light it, settle in, and let the next episode start itself.</p>
+      <div class="product-meta"><span class="product-price">$22.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4565791612" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-one-more-episode-coaster.webp" alt="One More Episode coaster on a wooden table beside a candle" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">One More Episode Coaster &mdash; $14.99</h3>
-        <p class="agg-product-desc">A cork-backed coaster for the tea (or cocoa) that gets you through tonight's episode. A neat stocking stuffer, too.</p>
-        <a href="https://www.etsy.com/listing/4588126055/one-more-episode-coaster-british-tv" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <img loading="lazy" src="/shop-one-more-episode-coaster.webp" alt="One More Episode coaster on a wooden table beside a candle">
+      <h3 class="product-name">One More Episode Coaster</h3>
+      <p class="product-desc">A cork-backed coaster for the tea (or cocoa) that gets you through tonight's episode. A neat stocking stuffer, too.</p>
+      <div class="product-meta"><span class="product-price">$14.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://www.etsy.com/listing/4588126055/one-more-episode-coaster-british-tv" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-tea-and-tv-sticker.webp" alt="Tea and TV vinyl sticker held in a hand" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Tea &amp; TV Vinyl Sticker &mdash; $9.99</h3>
-        <p class="agg-product-desc">A 3x3 vinyl sticker for your laptop, water bottle, or watchlist journal &mdash; because every mystery marathon starts with a proper cup of tea.</p>
-        <a href="https://www.etsy.com/listing/4589259284/tea-tv-sticker-cozy-tv-lover-gift-3x3" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <img loading="lazy" src="/shop-tea-and-tv-sticker.webp" alt="Tea and TV vinyl sticker held in a hand">
+      <h3 class="product-name">Tea &amp; TV Vinyl Sticker</h3>
+      <p class="product-desc">A 3x3 vinyl sticker for your laptop, water bottle, or watchlist journal &mdash; because every mystery marathon starts with a proper cup of tea.</p>
+      <div class="product-meta"><span class="product-price">$9.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://www.etsy.com/listing/4589259284/tea-tv-sticker-cozy-tv-lover-gift-3x3" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-notepad.webp" alt="British TV Lover notepad with a watercolor English village scene" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">British TV Lover Notepad &mdash; $16.99</h3>
-        <p style="font-family:Raleway,sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#c9a96e; margin:-4px 0 6px;">Popular Pick on Etsy</p>
-        <p class="agg-product-desc">A 5.5 x 6 inch notepad with a watercolor English village scene &mdash; for grocery lists, clue-tracking, or just something pretty to write on.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4599171477" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">Popular Pick on Etsy</div>
+      <img loading="lazy" src="/shop-notepad.webp" alt="British TV Lover notepad with a watercolor English village scene">
+      <h3 class="product-name">British TV Lover Notepad</h3>
+      <p class="product-desc">A 5.5 x 6 inch notepad with a watercolor English village scene &mdash; for grocery lists, clue-tracking, or just something pretty to write on.</p>
+      <div class="product-meta"><span class="product-price">$16.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4599171477" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-british-tv-notes-journal.webp" alt="British TV Notes Hardcover Journal" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">British TV Notes Hardcover Journal &mdash; $24.99</h3>
-        <p class="agg-product-desc">For jotting down favorite mysteries and characters &mdash; the recommendations you swear you'll remember later.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4552950826" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <img loading="lazy" src="/shop-british-tv-notes-journal.webp" alt="British TV Notes Hardcover Journal">
+      <h3 class="product-name">British TV Notes Hardcover Journal</h3>
+      <p class="product-desc">For jotting down favorite mysteries and characters &mdash; the recommendations you swear you'll remember later.</p>
+      <div class="product-meta"><span class="product-price">$24.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4552950826" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
 
     <div class="calendar-header">
@@ -735,15 +707,13 @@ document.addEventListener('click', function(e){
     <h2 class="agg-part-title">Holiday Cards</h2>
   </div>
   <p class="agg-part-intro">Just in time for the holiday season — get your cards early.</p>
-  <div class="agg-grid">
-    <div class="agg-product-card">
-      <div class="agg-thumb" style="height:220px;background:#0a1520;"><img src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card, with a vintage TV showing Big Ben and Parliament" loading="lazy" style="object-fit:contain;"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name" style="margin-bottom:2px;">Happy Holidays to a Fellow British TV Fan</h3>
-        <p style="font-family:Raleway,sans-serif; font-size:14px; font-weight:600; letter-spacing:0.5px; color:var(--gold); margin:0 0 8px;">$8.99</p>
-        <p class="agg-product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+  <div class="products-grid" style="max-width:320px;margin:0 auto;">
+    <div class="product-card">
+      <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card, with a vintage TV showing Big Ben and Parliament">
+      <h3 class="product-name">Happy Holidays to a Fellow British TV Fan</h3>
+      <p class="product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+      <div class="product-meta"><span class="product-price">$8.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
   </div>
 </section>
