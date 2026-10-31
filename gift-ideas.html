@@ -350,6 +350,20 @@ gtag('config', 'G-P1L8CVNKS6');
   }
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
 .site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.product-card{background:#232a3a;border:1px solid #3d4a60;padding:28px;transition:all 0.25s;position:relative;display:flex;flex-direction:column}
+.product-card:hover{border-color:#c9a96e;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.product-badge{position:absolute;top:16px;right:16px;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px}
+.product-badge.gold{background:#c9a96e;color:#1a2135}
+.product-card img{width:100%;height:auto;display:block;margin-bottom:16px}
+.product-name{font-family:'Playfair Display',serif;font-size:19px;color:#eee8d0;margin-bottom:8px;line-height:1.2}
+.product-desc{font-family:'Crimson Text',serif;font-size:16px;color:#a0a8b8;line-height:1.65;margin-bottom:16px;flex-grow:1}
+.product-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.product-price{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:#c9a96e;letter-spacing:0.5px}
+.product-format{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd}
+.btn-shop-now{background:var(--gold,#c9a96e);color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;transition:all 0.2s;align-self:center;text-align:center;border-radius:2px}
+.btn-shop-now:hover{background:#dab870}
+@media (max-width:600px){ .products-grid{grid-template-columns:minmax(0,1fr)} }
 </style>
 <style>
 nav { background: var(--bg-dark); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: auto; position: sticky; top: 0; z-index: 100; }
@@ -757,13 +771,16 @@ document.addEventListener('click', function(e){
       <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-align:center;margin:24px 0 8px;">Fresh This Season</p>
       <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 8px;text-align:center;">Holiday Cards</h2>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:var(--cream-dim);text-align:center;max-width:600px;margin:0 auto 28px;">Just in time for the holiday season — get your cards early.</p>
-      <div class="grid" style="gap:24px;max-width:420px;margin:0 auto;">
-        <div class="card" style="padding:0 0 28px; text-align:center; gap:16px; overflow:hidden;">
-          <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card, with a vintage TV showing Big Ben and Parliament" style="width:100%; height:220px; object-fit:contain; background:#0a1520; display:block;">
-          <h3 style="font-size:22px; padding:0 28px; margin-top:4px;">Happy Holidays to a Fellow British TV Fan</h3>
-          <p style="font-family:Raleway,sans-serif; font-size:15px; font-weight:600; letter-spacing:0.5px; color:#c9a96e; padding:0; margin:-6px 0 0;">$8.99</p>
-          <p style="padding:0 28px;">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
-          <a class="card-link" style="margin:0 28px; width:auto;" href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener">I Want It &rarr;</a>
+      <div class="products-grid" style="max-width:360px;margin:0 auto;">
+        <div class="product-card">
+          <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card, with a vintage TV showing Big Ben and Parliament">
+          <h3 class="product-name">Happy Holidays to a Fellow British TV Fan</h3>
+          <p class="product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+          <div class="product-meta">
+            <span class="product-price">$8.99</span>
+            <span class="product-format">Made to Order</span>
+          </div>
+          <a href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
         </div>
       </div>
     </div>
@@ -772,13 +789,16 @@ document.addEventListener('click', function(e){
       <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-align:center;margin:24px 0 8px;">From the Etsy Shop</p>
       <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 8px;text-align:center;">British TV Watchlist Notebook</h2>
       <p style="font-family:'Crimson Text',serif;font-size:17px;color:var(--cream-dim);text-align:center;max-width:600px;margin:0 auto 28px;">A spiral notebook made for tracking what to watch next.</p>
-      <div class="grid" style="gap:24px;max-width:420px;margin:0 auto;">
-        <div class="card" style="padding:0 0 28px; text-align:center; gap:16px; overflow:hidden;">
-          <img loading="lazy" src="/merch-hub-watchlist-notebook.webp" alt="British TV Watchlist Notebook" style="width:100%; height:220px; object-fit:contain; background:#0a1520; display:block;">
-          <h3 style="font-size:22px; padding:0 28px; margin-top:4px;">British TV Watchlist Notebook</h3>
-          <p style="font-family:Raleway,sans-serif; font-size:15px; font-weight:600; letter-spacing:0.5px; color:#c9a96e; padding:0; margin:-6px 0 0;">$24.99</p>
-          <p style="padding:0 28px;">A spiral-bound notebook for logging shows to watch, episodes finished, and favourites to recommend &mdash; a handy companion for any British TV fan.</p>
-          <a class="card-link" style="margin:0 28px; width:auto;" href="https://cozytvcompanion.etsy.com/listing/4552217499" target="_blank" rel="noopener">I Want It &rarr;</a>
+      <div class="products-grid" style="max-width:360px;margin:0 auto;">
+        <div class="product-card">
+          <img loading="lazy" src="/merch-hub-watchlist-notebook.webp" alt="British TV Watchlist Notebook">
+          <h3 class="product-name">British TV Watchlist Notebook</h3>
+          <p class="product-desc">A spiral-bound notebook for logging shows to watch, episodes finished, and favourites to recommend &mdash; a handy companion for any British TV fan.</p>
+          <div class="product-meta">
+            <span class="product-price">$24.99</span>
+            <span class="product-format">Made to Order</span>
+          </div>
+          <a href="https://cozytvcompanion.etsy.com/listing/4552217499" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
         </div>
       </div>
     </div>
