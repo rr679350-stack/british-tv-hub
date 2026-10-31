@@ -257,6 +257,20 @@ gtag('config', 'G-P1L8CVNKS6');
   .breadcrumb-item a:hover{ color:#f3ede2 !important; }
   .breadcrumb-item.active{ color:#f3ede2 !important; }
   .breadcrumb-separator{ color:rgba(201,168,76,0.7) !important; }
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+  .product-card{background:var(--card);border:1px solid var(--card-border);padding:28px;transition:all 0.25s;position:relative;display:flex;flex-direction:column;border-radius:12px}
+  .product-card:hover{border-color:#c9a96e;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+  .product-badge{position:absolute;top:16px;right:16px;background:#8b1a2e;color:#f5e8d0;font-family:'Raleway',sans-serif;font-size:8px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:2px}
+  .product-badge.gold{background:#c9a96e;color:#1a2135}
+  .product-card img{width:100%;height:auto;display:block;margin-bottom:16px}
+  .product-name{font-family:'Playfair Display',serif;font-size:19px;color:#eee8d0;margin-bottom:8px;line-height:1.2}
+  .product-desc{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted);line-height:1.65;margin-bottom:16px;flex-grow:1}
+  .product-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .product-price{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:#c9a96e;letter-spacing:0.5px}
+  .product-format{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c1cadd}
+  .btn-shop-now{background:var(--gold,#c9a96e);color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;font-weight:600;transition:all 0.2s;align-self:center;text-align:center;border-radius:2px}
+  .btn-shop-now:hover{background:#dab870}
+  @media (max-width:600px){ .products-grid{grid-template-columns:minmax(0,1fr)} }
 </style>
 
 <style>
@@ -585,85 +599,63 @@ document.addEventListener('click', function(e){
   <div class="hgg-editor-eyebrow">Where to Start</div>
   <h2 class="hgg-editor-title">Order These First</h2>
   <p class="hgg-editor-intro">The made-to-order picks lead the list, since they take the longest to arrive.</p>
-  <div class="hgg-editor-grid">
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb hgg-thumb-contain">
-        <img src="/calendar-cover.webp" alt="2027 British TV Inspired Wall Calendar">
-      </div>
-      <div class="hgg-editor-body">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">New for 2027</span><span class="hgg-mto">Made to Order</span></div>
-        <h3 class="hgg-editor-name">2027 British TV Inspired Wall Calendar &mdash; $28.99</h3>
-        <p class="hgg-editor-desc">Twelve months of evocative British objects &mdash; a streetlamp, a teacup, a phone box &mdash; each page its own small original.</p>
-        <a href="https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-badge gold">New for 2027</div>
+      <img loading="lazy" src="/calendar-cover.webp" alt="2027 British TV Inspired Wall Calendar">
+      <h3 class="product-name">2027 British TV Inspired Wall Calendar</h3>
+      <p class="product-desc">Twelve months of evocative British objects &mdash; a streetlamp, a teacup, a phone box &mdash; each page its own small original.</p>
+      <div class="product-meta"><span class="product-price">$28.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://www.etsy.com/listing/4565799747/2027-british-tv-inspired-wall-calendar" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb hgg-thumb-cover">
-        <img loading="lazy" src="/shop-candle.webp" alt="One More Episode soy candle">
-      </div>
-      <div class="hgg-editor-body">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">Cozy Favourite</span><span class="hgg-mto">Made to Order</span></div>
-        <h3 class="hgg-editor-name">&ldquo;One More Episode&rdquo; Soy Candle &mdash; $22.99</h3>
-        <p class="hgg-editor-desc">Made for the marathon nights. Light it, settle in, and let the next episode start itself.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4565791612" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">Cozy Favourite</div>
+      <img loading="lazy" src="/shop-candle.webp" alt="One More Episode soy candle">
+      <h3 class="product-name">&ldquo;One More Episode&rdquo; Soy Candle</h3>
+      <p class="product-desc">Made for the marathon nights. Light it, settle in, and let the next episode start itself.</p>
+      <div class="product-meta"><span class="product-price">$22.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4565791612" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card">
-      </div>
-      <div class="hgg-editor-body">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">Just For Fun</span><span class="hgg-mto">Made to Order</span></div>
-        <h3 class="hgg-editor-name">Happy Holidays to a Fellow British TV Fan &mdash; $8.99</h3>
-        <p class="hgg-editor-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">Just For Fun</div>
+      <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card">
+      <h3 class="product-name">Happy Holidays to a Fellow British TV Fan</h3>
+      <p class="product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+      <div class="product-meta"><span class="product-price">$8.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb">
-        <img loading="lazy" src="/shop-mug-tea-lover.webp" alt="British TV Tea Lover Mug, Cozy Mystery Fan Gift">
-      </div>
-      <div class="hgg-editor-body">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">Most Giftable</span><span class="hgg-mto">Made to Order</span></div>
-        <h3 class="hgg-editor-name">British TV Tea Lover Mug &mdash; $24.99</h3>
-        <p class="hgg-editor-desc">&ldquo;The Episode Can Wait. Tea Cannot.&rdquo; &mdash; an 11 oz mug for whoever's getting through one more episode tonight.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4587249295" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">Most Giftable</div>
+      <img loading="lazy" src="/shop-mug-tea-lover.webp" alt="British TV Tea Lover Mug, Cozy Mystery Fan Gift">
+      <h3 class="product-name">British TV Tea Lover Mug</h3>
+      <p class="product-desc">&ldquo;The Episode Can Wait. Tea Cannot.&rdquo; &mdash; an 11 oz mug for whoever's getting through one more episode tonight.</p>
+      <div class="product-meta"><span class="product-price">$24.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4587249295" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-thumb hgg-thumb-book">
-        <img src="https://covers.openlibrary.org/b/isbn/0008435901-L.jpg" alt="The Marlow Murder Club by Robert Thorogood, book cover" loading="lazy">
-      </div>
-      <div class="hgg-editor-body">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">For the Reader</span></div>
-        <h3 class="hgg-editor-name">The Marlow Murder Club by Robert Thorogood</h3>
-        <p class="hgg-editor-desc">A retired crossword setter, a dog walker, and a vicar&rsquo;s wife team up to solve murders in a quiet Thames-side town. The novel behind the TV series, and an easy yes for any cozy mystery fan.</p>
-        <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">For the Reader</div>
+      <img loading="lazy" src="https://covers.openlibrary.org/b/isbn/0008435901-L.jpg" alt="The Marlow Murder Club by Robert Thorogood, book cover">
+      <h3 class="product-name">The Marlow Murder Club by Robert Thorogood</h3>
+      <p class="product-desc">A retired crossword setter, a dog walker, and a vicar&rsquo;s wife team up to solve murders in a quiet Thames-side town. The novel behind the TV series, and an easy yes for any cozy mystery fan.</p>
+      <a href="https://www.amazon.com/dp/172825051X?tag=britishtvhub-gift-20" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-body" style="padding-top:26px;">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">For the Detective Fan</span></div>
-        <h3 class="hgg-editor-name">Prime Suspect: The Complete Series</h3>
-        <p class="hgg-editor-desc">Helen Mirren as DCI Jane Tennison, fighting for respect in a department that doesn't want her there. One of British TV's defining detective dramas, start to finish.</p>
-        <a href="https://amzn.to/4yTapC7" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Buy the Series &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">For the Detective Fan</div>
+      <h3 class="product-name">Prime Suspect: The Complete Series</h3>
+      <p class="product-desc">Helen Mirren as DCI Jane Tennison, fighting for respect in a department that doesn't want her there. One of British TV's defining detective dramas, start to finish.</p>
+      <a href="https://amzn.to/4yTapC7" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Buy the Series &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-body" style="padding-top:26px;">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">For the Box-Set Collector</span></div>
-        <h3 class="hgg-editor-name">Vera: Sets 1&ndash;7 Collection</h3>
-        <p class="hgg-editor-desc">Brenda Blethyn's rumpled, relentless DCI Vera Stanhope, spanning both the Joe Ashworth and Aiden Healy eras of the show.</p>
-        <a href="https://amzn.to/4ynKK3H" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">For the Box-Set Collector</div>
+      <h3 class="product-name">Vera: Sets 1&ndash;7 Collection</h3>
+      <p class="product-desc">Brenda Blethyn's rumpled, relentless DCI Vera Stanhope, spanning both the Joe Ashworth and Aiden Healy eras of the show.</p>
+      <a href="https://amzn.to/4ynKK3H" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Today's Price &rarr;</a>
     </div>
-    <div class="hgg-editor-card">
-      <div class="hgg-editor-body" style="padding-top:26px;">
-        <div class="hgg-tagrow"><span class="hgg-editor-badge">For the Reader</span></div>
-        <h3 class="hgg-editor-name">The Murder of Roger Ackroyd by Agatha Christie</h3>
-        <p class="hgg-editor-desc">Poirot's most famous case, and one of the most influential mysteries ever written. If the reader on your list hasn't read it yet, this is the one to give them.</p>
-        <a href="https://amzn.to/4wMntbm" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+    <div class="product-card">
+      <div class="product-badge gold">For the Reader</div>
+      <h3 class="product-name">The Murder of Roger Ackroyd by Agatha Christie</h3>
+      <p class="product-desc">Poirot's most famous case, and one of the most influential mysteries ever written. If the reader on your list hasn't read it yet, this is the one to give them.</p>
+      <a href="https://amzn.to/4wMntbm" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
   </div>
 </div>
@@ -712,70 +704,53 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">Small, thoughtful, and easy to tuck in with everything else &mdash; every one of these is under $25.</p>
   <div class="agg-grid">
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/shop-watchlist.webp" alt="Gritin LED Rechargeable Book Light" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Gritin LED Rechargeable Book Light</h3>
-        <p class="agg-product-desc">Eye-caring, rechargeable, and small enough to tuck into any book bag &mdash; for the one more chapter before bed.</p>
-        <a href="https://amzn.to/4fhL3oE" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
-      </div>
+        <div class="product-card">
+      <img loading="lazy" src="/shop-watchlist.webp" alt="Gritin LED Rechargeable Book Light">
+      <h3 class="product-name">Gritin LED Rechargeable Book Light</h3>
+      <p class="product-desc">Eye-caring, rechargeable, and small enough to tuck into any book bag &mdash; for the one more chapter before bed.</p>
+      <a href="https://amzn.to/4fhL3oE" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Today's Price &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Keep Calm &amp; Read On Beaded Bookmark</h3>
-        <p class="agg-product-desc">A small, lighthearted nod to every book lover on your list.</p>
-        <a href="https://amzn.to/3Rfy1jF" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Keep Calm &amp; Read On Beaded Bookmark</h3>
+      <p class="product-desc">A small, lighthearted nod to every book lover on your list.</p>
+      <a href="https://amzn.to/3Rfy1jF" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Today's Price &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">London Magnetic Bookmark Set</h3>
-        <p class="agg-product-desc">48 pieces of London-themed bookmarks &mdash; enough to share, or enough to never lose one again.</p>
-        <a href="https://amzn.to/4gLuB2w" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Today's Price &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">London Magnetic Bookmark Set</h3>
+      <p class="product-desc">48 pieces of London-themed bookmarks &mdash; enough to share, or enough to never lose one again.</p>
+      <a href="https://amzn.to/4gLuB2w" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Today's Price &rarr;</a>
     </div>
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Happy Holidays to a Fellow British TV Fan &mdash; $8.99</h3>
-        <p class="agg-product-desc">A cheeky little card for the one person on your list who'll actually get the reference.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+        <div class="product-card">
+      <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card">
+      <h3 class="product-name">Happy Holidays to a Fellow British TV Fan</h3>
+      <p class="product-desc">A cheeky little card for the one person on your list who'll actually get the reference.</p>
+      <div class="product-meta"><span class="product-price">$8.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Brain Games: Sherlock Holmes Puzzles</h3>
-        <p class="agg-product-desc">Over 100 cerebral challenges inspired by the world's greatest detective.</p>
-        <a href="https://amzn.to/4pwfYlS" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Brain Games: Sherlock Holmes Puzzles</h3>
+      <p class="product-desc">Over 100 cerebral challenges inspired by the world's greatest detective.</p>
+      <a href="https://amzn.to/4pwfYlS" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Downton Abbey Afternoon Tea Cookbook</h3>
-        <p class="agg-product-desc">Teatime drinks, scones, savouries, and sweets from the official cookery series.</p>
-        <a href="https://amzn.to/4pzTP6o" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Downton Abbey Afternoon Tea Cookbook</h3>
+      <p class="product-desc">Teatime drinks, scones, savouries, and sweets from the official cookery series.</p>
+      <a href="https://amzn.to/4pzTP6o" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">The British Baking Book</h3>
-        <p class="agg-product-desc">A New Yorker Best Cookbook pick, celebrating the history of British baking.</p>
-        <a href="https://amzn.to/4vx4a45" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">Get the Book &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">The British Baking Book</h3>
+      <p class="product-desc">A New Yorker Best Cookbook pick, celebrating the history of British baking.</p>
+      <a href="https://amzn.to/4vx4a45" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">Get the Book &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Forsyte Saga: The Complete Series</h3>
-        <p class="agg-product-desc">An Amazon's Choice period drama, complete in one DVD set.</p>
-        <a href="https://amzn.to/4fJMjlP" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Forsyte Saga: The Complete Series</h3>
+      <p class="product-desc">An Amazon's Choice period drama, complete in one DVD set.</p>
+      <a href="https://amzn.to/4fJMjlP" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Inspector Ellis: Series 1</h3>
-        <p class="agg-product-desc">Sharon D. Clarke stars in this Channel 5 procedural, complete on DVD.</p>
-        <a href="https://amzn.to/4puLVeb" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Inspector Ellis: Series 1</h3>
+      <p class="product-desc">Sharon D. Clarke stars in this Channel 5 procedural, complete on DVD.</p>
+      <a href="https://amzn.to/4puLVeb" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
   </div>
 </section>
@@ -787,47 +762,35 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">Comfort viewing essentials and a few shorter box sets &mdash; all under $50.</p>
   <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Chunky Knit Throw Blanket</h3>
-        <p class="agg-product-desc">For the long Vera-and-a-blanket evenings ahead.</p>
-        <a href="https://amzn.to/44n66RN" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Cozy Details &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Chunky Knit Throw Blanket</h3>
+      <p class="product-desc">For the long Vera-and-a-blanket evenings ahead.</p>
+      <a href="https://amzn.to/44n66RN" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Cozy Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Berkshire Faux Fur &amp; Velisse Reversible Throw</h3>
-        <p class="agg-product-desc">Faux fur on one side, silky Velisse on the other &mdash; a step up for the cozy-obsessed.</p>
-        <a href="https://amzn.to/4vA38Ew" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Cozy Details &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Berkshire Faux Fur &amp; Velisse Reversible Throw</h3>
+      <p class="product-desc">Faux fur on one side, silky Velisse on the other &mdash; a step up for the cozy-obsessed.</p>
+      <a href="https://amzn.to/4vA38Ew" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Cozy Details &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Midsomer Murders: The Early Cases Collection</h3>
-        <p class="agg-product-desc">10 discs of village whodunits &mdash; a must for British mystery fans.</p>
-        <a href="https://amzn.to/3R6rYxP" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Midsomer Murders: The Early Cases Collection</h3>
+      <p class="product-desc">10 discs of village whodunits &mdash; a must for British mystery fans.</p>
+      <a href="https://amzn.to/3R6rYxP" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">DCI Banks: Seasons 1&ndash;3 &amp; Aftermath</h3>
-        <p class="agg-product-desc">Four seasons of Yorkshire crime drama in one set.</p>
-        <a href="https://amzn.to/3RKxfLF" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">DCI Banks: Seasons 1&ndash;3 &amp; Aftermath</h3>
+      <p class="product-desc">Four seasons of Yorkshire crime drama in one set.</p>
+      <a href="https://amzn.to/3RKxfLF" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">McDonald &amp; Dodds: Series 1&ndash;4</h3>
-        <p class="agg-product-desc">The complete Bath-set detective series on DVD.</p>
-        <a href="https://amzn.to/4wcnqVX" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">McDonald &amp; Dodds: Series 1&ndash;4</h3>
+      <p class="product-desc">The complete Bath-set detective series on DVD.</p>
+      <a href="https://amzn.to/4wcnqVX" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Inspector Morse: The Complete Series</h3>
-        <p class="agg-product-desc">Every case, all in one 17-disc set &mdash; the genre-defining classic.</p>
-        <a href="https://amzn.to/4w73jZ2" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Inspector Morse: The Complete Series</h3>
+      <p class="product-desc">Every case, all in one 17-disc set &mdash; the genre-defining classic.</p>
+      <a href="https://amzn.to/4w73jZ2" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
   </div>
 </section>
@@ -839,33 +802,25 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">For the fan who wants the whole thing, start to finish, wrapped and ready to binge. All under $100.</p>
   <div class="agg-grid">
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Death in Paradise: Series 1&ndash;5</h3>
-        <p class="agg-product-desc">All 40 episodes of sun, sand, and impossible murders.</p>
-        <a href="https://amzn.to/3RmDlBC" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Death in Paradise: Series 1&ndash;5</h3>
+      <p class="product-desc">All 40 episodes of sun, sand, and impossible murders.</p>
+      <a href="https://amzn.to/3RmDlBC" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Line of Duty: Series 1&ndash;5 Collection</h3>
-        <p class="agg-product-desc">The complete anti-corruption thriller, start to finish.</p>
-        <a href="https://amzn.to/4ymeVca" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Line of Duty: Series 1&ndash;5 Collection</h3>
+      <p class="product-desc">The complete anti-corruption thriller, start to finish.</p>
+      <a href="https://amzn.to/4ymeVca" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Professor T: Seasons 1&ndash;4</h3>
-        <p class="agg-product-desc">Complete seasons plus a bonus PBS sticker.</p>
-        <a href="https://amzn.to/4hmn8qE" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">Professor T: Seasons 1&ndash;4</h3>
+      <p class="product-desc">Complete seasons plus a bonus PBS sticker.</p>
+      <a href="https://amzn.to/4hmn8qE" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
-    <div class="agg-product-card agg-no-thumb">
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">The Agatha Christie Hour: Complete Series</h3>
-        <p class="agg-product-desc">All ten episodes of the classic anthology series.</p>
-        <a href="https://amzn.to/4fpgugT" class="agg-cta-pill" target="_blank" rel="nofollow sponsored noopener">See Complete Collection &rarr;</a>
-      </div>
+        <div class="product-card">
+      <h3 class="product-name">The Agatha Christie Hour: Complete Series</h3>
+      <p class="product-desc">All ten episodes of the classic anthology series.</p>
+      <a href="https://amzn.to/4fpgugT" target="_blank" rel="nofollow sponsored noopener" class="btn-shop-now">See Complete Collection &rarr;</a>
     </div>
   </div>
 </section>
@@ -878,13 +833,12 @@ document.addEventListener('click', function(e){
   </div>
   <p class="agg-part-intro">$8.99, printed both sides with an envelope included &mdash; get it early.</p>
   <div class="agg-grid" style="max-width:420px;margin:0 auto;">
-    <div class="agg-product-card">
-      <div class="agg-thumb"><img src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card" loading="lazy"></div>
-      <div class="agg-product-body">
-        <h3 class="agg-product-name">Happy Holidays to a Fellow British TV Fan &mdash; $8.99</h3>
-        <p class="agg-product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
-        <a href="https://cozytvcompanion.etsy.com/listing/4563401755" class="agg-cta-pill" target="_blank" rel="noopener">I Want It &rarr;</a>
-      </div>
+        <div class="product-card">
+      <img loading="lazy" src="/holiday-card-fellow-fan.webp" alt="Happy Holidays to a Fellow British TV Fan holiday card">
+      <h3 class="product-name">Happy Holidays to a Fellow British TV Fan</h3>
+      <p class="product-desc">A cheeky little card for the one person on your list who'll actually get the reference. A vintage telly, Big Ben, and a wink of gold.</p>
+      <div class="product-meta"><span class="product-price">$8.99</span><span class="product-format">Made to Order</span></div>
+      <a href="https://cozytvcompanion.etsy.com/listing/4563401755" target="_blank" rel="noopener" class="btn-shop-now">I Want It &rarr;</a>
     </div>
   </div>
 </section>
