@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Sunday Picks — Final Bows</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a1520;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #e8e4d8;
+  }
+  .email-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #10192b;
+  }
+  .header {
+    background-color: #0a1520;
+    padding: 40px 30px 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(201,169,110,0.25);
+  }
+  .header .eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 10px;
+  }
+  .header h1 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #c9a96e;
+    font-size: 34px;
+    margin: 0;
+  }
+  .theme-block {
+    margin: 30px 30px 10px;
+    padding: 18px 22px;
+    border-left: 3px solid #c9a96e;
+    background-color: rgba(201,169,110,0.06);
+  }
+  .theme-block h2 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 21px;
+    color: #f2efe4;
+    margin: 0 0 8px;
+  }
+  .theme-block p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0;
+  }
+  .pick {
+    margin: 30px 30px 0;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .pick:last-of-type {
+    border-bottom: none;
+  }
+  .pick-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 6px;
+  }
+  .pick h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .pick p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 15px;
+    line-height: 1.65;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #8b1a2e;
+    color: #f2efe4 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 2px;
+  }
+  .hidden-gem {
+    margin: 30px 30px 0;
+    padding: 22px 24px;
+    background-color: rgba(201,169,110,0.08);
+    border: 1px dashed rgba(201,169,110,0.4);
+  }
+  .hidden-gem .pick-eyebrow { color: #c9a96e; }
+  .hidden-gem h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 20px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .hidden-gem p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0 0 16px;
+  }
+  .storefront-cta {
+    margin: 36px 30px 0;
+    padding: 22px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.03);
+    border-radius: 6px;
+  }
+  .storefront-cta p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 14px;
+  }
+  .merch-section {
+    margin: 40px 30px 0;
+    background-color: #0a1520;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 26px;
+  }
+  .merch-section img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .merch-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 22px 0 8px;
+  }
+  .merch-section h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+    padding: 0 20px;
+  }
+  .merch-section p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    color: #c9c5b8;
+    margin: 0 0 20px;
+    padding: 0 30px;
+  }
+  .merch-buttons a {
+    display: inline-block;
+    margin: 0 6px 10px;
+    background-color: #c9a96e;
+    color: #1a2135 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 11px 18px;
+    border-radius: 2px;
+  }
+  .member-section {
+    margin: 40px 30px 0;
+    padding: 26px 24px;
+    text-align: center;
+    background-color: rgba(201,169,110,0.08);
+    border: 1px dashed rgba(201,169,110,0.4);
+    border-radius: 6px;
+  }
+  .member-section img {
+    width: 72px;
+    height: auto;
+    margin: 0 auto 14px;
+    display: block;
+    border-radius: 6px;
+  }
+  .member-eyebrow {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c9a96e;
+    margin: 0 0 8px;
+  }
+  .member-section h3 {
+    font-family: Georgia, 'Playfair Display', serif;
+    font-size: 22px;
+    color: #f2efe4;
+    margin: 0 0 10px;
+  }
+  .member-section p {
+    font-family: Georgia, 'Crimson Text', serif;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #c9c5b8;
+    margin: 0 0 18px;
+  }
+  .btn-gold {
+    display: inline-block;
+    background-color: #c9a96e;
+    color: #1a2135 !important;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 2px;
+  }
+  .footer {
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer a {
+    color: #c9a96e;
+    text-decoration: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 12px;
+  }
+  .footer p {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 11px;
+    color: #7a7a8c;
+    margin: 14px 0 0;
+  }
+  .disclosure { font-family:'Raleway',Arial,sans-serif; font-size:11px; color:#7a7a8c; line-height:1.6; margin:14px 0 0; }
+  .footer .legal a { font-size:11px; color:#9a8a6a; }
+</style>
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
+</head>
+<body>
+<div style="display:none;max-height:0;overflow:hidden;">Grantchester's series finale and four more shows that knew exactly when to take their bow.</div>
+<div class="email-wrapper" role="main">
+
+  <div class="header">
+    <p class="eyebrow">British TV Hub</p>
+    <h1>Sunday Picks</h1>
+  </div>
+
+  <div class="theme-block">
+    <h2>Final Bows</h2>
+    <p>Some shows know exactly when to stop, and that is its own kind of gift. This week&rsquo;s five all took their final bow with grace, from Grantchester&rsquo;s farewell season to a few other endings worth revisiting, plus one hidden gem.</p>
+  </div>
+
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 01</p>
+    <h3>Grantchester</h3>
+    <p>The vicar-detective drama wrapped its story with the warmth and heartbreak it always balanced so well. If you have been following Will Davenport and Geordie Keating all these years, the finale is the send-off they earned.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/" class="btn">Watch on PBS Masterpiece &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 02</p>
+    <h3>Endeavour</h3>
+    <p>The young-Morse prequel ended its run exactly where it needed to, closing the gap to the Oxford detective we already knew. A rare finale that satisfies both as a mystery and as a goodbye.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/" class="btn">Watch on PBS Masterpiece &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 03</p>
+    <h3>Inspector Morse</h3>
+    <p>The original. John Thaw&rsquo;s Morse went out on his own terms in a finale that is still talked about decades later. If you have only met him through Endeavour, this is where the story completes itself.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 04</p>
+    <h3>Last Tango in Halifax</h3>
+    <p>Two families, reunited by a late-in-life romance between childhood sweethearts, got a finale as funny and as tender as the series always was. A proper ending for a show that never stopped surprising people.</p>
+    <a href="https://www.britbox.com" class="btn">Watch on BritBox &rarr;</a>
+  </div>
+  <div class="pick">
+    <p class="pick-eyebrow">Pick No. 05</p>
+    <h3>Foyle&rsquo;s War</h3>
+    <p>A wartime detective series that quietly became one of the best mysteries British TV ever made, and closed its run with the same careful integrity it started with. Worth revisiting start to finish.</p>
+    <a href="https://www.pbs.org" class="btn">Watch on PBS &rarr;</a>
+  </div>
+  <div class="hidden-gem">
+    <p class="pick-eyebrow">Hidden Gem</p>
+    <h3>Wolf Hall</h3>
+    <p>Mark Rylance&rsquo;s Thomas Cromwell got his send-off in The Mirror and the Light, a quiet, devastating conclusion to one of the finest performances British television has produced. Not a cozy watch, but an unforgettable one.</p>
+    <a href="https://www.pbs.org/wgbh/masterpiece/" class="btn">Watch on PBS Masterpiece &rarr;</a>
+  </div>
+
+  <div class="merch-section">
+    <img src="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/newsletter-images/merch-collection.jpg" alt="">
+    <h3 style="margin-top:22px;">For the Shows You Never Really Say Goodbye To</h3>
+    <p>Some shows end, but the habit of a cuppa and a good mystery never does. Our British TV Tea Lover Mug is a small daily reminder of exactly that. Find it, along with the rest of our little shop of cozy gifts for British TV and mystery lovers, at Cozy TV Companion.</p>
+    <div class="merch-buttons">
+      <a href="https://cozytvcompanion.etsy.com/listing/4587249295">Get the Mug &rarr;</a>
+      <a href="https://www.etsy.com/shop/CozyTVCompanion">Visit the Shop &rarr;</a>
+    </div>
+  </div>
+
+  <div class="member-section">
+    <img src="https://raw.githubusercontent.com/rr679350-stack/british-tv-hub/main/newsletter-images/envelope-seal.jpg" alt="">
+    <p class="member-eyebrow">Want More?</p>
+    <h3>Get Sunday Picks a Day Early</h3>
+    <p>Join Early Bird for $3 a month and get each issue in your inbox on Saturday morning, a full day before everyone else.</p>
+    <a href="https://buymeacoffee.com/britishtvhub/membership" class="btn-gold">Join Early Bird &rarr;</a>
+  </div>
+
+  <div class="footer">
+    <a href="https://britishtvhub.com/support.html">Support British TV Hub</a>
+    <p class="disclosure" style=";color:#f0e8d4 !important;opacity:1 !important;">Streaming availability checked November 2026 and may change. Some links in Sunday Picks may be affiliate links, which means British TV Hub may earn a small commission at no extra cost to you.</p>
+    <p style=";color:#f0e8d4 !important;opacity:1 !important;">You're receiving this because you signed up for Sunday Picks at britishtvhub.com.</p>
+    <p class="legal"><a href="/newsletter-archive.html">More Sunday Picks issues</a></p>
+    <p style=";color:#f0e8d4 !important;opacity:1 !important;">*|HTML:LIST_ADDRESS_HTML|*</p>
+    <p style=";color:#f0e8d4 !important;opacity:1 !important;">&copy; 2026 British TV Hub &middot; britishtvhub.com</p>
+  </div>
+
+</div>
+</body>
+</html>
