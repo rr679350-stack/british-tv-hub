@@ -1621,14 +1621,14 @@ document.addEventListener('click', function(e){
   <div class="og-media"><img src="/gift-guides-hero.webp" alt="Wrapped gift boxes and a cozy cup of tea beside a British TV Hub notebook" width="1400" height="933" loading="lazy" decoding="async"></div>
 </div>
 <script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
-<script>(function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
+<script>document.addEventListener('DOMContentLoaded',function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
 var img=document.getElementById('autumn-preview-card-img');
 if(img){img.src='/fall-preview-blue-lights-s4-keyart.webp';img.removeAttribute('srcset');img.removeAttribute('sizes');img.style.objectFit='contain';img.style.background='#1a2135';img.alt='Blue Lights Season 4 key art — a BritBox Original';}
 var moEl=document.getElementById('this-month-oct'),mnEl=document.getElementById('this-month-nov');
 if(moEl&&mnEl){moEl.style.display='none';mnEl.style.display='grid';}
 var yoEl=document.getElementById('now-youtube-oct'),ynEl=document.getElementById('now-youtube-nov');
 if(yoEl&&ynEl){yoEl.style.display='none';ynEl.style.display='block';}
-}catch(x){}})();</script>
+}catch(x){}});</script>
 
 <!-- GIFT SEASON NUDGE (hides itself once the 25%-off Cyber Specials sale goes live Nov 23) -->
 <div id="gift-season-nudge" style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:26px 40px;text-align:center;">
