@@ -39,7 +39,7 @@ jobs:
           npm install --prefix tools/accessibility --no-audit --no-fund
           tools/accessibility/node_modules/.bin/playwright install --with-deps chromium
       - name: Wait for the matching live deployment
-        if: github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.target == 'live')
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.target == 'live')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -56,7 +56,7 @@ jobs:
           exit 1
       - name: Scan all pages on desktop and mobile
         env:
-          AUDIT_TARGET: ${{ github.event_name == 'pull_request' && 'local' || inputs.target || 'live' }}
+          AUDIT_TARGET: ${{ (github.event_name == 'pull_request' || github.event_name == 'push') && 'local' || inputs.target || 'live' }}
           AUDIT_SHA: ${{ github.sha }}
         run: node tools/accessibility/audit.mjs
       - name: Save consolidated report
