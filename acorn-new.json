@@ -1,23 +1,50 @@
 {
-  "month": "October 2026",
-  "updated": "2026-10-01",
+  "month": "November 2026",
+  "updated": "2026-11-06",
   "highlight": {
-    "title": "Signora Volpe — Season 3",
-    "badge": "Acorn TV Original · Season 3 · Premieres October 5",
-    "description": "Emilia Fox returns as former MI6 officer Sylvia Fox for three new feature-length mysteries in the Umbrian countryside, with new episodes weekly through the end of October.",
+    "title": "The Madame Blanc Mysteries — Season 5",
+    "badge": "Acorn TV Original · Season 5 · Premieres November 9",
+    "description": "Sally Lindsay returns as antiques expert Jean White, juggling fresh murders and stolen treasures as her wedding to Dom (Steve Edge) approaches, with new episodes weekly through a December finale.",
     "tags": [
-      "Mystery",
-      "Italy"
+      "Cozy mystery",
+      "Acorn TV Original"
     ],
+    "guide_url": "/shows/madame-blanc-mysteries.html",
     "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
   },
   "new_arrivals": [
     {
+      "title": "A Remarkable Place to Die",
+      "season": "Season 2",
+      "available": "November 30",
+      "badge": "Acorn TV Original · Season 2",
+      "description": "Chelsie Preston Crayford returns as Detective Anaís Mallory, back in New Zealand to lead homicide cases while an unsolved mystery from her own past resurfaces. Rebecca Gibney joins as Mallory's estranged mother.",
+      "tags": [
+        "Crime drama",
+        "New Zealand"
+      ],
+      "editors_pick": true,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
+      "title": "Still Life: A Three Pines Mystery",
+      "season": "Film",
+      "available": "November 30",
+      "badge": "New to Acorn TV",
+      "description": "Nathaniel Parker stars as Chief Inspector Armand Gamache in this adaptation of Louise Penny's novel, investigating whether a village death during Thanksgiving was really a hunting accident.",
+      "tags": [
+        "Mystery",
+        "Canada"
+      ],
+      "editors_pick": false,
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
       "title": "This Is Not a Murder Mystery",
       "season": "Season 1",
-      "available": "October 12",
-      "badge": "Acorn TV Original · Premiere",
-      "description": "A young Salvador Dalí and René Magritte are among the Surrealist artists reunited at a lavish English country estate in the 1930s, only to find themselves trapped there with a serial killer on the loose. A playful art-world spin on the country-house mystery, with new episodes on Mondays.",
+      "available": "New episodes through November 16 finale",
+      "badge": "Acorn TV Original · Finale in November",
+      "description": "A young Salvador Dalí and René Magritte are among the Surrealist artists reunited at a lavish English country estate in the 1930s, only to find themselves trapped there with a serial killer on the loose.",
       "tags": [
         "Period mystery",
         "1930s"
@@ -29,46 +56,16 @@
     {
       "title": "The Red King",
       "season": "Season 1",
-      "available": "October 19",
-      "badge": "New to Acorn TV",
-      "description": "Anjli Mohindra stars as DS Grace Narayan, posted to a remote Welsh island where a missing boy's case leads to a pagan cult the locals insist no longer exists. A police procedural with a folk-horror chill, streaming weekly.",
+      "available": "New episodes through November 23 finale",
+      "badge": "New to Acorn TV · Finale in November",
+      "description": "Anjli Mohindra stars as DS Grace Narayan, posted to a remote Welsh island where a missing boy's case leads to a pagan cult the locals insist no longer exists.",
       "tags": [
         "Crime drama",
         "Folk horror"
       ],
-      "editors_pick": true,
+      "editors_pick": false,
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
       "trailer_id": "JMiL_qHDn3s"
-    },
-    {
-      "title": "Wolf",
-      "season": "Season 1",
-      "available": "October 26",
-      "badge": "New to Acorn TV · All Episodes",
-      "description": "Ukweli Roach plays DI Jack Caffery in this adaptation of Mo Hayder's novels, as a wealthy family is terrorised in their isolated Monmouthshire home. All six episodes arrive at once.",
-      "tags": [
-        "Thriller",
-        "BBC drama"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
-      "trailer_id": "R6qQJiBm0eI"
-    },
-    {
-      "title": "Blue Murder Motel",
-      "season": "Season 1",
-      "available": "Final episodes Mondays through October 12",
-      "badge": "Acorn TV Original · Finale in October",
-      "description": "Retired detectives Vinny and Cole, now running a New Zealand coastal motel, keep getting pulled back into investigative work as fresh murder cases turn up in their new community.",
-      "tags": [
-        "Cozy mystery",
-        "New Zealand"
-      ],
-      "editors_pick": false,
-      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20",
-      "guide_url": "/shows/blue-murder-motel.html",
-      "image": "/blue-murder-motel-acorn.webp",
-      "image_alt": "Two of the lead characters from Blue Murder Motel outside the seaside motel"
     }
   ],
   "originals": [
@@ -83,8 +80,18 @@
       "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
     },
     {
+      "title": "The Madame Blanc Mysteries",
+      "seasons": "5 series · Season 5 airing now",
+      "description": "Sally Lindsay stars as an antiques expert turned amateur sleuth after relocating to the south of France — a cozy Acorn TV Original now in its fifth season.",
+      "tags": [
+        "Cozy mystery",
+        "Acorn TV Original"
+      ],
+      "affiliate_url": "https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20"
+    },
+    {
       "title": "Signora Volpe",
-      "seasons": "2 series · Season 3 arrives October 5",
+      "seasons": "3 series",
       "description": "Emilia Fox stars as a disillusioned former MI6 operative who settles into a quiet new life in the Umbrian countryside, only to keep stumbling into local mysteries — an Acorn TV Original produced by Route 24.",
       "tags": [
         "Crime mystery",
