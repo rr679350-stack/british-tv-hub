@@ -436,9 +436,9 @@
     "genre": "Period Drama",
     "us": [
       {
-        "name": "PBS Masterpiece",
+        "name": "PBS",
         "tag": "stream",
-        "url": "https://www.pbs.org/wgbh/masterpiece/"
+        "url": "https://www.pbs.org/show/call-the-midwife/"
       }
     ],
     "uk": [
