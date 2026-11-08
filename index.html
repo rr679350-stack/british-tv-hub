@@ -1575,16 +1575,20 @@ document.addEventListener('click', function(e){
 
 <style>
 .oct-link:hover, .nov-link:hover{background:#c9a96e;color:#1a2135 !important;}
-#october-guide, #november-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
-#october-guide .og-media, #november-guide .og-media{position:relative;min-height:340px;}
-#october-guide .og-media img, #november-guide .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
-#october-guide .og-media::before, #november-guide .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+#october-guide, #november-guide, #gift-guide-banner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
+#october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{position:relative;min-height:340px;}
+#gift-guide-banner{grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);}
+#gift-guide-banner .og-media{min-height:280px;}
+#october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
+#gift-guide-banner .og-media img{object-position:50% 38%;}
+#october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+#gift-guide-banner .og-body{padding:36px 40px;}
 @media (max-width:900px){
-  #october-guide, #november-guide{grid-template-columns:1fr;}
-  #october-guide .og-media, #november-guide .og-media{order:-1;min-height:260px;}
-  #october-guide .og-media img, #november-guide .og-media img{object-position:center 30%;}
-  #october-guide .og-media::before, #november-guide .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
-  #october-guide .og-body, #november-guide .og-body{padding:28px 20px 32px !important;}
+  #october-guide, #november-guide, #gift-guide-banner{grid-template-columns:1fr;}
+  #october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{order:-1;min-height:260px;}
+  #october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{object-position:center 30%;}
+  #october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
+  #october-guide .og-body, #november-guide .og-body, #gift-guide-banner .og-body{padding:28px 20px 32px !important;}
 }
 </style>
 <div id="october-guide">
@@ -1621,17 +1625,17 @@ document.addEventListener('click', function(e){
   <div class="og-media"><img src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights Season 4 key art — Siân Brooke, Katherine Devlin, Nathan Braniff and cast, a BritBox Original" width="1672" height="941" style="object-fit:contain;background:#1a2135;" loading="lazy" decoding="async"></div>
 </div>
 
-<div id="november-gift-banner" style="display:none;padding:28px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
-  <div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:space-between;">
-    <div style="flex:1;min-width:240px;">
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Gift Season</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:400;color:#e8dfc8;margin:0 0 6px;">The British TV Hub Gift Guide</h3>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:0;">Stocking stuffers, splurges and picks for the fan who's seen everything &mdash; sorted by budget or by show.</p>
-    </div>
-    <a href="/gift-guide-hub.html" style="flex-shrink:0;display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 22px;border-radius:2px;">Find the Right Gift Guide &rarr;</a>
+<div id="gift-guide-banner">
+  <div class="og-body" style="align-self:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Gift Season</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub Gift Guide</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c1cadd;line-height:1.55;margin:0 0 20px;max-width:460px;">Ten gifts under $25, ten mystery books, ten DVD box sets &mdash; stocking stuffers to splurges, sorted by budget or by show.</p>
+    <a href="/gift-guide-hub.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:13px 24px;border-radius:2px;">Find the Right Gift Guide &rarr;</a>
   </div>
+  <div class="og-media"><img src="/snug-nav-gifts.webp" alt="Gift-wrapped British TV Hub mug and mystery books beside a Christmas tree" width="1400" height="933" loading="lazy" decoding="async"></div>
 </div>
-<script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide'),giftEl=document.getElementById('november-gift-banner');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';if(giftEl)giftEl.style.display='block';}else{novEl.style.display='none';}}catch(x){}})();</script>
+<script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('gift-guide-banner');if(!e)return;if(n>=Date.parse('2026-11-23T05:00:00Z')&&n<Date.parse('2026-12-02T05:00:00Z')){e.remove();}}catch(x){}})();</script>
 <script>document.addEventListener('DOMContentLoaded',function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
 var img=document.getElementById('autumn-preview-card-img');
 if(img){img.src='/fall-preview-blue-lights-s4-keyart.webp';img.removeAttribute('srcset');img.removeAttribute('sizes');img.style.objectFit='contain';img.style.background='#1a2135';img.alt='Blue Lights Season 4 key art — a BritBox Original';}
@@ -1641,17 +1645,6 @@ var yoEl=document.getElementById('now-youtube-oct'),ynEl=document.getElementById
 if(yoEl&&ynEl){yoEl.style.display='none';ynEl.style.display='block';}
 }catch(x){}});</script>
 
-<!-- GIFT SEASON NUDGE (hides itself once the 25%-off Cyber Specials sale goes live Nov 23) -->
-<div id="gift-season-nudge" style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:26px 40px;text-align:center;">
-  <div style="max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 26px;">
-    <p style="margin:0;font-family:'Crimson Text',serif;font-size:17px;color:#e8dfc8;line-height:1.5;">
-      <span style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#c9a96e;margin-right:10px;">Gift Season Is Here</span>
-      Ten gifts under $25, ten mystery books, ten DVD box sets &mdash; all ready to order today.
-    </p>
-    <a href="/gift-guide-hub.html" style="flex-shrink:0;display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 20px;border-radius:2px;text-decoration:none;white-space:nowrap;">Shop Now &rarr;</a>
-  </div>
-</div>
-<script>(function(){try{var n=Date.now(),e=document.getElementById('gift-season-nudge');if(!e)return;if(n>=Date.parse('2026-11-23T05:00:00Z')&&n<Date.parse('2026-12-02T05:00:00Z')){e.remove();}}catch(x){}})();</script>
 
 <!-- CYBER SPECIALS BLOCK START (Etsy sale: shows Nov 23, auto-hides after Dec 1, 2026) -->
 <style>
