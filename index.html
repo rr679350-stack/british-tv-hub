@@ -1620,7 +1620,26 @@ document.addEventListener('click', function(e){
   </div>
   <div class="og-media"><img src="/gift-guides-hero.webp" alt="Wrapped gift boxes and a cozy cup of tea beside a British TV Hub notebook" width="1400" height="933" loading="lazy" decoding="async"></div>
 </div>
-<script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
+
+<!-- THANKSGIVING BANNER (auto-swaps in for the Gift Guide banner starting Nov 15, 2026) -->
+<div id="thanksgiving-guide" style="display:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;">
+  <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; November</div>
+    <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">25 British Shows to Be <em style="color:#d9bd86;">Grateful For</em> This Thanksgiving</h2>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Gentle village whodunits, sun-soaked island mysteries, enduring classics, and a few prestige binges for after the dishes are done &mdash; sorted by mood, with where to stream every one in the US.</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;">
+      <a href="/cozy-british-tv-shows-thanksgiving.html#cozy" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Cozy Village &amp; Seaside</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#sleuths" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Amateur Sleuths</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#classic" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Classic Detectives</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#binge" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Long-Weekend Binges</a>
+    </div>
+    <a href="/cozy-british-tv-shows-thanksgiving.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Explore the List &rarr;</a>
+  </div>
+  <div class="og-media"><img src="/thanksgiving-hero.webp" alt="Cozy autumn living room with a British TV Hub sign on the wall, a TV showing English countryside, tea, pie, and pumpkins by the fireplace" width="1672" height="941" loading="lazy" decoding="async"></div>
+</div>
+
+<script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide'),tgEl=document.getElementById('thanksgiving-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-15T06:00:00Z')){octEl.style.display='none';novEl.style.display='none';if(tgEl)tgEl.style.display='grid';}else if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('gift-guide-popular-card');if(!e)return;if(n>=Date.parse('2026-11-15T06:00:00Z')){e.style.display='flex';}}catch(x){}})();</script>
 <script>document.addEventListener('DOMContentLoaded',function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
 var img=document.getElementById('autumn-preview-card-img');
 if(img){img.src='/fall-preview-blue-lights-s4-keyart.webp';img.removeAttribute('srcset');img.removeAttribute('sizes');img.style.objectFit='contain';img.style.background='#1a2135';img.alt='Blue Lights Season 4 key art — a BritBox Original';}
@@ -1732,6 +1751,14 @@ if(yoEl&&ynEl){yoEl.style.display='none';ynEl.style.display='block';}
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">New to Midsomer Murders?</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Tom Barnaby vs. John Barnaby, whether to watch in order, and exactly where to start.</p>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Read the Guide &rarr;</span>
+      </div>
+    </a>
+    <a id="gift-guide-popular-card" href="/gift-guide-hub.html" class="popular-card" style="display:none;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+      <img src="/gift-guides-hero.webp" alt="Wrapped gift boxes and a cozy cup of tea beside a British TV Hub notebook" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;" width="500" height="333" decoding="async">
+      <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
+        <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">The British TV Hub Gift Guide</div>
+        <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Something for every fan, sorted by budget &mdash; stocking stuffers, mystery books, DVD box sets, and more.</p>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Find the Right Guide &rarr;</span>
       </div>
     </a>
   </div>
