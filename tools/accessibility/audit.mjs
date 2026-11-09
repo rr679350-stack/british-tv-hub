@@ -15,7 +15,7 @@ await fs.mkdir(output, { recursive: true });
 async function inventory(dir = root) {
   const found = [];
   for (const e of await fs.readdir(dir, { withFileTypes: true })) {
-    if (e.name.startsWith('.') || ['node_modules', 'tools', 'accessibility-report'].includes(e.name)) continue;
+    if (e.name.startsWith('.') || ['node_modules', 'tools', 'accessibility-report', 'scripts'].includes(e.name)) continue;
     const full = path.join(dir, e.name);
     if (e.isDirectory()) found.push(...await inventory(full));
     else if (e.name.endsWith('.html')) found.push(path.relative(root, full).split(path.sep).join('/'));
