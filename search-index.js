@@ -25,6 +25,7 @@ window.SITE_SEARCH_INDEX = [
   {"title": "Collections: British TV Themed Guides", "url": "/collections.html"},
   {"title": "Share a Gift Idea | Community", "url": "/community-snug.html"},
   {"title": "Murder at the Manor: British Country-House Mysteries", "url": "/country-house-mysteries.html"},
+  {"title": "The Count of Monte Cristo", "url": "/shows/count-of-monte-cristo.html"},
   {"title": "Cozy Autumn Mysteries", "url": "/cozy-autumn-mysteries.html"},
   {"title": "Cozy Mystery Detectives", "url": "/cozy-mystery-detectives.html"},
   {"title": "Cozy Mystery Settings", "url": "/cozy-mystery-settings.html"},
