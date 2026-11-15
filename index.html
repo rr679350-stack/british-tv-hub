@@ -26,10 +26,18 @@
       gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
     } else if(href.indexOf('nordvpn.com') > -1){
       gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('britbox.com') > -1){
+    } else if(href.indexOf('c984b526') > -1){
       gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('acorn.tv') > -1){
+    } else if(href.indexOf('c8382769') > -1){
       gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('cf297d60') > -1){
+      gtag('event','affiliate_click',{service:'pbs_masterpiece',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('pbs.org') > -1){
+      gtag('event','pbs_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('campaign-archive.com') > -1){
+      gtag('event','newsletter_archive_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('amazon.com') > -1 || href.indexOf('amzn.to') > -1){
+      gtag('event','amazon_click',{link_url:href,page_path:location.pathname});
     }
   }, true);
 })();
@@ -87,7 +95,7 @@
 </script>
 
 <meta name="google-site-verification" content="jA4FgYj9znrFNUjaOKubl-dy5TATF6x_WjDaP0QC73E" />
-<link rel="preload" as="image" href="hero.webp">
+
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://britishtvhub.com/">
 <meta property="og:title" content="Best British TV Shows 2026: Mystery, Drama &amp; More">
@@ -171,7 +179,7 @@
   --bg:#2c3345;--bg2:#232a3a;--bg3:#1e2433;
   --gold:#c9a96e;--gold2:#dab870;--gold3:#e8d0a0;
   --red:#8b1a2e;--red2:#a01f36;
-  --text:#e8dfc8;--muted:#9090a8;--muted2:#7070888;
+  --text:#e8dfc8;--muted:#c1cadd;--muted2:#7070888;
   --border:#3d4a60;--border2:#4d5a70;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -180,14 +188,14 @@ body{background:#2c3345;color:#e8dfc8;font-family:'Crimson Text',Georgia,serif;m
 nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px)}
 .nav-brand{padding:16px 0}
 .nav-title{font-family:'Playfair Display',serif;font-size:16px;color:#d8d0b8}
-.nav-sub{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic;color:#9090b8}
+.nav-sub{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;margin-top:2px;opacity:0.7;font-style:italic;color:#c1cadd}
 .nav-links{display:flex;align-items:center}
-.nlink{padding:20px 11px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
+.nlink{padding:20px 11px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;cursor:pointer;border:none;background:transparent;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-weight:500;text-decoration:none;display:inline-block}
 .nlink:hover{color:#ffffff}
 .nlink.on{color:#ffffff;border-bottom:2px solid #c9a96e}
-.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 6px;padding:11px 14px !important;font-size:11px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
+.nav-guide-btn{background:#8b1a2e !important;color:#f5e8d0 !important;border:none !important;border-bottom:none !important;margin:10px 0 10px 6px;padding:11px 14px !important;font-size:14px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;cursor:pointer;text-decoration:none;display:inline-block}
 .nav-guide-btn:hover{background:#a01f36 !important;color:#fff !important}
-.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 12px !important;font-size:11px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
+.nav-nl-btn{border:1px solid #c9a96e !important;color:#c9a96e !important;background:#1a2135 !important;margin:10px 0 10px 4px;padding:11px 12px !important;font-size:14px !important;letter-spacing:1px !important;font-family:'Raleway',sans-serif !important;text-transform:uppercase !important;white-space:nowrap;text-decoration:none;display:inline-block}
 .nav-nl-btn:hover{border-color:#ffffff !important;color:#ffffff !important;background:#2c3a50 !important}
 #hero{position:relative;overflow:hidden;width:100vw !important;max-width:100vw !important;margin-left:calc(-50vw + 50%) !important;margin-right:calc(-50vw + 50%) !important;}
 .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,58px);font-weight:400;color:#eee8d0;line-height:1.15;margin-bottom:16px;text-align:left}
@@ -196,28 +204,28 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .hero-p{font-family:'Raleway',sans-serif;font-size:14px;color:#c8c4b4;max-width:400px;line-height:1.8;margin-bottom:10px;letter-spacing:0.3px;text-align:left}
 .hero-join{font-family:'Crimson Text',serif;font-size:16px;color:#c9a96e;font-style:italic;margin-bottom:32px;text-align:left}
 .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-red{background:var(--red);border:none;color:#f5e8d0;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
+.btn-red{background:var(--red);border:none;color:#f5e8d0;padding:14px 32px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:background 0.2s}
 .btn-red:hover{background:var(--red2)}
 .btn-ghost{ background: var(--gold); border: 1px solid var(--gold); color: #1a2135; padding: 12px 24px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; display: inline-block; transition: all 0.2s; font-weight: 600; border-radius: 2px; text-decoration: none; }
 .btn-ghost:hover{background:var(--gold);color:var(--bg)}
-.btn-gold{background:#c9a96e;border:none;color:#1e2433;padding: 12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s;text-decoration:none;font-weight:600}
+.btn-gold{background:#c9a96e;border:none;color:#1e2433;padding: 12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;display:inline-block;transition:all 0.2s;text-decoration:none;font-weight:600}
 .btn-gold:hover{background:#dab870;color:#100806}
 .page{display:none;max-width:980px;margin:0 auto;padding:48px 24px;background:#2c3345}
 .page.on{display:block}
 .page-head{margin-bottom:32px;border-bottom:1px solid #4d5a70;padding-bottom:24px}
 .page-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#c9a96e;margin-bottom:6px}
 .page-sub{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#b0bcd0;font-style:italic}
-.page-date{font-family:'Raleway',sans-serif;font-size:11px;color:#9090b8;letter-spacing:1px;margin-top:6px}
+.page-date{font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;letter-spacing:1px;margin-top:6px}
 .trend-item{display:flex;gap:20px;align-items:flex-start;padding:20px;background:#1e2433;border:1px solid #3d4a60;box-shadow:0 2px 8px rgba(0,0,0,0.25);margin-bottom:10px;transition:border-color 0.2s}
 .trend-item:hover{border-color:var(--border2)}
 .trend-num{font-family:'Playfair Display',serif;font-size:28px;color:#6070a0;min-width:36px;line-height:1}
 .trend-content{flex:1}
 .trend-title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:5px}
 .trend-name{font-family:'Playfair Display',serif;font-size:19px;color:#dab870}
-.trend-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px}
+.trend-genre{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:8px}
 .trend-desc{font-family:'Crimson Text',serif;font-size:16px;color:#d4cdb8;line-height:1.6}
-.trend-source{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px;letter-spacing:1px}
-.badge{display:inline-block;padding:3px 10px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
+.trend-source{font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;margin-top:8px;letter-spacing:1px}
+.badge{display:inline-block;padding:3px 10px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
 .badge:hover{opacity:0.8}
 .b-britbox{background:#3a0a18;color:#e080a0;border:1px solid #6a1a30}
 .b-acorn{background:#0a2808;color:#70c050;border:1px solid #1a4010}
@@ -235,41 +243,41 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 .start-here-cta{transition:transform 0.2s ease,box-shadow 0.2s ease;}
 .start-here-cta:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,0.35);}
 @media (max-width:720px){.lobby-grid{grid-template-columns:repeat(2,1fr) !important;max-width:420px !important;}.lobby-h1{font-size:32px !important;}}
-.card-num{font-family:'Playfair Display',serif;font-size:12px;color:#8898b8;letter-spacing:2px;margin-bottom:10px}
+.card-num{font-family:'Playfair Display',serif;font-size:12px;color:#c1cadd;letter-spacing:2px;margin-bottom:10px}
 .card-name{font-family:'Playfair Display',serif;font-size:17px;color:#dab870;margin-bottom:5px;line-height:1.3}
-.card-genre{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
+.card-genre{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:12px}
 .card-desc{font-family:'Crimson Text',serif;font-size:15px;color:#d4cdb8;line-height:1.6;margin-bottom:14px}
-.card-watch-label{font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:6px}
+.card-watch-label{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:6px}
 @media(max-width:700px){.top5-grid{grid-template-columns:1fr}}
 .poll-wrap{max-width:640px}
 .poll-box{background:#1e2433;border:1px solid #3d4a60;padding:28px;box-shadow:0 2px 8px rgba(0,0,0,0.25);}
 .poll-q{font-family:'Playfair Display',serif;font-size:22px;color:#c9a96e;margin-bottom:6px;line-height:1.4}
-.poll-meta{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:24px}
+.poll-meta{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#a0aec8;margin-bottom:24px}
 .poll-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;cursor:pointer}
 .poll-row input{accent-color:var(--red);width:16px;height:16px;cursor:pointer;flex-shrink:0}
 .poll-name{font-family:'Crimson Text',serif;font-size:18px;color:#e0d8c0;min-width:150px}
 .poll-track{flex:1;background:#1e2433;height:4px}
 .poll-fill{height:4px;background:var(--red);width:0%;transition:width 0.5s ease}
 .poll-pct{font-family:'Raleway',sans-serif;font-size:13px;color:#b0c0d8;min-width:40px;text-align:right}
-.poll-submit{margin-top:20px;background:var(--red);border:none;color:#f5e8d0;padding:12px 28px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
+.poll-submit{margin-top:20px;background:var(--red);border:none;color:#f5e8d0;padding:12px 28px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:background 0.2s}
 .poll-submit:hover{background:var(--red2)}
 .poll-submit:disabled{opacity:0.45;cursor:not-allowed}
 .poll-fb{margin-top:16px;font-family:'Crimson Text',serif;font-size:15px;color:#b0b8cc}
 .poll-fb a{color:#c9a96e;text-decoration:none}
 .poll-fb a:hover{text-decoration:underline}
-.nlp-eyebrow{font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:10px}
+.nlp-eyebrow{font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#d06070;margin-bottom:10px}
 .nlp-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#e8d0a0;margin-bottom:8px}
 .nlp-sub{font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;font-style:italic;margin-bottom:16px;line-height:1.55}
 .nlp-row{display:flex;gap:8px}
 .nlp-input{background:#2c3345;border:1px solid #3d4a60;color:#e8dfc8;padding:11px 14px;font-family:'Crimson Text',serif;font-size:15px;flex:1;outline:none}
-.nlp-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
-.nlp-note{font-family:'Raleway',sans-serif;font-size:11px;color:#8898b8;margin-top:8px}
-.nlp-skip{display:block;margin-top:14px;font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#5060a0;text-align:center;cursor:pointer;background:none;border:none;width:100%}
+.nlp-btn{background:#8b1a2e;border:none;color:#f5e8d0;padding:11px 20px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+.nlp-note{font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;margin-top:8px}
+.nlp-skip{display:block;margin-top:14px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:#5060a0;text-align:center;cursor:pointer;background:none;border:none;width:100%}
 @media(max-width:700px){
   nav{padding:0 12px;flex-wrap:wrap}
   .nav-links{overflow-x:auto;width:100%;padding-bottom:2px}
-  .nlink{padding:14px 10px;font-size:11px}
-  .nav-guide-btn,.nav-nl-btn{font-size:11px !important;padding:8px 12px !important}
+  .nlink{padding:14px 10px;font-size:14px}
+  .nav-guide-btn,.nav-nl-btn{font-size:14px !important;padding:8px 12px !important}
   .hero-h1{font-size:32px}
   .page{padding:32px 16px}
   .watch-actions{width:100%}
@@ -280,7 +288,7 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
     nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
     nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
     nav.site-nav-std .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: #f0e8d4; white-space: nowrap; }
-    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #9090b8; white-space: nowrap; }
+    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #c1cadd; white-space: nowrap; }
     nav.site-nav-std .nav-links { display: flex; align-items: center; flex-wrap: nowrap; }
     nav.site-nav-std .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c9a96e; cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
     nav.site-nav-std .nlink:hover { color: #ffffff; }
@@ -401,6 +409,9 @@ nav{background:rgba(35,42,58,0.98);border-bottom:1px solid #3d4a60;display:flex;
 }
 .home-card { border-radius: 12px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .home-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.3); border-color: #c9a96e; }
+.home-card-ctas{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
+.home-card-ctas a{min-height:64px;display:flex!important;align-items:center;justify-content:center;box-sizing:border-box;}
+.home-card-status{min-height:44px;display:flex;align-items:flex-start;justify-content:center;}
 
 .site-card{border-radius:12px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
 .site-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.3);border-color:#c9a96e;}
@@ -449,7 +460,7 @@ a[style*="background: #c9a96e"]:hover {
   filter: brightness(1.1);
 }
 
-/* Outlined button hover (Ask Tilly) */
+/* Outlined button hover */
 a[style*="border:1px solid #c9a96e"]:hover,
 a[style*="border: 1px solid #c9a96e"]:hover {
   background-color: rgba(201, 168, 76, 0.1);
@@ -766,7 +777,7 @@ div[style*="border:1px solid #3d4a60"] {
     text-align: center !important;
   }
 
-  /* Ask Tilly button */
+  /* Compact gold button */
   a[style*="background:#c9a96e"][style*="Raleway"] {
     font-size: 10px !important;
     padding: 10px 12px !important;
@@ -1048,38 +1059,6 @@ div[style*="border:1px solid #3d4a60"] {
 </style>
 <style>
 
-/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
-   of Chatbase's native size was tried and regressed — if their native size
-   is large, scaling it by a percentage can still render large). Excludes
-   #backToTop, which happens to share the same position:fixed;bottom;right
-   inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-iframe[id*="chatbase-bubble-button"],
-#chatbase-bubble-button {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
-  overflow: hidden !important;
-}
-@media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  iframe[id*="chatbase-bubble-button"],
-  #chatbase-bubble-button {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    bottom: 16px !important;
-    right: 16px !important;
-    overflow: hidden !important;
-  }
-}
-</style>
-<style>
-
 </style>
 <style>
 /* Fix: allow header nav to wrap instead of clipping items when it overflows (narrow screens only) */
@@ -1112,12 +1091,12 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-search-results { margin-top: 8px; max-height: 320px; overflow-y: auto; }
 .nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
 .nav-search-results a:hover { background: #2c3345; color: #ffffff; }
-.nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+.nav-search-empty { padding: 8px 10px; color: #c1cadd; font-size: 12px; font-family: 'Raleway', sans-serif; }
 .nav-actions{display:flex;align-items:center;gap:18px;justify-self:end;}
 .nav-tea{position:relative;display:inline-flex;align-items:center;}
 .nav-tea-link{font-size:25px;text-decoration:none;line-height:1;padding:6px 0;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
 .nav-tea-link:hover,.nav-tea-link:focus{transform:scale(1.15);filter:grayscale(0);outline:none;}
-.nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:11px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
+.nav-tea-tooltip{position:absolute;top:100%;right:0;margin-top:4px;background:#1e2433;border:1px solid #3d4a60;padding:10px 14px;white-space:nowrap;font-family:'Raleway',sans-serif;font-size:14px;color:#e8dfc8;text-align:center;opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity 0.2s ease,transform 0.2s ease;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.35);border-radius:2px;pointer-events:none;}
 .nav-tea-tooltip strong{display:block;color:#c9a96e;font-family:'Playfair Display',serif;font-size:13px;font-weight:400;font-style:normal;margin-bottom:2px;}
 .nav-tea:hover .nav-tea-tooltip,.nav-tea-link:focus + .nav-tea-tooltip{opacity:1;visibility:visible;transform:translateY(0);}
 /* Discover dropdown */
@@ -1126,13 +1105,14 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-dropdown-toggle:hover{ color:#ffffff; }
 .nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; max-height:calc(100vh - 90px); overflow-y:auto; -webkit-overflow-scrolling:touch; flex-direction:column; }
 @media (min-width:641px){
-  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:800px; padding:18px 6px; max-height:82vh; }
-  .nav-dropdown-col{ flex:1 1 0; min-width:175px; padding:0 18px; border-right:1px solid #3d4a60; }
+  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:0; width:max-content; max-width:calc(100vw - 32px); padding:18px 6px; max-height:82vh; }
+  .nav-dropdown-col{ flex:0 1 auto; min-width:150px; padding:0 10px; border-right:1px solid #3d4a60; }
   .nav-dropdown-col:last-child{ border-right:none; }
 }
+@media (min-width:641px) and (max-width:1200px){ .nav-dropdown-menu{ flex-wrap:wrap; width:min(560px, calc(100vw - 32px)); row-gap:14px; } .nav-dropdown-col{ flex:1 1 45%; border-right:none; } }
 .nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
 .nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
-.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
+.nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:14px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
 .nav-dropdown-label:first-child{ border-top:none; margin-top:0; padding-top:6px; }
 @media (max-width: 1300px) {
   .nav-search-box { right: auto; left: 0; }
@@ -1169,10 +1149,10 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   .nav-brand{ justify-self:center !important; padding:6px 0 !important; }
   .nav-brand img{ height:38px !important; }
   .nav-links{ flex-wrap:wrap !important; justify-content:center !important; row-gap:0 !important; column-gap:0 !important; }
-  nav.site-nav-std .nlink, .nlink{ font-size:10.5px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
+  nav.site-nav-std .nlink, .nlink{ font-size:14px !important; padding:7px 6px !important; letter-spacing:.4px !important; }
   .nav-dropdown-toggle{ padding:7px 6px !important; }
   .nav-search{ justify-self:center !important; margin-top:2px; }
-  .nav-search-toggle{ padding:7px 12px !important; font-size:10px !important; }
+  .nav-search-toggle{ padding:7px 12px !important; font-size:14px !important; }
   .nav-search-box{ width:88vw !important; right:auto !important; left:50% !important; transform:translateX(-50%); }
 }
 </style>
@@ -1304,14 +1284,101 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
   }
 }
 </style>
+<style data-home-critical="hub-cards.css">
+/* Sitewide rule: reading content sits in a card. Added by the card wrapper (Oct 2026). */
+.hub-card{background:#363f58;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:30px 34px;margin:0 0 32px;box-sizing:border-box;}
+.hub-card > :first-child{margin-top:0 !important;}
+.hub-card > :last-child{margin-bottom:0 !important;}
+.hub-card img{max-width:100%;}
+hr.divider:has(+ .hub-card), .hub-card + hr.divider, hr.section-divider:has(+ .hub-card), .hub-card + hr.section-divider{display:none;}
+@media (max-width:640px){.hub-card{padding:22px 18px;margin-bottom:24px;}}
+
+</style>
+<link rel="stylesheet" href="/hub-cards.css" media="print" onload="this.media='all'">
+<style id="accessibility-readability">
+/* Keep content readable without waiting for scroll animations. */
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+</style>
+<style data-home-critical="accessibility.css">
+/* Shared keyboard access and readability support. */
+.hub-main-landmark { display: contents; }
+.hub-skip-link {
+  position: fixed; top: 8px; left: 8px; z-index: 2147483647;
+  padding: 12px 18px; background: #f0e8d4; color: #1a2135;
+  font: 700 16px/1.4 Arial, sans-serif; border: 2px solid #1a2135;
+  border-radius: 4px; transform: translateY(-160%);
+}
+.hub-skip-link:focus { transform: translateY(0); }
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #c9a96e !important; outline-offset: 3px !important;
+  box-shadow: 0 0 0 5px #1a2135 !important;
+}
+[id] { scroll-margin-top: 110px; }
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+nav.site-nav-std .nav-sub { opacity: 1 !important; color: #c1cadd !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+footer p, footer .footer-nav a, .footer-brand, .footer-legal,
+.newsletter-note, .nl-note, .aside-label, .aside-key, .aside-link-note,
+.show-meta, .tag, .show-badge, .hero-meta, .hero-eyebrow,
+.section-header-eyebrow, .jump-label, .nav-search-empty,
+.fds-service-tag, .fds-service-group-label, .fds-verdict {
+  font-size: 14px !important;
+}
+.breadcrumb-separator, .breadcrumb > span:not([class]) { color: #e3c890 !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
+
+/* Breadcrumb styles are also emitted in some page bodies. Use higher specificity. */
+.breadcrumb .breadcrumb-separator, .breadcrumb > span.breadcrumb-separator,
+.breadcrumb > span:not([class]), .show-meta > span { color: #e3c890 !important; }
+
+/* Override breadcrumb separator rules emitted later in page-body styles. */
+html body .breadcrumb > span:not([class]),
+html body .breadcrumb .breadcrumb-separator { color: #e3c890 !important; }
+
+/* Rendered-audit readability and keyboard target fixes. */
+html body .tag, html body .show-badge, html body .genre-tag, html body .cta-block-sub { opacity: 1 !important; }
+html body .nav-search-toggle { opacity: 1 !important; color: #f0e8d4 !important; background: #1e2433 !important; }
+html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-area-inset-bottom)) !important; min-width: 44px; min-height: 44px; z-index: 1000 !important; }
+html body #backToTop:hover, html body #backToTop:focus-visible { background: #d4b47a !important; transform: scale(1.1); box-shadow: 0 6px 16px rgba(201,168,76,0.3); }
+
+/* Direct video links remain outside the player's aspect-ratio container. */
+html body .hub-video-caption { margin: 8px 0 18px; text-align: center; font: 14px/1.6 Arial, sans-serif; }
+html body .hub-video-caption a { display: inline-block; padding: 6px 8px; color: #f0e8d4 !important; text-decoration: underline !important; text-underline-offset: 3px; }
+html body .hub-video-new-tab { font-size: 12px; }
+
+/* Visible, keyboard-accessible direct YouTube buttons. */
+html body a.hub-youtube-button, html body .hub-video-caption a {
+  display: inline-block !important; box-sizing: border-box;
+  background: #c9a96e !important; color: #1a2135 !important;
+  padding: 12px 20px !important; min-height: 44px; border: 2px solid #c9a96e;
+  border-radius: 4px; font: 700 16px/1.5 Arial, sans-serif !important;
+  text-decoration: none !important; letter-spacing: normal !important;
+  text-transform: none !important;
+}
+html body a.hub-youtube-button:hover, html body .hub-video-caption a:hover { background: #e3c890 !important; border-color: #e3c890; }
+html body .hub-video-new-tab { display: block; font-size: 14px; font-weight: 400; }
+
+</style>
+<link rel="stylesheet" href="/accessibility.css?v=1" media="print" onload="this.media='all'">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
     <div class="nav-brand">
     <a href="/" style="display:inline-block;text-decoration:none;">
-      <img src="/BTH_Logo.png" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;">
+      <img src="/assets/perf/BTH_Logo-80-beb666b4d4.webp" srcset="/assets/perf/BTH_Logo-80-beb666b4d4.webp 80w, /assets/perf/BTH_Logo-160-a4c713cd98.webp 160w, /assets/perf/BTH_Logo-240-d32eaef5d9.webp 240w" sizes="74px" alt="British TV Hub" style="height:70px;width:auto;filter:brightness(1.4) contrast(1.3);transition:filter 0.3s ease;" width="240" height="240" decoding="async">
     </a>
   </div>
     <button type="button" class="nav-hamburger" id="nav-hamburger-btn" aria-label="Open menu" aria-controls="nav-links-panel" aria-expanded="false" onclick="toggleMobileNav()">
@@ -1332,45 +1399,27 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
             <div class="nav-dropdown-label">Browse</div>
             <a href="/genres.html">By Genre</a>
             <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
             <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/country-house-mysteries.html">Murder at the Manor</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
             <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
+            <a href="/shows-like.html">Find Similar Shows</a>
             <a href="/this-week.html">This Week in British TV</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
           </div>
           <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/gift-guide-hub.html">All Gift Guides</a>
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
           </div>
         </div>
       </div>
@@ -1381,9 +1430,9 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()" style=";color:#f0e8d4 !important;opacity:1 !important;">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <input aria-label="Search shows, books and guides" type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
@@ -1417,8 +1466,8 @@ document.addEventListener('click', function(e){
 
 <div id="install-banner" style="display:none;background:#1a2135;border-bottom:1px solid #3d4a60;padding:18px 24px;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;text-align:center;">
   <p style="margin:0;font-family:'Raleway',sans-serif;font-size:15px;color:#c8c0a8;">&#128241; Add British TV Hub to your phone for quick, one-tap access.</p>
-  <button type="button" id="install-banner-btn" style="background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;cursor:pointer;white-space:nowrap;border-radius:2px;">Add to Your Phone</button>
-  <button type="button" id="install-banner-dismiss" aria-label="Dismiss" style="background:transparent;border:none;color:#8a93a8;font-size:22px;cursor:pointer;padding:0 4px;line-height:1;">&times;</button>
+  <button type="button" id="install-banner-btn" style="background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1px;text-transform:uppercase;font-weight:700;cursor:pointer;white-space:nowrap;border-radius:2px;">Add to Your Phone</button>
+  <button type="button" id="install-banner-dismiss" aria-label="Dismiss" style="background:transparent;border:none;color:#c1cadd;font-size:22px;cursor:pointer;padding:0 4px;line-height:1;">&times;</button>
   <div id="install-ios-steps" style="display:none;width:100%;max-width:320px;margin:6px auto 0;padding:12px 16px;background:#2c3345;border:1px solid #3d4a60;font-family:'Raleway',sans-serif;font-size:12px;color:#c9c2b0;line-height:1.7;text-align:left;">
     Tap the <strong style="color:#f0e8d4;">Share</strong> icon in Safari, then choose <strong style="color:#f0e8d4;">&ldquo;Add to Home Screen.&rdquo;</strong>
   </div>
@@ -1475,7 +1524,7 @@ document.addEventListener('click', function(e){
 <main>
 <div id="homepage-lobby" style="position:relative;background:linear-gradient(to bottom,rgba(10,14,24,0.05),rgba(10,14,24,0.3)),url('/hero.webp') center/cover no-repeat;min-height:490px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 24px 44px;border-bottom:1px solid #3d4a60;">
   <div class="lobby-header" style="position:relative;width:100%;display:flex;flex-direction:column;align-items:center;">
-  <p style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Watch &middot; Read &middot; Discover</p>
+  <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:4px;text-transform:uppercase;color:#c9a96e;margin:0 0 18px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Watch &middot; Read &middot; Discover</p>
   <div class="steam-animation" style="position:absolute;left:calc(16% - 12px);top:56%;width:75px;height:145px;transform:translate(-50%,-100%);opacity:0.22;filter:blur(3px);pointer-events:none;z-index:3;transform-origin:bottom center;">
     <svg viewBox="0 0 75 145" style="width:100%;height:100%;" aria-hidden="true">
       <path d="M37,143 C33,124 41,112 36,94 C32,78 40,67 35,50 C31,36 39,28 34,10" fill="none" stroke="#f2ede0" stroke-width="3" stroke-linecap="round"/>
@@ -1483,13 +1532,13 @@ document.addEventListener('click', function(e){
       <path d="M31,143 C26,127 20,115 24,97 C20,81 13,70 17,54 C14,41 8,32 12,16" fill="none" stroke="#f2ede0" stroke-width="1.8" stroke-linecap="round"/>
     </svg>
   </div>
-  <h1 class="lobby-h1" style="font-family:'Playfair Display',serif;font-weight:400;font-size:46px;line-height:1.15;color:#f6f1e6;margin:0 0 16px;max-width:700px;text-shadow:0 3px 14px rgba(0,0,0,0.9);">The Home for British <em style="color:#e6c778;font-style:normal;">Mysteries &amp; Dramas</em> — Classics and New Favourites</h1>
+  <h1 class="lobby-h1" style="font-family:'Playfair Display',serif;font-weight:400;font-size:46px;line-height:1.15;color:#f6f1e6;margin:0 0 16px;max-width:700px;text-shadow:0 3px 14px rgba(0,0,0,0.9);" id="hub-content-start" tabindex="-1">The Home for British <em style="color:#e6c778;font-style:normal;">Mysteries &amp; Dramas</em> — Classics and New Favourites</h1>
   <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#c9a96e;max-width:460px;margin:0 0 30px;letter-spacing:0.3px;text-shadow:0 2px 10px rgba(0,0,0,0.85);">Expert guides, streaming updates, and book recommendations to help you discover your next favourite British mystery.</p>
 
-  <a href="/start-here.html" class="start-here-cta" style="display:inline-block;background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;margin-bottom:36px;">New to British TV? Start Here &rarr;</a>
+  <a href="/start-here.html" class="start-here-cta" style="display:inline-block;background:#c9a96e;color:#1a2135;border:none;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:700;margin-bottom:36px;">New to British TV? Start Here &rarr;</a>
   </div>
 
-  <div class="lobby-divider-label" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#8a93a8;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
+  <div class="lobby-divider-label" style="font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c1cadd;margin:0 0 16px;display:flex;align-items:center;gap:14px;">
     <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
     <span style="white-space:nowrap;">What are you looking for today?</span>
     <span style="width:32px;height:1px;background:#3d4a60;display:inline-block;flex-shrink:0;"></span>
@@ -1499,22 +1548,22 @@ document.addEventListener('click', function(e){
     <a href="/shows-index.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><rect x="4" y="7" width="24" height="16" rx="1.5" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M11 27h10M16 23v4" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round"/><path d="M11 4l5 3 5-3" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Find a Show</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Explore hundreds of British mysteries, dramas and hidden gems.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Explore hundreds of British mysteries, dramas and hidden gems.</p>
     </a>
     <a href="/books" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><path d="M16 8c-2.5-1.8-6-2.4-10-2v18c4 -.4 7.5.2 10 2 2.5-1.8 6-2.4 10-2V6c-4-.4-7.5.2-10 2Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 8v18" fill="none" stroke="#c9a96e" stroke-width="1.4"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Find a Book</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Discover novels behind your favourite television series.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Discover novels behind your favourite television series.</p>
     </a>
     <a href="/streaming.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M13 11l8 5-8 5V11Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">See What's Streaming</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Find what's new on BritBox, Acorn TV and more.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Find what's new on BritBox, Acorn TV and more.</p>
     </a>
     <a href="/weekend-binge-guide.html" class="lobby-path">
       <svg viewBox="0 0 32 32" style="width:24px;height:24px;margin-bottom:11px;" aria-hidden="true"><rect x="5" y="6" width="22" height="16" rx="1.5" fill="none" stroke="#c9a96e" stroke-width="1.4"/><path d="M13 26h6M16 22v4" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round"/><path d="M13 10l7 4-7 4v-8Z" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linejoin="round"/></svg>
       <div style="font-family:'Playfair Display',serif;font-size:18px;color:#e8dfc8;margin:0 0 8px;">Weekend Binge</div>
-      <p style="font-family:'Raleway',sans-serif;font-size:11.5px;letter-spacing:0.3px;color:#8a93a8;margin:0;line-height:1.5;">Six shows you can finish in a single weekend, six episodes or fewer.</p>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.3px;color:#c1cadd;margin:0;line-height:1.5;">Six shows you can finish in a single weekend, six episodes or fewer.</p>
     </a>
   </div>
 
@@ -1525,254 +1574,423 @@ document.addEventListener('click', function(e){
 </div>
 
 <style>
-.oct-link:hover{background:#c9a96e;color:#1a2135 !important;}
-#october-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
-#october-guide .og-media{position:relative;min-height:340px;}
-#october-guide .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
-#october-guide .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+.oct-link:hover, .nov-link:hover{background:#c9a96e;color:#1a2135 !important;}
+#october-guide, #november-guide, #gift-guide-banner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
+#october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{position:relative;min-height:340px;}
+#gift-guide-banner{grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);}
+#gift-guide-banner .og-media{min-height:280px;}
+#october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
+#gift-guide-banner .og-media img{object-position:50% 38%;}
+#october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+#gift-guide-banner .og-body{padding:36px 40px;}
 @media (max-width:900px){
-  #october-guide{grid-template-columns:1fr;}
-  #october-guide .og-media{order:-1;min-height:260px;}
-  #october-guide .og-media img{object-position:center 30%;}
-  #october-guide .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
-  #october-guide .og-body{padding:28px 20px 32px !important;}
+  #october-guide, #november-guide, #gift-guide-banner{grid-template-columns:1fr;}
+  #october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{order:-1;min-height:260px;}
+  #october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{object-position:center 30%;}
+  #october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
+  #october-guide .og-body, #november-guide .og-body, #gift-guide-banner .og-body{padding:28px 20px 32px !important;}
 }
 </style>
 <div id="october-guide">
   <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; October</div>
-    <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub October Guide: <em style="color:#d9bd86;">Dark Nights &amp; Ghost Stories</em></h2>
-    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Spooky season, British style. Shadowy mysteries, Agatha Christie&rsquo;s eeriest cases, a ghost story tradition and a Halloween mystery to build yourself, all in one place.</p>
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; October</div>
+    <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub October Guide: <em style="color:#d9bd86;">Dark Nights &amp; Ghost Stories</em></h2>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Spooky season, British style. Shadowy mysteries, Agatha Christie&rsquo;s eeriest cases, a ghost story tradition and a Halloween mystery to build yourself, all in one place.</p></div>
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;">
-      <a href="/dark-october-night-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">13 Mysteries for a Dark October Night</a>
-      <a href="/agatha-christie-spooky-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Agatha Christie&rsquo;s Spookiest Mysteries</a>
-      <a href="/ghost-story-for-halloween.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">A Ghost Story for Halloween</a>
-      <a href="/halloween-mystery-builder.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Build Your Halloween Mystery</a>
+      <a href="/dark-october-night-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">13 Mysteries for a Dark October Night</a>
+      <a href="/agatha-christie-spooky-mysteries.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Agatha Christie&rsquo;s Spookiest Mysteries</a>
+      <a href="/ghost-story-for-halloween.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">A Ghost Story for Halloween</a>
+      <a href="/halloween-mystery-builder.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Build Your Halloween Mystery</a>
+      <a href="/harpercollins-christie-collection.html" class="oct-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">The HarperCollins Christie Collection</a>
     </div>
-    <a href="/dark-october-night-mysteries.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Start with the Picks &rarr;</a>
+    <a href="/dark-october-night-mysteries.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Start with the Picks &rarr;</a>
   </div>
-  <div class="og-media"><img src="/october-guide-hero.webp" alt="A candlelit library on an autumn night, fire in the hearth and a moonlit manor house through the window"></div>
+  <div class="og-media"><img src="/assets/perf/october-guide-hero-959-257ad06f77.webp" alt="A candlelit library with a fireplace and a moonlit manor house through the window" width="1672" height="941" srcset="/assets/perf/october-guide-hero-320-034d22e08a.webp 320w, /assets/perf/october-guide-hero-640-225b13a625.webp 640w, /assets/perf/october-guide-hero-959-257ad06f77.webp 959w" sizes="(max-width: 700px) calc(100vw - 48px), 600px" loading="lazy" decoding="async"></div>
 </div>
 
+<!-- NOVEMBER GIFT GUIDE BANNER (auto-swaps in for the October banner starting Nov 1, 2026) -->
+<div id="november-guide" style="display:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;">
+  <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; November</div>
+    <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">What&rsquo;s New in November: <em style="color:#d9bd86;">Blue Lights, Death Valley &amp; Ludwig&rsquo;s Finale</em></h2>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">A big month for premieres. Blue Lights returns for Season 4, Timothy Spall is back in Death Valley Season 2, and Ludwig&rsquo;s first season wraps up with its finale &mdash; all on BritBox.</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;">
+      <a href="/shows/blue-lights.html" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Blue Lights &mdash; Season 4</a>
+      <a href="/shows/death-valley.html" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Death Valley &mdash; Season 2</a>
+      <a href="/shows/ludwig.html" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Ludwig &mdash; The Finale</a>
+      <a href="/britbox.html" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">What's New on BritBox</a>
+    </div>
+    <a href="/britbox.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">See What&rsquo;s New &rarr;</a>
+  </div>
+  <div class="og-media"><img src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights Season 4 key art — Siân Brooke, Katherine Devlin, Nathan Braniff and cast, a BritBox Original" width="1672" height="941" style="object-fit:contain;background:#1a2135;" loading="lazy" decoding="async"></div>
+</div>
+
+<div id="gift-guide-banner">
+  <div class="og-body" style="align-self:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Gift Season</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">The British TV Hub Gift Guide</h3>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c1cadd;line-height:1.55;margin:0 0 20px;max-width:460px;">Ten gifts under $25, ten mystery books, ten DVD box sets &mdash; stocking stuffers to splurges, sorted by budget or by show.</p>
+    <a href="/gift-guide-hub.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:13px 24px;border-radius:2px;">Find the Right Gift Guide &rarr;</a>
+  </div>
+  <div class="og-media"><img src="/snug-nav-gifts.webp" alt="Gift-wrapped British TV Hub mug and mystery books beside a Christmas tree" width="1400" height="933" loading="lazy" decoding="async"></div>
+</div>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('gift-guide-banner');if(!e)return;if(n>=Date.parse('2026-11-23T05:00:00Z')&&n<Date.parse('2026-12-02T05:00:00Z')){e.remove();}}catch(x){}})();</script>
+
+<!-- THANKSGIVING BANNER (auto-swaps in for the Gift Guide banner starting Nov 15, 2026) -->
+<div id="thanksgiving-guide" style="display:none;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;">
+  <div class="og-body" style="position:relative;z-index:2;padding:44px 40px 40px;align-self:center;">
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Featured Guide &middot; November</div>
+    <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.2;">25 British Shows to Be <em style="color:#d9bd86;">Grateful For</em> This Thanksgiving</h2>
+    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Gentle village whodunits, sun-soaked island mysteries, enduring classics, and a few prestige binges for after the dishes are done &mdash; sorted by mood, with where to stream every one in the US.</p></div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px;">
+      <a href="/cozy-british-tv-shows-thanksgiving.html#cozy" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Cozy Village &amp; Seaside</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#sleuths" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Amateur Sleuths</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#classic" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Classic Detectives</a>
+      <a href="/cozy-british-tv-shows-thanksgiving.html#binge" class="nov-link" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#e8dfc8;border:1px solid rgba(201,168,76,0.45);border-radius:999px;padding:9px 14px;text-decoration:none;transition:background .2s ease,color .2s ease;">Long-Weekend Binges</a>
+    </div>
+    <a href="/cozy-british-tv-shows-thanksgiving.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:11px 22px;border-radius:2px;text-decoration:none;">Explore the List &rarr;</a>
+  </div>
+  <div class="og-media"><img src="/thanksgiving-hero.webp" alt="Cozy autumn living room with a British TV Hub sign on the wall, a TV showing English countryside, tea, pie, and pumpkins by the fireplace" width="1672" height="941" loading="lazy" decoding="async"></div>
+</div>
+
+<script>(function(){try{var n=Date.now(),octEl=document.getElementById('october-guide'),novEl=document.getElementById('november-guide'),tgEl=document.getElementById('thanksgiving-guide');if(!octEl||!novEl)return;if(n>=Date.parse('2026-11-15T06:00:00Z')){octEl.style.display='none';novEl.style.display='none';if(tgEl)tgEl.style.display='grid';}else if(n>=Date.parse('2026-11-01T05:00:00Z')){octEl.style.display='none';novEl.style.display='grid';}else{novEl.style.display='none';}}catch(x){}})();</script>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('gift-guide-popular-card');if(!e)return;if(n>=Date.parse('2026-11-15T06:00:00Z')){e.style.display='flex';}}catch(x){}})();</script>
+<script>document.addEventListener('DOMContentLoaded',function(){try{if(Date.now()<Date.parse('2026-11-01T05:00:00Z'))return;
+var img=document.getElementById('autumn-preview-card-img');
+if(img){img.src='/fall-preview-blue-lights-s4-keyart.webp';img.removeAttribute('srcset');img.removeAttribute('sizes');img.style.objectFit='contain';img.style.background='#1a2135';img.alt='Blue Lights Season 4 key art — a BritBox Original';}
+var moEl=document.getElementById('this-month-oct'),mnEl=document.getElementById('this-month-nov');
+if(moEl&&mnEl){moEl.style.display='none';mnEl.style.display='grid';}
+var yoEl=document.getElementById('now-youtube-oct'),ynEl=document.getElementById('now-youtube-nov');
+if(yoEl&&ynEl){yoEl.style.display='none';ynEl.style.display='block';}
+}catch(x){}});</script>
+
+
+<!-- CYBER SPECIALS BLOCK START (Etsy sale: shows Nov 23, auto-hides after Dec 1, 2026) -->
+<style>
+#cyber26{display:none;}
+#cyber26.cy-on{display:block;}
+#cyber26{max-width:900px;margin:40px auto !important;padding:0 20px !important;box-sizing:border-box;}
+#cyber26 *{box-sizing:border-box;}
+#cyber26 .cy-card{background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:32px 32px 26px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;text-align:left;}
+#cyber26 .cy-kicker{font-family:'Raleway',sans-serif !important;font-size:14px !important;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#c9a96e !important;margin:0 0 12px !important;padding:0 !important;text-align:left !important;}
+#cyber26 h2{text-wrap:balance;font-family:'Playfair Display',serif !important;font-size:clamp(1.5rem,3.2vw,1.9rem) !important;font-weight:400 !important;color:#e8dfc8 !important;line-height:1.25 !important;margin:0 0 14px !important;padding:0 !important;text-align:left !important;}
+#cyber26 p.cy-text{font-family:'Crimson Text',serif !important;font-size:17px !important;line-height:1.6 !important;color:#d6d0bf !important;margin:0 0 20px !important;padding:0 !important;text-align:left !important;}
+#cyber26 .cy-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135 !important;background:#c9a96e;padding:13px 22px;border-radius:2px;text-decoration:none !important;border:0 !important;}
+#cyber26 .cy-btn:hover{background:#dab870;}
+#cyber26 .cy-btn2{display:inline-block;margin:10px 0 0 10px;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;background:transparent;padding:12px 21px;border:1px solid #c9a96e !important;border-radius:2px;text-decoration:none !important;}
+#cyber26 .cy-btn2:hover{background:rgba(201,169,110,0.12);}
+@media(max-width:600px){#cyber26 .cy-btn2{margin-left:0;}}
+#cyber26 .cy-aside{background:rgba(10,21,32,0.45);border:1px solid rgba(201,168,76,0.18);border-radius:10px;padding:18px 20px;align-self:start;}
+#cyber26 .cy-aside-h{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 8px;}
+#cyber26 .cy-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-family:'Crimson Text',serif;font-size:16px;color:#d6d0bf;}
+#cyber26 .cy-row:last-child{border-bottom:0;}
+#cyber26 .cy-row a{font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e !important;text-decoration:none !important;border:0 !important;white-space:nowrap;}
+#cyber26 .cy-note{font-size:14px;color:#a8a494;}
+#cyber26 p.cy-disc{grid-column:1/-1;font-family:'Crimson Text',serif !important;font-size:13.5px !important;line-height:1.5 !important;color:#c1cadd !important;margin:0 !important;padding:0 !important;text-align:left !important;}
+@media (max-width:700px){#cyber26 .cy-card{grid-template-columns:1fr;gap:22px;padding:26px 20px 22px;}}
+#cyber26 .cy-card{border:2px solid #c9a96e !important;overflow:hidden;box-shadow:0 0 0 4px rgba(201,169,110,0.12),0 14px 36px rgba(0,0,0,0.35);}
+#cyber26 .cy-banner{grid-column:1/-1;box-sizing:border-box;max-width:none !important;width:calc(100% + 64px);margin:-32px -32px 0;padding:18px 32px;background:linear-gradient(90deg,#c9a96e,#e0c48a);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;}
+#cyber26 .cy-banner-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:700;color:#1a2135;line-height:1.1;}
+#cyber26 .cy-banner-pill{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#e8dfc8;background:#1a2135;padding:9px 16px;border-radius:999px;white-space:nowrap;}
+@media (max-width:700px){#cyber26 .cy-banner{width:calc(100% + 40px);max-width:none !important;margin:-26px -20px 0;padding:16px 20px;}#cyber26 .cy-banner-pill{white-space:normal;font-size:14px;}}
+</style>
+<section id="cyber26" aria-label="Cyber Specials sale">
+  <div class="cy-card">
+    <div class="cy-banner">
+      <span class="cy-banner-title">Cyber Specials</span>
+      <span class="cy-banner-pill" id="cy-status">25% Off &middot; Nov 23&ndash;Dec 1</span>
+    </div>
+    <div>
+      <p class="cy-kicker">The CozyTVCompanion Shop</p>
+      <h2>Cozy Gifts for British TV Fans</h2>
+      <p class="cy-text">Mugs, notebooks, journals and cozy keepsakes for anyone who loves a good British mystery. Selected items will be 25% off from November 23 through December 1, just in time for holiday gifting.</p>
+      <a class="cy-btn" href="https://cozytvcompanion.etsy.com" rel="noopener" target="_blank">Shop the Sale &rarr;</a>
+      <a class="cy-btn2" href="/holiday-gift-guide.html">Holiday Gift Guide &rarr;</a>
+    </div>
+    <div class="cy-aside">
+      <div class="cy-aside-h">Sale at a Glance</div>
+      <div class="cy-row"><span>Discount</span><span>25% off</span></div>
+      <div class="cy-row"><span>Dates</span><span>Nov 23 &ndash; Dec 1</span></div>
+      <div class="cy-row"><span>Browse</span><a href="/shop.html">All Gifts &rarr;</a></div>
+      <div class="cy-row cy-note"><span>Applies to selected items, discount shown at checkout</span></div>
+    </div>
+    <p class="cy-disc">CozyTVCompanion is British TV Hub&rsquo;s own shop on Etsy. Sale runs 12:00am ET November 23 to 11:59pm ET December 1, 2026.</p>
+  </div>
+</section>
+<script>(function(){try{var n=Date.now(),e=document.getElementById('cyber26');if(!e)return;var p=/[?&]cyberpreview/.test(location.search);if(!p&&(n<Date.parse('2026-11-23T05:00:00Z')||n>=Date.parse('2026-12-02T05:00:00Z'))){e.remove();return;}e.classList.add('cy-on');var s=document.getElementById('cy-status');if(n>=Date.parse('2026-12-01T05:00:00Z'))s.textContent='Final Day \u00b7 25% Off';else if(n>=Date.parse('2026-11-30T05:00:00Z'))s.textContent='Ends Tomorrow \u00b7 25% Off';}catch(x){}})();</script>
+<!-- CYBER SPECIALS BLOCK END -->
+
+
 <div style="padding:56px 40px;border-bottom:1px solid #3d4a60;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">Popular Guides</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">Popular Guides</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 40px;text-align:center;">The Guides Readers Turn to Most</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
     <a href="/fall-preview-2026.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
-      <img src="/fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 20%;display:block;">
+      <img id="autumn-preview-card-img" src="/assets/perf/fall-preview-ludwig-s2-960-2073889766.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 20%;display:block;" width="1400" height="933" srcset="/assets/perf/fall-preview-ludwig-s2-320-a573ee5d51.webp 320w, /assets/perf/fall-preview-ludwig-s2-640-e966e1e230.webp 640w, /assets/perf/fall-preview-ludwig-s2-960-2073889766.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Autumn 2026 British TV Preview</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">The major new British mystery and drama premieres landing on BritBox, Acorn TV and PBS this autumn.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Preview &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Preview &rarr;</span>
       </div>
     </a>
     <a href="/shows-index.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
-      <img src="/shows-index-hero.webp" alt="A British TV Hub mug and remote in front of a TV showing a moody castle at night" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 70%;display:block;">
+      <img src="/assets/perf/shows-index-hero-500-d157cda084.webp" alt="A British TV Hub mug and remote in front of a TV showing a moody castle at night" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center 70%;display:block;" width="500" height="333" srcset="/assets/perf/shows-index-hero-320-fbcbcb5976.webp 320w, /assets/perf/shows-index-hero-500-d157cda084.webp 500w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Browse the Full Shows Index</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Every British mystery and drama on the site, sorted by genre, streaming service, and title.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Browse Shows &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Browse Shows &rarr;</span>
       </div>
     </a>
     <a href="/streaming.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
-      <img src="/streaming-hero.webp" alt="A cosy lamp-lit living room with a British mystery on the TV" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;">
+      <img src="/assets/perf/streaming-hero-500-71470942d5.webp" alt="A cosy lamp-lit living room with a British mystery on the TV" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;" width="500" height="281" srcset="/assets/perf/streaming-hero-320-4bc95e1bb0.webp 320w, /assets/perf/streaming-hero-500-71470942d5.webp 500w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">Where to Watch — BritBox vs. Acorn TV</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">A full breakdown of BritBox, Acorn TV, and PBS Passport, plus a head-to-head comparison to help you choose.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Guide &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">See the Guide &rarr;</span>
       </div>
     </a>
     <a href="/midsomer-murders-beginners-guide.html" class="popular-card" style="display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
-      <img src="/midsomer-murders-beginners-guide-hero.webp" alt="A Cotswold village green with honey-stone cottages and a church tower" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;">
+      <img src="/assets/perf/midsomer-murders-beginners-guide-hero-959-748677c2b3.webp" alt="A Cotswold village green with honey-stone cottages and a church tower" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;" width="1829" height="860" srcset="/assets/perf/midsomer-murders-beginners-guide-hero-319-82f3d0e5c5.webp 319w, /assets/perf/midsomer-murders-beginners-guide-hero-640-2acf25bd4b.webp 640w, /assets/perf/midsomer-murders-beginners-guide-hero-959-748677c2b3.webp 959w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
         <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">New to Midsomer Murders?</div>
         <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Tom Barnaby vs. John Barnaby, whether to watch in order, and exactly where to start.</p>
-        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Read the Guide &rarr;</span>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Read the Guide &rarr;</span>
+      </div>
+    </a>
+    <a id="gift-guide-popular-card" href="/gift-guide-hub.html" class="popular-card" style="display:none;flex-direction:column;height:100%;background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+      <img src="/gift-guides-hero.webp" alt="Wrapped gift boxes and a cozy cup of tea beside a British TV Hub notebook" loading="lazy" style="width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;" width="500" height="333" decoding="async">
+      <div style="display:flex;flex-direction:column;flex:1;padding:24px 24px 28px;">
+        <div style="font-family:'Playfair Display',serif;font-size:19px;color:#e8dfc8;margin:0 0 10px;">The British TV Hub Gift Guide</div>
+        <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#c8c0a8;line-height:1.6;margin:0 0 18px;">Something for every fan, sorted by budget &mdash; stocking stuffers, mystery books, DVD box sets, and more.</p>
+        <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:10px 18px;border-radius:2px;">Find the Right Guide &rarr;</span>
       </div>
     </a>
   </div>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;text-align:center;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">YOUR PERSONAL TRACKER</div>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">YOUR PERSONAL TRACKER</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">Track Every Show You're Watching</h2>
   <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 28px;max-width:600px;margin-left:auto;margin-right:auto;">Save your Want to Watch, Watching, and Finished lists. No account required.</p>
-  <a href="/watch-list.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Start Your Watch List &rarr;</a>
+  <a href="/watch-list.html" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Start Your Watch List &rarr;</a>
+</div>
+
+<div id="cyj-wrap" style="display:none;padding:40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
+  <div style="max-width:1100px;margin:0 auto;background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:28px 32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+    <div style="flex:1;min-width:240px;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:10px;">Continue Your Journey</div>
+      <h2 id="cyj-title" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">Because You're Watching &hellip;</h2>
+      <p id="cyj-sub" style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:0;"></p>
+    </div>
+    <a id="cyj-cta" href="/watch-list.html" style="flex-shrink:0;display:inline-block;font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 22px;border-radius:2px;">Continue Watching &rarr;</a>
+  </div>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">THIS MONTH</div>
-  <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">New on BritBox, Acorn TV &amp; PBS Masterpiece</h2>
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">THIS MONTH</div>
+  <div class="hub-card"><h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;">New on BritBox, Acorn TV &amp; PBS Masterpiece</h2>
   <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 28px;">New seasons and premieres arriving this month, all in one place.</p>
-  <p style="font-family:'Crimson Text',serif;font-size:15.5px;font-style:italic;color:#8a94ab;margin:-16px 0 28px;">Streaming details here are for US viewers. Watching from the UK, Canada, Australia or New Zealand? Services and catalogues differ from country to country, so a show may live on a different platform where you are.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
+  <p role="note" class="streaming-country-note"><strong>US viewers:</strong> Streaming details on this page are for the United States. Availability may differ in the UK, Canada, Australia and New Zealand.</p></div>
+  <div id="this-month-oct" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
-      <img loading="lazy" src="signora-volpe-s3.webp" alt="Emilia Fox in Signora Volpe Season 3 on Acorn TV" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;">
+      <img loading="lazy" src="/assets/perf/signora-volpe-s3-960-24bcbdabe8.webp" alt="Emilia Fox in Signora Volpe Season 3 on Acorn TV" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;" width="1200" height="800" srcset="/assets/perf/signora-volpe-s3-319-e6b99a1c9d.webp 319w, /assets/perf/signora-volpe-s3-640-1835c2162d.webp 640w, /assets/perf/signora-volpe-s3-960-24bcbdabe8.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 5</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 5</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Signora Volpe &mdash; Season 3</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Emilia Fox returns as former MI6 officer Sylvia Fox for three new feature-length mysteries in the Umbrian countryside.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/signora-volpe.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
+        <div class="home-card-ctas">
+          <a href="/shows/signora-volpe.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 5 on Acorn TV</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
-      <img loading="lazy" src="fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
+      <img loading="lazy" src="/assets/perf/fall-preview-ludwig-s2-960-2073889766.webp" alt="David Mitchell in Ludwig Season 2 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;" width="1400" height="933" srcset="/assets/perf/fall-preview-ludwig-s2-320-a573ee5d51.webp 320w, /assets/perf/fall-preview-ludwig-s2-640-e966e1e230.webp 640w, /assets/perf/fall-preview-ludwig-s2-960-2073889766.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 13</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 13</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Ludwig &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Mitchell returns as puzzle-setter John Taylor, now an official police consultant tackling impossible crimes.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/ludwig.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        <div class="home-card-ctas">
+          <a href="/shows/ludwig.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">New episodes Tuesdays on BritBox</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
-      <img loading="lazy" src="maigret-s2-wainwright.webp" alt="Benjamin Wainwright as Maigret in Maigret Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:55% 10%;display:block;">
+      <img loading="lazy" src="/assets/perf/maigret-s2-wainwright-960-3bad4df241.webp" alt="Benjamin Wainwright as Maigret in Maigret Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:55% 10%;display:block;" width="1400" height="933" srcset="/assets/perf/maigret-s2-wainwright-320-a81e8f156d.webp 320w, /assets/perf/maigret-s2-wainwright-640-7fe771a4a0.webp 640w, /assets/perf/maigret-s2-wainwright-960-3bad4df241.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 18</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Maigret &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Benjamin Wainwright returns as Simenon&rsquo;s Parisian detective for three new cases, with turmoil brewing at La Brigade Criminelle.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/maigret.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
+        <div class="home-card-ctas">
+          <a href="/shows/maigret.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">All episodes on PBS Passport October 18</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
-      <img loading="lazy" src="the-gold-s2-boyce.webp" alt="Hugh Bonneville in The Gold Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;">
+      <img loading="lazy" src="/assets/perf/the-gold-s2-boyce-960-e509fcf732.webp" alt="Hugh Bonneville in The Gold Season 2 on PBS Masterpiece" style="width:100%;height:190px;object-fit:cover;object-position:center 25%;display:block;" width="1400" height="933" srcset="/assets/perf/the-gold-s2-boyce-320-5f53b3751e.webp 320w, /assets/perf/the-gold-s2-boyce-640-c647373101.webp 640w, /assets/perf/the-gold-s2-boyce-960-e509fcf732.webp 960w" sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1000px) 45vw, 400px" decoding="async">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 18</div>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Oct 18</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">The Gold &mdash; Season 2</h3>
         <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">The second and final season follows the hunt for the missing half of the Brink&rsquo;s-Mat gold, with Hugh Bonneville, Jack Lowden and Tom Cullen.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/the-gold.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
+        <div class="home-card-ctas">
+          <a href="/shows/the-gold.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.pbs.org/passport" target="_blank" rel="noopener" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch on PBS &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres October 18 on PBS Masterpiece</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="this-month-nov" style="display:none;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;align-items:stretch;">
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights Season 4 key art — Siân Brooke, Katherine Devlin, Nathan Braniff and cast, a BritBox Original" style="width:100%;height:190px;object-fit:contain;background:#1a2135;display:block;">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 12</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Blue Lights &mdash; Season 4</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Grace, Tommy and Annie are three years into the job as Richard Dormer returns to reopen Gerry Cliff's murder trial, uncovering long-buried secrets across Belfast's police and criminal worlds.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/blue-lights.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 12 on BritBox</p>
       </div>
     </div>
 
     <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
-      <img loading="lazy" src="britbox-time-s3.webp" alt="Time Season 3 on BritBox" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
+      <img loading="lazy" src="/fall-preview-madame-blanc-s5-keyart.webp" alt="The Madame Blanc Mysteries Season 5 key art — Sally Lindsay and Steve Edge, an Acorn TV Original" style="width:100%;height:190px;object-fit:contain;background:#1a2135;display:block;">
       <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
-        <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8a93a8;margin-bottom:10px;">Premieres Oct 22</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Time &mdash; Season 3</h3>
-        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">David Tennant and Siobhan Finneran lead Jimmy McGovern&rsquo;s BAFTA-winning anthology drama&rsquo;s move to a Young Offenders Institution.</p>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <a href="/shows/time.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
-          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 9</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">The Madame Blanc Mysteries &mdash; Season 5</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Sally Lindsay returns as Jean White for a seven-part season built around Jean and Dom's wedding plans, ending with a Christmas special finale.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/madame-blanc-mysteries.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via Acorn TV on Prime Video &rarr;</a>
         </div>
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;color:#8a93a8;text-align:center;margin:10px 0 0;">Premieres October 22 on BritBox</p>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 9 on Acorn TV</p>
       </div>
     </div>
+
+    <div class="home-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+      <img loading="lazy" src="/fall-preview-death-valley-s2.webp" alt="Timothy Spall in Death Valley Season 2" style="width:100%;height:190px;object-fit:cover;object-position:center 20%;display:block;">
+      <div style="padding:20px;display:flex;flex-direction:column;flex:1;">
+        <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c1cadd;margin-bottom:10px;">Premieres Nov 17</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.25;">Death Valley &mdash; Season 2</h3>
+        <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c8b99a;line-height:1.55;margin:0 0 16px;flex:1;">Timothy Spall and Gwyneth Keyworth return for more unconventional sleuthing in the Welsh countryside.</p>
+        <div class="home-card-ctas">
+          <a href="/shows/death-valley.html" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:#c9a96e;color:#1a2135;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:12px 24px;border-radius:2px;text-decoration:none;">Read the Full Guide &rarr;</a>
+          <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="noopener sponsored" style="display:block;box-sizing:border-box;width:100%;text-align:center;background:transparent;color:#c9a96e;border:1px solid #c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:11px 23px;border-radius:2px;text-decoration:none;">Watch via BritBox on Prime Video &rarr;</a>
+        </div>
+        <p class="home-card-status" style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;text-align:center;margin:10px 0 0;">Premieres November 17 on BritBox</p>
+      </div>
+    </div>
+
   </div>
+
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1e2433;">
   <div style="max-width:1100px;margin:0 auto;">
-    <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">NOW ON YOUTUBE</div>
+    <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;text-align:center;">NOW ON YOUTUBE</div>
     <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">British Mystery &amp; Drama Trailers on YouTube</h2>
     <p style="font-family:'Crimson Text',serif;font-size:19px;font-style:italic;color:#a0aec8;margin:0 0 32px;max-width:640px;margin-left:auto;margin-right:auto;text-align:center;">Curated British mystery and drama trailers from BritBox, Acorn TV, and PBS &mdash; all in one feed.</p>
-    <div style="max-width:720px;margin:0 auto;">
-      <a href="https://www.youtube.com/watch?v=GydS_60QoIQ&list=PLBQ3AdK8zgZM" target="_blank" rel="noopener" style="display:block;position:relative;width:100%;padding:0 !important;padding-bottom:56.25% !important;min-height:0 !important;min-width:0 !important;background:#000;border:1px solid #3d4a60;border-radius:8px;overflow:hidden;">
-        <img src="https://img.youtube.com/vi/GydS_60QoIQ/maxresdefault.jpg" alt="Ludwig Season 2 trailer thumbnail — visit British TV Hub's YouTube channel" loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+    <div id="now-youtube-oct" style="max-width:720px;margin:0 auto;">
+      <div style="display:block;position:relative;width:100%;padding:0 !important;padding-bottom:56.25% !important;min-height:0 !important;min-width:0 !important;background:#000;border:1px solid #3d4a60;border-radius:8px;overflow:hidden;">
+        <img src="https://img.youtube.com/vi/GydS_60QoIQ/maxresdefault.jpg" alt="Ludwig Season 2 trailer thumbnail" loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
         <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:rgba(20,26,42,0.75);border:2px solid #c9a96e;border-radius:50%;display:flex;align-items:center;justify-content:center;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="#c9a96e" style="margin-left:3px;"><path d="M8 5v14l11-7z"/></svg>
+          <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="#c9a96e" style="margin-left:3px;"><path d="M8 5v14l11-7z"/></svg>
         </span>
-      </a>
+      </div>
       <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;color:#b0bcd4;margin:14px 0 0;text-align:center;">Ludwig Season 2 &mdash; Official Trailer</p>
+      <p class="hub-video-caption" style="text-align:center;margin-top:10px;"><a href="https://www.youtube.com/watch?v=GydS_60QoIQ&amp;list=PLBQ3AdK8zgZM" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Ludwig Season 2 official trailer (opens in a new tab)" style="color:#1a2135!important;text-decoration:underline;display:inline-block;padding:8px 12px;">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
+    </div>
+    <div id="now-youtube-nov" style="display:none;max-width:720px;margin:0 auto;">
+      <div style="display:block;position:relative;width:100%;padding:0 !important;padding-bottom:56.25% !important;min-height:0 !important;min-width:0 !important;background:#000;border:1px solid #3d4a60;border-radius:8px;overflow:hidden;">
+        <img src="https://img.youtube.com/vi/C_hGRQxpa_Y/maxresdefault.jpg" alt="Blue Lights Season 4 trailer thumbnail" loading="lazy" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:76px;height:76px;background:rgba(20,26,42,0.75);border:2px solid #c9a96e;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+          <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="#c9a96e" style="margin-left:3px;"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </div>
+      <p style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:0.5px;color:#b0bcd4;margin:14px 0 0;text-align:center;">Blue Lights Season 4 &mdash; Official Trailer</p>
+      <p class="hub-video-caption" style="text-align:center;margin-top:10px;"><a href="https://www.youtube.com/watch?v=C_hGRQxpa_Y" target="_blank" rel="noopener noreferrer" aria-label="Watch on YouTube: Blue Lights Season 4 official trailer (opens in a new tab)" style="color:#1a2135!important;text-decoration:underline;display:inline-block;padding:8px 12px;">Watch on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
     </div>
     <div style="margin-top:24px;text-align:center;">
-      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Explore More Trailers &rarr;</a>
+      <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;text-decoration:none;background:#c9a96e;padding:12px 24px;border-radius:2px;">Explore More Trailers &rarr;</a>
     </div>
   </div>
 </div>
 
-<div id="nl-anchor" style="background:#101c33;border-bottom:1px solid rgba(201,169,110,0.35);padding:56px 40px;text-align:center;">
-  <div style="max-width:600px;margin:0 auto;">
-    <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 10px;">Five British TV Picks. Every Sunday.</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:17px;color:#c8c0a8;line-height:1.6;margin:0 0 26px;">Your weekly guide to what to watch next, plus what's new on BritBox and Acorn TV.</p>
-    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname});}">
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:16px;background:#2c3345;border-width:1px;border-style:solid;border-color:#4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;border-radius:0;">
-              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
-            </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:12px;letter-spacing:0.3px;line-height:1.5;">By signing up, you agree to get the Sunday Picks email each week. No spam. Unsubscribe anytime with one click.</div>
-          </form>
-    <p style="font-family:'Crimson Text',serif;font-size:14.5px;color:#a8a49a;margin:22px 0 0;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a> and get Sunday Picks in your inbox Saturday morning — a full day before everyone else.</p>
-    <p style="font-family:'Crimson Text',serif;font-size:13.5px;color:#8a8778;margin:12px 0 0;"><a href="/newsletter-archive.html" style="color:#8a8778;text-decoration:underline;">Browse past issues &rarr;</a></p>
+<div id="nl-anchor" style="background:#101c33;border-bottom:1px solid rgba(201,169,110,0.35);padding:52px 20px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
+    </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" aria-label="Leave this anti-spam field blank" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#c1cadd;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
   </div>
 </div>
 
 <div style="padding:48px 40px;border-bottom:1px solid #3d4a60;background:#1a2135;">
   <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;max-width:1100px;margin:0 auto;">
     <div style="flex:1;min-width:320px;">
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">From Screen to Page</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 24px;">This Month's British TV Hub Book Pick</h2>
-      <a href="https://www.amazon.com/dp/1250122740?tag=britishtvhub-20" target="_blank" rel="nofollow sponsored" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:28px 32px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
+      <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">New Collection</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 24px;">The HarperCollins Agatha Christie Collection: 10 Essential Reads</h2>
+      <a href="/harpercollins-christie-collection.html" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:28px 32px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;">
         <div style="flex:1;min-width:220px;">
-          <div style="font-size:12px;color:#c9a96e;margin-bottom:8px;">&#128214; Behind Vera</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.3;">The Crow Trap</h3>
-          <p style="font-family:'Crimson Text',serif;font-size:15.5px;color:#c8c0a8;line-height:1.6;margin:0;">The novel that introduced Vera Stanhope.</p>
+          <div style="font-size:12px;color:#c9a96e;margin-bottom:8px;">&#128214; 10 Essential Reads</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#e8dfc8;margin:0 0 10px;line-height:1.3;">Murder at the Grand Alpine Hotel &amp; More</h3>
+          <p style="font-family:'Crimson Text',serif;font-size:15.5px;color:#c8c0a8;line-height:1.6;margin:0;">Ten HarperCollins titles worth having on your shelf — from the brand-new Miss Marple continuation novel to the bestselling mystery of all time.</p>
         </div>
-        <span style="display:inline-block;flex-shrink:0;font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:12px 22px;border-radius:2px;">Start Reading &rarr;</span>
+        <span style="display:inline-block;flex-shrink:0;font-family:'Raleway',sans-serif;font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:12px 22px;border-radius:2px;">Explore the Collection &rarr;</span>
       </a>
-      <div style="margin-top:20px;">
-        <a href="/books" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;text-decoration:none;background:transparent;border:1px solid #c9a96e;padding:11px 22px;display:inline-block;">Explore Books Behind the Shows &rarr;</a>
-      </div>
     </div>
     <div style="flex:1;min-width:320px;max-width:480px;">
-      <img loading="lazy" src="/book-pick-cozy-mug.webp" alt="A British TV Hub mug of tea on a windowsill on a rainy evening, with candles and fairy lights" style="width:100%;height:auto;display:block;border-radius:12px;border:1px solid #3d4a60;">
+      <a href="/harpercollins-christie-collection.html">
+      <img loading="lazy" src="/orient-express-cover.jpg" alt="Murder on the Orient Express book cover by Agatha Christie" style="width:100%;height:auto;max-height:400px;display:block;margin:0 auto;border-radius:12px;border:1px solid #3d4a60;object-fit:contain;background:#0d1830;">
+      </a>
     </div>
   </div>
 </div>
 
 
 
-<div style="padding:56px 40px;border-bottom:1px solid #3d4a60;background:#1a2135;text-align:center;">
-  <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Real Fans, Real Conversations</div>
+<div style="padding:56px 40px 36px;border-bottom:1px solid #3d4a60;background:#1a2135;text-align:center;">
+  <div style="font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Real Fans, Real Conversations</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:32px;font-weight:400;color:#e8dfc8;margin:0 0 12px;">What British TV Fans Are Talking About Right Now</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 auto 24px;max-width:560px;">Live from British TV Hub's Facebook page — the latest posts and the conversation happening around them, right now.</p>
-  <div style="margin-bottom:28px;">
-    <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#1a2135;background:#c9a96e;padding:13px 26px;display:inline-block;border-radius:2px;text-decoration:none;">Join the Conversation &rarr;</a>
-  </div>
+  <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.6;margin:0 auto 28px;max-width:560px;">Live from British TV Hub's Facebook page &mdash; the latest posts and the conversation happening around them, right now.</p>
   <div style="display:flex;justify-content:center;">
-    <div style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:16px;max-width:520px;width:100%;overflow:hidden;">
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v19.0"></script>
-      <div class="fb-page"
-           data-href="https://www.facebook.com/britishtelevisionhub"
-           data-tabs="timeline"
-           data-width="488"
-           data-height="600"
-           data-small-header="false"
-           data-adapt-container-width="true"
-           data-hide-cover="false"
-           data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/britishtelevisionhub" class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/britishtelevisionhub">British TV Dramas and Mysteries</a>
-        </blockquote>
-      </div>
-    </div>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbritishtelevisionhub&amp;tabs=timeline&amp;width=500&amp;height=215&amp;small_header=false&amp;hide_cover=false&amp;show_facepile=true&amp;locale=en_US"
+      width="500" height="215" style="border:none;overflow:hidden;max-width:100%;border-radius:12px;"
+      scrolling="no" frameborder="0" allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      loading="lazy" title="British TV Hub Facebook Page"></iframe>
   </div>
+  <p style="margin:18px 0 0;"><a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Follow British TV Dramas and Mysteries on Facebook &rarr;</a></p>
 </div>
 
 
 
 
 <div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
-  <div style="max-width:720px;margin:0 auto;">
+  <div style="max-width:860px;margin:0 auto;">
     <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 32px;">Stay Connected</div>
 
     <!-- Two-column row: Install as App | Bookmark -->
@@ -1806,9 +2024,9 @@ document.addEventListener('click', function(e){
       <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
 
       <div style="flex:1;text-align:center;padding:0 24px;">
-        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
+        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Share British TV Hub with a Friend</h3>
         <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
-        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
+        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
         <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
       </div>
     </div>
@@ -1826,10 +2044,10 @@ document.addEventListener('click', function(e){
   <style>@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
   <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
     <div>
-      <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
+      <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/assets/perf/footer-teacup-mark-99-81e0ca9b50.webp" alt="British TV Hub" width="34" height="31" style="display:block;" decoding="async"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
-      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:14px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Explore</div>
@@ -1850,13 +2068,12 @@ document.addEventListener('click', function(e){
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
       <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
-      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
       <div style="display:flex;gap:10px;">
         <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
         <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
       </div>
     </div>
   </div>
@@ -1866,15 +2083,16 @@ document.addEventListener('click', function(e){
   </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#c1cadd;letter-spacing:0.5px;margin-bottom:10px;">
       © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
-      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
-      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
-      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
-      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
-      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+      <a href="/about.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">FAQ</a>&middot;
+      <a href="/accessibility-statement.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Accessibility</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#c1cadd;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 
@@ -1886,9 +2104,6 @@ document.addEventListener('click', function(e){
   document.querySelectorAll('.js-year').forEach(function(el) { el.textContent = year; });
 })();
 </script>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 <!-- Register Service Worker -->
 <script>
   if ('serviceWorker' in navigator) {
@@ -1898,20 +2113,28 @@ document.addEventListener('click', function(e){
     });
   }
 </script>
-<button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
+<button id="backToTop" onclick="scrollToTop()" title="Back to top" aria-label="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);">↑</button>
 
 <script>
 // Show/hide back-to-top button
-window.addEventListener('scroll', function() {
-  const backToTop = document.getElementById('backToTop');
-  if (window.pageYOffset > 300) {
-    backToTop.style.display = 'block';
-    backToTop.style.opacity = '1';
-  } else {
-    backToTop.style.display = 'none';
-    backToTop.style.opacity = '0';
-  }
-});
+(function () {
+  var backToTop = document.getElementById('backToTop');
+  var wasVisible = false;
+  var scheduled = false;
+  window.addEventListener('scroll', function () {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(function () {
+      var visible = window.scrollY > 300;
+      if (visible !== wasVisible) {
+        backToTop.style.display = visible ? 'block' : 'none';
+        backToTop.style.opacity = visible ? '1' : '0';
+        wasVisible = visible;
+      }
+      scheduled = false;
+    });
+  }, { passive: true });
+})();
 
 // Smooth scroll to top
 function scrollToTop() {
@@ -1964,6 +2187,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+</script>
+
+<script src="/watchlist-guides.js" defer></script>
+<script src="/watchlist.js" defer></script>
+<script defer>
+(function(){
+  function init(){
+    if(!window.BTVHWatchlist) return;
+    var all = window.BTVHWatchlist.getAll();
+    var watchingSlugs = Object.keys(all).filter(function(slug){ return all[slug] === 'watching'; });
+    if(watchingSlugs.length === 0) return;
+
+    // Build a slug -> title lookup from the guide map (shows with a dedicated /shows/ page).
+    // A show tracked from the wider 650+ database that has no guide page yet is skipped here
+    // rather than shown without a working link; the full Watch List page handles every show.
+    var guides = window.BTVH_GUIDES || {};
+    var bySlug = {};
+    Object.keys(guides).forEach(function(title){ bySlug[guides[title]] = title; });
+
+    var slug = watchingSlugs.find(function(s){ return bySlug[s]; });
+    if(!slug) return;
+
+    var title = bySlug[slug];
+    var wrap = document.getElementById('cyj-wrap');
+    var titleEl = document.getElementById('cyj-title');
+    var subEl = document.getElementById('cyj-sub');
+    var cta = document.getElementById('cyj-cta');
+    if(!wrap || !titleEl || !cta) return;
+
+    titleEl.textContent = 'Because You’re Watching ' + title;
+    if(subEl){
+      subEl.textContent = watchingSlugs.length > 1
+        ? 'Pick up where you left off, or see everything else on your list.'
+        : 'Pick up where you left off, or explore the full guide.';
+    }
+    cta.href = '/shows/' + slug + '.html';
+    wrap.style.display = 'block';
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
 </body>
 </html>

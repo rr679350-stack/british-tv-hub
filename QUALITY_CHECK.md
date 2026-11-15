@@ -188,6 +188,14 @@ Acorn TV: link resolves
 Audible: link resolves (if any Audible links exist on the site)
 Kindle: link resolves (if any Kindle-specific links exist)
 
+CozyTVCompanion (Etsy shop) product sections — "From the CozyTVCompanion
+Shop" cards on top10.html, best-british-mystery-shows-2026.html, cozy.html,
+and fall-preview-2026.html:
+- Etsy listing link resolves (not deactivated/sold out)
+- Product photo loads
+- "Treat Yourself →" CTA text and shop-tag label unchanged
+- Price/listing details not stale if referenced in copy (none currently are)
+
 ## PART 9 — Editorial accuracy: banned/superlative language
 
 Remove or replace unsupported superlatives. Only flag when a superlative
@@ -630,6 +638,53 @@ British TV Hub Editorial Certification
 - Overall site health score:
 - Date completed:
 
+## PART 36 — Spoiler Policy
+
+A spoiler is anything that reveals how a mystery, plot thread, or season
+resolves — not that one exists. The line: setup and premise are always
+fair game; resolution is not, unless it's clearly labeled.
+
+**Never spoiler, anywhere on the site, with no exception:**
+- Meta descriptions, OG/Twitter descriptions, and schema.org
+  `description` fields (these feed search snippets and AI Overview
+  extraction, so a spoiler here reaches someone who hasn't even
+  clicked through)
+- Hero copy, intro paragraphs, and "Short Answer" hub summaries
+- Card blurbs on index/hub pages (Shows Index, Hidden Gems, Shows Like
+  X, cozy.html, etc.)
+- FAQ answers, unless the question itself explicitly asks about an
+  ending or reveal (e.g. "Who is the killer in Series 1?") — and even
+  then, a spoiler-free answer that points to a labeled spoiler section
+  is preferred over answering it directly in the FAQ
+- Episode-ranker entries (`show-desc` text on ranked-episode cards):
+  describe what's compelling about the setup, tone, or craft of an
+  episode, never how its case resolves
+
+**What's always safe to state (not a spoiler):**
+- That a mystery/death/disappearance happens (the premise)
+- Setting, time period, tone, genre
+- Returning vs. new characters, casting
+- That a season ends on a cliffhanger (without saying what it is)
+- Real-world facts: awards, air dates, episode counts, source novel
+  info
+
+**Where deeper discussion is allowed:**
+A dedicated, clearly headed section (e.g. "Episode Guide," "Season
+Recap," "What Happens in the Finale") may discuss plot resolution in
+depth, but only when:
+- It sits behind a heading that names it as such, not buried mid-page
+- It's preceded by a visible spoiler warning (standard wording: "Spoilers
+  ahead — the rest of this section discusses how the series ends.")
+- It's never the first thing a reader encounters on the page (intro
+  copy above it must stay spoiler-free per the rules above)
+
+**Series finales and whodunit reveals are the highest-risk content.**
+When writing or reviewing a finale recap or an episode-ranker entry for
+a season's last episode, check specifically: does this sentence reveal
+who did it, who died, or how the central mystery resolves? If yes, it
+belongs only inside a labeled spoiler section, never in the surrounding
+page copy.
+
 ## Guiding principle
 
 Accuracy is more important than speed. Original writing is more
@@ -706,7 +761,28 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: September 13, 2026 (extensive accuracy audit covering
+Last full sitewide run: October 7, 2026 (post-accessibility-rollout integrity
+check of all 202 pages, triggered by a large stretch of automated/ChatGPT-assisted
+edits — internal link audit against the filesystem and vercel.json rewrites/redirects,
+insecure-link check, affiliate-tag audit for Amazon/BritBox/Acorn, JSON/JSON-LD
+validity, duplicate H1/ID check, quotation and superlative sweeps, placeholder/
+merge-artifact scan on the 11 most-touched pages, and a 12-page keyboard-navigation
+test — found one pre-existing broken link (partner.html's /media-kit.pdf 404,
+not caused by the recent work) and one minor non-affiliate BritBox link on the
+Sunday Picks newsletter template; everything else came back clean, confirming
+the accessibility fixes and other automated work introduced no regressions).
+
+Previous full sitewide run: October 4, 2026 (technical SEO sweep of all 202 pages —
+titles, descriptions, H1s, canonicals, JSON-LD validity, internal links/images,
+alt text, sitemap coverage, GA ID, affiliate tags; quotation and superlative
+sweeps; BritBox-UK database check; time-sensitive status sweep with ~20 claims
+verified against current sources — corrected stale "currently filming/airing"
+status for Sherwood, Shetland, Beyond Paradise, Silent Witness, Lynley,
+Unforgotten, Midsomer Murders and Return to Paradise, softened Sherwood's
+manhunt claim to the sourced Nottinghamshire wording, added deal-days.html to
+the sitemap).
+
+Previous full sitewide run: September 13, 2026 (extensive accuracy audit covering
 quotation-rule compliance, banned-superlative sweep, broken internal link/image
 check, nav/footer/GA-ID integrity, monthly freshness, BritBox-UK false-listing
 check, and spot-verification of masterpiece2026.html, fall-preview-2026.html,
@@ -714,7 +790,7 @@ and Bookish Season 2 claims against current sources — fixed an unattributed
 "largest" superlative on streaming.html and corrected this file's stale
 footer-check filename, footer-brand.webp → footer-teacup-mark.png).
 
-Previous full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
+Earlier full sitewide run: August 9, 2026 (accuracy audit covering quotation-rule
 compliance, banned-superlative sweep, link/nav/footer/GA-ID integrity, monthly
 freshness, BritBox-UK false-listing check, fact-check-log reconciliation, and
 spot-verification of BritBox/Acorn "What's New" claims for August 2026 — see

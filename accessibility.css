@@ -1,0 +1,157 @@
+/* Shared keyboard access and readability support. */
+.hub-main-landmark { display: contents; }
+.hub-skip-link {
+  position: fixed; top: 8px; left: 8px; z-index: 2147483647;
+  padding: 12px 18px; background: #f0e8d4; color: #1a2135;
+  font: 700 16px/1.4 Arial, sans-serif; border: 2px solid #1a2135;
+  border-radius: 4px; transform: translateY(-160%);
+}
+.hub-skip-link:focus { transform: translateY(0); }
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #c9a96e !important; outline-offset: 3px !important;
+  box-shadow: 0 0 0 5px #1a2135 !important;
+}
+[id] { scroll-margin-top: 110px; }
+.scroll-reveal, .scroll-reveal.visible { opacity: 1 !important; transform: none !important; }
+nav.site-nav-std .nav-sub { opacity: 1 !important; color: #c1cadd !important; }
+footer a[aria-label] { color: #e8dfc8 !important; }
+footer p, footer .footer-nav a, .footer-brand, .footer-legal,
+.newsletter-note, .nl-note, .aside-label, .aside-key, .aside-link-note,
+.show-meta, .tag, .show-badge, .hero-meta, .hero-eyebrow,
+.section-header-eyebrow, .jump-label, .nav-search-empty,
+.fds-service-tag, .fds-service-group-label, .fds-verdict {
+  font-size: 14px !important;
+}
+.breadcrumb-separator, .breadcrumb > span:not([class]) { color: #e3c890 !important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
+
+/* Breadcrumb styles are also emitted in some page bodies. Use higher specificity. */
+.breadcrumb .breadcrumb-separator, .breadcrumb > span.breadcrumb-separator,
+.breadcrumb > span:not([class]), .show-meta > span { color: #e3c890 !important; }
+
+/* Override breadcrumb separator rules emitted later in page-body styles. */
+html body .breadcrumb > span:not([class]),
+html body .breadcrumb .breadcrumb-separator { color: #e3c890 !important; }
+
+/* Rendered-audit readability and keyboard target fixes. */
+html body .tag, html body .show-badge, html body .genre-tag, html body .cta-block-sub { opacity: 1 !important; }
+html body .nav-search-toggle { opacity: 1 !important; color: #f0e8d4 !important; background: #1e2433 !important; }
+html body #backToTop { right: 100px !important; bottom: calc(24px + env(safe-area-inset-bottom)) !important; min-width: 44px; min-height: 44px; z-index: 1000 !important; }
+
+/* Direct video links remain outside the player's aspect-ratio container. */
+html body .hub-video-caption { margin: 8px 0 18px; text-align: center; font: 14px/1.6 Arial, sans-serif; }
+html body .hub-video-caption a { display: inline-block; padding: 6px 8px; color: #f0e8d4 !important; text-decoration: underline !important; text-underline-offset: 3px; }
+html body .hub-video-new-tab { font-size: 12px; }
+
+/* Visible, keyboard-accessible direct YouTube buttons. */
+html body a.hub-youtube-button, html body .hub-video-caption a {
+  display: inline-block !important; box-sizing: border-box;
+  background: #c9a96e !important; color: #1a2135 !important;
+  padding: 12px 20px !important; min-height: 44px; border: 2px solid #c9a96e;
+  border-radius: 4px; font: 700 16px/1.5 Arial, sans-serif !important;
+  text-decoration: none !important; letter-spacing: normal !important;
+  text-transform: none !important;
+}
+html body a.hub-youtube-button:hover, html body .hub-video-caption a:hover { background: #e3c890 !important; border-color: #e3c890; }
+html body .hub-video-new-tab { display: block; font-size: 14px; font-weight: 400; }
+
+/* High-readability informational callouts. */
+html body .streaming-country-note {
+  margin: 0 0 28px !important;
+  padding: 14px 16px !important;
+  background: #f0e8d4 !important;
+  color: #1a2135 !important;
+  border-left: 4px solid #c9a96e;
+  border-radius: 4px;
+  font: 500 16px/1.6 Arial, sans-serif !important;
+  font-style: normal !important;
+}
+html body .streaming-country-note strong { font-weight: 700; }
+
+/* Reflow and zoom resilience for media and long content. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html body img, html body video, html body iframe, html body canvas, html body svg {
+  max-width: 100%;
+}
+html body pre, html body code {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+html body pre { overflow-x: auto; }
+html body input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]):not(.lcw-input),
+html body select,
+html body textarea {
+  min-height: 44px;
+}
+/* .lcw-input (Ludwig crossword letter cells) is excluded above: these are small
+   square cells sized by their own grid track, not free-standing text fields, and
+   the 44px floor was stretching them into non-square boxes. Their own CSS
+   (shows/ludwig.html) keeps them at a 24px minimum instead. */
+
+/* 400% zoom / 320px reflow fixes found by the sitewide audit. */
+@media (max-width: 360px) {
+  html body .page-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  html body #nl-anchor {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  html body .nl-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  html body .show-aside .aside-row {
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+  html body .show-aside .aside-val {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+  html body .section,
+  html body .card,
+  html body .badge-row {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  html body .section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  html body .badge-row {
+    overflow-wrap: anywhere !important;
+  }
+}
+
+/* Strong keyboard focus for embedded video and its external alternative. */
+html body iframe[src*="youtube.com/embed/"]:focus-visible,
+html body iframe[src*="youtube-nocookie.com/embed/"]:focus-visible {
+  outline: 4px solid #f0e8d4 !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 7px #1a2135 !important;
+  border-radius: 3px;
+}
+html body .hub-video-caption a:focus-visible,
+html body a.hub-youtube-button:focus-visible {
+  outline: 4px solid #f0e8d4 !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 7px #1a2135 !important;
+}

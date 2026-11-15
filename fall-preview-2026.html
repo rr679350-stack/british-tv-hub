@@ -22,12 +22,22 @@ gtag('config', 'G-P1L8CVNKS6');
     var a = findLink(e.target);
     if(!a) return;
     var href = a.href || '';
-    if(href.indexOf('britbox.com') > -1 || href.indexOf('gp/video/channel/c984b526') > -1){
+    if(href.indexOf('etsy.com') > -1){
+      gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('nordvpn.com') > -1){
+      gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('c984b526') > -1){
       gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('gp/video/channel/c8382769') > -1){
+    } else if(href.indexOf('c8382769') > -1){
       gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('cf297d60') > -1){
+      gtag('event','affiliate_click',{service:'pbs_masterpiece',link_url:href,page_path:location.pathname});
     } else if(href.indexOf('pbs.org') > -1){
       gtag('event','pbs_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('campaign-archive.com') > -1){
+      gtag('event','newsletter_archive_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('amazon.com') > -1 || href.indexOf('amzn.to') > -1){
+      gtag('event','amazon_click',{link_url:href,page_path:location.pathname});
     }
   }, true);
 })();
@@ -39,13 +49,13 @@ gtag('config', 'G-P1L8CVNKS6');
 <meta property="og:url" content="https://britishtvhub.com/fall-preview-2026.html">
 <meta property="og:title" content="Autumn 2026 TV Preview | British TV Hub">
 <meta property="og:description" content="Every new British TV premiere coming this autumn — Tommy & Tuppence, Ludwig, Death Valley, Marlow Murder Club, Maigret and more — with dates and where to watch.">
-<meta property="og:image" content="https://britishtvhub.com/fall-preview-tommy-tuppence-keyart.webp">
-<meta property="og:image:width" content="660">
-<meta property="og:image:height" content="371">
+<meta property="og:image" content="https://britishtvhub.com/fall-preview-blue-lights-s4-hero.webp">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="1200">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Autumn 2026 TV Preview | British TV Hub">
 <meta name="twitter:description" content="Every new British TV premiere coming this autumn — Tommy & Tuppence, Ludwig, Death Valley, Marlow Murder Club, Maigret and more — with dates and where to watch.">
-<meta name="twitter:image" content="https://britishtvhub.com/fall-preview-tommy-tuppence-keyart.webp">
+<meta name="twitter:image" content="https://britishtvhub.com/fall-preview-blue-lights-s4-hero.webp">
 <meta property="og:site_name" content="British TV Hub">
 <meta property="og:locale" content="en_US">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -62,7 +72,7 @@ gtag('config', 'G-P1L8CVNKS6');
   "name": "Autumn 2026 TV Preview: BritBox, Acorn & PBS | British TV Hub",
   "description": "Every new British TV premiere this autumn — Tommy & Tuppence, Ludwig, Death Valley, Marlow Murder Club, Maigret, and more — dates and where to watch.",
   "url": "https://britishtvhub.com/fall-preview-2026.html",
-  "dateModified": "2026-08-23",
+  "dateModified": "2026-10-12",
   "isPartOf": {
     "@type": "WebSite",
     "name": "British TV Hub",
@@ -78,7 +88,7 @@ gtag('config', 'G-P1L8CVNKS6');
   "name": "British TV Autumn 2026 Preview",
   "description": "New British TV seasons and premieres arriving on BritBox, Acorn TV, and PBS Masterpiece this autumn.",
   "url": "https://britishtvhub.com/fall-preview-2026.html",
-  "numberOfItems": 14,
+  "numberOfItems": 17,
   "itemListElement": [
     {"@type":"ListItem","position":1,"item":{"@type":"TVSeries","name":"Agatha Christie's Tommy & Tuppence","description":"A contemporary reimagining of Christie's crime-solving couple, premiering on BritBox on the writer's birthday.","startDate":"2026-09-15","numberOfSeasons":1,"actor":[{"@type":"Person","name":"Antonia Thomas"},{"@type":"Person","name":"Josh Dylan"}],"genre":["Mystery","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":2,"item":{"@type":"TVSeries","name":"Cooper and Fry","description":"A local Peak District detective and a guarded newcomer from the city are paired up to investigate a string of deaths around the town of Edendale.","startDate":"2026-09-10","numberOfSeasons":1,"actor":[{"@type":"Person","name":"Robert James-Collier"},{"@type":"Person","name":"Mandip Gill"}],"genre":["Mystery","Crime"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
@@ -92,8 +102,11 @@ gtag('config', 'G-P1L8CVNKS6');
     {"@type":"ListItem","position":10,"item":{"@type":"TVSeries","name":"The Marlow Murder Club","description":"Three unlikely amateur sleuths solve murders in the riverside town of Marlow.","startDate":"2026-09-06","numberOfSeasons":3,"actor":[{"@type":"Person","name":"Samantha Bond"}],"genre":["Mystery","Cozy Mystery"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":11,"item":{"@type":"TVSeries","name":"Marble Hall Murders","description":"Editor Susan Ryeland is pulled into a real murder case while working on a continuation of the Atticus Pünd novels, in the final chapter of Anthony Horowitz's trilogy.","startDate":"2026-09-06","numberOfSeasons":1,"actor":[{"@type":"Person","name":"Lesley Manville"}],"genre":["Mystery"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
     {"@type":"ListItem","position":12,"item":{"@type":"TVSeries","name":"Trespasses","description":"A forbidden-love story set against the Troubles in 1970s Belfast, based on Louise Kennedy's bestselling debut novel.","startDate":"2026-09-20","numberOfSeasons":1,"actor":[{"@type":"Person","name":"Lola Petticrew"},{"@type":"Person","name":"Tom Cullen"},{"@type":"Person","name":"Gillian Anderson"}],"genre":["Drama","Period Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
-    {"@type":"ListItem","position":13,"item":{"@type":"TVSeries","name":"Maigret","description":"Benjamin Wainwright returns as Chief Inspector Jules Maigret, facing internal turmoil at La Brigade Criminelle across three new case adaptations.","startDate":"2026-10-18","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Benjamin Wainwright"}],"genre":["Mystery","Crime"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
-    {"@type":"ListItem","position":14,"item":{"@type":"TVSeries","name":"The Gold","description":"Hugh Bonneville and Jack Lowden return for the final season, chasing the other half of the Brink's-Mat gold into international money laundering and organized crime.","startDate":"2026-10-18","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Hugh Bonneville"},{"@type":"Person","name":"Jack Lowden"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}}
+    {"@type":"ListItem","position":13,"item":{"@type":"TVSeries","name":"Professor T","description":"Ben Miller returns as Cambridge criminologist Jasper Tempest for a fifth season of six new mysteries, as a suspicious death at a secluded spa threatens his developing relationship with Dr. Helena Goldberg.","startDate":"2026-10-18","numberOfSeasons":5,"actor":[{"@type":"Person","name":"Ben Miller"}],"genre":["Mystery","Crime"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":14,"item":{"@type":"TVSeries","name":"Maigret","description":"Benjamin Wainwright returns as Chief Inspector Jules Maigret, facing internal turmoil at La Brigade Criminelle across three new case adaptations.","startDate":"2026-10-18","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Benjamin Wainwright"}],"genre":["Mystery","Crime"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":15,"item":{"@type":"TVSeries","name":"The Gold","description":"Hugh Bonneville and Jack Lowden return for the final season, chasing the other half of the Brink's-Mat gold into international money laundering and organized crime.","startDate":"2026-10-18","numberOfSeasons":2,"actor":[{"@type":"Person","name":"Hugh Bonneville"},{"@type":"Person","name":"Jack Lowden"}],"genre":["Crime","Drama"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":16,"item":{"@type":"TVSeries","name":"The Red King","description":"A police sergeant reassigned to a remote island reopens the disappearance of a teenage boy and uncovers the island's secretive religious history.","actor":[{"@type":"Person","name":"Anjli Mohindra"}],"genre":["Crime","Thriller"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}},
+    {"@type":"ListItem","position":17,"item":{"@type":"TVSeries","name":"Wolf","description":"DI Jack Caffery, haunted by the loss of his younger brother, is drawn into a wealthy family's nightmare in this adaptation of Mo Hayder's novels.","actor":[{"@type":"Person","name":"Ukweli Roach"},{"@type":"Person","name":"Juliet Stevenson"}],"genre":["Crime","Thriller"],"countryOfOrigin":{"@type":"Country","name":"United Kingdom"}}}
   ]
 }
 </script>
@@ -118,15 +131,15 @@ gtag('config', 'G-P1L8CVNKS6');
       "name": "What new British shows are premiering in autumn 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Autumn 2026 brings Agatha Christie's Tommy & Tuppence, Cooper and Fry, Showtrial Season 2, Ludwig Season 2, Death Valley Season 2, Blue Lights Season 4 and Time Season 3 to BritBox; Blue Murder Motel, The Assassin and Signora Volpe Season 3 to Acorn TV; and The Marlow Murder Club Season 3, Marble Hall Murders, Trespasses, Maigret Season 2 and The Gold Season 2 to PBS Masterpiece."
+        "text": "Autumn 2026 brings Agatha Christie's Tommy & Tuppence, Cooper and Fry, Showtrial Season 2, Ludwig Season 2, Death Valley Season 2, Blue Lights Season 4 and Time Season 3 to BritBox; Blue Murder Motel, The Assassin and Signora Volpe Season 3 to Acorn TV, with The Red King and Wolf new to Acorn TV in late October; and The Marlow Murder Club Season 3, Marble Hall Murders, Trespasses, Professor T Season 5, Maigret Season 2 and The Gold Season 2 to PBS Masterpiece."
       }
     },
     {
       "@type": "Question",
-      "name": "When does Tommy & Tuppence premiere?",
+      "name": "When did Tommy & Tuppence premiere?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Agatha Christie's Tommy & Tuppence premieres September 15, 2026 on BritBox, timed to Agatha Christie's birthday. It's a six-part series, with two episodes airing on premiere day followed by one new episode weekly."
+        "text": "Agatha Christie's Tommy & Tuppence premiered September 15, 2026 on BritBox, timed to Agatha Christie's birthday. It's a six-part series that launched with two episodes, followed by one new episode weekly."
       }
     },
     {
@@ -135,6 +148,14 @@ gtag('config', 'G-P1L8CVNKS6');
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Both premiered September 6, 2026 on PBS Masterpiece, back to back on the same Sunday night, and run weekly through October 11."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Did Professor T, Maigret, and The Gold all premiere the same night?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes - Professor T Season 5, Maigret Season 2, and The Gold Season 2 all had their broadcast premieres on PBS Masterpiece on October 18, 2026. All three are already streaming on PBS Passport."
       }
     }
   ]
@@ -161,7 +182,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .fp-platform-heading{max-width:760px;margin:3.5rem auto 2rem;text-align:center;}
   .fp-section-banner{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:7px 18px;border-radius:2px;margin-bottom:1rem;}
   .fp-platform-heading h2{font-family:'Playfair Display',serif;font-size:2rem;color:var(--cream);margin:0 0 0.5rem;}
-  .fp-platform-heading p{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted,#9090a8);margin:0;}
+  .fp-platform-heading p{font-family:'Crimson Text',serif;font-size:16px;color:var(--text-muted, #c1cadd);margin:0;}
   .fp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto 1rem;}
   .fp-card{background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;display:flex;flex-direction:column;height:100%;}
   .fp-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
@@ -175,8 +196,8 @@ gtag('config', 'G-P1L8CVNKS6');
   .fp-card-body > .fp-card-btn{margin-top:auto;}
   .fp-card-flagship{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold);}
   .fp-flagship-badge{display:inline-block;font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:5px 10px;border-radius:2px;margin-bottom:12px;}
-  .fp-card-genre{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted,#9090a8);margin:0 0 18px;}
-  .fp-tba-note{font-family:'Crimson Text',serif;font-style:italic;font-size:13px;color:var(--text-muted,#9090a8);margin:0 0 18px;}
+  .fp-card-genre{font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted, #c1cadd);margin:0 0 18px;}
+  .fp-tba-note{font-family:'Crimson Text',serif;font-style:italic;font-size:13px;color:var(--text-muted, #c1cadd);margin:0 0 18px;}
   .bts-section{background:#141a2a;padding:0 24px 60px;margin-top:4rem;border-top:3px solid var(--gold);position:relative;}
   .bts-section::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:3px;background:var(--gold-light);}
   .bts-badge-wrap{display:flex;justify-content:center;margin-top:-1px;}
@@ -187,7 +208,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .bts-recurring-tag{display:inline-block;margin-left:10px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#1a2135;background:var(--gold);border-radius:20px;padding:4px 12px;vertical-align:middle;}
   .bts-header h2{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--cream);margin:0 0 0.75rem;}
   .bts-header p{font-family:'Crimson Text',serif;font-size:17px;color:var(--text-light);line-height:1.6;margin:0;}
-  .bts-tagline{text-align:center;max-width:640px;margin:1.25rem auto 3rem;font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted,#9090a8);line-height:1.6;padding-top:1.25rem;border-top:1px solid rgba(201,168,76,0.2);}
+  .bts-tagline{text-align:center;max-width:640px;margin:1.25rem auto 3rem;font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted, #c1cadd);line-height:1.6;padding-top:1.25rem;border-top:1px solid rgba(201,168,76,0.2);}
   .bts-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start;margin-bottom:3rem;}
   @media (max-width:800px){.bts-grid{grid-template-columns:1fr;}}
   .bts-grid img{width:100%;border-radius:12px;display:block;}
@@ -196,7 +217,7 @@ gtag('config', 'G-P1L8CVNKS6');
   .bts-cast{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:1.5rem;}
   .bts-cast-item{background:#232c47;border:1px solid rgba(201,168,76,0.15);border-radius:8px;padding:16px 18px;}
   .bts-cast-name{font-family:'Raleway',sans-serif;font-size:13px;font-weight:600;color:var(--gold-light);margin-bottom:4px;}
-  .bts-cast-role{font-family:'Crimson Text',serif;font-size:13.5px;color:var(--text-muted,#9090a8);}
+  .bts-cast-role{font-family:'Crimson Text',serif;font-size:13.5px;color:var(--text-muted, #c1cadd);}
   .bts-book-card{background:#232c47;border:1px solid rgba(201,168,76,0.25);border-radius:12px;padding:28px 30px;margin-top:2rem;}
   .bts-book-card h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--cream);margin:0 0 8px;}
   .bts-book-card p{font-family:'Crimson Text',serif;font-size:15px;color:var(--text-light);line-height:1.65;margin:0 0 16px;}
@@ -207,16 +228,16 @@ gtag('config', 'G-P1L8CVNKS6');
   .bts-book-btn{display:inline-block;font-family:'Raleway',sans-serif;font-size: 11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding: 12px 24px;border-radius:2px;text-decoration:none;}
   .bts-photo-break{margin:3rem 0;}
   .bts-photo-break img{width:100%;max-height:480px;object-fit:cover;border-radius:12px;display:block;}
-  .bts-photo-caption{font-family:'Crimson Text',serif;font-style:italic;font-size:16px;color:var(--text-muted,#9090a8);text-align:center;margin-top:10px;}
+  .bts-photo-caption{font-family:'Crimson Text',serif;font-style:italic;font-size:16px;color:var(--text-muted, #c1cadd);text-align:center;margin-top:10px;}
   .cr-heading{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--cream);margin:0 0 10px;}
-  .cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted,#9090a8);margin:0 0 36px;}
+  .cr-sub{font-family:'Crimson Text',serif;font-style:italic;font-size:15px;color:var(--text-muted, #c1cadd);margin:0 0 36px;}
   .cr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;}
   @media (max-width:860px){.cr-grid{grid-template-columns:1fr;}}
   .cr-card{display:flex;flex-direction:column;height:100%;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;}
   .cr-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 12px 32px rgba(0,0,0,0.3);}
   .cr-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;}
   .cr-title{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--cream);margin:0 0 10px;line-height:1.3;}
-  .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;}
+  .cr-desc{font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted, #c1cadd);line-height:1.55;margin:0 0 16px;}
   .cr-link{display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size: 11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding: 12px 24px;border-radius:2px;text-decoration:none;}
 </style>
 
@@ -345,8 +366,12 @@ gtag('config', 'G-P1L8CVNKS6');
   }
 }
 </style>
+<link rel="stylesheet" href="/hub-cards.css">
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
@@ -373,45 +398,27 @@ gtag('config', 'G-P1L8CVNKS6');
             <div class="nav-dropdown-label">Browse</div>
             <a href="/genres.html">By Genre</a>
             <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
             <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/country-house-mysteries.html">Murder at the Manor</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
             <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
+            <a href="/shows-like.html">Find Similar Shows</a>
             <a href="/this-week.html">This Week in British TV</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
           </div>
           <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/gift-guide-hub.html">All Gift Guides</a>
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
           </div>
         </div>
       </div>
@@ -422,15 +429,16 @@ gtag('config', 'G-P1L8CVNKS6');
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <input aria-label="Search shows, books and guides" type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
 </div>
     </div>
 </nav>
+<div role="main" class="hub-main-landmark">
 <script>
 function toggleMobileNav(){
   var nav = document.querySelector('nav.site-nav-std');
@@ -466,13 +474,26 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
+<style>
+/* Ludwig hero: text and photo never overlap */
+.fp-hero{background:#0e1424;}
+.fp-hero .fp-hero-img{left:auto;right:0;width:52%;object-position:55% 10%;filter:none;}
+.fp-hero .fp-hero-overlay{left:auto;right:0;width:52%;background:linear-gradient(90deg,#0e1424 0%,rgba(14,20,36,0.35) 30%,rgba(14,20,36,0) 60%);}
+.fp-hero .fp-hero-inner{max-width:48%;}
+@media(max-width:900px){
+  .fp-hero{display:block;min-height:0;}
+  .fp-hero .fp-hero-img{position:relative;display:block;width:100%;height:300px;object-position:center 15%;}
+  .fp-hero .fp-hero-overlay{top:0;bottom:auto;width:100%;height:300px;background:linear-gradient(180deg,rgba(14,20,36,0) 55%,#0e1424 100%);}
+  .fp-hero .fp-hero-inner{max-width:100%;text-align:left;padding:24px 24px 36px;}
+}
+</style>
 <div class="fp-hero">
-  <img class="fp-hero-img" src="/fall-preview-tommy-tuppence-keyart.webp" alt="Agatha Christie's Tommy & Tuppence key art — Josh Dylan, Antonia Thomas, and Imelda Staunton, a BritBox Original">
+  <img class="fp-hero-img" src="/fall-preview-blue-lights-s4-hero.webp" alt="PSNI Constable Grace Ellis in Blue Lights Season 4">
   <div class="fp-hero-overlay"></div>
   <div class="fp-hero-inner">
     <div class="hero-eyebrow">Autumn Preview &middot; 2026</div>
-    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.2rem;">British TV Autumn 2026 Preview: BritBox, Acorn TV &amp; <em style="font-style:italic;color:var(--gold-light);">PBS Masterpiece</em></h1>
-    <p class="hero-intro">New seasons, new detectives, and one BritBox debut timed to Agatha Christie's own birthday. Here's our guide to the British mysteries and dramas coming to BritBox, Acorn TV, and PBS Masterpiece this autumn, with premiere dates and <a href="/streaming.html">where to watch British TV in the US</a>. Prefer something gentler? British TV Hub also keeps a running guide to <a href="/cozy-autumn-mysteries.html">cozy British mysteries for autumn</a>.</p>
+    <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.15;margin-bottom:1.2rem;" id="hub-content-start" tabindex="-1">British TV Autumn 2026 Preview: BritBox, Acorn TV &amp; <em style="font-style:italic;color:var(--gold-light);">PBS Masterpiece</em></h1>
+    <p class="hero-intro">Ludwig is back, new detectives are on the case, and old favorites return. Here&rsquo;s what&rsquo;s coming to BritBox, Acorn TV and PBS Masterpiece this autumn, with premiere dates and <a href="/streaming.html">where to watch in the US</a>.</p>
   </div>
 </div>
 
@@ -482,7 +503,6 @@ document.addEventListener('click', function(e){
     <a href="#britbox">BritBox</a>
     <a href="#acorn">Acorn TV</a>
     <a href="#masterpiece">PBS Masterpiece</a>
-    <a href="#beyond-the-stream">Beyond the Stream</a>
     <a href="#faq">FAQ</a>
     <a href="#nl-anchor">&#9993; Get Sunday Picks</a>
     <a href="/season-preview.html" style="background:transparent;color:#c9a96e;">All Season Previews &rarr;</a>
@@ -490,9 +510,7 @@ document.addEventListener('click', function(e){
   </div>
 </div>
 
-<div class="page-body">
-<p style="font-family:'Montserrat',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin:24px 0 0;">Curated and verified by British TV Hub &middot; Premiere dates checked October 2026</p>
-</div>
+<div class="page-body"></div>
 
 <div style="max-width:960px;margin:28px auto 0;padding:0 24px;">
   <div style="background:#101c33;border:1px solid rgba(201,169,110,0.35);border-radius:12px;padding:22px 28px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;">
@@ -515,53 +533,16 @@ document.addEventListener('click', function(e){
 <div class="fp-grid">
 
   <div class="fp-card fp-card-flagship">
-    <img class="fp-card-img" src="/fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="object-position:center 15%;">
+    <img class="fp-card-img" src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights Season 4 key art — Siân Brooke, Katherine Devlin, Nathan Braniff and cast, a BritBox Original" loading="lazy" style="object-fit:contain;background:#1a2135;">
     <div class="fp-card-body">
       <span class="fp-flagship-badge">British TV Hub First Look</span>
-      <div class="fp-card-date">Premieres October 13</div>
-      <h3 class="fp-card-title"><a href="/shows/ludwig.html" style="color:inherit;text-decoration:none;">Ludwig — Season 2</a></h3>
-      <p class="fp-card-desc">David Mitchell returns as puzzle-setter John Taylor, known as Ludwig, now an official police consultant tackling impossible crimes while continuing his search for his missing twin brother.</p>
+      <div class="fp-card-date">Premieres November 12 &middot; BritBox</div>
+      <h3 class="fp-card-title"><a href="/shows/blue-lights.html" style="color:inherit;text-decoration:none;">Blue Lights — Season 4</a></h3>
+      <p class="fp-card-desc">Blue Lights returns for a fourth series set three years into Grace, Annie, and Tommy's careers. Richard Dormer also returns as Gerry Cliff as the story revisits his murder trial and uncovers long-buried secrets within Belfast's police and criminal worlds.</p>
       <div class="fp-card-cta-row">
-        <a href="/shows/ludwig.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="/shows/blue-lights.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
         <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
       </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-cooper-fry-s1.webp" alt="Robert James-Collier as DC Ben Cooper and Mandip Gill as DC Diane Fry in Cooper and Fry" loading="lazy" style="object-position:center 30%;">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Streaming · New Episodes Thursdays</div>
-      <h3 class="fp-card-title"><a href="/shows/cooper-and-fry.html" style="color:inherit;text-decoration:none;">Cooper and Fry — Season 1</a></h3>
-      <p class="fp-card-desc">DC Ben Cooper, a local officer with deep roots in the Peak District, is paired with newcomer DC Diane Fry as they investigate crimes around the fictional town of Edendale. Robert James-Collier and Mandip Gill star.</p>
-      <div class="fp-card-cta-row">
-        <a href="/shows/cooper-and-fry.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" class="fp-card-btn" target="_blank" rel="noopener">Watch the Trailer &rarr;</a>
-        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-showtrial-s2.webp" alt="Showtrial Season 2 key art" loading="lazy">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Streaming &middot; New Episodes Thursdays</div>
-      <h3 class="fp-card-title">Showtrial &mdash; Season 2</h3>
-      <p class="fp-card-desc">When a prominent climate activist is left for dead in a hit-and-run, his dying accusation points to a police officer with a reason to want him silenced, and the five-part season follows the case from investigation through the courtroom. Showtrial is an anthology, so there's no need to have seen Season 1 first.</p>
-      <div class="fp-card-cta-row">
-        <a href="https://www.youtube.com/watch?v=9JRZ2PGrjio" class="fp-card-btn" target="_blank" rel="noopener">Watch the Trailer &rarr;</a>
-        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-tommy-tuppence-keyart.webp" alt="Agatha Christie's Tommy & Tuppence key art — a BritBox Original" loading="lazy" style="object-position:center 35%;">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Streaming &middot; New Episodes Tuesdays</div>
-      <h3 class="fp-card-title"><a href="/shows/tommy-and-tuppence.html" style="color:inherit;text-decoration:none;">Agatha Christie's Tommy & Tuppence</a></h3>
-      <p class="fp-card-desc">A modern-day reimagining of Christie's crime-solving duo, timed to premiere on the writer's own birthday. Antonia Thomas and Josh Dylan lead, with Imelda Staunton among the cast.</p>
-      <a href="/shows/tommy-and-tuppence.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
     </div>
   </div>
 
@@ -579,25 +560,61 @@ document.addEventListener('click', function(e){
   </div>
 
   <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-blue-lights-s4.webp" alt="Siân Brooke as Grace Ellis in Blue Lights Season 4" loading="lazy" style="object-position:center 15%;">
+    <img class="fp-card-img" src="/fall-preview-cooper-fry-s1.webp" alt="Robert James-Collier as DC Ben Cooper and Mandip Gill as DC Diane Fry in Cooper and Fry" loading="lazy" style="object-position:center 30%;">
     <div class="fp-card-body">
-      <div class="fp-card-date">U.S. Premiere Date To Be Announced</div>
-      <h3 class="fp-card-title"><a href="/shows/blue-lights.html" style="color:inherit;text-decoration:none;">Blue Lights — Season 4</a></h3>
-      <p class="fp-card-desc">Blue Lights returns for a fourth series set three years into Grace, Annie, and Tommy's careers. Richard Dormer also returns as Gerry Cliff as the story revisits his murder trial and uncovers long-buried secrets within Belfast's police and criminal worlds.</p>
-      <p class="fp-tba-note">A firm US premiere date hasn't been announced yet — check back for updates.</p>
+      <div class="fp-card-date">Now Streaming · All Episodes Available</div>
+      <h3 class="fp-card-title"><a href="/shows/cooper-and-fry.html" style="color:inherit;text-decoration:none;">Cooper and Fry — Season 1</a></h3>
+      <p class="fp-card-desc">DC Ben Cooper, a local officer with deep roots in the Peak District, is paired with newcomer DC Diane Fry as they investigate crimes around the fictional town of Edendale. Robert James-Collier and Mandip Gill star.</p>
       <div class="fp-card-cta-row">
-        <a href="/shows/blue-lights.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="/shows/cooper-and-fry.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" class="fp-card-btn" target="_blank" rel="noopener">Watch the Trailer &rarr;</a>
         <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
       </div>
     </div>
   </div>
 
   <div class="fp-card">
-    <img src="/britbox-time-s3.webp" class="fp-card-img" alt="Time Season 3 on BritBox" loading="lazy" style="object-position:center 20%;">
+    <img class="fp-card-img" src="/fall-preview-tommy-tuppence-keyart.webp" alt="Agatha Christie's Tommy & Tuppence key art — a BritBox Original" loading="lazy" style="object-position:center 35%;">
     <div class="fp-card-body">
-      <div class="fp-card-date">Premieres October 22 &middot; BritBox</div>
+      <div class="fp-card-date">On BritBox from September 15</div>
+      <h3 class="fp-card-title"><a href="/shows/tommy-and-tuppence.html" style="color:inherit;text-decoration:none;">Agatha Christie's Tommy & Tuppence</a></h3>
+      <p class="fp-card-desc">A modern-day reimagining of Christie's crime-solving duo, timed to premiere on the writer's own birthday. Antonia Thomas and Josh Dylan lead, with Imelda Staunton among the cast.</p>
+      <a href="/shows/tommy-and-tuppence.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-showtrial-s2.webp" alt="Showtrial Season 2 key art" loading="lazy">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Now Streaming &middot; All Episodes Available</div>
+      <h3 class="fp-card-title">Showtrial &mdash; Season 2</h3>
+      <p class="fp-card-desc">When a prominent climate activist is left for dead in a hit-and-run, his dying accusation points to a police officer with a reason to want him silenced, and the five-part season follows the case from investigation through the courtroom. Showtrial is an anthology, so there's no need to have seen Season 1 first.</p>
+      <div class="fp-card-cta-row">
+        <a href="https://www.youtube.com/watch?v=9JRZ2PGrjio" class="fp-card-btn hub-youtube-button" target="_blank" rel="noopener">Watch the Trailer &rarr;</a>
+        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2" loading="lazy" style="object-position:center 15%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Now Streaming</div>
+      <h3 class="fp-card-title"><a href="/shows/ludwig.html" style="color:inherit;text-decoration:none;">Ludwig — Season 2</a></h3>
+      <p class="fp-card-desc">David Mitchell returns as puzzle-setter John Taylor, known as Ludwig, now an official police consultant tackling impossible crimes while continuing his search for his missing twin brother.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/ludwig.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via BritBox on Prime Video &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img src="/time-s3-keyart.webp" class="fp-card-img" alt="Time Season 3 key art — David Tennant and Siobhan Finneran, a BritBox Original" loading="lazy" style="object-position:center 15%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Streaming Now &middot; BritBox</div>
       <h3 class="fp-card-title"><a href="/shows/time.html" style="color:inherit;text-decoration:none;">Time — Season 3</a></h3>
-      <p class="fp-card-desc">David Tennant joins Siobhan Finneran for the third season of the acclaimed prison drama. Set inside a young offenders institution, the new story follows prison chaplain Marie-Louise as she struggles with a crisis of faith and clashes with veteran officer Bailey following a tragedy inside the institution.</p>
+      <p class="fp-card-desc">David Tennant joins Siobhan Finneran for the third season of the acclaimed prison drama. Set inside a young offenders institution, the new story follows prison chaplain Marie-Louise as she struggles with a crisis of faith and clashes with veteran officer Bailey following a tragedy inside the institution. All three episodes are now streaming on BritBox in the US.</p>
       <p class="fp-card-genre">Drama &middot; BritBox</p>
       <div class="fp-card-cta-row">
         <a href="/shows/time.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
@@ -622,10 +639,10 @@ document.addEventListener('click', function(e){
     <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'mid_page'});}" style="flex:1 1 280px;min-width:0;">
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
-        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input aria-label="Leave this anti-spam field blank" type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
         <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
       </div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
     </form>
   </div>
 </div>
@@ -633,15 +650,29 @@ document.addEventListener('click', function(e){
 <div class="fp-platform-heading" id="acorn">
   <div class="fp-section-banner">Acorn TV &middot; Autumn 2026</div>
   <h2>What to Watch on Acorn TV <em style="font-style:italic;color:var(--gold-light);">This Autumn</em></h2>
-  <p>Acorn TV's early autumn lineup spans a cozy coastal mystery, a sun-soaked international thriller, and the return of a beloved Umbrian sleuth.</p>
+  <p>Acorn TV's autumn lineup spans a cozy coastal mystery, a sun-soaked international thriller, the return of a beloved Umbrian sleuth, two dark British crime dramas new to the service in late October, and a wedding-season return for a sun-drenched cozy favourite in November.</p>
 </div>
 
 <div class="fp-grid">
 
   <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-madame-blanc-s5-keyart.webp" alt="The Madame Blanc Mysteries Season 5 key art — Sally Lindsay and Steve Edge, an Acorn TV Original" loading="lazy" style="object-fit:contain;background:#1a2135;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">On Acorn TV from November 9</div>
+      <h3 class="fp-card-title"><a href="/shows/madame-blanc-mysteries.html" style="color:inherit;text-decoration:none;">The Madame Blanc Mysteries &mdash; Season 5</a></h3>
+      <p class="fp-card-desc">Sally Lindsay returns as antiques dealer Jean White for a seven-episode season built around Jean and Dom's wedding plans, with guest stars including Lesley Joseph, Jason Manford and Bonnie Langford. New episodes drop weekly, ending with a Christmas special as the season finale.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/madame-blanc-mysteries.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.youtube.com/watch?v=g-wkUkifr-U" class="fp-card-btn hub-youtube-button" target="_blank" rel="noopener">Watch the Trailer &rarr;</a>
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via Acorn TV on Prime Video &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
     <img class="fp-card-img" src="/fall-preview-blue-murder-motel.webp" alt="Blue Murder Motel Acorn TV Original" loading="lazy" style="object-fit:contain;background:#1a2135;">
     <div class="fp-card-body">
-      <div class="fp-card-date">New Episodes Weekly Through October 12</div>
+      <div class="fp-card-date">On Acorn TV &middot; Finale October 12</div>
       <h3 class="fp-card-title"><a href="/shows/blue-murder-motel.html" style="color:inherit;text-decoration:none;">Blue Murder Motel</a></h3>
       <p class="fp-card-desc">Retired detectives Vinny and Cole leave Sydney to run a seaside motel in New Zealand. Their fresh start is interrupted when a suspicious death draws them into another investigation, assisted by local constable Jamie Haira.</p>
       <div class="fp-card-cta-row">
@@ -654,7 +685,7 @@ document.addEventListener('click', function(e){
   <div class="fp-card">
     <img class="fp-card-img" src="/fall-preview-the-assassin.webp" alt="Keeley Hawes as Julie and Gerald Kyd as Luka in The Assassin" loading="lazy" style="object-fit:contain;background:#1a2135;">
     <div class="fp-card-body">
-      <div class="fp-card-date">New Episodes Mondays in the U.S.</div>
+      <div class="fp-card-date">On Acorn TV from September 7</div>
       <h3 class="fp-card-title"><a href="/shows/the-assassin.html" style="color:inherit;text-decoration:none;">The Assassin</a></h3>
       <p class="fp-card-desc">Keeley Hawes plays a retired assassin whose quiet life on a Greek island unravels when her estranged son, played by Freddie Highmore, comes looking for answers, dragging them both into the dangerous conspiracy she thought she'd left behind.</p>
       <div class="fp-card-cta-row">
@@ -667,7 +698,7 @@ document.addEventListener('click', function(e){
   <div class="fp-card">
     <img class="fp-card-img" src="/signora-volpe-s3.webp" alt="Emilia Fox returns as Sylvia Fox in Signora Volpe Season 3" loading="lazy" style="object-fit:contain;background:#1a2135;">
     <div class="fp-card-body">
-      <div class="fp-card-date">Premieres October 5</div>
+      <div class="fp-card-date">On Acorn TV from October 5</div>
       <h3 class="fp-card-title"><a href="/shows/signora-volpe.html" style="color:inherit;text-decoration:none;">Signora Volpe &mdash; Season 3</a></h3>
       <p class="fp-card-desc">Emilia Fox returns as Sylvia Fox, a former MI6 officer settled in the Umbrian countryside, for a third series of three new feature-length mysteries.</p>
       <div class="fp-card-cta-row">
@@ -677,7 +708,29 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p style="grid-column:1/-1;text-align:center;font-family:'Crimson Text',serif;font-style:italic;color:var(--text-muted,#9090a8);font-size:15px;margin:8px 0 0;">More Acorn TV autumn premieres will be added as US dates are confirmed.</p>
+  <div class="fp-card">
+    <div class="fp-card-body">
+      <div class="fp-card-date">New to Acorn TV &middot; Premieres October 19</div>
+      <h3 class="fp-card-title">The Red King</h3>
+      <p class="fp-card-desc">Anjli Mohindra plays police sergeant Grace Narayan, sent to a remote island after reporting a fellow officer. Reopening the disappearance of a teenage boy draws her into the island&rsquo;s secretive religious history and a string of unexplained deaths, across six episodes released weekly through November.</p>
+      <div class="fp-card-cta-row">
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via Acorn TV on Prime Video &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <div class="fp-card-body">
+      <div class="fp-card-date">New to Acorn TV &middot; All Episodes October 26</div>
+      <h3 class="fp-card-title">Wolf</h3>
+      <p class="fp-card-desc">Ukweli Roach stars as DI Jack Caffery in this adaptation of Mo Hayder&rsquo;s Jack Caffery novels, alongside Juliet Stevenson, Owen Teale, Sacha Dhawan and Iwan Rheon. Still haunted by the loss of his younger brother decades earlier, Caffery is pulled into a wealthy family&rsquo;s nightmare, and all six episodes arrive at once.</p>
+      <div class="fp-card-cta-row">
+        <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="fp-card-btn" target="_blank" rel="noopener">Watch via Acorn TV on Prime Video &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <p style="grid-column:1/-1;text-align:center;font-family:'Crimson Text',serif;font-style:italic;color:var(--text-muted, #c1cadd);font-size:15px;margin:8px 0 0;">More Acorn TV autumn premieres will be added as US dates are confirmed.</p>
 
 </div>
 
@@ -689,48 +742,9 @@ document.addEventListener('click', function(e){
 <div class="fp-grid">
 
   <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-marlow-murder-club-s3.webp" alt="Samantha Bond, Jo Martin, and Cara Horgan in The Marlow Murder Club Season 3" loading="lazy" style="object-position:center 15%;">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Airing Sundays Through October 11</div>
-      <h3 class="fp-card-title"><a href="/shows/marlow-murder-club.html" style="color:inherit;text-decoration:none;">The Marlow Murder Club — Season 3</a></h3>
-      <p class="fp-card-desc">Judith, Becks, and Suzie return for another season of amateur sleuthing along the Thames, with Samantha Bond leading the riverside trio.</p>
-      <div class="fp-card-cta-row">
-        <a href="/shows/marlow-murder-club.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
-        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
-    <img class="fp-card-img" src="/fall-preview-marble-hall-murders.webp" alt="Lesley Manville in Marble Hall Murders" loading="lazy" style="object-position:center 20%;">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Airing Sundays Through October 11</div>
-      <h3 class="fp-card-title"><a href="/shows/marble-hall-murders.html" style="color:inherit;text-decoration:none;">Marble Hall Murders</a></h3>
-      <p class="fp-card-desc">Lesley Manville returns as book editor Susan Ryeland for the third and final chapter of Anthony Horowitz's meta mystery trilogy, airing back-to-back with Marlow Murder Club on Sunday nights.</p>
-      <div class="fp-card-cta-row">
-        <a href="/shows/marble-hall-murders.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
-        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
-    <img class="fp-card-img" src="/trespasses-keyart.webp" alt="Lola Petticrew and Tom Cullen in Trespasses" loading="lazy" style="object-position:center 20%;">
-    <div class="fp-card-body">
-      <div class="fp-card-date">Now Airing Sundays on PBS</div>
-      <h3 class="fp-card-title"><a href="/shows/trespasses.html" style="color:inherit;text-decoration:none;">Trespasses</a></h3>
-      <p class="fp-card-desc">Lola Petticrew, Tom Cullen, and Gillian Anderson star in this forbidden-love story set against the Troubles in 1970s Belfast, adapted from Louise Kennedy's bestselling debut novel.</p>
-      <div class="fp-card-cta-row">
-        <a href="/shows/trespasses.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
-        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="fp-card">
     <img class="fp-card-img" src="/maigret-s2-street.webp" alt="Benjamin Wainwright as Jules Maigret in Maigret Season 2" loading="lazy" style="height:auto;aspect-ratio:1400/760;object-position:center top;">
     <div class="fp-card-body">
-      <div class="fp-card-date">Premieres October 18</div>
+      <div class="fp-card-date">Broadcast premiere October 18 &middot; Already streaming on PBS Passport</div>
       <h3 class="fp-card-title"><a href="/shows/maigret.html" style="color:inherit;text-decoration:none;">Maigret — Season 2</a></h3>
       <p class="fp-card-desc">Benjamin Wainwright returns as Georges Simenon's Parisian detective, with new internal turmoil at La Brigade Criminelle providing the backdrop for three new case adaptations.</p>
       <div class="fp-card-cta-row">
@@ -743,11 +757,75 @@ document.addEventListener('click', function(e){
   <div class="fp-card">
     <img class="fp-card-img" src="/the-gold-s2-boyce.webp" alt="Hugh Bonneville as DCS Brian Boyce in The Gold Season 2" loading="lazy" style="object-position:center 20%;">
     <div class="fp-card-body">
-      <div class="fp-card-date">Premieres October 18</div>
+      <div class="fp-card-date">Broadcast premiere October 18 &middot; Already streaming on PBS Passport</div>
       <h3 class="fp-card-title"><a href="/shows/the-gold.html" style="color:inherit;text-decoration:none;">The Gold — Season 2</a></h3>
       <p class="fp-card-desc">The investigation into the Brink's-Mat robbery continues as police turn their attention to the missing half of the stolen gold. Hugh Bonneville, Jack Lowden, and Tom Cullen return for the second season.</p>
       <div class="fp-card-cta-row">
         <a href="/shows/the-gold.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-miss-scarlet-s7.webp" alt="Cast photo from Miss Scarlet and the Duke Season 7" loading="lazy" style="object-position:center 20%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Streaming November 29 on PBS Passport &middot; Broadcast premiere January 17</div>
+      <h3 class="fp-card-title">Miss Scarlet — Season 7 (The Final Season)</h3>
+      <p class="fp-card-desc">Eliza (Kate Phillips) has finally found love, but it brings its own complications at work and at home &mdash; including a reunion with familiar faces and a formidable new crime boss who isn't who you'd expect. Blake, meanwhile, finds himself answering to a surprising new boss from his past. The final season brings Eliza and Blake's story to a thrilling, satisfying close.</p>
+      <div class="fp-card-cta-row">
+        <a href="https://www.pbs.org/show/miss-scarlet-duke" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-marlow-murder-club-s3.webp" alt="Samantha Bond, Jo Martin, and Cara Horgan in The Marlow Murder Club Season 3" loading="lazy" style="object-position:center 15%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Sundays, September 6 &ndash; October 11</div>
+      <h3 class="fp-card-title"><a href="/shows/marlow-murder-club.html" style="color:inherit;text-decoration:none;">The Marlow Murder Club — Season 3</a></h3>
+      <p class="fp-card-desc">Judith, Becks, and Suzie return for another season of amateur sleuthing along the Thames, with Samantha Bond leading the riverside trio.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/marlow-murder-club.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/fall-preview-marble-hall-murders.webp" alt="Lesley Manville in Marble Hall Murders" loading="lazy" style="object-position:center 20%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Sundays, September 6 &ndash; October 11</div>
+      <h3 class="fp-card-title"><a href="/shows/marble-hall-murders.html" style="color:inherit;text-decoration:none;">Marble Hall Murders</a></h3>
+      <p class="fp-card-desc">Lesley Manville returns as book editor Susan Ryeland for the third and final chapter of Anthony Horowitz's meta mystery trilogy, airing back-to-back with Marlow Murder Club on Sunday nights.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/marble-hall-murders.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/trespasses-keyart.webp" alt="Lola Petticrew and Tom Cullen in Trespasses" loading="lazy" style="object-position:center 20%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Sundays, September 20 &ndash; October 11</div>
+      <h3 class="fp-card-title"><a href="/shows/trespasses.html" style="color:inherit;text-decoration:none;">Trespasses</a></h3>
+      <p class="fp-card-desc">Lola Petticrew, Tom Cullen, and Gillian Anderson star in this forbidden-love story set against the Troubles in 1970s Belfast, adapted from Louise Kennedy's bestselling debut novel.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/trespasses.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
+        <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fp-card">
+    <img class="fp-card-img" src="/professor-t-s5-hero.webp" alt="Ben Miller as Jasper Tempest in Professor T Season 5" loading="lazy" style="object-position:center 20%;">
+    <div class="fp-card-body">
+      <div class="fp-card-date">Broadcast premiere October 18 &middot; Already streaming on PBS Passport</div>
+      <h3 class="fp-card-title"><a href="/shows/professor-t.html" style="color:inherit;text-decoration:none;">Professor T — Season 5</a></h3>
+      <p class="fp-card-desc">Ben Miller returns as Cambridge criminologist Jasper Tempest for six new mysteries, as a suspicious death at a secluded spa threatens his developing relationship with Dr. Helena Goldberg.</p>
+      <div class="fp-card-cta-row">
+        <a href="/shows/professor-t.html" class="fp-card-btn">Read the Full Guide &rarr;</a>
         <a href="https://www.pbs.org/passport" class="fp-card-btn" target="_blank" rel="noopener">Watch on PBS &rarr;</a>
       </div>
     </div>
@@ -760,29 +838,29 @@ document.addEventListener('click', function(e){
     <p class="fp-anticipated-eyebrow">A British TV Hub Feature</p>
     <h2 class="fp-anticipated-title">British TV Hub's 5 Most Anticipated</h2>
     <div class="fp-anticipated-grid">
-      <a href="/shows/tommy-and-tuppence.html" class="fp-anticipated-card">
+      <a href="/shows/blue-lights.html" class="fp-anticipated-card">
         <span class="fp-anticipated-rank">1</span>
-        <img src="/fall-preview-tommy-tuppence-keyart.webp" alt="Agatha Christie's Tommy &amp; Tuppence" loading="lazy">
-        <span class="fp-anticipated-name">Agatha Christie's Tommy &amp; Tuppence</span>
-        <span class="fp-anticipated-meta">BritBox · Sept. 15</span>
+        <img src="/fall-preview-blue-lights-s4-keyart.webp" alt="Blue Lights — Season 4" loading="lazy">
+        <span class="fp-anticipated-name">Blue Lights — Season 4</span>
+        <span class="fp-anticipated-meta">BritBox · Nov. 12</span>
       </a>
-      <a href="/shows/ludwig.html" class="fp-anticipated-card">
+      <a href="/shows/madame-blanc-mysteries.html" class="fp-anticipated-card">
         <span class="fp-anticipated-rank">2</span>
-        <img src="/fall-preview-ludwig-s2.webp" alt="Ludwig — Season 2" loading="lazy">
-        <span class="fp-anticipated-name">Ludwig — Season 2</span>
-        <span class="fp-anticipated-meta">BritBox · Oct. 13</span>
+        <img src="/fall-preview-madame-blanc-s5-keyart.webp" alt="The Madame Blanc Mysteries — Season 5" loading="lazy">
+        <span class="fp-anticipated-name">The Madame Blanc Mysteries — S5</span>
+        <span class="fp-anticipated-meta">Acorn TV · Nov. 9</span>
       </a>
-      <a href="/shows/marlow-murder-club.html" class="fp-anticipated-card">
+      <a href="/shows/time.html" class="fp-anticipated-card">
         <span class="fp-anticipated-rank">3</span>
-        <img src="/fall-preview-marlow-murder-club-s3.webp" alt="The Marlow Murder Club — Season 3" loading="lazy">
-        <span class="fp-anticipated-name">The Marlow Murder Club — Season 3</span>
-        <span class="fp-anticipated-meta">PBS · Sept. 6</span>
+        <img src="/time-s3-keyart.webp" alt="Time — Season 3 key art" loading="lazy" style="object-position:center 15%;">
+        <span class="fp-anticipated-name">Time — Season 3</span>
+        <span class="fp-anticipated-meta">BritBox · Streaming Now</span>
       </a>
-      <a href="/shows/marble-hall-murders.html" class="fp-anticipated-card">
+      <a href="/shows/the-gold.html" class="fp-anticipated-card">
         <span class="fp-anticipated-rank">4</span>
-        <img src="/fall-preview-marble-hall-murders.webp" alt="Marble Hall Murders" loading="lazy">
-        <span class="fp-anticipated-name">Marble Hall Murders</span>
-        <span class="fp-anticipated-meta">PBS · Sept. 6</span>
+        <img src="/the-gold-s2-boyce.webp" alt="The Gold — Season 2" loading="lazy">
+        <span class="fp-anticipated-name">The Gold — Season 2</span>
+        <span class="fp-anticipated-meta">PBS · Oct. 18</span>
       </a>
       <a href="/shows/death-valley.html" class="fp-anticipated-card">
         <span class="fp-anticipated-rank">5</span>
@@ -808,106 +886,50 @@ document.addEventListener('click', function(e){
 .fp-anticipated-meta { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 0.5px; color: var(--gold-light); padding: 0 14px 14px; }
 </style>
 
-<div class="bts-section" id="beyond-the-stream">
-  <div class="bts-badge-wrap">
-    <span class="bts-badge">&#9670; A British TV Hub Feature &#9670;</span>
+<div style="max-width:760px;margin:3rem auto 0;">
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--cream);margin:0 0 10px;">Autumn Nights Call for <em>One More Episode</em></h2>
+  <p style="font-family:'Crimson Text',serif;font-size:17px;line-height:1.6;color:var(--text-muted,#c1cadd);margin:0 0 20px;">New seasons, shorter days, and a stack of shows to catch up on before the year's premieres roll in &mdash; a good excuse to curl up a little longer.</p>
+  <div style="display:grid;grid-template-columns:180px 1fr;gap:0;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;margin:0 0 2rem;">
+    <img src="/shop-detective-journal.webp" alt="Detective Journal hardcover notebook, navy cover with gold lettering reading 'Detective Journal: The Case Is Never Closed, Private Notes &amp; Observations,' from British TV Hub" loading="lazy" style="width:100%;height:100%;min-height:180px;object-fit:cover;display:block;">
+    <div style="padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;justify-content:center;">
+      <span style="font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--text-muted,#c1cadd);">From the CozyTVCompanion Shop</span>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin:0;line-height:1.3;">Detective Journal</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:14.5px;line-height:1.55;color:var(--text-muted,#c1cadd);margin:0;">A navy hardcover notebook for jotting down theories while tonight's premiere lineup unfolds &mdash; because the case is never closed.</p>
+      <a href="https://cozytvcompanion.etsy.com/listing/4611371214" style="display:inline-block;align-self:flex-start;margin-top:6px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:11px 20px;border-radius:2px;text-decoration:none;">Treat Yourself &rarr;</a>
+    </div>
   </div>
-  <div class="bts-inner">
-    <div class="bts-header">
-      <div class="bts-eyebrow">Beyond the Stream <span class="bts-recurring-tag">New Every Season</span></div>
-      <h2>Ludwig &mdash; Season 2</h2>
-      <p>A closer look at BritBox's big October return: John's new job, the new faces in Cambridge, and the Christmas special waiting at the end of the year.</p>
+  <div style="display:grid;grid-template-columns:180px 1fr;gap:0;background:#363f58;border:1px solid rgba(201,168,76,0.2);border-radius:12px;overflow:hidden;margin:0 0 2rem;">
+    <img src="/shop-detective-journal.webp" alt="Detective Journal hardcover notebook, navy cover with gold lettering reading 'Detective Journal: The Case Is Never Closed, Private Notes &amp; Observations,' from British TV Hub" loading="lazy" style="width:100%;height:100%;min-height:180px;object-fit:cover;display:block;">
+    <div style="padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;justify-content:center;">
+      <span style="font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--text-muted,#c1cadd);">From the CozyTVCompanion Shop</span>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--cream);margin:0;line-height:1.3;">Detective Journal</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:14.5px;line-height:1.55;color:var(--text-muted,#c1cadd);margin:0;">Private notes and observations on a navy hardcover cover &mdash; for grocery lists, to-watch notes, or whatever needs jotting down.</p>
+      <a href="https://cozytvcompanion.etsy.com/listing/4611371214" style="display:inline-block;align-self:flex-start;margin-top:6px;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold);padding:11px 20px;border-radius:2px;text-decoration:none;">Treat Yourself &rarr;</a>
     </div>
-
-    <div class="bts-grid">
-      <img loading="lazy" src="/fall-preview-ludwig-s2.webp" alt="David Mitchell as John Taylor in Ludwig Season 2">
-      <div class="bts-block">
-        <h3>John Goes Official</h3>
-        <p>Season 2 picks up straight after the finale. John no longer has to pass himself off as his twin, because Cambridge police have taken him on properly as a Crime Scene Consultant, working the cases that don't add up alongside DCI Russell Carter. The catch is that the job comes with rules, including a ban on using police resources to keep hunting for James. That doesn't stop him, and it certainly doesn't stop Lucy.</p>
-        <p>Six episodes arrive weekly on BritBox in North America, starting October 13 and wrapping up with the finale on November 17.</p>
-        <a href="https://youtu.be/GydS_60QoIQ" target="_blank" rel="noopener" class="bts-book-btn" style="display:inline-block;margin-top:4px;">Watch the Trailer &rarr;</a>
-      </div>
-    </div>
-
-    <div class="bts-photo-break">
-      <div style="position:relative;width:100%;padding-top:56.25%;border-radius:8px;overflow:hidden;">
-        <iframe src="https://www.youtube.com/embed/GydS_60QoIQ" title="Ludwig Season 2 &mdash; Official Trailer" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <div class="bts-photo-break">
-      <img loading="lazy" src="/ludwig-s2-family.webp" alt="David Mitchell, Anna Maxwell Martin and Dylan Hughes as John, Lucy and Henry in Ludwig Season 2">
-      <p class="bts-photo-caption">John, Lucy and Henry are back for Season 2.</p>
-    </div>
-
-    <div class="bts-block">
-      <h3>The Cast</h3>
-      <div class="bts-cast">
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">David Mitchell</div>
-          <div class="bts-cast-role">John Taylor &mdash; puzzle-setter turned official Crime Scene Consultant</div>
-        </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Anna Maxwell Martin</div>
-          <div class="bts-cast-role">Lucy &mdash; James's wife, now running her own search for him</div>
-        </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Dipo Ola</div>
-          <div class="bts-cast-role">DCI Russell Carter &mdash; John's new partner on the cases that don't add up</div>
-        </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Mark Bonnar</div>
-          <div class="bts-cast-role">Gareth Fisher &mdash; a newspaper editor, new this season</div>
-        </div>
-        <div class="bts-cast-item">
-          <div class="bts-cast-name">Sian Clifford</div>
-          <div class="bts-cast-role">Joanne Kemper &mdash; the local MP, new this season</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="bts-photo-break">
-      <img loading="lazy" src="/ludwig-s2-lucy-investigates.webp" alt="Anna Maxwell Martin as Lucy studying a case board in Ludwig Season 2">
-      <p class="bts-photo-caption">Lucy takes her own approach to finding James.</p>
-    </div>
-
-    <div class="bts-book-card">
-      <h3>An Emmy-Winning Puzzle</h3>
-      <p>Mark Brotherhood, whose writing credits include Death in Paradise, created and wrote Ludwig, casting David Mitchell in the dual role of John and his missing twin. The first season went on to win Best Comedy at the 2025 International Emmy Awards. British TV Hub's full guide covers both seasons, the cast and where to watch.</p>
-      <a href="/shows/ludwig.html" class="bts-book-btn">Read the Full Ludwig Guide &rarr;</a>
-    </div>
-
-    <div class="bts-photo-break">
-      <img loading="lazy" src="/ludwig-christmas-special.webp" alt="David Mitchell and Sir David Suchet on the set of the Ludwig Christmas special">
-      <p class="bts-photo-caption">David Mitchell with Sir David Suchet, a suspect in the Christmas special.</p>
-    </div>
-
-    <div class="bts-book-card">
-      <h3>Coming at Christmas: A Yorkshire Locked Room</h3>
-      <p>The season isn't the end of it. A Christmas special sends John to a remote Christmas-themed hotel in Yorkshire, where a blackout and a blizzard trap the guests with a murder to solve. Sir David Suchet, television's long-serving Poirot, plays one of the suspects. The special is due on BritBox in December, and a third season is already in production.</p>
-      <a href="/shows-like-ludwig-tv.html" class="bts-book-btn">Shows Like Ludwig &rarr;</a>
-    </div>
-
   </div>
 </div>
 
-<div class="page-body" id="faq" style="margin-top:3rem;">
+<div class="hub-card"><div class="page-body" id="faq" style="margin-top:3rem;">
   <div style="max-width:760px;margin:0 auto 2.5rem;">
     <h2 style="font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--cream);margin:0 0 1.5rem;text-align:center;">What Readers Ask Most</h2>
     <div style="margin-bottom:1.5rem;">
       <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin:0 0 0.5rem;">What new British shows are premiering in autumn 2026?</h3>
-      <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">Autumn 2026 brings Agatha Christie's Tommy &amp; Tuppence, Cooper and Fry, Showtrial Season 2, Ludwig Season 2, Death Valley Season 2, Blue Lights Season 4 and Time Season 3 to BritBox; Blue Murder Motel, The Assassin and Signora Volpe Season 3 to Acorn TV; and The Marlow Murder Club Season 3, Marble Hall Murders, Trespasses, Maigret Season 2 and The Gold Season 2 to PBS Masterpiece.</p>
+      <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">Autumn 2026 brings Agatha Christie's Tommy &amp; Tuppence, Cooper and Fry, Showtrial Season 2, Ludwig Season 2, Death Valley Season 2, Blue Lights Season 4 and Time Season 3 to BritBox; Blue Murder Motel, The Assassin and Signora Volpe Season 3 to Acorn TV, with The Red King and Wolf new to Acorn TV in late October; and The Marlow Murder Club Season 3, Marble Hall Murders, Trespasses, Professor T Season 5, Maigret Season 2 and The Gold Season 2 to PBS Masterpiece.</p>
     </div>
     <div style="margin-bottom:1.5rem;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin:0 0 0.5rem;">When does Tommy &amp; Tuppence premiere?</h3>
-      <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">September 15, 2026 on BritBox, timed to Agatha Christie's own birthday. It's a six-part series, with two episodes airing on premiere day and one new episode weekly after that.</p>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin:0 0 0.5rem;">When did Tommy &amp; Tuppence premiere?</h3>
+      <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">It premiered September 15, 2026 on BritBox, timed to Agatha Christie's own birthday. The six-part series launched with two episodes, followed by one new episode weekly.</p>
     </div>
     <div>
       <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin:0 0 0.5rem;">Are Marlow Murder Club and Marble Hall Murders airing at the same time?</h3>
       <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">Both premiered September 6, 2026 on PBS Masterpiece, back-to-back on the same Sunday night, and run weekly through October 11.</p>
     </div>
+    <div style="margin-bottom:1.5rem;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--cream);margin:0 0 0.5rem;">Did Professor T, Maigret, and The Gold all premiere the same night?</h3>
+      <p style="font-size:1rem;color:var(--text-light);line-height:1.7;margin:0;">Yes &mdash; Professor T Season 5, Maigret Season 2, and The Gold Season 2 all had their broadcast premieres on PBS Masterpiece on October 18, 2026. All three are already streaming on PBS Passport.</p>
+    </div>
   </div>
-</div>
+</div></div>
 
 <div class="page-body" style="margin-top:2rem;">
   <div style="max-width:960px;margin:0 auto;">
@@ -915,10 +937,10 @@ document.addEventListener('click', function(e){
     <p class="cr-sub">More hand-picked recommendations from the editors of British TV Hub.</p>
     <div class="cr-grid">
       <a class="cr-card" href="/britbox.html">
-      <img src="/britbox-gone.webp" alt="What's New on BritBox" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
+      <img src="/fall-preview-ludwig-s2.webp" alt="David Mitchell in Ludwig Season 2 on BritBox" loading="lazy" style="width:100%;height:130px;object-fit:cover;object-position:center 15%;display:block;">
         <div class="cr-body">
           <div class="cr-title">What's New on BritBox</div>
-          <p class="cr-desc">The full monthly rundown of new seasons and US premieres, updated regularly.</p>
+          <p class="cr-desc">Ludwig Season 2 and more — the full monthly rundown of new seasons and US premieres, updated regularly.</p>
           <span class="cr-link">See What's New &rarr;</span>
         </div>
       </a>
@@ -945,22 +967,27 @@ document.addEventListener('click', function(e){
 
 
 <!-- Sunday Picks signup (Mailchimp) -->
-<div id="nl-anchor" style="background:#1a2135;border-top:1px solid #3d4a60;padding:52px 24px;text-align:center;">
-  <div style="max-width:600px;margin:0 auto;">
-    <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 10px;">Five British TV Picks. Every Sunday.</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#b8b0a0;line-height:1.5;margin:0 0 20px;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
-    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}">
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:16px;background:#2c3345;border-width:1px;border-style:solid;border-color:#4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;border-radius:0;">
-              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
-            </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:12px;letter-spacing:0.3px;line-height:1.5;">By signing up, you agree to get the Sunday Picks email each week. No spam. Unsubscribe anytime with one click.</div>
-          </form>
-    <p style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin:16px 0 0;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a> and get Sunday Picks a full day early, every Saturday.</p>
+<div id="nl-anchor" style="background:#1a2135;border-top:1px solid #3d4a60;padding:52px 20px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
+    </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input aria-label="Leave this anti-spam field blank" type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#c1cadd;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
   </div>
 </div>
 
+</div><!-- hub main landmark -->
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
   <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
     British Mysteries. Dramas. Cozy Viewing.
@@ -972,7 +999,7 @@ document.addEventListener('click', function(e){
     <div>
       <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
       <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
@@ -994,13 +1021,12 @@ document.addEventListener('click', function(e){
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
       <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
-      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
       <div style="display:flex;gap:10px;">
         <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
         <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
       </div>
     </div>
   </div>
@@ -1010,15 +1036,16 @@ document.addEventListener('click', function(e){
   </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#c1cadd;letter-spacing:0.5px;margin-bottom:10px;">
       © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
-      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
-      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
-      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
-      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
-      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+      <a href="/about.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">FAQ</a>&middot;
+      <a href="/accessibility-statement.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Accessibility</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c1cadd;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 

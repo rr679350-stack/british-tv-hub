@@ -136,7 +136,7 @@ gtag('config', 'G-P1L8CVNKS6');
     .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-bottom: 12px; }
     .footer-links a { font-family: 'Raleway', sans-serif; font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); padding: 0 6px; }
     .footer-links a:hover { color: var(--gold); }
-    .footer-links span { color: var(--border); font-size: 10px; }
+    .footer-links span { color: #c1cadd; font-size: 10px; }
     .footer-brand { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text-muted); margin-bottom: 8px; }
     .footer-legal { font-family: 'Raleway', sans-serif; font-size: 15px; color: #b0bcd4; line-height: 1.6; max-width: 600px; margin: 0 auto; }
 
@@ -152,7 +152,7 @@ gtag('config', 'G-P1L8CVNKS6');
     nav.site-nav-std { background: rgba(35,42,58,0.98); border-bottom: 1px solid #4a5570; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); flex-wrap: nowrap; }
     nav.site-nav-std .nav-brand { padding: 16px 16px 16px 0; flex-shrink: 0; }
     nav.site-nav-std .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: #f0e8d4; white-space: nowrap; }
-    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #9090b8; white-space: nowrap; }
+    nav.site-nav-std .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #c1cadd; white-space: nowrap; }
     nav.site-nav-std .nav-links { display: flex; align-items: center; flex-wrap: nowrap; }
     nav.site-nav-std .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #c9a96e; cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
     nav.site-nav-std .nlink:hover { color: #ffffff; }
@@ -212,7 +212,7 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-search-results { margin-top: 8px; max-height: 320px; overflow-y: auto; }
 .nav-search-results a { display: block; padding: 8px 10px; color: #c9a96e; text-decoration: none; font-family: 'Raleway', sans-serif; font-size: 12px; border-bottom: 1px solid rgba(61,74,96,0.5); }
 .nav-search-results a:hover { background: #2c3345; color: #ffffff; }
-.nav-search-empty { padding: 8px 10px; color: #888; font-size: 12px; font-family: 'Raleway', sans-serif; }
+.nav-search-empty { padding: 8px 10px; color: #c1cadd; font-size: 12px; font-family: 'Raleway', sans-serif; }
 .nav-actions{display:flex;align-items:center;gap:18px;justify-self:end;}
 .nav-tea{position:relative;display:inline-flex;align-items:center;}
 .nav-tea-link{font-size:25px;text-decoration:none;line-height:1;padding:6px 0;display:inline-block;filter:grayscale(0.35);transition:transform 0.2s ease,filter 0.2s ease;}
@@ -226,10 +226,11 @@ nav.site-nav-std { flex-direction: column !important; align-items: stretch !impo
 .nav-dropdown-toggle:hover{ color:#ffffff; }
 .nav-dropdown-menu{ position:absolute; top:100%; left:0; background:#1e2433; border:1px solid #3d4a60; min-width:230px; z-index:200; box-shadow:0 8px 24px rgba(0,0,0,0.35); padding:6px 0; max-height:calc(100vh - 90px); overflow-y:auto; -webkit-overflow-scrolling:touch; flex-direction:column; }
 @media (min-width:641px){
-  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:800px; padding:18px 6px; max-height:82vh; }
-  .nav-dropdown-col{ flex:1 1 0; min-width:175px; padding:0 18px; border-right:1px solid #3d4a60; }
+  .nav-dropdown-menu{ display:none; flex-direction:row; align-items:flex-start; left:auto; right:0; min-width:0; width:max-content; max-width:calc(100vw - 32px); padding:18px 6px; max-height:82vh; }
+  .nav-dropdown-col{ flex:0 1 auto; min-width:150px; padding:0 10px; border-right:1px solid #3d4a60; }
   .nav-dropdown-col:last-child{ border-right:none; }
 }
+@media (min-width:641px) and (max-width:1200px){ .nav-dropdown-menu{ flex-wrap:wrap; width:min(560px, calc(100vw - 32px)); row-gap:14px; } .nav-dropdown-col{ flex:1 1 45%; border-right:none; } }
 .nav-dropdown-menu a{ display:block; padding:10px 16px; font-family:'Raleway',sans-serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; text-decoration:none; white-space:nowrap; }
 .nav-dropdown-menu a:hover{ background:#2c3345; color:#ffffff; }
 .nav-dropdown-label{ padding:12px 16px 4px; font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:#a8b3cc; border-top:1px solid #3d4a60; margin-top:4px; }
@@ -297,37 +298,6 @@ nav.site-nav-std { position: sticky !important; top: 0 !important; z-index: 100 
 }
 </style>
 
-<style>
-/* Tilly chat bubble: force an ABSOLUTE small size (a relative transform:scale
-   of Chatbase's native size was tried and regressed — if their native size
-   is large, scaling it by a percentage can still render large). Excludes
-   #backToTop, which happens to share the same position:fixed;bottom;right
-   inline-style pattern. */
-[style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-[style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-iframe[id*="chatbase-bubble-button"],
-#chatbase-bubble-button {
-  width: 60px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
-  overflow: hidden !important;
-}
-@media (max-width: 480px) {
-  [style*="position:fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  [style*="position: fixed"][style*="bottom"][style*="right"]:not(#backToTop),
-  iframe[id*="chatbase-bubble-button"],
-  #chatbase-bubble-button {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    bottom: 16px !important;
-    right: 16px !important;
-    overflow: hidden !important;
-  }
-}
-</style>
 
 <style>
 /* ===== Mobile hamburger menu (overrides older wrap-based mobile nav) ===== */
@@ -454,8 +424,12 @@ iframe[id*="chatbase-bubble-button"],
   }
 }
 </style>
+<link rel="stylesheet" href="/hub-cards.css">
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
@@ -482,45 +456,27 @@ iframe[id*="chatbase-bubble-button"],
             <div class="nav-dropdown-label">Browse</div>
             <a href="/genres.html">By Genre</a>
             <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
             <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/country-house-mysteries.html">Murder at the Manor</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
             <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
+            <a href="/shows-like.html">Find Similar Shows</a>
             <a href="/this-week.html">This Week in British TV</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
           </div>
           <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/gift-guide-hub.html">All Gift Guides</a>
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
           </div>
         </div>
       </div>
@@ -531,15 +487,16 @@ iframe[id*="chatbase-bubble-button"],
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <input aria-label="Search shows, books and guides" type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
 </div>
     </div>
 </nav>
+<div role="main" class="hub-main-landmark">
 <script>
 function toggleMobileNav(){
   var nav = document.querySelector('nav.site-nav-std');
@@ -587,7 +544,7 @@ document.addEventListener('click', function(e){
 <div class="page-wrap">
 
   <p class="show-eyebrow">British Period Drama · BBC · 2012–present</p>
-  <h1 class="show-title">Call the Midwife</h1>
+  <h1 class="show-title" id="hub-content-start" tabindex="-1">Call the Midwife</h1>
   <div class="show-tags">
     <span class="tag">15 Seasons</span>
     <span class="tag">Period Drama</span>
@@ -605,24 +562,31 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">Based on Jennifer Worth's memoirs, Call the Midwife follows a group of nurse-midwives and nuns serving London's East End from the late 1950s onward. It's warm, big-hearted, and unafraid of difficult subjects — births and deaths, poverty and resilience, all rendered with enormous compassion. Few shows balance comfort and emotional weight so beautifully; it's the kind of series that makes you laugh and reach for the tissues in the same episode. Call the Midwife streams via PBS in the US — see British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">British TV streaming services</a> for how that compares to BritBox and Acorn TV.</p>
-  <p class="show-description" style="font-size:15px;">See more in <a href="/british-period-dramas.html" style="color:var(--gold,#c9a96e);">British Period Dramas</a>.</p>
-  <p class="show-description" style="font-size:15px;">Looking for your next watch? See <a href="/shows-like-call-the-midwife-tv.html" style="color:var(--gold,#c9a96e);">Shows Like Call the Midwife</a> &rarr;</p>
+  <div class="hub-card"><p class="show-description">Based on Jennifer Worth's memoirs, Call the Midwife follows a group of nurse-midwives and nuns serving London's East End from the late 1950s onward. It's warm, big-hearted, and unafraid of difficult subjects — births and deaths, poverty and resilience, all rendered with enormous compassion. Few shows balance comfort and emotional weight so beautifully; it's the kind of series that makes you laugh and reach for the tissues in the same episode. Call the Midwife streams via PBS in the US.</p></div>
 
   <hr class="divider">
 
-  <p class="section-label">About the show</p>
-  <p class="show-description" style="font-size:16px;">Heidi Thomas adapted Call the Midwife from Jennifer Worth's trilogy of memoirs about her time as a midwife in 1950s East London, and when the source material ran out after series two, Worth herself gave Thomas her blessing to continue with original stories. Vanessa Redgrave has narrated the show as the older version of the central character since it began, and Thomas's own husband, Stephen McGann, has played Dr. Patrick Turner throughout the show's run. Now in its fifteenth series and past 130 episodes, it remains one of the BBC's longest-running dramas.</p>
+  <div class="hub-card"><p class="section-label">About the show</p>
+  <p class="show-description" style="font-size:16px;">Heidi Thomas adapted Call the Midwife from Jennifer Worth's trilogy of memoirs about her time as a midwife in 1950s East London, and when the source material ran out after series two, Worth herself gave Thomas her blessing to continue with original stories. Vanessa Redgrave has narrated the show as the older version of the central character since it began, and Thomas's own husband, Stephen McGann, has played Dr. Patrick Turner throughout the show's run. Now in its fifteenth series and past 130 episodes, it remains one of the BBC's longest-running dramas.</p></div>
 
   <hr class="divider">
 
   <div class="watch-card">
     <p class="watch-label">Where to watch in the US</p>
-    <p class="watch-service">PBS Masterpiece</p>
+    <p class="watch-service">PBS</p>
     <p class="watch-detail">Multiple seasons · Free via local PBS station · full library with PBS Passport</p>
     <a href="https://www.pbs.org/show/call-the-midwife/" class="watch-btn" target="_blank" rel="noopener">Watch on PBS →</a>
     <div class="watch-free"><strong>Free option:</strong> Selected episodes may air free via participating local PBS stations; extended access requires PBS Passport (qualifying station donation)</div>
   </div>
+  <div style="background:#363f58;border:1px solid rgba(201,168,76,0.3);border-radius:12px;padding:20px 24px;margin:0 0 32px;">
+    <p style="font-family:'Raleway',sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin:0 0 10px;">Already Have Prime?</p>
+    <p style="font-family:'Crimson Text',serif;font-size:15px;line-height:1.5;color:#d6d0bf;margin:0 0 14px;">BritBox, Acorn TV and PBS Masterpiece can all be added as Prime Video channels, so every series sits on one watchlist.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;">
+      <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" target="_blank" rel="sponsored noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:#c9a96e;background:transparent;border:1px solid #c9a96e;border-radius:2px;padding:9px 16px;text-decoration:none;">Add BritBox on Prime Video &rarr;</a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" target="_blank" rel="sponsored noopener" style="display:inline-block;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;color:#c9a96e;background:transparent;border:1px solid #c9a96e;border-radius:2px;padding:9px 16px;text-decoration:none;">Add Acorn TV on Prime Video &rarr;</a>
+    </div>
+  </div>
+
 
   <div class="read-card">
     <p class="read-label">Read the books</p>
@@ -672,7 +636,7 @@ document.addEventListener('click', function(e){
       <img src="/top10-hero.webp" alt="Best British Police Procedurals" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Best British Police Procedurals</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">A curated lineup of standout detective dramas worth your time.</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted, #c1cadd);line-height:1.55;margin:0 0 16px;">A curated lineup of standout detective dramas worth your time.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -681,7 +645,7 @@ document.addEventListener('click', function(e){
       <img src="/streaming-hero.webp" alt="Where to Watch" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Where to Watch</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted, #c1cadd);line-height:1.55;margin:0 0 16px;">The full guide to which streaming service has what.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -690,7 +654,7 @@ document.addEventListener('click', function(e){
       <img src="/cozy-hero.webp" alt="Cozy British Mysteries" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Cozy British Mysteries</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Gentle, comforting whodunits for a rainy afternoon.</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted, #c1cadd);line-height:1.55;margin:0 0 16px;">Gentle, comforting whodunits for a rainy afternoon.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -699,7 +663,7 @@ document.addEventListener('click', function(e){
       <img src="/shows-index-hero.webp" alt="Browse All Shows" loading="lazy" style="width:100%;height:130px;object-fit:cover;display:block;">
       <div style="padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;">
         <div style="font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--text,#f0e8d4);margin:0 0 10px;line-height:1.3;">Browse All Shows</div>
-        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted,#9090a8);line-height:1.55;margin:0 0 16px;">Every British mystery and drama on the site, organized by genre and platform.</div>
+        <div style="font-family:'Crimson Text',serif;font-size:14.5px;color:var(--text-muted, #c1cadd);line-height:1.55;margin:0 0 16px;">Every British mystery and drama on the site, organized by genre and platform.</div>
         <span style="display:inline-block;align-self:flex-start;margin-top:auto;font-family:'Raleway',sans-serif;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#1a2135;background:var(--gold,#c9a96e);padding:10px 18px;border-radius:2px;">Read Guide &rarr;</span>
       </div>
     </a>
@@ -709,22 +673,27 @@ document.addEventListener('click', function(e){
 </div>
 
 <!-- Sunday Picks signup (Mailchimp) -->
-<div id="nl-anchor" style="background:#1a2135;border-top:1px solid #3d4a60;padding:52px 24px;text-align:center;">
-  <div style="max-width:600px;margin:0 auto;">
-    <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 10px;">Five British TV Picks. Every Sunday.</h2>
-    <p style="font-family:'Crimson Text',serif;font-size:16px;color:#b8b0a0;line-height:1.5;margin:0 0 20px;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
-    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname});}">
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:16px;background:#2c3345;border-width:1px;border-style:solid;border-color:#4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;border-radius:0;">
-              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
-            </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:12px;letter-spacing:0.3px;line-height:1.5;">By signing up, you agree to get the Sunday Picks email each week. No spam. Unsubscribe anytime with one click.</div>
-          </form>
-    <p style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin:16px 0 0;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a> and get Sunday Picks a full day early, every Saturday.</p>
+<div id="nl-anchor" style="background:#1a2135;border-top:1px solid #3d4a60;padding:52px 20px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
+    </div>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input aria-label="Leave this anti-spam field blank" type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
+      </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#c1cadd;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
   </div>
 </div>
 
+</div><!-- hub main landmark -->
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
   <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
     British Mysteries. Dramas. Cozy Viewing.
@@ -736,7 +705,7 @@ document.addEventListener('click', function(e){
     <div>
       <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
       <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
@@ -758,13 +727,12 @@ document.addEventListener('click', function(e){
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
       <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
-      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
       <div style="display:flex;gap:10px;">
         <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
         <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
       </div>
     </div>
   </div>
@@ -774,21 +742,19 @@ document.addEventListener('click', function(e){
   </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#c1cadd;letter-spacing:0.5px;margin-bottom:10px;">
       © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
-      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
-      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
-      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
-      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
-      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+      <a href="/about.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">FAQ</a>&middot;
+      <a href="/accessibility-statement.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Accessibility</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c1cadd;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 <script src="/watchlist.js"></script>
 </body>
 </html>

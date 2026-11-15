@@ -1,0 +1,10 @@
+{
+  "name": "british-tv-hub-accessibility-audit",
+  "private": true,
+  "type": "module",
+  "scripts": { "audit": "node audit.mjs" },
+  "dependencies": {
+    "playwright": "^1.58.0",
+    "@axe-core/playwright": "^4.11.0"
+  }
+}

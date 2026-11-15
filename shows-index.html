@@ -26,10 +26,18 @@ gtag('config', 'G-P1L8CVNKS6');
       gtag('event','etsy_click',{link_url:href,page_path:location.pathname});
     } else if(href.indexOf('nordvpn.com') > -1){
       gtag('event','nordvpn_click',{link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('britbox.com') > -1){
+    } else if(href.indexOf('c984b526') > -1){
       gtag('event','affiliate_click',{service:'britbox',link_url:href,page_path:location.pathname});
-    } else if(href.indexOf('acorn.tv') > -1){
+    } else if(href.indexOf('c8382769') > -1){
       gtag('event','affiliate_click',{service:'acorn',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('cf297d60') > -1){
+      gtag('event','affiliate_click',{service:'pbs_masterpiece',link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('pbs.org') > -1){
+      gtag('event','pbs_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('campaign-archive.com') > -1){
+      gtag('event','newsletter_archive_click',{link_url:href,page_path:location.pathname});
+    } else if(href.indexOf('amazon.com') > -1 || href.indexOf('amzn.to') > -1){
+      gtag('event','amazon_click',{link_url:href,page_path:location.pathname});
     }
   }, true);
 })();
@@ -121,7 +129,7 @@ gtag('config', 'G-P1L8CVNKS6');
     nav { background: rgba(35,42,58,0.98); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 32px; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
     .nav-brand { padding: 16px 0; }
     .nav-title { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--text); }
-    .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #9090b8; }
+    .nav-sub { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-top: 2px; opacity: 0.7; font-style: italic; color: #c1cadd; }
     .nav-links { display: flex; align-items: center; }
     .nlink { padding: 20px 11px; font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); cursor: pointer; border: none; background: transparent; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-weight: 500; text-decoration: none; display: inline-block; }
     .nlink:hover { color: #ffffff; }
@@ -187,7 +195,7 @@ gtag('config', 'G-P1L8CVNKS6');
     .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 14px; }
     .footer-links a { font-family: 'Raleway', sans-serif; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); text-decoration: none; }
     .footer-links a:hover { color: #e0c080; }
-    .footer-brand { font-family: 'Raleway', sans-serif; font-size: 11px; color: #88898b; letter-spacing: 1px; margin-bottom: 10px; }
+    .footer-brand { font-family: 'Raleway', sans-serif; font-size: 11px; color: #c1cadd; letter-spacing: 1px; margin-bottom: 10px; }
     .footer-legal { font-family: 'Raleway', sans-serif; font-size: 15px; color: #b0bcd4; letter-spacing: 0.5px; line-height: 1.6;}
 
     @media (max-width: 800px) {
@@ -465,8 +473,12 @@ nav.site-nav-std.nav-scrolled{box-shadow:0 6px 18px rgba(0,0,0,0.35);}
   }
 }
 </style>
+<link rel="stylesheet" href="/hub-cards.css">
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
     
 
 <nav class="site-nav-std" aria-label="Main navigation">
@@ -494,45 +506,27 @@ nav.site-nav-std.nav-scrolled{box-shadow:0 6px 18px rgba(0,0,0,0.35);}
             <div class="nav-dropdown-label">Browse</div>
             <a href="/genres.html">By Genre</a>
             <a href="/top10.html">Police Procedurals</a>
-            <a href="/best-british-mystery-shows-2026.html">25 Mysteries to Watch in 2026</a>
             <a href="/cozy.html">Cozy Mysteries</a>
-            <a href="/books">Literary Adaptations</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/country-house-mysteries.html">Murder at the Manor</a>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-          </div>
-          <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Collections</div>
-            <a href="/crime-drama-hub.html">Crime &amp; Police Drama Hub</a>
-            <a href="/tense-british-crime-drama.html">Tense British Crime Drama</a>
-            <a href="/british-period-dramas.html">British Period Dramas</a>
+            <a href="/british-period-dramas.html">Period Dramas</a>
             <a href="/masterpiece2026.html">PBS Masterpiece</a>
-            <a href="/the-cozy-collection.html">The Cozy Collection</a>
-            <a href="/seasonal-collections.html">Seasonal Collections</a>
-            <a href="/collections.html">Browse All</a>
+            <a href="/best-british-mystery-shows-2026.html">25 Mysteries for 2026</a>
+            <a href="/collections.html">All Collections</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">What to Watch Next &#11088;</div>
-            <a href="/shows-like.html">Browse All</a>
+            <a href="/shows-like.html">Find Similar Shows</a>
             <a href="/this-week.html">This Week in British TV</a>
             <a href="/hidden-gems.html">Hidden Gems</a>
             <a href="/weekend-binge-guide.html">Weekend Binge Guide</a>
-            <a href="/sunday-night-lineup.html">Sunday-Night Lineup</a>
-            <a href="/actor-crossovers.html">You'll Recognize Them From...</a>
           </div>
           <div class="nav-dropdown-col">
             <div class="nav-dropdown-label">Play &amp; Connect</div>
-            <a href="/quizzes-and-games.html">All Games &amp; Quizzes</a>
-            <a href="/meet-tilly.html">Ask Tilly</a>
-            <a href="/what-are-you-watching.html">What Are You Watching?</a>
-            <a href="/things-british-tv-has-taught-me.html">Things British TV Has Taught Me</a>
+            <a href="/quizzes-and-games.html">Games &amp; Quizzes</a>
           </div>
           <div class="nav-dropdown-col">
-            <div class="nav-dropdown-label">Gifts for Fans &#9749;</div>
-            <a href="/autumn-gift-guide.html">Autumn Gift Guide</a>
-            <a href="/holiday-gift-guide.html">Holiday Gift Guide</a>
-            <a href="/gift-ideas.html">Gift Ideas</a>
-            <a href="/gift-guide-hub.html">All Gift Guides</a>
+            <div class="nav-dropdown-label">This Season &#9749;</div>
+            <a href="/seasonal-collections.html">Seasonal Collections</a>
+            <a href="/gift-guide-hub.html">Gift Guides</a>
           </div>
         </div>
       </div>
@@ -543,15 +537,16 @@ nav.site-nav-std.nav-scrolled{box-shadow:0 6px 18px rgba(0,0,0,0.35);}
       <div class="nav-tea-tooltip"><strong>Support British TV Hub</strong>Help keep the kettle on.</div>
     </div>
 <div class="nav-search">
-      <button type="button" class="nav-search-toggle" aria-label="Search Shows" onclick="toggleSiteSearch()">&#128269; Search Shows</button>
+      <button type="button" class="nav-search-toggle" aria-label="Search the site" onclick="toggleSiteSearch()">&#128269; Search</button>
       <div class="nav-search-box" id="nav-search-box" style="display:none;">
-        <input type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
+        <input aria-label="Search shows, books and guides" type="text" id="nav-search-input" placeholder="Search shows, books, guides..." autocomplete="off" oninput="filterSiteSearch(this.value)" onkeydown="handleSiteSearchKey(event)">
         <div id="nav-search-results" class="nav-search-results"></div>
       </div>
     </div>
 </div>
     </div>
 </nav>
+<div role="main" class="hub-main-landmark">
 <script>
 function toggleMobileNav(){
   var nav = document.querySelector('nav.site-nav-std');
@@ -580,9 +575,8 @@ document.addEventListener('click', function(e){
 <!-- HERO -->
 <div class="page-hero">
   <div class="page-hero-text">
-<h1 class="hero-title">Browse British Mystery &amp; Drama Series</h1>
+<h1 class="hero-title" id="hub-content-start" tabindex="-1">Browse British Mystery &amp; Drama Series</h1>
     <p class="hero-sub">Discover Britain's best mysteries, dramas, period pieces, and hidden gems — with where to watch, similar series, and what to watch next.</p>
-    <p class="hero-sub" style="font-size:15px;">New this season? See British TV Hub's <a href="/fall-preview-2026.html">British TV autumn 2026</a> preview, or browse <a href="/cozy-autumn-mysteries.html">cozy British mysteries for autumn</a>.</p>
   </div>
   <div class="page-hero-img">
     <img src="/shows-index-hero.webp" alt="A British TV Hub mug and remote on a table, with a mystery drama's rainy village and castle on the TV screen behind" width="1536" height="1024" fetchpriority="high">
@@ -602,9 +596,9 @@ document.addEventListener('click', function(e){
   <a href="/british-period-dramas.html" class="genre-chip">Period Dramas</a>
   <a href="/cozy.html" class="genre-chip">Cozy &amp; Gentle</a>
   <a href="/hidden-gems.html" class="genre-chip">Hidden Gems</a>
-  <input type="text" id="show-search-input" placeholder="Find a series..." autocomplete="off" oninput="filterShowCards(this.value)" style="flex:1;min-width:180px;max-width:260px;box-sizing:border-box;background:#1e2433;border:1px solid #4a5570;color:#f0e8d4;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;border-radius:20px;outline:none;">
+  <input aria-label="Find a series" type="text" id="show-search-input" placeholder="Find a series..." autocomplete="off" oninput="filterShowCards(this.value)" style="flex:1;min-width:180px;max-width:260px;box-sizing:border-box;background:#1e2433;border:1px solid #4a5570;color:#f0e8d4;padding:10px 14px;font-family:'Crimson Text',serif;font-size:15px;border-radius:20px;outline:none;">
 </div>
-<p id="show-search-empty" style="display:none;max-width:1100px;margin:-20px auto 20px;font-family:'Crimson Text',serif;font-style:italic;color:#9090a8;">No shows match your search.</p>
+<p id="show-search-empty" style="display:none;max-width:1100px;margin:-20px auto 20px;font-family:'Crimson Text',serif;font-style:italic;color:#c1cadd;">No shows match your search.</p>
 <script>
 function filterShowCards(query){
   var q = query.trim().toLowerCase();
@@ -621,31 +615,31 @@ function filterShowCards(query){
 }
 </script>
 
-<p style="max-width:1100px;margin:0 auto 32px;font-family:'Crimson Text',serif;font-size:16px;line-height:1.7;color:#c8c4b4;">Browse complete guides to British mysteries, crime dramas, period series and cozy favourites. Each guide includes where to watch in the United States, similar shows and reading recommendations.</p>
+<div class="hub-card"><p style="max-width:1100px;margin:0 auto 32px;font-family:'Crimson Text',serif;font-size:16px;line-height:1.7;color:#c8c4b4;">Browse complete guides to British mysteries, crime dramas, period series and cozy favourites. Each guide includes where to watch in the United States, similar shows and reading recommendations.</p></div>
 
 <!-- NOT SURE WHERE TO START -->
 <div style="max-width:1100px;margin:0 auto 40px;">
   <p class="section-label">Not Sure Where to Start?</p>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
     <a href="/cozy.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
-      <img loading="lazy" src="/cozy-hero.webp" alt="A Cozy Mystery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <img loading="lazy" src="/cozy-hero.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" alt="">
       <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
       <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Cozy Mystery</h4>
+        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Cozy Mystery</h2>
       </div>
     </a>
     <a href="/top10.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
-      <img loading="lazy" src="/top10-hero.webp" alt="A Gripping Drama" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <img loading="lazy" src="/top10-hero.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" alt="">
       <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
       <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Gripping Drama</h4>
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Gripping Drama</h3>
       </div>
     </a>
     <a href="/hidden-gems.html" class="site-card fc-card" style="position:relative;display:block;overflow:hidden;border-radius:12px;min-height:200px;text-decoration:none;border:1px solid #3d4a60;">
-      <img loading="lazy" src="/hidden-gems-hero.webp" alt="A Hidden Gem" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <img loading="lazy" src="/hidden-gems-hero.webp" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" alt="">
       <div style="position:absolute;inset:0;background:linear-gradient(to top,#131926 20%,rgba(19,25,38,0.35) 70%);"></div>
       <div style="position:relative;z-index:2;padding:24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end;">
-        <h4 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Hidden Gem</h4>
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:#f0e8d4;margin:0;">A Hidden Gem</h3>
       </div>
     </a>
   </div>
@@ -675,12 +669,21 @@ function filterShowCards(query){
 <div style="background:#1a2135;border:1px solid #3d4a60;border-radius:12px;padding:36px 40px;margin:0 auto 32px;max-width:1100px;">
   <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c9a96e;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 8px;font-weight:600;">Trailers &amp; Previews</p>
   <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 6px;">This Month's Trailer Pick</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;margin:0 0 20px;">All Creatures Great and Small — British TV Hub's pick, straight from our Trailers &amp; Previews channel.</p>
-  <div style="position:relative;width:100%;max-width:640px;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin:0 0 20px;">
-    <iframe src="https://www.youtube.com/embed/U4dCkApte4c" title="All Creatures Great and Small: Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  <p style="font-family:'Crimson Text',serif;font-size:17px;font-style:italic;color:#d4c4a4;margin:0 0 20px;">Signora Volpe — Season 3 preview, straight from the British TV Hub Trailers &amp; Previews channel.</p>
+  <div class="trailer-actions" style="max-width:640px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch;">
+    <div style="grid-column:1 / -1;position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid #3d4a60;margin:0 0 8px;">
+      <iframe src="https://www.youtube.com/embed/WGSOoHU0-fE?feature=oembed&amp;enablejsapi=1" title="Signora Volpe Season 3: Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <p class="hub-video-caption" style="margin:0;display:flex;"><a href="https://www.youtube.com/watch?v=WGSOoHU0-fE" target="_blank" rel="noopener noreferrer" aria-label="Watch Signora Volpe Season 3: Preview on YouTube" style="width:100%;min-height:64px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 16px;">Watch Signora Volpe Season 3: Preview on YouTube <span class="hub-video-new-tab hub-youtube-button">(opens in a new tab)</span></a></p>
+    <a href="/shows/signora-volpe.html" style="display:flex;align-items:center;justify-content:center;min-height:64px;background:#c9a96e;color:#1a2135;padding:12px 16px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;text-align:center;">Read the Full Guide &rarr;</a>
+    <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;min-height:64px;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:1px solid #c9a96e;padding:12px 16px;text-align:center;">More Trailers &rarr;</a>
   </div>
-  <a href="/shows/all-creatures-great-and-small.html" style="display:inline-block;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;">Read the Full Guide &rarr;</a>
-  <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="display:inline-block;margin-left:14px;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-bottom:1px solid #c9a96e;padding-bottom:2px;">More Trailers &rarr;</a>
+  <style>
+    @media (max-width:700px){
+      .trailer-actions{grid-template-columns:1fr !important;}
+      .trailer-actions > div{grid-column:1 !important;}
+    }
+  </style>
 </div>
 <!-- END THIS MONTH'S TRAILER PICK -->
 
@@ -688,6 +691,26 @@ function filterShowCards(query){
 <div style="margin:0 auto 32px;max-width:1100px;">
   <p id="recently-added" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;scroll-margin-top:110px;">Recently Added</p>
   <div class="shows-grid">
+
+    <div class="show-card" data-name="Agatha Raisin">
+      <a href="/shows/agatha-raisin.html" style="text-decoration:none;color:inherit;display:block;">
+
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;font-weight:600;">New to the Guide</p>
+      <p class="show-card-name">Agatha Raisin</p>
+      <p class="show-card-meta">Cozy Mystery · 4 Series · Acorn TV</p>
+      </a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="platform-btn" target="_blank" rel="noopener sponsored">Acorn TV &rarr;</a>
+    </div>
+
+    <div class="show-card" data-name="Foyle's War">
+      <a href="/shows/foyles-war.html" style="text-decoration:none;color:inherit;display:block;">
+
+      <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c9a96e;letter-spacing:1px;text-transform:uppercase;margin:0 0 6px;font-weight:600;">New to the Guide</p>
+      <p class="show-card-name">Foyle's War</p>
+      <p class="show-card-meta">Period Crime Drama · 8 Series · Acorn TV</p>
+      </a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="platform-btn" target="_blank" rel="noopener sponsored">Acorn TV &rarr;</a>
+    </div>
 
     <div class="show-card" data-name="The Marlow Murder Club">
       <a href="/shows/marlow-murder-club.html" style="text-decoration:none;color:inherit;display:block;">
@@ -787,6 +810,24 @@ function filterShowCards(query){
 <div style="margin:0 auto 32px;max-width:1100px;">
   <p id="all-shows" style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#c9a96e;margin:0 0 16px;scroll-margin-top:110px;">Full Guide Library</p>
   <div class="shows-grid">
+
+    <div class="show-card" data-name="Agatha Raisin">
+      <a href="/shows/agatha-raisin.html" style="text-decoration:none;color:inherit;display:block;">
+
+      <p class="show-card-name">Agatha Raisin</p>
+      <p class="show-card-meta">Cozy Mystery &middot; 2014–2022</p>
+      </a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="platform-btn" target="_blank" rel="noopener sponsored">Acorn TV &rarr;</a>
+    </div>
+
+    <div class="show-card" data-name="Foyle's War">
+      <a href="/shows/foyles-war.html" style="text-decoration:none;color:inherit;display:block;">
+
+      <p class="show-card-name">Foyle's War</p>
+      <p class="show-card-meta">Period Crime Drama &middot; 2002–2015</p>
+      </a>
+      <a href="https://www.amazon.com/gp/video/channel/c8382769-b3fd-49e8-818c-021154583c89?tag=britishtvhub-20" class="platform-btn" target="_blank" rel="noopener sponsored">Acorn TV &rarr;</a>
+    </div>
 
     <div class="show-card" data-name="Endeavour">
       <a href="/shows/endeavour.html" style="text-decoration:none;color:inherit;display:block;">
@@ -1008,7 +1049,7 @@ function filterShowCards(query){
       <a href="/shows/tommy-and-tuppence.html" style="text-decoration:none;color:inherit;display:block;">
 
       <p class="show-card-name">Tommy & Tuppence</p>
-      <p class="show-card-meta">Mystery &middot; 2025–present</p>
+      <p class="show-card-meta">Mystery &middot; 2026–present</p>
       </a>
       <a href="https://www.amazon.com/gp/video/channel/c984b526-fff5-46bf-af6d-68abb4a6a5d2?tag=britishtvhub-20" class="platform-btn" target="_blank" rel="noopener sponsored">BritBox &rarr;</a>
     </div>
@@ -1158,11 +1199,11 @@ function filterShowCards(query){
       color: #e8dfc8; padding: 16px 20px; font-family: 'Crimson Text', serif; font-size: 17px;
       border-radius: 8px; outline: none;
     }
-    .fds-search-input::placeholder { color: #8a9ab5; }
+    .fds-search-input::placeholder { color: #c1cadd; }
     .fds-search-input:focus { border-color: #c9a96e; box-shadow: 0 0 0 3px rgba(201,169,110,0.15); }
     .fds-region-row { display:flex; justify-content:center; gap:8px; margin:0 auto 20px; }
     .fds-region-btn {
-      background: transparent; border: 1px solid #4a5570; color: #8a9ab5; font-family:'Raleway',sans-serif;
+      background: transparent; border: 1px solid #4a5570; color: #c1cadd; font-family:'Raleway',sans-serif;
       font-size: 12px; letter-spacing: 0.5px; padding: 7px 14px; border-radius: 20px; cursor: pointer;
     }
     .fds-region-btn:hover { border-color: #c9a96e; color: #e8dfc8; }
@@ -1179,25 +1220,25 @@ function filterShowCards(query){
     }
     .fds-suggest li:last-child { border-bottom: none; }
     .fds-suggest li:hover, .fds-suggest li.highlight { background: #2c3550; color: #dab870; }
-    .fds-suggest li .fds-yr { color: #8a9ab5; font-size: 13px; margin-left: 8px; }
+    .fds-suggest li .fds-yr { color: #c1cadd; font-size: 13px; margin-left: 8px; }
     .fds-result { margin: 20px auto 0; max-width: 600px; }
     .fds-case-file { background:#1a2135; border:1px solid #3d4a60; border-radius:12px; padding:26px 28px; }
     .fds-case-show { font-family:'Playfair Display',serif; font-size:24px; color:#e8dfc8; margin:0 0 4px; }
-    .fds-case-meta { font-family:'Raleway',sans-serif; font-size:12px; color:#8a9ab5; letter-spacing:0.5px; margin-bottom:16px; }
+    .fds-case-meta { font-family:'Raleway',sans-serif; font-size:12px; color:#c1cadd; letter-spacing:0.5px; margin-bottom:16px; }
     .fds-case-meta span { margin: 0 6px; }
     .fds-verdict { font-family:'Raleway',sans-serif; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#c9a96e; margin-bottom:10px; }
     .fds-services { list-style:none; padding:0; margin:0; }
     .fds-service-row { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
     .fds-service-row:last-child { border-bottom:none; }
-    .fds-service-group-label { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#8a9ab5; padding-top:14px; }
+    .fds-service-group-label { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:1px; text-transform:uppercase; color:#c1cadd; padding-top:14px; }
     .fds-service-group-label:first-child { padding-top:0; }
     .fds-service-name { font-size:16px; font-weight:600; color:#e8dfc8; text-decoration:none; }
     .fds-service-name:hover { color:#dab870; }
-    .fds-service-note { font-size:13px; color:#8a9ab5; font-style:italic; }
-    .fds-service-tag { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:#8a9ab5; border:1px solid #3d4a60; padding:3px 8px; border-radius:10px; }
+    .fds-service-note { font-size:13px; color:#c1cadd; font-style:italic; }
+    .fds-service-tag { font-family:'Raleway',sans-serif; font-size:10px; letter-spacing:0.5px; text-transform:uppercase; color:#c1cadd; border:1px solid #3d4a60; padding:3px 8px; border-radius:10px; }
     .fds-no-result { text-align:center; padding:24px; }
     .fds-no-result .fds-nr-title { font-family:'Playfair Display',serif; font-size:19px; color:#e8dfc8; margin-bottom:8px; }
-    .fds-no-result p { color:#8a9ab5; font-size:14.5px; font-family:'Crimson Text',serif; margin:0; }
+    .fds-no-result p { color:#c1cadd; font-size:14.5px; font-family:'Crimson Text',serif; margin:0; }
     .fds-no-result a { color:#c9a96e; }
     @media (max-width:600px) {
       .fds-panel { padding:36px 22px 32px; border-radius:12px; }
@@ -1206,22 +1247,22 @@ function filterShowCards(query){
 
   <div class="fds-panel">
   <p class="section-label" style="text-align:center;border-bottom:none;">Can't Find a Full Guide Above?</p>
-  <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">Search Every Show We Track</h2>
-  <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#9090a8;margin:0 0 24px;text-align:center;">Beyond our full guides, we track streaming availability for hundreds of British shows &mdash; search by title to find where to watch.</p>
+  <h2 style="font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#e8dfc8;margin:0 0 8px;text-align:center;">Search Every Show British TV Hub Tracks</h2>
+  <p style="font-family:'Crimson Text',serif;font-size:16px;font-style:italic;color:#c1cadd;margin:0 0 24px;text-align:center;">Beyond the full guides, British TV Hub tracks streaming availability for hundreds of British shows &mdash; search by title to find where to watch.</p>
 
   <div class="fds-search-zone">
-    <input type="text" class="fds-search-input" id="fdsSearchInput" autocomplete="off" placeholder="Search for a show — e.g. Vera, Shetland, Doc Martin">
-    <ul class="fds-suggest" id="fdsSuggestList"></ul>
+    <input aria-label="Search for a show" type="text" class="fds-search-input" id="fdsSearchInput" role="combobox" aria-expanded="false" aria-controls="fdsSuggestList" aria-autocomplete="list" autocomplete="off" placeholder="Search for a show — e.g. Vera, Shetland, Doc Martin">
+    <ul class="fds-suggest" id="fdsSuggestList" role="listbox" aria-label="Matching shows"></ul>
   </div>
 
 
   <div class="fds-region-row" id="fdsRegionRow">
-    <button class="fds-region-btn active" data-region="us">United States</button>
-    <button class="fds-region-btn" data-region="uk">United Kingdom</button>
-    <button class="fds-region-btn" data-region="au">Australia</button>
+    <button class="fds-region-btn active" aria-pressed="true" data-region="us">United States</button>
+    <button class="fds-region-btn" aria-pressed="false" data-region="uk">United Kingdom</button>
+    <button class="fds-region-btn" aria-pressed="false" data-region="au">Australia</button>
   </div>
 
-  <div class="fds-result" id="fdsResult"></div>
+  <div class="fds-result" id="fdsResult" role="status" aria-atomic="true"></div>
   </div>
 </div>
 <!-- END FULL DATABASE SEARCH -->
@@ -1244,8 +1285,9 @@ function filterShowCards(query){
   document.getElementById('fdsRegionRow').addEventListener('click', function(e){
     const btn = e.target.closest('.fds-region-btn');
     if (!btn) return;
-    document.querySelectorAll('.fds-region-btn').forEach(function(b){ b.classList.remove('active'); });
+    document.querySelectorAll('.fds-region-btn').forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
     btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
     fdsRegion = btn.dataset.region;
     if (fdsActiveShow) fdsRenderResult(fdsActiveShow);
   });
@@ -1263,11 +1305,13 @@ function filterShowCards(query){
   fdsInput.addEventListener('input', function(){
     const list = fdsMatches(fdsInput.value);
     fdsHighlightIdx = -1;
-    if (!list.length) { fdsSuggest.classList.remove('show'); fdsSuggest.innerHTML = ''; return; }
-    fdsSuggest.innerHTML = list.map(function(s){
-      return '<li data-title="' + s.title.replace(/"/g,'&quot;') + '">' + s.title + '<span class="fds-yr">' + s.years + '</span></li>';
+    fdsInput.removeAttribute('aria-activedescendant');
+    if (!list.length) { fdsCloseSuggestions(); fdsSuggest.innerHTML = ''; return; }
+    fdsSuggest.innerHTML = list.map(function(s,i){
+      return '<li role="option" aria-selected="false" id="fds-option-' + i + '" data-title="' + s.title.replace(/"/g,'&quot;') + '">' + s.title + '<span class="fds-yr">' + s.years + '</span></li>';
     }).join('');
     fdsSuggest.classList.add('show');
+    fdsInput.setAttribute('aria-expanded', 'true');
     fdsSuggest.querySelectorAll('li').forEach(function(li){
       li.onclick = function(){ fdsInput.value = li.dataset.title; fdsPick(fdsFindShow(li.dataset.title)); };
     });
@@ -1275,6 +1319,8 @@ function filterShowCards(query){
 
   fdsInput.addEventListener('keydown', function(e){
     const items = fdsSuggest.querySelectorAll('li');
+    if(e.key === 'Escape') { fdsCloseSuggestions(); e.preventDefault(); return; }
+    if((!items.length || !fdsSuggest.classList.contains('show')) && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) return;
     if (e.key === 'ArrowDown') { e.preventDefault(); fdsHighlightIdx = Math.min(fdsHighlightIdx+1, items.length-1); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); fdsHighlightIdx = Math.max(fdsHighlightIdx-1, 0); }
     else if (e.key === 'Enter') {
@@ -1283,15 +1329,24 @@ function filterShowCards(query){
       else { const m = fdsMatches(fdsInput.value); if (m.length) { fdsInput.value = m[0].title; fdsPick(m[0]); } else fdsPick(null); }
       return;
     } else return;
-    items.forEach(function(li,i){ li.classList.toggle('highlight', i === fdsHighlightIdx); });
+    items.forEach(function(li,i){ li.classList.toggle('highlight', i === fdsHighlightIdx); li.setAttribute('aria-selected', i === fdsHighlightIdx ? 'true' : 'false'); });
+    if(items[fdsHighlightIdx]) fdsInput.setAttribute('aria-activedescendant', items[fdsHighlightIdx].id);
   });
 
   document.addEventListener('click', function(e){
-    if (!e.target.closest('.fds-search-zone')) fdsSuggest.classList.remove('show');
+    if (!e.target.closest('.fds-search-zone')) fdsCloseSuggestions();
   });
 
-  function fdsPick(show) {
+  function fdsCloseSuggestions() {
     fdsSuggest.classList.remove('show');
+    fdsInput.setAttribute('aria-expanded', 'false');
+    fdsInput.removeAttribute('aria-activedescendant');
+    fdsHighlightIdx = -1;
+  }
+  fdsInput.addEventListener('blur', function(){ setTimeout(fdsCloseSuggestions, 120); });
+
+  function fdsPick(show) {
+    fdsCloseSuggestions();
     if (!show) { fdsRenderNoResult(); return; }
     fdsActiveShow = show;
     fdsRenderResult(show);
@@ -1432,80 +1487,45 @@ function filterShowCards(query){
       <a href="https://www.facebook.com/UltimateBritishBookShelf" target="_blank" rel="noopener" style="display:block;text-align:center;background:#8b1a2e;color:#f5e8d0;padding:12px 20px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Follow the Page &rarr;</a>
     </div>
     <div class="site-card" style="background:#363f58;border:1px solid #c9a96e;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">The Kettle Club &#9749;</h3>
-      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">British TV Hub&rsquo;s subscriber community for recommendations, friendly chat and premiere news. Just $2.99 a month — less than a cup of tea.</p>
-      <a href="https://www.facebook.com/groups/1069967119146283" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Join the Kettle Club &rarr;</a>
+      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">Monthly British TV Viewer Guide</h3>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">New premieres, returning favourites, streaming updates and picks worth watching, delivered monthly. Just $2.99 a month &mdash; less than a cup of tea.</p>
+      <a href="https://www.facebook.com/britishtelevisionhub/subscribe/" target="_blank" rel="noopener" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Subscribe on Facebook &rarr;</a>
       <p style="margin:10px 0 0;font-family:'Raleway',sans-serif;font-size:14px;color:#c8c0a8;">Hosted on Facebook. Tap above to join in seconds.</p>
-    </div>
-    <div class="site-card" style="background:#363f58;border:1px solid #3d4a60;border-radius:12px;padding:24px 20px;display:flex;flex-direction:column;">
-      <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:400;color:#c9a96e;margin:0 0 6px;line-height:1.3;">What Are You Watching?</h3>
-      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.5;margin:0 0 16px;">Tell fellow fans what's on your screen, and see what everyone else is watching.</p>
-      <a href="/what-are-you-watching.html" style="display:block;text-align:center;background:#c9a96e;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;font-weight:600;margin-top:auto;">Share What You're Watching &rarr;</a>
     </div>
   </div>
 </div>
 
 <div style="background:#1a2135;border-bottom:1px solid #3d4a60;padding:56px 40px;">
-  <div style="max-width:720px;margin:0 auto;">
+  <div style="max-width:860px;margin:0 auto;">
     <div style="text-align:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:400;color:#f0e8d4;margin:0 0 12px;">Stay Connected</div>
 
     <!-- Sunday Picks signup (Mailchimp) -->
-    <div id="nl-anchor" style="text-align:center;padding-bottom:32px;">
-      <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 18px;">Every Sunday you&rsquo;ll get five carefully chosen British TV recommendations, plus the latest BritBox and Acorn TV arrivals, delivered straight to your inbox.</p>
-      <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname});}">
-            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="padding:12px 16px;font-size:16px;background:#2c3345;border-width:1px;border-style:solid;border-color:#4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;width:100%;max-width:260px;box-sizing:border-box;border-radius:0;">
-              <div aria-hidden="true" style="position:absolute;left:-5000px;"><input type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
-              <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 24px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
-            </div>
-            <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#9a9b9d;margin-top:12px;letter-spacing:0.3px;line-height:1.5;">By signing up, you agree to get the Sunday Picks email each week. No spam. Unsubscribe anytime with one click.</div>
-          </form>
-      <p style="font-family:'Crimson Text',serif;font-size:14px;color:#a8a49a;margin:16px 0 0;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a> and get Sunday Picks a full day early, every Saturday.</p>
+    <div id="nl-anchor" style="padding-bottom:32px;">
+  <style>.nl-card{max-width:860px;margin:0 auto;box-sizing:border-box;background:linear-gradient(135deg,#273249 0%,#1f2940 100%);border:1px solid #c9a96e;border-radius:12px;padding:30px 32px;display:flex;flex-wrap:wrap;gap:22px 32px;align-items:center;justify-content:space-between;text-align:left;}@media(max-width:600px){.nl-card{padding:24px 20px;}.nl-card h2{font-size:22px!important;}}</style>
+<div class="nl-card">
+    <div style="flex:1 1 300px;min-width:0;">
+      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:8px;">Free Weekly Email &middot; Sunday Picks</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:#f0e8d4;margin:0 0 8px;line-height:1.2;">Five British TV Picks. Every Sunday.</h2>
+      <p style="font-family:'Crimson Text',serif;font-size:16px;color:#c8c0a8;line-height:1.55;margin:0;">Your weekly guide to what to watch next, plus what&rsquo;s new on BritBox and Acorn TV.</p>
     </div>
-
-
-    <div style="border-top:1px solid #3d4a60;"></div>
-
-    <!-- Two-column row: Install as App | Bookmark -->
-    <div class="stay-connected-cols" style="display:flex;padding-top:32px;">
-      <div style="flex:1;text-align:center;padding:0 24px;">
-        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">📱 Install as an App</h3>
-        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Save British TV Hub to your phone.</p>
-        <details class="bookmark-toggle">
-          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Install Steps →</summary>
-          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
-            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">iPhone:</strong> Share → Add to Home Screen</p>
-            <p style="margin:0;"><strong style="color:#f0e8d4;">Android:</strong> Menu → Install app</p>
-          </div>
-        </details>
+    <form class="bth-signup" action="https://britishtvhub.us11.list-manage.com/subscribe/post?u=403ae87632e96b44c01b7e780&amp;id=13d91c5701" method="post" target="_blank" onsubmit="if(window.gtag){gtag('event','newsletter_signup',{page_path:location.pathname,placement:'page_bottom'});}" style="flex:1 1 280px;min-width:0;">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required aria-label="Email address" style="flex:1 1 180px;min-width:0;padding:12px 16px;font-size:16px;background:#2c3345;border:1px solid #4a5670;color:#e8dfc8;font-family:'Crimson Text',serif;box-sizing:border-box;border-radius:0;">
+        <div aria-hidden="true" style="position:absolute;left:-5000px;"><input aria-label="Leave this anti-spam field blank" type="text" name="b_403ae87632e96b44c01b7e780_13d91c5701" tabindex="-1" value=""></div>
+        <button type="submit" style="background:#c9a96e;border:none;color:#1a2135;padding:12px 22px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;cursor:pointer;white-space:nowrap;border-radius:0;">Get Picks</button>
       </div>
-
-      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
-
-      <div style="flex:1;text-align:center;padding:0 24px;">
-        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">🔖 Bookmark This Site</h3>
-        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Never miss new discoveries.</p>
-        <details class="bookmark-toggle">
-          <summary style="font-family:'Raleway',sans-serif;font-size:13px;letter-spacing:0.5px;color:#c9a96e;cursor:pointer;list-style:none;display:inline-block;text-decoration:underline;">See Bookmark Shortcut →</summary>
-          <div style="margin-top:14px;padding:16px 18px;background:#2c3345;border:1px solid #3d4a60;border-radius:6px;font-size:14px;color:#c9c2b0;line-height:1.8;text-align:left;max-width:280px;margin-left:auto;margin-right:auto;">
-            <p style="margin:0 0 8px;"><strong style="color:#f0e8d4;">Desktop:</strong> Ctrl+D (Windows) or Cmd+D (Mac)</p>
-            <p style="margin:0;"><strong style="color:#f0e8d4;">Mobile:</strong> Safari Share menu, or Chrome ⋮ menu → star icon</p>
-          </div>
-        </details>
-      </div>
-
-      <div class="stay-connected-divider" style="width:1px;background:#3d4a60;"></div>
-
-      <div style="flex:1;text-align:center;padding:0 24px;">
-        <h3 style="font-family:'Raleway',sans-serif;font-size:15px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:#e8dfc8;margin:0 0 8px;">💌 Recommend Us to a Friend</h3>
-        <p style="font-size:15px;color:#b8b0a0;line-height:1.5;margin:0 0 12px;">Know someone who'd love British TV Hub too?</p>
-        <button onclick="copyLink()" style="background:transparent;border:1px solid #c9a96e;color:#c9a96e;padding:11px 18px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer;">Copy Link</button>
-        <div style="margin-top:10px;"><a href="/share-with-a-friend.html" style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:0.5px;color:#c9a96e;text-decoration:underline;">Ways to Share British TV Hub &rarr;</a></div>
-      </div>
-    </div>
+      <div style="font-family:'Raleway',sans-serif;font-size:11.5px;color:#c1cadd;margin-top:10px;letter-spacing:0.3px;line-height:1.5;">One email a week. No spam. Unsubscribe anytime with one click.</div>
+      <div style="font-family:'Crimson Text',serif;font-size:14px;color:#c1cadd;margin-top:10px;">&#9749; Want it a day early? <a href="https://buymeacoffee.com/britishtvhub/membership" target="_blank" rel="noopener" style="color:#c9a96e;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(201,169,110,0.4);">Join Early Bird for $3/mo</a></div>
+    </form>
   </div>
 </div>
 
+
+
+  </div>
+</div>
+
+</div><!-- hub main landmark -->
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
   <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
     British Mysteries. Dramas. Cozy Viewing.
@@ -1517,7 +1537,7 @@ function filterShowCards(query){
     <div>
       <style>.tm-wrap{position:relative;display:inline-flex;align-items:center;justify-content:center;width:72px;height:72px;margin:24px 0 12px;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fbf6ec,#e9dfc9 75%);border:2px solid #c9a96e;box-shadow:0 0 0 4px rgba(201,169,110,0.15),0 6px 18px rgba(0,0,0,0.35);}.tm-wrap img{width:50px !important;height:auto !important;margin-top:4px;}.tm-steam{position:absolute;left:29px;top:-6px;width:14px;height:24px;pointer-events:none;}.tm-steam i{position:absolute;bottom:0;width:7px;height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 24'%3E%3Cpath d='M5 23c-3-4 3-7 0-11s3-7 0-11' fill='none' stroke='%23c9a96e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;opacity:0;animation:tm-rise 3.6s ease-in-out infinite;}.tm-steam i:nth-child(2){left:7px;animation-delay:1.8s;}@keyframes tm-rise{0%{transform:translateY(4px) scaleX(1);opacity:0;}25%{opacity:1;}60%{transform:translateY(-6px) scaleX(-1);opacity:.5;}100%{transform:translateY(-14px) scaleX(1);opacity:0;}}@media (prefers-reduced-motion: reduce){.tm-steam{display:none;}}</style><span class="tm-wrap"><img loading="lazy" src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="display:block;"><span class="tm-steam" aria-hidden="true"><i></i><i></i></span></span>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.6;margin:0 0 16px;">Your home for British mysteries and dramas &mdash; classics and new favourites. Find your next must-watch or read.</p>
       <a href="/start-here.html" style="display:inline-block;border:1px solid #c9a96e;color:#c9a96e;font-family:'Raleway',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;padding:9px 16px;text-decoration:none;">Start Here &rarr;</a>
     </div>
     <div>
@@ -1539,13 +1559,12 @@ function filterShowCards(query){
     <div>
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">Community</div>
       <a href="/things-british-tv-has-taught-me.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">Things British TV Has Taught Me</a>
-      <a href="/what-are-you-watching.html" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">What Are You Watching?</a>
       <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" style="font-family:'Raleway',sans-serif;font-size:14.5px;color:#d8d4c8;text-decoration:none;display:block;padding:5px 0;">&#9749; British TV Hub &mdash; Trailers &amp; Previews (YouTube)</a>
-      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#a8a49a;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:#c1cadd;line-height:1.5;margin:14px 0 14px;">Follow along for daily recommendations, cozy conversations, and new discoveries.</p>
       <div style="display:flex;gap:10px;">
         <a href="https://www.facebook.com/britishtelevisionhub" target="_blank" rel="noopener" aria-label="Facebook" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">f</a>
         <a href="https://www.pinterest.com/britishtvhub" target="_blank" rel="noopener" aria-label="Pinterest" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">p</a>
-        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
+        <a href="https://www.youtube.com/@BritishTVHubTrailersPreviews" target="_blank" rel="noopener" aria-label="YouTube" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12Z"/></svg></a><a href="mailto:info@britishtvhub.com" aria-label="Email" style="width:32px;height:32px;border:1px solid #3d4a60;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96e;text-decoration:none;font-family:'Raleway',sans-serif;font-size:13px;">@</a>
       </div>
     </div>
   </div>
@@ -1555,15 +1574,16 @@ function filterShowCards(query){
   </script>
 
   <div style="border-top:1px solid rgba(255,255,255,0.08);max-width:1100px;margin:0 auto;padding:20px 32px;text-align:center;">
-    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#9aa3b8;letter-spacing:0.5px;margin-bottom:10px;">
+    <div style="font-family:'Raleway',sans-serif;font-size:12.5px;color:#c1cadd;letter-spacing:0.5px;margin-bottom:10px;">
       © <span class="js-year">2026</span> British TV Hub &nbsp;&middot;&nbsp;
-      <a href="/about.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">About</a>&middot;
-      <a href="/privacy.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
-      <a href="/support.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Support</a>&middot;
-      <a href="/partner.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
-      <a href="/faq.html" style="color:#9aa3b8;text-decoration:none;margin:0 10px;">FAQ</a>
+      <a href="/about.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">About</a>&middot;
+      <a href="/privacy.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Privacy Policy</a>&middot;
+      <a href="/support.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Support</a>&middot;
+      <a href="/partner.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Partner Info</a>&middot;
+      <a href="/faq.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">FAQ</a>&middot;
+      <a href="/accessibility-statement.html" style="color:#c1cadd;text-decoration:none;margin:0 10px;">Accessibility</a>
     </div>
-    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#98999c;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
+    <p style="font-family:'Raleway',sans-serif;font-size:11px;color:#c1cadd;margin:0;letter-spacing:0.5px;">British TV Hub is a participant in the Amazon Associates program and earns from qualifying purchases. British TV Hub may also earn commissions from BritBox and Acorn TV affiliate links at no extra cost to you.</p>
   </div>
 </footer>
 
@@ -1571,9 +1591,6 @@ function filterShowCards(query){
   document.querySelectorAll('.js-year').forEach(el => el.textContent = new Date().getFullYear());
 </script>
 
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Y2An0mtqMjwOslw4I2Lrm";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
 <button id="backToTop" onclick="scrollToTop()" title="Back to top" style="display:none;position:fixed;bottom:30px;right:30px;width:48px;height:48px;background:#c9a96e;color:#1a2135;border:none;border-radius:50%;font-size:24px;cursor:pointer;z-index:99;transition:all 0.3s ease;box-shadow:0 4px 12px rgba(0,0,0,0.2);" onmouseover="this.style.background='#d4b47a';this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 16px rgba(201,168,76,0.3)'" onmouseout="this.style.background='#c9a96e';this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.2)'">↑</button>
 
 <script>
