@@ -1575,20 +1575,20 @@ document.addEventListener('click', function(e){
 
 <style>
 .oct-link:hover, .nov-link:hover{background:#c9a96e;color:#1a2135 !important;}
-#october-guide, #november-guide, #gift-guide-banner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
-#october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{position:relative;min-height:340px;}
+#october-guide, #november-guide, #gift-guide-banner, #thanksgiving-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;border-bottom:1px solid #3d4a60;background:#1a2135;}
+#october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media, #thanksgiving-guide .og-media{position:relative;min-height:340px;}
 #gift-guide-banner{grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);}
 #gift-guide-banner .og-media{min-height:280px;}
-#october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
+#october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img, #thanksgiving-guide .og-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% center;display:block;}
 #gift-guide-banner .og-media img{object-position:50% 38%;}
-#october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
+#october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before, #thanksgiving-guide .og-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,#1a2135 0%,rgba(26,33,53,0.35) 22%,rgba(26,33,53,0) 45%);}
 #gift-guide-banner .og-body{padding:36px 40px;}
 @media (max-width:900px){
-  #october-guide, #november-guide, #gift-guide-banner{grid-template-columns:1fr;}
-  #october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media{order:-1;min-height:260px;}
-  #october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img{object-position:center 30%;}
-  #october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
-  #october-guide .og-body, #november-guide .og-body, #gift-guide-banner .og-body{padding:28px 20px 32px !important;}
+  #october-guide, #november-guide, #gift-guide-banner, #thanksgiving-guide{grid-template-columns:1fr;}
+  #october-guide .og-media, #november-guide .og-media, #gift-guide-banner .og-media, #thanksgiving-guide .og-media{order:-1;min-height:260px;}
+  #october-guide .og-media img, #november-guide .og-media img, #gift-guide-banner .og-media img, #thanksgiving-guide .og-media img{object-position:center 30%;}
+  #october-guide .og-media::before, #november-guide .og-media::before, #gift-guide-banner .og-media::before, #thanksgiving-guide .og-media::before{background:linear-gradient(to bottom,rgba(26,33,53,0) 60%,#1a2135 100%);}
+  #october-guide .og-body, #november-guide .og-body, #gift-guide-banner .og-body, #thanksgiving-guide .og-body{padding:28px 20px 32px !important;}
 }
 </style>
 <div id="october-guide">
