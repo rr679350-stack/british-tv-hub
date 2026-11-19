@@ -54,7 +54,7 @@ window.SITE_SEARCH_INDEX = [
   {"title": "Hidden British Dramas", "url": "/hidden-dramas.html"},
   {"title": "Hidden Gem British TV Shows", "url": "/hidden-gems.html"},
   {"title": "Holiday Gifts for British TV & Mystery Fans", "url": "/holiday-gift-guide.html"},
-  {"title": "Holiday Guide: What to Watch (2026)", "url": "/holiday-guide-watch.html"},
+  {"title": "British TV Winter 2026-27 Preview", "url": "/winter-preview-2026-2027.html"},
   {"title": "Holiday Guide: Specials Collection", "url": "/holiday-specials.html"},
   {"title": "Inspector Morse Books: Reading Guide", "url": "/inspector-morse-books.html"},
   {"title": "Best Episodes of Inspector Morse, Ranked", "url": "/inspector-morse-episodes-ranked.html"},
