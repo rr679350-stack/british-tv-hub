@@ -12,6 +12,11 @@
       ]
     },
     {
+      "source": "/holiday-guide-watch.html",
+      "destination": "/winter-preview-2026-2027.html",
+      "permanent": true
+    },
+    {
       "source": "/dvd.html",
       "destination": "/essentials.html",
       "permanent": true
