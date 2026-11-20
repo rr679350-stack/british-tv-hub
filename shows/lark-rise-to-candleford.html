@@ -78,9 +78,9 @@ gtag('config', 'G-P1L8CVNKS6');
     .show-card:last-of-type { margin-bottom: 0; }
     .show-card-inner { display: grid; grid-template-columns: 1fr 210px; gap: 1.75rem; align-items: start; }
     .show-badge { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 2px; margin-bottom: 0.75rem; }
-    .badge-classic { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
-    .badge-new { background: rgba(100,160,220,0.12); color: #7eb8e8; border: 1px solid rgba(100,160,220,0.3); }
-    .badge-essential { background: rgba(192,57,43,0.15); color: #e07060; border: 1px solid rgba(192,57,43,0.3); }
+    .badge-classic { background: rgba(201,168,76,0.15); color: #f0e8d4; border: 1px solid rgba(201,168,76,0.3); }
+    .badge-new { background: rgba(100,160,220,0.12); color: #b8d8f5; border: 1px solid rgba(100,160,220,0.3); }
+    .badge-essential { background: rgba(192,57,43,0.15); color: #f3b0a5; border: 1px solid rgba(192,57,43,0.3); }
     .badge-gem { background: rgba(80,180,160,0.12); color: #5fc9b4; border: 1px solid rgba(80,180,160,0.3); }
     .badge-female { background: rgba(200,140,180,0.15); color: #d8a0c0; border: 1px solid rgba(200,140,180,0.3); }
     .show-card .show-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--gold-light); line-height: 1.2; margin-bottom: 0.35rem; }
@@ -569,8 +569,12 @@ iframe[id*="chatbase-bubble-button"],
     ml('account', '2630840');
 </script>
 <!-- End MailerLite Universal -->
+<link rel="stylesheet" href="/hub-cards.css">
+<link rel="stylesheet" href="/accessibility.css?v=1">
+<script src="/accessibility.js?v=1" defer></script>
 </head>
 <body>
+<a class="hub-skip-link" href="#hub-content-start">Skip to content</a>
 
 <nav class="site-nav-std" aria-label="Main navigation">
   <div class="nav-top-row">
@@ -654,6 +658,7 @@ iframe[id*="chatbase-bubble-button"],
 </div>
     </div>
 </nav>
+<div role="main" class="hub-main-landmark">
 <script>
 function toggleMobileNav(){
   var nav = document.querySelector('nav.site-nav-std');
@@ -703,7 +708,7 @@ document.addEventListener('click', function(e){
   <div style="position:absolute;inset:0;background:linear-gradient(to top,#1a2332 15%,rgba(26,35,50,0.55) 55%,rgba(26,35,50,0.1) 100%);"></div>
   <div style="position:relative;z-index:2;padding:56px 40px 40px;max-width:620px;">
     <p class="show-eyebrow" style="margin-bottom:10px;">Period Drama &middot; BBC &middot; 2008&ndash;2011 &middot; Complete Series</p>
-    <h1 class="show-title" style="margin-bottom:0;">Lark Rise to Candleford</h1>
+    <h1 class="show-title" style="margin-bottom:0;" id="hub-content-start" tabindex="-1">Lark Rise to Candleford</h1>
   </div>
 </div>
 
@@ -726,7 +731,7 @@ document.addEventListener('click', function(e){
     </div>
   </div>
 
-  <p class="show-description">Adapted by Bill Gallagher from Flora Thompson's semi-autobiographical books, Lark Rise to Candleford follows young Laura Timmins as she leaves the hamlet of Lark Rise to work at the post office in the neighbouring market town of Candleford, under the eye of postmistress Dorcas Lane. Set in late-19th-century Oxfordshire, it ran for four series and 40 episodes on BBC One from 2008 to 2011. It streams on BritBox in the US. See how the services compare in British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);">where to watch British TV in the US</a>.</p>
+  <p class="show-description">Adapted by Bill Gallagher from Flora Thompson's semi-autobiographical books, Lark Rise to Candleford follows young Laura Timmins as she leaves the hamlet of Lark Rise to work at the post office in the neighbouring market town of Candleford, under the eye of postmistress Dorcas Lane. Set in late-19th-century Oxfordshire, it ran for four series and 40 episodes on BBC One from 2008 to 2011. It streams on BritBox in the US. See how the services compare in British TV Hub's guide to <a href="/streaming.html" style="color:var(--gold-light,#dab870);text-decoration:underline;text-underline-offset:2px;">where to watch British TV in the US</a>.</p>
 
   <hr class="divider">
 
@@ -1178,13 +1183,15 @@ document.addEventListener('click', function(e){
 </div>
 
 
+</div><!-- hub main landmark -->
+<style>.breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:'Raleway',sans-serif;font-size:14px !important;letter-spacing:0.6px;}.breadcrumb-item{display:flex;align-items:center;gap:8px;}.breadcrumb-item a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb-item a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb-item.active{color:#f3ede2 !important;font-weight:600;}.breadcrumb-separator{color:rgba(201,168,76,0.7) !important;}.breadcrumb > a{color:#e3c890 !important;font-weight:600 !important;text-decoration:none;}.breadcrumb > a:hover{color:#f3ede2 !important;text-decoration:underline;}.breadcrumb > span:not([class]){color:rgba(201,168,76,0.7) !important;}@media (max-width:768px){.breadcrumb{font-size:13px !important;}}@media (max-width:760px){.site-footer-grid{grid-template-columns:1fr 1fr !important;padding:30px 20px !important;}}@media (max-width:460px){.site-footer-grid{grid-template-columns:1fr !important;}}@media (max-width:700px){img[style*="width:100%;height:130px"]{height:auto !important;aspect-ratio:16/10;}}</style>
 <footer style="background:#0d1830;border-top:1px solid #3d4a60;">
   <div style="text-align:center;padding:20px 20px 18px;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#c9a96e;font-weight:700;border-bottom:1px solid rgba(201,169,110,0.25);">
     British Mysteries. Dramas. Cozy Viewing.
     <span style="display:block;margin:10px auto 0;width:7px;height:7px;background:#c9a96e;transform:rotate(45deg);"></span>
   </div>
 
-  <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
+  <div class="site-footer-grid" style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:26px;max-width:1100px;margin:0 auto;padding:36px 32px;text-align:left;">
     <div>
       <img src="/footer-teacup-mark.png" alt="British TV Hub" width="34" height="31" style="margin-bottom:8px;display:block;">
       <div style="font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#c9a96e;margin-bottom:12px;">About British TV Hub</div>
