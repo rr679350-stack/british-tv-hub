@@ -761,7 +761,30 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: November 22, 2026 (quotation sweep, superlative sweep,
+Last full sitewide run: November 22, 2026, second pass (full re-run of the
+quotation/superlative/link/nav-footer-GA-ID/viewport/BritBox-UK checks, plus a
+new visual-consistency pass and an extended monthly-freshness sweep, following
+the Contact page rollout earlier the same day). Visual: found and fixed a
+footer-legal-bar link-color outlier (#9aa3b8 instead of the sitewide-standard
+#c1cadd) on 3 /shows/ pages (lark-rise-to-candleford, rosemary-and-thyme,
+sister-boniface-mysteries) — a pre-existing leftover, not introduced by the
+Contact-link rollout. Confirmed The Snug family's gold accent (#c8a24a vs the
+site's #c9a96e) is an intentional, internally-consistent sub-brand variant
+across its 8 pages, not drift. Freshness: found acorn.html's static fallback
+markup (title/meta already said November, but the schema name, hero badges,
+highlight card, and the 4-card "What's New" grid were still showing October's
+content) out of sync with acorn-new.json, which had already been updated to
+November — resynced using only the JSON's own verified fields. Found and fixed
+7 more pages still using present-tense "premieres"/"arrives on [US service]"
+for Blue Lights S4 (Nov 12), Death Valley S2 (Nov 17), and Maigret/The Gold S2
+(Oct 18) — all dates already passed — corrected to past-tense/"now streaming"
+across best-british-mystery-shows-2026.html, 3 shows-like-*.html cross-link
+pages, shows/blue-lights.html, shows/death-valley.html, shows/the-gold.html,
+shows/maigret.html, and shows/madame-blanc-mysteries.html (which also had a
+stale "arrives... November 9" line in 6 places). Link/nav/footer/GA-ID/
+viewport/BritBox-UK checks all otherwise came back clean.
+
+Previous full sitewide run: November 22, 2026, first pass (quotation sweep, superlative sweep,
 broken internal link/image check, nav/footer/GA-ID integrity, viewport check,
 BritBox-UK false-listing check, and a monthly-freshness pass triggered by it
 being 6+ weeks since the prior full run — fixed an unattributed quotation on
