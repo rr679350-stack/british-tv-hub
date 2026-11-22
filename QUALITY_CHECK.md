@@ -761,7 +761,19 @@ Copyright & Editorial Review (Part 15 summary — include every audit):
 
 ---
 
-Last full sitewide run: October 7, 2026 (post-accessibility-rollout integrity
+Last full sitewide run: November 22, 2026 (quotation sweep, superlative sweep,
+broken internal link/image check, nav/footer/GA-ID integrity, viewport check,
+BritBox-UK false-listing check, and a monthly-freshness pass triggered by it
+being 6+ weeks since the prior full run — fixed an unattributed quotation on
+hidden-dramas.html ("Downton Abbey in a hotel"), removed dead /meet-tilly.html
+and /what-are-you-watching.html links left on 3 /shows/ pages after Tilly's
+removal, corrected a character name error (Death Valley's "John Chadwick" →
+John Chapel, in britbox-new.json and britbox.html), and refreshed stale
+"Premieres [date]" badges that had passed on index.html's homepage "This
+Month" grid and fall-preview-2026.html (Blue Lights S4, Madame Blanc S5,
+Death Valley S2, The Red King) to reflect now-streaming/weekly status).
+
+Previous full sitewide run: October 7, 2026 (post-accessibility-rollout integrity
 check of all 202 pages, triggered by a large stretch of automated/ChatGPT-assisted
 edits — internal link audit against the filesystem and vercel.json rewrites/redirects,
 insecure-link check, affiliate-tag audit for Amazon/BritBox/Acorn, JSON/JSON-LD
